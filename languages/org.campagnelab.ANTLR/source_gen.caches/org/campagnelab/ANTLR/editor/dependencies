@@ -48,9 +48,11 @@
     <classNode dependClassName="org.campagnelab.ANTLR.editor.Alternatives_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.Grammar_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.OptionalParamEditor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.editor.Parentheses_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.REGEXP_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.RHSEditor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.RuleRHS_Editor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.editor.RuleRefByName_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.RuleRef_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.Rule_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.Sequence_Editor" />
@@ -118,6 +120,19 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent" />
   </dependency>
+  <dependency className="org.campagnelab.ANTLR.editor.Parentheses_Editor" file="Parentheses_Editor.java">
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.cells.BigCellUtil" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
   <dependency className="org.campagnelab.ANTLR.editor.REGEXP_Editor" file="REGEXP_Editor.java">
     <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="jetbrains.mps.editor.runtime.cells.BigCellUtil" />
@@ -157,6 +172,16 @@
     <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
     <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.editor.RuleRefByName_Editor" file="RuleRefByName_Editor.java">
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />

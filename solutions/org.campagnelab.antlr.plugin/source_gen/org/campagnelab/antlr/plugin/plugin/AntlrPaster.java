@@ -77,10 +77,10 @@ public class AntlrPaster {
     try {
       ANTLRv4Lexer lexer = new ANTLRv4Lexer(new ANTLRInputStream(new StringReader(antlrRulesAsText)));
       ANTLRv4Parser parser = new ANTLRv4Parser(new CommonTokenStream(lexer));
-      ParseTree tree = parser.parserRuleSpec();
+      ParseTree tree = parser.rules();
       ParseTreeWalker walker = new ParseTreeWalker();
       // create standard walker 
-      ANTLRv4ParserListenerImpl extractor = new ANTLRv4ParserListenerImpl();
+      ANTLRv4ParserListenerImpl extractor = new ANTLRv4ParserListenerImpl(parser);
       walker.walk(extractor, tree);
       // initiate walk of tree with listener 
       SNode grammar = SNodeOperations.getNodeAncestor(anchor, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"), true, false);

@@ -2,7 +2,7 @@
 <debug-info>
   <root>
     <file name="StructureAspectDescriptor.java">
-      <unit at="13,0,61,0" name="org.campagnelab.ANTLR.structure.StructureAspectDescriptor" />
+      <unit at="13,0,67,0" name="org.campagnelab.ANTLR.structure.StructureAspectDescriptor" />
     </file>
   </root>
 </debug-info>

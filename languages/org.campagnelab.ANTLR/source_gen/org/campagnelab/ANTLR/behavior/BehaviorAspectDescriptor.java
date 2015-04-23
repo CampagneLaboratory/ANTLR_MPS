@@ -13,23 +13,27 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
       case 2:
         return new Grammar_BehaviorDescriptor();
-      case 4:
+      case 5:
         return new Rule_BehaviorDescriptor();
       case 1:
         return new Alternatives_BehaviorDescriptor();
-      case 6:
+      case 8:
         return new Sequence_BehaviorDescriptor();
-      case 5:
+      case 6:
         return new RuleRef_BehaviorDescriptor();
       case 0:
         return new Alternative_BehaviorDescriptor();
-      case 7:
+      case 9:
         return new StringLiteral_BehaviorDescriptor();
-      case 3:
+      case 4:
         return new REGEXP_BehaviorDescriptor();
+      case 3:
+        return new Parentheses_BehaviorDescriptor();
+      case 7:
+        return new RuleRefByName_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.ANTLR.structure.Alternative", "org.campagnelab.ANTLR.structure.Alternatives", "org.campagnelab.ANTLR.structure.Grammar", "org.campagnelab.ANTLR.structure.REGEXP", "org.campagnelab.ANTLR.structure.Rule", "org.campagnelab.ANTLR.structure.RuleRef", "org.campagnelab.ANTLR.structure.Sequence", "org.campagnelab.ANTLR.structure.StringLiteral"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.ANTLR.structure.Alternative", "org.campagnelab.ANTLR.structure.Alternatives", "org.campagnelab.ANTLR.structure.Grammar", "org.campagnelab.ANTLR.structure.Parentheses", "org.campagnelab.ANTLR.structure.REGEXP", "org.campagnelab.ANTLR.structure.Rule", "org.campagnelab.ANTLR.structure.RuleRef", "org.campagnelab.ANTLR.structure.RuleRefByName", "org.campagnelab.ANTLR.structure.Sequence", "org.campagnelab.ANTLR.structure.StringLiteral"};
 }

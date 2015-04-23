@@ -21,16 +21,20 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 2:
         return Collections.<ConceptEditor>singletonList(new Grammar_Editor());
       case 3:
-        return Collections.<ConceptEditor>singletonList(new REGEXP_Editor());
+        return Collections.<ConceptEditor>singletonList(new Parentheses_Editor());
       case 4:
-        return Collections.<ConceptEditor>singletonList(new Rule_Editor());
+        return Collections.<ConceptEditor>singletonList(new REGEXP_Editor());
       case 5:
-        return Collections.<ConceptEditor>singletonList(new RuleRHS_Editor());
+        return Collections.<ConceptEditor>singletonList(new Rule_Editor());
       case 6:
-        return Collections.<ConceptEditor>singletonList(new RuleRef_Editor());
+        return Collections.<ConceptEditor>singletonList(new RuleRHS_Editor());
       case 7:
-        return Collections.<ConceptEditor>singletonList(new Sequence_Editor());
+        return Collections.<ConceptEditor>singletonList(new RuleRef_Editor());
       case 8:
+        return Collections.<ConceptEditor>singletonList(new RuleRefByName_Editor());
+      case 9:
+        return Collections.<ConceptEditor>singletonList(new Sequence_Editor());
+      case 10:
         return Collections.<ConceptEditor>singletonList(new StringLiteral_Editor());
       default:
     }
@@ -53,7 +57,7 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.ANTLR.structure.Alternative", "org.campagnelab.ANTLR.structure.Alternatives", "org.campagnelab.ANTLR.structure.Grammar", "org.campagnelab.ANTLR.structure.REGEXP", "org.campagnelab.ANTLR.structure.Rule", "org.campagnelab.ANTLR.structure.RuleRHS", "org.campagnelab.ANTLR.structure.RuleRef", "org.campagnelab.ANTLR.structure.Sequence", "org.campagnelab.ANTLR.structure.StringLiteral"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.ANTLR.structure.Alternative", "org.campagnelab.ANTLR.structure.Alternatives", "org.campagnelab.ANTLR.structure.Grammar", "org.campagnelab.ANTLR.structure.Parentheses", "org.campagnelab.ANTLR.structure.REGEXP", "org.campagnelab.ANTLR.structure.Rule", "org.campagnelab.ANTLR.structure.RuleRHS", "org.campagnelab.ANTLR.structure.RuleRef", "org.campagnelab.ANTLR.structure.RuleRefByName", "org.campagnelab.ANTLR.structure.Sequence", "org.campagnelab.ANTLR.structure.StringLiteral"};
   private static String[] stringSwitchCases_xbvbvu_a0a0a0a2 = new String[]{"org.campagnelab.ANTLR.editor.OptionalParamEditor", "org.campagnelab.ANTLR.editor.RHSEditor"};
   private static String[] stringSwitchCases_xbvbvu_a0a0c = new String[]{"org.campagnelab.ANTLR.structure.RuleRHS"};
 }

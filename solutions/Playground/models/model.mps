@@ -7,6 +7,9 @@
   <imports />
   <registry>
     <language id="d6782141-eafa-4cf7-a85d-1229abdb1152" name="org.campagnelab.ANTLR">
+      <concept id="2214335295231823224" name="org.campagnelab.ANTLR.structure.RuleRefByName" flags="ng" index="jnuH0">
+        <property id="2214335295231823225" name="name" index="jnuH1" />
+      </concept>
       <concept id="7142405419535607099" name="org.campagnelab.ANTLR.structure.REGEXP" flags="ng" index="1M84Vo">
         <property id="7142405419535607417" name="regexp" index="1M84Qq" />
       </concept>
@@ -105,8 +108,55 @@
         </node>
       </node>
     </node>
-    <node concept="1Mb3fr" id="1UUTzwdSP_S" role="1Mb3fo">
+    <node concept="1Mb3fr" id="7a2u8aS$j0r" role="1Mb3fo">
+      <property role="TrG5h" value="sequence" />
+      <node concept="1Mb3ex" id="7a2u8aS$j0s" role="1Mb3eB">
+        <node concept="1M9qTG" id="7a2u8aS$j0u" role="1Mb3aa">
+          <node concept="jnuH0" id="7a2u8aS$j0w" role="1M9qTN">
+            <property role="jnuH1" value="section" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1Mb3fr" id="7a2u8aS$j0x" role="1Mb3fo">
       <property role="TrG5h" value="section" />
+      <node concept="1Mb3ex" id="7a2u8aS$j0y" role="1Mb3eB">
+        <node concept="1M9qTG" id="7a2u8aS$j0$" role="1Mb3aa">
+          <node concept="jnuH0" id="7a2u8aS$j0A" role="1M9qTN">
+            <property role="jnuH1" value="descriptionline" />
+          </node>
+        </node>
+        <node concept="1M9qTG" id="7a2u8aS$j0B" role="1Mb3aa">
+          <node concept="jnuH0" id="7a2u8aS$j0D" role="1M9qTN">
+            <property role="jnuH1" value="sequencelines" />
+          </node>
+        </node>
+        <node concept="1M9qTG" id="7a2u8aS$j0E" role="1Mb3aa">
+          <node concept="jnuH0" id="7a2u8aS$j0G" role="1M9qTN">
+            <property role="jnuH1" value="commentline" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1Mb3fr" id="7a2u8aS$j0H" role="1Mb3fo">
+      <property role="TrG5h" value="sequencelines" />
+      <node concept="1Mb3ex" id="7a2u8aS$j0I" role="1Mb3eB">
+        <node concept="1M9qTG" id="7a2u8aS$j0K" role="1Mb3aa">
+          <node concept="jnuH0" id="7a2u8aS$j0L" role="1M9qTN">
+            <property role="jnuH1" value="SEQUENCELINE" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1Mb3fr" id="7a2u8aS$j0M" role="1Mb3fo">
+      <property role="TrG5h" value="descriptionline" />
+      <node concept="1Mb3ex" id="7a2u8aS$j0N" role="1Mb3eB">
+        <node concept="1M9qTG" id="7a2u8aS$j0P" role="1Mb3aa">
+          <node concept="jnuH0" id="7a2u8aS$j0Q" role="1M9qTN">
+            <property role="jnuH1" value="DESCRIPTIONLINE" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

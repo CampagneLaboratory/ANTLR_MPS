@@ -146,5 +146,24 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1UUTzwdTiBS">
+    <property role="TrG5h" value="Parentheses" />
+    <property role="34LRSv" value="(" />
+    <ref role="1TJDcQ" node="6cuUYchcHx3" resolve="RuleRHS" />
+    <node concept="1TJgyj" id="1UUTzwdTiCf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6cuUYchcHx6" resolve="Sequence" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1UUTzwdTKPS">
+    <property role="TrG5h" value="RuleRefByName" />
+    <ref role="1TJDcQ" node="6cuUYchcHx3" resolve="RuleRHS" />
+    <node concept="1TJgyi" id="1UUTzwdTKPT" role="1TKVEl">
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 
