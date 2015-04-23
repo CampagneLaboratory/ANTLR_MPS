@@ -7,7 +7,6 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.openapi.editor.style.Style;
@@ -25,21 +24,22 @@ public class Alternatives_Editor extends DefaultNodeEditor {
     return this.createCollection_jzznw3_a(editorContext, node);
   }
   private EditorCell createCollection_jzznw3_a(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
     editorCell.setCellId("Collection_jzznw3_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createConstant_jzznw3_a0(editorContext, node));
-    editorCell.addEditorCell(this.createRefNodeList_jzznw3_b0(editorContext, node));
+    editorCell.setGridLayout(true);
+    editorCell.addEditorCell(this.createCollection_jzznw3_a0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_jzznw3_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_jzznw3_a0");
-    editorCell.setDefaultText("");
+  private EditorCell createCollection_jzznw3_a0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
+    editorCell.setCellId("Collection_jzznw3_a0");
+    editorCell.setGridLayout(true);
+    editorCell.addEditorCell(this.createRefNodeList_jzznw3_a0a(editorContext, node));
     return editorCell;
   }
-  private EditorCell createRefNodeList_jzznw3_b0(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Alternatives_Editor.oneOfListHandler_jzznw3_b0(node, "oneOf", editorContext);
+  private EditorCell createRefNodeList_jzznw3_a0a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Alternatives_Editor.oneOfListHandler_jzznw3_a0a(node, "oneOf", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_oneOf");
     Style style = new StyleImpl();
@@ -50,8 +50,8 @@ public class Alternatives_Editor extends DefaultNodeEditor {
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class oneOfListHandler_jzznw3_b0 extends RefNodeListHandler {
-    public oneOfListHandler_jzznw3_b0(SNode ownerNode, String childRole, EditorContext context) {
+  private static class oneOfListHandler_jzznw3_a0a extends RefNodeListHandler {
+    public oneOfListHandler_jzznw3_a0a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {

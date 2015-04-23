@@ -23,6 +23,7 @@
         <reference id="7142405419534834023" name="rule" index="1Mb3a4" />
       </concept>
       <concept id="7142405419534833731" name="org.campagnelab.ANTLR.structure.RuleRHS" flags="ng" index="1Mb3ew">
+        <property id="8251289970134202837" name="plus" index="3a5s5n" />
         <property id="7142405419535450695" name="acceptMultiple" index="1M8EA$" />
         <property id="7142405419535450693" name="isOptional" index="1M8EAA" />
       </concept>
@@ -108,51 +109,53 @@
         </node>
       </node>
     </node>
-    <node concept="1Mb3fr" id="7a2u8aS$j0r" role="1Mb3fo">
+    <node concept="1Mb3fr" id="7a2u8aSAly4" role="1Mb3fo">
       <property role="TrG5h" value="sequence" />
-      <node concept="1Mb3ex" id="7a2u8aS$j0s" role="1Mb3eB">
-        <node concept="1M9qTG" id="7a2u8aS$j0u" role="1Mb3aa">
-          <node concept="jnuH0" id="7a2u8aS$j0w" role="1M9qTN">
+      <node concept="1Mb3ex" id="7a2u8aSAly5" role="1Mb3eB">
+        <node concept="1M9qTG" id="7a2u8aSAly7" role="1Mb3aa">
+          <node concept="jnuH0" id="7a2u8aSAly9" role="1M9qTN">
             <property role="jnuH1" value="section" />
+            <property role="3a5s5n" value="true" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="1Mb3fr" id="7a2u8aS$j0x" role="1Mb3fo">
+    <node concept="1Mb3fr" id="7a2u8aSAlya" role="1Mb3fo">
       <property role="TrG5h" value="section" />
-      <node concept="1Mb3ex" id="7a2u8aS$j0y" role="1Mb3eB">
-        <node concept="1M9qTG" id="7a2u8aS$j0$" role="1Mb3aa">
-          <node concept="jnuH0" id="7a2u8aS$j0A" role="1M9qTN">
+      <node concept="1Mb3ex" id="7a2u8aSAlyb" role="1Mb3eB">
+        <node concept="1M9qTG" id="7a2u8aSAlyd" role="1Mb3aa">
+          <node concept="jnuH0" id="7a2u8aSAlyf" role="1M9qTN">
             <property role="jnuH1" value="descriptionline" />
           </node>
         </node>
-        <node concept="1M9qTG" id="7a2u8aS$j0B" role="1Mb3aa">
-          <node concept="jnuH0" id="7a2u8aS$j0D" role="1M9qTN">
+        <node concept="1M9qTG" id="7a2u8aSAlyg" role="1Mb3aa">
+          <node concept="jnuH0" id="7a2u8aSAlyi" role="1M9qTN">
             <property role="jnuH1" value="sequencelines" />
           </node>
         </node>
-        <node concept="1M9qTG" id="7a2u8aS$j0E" role="1Mb3aa">
-          <node concept="jnuH0" id="7a2u8aS$j0G" role="1M9qTN">
+        <node concept="1M9qTG" id="7a2u8aSAlyj" role="1Mb3aa">
+          <node concept="jnuH0" id="7a2u8aSAlyl" role="1M9qTN">
             <property role="jnuH1" value="commentline" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="1Mb3fr" id="7a2u8aS$j0H" role="1Mb3fo">
+    <node concept="1Mb3fr" id="7a2u8aSAlym" role="1Mb3fo">
       <property role="TrG5h" value="sequencelines" />
-      <node concept="1Mb3ex" id="7a2u8aS$j0I" role="1Mb3eB">
-        <node concept="1M9qTG" id="7a2u8aS$j0K" role="1Mb3aa">
-          <node concept="jnuH0" id="7a2u8aS$j0L" role="1M9qTN">
+      <node concept="1Mb3ex" id="7a2u8aSAlyn" role="1Mb3eB">
+        <node concept="1M9qTG" id="7a2u8aSAlyp" role="1Mb3aa">
+          <node concept="jnuH0" id="7a2u8aSAlyq" role="1M9qTN">
             <property role="jnuH1" value="SEQUENCELINE" />
+            <property role="3a5s5n" value="true" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="1Mb3fr" id="7a2u8aS$j0M" role="1Mb3fo">
+    <node concept="1Mb3fr" id="7a2u8aSAlyr" role="1Mb3fo">
       <property role="TrG5h" value="descriptionline" />
-      <node concept="1Mb3ex" id="7a2u8aS$j0N" role="1Mb3eB">
-        <node concept="1M9qTG" id="7a2u8aS$j0P" role="1Mb3aa">
-          <node concept="jnuH0" id="7a2u8aS$j0Q" role="1M9qTN">
+      <node concept="1Mb3ex" id="7a2u8aSAlys" role="1Mb3eB">
+        <node concept="1M9qTG" id="7a2u8aSAlyu" role="1Mb3aa">
+          <node concept="jnuH0" id="7a2u8aSAlyv" role="1M9qTN">
             <property role="jnuH1" value="DESCRIPTIONLINE" />
           </node>
         </node>

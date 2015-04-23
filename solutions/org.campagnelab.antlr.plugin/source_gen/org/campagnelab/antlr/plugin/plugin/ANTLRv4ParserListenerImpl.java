@@ -262,6 +262,19 @@ public class ANTLRv4ParserListenerImpl implements ANTLRv4ParserListener {
     if (context.atom() != null) {
       currentElement = createRef(context.atom().getText());
     }
+    if (currentElement != null && context.ebnfSuffix() != null) {
+      String question = context.ebnfSuffix().getText();
+      if ("?".equals(question)) {
+        SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional"), "" + (true));
+      }
+      if ("+".equals(question)) {
+        SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x72827882b897b9d5L, "plus"), "" + (true));
+      }
+      if ("*".equals(question)) {
+        SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple"), "" + (true));
+      }
+
+    }
   }
   public void enterLabeledElement(@NotNull ANTLRv4Parser.LabeledElementContext context) {
   }
