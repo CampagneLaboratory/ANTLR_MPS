@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/org.campagnelab.ANTLR.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Playground/Playground.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/org.campagnelab.antlr.plugin.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
