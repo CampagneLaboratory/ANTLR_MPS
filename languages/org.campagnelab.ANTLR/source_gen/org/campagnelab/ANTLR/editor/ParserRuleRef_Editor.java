@@ -14,27 +14,27 @@ import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 
-public class RuleRef_Editor extends DefaultNodeEditor {
+public class ParserRuleRef_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_kz8j22_a(editorContext, node);
+    return this.createCollection_o9erne_a(editorContext, node);
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return this.createComponent_kz8j22_a(editorContext, node);
+    return this.createComponent_o9erne_a(editorContext, node);
   }
-  private EditorCell createCollection_kz8j22_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_o9erne_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createHorizontal(editorContext, node);
-    editorCell.setCellId("Collection_kz8j22_a");
+    editorCell.setCellId("Collection_o9erne_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createRefCell_kz8j22_a0(editorContext, node));
-    editorCell.addEditorCell(this.createComponent_kz8j22_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_o9erne_a0(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_o9erne_b0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createRefCell_kz8j22_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_o9erne_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("rule");
     provider.setNoTargetText("<no rule>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new RuleRef_Editor._Inline_kz8j22_a0a());
+    provider.setAuxiliaryCellProvider(new ParserRuleRef_Editor._Inline_o9erne_a0a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
@@ -49,17 +49,17 @@ public class RuleRef_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  public static class _Inline_kz8j22_a0a extends InlineCellProvider {
-    public _Inline_kz8j22_a0a() {
+  public static class _Inline_o9erne_a0a extends InlineCellProvider {
+    public _Inline_o9erne_a0a() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_kz8j22_a0a0(editorContext, node);
+      return this.createProperty_o9erne_a0a0(editorContext, node);
     }
-    private EditorCell createProperty_kz8j22_a0a0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_o9erne_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -77,11 +77,11 @@ public class RuleRef_Editor extends DefaultNodeEditor {
       return editorCell;
     }
   }
-  private EditorCell createComponent_kz8j22_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createComponent_o9erne_b0(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.ANTLR.editor.OptionalParamEditor");
     return editorCell;
   }
-  private EditorCell createComponent_kz8j22_a(EditorContext editorContext, SNode node) {
+  private EditorCell createComponent_o9erne_a(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.ANTLR.editor.RHSEditor");
     EditorCell bigCell = BigCellUtil.findBigCell(editorCell, node);
     if (bigCell != null) {

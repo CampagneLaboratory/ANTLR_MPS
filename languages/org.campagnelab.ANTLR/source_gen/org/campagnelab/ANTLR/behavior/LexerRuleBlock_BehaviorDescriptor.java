@@ -4,11 +4,11 @@ package org.campagnelab.ANTLR.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 
-public abstract class RuleRHS_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
-  public RuleRHS_BehaviorDescriptor() {
+public class LexerRuleBlock_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
+  public LexerRuleBlock_BehaviorDescriptor() {
   }
   @Override
   public String getConceptFqName() {
-    return "org.campagnelab.ANTLR.structure.RuleRHS";
+    return "org.campagnelab.ANTLR.structure.LexerRuleBlock";
   }
 }

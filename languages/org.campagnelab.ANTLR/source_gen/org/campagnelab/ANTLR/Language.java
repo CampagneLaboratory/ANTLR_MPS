@@ -12,6 +12,7 @@ import jetbrains.mps.smodel.runtime.LanguageAspectDescriptor;
 import jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor;
 import jetbrains.mps.actions.descriptor.AbstractActionAspectDescriptor;
 import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
+import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import org.campagnelab.ANTLR.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
@@ -48,6 +49,9 @@ public class Language extends LanguageRuntime {
     }
     if (descriptorClass == BehaviorAspectDescriptor.class) {
       return (T) new org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor();
+    }
+    if (descriptorClass == ConstraintsAspectDescriptor.class) {
+      return (T) new org.campagnelab.ANTLR.constraints.ConstraintsAspectDescriptor();
     }
     if (descriptorClass == EditorAspectDescriptor.class) {
       return (T) new EditorAspectDescriptorImpl();

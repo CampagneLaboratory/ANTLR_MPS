@@ -15,9 +15,8 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.antlr.v4.runtime.tree.TerminalNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.internal.collections.runtime.ISelector;
-import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.ParserRuleContext;
+import org.antlr.v4.runtime.tree.ErrorNode;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
@@ -84,41 +83,27 @@ public class ANTLRv4ParserListenerImpl implements ANTLRv4ParserListener {
   /*package*/ SNode rule;
 
   public void enterParserRuleSpec(@NotNull ANTLRv4Parser.ParserRuleSpecContext context) {
+    newRule();
+  }
+  private void newRule() {
     rule = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d838L, "org.campagnelab.ANTLR.structure.Rule")));
     ListSequence.fromList(refs).clear();
   }
   public void exitParserRuleSpec(@NotNull ANTLRv4Parser.ParserRuleSpecContext context) {
+    TerminalNode node = context.RULE_REF();
+    String name = (node == null ? "no-name" : node.getText());
+
+    appendNewRule(name);
+
+  }
+  private void appendNewRule(String ruleName) {
     if (rule != null) {
-      TerminalNode node = context.RULE_REF();
-      String name;
+      SPropertyOperations.set(rule, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), ruleName);
 
-      if (node == null) {
-        name = "<no-name>";
-      } else {
-        name = node.getText();
-      }
-      SPropertyOperations.set(rule, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), name);
-
-      /*
-        SNode alts = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, "org.campagnelab.ANTLR.structure.Alternatives")));
-        ListSequence.fromList(SLinkOperations.getChildren(alts, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, 0x631eebe31132d969L, "oneOf"))).clear();
-        ListSequence.fromList(SLinkOperations.getChildren(alts, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, 0x631eebe31132d969L, "oneOf"))).addSequence(ListSequence.fromList(refs).select(new ISelector<SNode, SNode>() {
-          public SNode select(SNode it) {
-            SNode alt = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative")));
-            SLinkOperations.setTarget(alt, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x631eebe3113b4590L, "rhs"), it);
-            return alt;
-          }
-        }));
-        refs.clear();
-      */
       SLinkOperations.setTarget(rule, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d838L, 0x631eebe31132d844L, "rhs"), alternatives);
       alternatives = null;
       ListSequence.fromList(rules).addElement(rule);
-      if (LOG.isInfoEnabled()) {
-        LOG.info("exitParserRuleSpec " + context.getText());
-      }
     }
-
   }
   public void enterExceptionGroup(@NotNull ANTLRv4Parser.ExceptionGroupContext context) {
   }
@@ -179,8 +164,11 @@ public class ANTLRv4ParserListenerImpl implements ANTLRv4ParserListener {
   public void exitLabeledAlt(@NotNull ANTLRv4Parser.LabeledAltContext context) {
   }
   public void enterLexerRule(@NotNull ANTLRv4Parser.LexerRuleContext context) {
+    newRule();
   }
   public void exitLexerRule(@NotNull ANTLRv4Parser.LexerRuleContext context) {
+    String name = (context.TOKEN_REF() == null ? "no-name" : context.TOKEN_REF().getText());
+    appendNewRule(name);
   }
   public void enterLexerRuleBlock(@NotNull ANTLRv4Parser.LexerRuleBlockContext context) {
   }
@@ -193,9 +181,10 @@ public class ANTLRv4ParserListenerImpl implements ANTLRv4ParserListener {
   }
   /*package*/ SNode currentRHS;
   public void exitLexerAltList(@NotNull ANTLRv4Parser.LexerAltListContext context) {
-    currentRHS = alternatives;
+
   }
   /*package*/ SNode alt;
+
   public void enterLexerAlt(@NotNull ANTLRv4Parser.LexerAltContext context) {
     alt = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative")));
   }
@@ -204,17 +193,31 @@ public class ANTLRv4ParserListenerImpl implements ANTLRv4ParserListener {
     SPropertyOperations.set(refByName, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x1ebae6380de70d78L, 0x1ebae6380de70d79L, "name"), name);
     return refByName;
   }
+  public SNode createLiteral(String value) {
+    SNode literal = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, "org.campagnelab.ANTLR.structure.StringLiteral")));
+    SPropertyOperations.set(literal, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, 0x631eebe3113e6580L, "literal"), value);
+    return literal;
+  }
   public void exitLexerAlt(@NotNull ANTLRv4Parser.LexerAltContext context) {
     SLinkOperations.setTarget(alt, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x631eebe3113b4590L, "rhs"), createRef(context.getText()));
     ListSequence.fromList(SLinkOperations.getChildren(alternatives, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, 0x631eebe31132d969L, "oneOf"))).addElement(alt);
   }
+  /*package*/ SNode sequence;
   public void enterLexerElements(@NotNull ANTLRv4Parser.LexerElementsContext context) {
+    sequence = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d846L, "org.campagnelab.ANTLR.structure.Sequence")));
   }
   public void exitLexerElements(@NotNull ANTLRv4Parser.LexerElementsContext context) {
   }
   public void enterLexerElement(@NotNull ANTLRv4Parser.LexerElementContext context) {
+    currentElement = null;
   }
   public void exitLexerElement(@NotNull ANTLRv4Parser.LexerElementContext context) {
+    if (currentElement != null) {
+      ANTLRv4Parser.LexerAtomContext atom = context.lexerAtom();
+      if (atom.RULE_REF() instanceof ANTLRv4Parser.TerminalContext) {
+        ListSequence.fromList(SLinkOperations.getChildren(sequence, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d846L, 0x631eebe31132d96bL, "of"))).addElement(createLiteral(atom.getText()));
+      }
+    }
   }
   public void enterLabeledLexerElement(@NotNull ANTLRv4Parser.LabeledLexerElementContext context) {
   }
@@ -239,6 +242,9 @@ public class ANTLRv4ParserListenerImpl implements ANTLRv4ParserListener {
   public void enterLexerCommandExpr(@NotNull ANTLRv4Parser.LexerCommandExprContext context) {
   }
   public void exitLexerCommandExpr(@NotNull ANTLRv4Parser.LexerCommandExprContext context) {
+    if (LOG.isInfoEnabled()) {
+      LOG.info("exitLexerCommandExpr " + context.toStringTree());
+    }
   }
   public void enterAltList(@NotNull ANTLRv4Parser.AltListContext context) {
   }
@@ -257,13 +263,22 @@ public class ANTLRv4ParserListenerImpl implements ANTLRv4ParserListener {
   }
   /*package*/ SNode currentElement;
   public void enterElement(@NotNull ANTLRv4Parser.ElementContext context) {
+    currentElement = null;
   }
   public void exitElement(@NotNull ANTLRv4Parser.ElementContext context) {
     if (context.atom() != null) {
       currentElement = createRef(context.atom().getText());
+      if (LOG.isInfoEnabled()) {
+        LOG.info("saw Element: " + context.atom().getText());
+      }
     }
-    if (currentElement != null && context.ebnfSuffix() != null) {
-      String question = context.ebnfSuffix().getText();
+    if (currentElement != null) {
+      addOptionalParams(currentElement, context.ebnfSuffix());
+    }
+  }
+  private void addOptionalParams(SNode currentElement, ParserRuleContext context) {
+    if (currentElement != null && context != null) {
+      String question = context.getText();
       if ("?".equals(question)) {
         SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional"), "" + (true));
       }
@@ -335,6 +350,14 @@ public class ANTLRv4ParserListenerImpl implements ANTLRv4ParserListener {
   public void enterTerminal(@NotNull ANTLRv4Parser.TerminalContext context) {
   }
   public void exitTerminal(@NotNull ANTLRv4Parser.TerminalContext context) {
+    if (context.STRING_LITERAL() != null) {
+      if (LOG.isInfoEnabled()) {
+        LOG.info("exitTerminal " + context.STRING_LITERAL().getText());
+      }
+      currentElement = createLiteral(context.STRING_LITERAL().getText());
+    }
+    addOptionalParams(currentElement, context.elementOptions());
+
   }
   public void enterElementOptions(@NotNull ANTLRv4Parser.ElementOptionsContext context) {
   }

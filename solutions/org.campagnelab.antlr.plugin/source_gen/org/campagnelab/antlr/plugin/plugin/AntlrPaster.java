@@ -20,13 +20,14 @@ import org.antlr.v4.runtime.ANTLRInputStream;
 import java.io.StringReader;
 import org.antlr.ANTLRv4Parser;
 import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.tree.ParseTree;
-import org.antlr.v4.runtime.tree.ParseTreeWalker;
+import javax.print.PrintException;
+import org.apache.log4j.Level;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.apache.log4j.Level;
+import org.antlr.v4.runtime.tree.ParseTreeWalker;
 import jetbrains.mps.ide.datatransfer.SModelDataFlavor;
 
 public class AntlrPaster {
@@ -77,14 +78,31 @@ public class AntlrPaster {
     try {
       ANTLRv4Lexer lexer = new ANTLRv4Lexer(new ANTLRInputStream(new StringReader(antlrRulesAsText)));
       ANTLRv4Parser parser = new ANTLRv4Parser(new CommonTokenStream(lexer));
-      ParseTree tree = parser.rules();
-      ParseTreeWalker walker = new ParseTreeWalker();
-      // create standard walker 
-      ANTLRv4ParserListenerImpl extractor = new ANTLRv4ParserListenerImpl(parser);
-      walker.walk(extractor, tree);
+      ANTLRv4Parser.RulesContext tree = parser.rules();
+      // use the following to print types of nodes on the parse tree: 
+      try {
+        ((ANTLRv4Parser.RulesContext) tree).save(parser, "/Users/fac2003/IdeaProjects/git/grammars-v4/out-sdksjdksd22.ps");
+
+      } catch (PrintException e) {
+        if (LOG_308197374.isEnabledFor(Level.ERROR)) {
+          LOG_308197374.error("PrintException: ", e);
+        }
+      }
+
       // initiate walk of tree with listener 
       SNode grammar = SNodeOperations.getNodeAncestor(anchor, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"), true, false);
-      ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(extractor.getRules()));
+      boolean useVisitor = true;
+      if (useVisitor) {
+        AntlrRuleVisitor visitor = new AntlrRuleVisitor();
+        List<SNode> rules = (List<SNode>) visitor.visitRules(tree);
+        ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(rules));
+      } else {
+        ParseTreeWalker walker = new ParseTreeWalker();
+        // create standard walker 
+        ANTLRv4ParserListenerImpl extractor = new ANTLRv4ParserListenerImpl(parser);
+        walker.walk(extractor, tree);
+        ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(extractor.getRules()));
+      }
 
     } catch (IOException ioException) {
       if (LOG_308197374.isEnabledFor(Level.ERROR)) {

@@ -16,21 +16,21 @@ import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 
-public class Rule_Editor extends DefaultNodeEditor {
+public class ParserRule_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_z0m96w_a(editorContext, node);
+    return this.createCollection_npjry0_a(editorContext, node);
   }
-  private EditorCell createCollection_z0m96w_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_npjry0_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_z0m96w_a");
+    editorCell.setCellId("Collection_npjry0_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createProperty_z0m96w_a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_z0m96w_b0(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_z0m96w_c0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_z0m96w_d0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_npjry0_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_npjry0_b0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_npjry0_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_npjry0_d0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createProperty_z0m96w_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_npjry0_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("name");
     provider.setNoTargetText("<no name>");
@@ -46,23 +46,23 @@ public class Rule_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_z0m96w_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_npjry0_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ":");
-    editorCell.setCellId("Constant_z0m96w_b0");
+    editorCell.setCellId("Constant_npjry0_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCollection_z0m96w_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_npjry0_c0(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_z0m96w_c0");
+    editorCell.setCellId("Collection_npjry0_c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setGridLayout(true);
-    editorCell.addEditorCell(this.createRefNode_z0m96w_a2a(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_npjry0_a2a(editorContext, node));
     return editorCell;
   }
-  private EditorCell createRefNode_z0m96w_a2a(EditorContext editorContext, SNode node) {
+  private EditorCell createRefNode_npjry0_a2a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
     provider.setRole("rhs");
     provider.setNoTargetText("<no rhs>");
@@ -84,9 +84,9 @@ public class Rule_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_z0m96w_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_npjry0_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
-    editorCell.setCellId("Constant_z0m96w_d0");
+    editorCell.setCellId("Constant_npjry0_d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);

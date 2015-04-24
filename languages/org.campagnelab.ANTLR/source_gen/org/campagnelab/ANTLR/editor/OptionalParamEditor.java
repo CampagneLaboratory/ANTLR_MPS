@@ -33,21 +33,21 @@ public class OptionalParamEditor implements ConceptEditorComponent {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_n507rx_a");
     editorCell.addKeyMap(new MultiplicityKeyMap());
-    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPartExt[]{new OptionalParamEditor.RuleRHS_generic_cellMenu_n507rx_a0a(), new OptionalParamEditor.RuleRHS_generic_cellMenu_n507rx_b0a()}));
-    if (renderingCondition_n507rx_a0a(node, editorContext)) {
-      editorCell.addEditorCell(this.createConstant_n507rx_a0(editorContext, node));
-    }
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPartExt[]{new OptionalParamEditor.ParserRuleBlock_generic_cellMenu_n507rx_a0a(), new OptionalParamEditor.ParserRuleBlock_generic_cellMenu_n507rx_b0a()}));
+    editorCell.addEditorCell(this.createConstant_n507rx_a0(editorContext, node));
     if (renderingCondition_n507rx_a1a(node, editorContext)) {
       editorCell.addEditorCell(this.createConstant_n507rx_b0(editorContext, node));
     }
     if (renderingCondition_n507rx_a2a(node, editorContext)) {
       editorCell.addEditorCell(this.createConstant_n507rx_c0(editorContext, node));
     }
-    editorCell.addEditorCell(this.createConstant_n507rx_d0(editorContext, node));
+    if (renderingCondition_n507rx_a3a(node, editorContext)) {
+      editorCell.addEditorCell(this.createConstant_n507rx_d0(editorContext, node));
+    }
     return editorCell;
   }
-  public static class RuleRHS_generic_cellMenu_n507rx_a0a extends AbstractCellMenuPart_Generic_Item {
-    public RuleRHS_generic_cellMenu_n507rx_a0a() {
+  public static class ParserRuleBlock_generic_cellMenu_n507rx_a0a extends AbstractCellMenuPart_Generic_Item {
+    public ParserRuleBlock_generic_cellMenu_n507rx_a0a() {
     }
     public void handleAction(SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
       SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional"), "" + (true));
@@ -57,8 +57,8 @@ public class OptionalParamEditor implements ConceptEditorComponent {
       return "?";
     }
   }
-  public static class RuleRHS_generic_cellMenu_n507rx_b0a extends AbstractCellMenuPart_Generic_Item {
-    public RuleRHS_generic_cellMenu_n507rx_b0a() {
+  public static class ParserRuleBlock_generic_cellMenu_n507rx_b0a extends AbstractCellMenuPart_Generic_Item {
+    public ParserRuleBlock_generic_cellMenu_n507rx_b0a() {
     }
     public void handleAction(SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
       SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple"), "" + (true));
@@ -69,19 +69,54 @@ public class OptionalParamEditor implements ConceptEditorComponent {
     }
   }
   private EditorCell createConstant_n507rx_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "?");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
     editorCell.setCellId("Constant_n507rx_a0");
     Style style = new StyleImpl();
+    style.set(StyleAttributes.EDITABLE, 0, true);
     style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPartExt[]{new OptionalParamEditor.ParserRuleBlock_generic_cellMenu_n507rx_a0a0(), new OptionalParamEditor.ParserRuleBlock_generic_cellMenu_n507rx_b0a0(), new OptionalParamEditor.ParserRuleBlock_generic_cellMenu_n507rx_c0a0()}));
     return editorCell;
   }
-  private static boolean renderingCondition_n507rx_a0a(SNode node, EditorContext editorContext) {
-    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional"));
+  public static class ParserRuleBlock_generic_cellMenu_n507rx_a0a0 extends AbstractCellMenuPart_Generic_Item {
+    public ParserRuleBlock_generic_cellMenu_n507rx_a0a0() {
+    }
+    public void handleAction(SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional"), "" + (true));
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple"), "" + (false));
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x72827882b897b9d5L, "plus"), "" + (false));
+    }
+    public String getMatchingText() {
+      return "?";
+    }
+  }
+  public static class ParserRuleBlock_generic_cellMenu_n507rx_b0a0 extends AbstractCellMenuPart_Generic_Item {
+    public ParserRuleBlock_generic_cellMenu_n507rx_b0a0() {
+    }
+    public void handleAction(SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple"), "" + (true));
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional"), "" + (false));
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x72827882b897b9d5L, "plus"), "" + (false));
+    }
+    public String getMatchingText() {
+      return "*";
+    }
+  }
+  public static class ParserRuleBlock_generic_cellMenu_n507rx_c0a0 extends AbstractCellMenuPart_Generic_Item {
+    public ParserRuleBlock_generic_cellMenu_n507rx_c0a0() {
+    }
+    public void handleAction(SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x72827882b897b9d5L, "plus"), "" + (true));
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional"), "" + (false));
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple"), "" + (false));
+    }
+    public String getMatchingText() {
+      return "+";
+    }
   }
   private EditorCell createConstant_n507rx_b0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "*");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "?");
     editorCell.setCellId("Constant_n507rx_b0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
@@ -90,10 +125,10 @@ public class OptionalParamEditor implements ConceptEditorComponent {
     return editorCell;
   }
   private static boolean renderingCondition_n507rx_a1a(SNode node, EditorContext editorContext) {
-    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple"));
+    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional"));
   }
   private EditorCell createConstant_n507rx_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "+");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "*");
     editorCell.setCellId("Constant_n507rx_c0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
@@ -102,36 +137,18 @@ public class OptionalParamEditor implements ConceptEditorComponent {
     return editorCell;
   }
   private static boolean renderingCondition_n507rx_a2a(SNode node, EditorContext editorContext) {
-    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x72827882b897b9d5L, "plus"));
+    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple"));
   }
   private EditorCell createConstant_n507rx_d0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "+");
     editorCell.setCellId("Constant_n507rx_d0");
-    editorCell.addKeyMap(new MultiplicityKeyMap());
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
-    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPartExt[]{new OptionalParamEditor.RuleRHS_generic_cellMenu_n507rx_a0d0(), new OptionalParamEditor.RuleRHS_generic_cellMenu_n507rx_b0d0()}));
     return editorCell;
   }
-  public static class RuleRHS_generic_cellMenu_n507rx_a0d0 extends AbstractCellMenuPart_Generic_Item {
-    public RuleRHS_generic_cellMenu_n507rx_a0d0() {
-    }
-    public void handleAction(SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
-      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional"), "" + (true));
-      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple"), "" + (false));
-    }
-    public String getMatchingText() {
-      return "?";
-    }
-  }
-  public static class RuleRHS_generic_cellMenu_n507rx_b0d0 extends AbstractCellMenuPart_Generic_Item {
-    public RuleRHS_generic_cellMenu_n507rx_b0d0() {
-    }
-    public void handleAction(SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
-      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple"), "" + (true));
-      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional"), "" + (false));
-    }
-    public String getMatchingText() {
-      return "*";
-    }
+  private static boolean renderingCondition_n507rx_a3a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x72827882b897b9d5L, "plus"));
   }
 }

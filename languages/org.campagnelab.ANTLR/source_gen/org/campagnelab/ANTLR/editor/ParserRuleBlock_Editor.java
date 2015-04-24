@@ -13,14 +13,14 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 
-public class RuleRHS_Editor extends DefaultNodeEditor {
+public class ParserRuleBlock_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createComponent_30n7hh_a(editorContext, node);
+    return this.createComponent_47u5j1_a(editorContext, node);
   }
   public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_30n7hh_a(editorContext, node);
+    return this.createCollection_47u5j1_a(editorContext, node);
   }
-  private EditorCell createComponent_30n7hh_a(EditorContext editorContext, SNode node) {
+  private EditorCell createComponent_47u5j1_a(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "jetbrains.mps.lang.core.editor.alias");
     EditorCell bigCell = BigCellUtil.findBigCell(editorCell, node);
     if (bigCell != null) {
@@ -28,25 +28,25 @@ public class RuleRHS_Editor extends DefaultNodeEditor {
     }
     return editorCell;
   }
-  private EditorCell createCollection_30n7hh_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_47u5j1_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_30n7hh_a");
+    editorCell.setCellId("Collection_47u5j1_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createConstant_30n7hh_a0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_30n7hh_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_30n7hh_c0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_30n7hh_d0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_30n7hh_e0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_30n7hh_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_47u5j1_a0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_47u5j1_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_47u5j1_c0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_47u5j1_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_47u5j1_e0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_47u5j1_f0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_30n7hh_a0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_47u5j1_a0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "optional:");
-    editorCell.setCellId("Constant_30n7hh_a0");
+    editorCell.setCellId("Constant_47u5j1_a0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_30n7hh_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_47u5j1_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("isOptional");
     provider.setNoTargetText("<no isOptional>");
@@ -62,13 +62,13 @@ public class RuleRHS_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_30n7hh_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_47u5j1_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "accept multiple:");
-    editorCell.setCellId("Constant_30n7hh_c0");
+    editorCell.setCellId("Constant_47u5j1_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_30n7hh_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_47u5j1_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("acceptMultiple");
     provider.setNoTargetText("<no acceptMultiple>");
@@ -84,13 +84,13 @@ public class RuleRHS_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_30n7hh_e0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_47u5j1_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "plus:");
-    editorCell.setCellId("Constant_30n7hh_e0");
+    editorCell.setCellId("Constant_47u5j1_e0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_30n7hh_f0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_47u5j1_f0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("plus");
     provider.setNoTargetText("<no plus>");

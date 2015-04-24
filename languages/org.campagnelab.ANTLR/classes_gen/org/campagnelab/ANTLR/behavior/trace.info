@@ -10,10 +10,25 @@
       <unit at="6,0,14,0" name="org.campagnelab.ANTLR.behavior.Alternatives_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,40,0" name="org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,50,0" name="org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="Dot_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.ANTLR.behavior.Dot_BehaviorDescriptor" />
     </file>
     <file name="Grammar_BehaviorDescriptor.java">
       <unit at="10,0,21,0" name="org.campagnelab.ANTLR.behavior.Grammar_BehaviorDescriptor" />
+    </file>
+    <file name="LexerAlternative_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.ANTLR.behavior.LexerAlternative_BehaviorDescriptor" />
+    </file>
+    <file name="LexerRuleBlock_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.ANTLR.behavior.LexerRuleBlock_BehaviorDescriptor" />
+    </file>
+    <file name="LexerRuleRef_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.ANTLR.behavior.LexerRuleRef_BehaviorDescriptor" />
+    </file>
+    <file name="LexerRule_BehaviorDescriptor.java">
+      <unit at="9,0,20,0" name="org.campagnelab.ANTLR.behavior.LexerRule_BehaviorDescriptor" />
     </file>
     <file name="LexerToken_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.ANTLR.behavior.LexerToken_BehaviorDescriptor" />
@@ -21,20 +36,23 @@
     <file name="Parentheses_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.ANTLR.behavior.Parentheses_BehaviorDescriptor" />
     </file>
+    <file name="ParserRuleBlock_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.ANTLR.behavior.ParserRuleBlock_BehaviorDescriptor" />
+    </file>
+    <file name="ParserRuleRef_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.ANTLR.behavior.ParserRuleRef_BehaviorDescriptor" />
+    </file>
+    <file name="ParserRule_BehaviorDescriptor.java">
+      <unit at="9,0,20,0" name="org.campagnelab.ANTLR.behavior.ParserRule_BehaviorDescriptor" />
+    </file>
     <file name="REGEXP_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.ANTLR.behavior.REGEXP_BehaviorDescriptor" />
-    </file>
-    <file name="RuleRHS_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.ANTLR.behavior.RuleRHS_BehaviorDescriptor" />
     </file>
     <file name="RuleRefByName_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.ANTLR.behavior.RuleRefByName_BehaviorDescriptor" />
     </file>
-    <file name="RuleRef_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.ANTLR.behavior.RuleRef_BehaviorDescriptor" />
-    </file>
     <file name="Rule_BehaviorDescriptor.java">
-      <unit at="10,0,21,0" name="org.campagnelab.ANTLR.behavior.Rule_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.ANTLR.behavior.Rule_BehaviorDescriptor" />
     </file>
     <file name="Sequence_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.ANTLR.behavior.Sequence_BehaviorDescriptor" />

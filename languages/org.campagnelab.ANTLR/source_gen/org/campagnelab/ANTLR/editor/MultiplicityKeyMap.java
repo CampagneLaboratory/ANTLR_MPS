@@ -19,16 +19,18 @@ public class MultiplicityKeyMap extends KeyMapImpl {
     this.setApplicableToEveryModel(true);
     KeyMapAction action;
     action = new MultiplicityKeyMap.MultiplicityKeyMap_Action0();
-    this.putAction("none", "?", action);
+    this.putAction("any", "?", action);
     action = new MultiplicityKeyMap.MultiplicityKeyMap_Action1();
     this.putAction("any", "+", action);
+    action = new MultiplicityKeyMap.MultiplicityKeyMap_Action2();
+    this.putAction("any", "*", action);
   }
   public static class MultiplicityKeyMap_Action0 extends KeyMapActionImpl {
     public MultiplicityKeyMap_Action0() {
       this.setShownInPopupMenu(true);
     }
     public String getDescriptionText() {
-      return "Set ? Optional";
+      return "Set ?";
     }
     public boolean isMenuAlwaysShown() {
       return false;
@@ -42,7 +44,7 @@ public class MultiplicityKeyMap extends KeyMapImpl {
       if (contextNode == null) {
         return false;
       }
-      if (!(SNodeUtil.isInstanceOf(contextNode, SConceptRepository.getInstance().getConcept("org.campagnelab.ANTLR.structure.RuleRHS")))) {
+      if (!(SNodeUtil.isInstanceOf(contextNode, SConceptRepository.getInstance().getConcept("org.campagnelab.ANTLR.structure.ParserRuleBlock")))) {
         return false;
       }
       return this.canExecute_internal(editorContext, contextNode, this.getSelectedNodes(editorContext));
@@ -61,12 +63,15 @@ public class MultiplicityKeyMap extends KeyMapImpl {
 
     }
     public String getKeyStroke() {
-      return "none ?";
+      return "any ?";
     }
   }
   public static class MultiplicityKeyMap_Action1 extends KeyMapActionImpl {
     public MultiplicityKeyMap_Action1() {
       this.setShownInPopupMenu(true);
+    }
+    public String getDescriptionText() {
+      return "Set +";
     }
     public boolean isMenuAlwaysShown() {
       return false;
@@ -80,7 +85,7 @@ public class MultiplicityKeyMap extends KeyMapImpl {
       if (contextNode == null) {
         return false;
       }
-      if (!(SNodeUtil.isInstanceOf(contextNode, SConceptRepository.getInstance().getConcept("org.campagnelab.ANTLR.structure.RuleRHS")))) {
+      if (!(SNodeUtil.isInstanceOf(contextNode, SConceptRepository.getInstance().getConcept("org.campagnelab.ANTLR.structure.ParserRuleBlock")))) {
         return false;
       }
       return this.canExecute_internal(editorContext, contextNode, this.getSelectedNodes(editorContext));
@@ -99,6 +104,46 @@ public class MultiplicityKeyMap extends KeyMapImpl {
     }
     public String getKeyStroke() {
       return " +";
+    }
+  }
+  public static class MultiplicityKeyMap_Action2 extends KeyMapActionImpl {
+    public MultiplicityKeyMap_Action2() {
+      this.setShownInPopupMenu(true);
+    }
+    public String getDescriptionText() {
+      return "Set *";
+    }
+    public boolean isMenuAlwaysShown() {
+      return false;
+    }
+    public boolean canExecute(final EditorContext editorContext) {
+      EditorCell contextCell = editorContext.getContextCell();
+      if ((contextCell == null)) {
+        return false;
+      }
+      SNode contextNode = contextCell.getSNode();
+      if (contextNode == null) {
+        return false;
+      }
+      if (!(SNodeUtil.isInstanceOf(contextNode, SConceptRepository.getInstance().getConcept("org.campagnelab.ANTLR.structure.ParserRuleBlock")))) {
+        return false;
+      }
+      return this.canExecute_internal(editorContext, contextNode, this.getSelectedNodes(editorContext));
+    }
+    public void execute(final EditorContext editorContext) {
+      EditorCell contextCell = editorContext.getContextCell();
+      this.execute_internal(editorContext, contextCell.getSNode(), this.getSelectedNodes(editorContext));
+    }
+    private boolean canExecute_internal(final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
+      return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple")) == false;
+    }
+    private void execute_internal(final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple"), "" + (true));
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional"), "" + (false));
+      SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x72827882b897b9d5L, "plus"), "" + (false));
+    }
+    public String getKeyStroke() {
+      return " *";
     }
   }
 }
