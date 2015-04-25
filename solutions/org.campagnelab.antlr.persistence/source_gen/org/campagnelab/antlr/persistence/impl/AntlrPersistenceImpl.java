@@ -21,6 +21,16 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.smodel.adapter.ids.MetaIdByDeclaration;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
+import java.io.InputStream;
+import org.antlr.ANTLRv4Lexer;
+import org.antlr.v4.runtime.ANTLRInputStream;
+import org.antlr.ANTLRv4Parser;
+import org.antlr.v4.runtime.CommonTokenStream;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.campagnelab.antlr.parsers.AntlrRuleVisitor;
+import java.util.List;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
 
@@ -74,7 +84,32 @@ public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
   }
   @Override
   public SModelData readModel(SModelReference reference, StreamDataSource source) throws IOException {
-    return null;
+    InputStream in = null;
+    try {
+      String name = reference.getModelName();
+      if (reference.getModelId() instanceof SModelId.RelativePathSModelId) {
+        name = FileUtil.getNameWithoutExtension(((SModelId.RelativePathSModelId) reference.getModelId()).getFileName());
+      }
+      in = source.openInputStream();
+      ANTLRv4Lexer lexer = new ANTLRv4Lexer(new ANTLRInputStream(in));
+      ANTLRv4Parser parser = new ANTLRv4Parser(new CommonTokenStream(lexer));
+      ANTLRv4Parser.RulesContext tree = parser.rules();
+      // initiate walk of tree with listener 
+      SNode grammar = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar")));
+      SPropertyOperations.set(grammar, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), name);
+      AntlrRuleVisitor visitor = new AntlrRuleVisitor();
+      List<SNode> rules = (List<SNode>) visitor.visitRules(tree);
+      ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(rules));
+
+      jetbrains.mps.smodel.SModel sModel = new jetbrains.mps.smodel.SModel(reference);
+      sModel.addLanguage(MetaIdByDeclaration.ref2Id(PersistenceFacade.getInstance().createModuleReference("d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)")), 0);
+      sModel.addRootNode(grammar);
+      return sModel;
+    } catch (IOException e) {
+      throw new IOException("cannot read " + source.getLocation(), e);
+    } finally {
+      FileUtil.closeFileSafe(in);
+    }
   }
   @Override
   public void writeModel(SModelData data, StreamDataSource source) throws IOException, ModelSaveException {
