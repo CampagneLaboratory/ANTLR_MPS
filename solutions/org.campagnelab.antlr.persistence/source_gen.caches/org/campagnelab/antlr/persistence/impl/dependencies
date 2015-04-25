@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="org.campagnelab.antlr.persistence.impl.AntlrPersistenceImpl" file="AntlrPersistenceImpl.java">
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.extapi.model.SModelData" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModel" />
+    <classNode dependClassName="jetbrains.mps.smodel.SModelId" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdByDeclaration" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.util.FileUtil" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SModelReference" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.DataSource" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.ModelSaveException" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.StreamDataSource" />
+    <classNode extendsClassName="jetbrains.mps.extapi.model.SModelPersistence" />
+    <classNode extendsClassName="org.jetbrains.mps.openapi.persistence.ModelFactory" />
+  </dependency>
+</dependenciesRoot>
+

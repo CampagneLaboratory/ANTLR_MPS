@@ -20,6 +20,7 @@
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="true">d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
+    <dependency reexport="false">176dfffc-c597-4a33-b2bd-8568fe22c863(org.campagnelab.antlr.parsers)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>28f9e497-3b42-4291-aeba-0a1039153ab1(jetbrains.mps.lang.plugin)</usedLanguage>

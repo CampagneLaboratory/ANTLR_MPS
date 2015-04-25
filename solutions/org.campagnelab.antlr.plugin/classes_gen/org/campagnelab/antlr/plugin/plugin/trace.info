@@ -1,808 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
   <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
-  <concept fqn="jetbrains.mps.baseLanguage.structure.BreakStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
-  <concept fqn="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
-  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
-  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
-  <concept fqn="jetbrains.mps.baseLanguage.structure.WhileStatement" />
-  <root nodeRef="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/2214335295230337887">
-    <file name="ANTLRv4ParserListenerImpl.java">
-      <node id="2214335295231971872" at="24,0,25,0" concept="4" trace="parser" />
-      <node id="2214335295230649600" at="26,0,27,0" concept="4" trace="rules" />
-      <node id="2214335295230673557" at="83,0,84,0" concept="4" trace="rule" />
-      <node id="8251289970135916013" at="85,89,86,14" concept="3" />
-      <node id="8251289970135915997" at="88,26,89,219" concept="3" />
-      <node id="8251289970135916003" at="89,219,90,40" concept="3" />
-      <node id="8251289970135755958" at="92,88,93,43" concept="8" />
-      <node id="8251289970135755964" at="93,43,94,62" concept="8" />
-      <node id="8251289970135755967" at="94,62,95,0" concept="11" />
-      <node id="8251289970135756027" at="95,0,96,24" concept="3" />
-      <node id="2214335295232528492" at="96,24,97,0" concept="11" />
-      <node id="8251289970135755985" at="100,23,101,160" concept="3" />
-      <node id="8251289970135755991" at="101,160,102,0" concept="11" />
-      <node id="8251289970135755992" at="102,0,103,182" concept="3" />
-      <node id="8251289970135755998" at="103,182,104,26" concept="3" />
-      <node id="8251289970135756002" at="104,26,105,52" concept="3" />
-      <node id="8251289970132993995" at="151,30,152,53" concept="3" />
-      <node id="8251289970133000903" at="158,30,159,55" concept="3" />
-      <node id="8251289970135931238" at="166,79,167,14" concept="3" />
-      <node id="8251289970135825765" at="169,78,170,92" concept="8" />
-      <node id="8251289970135825777" at="170,92,171,24" concept="3" />
-      <node id="8251289970132676472" at="177,0,178,0" concept="4" trace="alternatives" />
-      <node id="8251289970132699634" at="178,85,179,229" concept="3" />
-      <node id="8251289970132853946" at="179,229,180,186" concept="3" />
-      <node id="8251289970132794417" at="182,0,183,0" concept="4" trace="currentRHS" />
-      <node id="8251289970135259844" at="183,84,184,0" concept="11" />
-      <node id="8251289970132574024" at="186,0,187,0" concept="4" trace="alt" />
-      <node id="8251289970132608194" at="188,77,189,219" concept="3" />
-      <node id="8251289970133341701" at="191,39,192,233" concept="8" />
-      <node id="8251289970133342453" at="192,233,193,169" concept="3" />
-      <node id="8251289970133348322" at="193,169,194,21" concept="9" />
-      <node id="8251289970134787114" at="196,44,197,231" concept="8" />
-      <node id="8251289970134787120" at="197,231,198,171" concept="3" />
-      <node id="8251289970134787126" at="198,171,199,19" concept="9" />
-      <node id="8251289970133252715" at="201,76,202,195" concept="3" />
-      <node id="8251289970132707064" at="202,195,203,217" concept="3" />
-      <node id="8251289970136012738" at="205,0,206,0" concept="4" trace="sequence" />
-      <node id="8251289970136030036" at="206,87,207,221" concept="3" />
-      <node id="8251289970136090909" at="211,85,212,26" concept="3" />
-      <node id="8251289970136567813" at="215,33,216,64" concept="8" />
-      <node id="8251289970136597518" at="217,69,218,240" concept="3" />
-      <node id="8251289970134714803" at="245,30,246,65" concept="3" />
-      <node id="8251289970133420725" at="254,31,255,231" concept="3" />
-      <node id="8251289970133425157" at="255,231,256,188" concept="3" />
-      <node id="8251289970133024650" at="257,5,258,219" concept="3" />
-      <node id="8251289970133390819" at="260,82,261,181" concept="3" />
-      <node id="8251289970133390828" at="261,181,262,217" concept="3" />
-      <node id="8251289970133563246" at="264,0,265,0" concept="4" trace="currentElement" />
-      <node id="8251289970136440854" at="265,75,266,26" concept="3" />
-      <node id="8251289970133751634" at="269,33,270,59" concept="3" />
-      <node id="8251289970136147981" at="271,32,272,61" concept="3" />
-      <node id="8251289970135002206" at="275,33,276,62" concept="3" />
-      <node id="8251289970135084446" at="280,52,281,42" concept="8" />
-      <node id="8251289970135002144" at="282,33,283,191" concept="3" />
-      <node id="8251289970135002156" at="285,33,286,185" concept="3" />
-      <node id="8251289970135002168" at="288,33,289,195" concept="3" />
-      <node id="8251289970135002178" at="290,7,291,0" concept="11" />
-      <node id="8251289970133584326" at="297,33,298,59" concept="3" />
-      <node id="2214335295231810641" at="339,0,340,0" concept="4" trace="refs" />
-      <node id="2214335295232650590" at="341,74,342,231" concept="8" />
-      <node id="2214335295232650596" at="342,231,343,191" concept="3" />
-      <node id="2214335295232650606" at="343,191,344,52" concept="3" />
-      <node id="8251289970134909648" at="354,32,355,71" concept="3" />
-      <node id="8251289970134775186" at="356,7,357,73" concept="3" />
-      <node id="8251289970135154827" at="358,5,359,64" concept="3" />
-      <node id="8251289970135154424" at="359,64,360,0" concept="11" />
-      <node id="2214335295230981720" at="382,33,383,17" concept="9" />
-      <node id="2214335295231988195" at="385,58,386,20" concept="3" />
-      <node id="2214335295230337887" at="388,0,389,0" concept="12" trace="LOG" />
-      <node id="2214335295230337917" at="27,0,29,0" concept="7" trace="enterGrammarSpec#(Lorg/antlr/ANTLRv4Parser/GrammarSpecContext;)V" />
-      <node id="2214335295230337925" at="29,0,31,0" concept="7" trace="exitGrammarSpec#(Lorg/antlr/ANTLRv4Parser/GrammarSpecContext;)V" />
-      <node id="2214335295230337933" at="31,0,33,0" concept="7" trace="enterGrammarType#(Lorg/antlr/ANTLRv4Parser/GrammarTypeContext;)V" />
-      <node id="2214335295230337941" at="33,0,35,0" concept="7" trace="exitGrammarType#(Lorg/antlr/ANTLRv4Parser/GrammarTypeContext;)V" />
-      <node id="2214335295230337949" at="35,0,37,0" concept="7" trace="enterPrequelConstruct#(Lorg/antlr/ANTLRv4Parser/PrequelConstructContext;)V" />
-      <node id="2214335295230337957" at="37,0,39,0" concept="7" trace="exitPrequelConstruct#(Lorg/antlr/ANTLRv4Parser/PrequelConstructContext;)V" />
-      <node id="2214335295230337965" at="39,0,41,0" concept="7" trace="enterOptionsSpec#(Lorg/antlr/ANTLRv4Parser/OptionsSpecContext;)V" />
-      <node id="2214335295230337973" at="41,0,43,0" concept="7" trace="exitOptionsSpec#(Lorg/antlr/ANTLRv4Parser/OptionsSpecContext;)V" />
-      <node id="2214335295230337981" at="43,0,45,0" concept="7" trace="enterOption#(Lorg/antlr/ANTLRv4Parser/OptionContext;)V" />
-      <node id="2214335295230337989" at="45,0,47,0" concept="7" trace="exitOption#(Lorg/antlr/ANTLRv4Parser/OptionContext;)V" />
-      <node id="2214335295230337997" at="47,0,49,0" concept="7" trace="enterOptionValue#(Lorg/antlr/ANTLRv4Parser/OptionValueContext;)V" />
-      <node id="2214335295230338005" at="49,0,51,0" concept="7" trace="exitOptionValue#(Lorg/antlr/ANTLRv4Parser/OptionValueContext;)V" />
-      <node id="2214335295230338013" at="51,0,53,0" concept="7" trace="enterDelegateGrammars#(Lorg/antlr/ANTLRv4Parser/DelegateGrammarsContext;)V" />
-      <node id="2214335295230338021" at="53,0,55,0" concept="7" trace="exitDelegateGrammars#(Lorg/antlr/ANTLRv4Parser/DelegateGrammarsContext;)V" />
-      <node id="2214335295230338029" at="55,0,57,0" concept="7" trace="enterDelegateGrammar#(Lorg/antlr/ANTLRv4Parser/DelegateGrammarContext;)V" />
-      <node id="2214335295230338037" at="57,0,59,0" concept="7" trace="exitDelegateGrammar#(Lorg/antlr/ANTLRv4Parser/DelegateGrammarContext;)V" />
-      <node id="2214335295230338045" at="59,0,61,0" concept="7" trace="enterTokensSpec#(Lorg/antlr/ANTLRv4Parser/TokensSpecContext;)V" />
-      <node id="2214335295230338053" at="61,0,63,0" concept="7" trace="exitTokensSpec#(Lorg/antlr/ANTLRv4Parser/TokensSpecContext;)V" />
-      <node id="2214335295230338061" at="63,0,65,0" concept="7" trace="enterAction#(Lorg/antlr/ANTLRv4Parser/ActionContext;)V" />
-      <node id="2214335295230338069" at="65,0,67,0" concept="7" trace="exitAction#(Lorg/antlr/ANTLRv4Parser/ActionContext;)V" />
-      <node id="2214335295230338077" at="67,0,69,0" concept="7" trace="enterActionScopeName#(Lorg/antlr/ANTLRv4Parser/ActionScopeNameContext;)V" />
-      <node id="2214335295230338085" at="69,0,71,0" concept="7" trace="exitActionScopeName#(Lorg/antlr/ANTLRv4Parser/ActionScopeNameContext;)V" />
-      <node id="2214335295230338093" at="71,0,73,0" concept="7" trace="enterModeSpec#(Lorg/antlr/ANTLRv4Parser/ModeSpecContext;)V" />
-      <node id="2214335295230338101" at="73,0,75,0" concept="7" trace="exitModeSpec#(Lorg/antlr/ANTLRv4Parser/ModeSpecContext;)V" />
-      <node id="2214335295230338109" at="75,0,77,0" concept="7" trace="enterRules#(Lorg/antlr/ANTLRv4Parser/RulesContext;)V" />
-      <node id="2214335295230338117" at="77,0,79,0" concept="7" trace="exitRules#(Lorg/antlr/ANTLRv4Parser/RulesContext;)V" />
-      <node id="2214335295230338125" at="79,0,81,0" concept="7" trace="enterRuleSpec#(Lorg/antlr/ANTLRv4Parser/RuleSpecContext;)V" />
-      <node id="2214335295230338133" at="81,0,83,0" concept="7" trace="exitRuleSpec#(Lorg/antlr/ANTLRv4Parser/RuleSpecContext;)V" />
-      <node id="2214335295230338157" at="108,0,110,0" concept="7" trace="enterExceptionGroup#(Lorg/antlr/ANTLRv4Parser/ExceptionGroupContext;)V" />
-      <node id="2214335295230338165" at="110,0,112,0" concept="7" trace="exitExceptionGroup#(Lorg/antlr/ANTLRv4Parser/ExceptionGroupContext;)V" />
-      <node id="2214335295230338173" at="112,0,114,0" concept="7" trace="enterExceptionHandler#(Lorg/antlr/ANTLRv4Parser/ExceptionHandlerContext;)V" />
-      <node id="2214335295230338181" at="114,0,116,0" concept="7" trace="exitExceptionHandler#(Lorg/antlr/ANTLRv4Parser/ExceptionHandlerContext;)V" />
-      <node id="2214335295230338189" at="116,0,118,0" concept="7" trace="enterFinallyClause#(Lorg/antlr/ANTLRv4Parser/FinallyClauseContext;)V" />
-      <node id="2214335295230338197" at="118,0,120,0" concept="7" trace="exitFinallyClause#(Lorg/antlr/ANTLRv4Parser/FinallyClauseContext;)V" />
-      <node id="2214335295230338205" at="120,0,122,0" concept="7" trace="enterRulePrequel#(Lorg/antlr/ANTLRv4Parser/RulePrequelContext;)V" />
-      <node id="2214335295230338213" at="122,0,124,0" concept="7" trace="exitRulePrequel#(Lorg/antlr/ANTLRv4Parser/RulePrequelContext;)V" />
-      <node id="2214335295230338221" at="124,0,126,0" concept="7" trace="enterRuleReturns#(Lorg/antlr/ANTLRv4Parser/RuleReturnsContext;)V" />
-      <node id="2214335295230338229" at="126,0,128,0" concept="7" trace="exitRuleReturns#(Lorg/antlr/ANTLRv4Parser/RuleReturnsContext;)V" />
-      <node id="2214335295230338237" at="128,0,130,0" concept="7" trace="enterThrowsSpec#(Lorg/antlr/ANTLRv4Parser/ThrowsSpecContext;)V" />
-      <node id="2214335295230338245" at="130,0,132,0" concept="7" trace="exitThrowsSpec#(Lorg/antlr/ANTLRv4Parser/ThrowsSpecContext;)V" />
-      <node id="2214335295230338253" at="132,0,134,0" concept="7" trace="enterLocalsSpec#(Lorg/antlr/ANTLRv4Parser/LocalsSpecContext;)V" />
-      <node id="2214335295230338261" at="134,0,136,0" concept="7" trace="exitLocalsSpec#(Lorg/antlr/ANTLRv4Parser/LocalsSpecContext;)V" />
-      <node id="2214335295230338269" at="136,0,138,0" concept="7" trace="enterRuleAction#(Lorg/antlr/ANTLRv4Parser/RuleActionContext;)V" />
-      <node id="2214335295230338277" at="138,0,140,0" concept="7" trace="exitRuleAction#(Lorg/antlr/ANTLRv4Parser/RuleActionContext;)V" />
-      <node id="2214335295230338285" at="140,0,142,0" concept="7" trace="enterRuleModifiers#(Lorg/antlr/ANTLRv4Parser/RuleModifiersContext;)V" />
-      <node id="2214335295230338293" at="142,0,144,0" concept="7" trace="exitRuleModifiers#(Lorg/antlr/ANTLRv4Parser/RuleModifiersContext;)V" />
-      <node id="2214335295230338301" at="144,0,146,0" concept="7" trace="enterRuleModifier#(Lorg/antlr/ANTLRv4Parser/RuleModifierContext;)V" />
-      <node id="2214335295230338309" at="146,0,148,0" concept="7" trace="exitRuleModifier#(Lorg/antlr/ANTLRv4Parser/RuleModifierContext;)V" />
-      <node id="2214335295230338317" at="148,0,150,0" concept="7" trace="enterRuleBlock#(Lorg/antlr/ANTLRv4Parser/RuleBlockContext;)V" />
-      <node id="2214335295230338333" at="155,0,157,0" concept="7" trace="enterRuleAltList#(Lorg/antlr/ANTLRv4Parser/RuleAltListContext;)V" />
-      <node id="2214335295230338349" at="162,0,164,0" concept="7" trace="enterLabeledAlt#(Lorg/antlr/ANTLRv4Parser/LabeledAltContext;)V" />
-      <node id="2214335295230338357" at="164,0,166,0" concept="7" trace="exitLabeledAlt#(Lorg/antlr/ANTLRv4Parser/LabeledAltContext;)V" />
-      <node id="2214335295230338381" at="173,0,175,0" concept="7" trace="enterLexerRuleBlock#(Lorg/antlr/ANTLRv4Parser/LexerRuleBlockContext;)V" />
-      <node id="2214335295230338389" at="175,0,177,0" concept="7" trace="exitLexerRuleBlock#(Lorg/antlr/ANTLRv4Parser/LexerRuleBlockContext;)V" />
-      <node id="2214335295230338437" at="209,0,211,0" concept="7" trace="exitLexerElements#(Lorg/antlr/ANTLRv4Parser/LexerElementsContext;)V" />
-      <node id="2214335295230338461" at="222,0,224,0" concept="7" trace="enterLabeledLexerElement#(Lorg/antlr/ANTLRv4Parser/LabeledLexerElementContext;)V" />
-      <node id="2214335295230338469" at="224,0,226,0" concept="7" trace="exitLabeledLexerElement#(Lorg/antlr/ANTLRv4Parser/LabeledLexerElementContext;)V" />
-      <node id="2214335295230338477" at="226,0,228,0" concept="7" trace="enterLexerBlock#(Lorg/antlr/ANTLRv4Parser/LexerBlockContext;)V" />
-      <node id="2214335295230338485" at="228,0,230,0" concept="7" trace="exitLexerBlock#(Lorg/antlr/ANTLRv4Parser/LexerBlockContext;)V" />
-      <node id="2214335295230338493" at="230,0,232,0" concept="7" trace="enterLexerCommands#(Lorg/antlr/ANTLRv4Parser/LexerCommandsContext;)V" />
-      <node id="2214335295230338501" at="232,0,234,0" concept="7" trace="exitLexerCommands#(Lorg/antlr/ANTLRv4Parser/LexerCommandsContext;)V" />
-      <node id="2214335295230338509" at="234,0,236,0" concept="7" trace="enterLexerCommand#(Lorg/antlr/ANTLRv4Parser/LexerCommandContext;)V" />
-      <node id="2214335295230338517" at="236,0,238,0" concept="7" trace="exitLexerCommand#(Lorg/antlr/ANTLRv4Parser/LexerCommandContext;)V" />
-      <node id="2214335295230338525" at="238,0,240,0" concept="7" trace="enterLexerCommandName#(Lorg/antlr/ANTLRv4Parser/LexerCommandNameContext;)V" />
-      <node id="2214335295230338533" at="240,0,242,0" concept="7" trace="exitLexerCommandName#(Lorg/antlr/ANTLRv4Parser/LexerCommandNameContext;)V" />
-      <node id="2214335295230338541" at="242,0,244,0" concept="7" trace="enterLexerCommandExpr#(Lorg/antlr/ANTLRv4Parser/LexerCommandExprContext;)V" />
-      <node id="2214335295230338557" at="249,0,251,0" concept="7" trace="enterAltList#(Lorg/antlr/ANTLRv4Parser/AltListContext;)V" />
-      <node id="2214335295230338565" at="251,0,253,0" concept="7" trace="exitAltList#(Lorg/antlr/ANTLRv4Parser/AltListContext;)V" />
-      <node id="2214335295230338605" at="294,0,296,0" concept="7" trace="enterLabeledElement#(Lorg/antlr/ANTLRv4Parser/LabeledElementContext;)V" />
-      <node id="2214335295230338621" at="301,0,303,0" concept="7" trace="enterEbnf#(Lorg/antlr/ANTLRv4Parser/EbnfContext;)V" />
-      <node id="2214335295230338629" at="303,0,305,0" concept="7" trace="exitEbnf#(Lorg/antlr/ANTLRv4Parser/EbnfContext;)V" />
-      <node id="2214335295230338637" at="305,0,307,0" concept="7" trace="enterBlockSuffix#(Lorg/antlr/ANTLRv4Parser/BlockSuffixContext;)V" />
-      <node id="2214335295230338645" at="307,0,309,0" concept="7" trace="exitBlockSuffix#(Lorg/antlr/ANTLRv4Parser/BlockSuffixContext;)V" />
-      <node id="2214335295230338653" at="309,0,311,0" concept="7" trace="enterEbnfSuffix#(Lorg/antlr/ANTLRv4Parser/EbnfSuffixContext;)V" />
-      <node id="2214335295230338661" at="311,0,313,0" concept="7" trace="exitEbnfSuffix#(Lorg/antlr/ANTLRv4Parser/EbnfSuffixContext;)V" />
-      <node id="2214335295230338669" at="313,0,315,0" concept="7" trace="enterLexerAtom#(Lorg/antlr/ANTLRv4Parser/LexerAtomContext;)V" />
-      <node id="2214335295230338677" at="315,0,317,0" concept="7" trace="exitLexerAtom#(Lorg/antlr/ANTLRv4Parser/LexerAtomContext;)V" />
-      <node id="2214335295230338685" at="317,0,319,0" concept="7" trace="enterAtom#(Lorg/antlr/ANTLRv4Parser/AtomContext;)V" />
-      <node id="2214335295230338693" at="319,0,321,0" concept="7" trace="exitAtom#(Lorg/antlr/ANTLRv4Parser/AtomContext;)V" />
-      <node id="2214335295230338701" at="321,0,323,0" concept="7" trace="enterNotSet#(Lorg/antlr/ANTLRv4Parser/NotSetContext;)V" />
-      <node id="2214335295230338709" at="323,0,325,0" concept="7" trace="exitNotSet#(Lorg/antlr/ANTLRv4Parser/NotSetContext;)V" />
-      <node id="2214335295230338717" at="325,0,327,0" concept="7" trace="enterBlockSet#(Lorg/antlr/ANTLRv4Parser/BlockSetContext;)V" />
-      <node id="2214335295230338725" at="327,0,329,0" concept="7" trace="exitBlockSet#(Lorg/antlr/ANTLRv4Parser/BlockSetContext;)V" />
-      <node id="2214335295230338733" at="329,0,331,0" concept="7" trace="enterSetElement#(Lorg/antlr/ANTLRv4Parser/SetElementContext;)V" />
-      <node id="2214335295230338741" at="331,0,333,0" concept="7" trace="exitSetElement#(Lorg/antlr/ANTLRv4Parser/SetElementContext;)V" />
-      <node id="2214335295230338749" at="333,0,335,0" concept="7" trace="enterBlock#(Lorg/antlr/ANTLRv4Parser/BlockContext;)V" />
-      <node id="2214335295230338757" at="335,0,337,0" concept="7" trace="exitBlock#(Lorg/antlr/ANTLRv4Parser/BlockContext;)V" />
-      <node id="2214335295230338765" at="337,0,339,0" concept="7" trace="enterRuleref#(Lorg/antlr/ANTLRv4Parser/RulerefContext;)V" />
-      <node id="2214335295230338781" at="346,0,348,0" concept="7" trace="enterRange#(Lorg/antlr/ANTLRv4Parser/RangeContext;)V" />
-      <node id="2214335295230338789" at="348,0,350,0" concept="7" trace="exitRange#(Lorg/antlr/ANTLRv4Parser/RangeContext;)V" />
-      <node id="2214335295230338797" at="350,0,352,0" concept="7" trace="enterTerminal#(Lorg/antlr/ANTLRv4Parser/TerminalContext;)V" />
-      <node id="2214335295230338813" at="362,0,364,0" concept="7" trace="enterElementOptions#(Lorg/antlr/ANTLRv4Parser/ElementOptionsContext;)V" />
-      <node id="2214335295230338821" at="364,0,366,0" concept="7" trace="exitElementOptions#(Lorg/antlr/ANTLRv4Parser/ElementOptionsContext;)V" />
-      <node id="2214335295230338829" at="366,0,368,0" concept="7" trace="enterElementOption#(Lorg/antlr/ANTLRv4Parser/ElementOptionContext;)V" />
-      <node id="2214335295230338837" at="368,0,370,0" concept="7" trace="exitElementOption#(Lorg/antlr/ANTLRv4Parser/ElementOptionContext;)V" />
-      <node id="2214335295230338845" at="370,0,372,0" concept="7" trace="enterId#(Lorg/antlr/ANTLRv4Parser/IdContext;)V" />
-      <node id="2214335295230338853" at="372,0,374,0" concept="7" trace="exitId#(Lorg/antlr/ANTLRv4Parser/IdContext;)V" />
-      <node id="2214335295230338861" at="374,0,376,0" concept="7" trace="visitTerminal#(Lorg/antlr/v4/runtime/tree/TerminalNode;)V" />
-      <node id="2214335295230338869" at="376,0,378,0" concept="7" trace="visitErrorNode#(Lorg/antlr/v4/runtime/tree/ErrorNode;)V" />
-      <node id="2214335295230338877" at="378,0,380,0" concept="7" trace="enterEveryRule#(Lorg/antlr/v4/runtime/ParserRuleContext;)V" />
-      <node id="2214335295230338885" at="380,0,382,0" concept="7" trace="exitEveryRule#(Lorg/antlr/v4/runtime/ParserRuleContext;)V" />
-      <node id="2214335295230338141" at="85,0,88,0" concept="7" trace="enterParserRuleSpec#(Lorg/antlr/ANTLRv4Parser/ParserRuleSpecContext;)V" />
-      <node id="8251289970132993995" at="150,78,153,5" concept="0" />
-      <node id="8251289970132993995" at="150,78,153,5" concept="6" />
-      <node id="8251289970133000903" at="157,82,160,5" concept="0" />
-      <node id="8251289970133000903" at="157,82,160,5" concept="6" />
-      <node id="2214335295230338365" at="166,0,169,0" concept="7" trace="enterLexerRule#(Lorg/antlr/ANTLRv4Parser/LexerRuleContext;)V" />
-      <node id="2214335295230338405" at="183,0,186,0" concept="7" trace="exitLexerAltList#(Lorg/antlr/ANTLRv4Parser/LexerAltListContext;)V" />
-      <node id="2214335295230338413" at="188,0,191,0" concept="7" trace="enterLexerAlt#(Lorg/antlr/ANTLRv4Parser/LexerAltContext;)V" />
-      <node id="2214335295230338429" at="206,0,209,0" concept="7" trace="enterLexerElements#(Lorg/antlr/ANTLRv4Parser/LexerElementsContext;)V" />
-      <node id="2214335295230338445" at="211,0,214,0" concept="7" trace="enterLexerElement#(Lorg/antlr/ANTLRv4Parser/LexerElementContext;)V" />
-      <node id="8251289970136586791" at="216,64,219,7" concept="6" />
-      <node id="8251289970134714803" at="244,92,247,5" concept="0" />
-      <node id="8251289970134714803" at="244,92,247,5" concept="6" />
-      <node id="2214335295230338589" at="265,0,268,0" concept="7" trace="enterElement#(Lorg/antlr/ANTLRv4Parser/ElementContext;)V" />
-      <node id="8251289970136147981" at="270,59,273,7" concept="0" />
-      <node id="8251289970136147981" at="270,59,273,7" concept="6" />
-      <node id="8251289970136429063" at="274,5,277,5" concept="6" />
-      <node id="8251289970135002142" at="281,42,284,7" concept="6" />
-      <node id="8251289970135002154" at="284,7,287,7" concept="6" />
-      <node id="8251289970135002166" at="287,7,290,7" concept="6" />
-      <node id="8251289970133714394" at="296,88,299,5" concept="6" />
-      <node id="8251289970134909648" at="353,43,356,7" concept="0" />
-      <node id="8251289970134909648" at="353,43,356,7" concept="6" />
-      <node id="2214335295230981716" at="382,0,385,0" concept="7" trace="getRules#()Ljava/util/List;" />
-      <node id="2214335295231988187" at="385,0,388,0" concept="2" trace="ANTLRv4ParserListenerImpl#(Lorg/antlr/ANTLRv4Parser;)V" />
-      <node id="8251289970135916009" at="88,0,92,0" concept="7" trace="newRule#()V" />
-      <node id="2214335295230338373" at="169,0,173,0" concept="7" trace="exitLexerRule#(Lorg/antlr/ANTLRv4Parser/LexerRuleContext;)V" />
-      <node id="2214335295230338397" at="178,0,182,0" concept="7" trace="enterLexerAltList#(Lorg/antlr/ANTLRv4Parser/LexerAltListContext;)V" />
-      <node id="2214335295230338421" at="201,0,205,0" concept="7" trace="exitLexerAlt#(Lorg/antlr/ANTLRv4Parser/LexerAltContext;)V" />
-      <node id="8251289970133419702" at="253,83,257,5" concept="6" />
-      <node id="2214335295230338581" at="260,0,264,0" concept="7" trace="exitAlternative#(Lorg/antlr/ANTLRv4Parser/AlternativeContext;)V" />
-      <node id="2214335295230338325" at="150,0,155,0" concept="7" trace="exitRuleBlock#(Lorg/antlr/ANTLRv4Parser/RuleBlockContext;)V" />
-      <node id="2214335295230338341" at="157,0,162,0" concept="7" trace="exitRuleAltList#(Lorg/antlr/ANTLRv4Parser/RuleAltListContext;)V" />
-      <node id="8251289970133278422" at="191,0,196,0" concept="7" trace="createRef#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="8251289970134787108" at="196,0,201,0" concept="7" trace="createLiteral#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="2214335295230338549" at="244,0,249,0" concept="7" trace="exitLexerCommandExpr#(Lorg/antlr/ANTLRv4Parser/LexerCommandExprContext;)V" />
-      <node id="2214335295230338613" at="296,0,301,0" concept="7" trace="exitLabeledElement#(Lorg/antlr/ANTLRv4Parser/LabeledElementContext;)V" />
-      <node id="2214335295230338773" at="341,0,346,0" concept="7" trace="exitRuleref#(Lorg/antlr/ANTLRv4Parser/RulerefContext;)V" />
-      <node id="8251289970136098283" at="214,84,220,5" concept="6" />
-      <node id="8251289970133751632" at="268,74,274,5" concept="6" />
-      <node id="8251289970134747893" at="352,76,358,5" concept="6" />
-      <node id="2214335295230338149" at="92,0,99,0" concept="7" trace="exitParserRuleSpec#(Lorg/antlr/ANTLRv4Parser/ParserRuleSpecContext;)V" />
-      <node id="8251289970135755956" at="99,47,106,5" concept="6" />
-      <node id="2214335295230338573" at="253,0,260,0" concept="7" trace="enterAlternative#(Lorg/antlr/ANTLRv4Parser/AlternativeContext;)V" />
-      <node id="2214335295230338453" at="214,0,222,0" concept="7" trace="exitLexerElement#(Lorg/antlr/ANTLRv4Parser/LexerElementContext;)V" />
-      <node id="8251289970135756022" at="99,0,108,0" concept="7" trace="appendNewRule#(Ljava/lang/String;)V" />
-      <node id="2214335295230338805" at="352,0,362,0" concept="7" trace="exitTerminal#(Lorg/antlr/ANTLRv4Parser/TerminalContext;)V" />
-      <node id="2214335295230338597" at="268,0,279,0" concept="7" trace="exitElement#(Lorg/antlr/ANTLRv4Parser/ElementContext;)V" />
-      <node id="8251289970135002132" at="279,83,292,5" concept="6" />
-      <node id="8251289970135002200" at="279,0,294,0" concept="7" trace="addOptionalParams#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/antlr/v4/runtime/ParserRuleContext;)V" />
-      <scope id="2214335295230337924" at="27,83,27,83" />
-      <scope id="2214335295230337932" at="29,82,29,82" />
-      <scope id="2214335295230337940" at="31,83,31,83" />
-      <scope id="2214335295230337948" at="33,82,33,82" />
-      <scope id="2214335295230337956" at="35,93,35,93" />
-      <scope id="2214335295230337964" at="37,92,37,92" />
-      <scope id="2214335295230337972" at="39,83,39,83" />
-      <scope id="2214335295230337980" at="41,82,41,82" />
-      <scope id="2214335295230337988" at="43,73,43,73" />
-      <scope id="2214335295230337996" at="45,72,45,72" />
-      <scope id="2214335295230338004" at="47,83,47,83" />
-      <scope id="2214335295230338012" at="49,82,49,82" />
-      <scope id="2214335295230338020" at="51,93,51,93" />
-      <scope id="2214335295230338028" at="53,92,53,92" />
-      <scope id="2214335295230338036" at="55,91,55,91" />
-      <scope id="2214335295230338044" at="57,90,57,90" />
-      <scope id="2214335295230338052" at="59,81,59,81" />
-      <scope id="2214335295230338060" at="61,80,61,80" />
-      <scope id="2214335295230338068" at="63,73,63,73" />
-      <scope id="2214335295230338076" at="65,72,65,72" />
-      <scope id="2214335295230338084" at="67,91,67,91" />
-      <scope id="2214335295230338092" at="69,90,69,90" />
-      <scope id="2214335295230338100" at="71,77,71,77" />
-      <scope id="2214335295230338108" at="73,76,73,76" />
-      <scope id="2214335295230338116" at="75,71,75,71" />
-      <scope id="2214335295230338124" at="77,70,77,70" />
-      <scope id="2214335295230338132" at="79,77,79,77" />
-      <scope id="2214335295230338140" at="81,76,81,76" />
-      <scope id="2214335295230338164" at="108,89,108,89" />
-      <scope id="2214335295230338172" at="110,88,110,88" />
-      <scope id="2214335295230338180" at="112,93,112,93" />
-      <scope id="2214335295230338188" at="114,92,114,92" />
-      <scope id="2214335295230338196" at="116,87,116,87" />
-      <scope id="2214335295230338204" at="118,86,118,86" />
-      <scope id="2214335295230338212" at="120,83,120,83" />
-      <scope id="2214335295230338220" at="122,82,122,82" />
-      <scope id="2214335295230338228" at="124,83,124,83" />
-      <scope id="2214335295230338236" at="126,82,126,82" />
-      <scope id="2214335295230338244" at="128,81,128,81" />
-      <scope id="2214335295230338252" at="130,80,130,80" />
-      <scope id="2214335295230338260" at="132,81,132,81" />
-      <scope id="2214335295230338268" at="134,80,134,80" />
-      <scope id="2214335295230338276" at="136,81,136,81" />
-      <scope id="2214335295230338284" at="138,80,138,80" />
-      <scope id="2214335295230338292" at="140,87,140,87" />
-      <scope id="2214335295230338300" at="142,86,142,86" />
-      <scope id="2214335295230338308" at="144,85,144,85" />
-      <scope id="2214335295230338316" at="146,84,146,84" />
-      <scope id="2214335295230338324" at="148,79,148,79" />
-      <scope id="2214335295230338340" at="155,83,155,83" />
-      <scope id="2214335295230338356" at="162,81,162,81" />
-      <scope id="2214335295230338364" at="164,80,164,80" />
-      <scope id="2214335295230338388" at="173,89,173,89" />
-      <scope id="2214335295230338396" at="175,88,175,88" />
-      <scope id="2214335295230338444" at="209,86,209,86" />
-      <scope id="2214335295230338468" at="222,99,222,99" />
-      <scope id="2214335295230338476" at="224,98,224,98" />
-      <scope id="2214335295230338484" at="226,81,226,81" />
-      <scope id="2214335295230338492" at="228,80,228,80" />
-      <scope id="2214335295230338500" at="230,87,230,87" />
-      <scope id="2214335295230338508" at="232,86,232,86" />
-      <scope id="2214335295230338516" at="234,85,234,85" />
-      <scope id="2214335295230338524" at="236,84,236,84" />
-      <scope id="2214335295230338532" at="238,93,238,93" />
-      <scope id="2214335295230338540" at="240,92,240,92" />
-      <scope id="2214335295230338548" at="242,93,242,93" />
-      <scope id="2214335295230338564" at="249,75,249,75" />
-      <scope id="2214335295230338572" at="251,74,251,74" />
-      <scope id="2214335295230338612" at="294,89,294,89" />
-      <scope id="2214335295230338628" at="301,69,301,69" />
-      <scope id="2214335295230338636" at="303,68,303,68" />
-      <scope id="2214335295230338644" at="305,83,305,83" />
-      <scope id="2214335295230338652" at="307,82,307,82" />
-      <scope id="2214335295230338660" at="309,81,309,81" />
-      <scope id="2214335295230338668" at="311,80,311,80" />
-      <scope id="2214335295230338676" at="313,79,313,79" />
-      <scope id="2214335295230338684" at="315,78,315,78" />
-      <scope id="2214335295230338692" at="317,69,317,69" />
-      <scope id="2214335295230338700" at="319,68,319,68" />
-      <scope id="2214335295230338708" at="321,73,321,73" />
-      <scope id="2214335295230338716" at="323,72,323,72" />
-      <scope id="2214335295230338724" at="325,77,325,77" />
-      <scope id="2214335295230338732" at="327,76,327,76" />
-      <scope id="2214335295230338740" at="329,81,329,81" />
-      <scope id="2214335295230338748" at="331,80,331,80" />
-      <scope id="2214335295230338756" at="333,71,333,71" />
-      <scope id="2214335295230338764" at="335,70,335,70" />
-      <scope id="2214335295230338772" at="337,75,337,75" />
-      <scope id="2214335295230338788" at="346,71,346,71" />
-      <scope id="2214335295230338796" at="348,70,348,70" />
-      <scope id="2214335295230338804" at="350,77,350,77" />
-      <scope id="2214335295230338820" at="362,89,362,89" />
-      <scope id="2214335295230338828" at="364,88,364,88" />
-      <scope id="2214335295230338836" at="366,87,366,87" />
-      <scope id="2214335295230338844" at="368,86,368,86" />
-      <scope id="2214335295230338852" at="370,65,370,65" />
-      <scope id="2214335295230338860" at="372,64,372,64" />
-      <scope id="2214335295230338868" at="374,48,374,48" />
-      <scope id="2214335295230338876" at="376,46,376,46" />
-      <scope id="2214335295230338884" at="378,57,378,57" />
-      <scope id="2214335295230338892" at="380,56,380,56" />
-      <scope id="2214335295230338148" at="85,89,86,14" />
-      <scope id="8251289970132993995" at="151,30,152,53" />
-      <scope id="8251289970133000903" at="158,30,159,55" />
-      <scope id="2214335295230338372" at="166,79,167,14" />
-      <scope id="2214335295230338412" at="183,84,184,0" />
-      <scope id="2214335295230338420" at="188,77,189,219" />
-      <scope id="2214335295230338436" at="206,87,207,221" />
-      <scope id="2214335295230338452" at="211,85,212,26" />
-      <scope id="8251289970136586793" at="217,69,218,240" />
-      <scope id="8251289970134714803" at="245,30,246,65" />
-      <scope id="2214335295230338596" at="265,75,266,26" />
-      <scope id="8251289970136147981" at="271,32,272,61" />
-      <scope id="8251289970136429065" at="275,33,276,62" />
-      <scope id="8251289970135002143" at="282,33,283,191" />
-      <scope id="8251289970135002155" at="285,33,286,185" />
-      <scope id="8251289970135002167" at="288,33,289,195" />
-      <scope id="8251289970133714396" at="297,33,298,59" />
-      <scope id="8251289970134909648" at="354,32,355,71" />
-      <scope id="2214335295230981719" at="382,33,383,17" />
-      <scope id="2214335295231988191" at="385,58,386,20" />
-      <scope id="2214335295230337917" at="27,0,29,0">
-        <var name="context" id="2214335295230337921" />
-      </scope>
-      <scope id="2214335295230337925" at="29,0,31,0">
-        <var name="context" id="2214335295230337929" />
-      </scope>
-      <scope id="2214335295230337933" at="31,0,33,0">
-        <var name="context" id="2214335295230337937" />
-      </scope>
-      <scope id="2214335295230337941" at="33,0,35,0">
-        <var name="context" id="2214335295230337945" />
-      </scope>
-      <scope id="2214335295230337949" at="35,0,37,0">
-        <var name="context" id="2214335295230337953" />
-      </scope>
-      <scope id="2214335295230337957" at="37,0,39,0">
-        <var name="context" id="2214335295230337961" />
-      </scope>
-      <scope id="2214335295230337965" at="39,0,41,0">
-        <var name="context" id="2214335295230337969" />
-      </scope>
-      <scope id="2214335295230337973" at="41,0,43,0">
-        <var name="context" id="2214335295230337977" />
-      </scope>
-      <scope id="2214335295230337981" at="43,0,45,0">
-        <var name="context" id="2214335295230337985" />
-      </scope>
-      <scope id="2214335295230337989" at="45,0,47,0">
-        <var name="context" id="2214335295230337993" />
-      </scope>
-      <scope id="2214335295230337997" at="47,0,49,0">
-        <var name="context" id="2214335295230338001" />
-      </scope>
-      <scope id="2214335295230338005" at="49,0,51,0">
-        <var name="context" id="2214335295230338009" />
-      </scope>
-      <scope id="2214335295230338013" at="51,0,53,0">
-        <var name="context" id="2214335295230338017" />
-      </scope>
-      <scope id="2214335295230338021" at="53,0,55,0">
-        <var name="context" id="2214335295230338025" />
-      </scope>
-      <scope id="2214335295230338029" at="55,0,57,0">
-        <var name="context" id="2214335295230338033" />
-      </scope>
-      <scope id="2214335295230338037" at="57,0,59,0">
-        <var name="context" id="2214335295230338041" />
-      </scope>
-      <scope id="2214335295230338045" at="59,0,61,0">
-        <var name="context" id="2214335295230338049" />
-      </scope>
-      <scope id="2214335295230338053" at="61,0,63,0">
-        <var name="context" id="2214335295230338057" />
-      </scope>
-      <scope id="2214335295230338061" at="63,0,65,0">
-        <var name="context" id="2214335295230338065" />
-      </scope>
-      <scope id="2214335295230338069" at="65,0,67,0">
-        <var name="context" id="2214335295230338073" />
-      </scope>
-      <scope id="2214335295230338077" at="67,0,69,0">
-        <var name="context" id="2214335295230338081" />
-      </scope>
-      <scope id="2214335295230338085" at="69,0,71,0">
-        <var name="context" id="2214335295230338089" />
-      </scope>
-      <scope id="2214335295230338093" at="71,0,73,0">
-        <var name="context" id="2214335295230338097" />
-      </scope>
-      <scope id="2214335295230338101" at="73,0,75,0">
-        <var name="context" id="2214335295230338105" />
-      </scope>
-      <scope id="2214335295230338109" at="75,0,77,0">
-        <var name="context" id="2214335295230338113" />
-      </scope>
-      <scope id="2214335295230338117" at="77,0,79,0">
-        <var name="context" id="2214335295230338121" />
-      </scope>
-      <scope id="2214335295230338125" at="79,0,81,0">
-        <var name="context" id="2214335295230338129" />
-      </scope>
-      <scope id="2214335295230338133" at="81,0,83,0">
-        <var name="context" id="2214335295230338137" />
-      </scope>
-      <scope id="8251289970135915996" at="88,26,90,40" />
-      <scope id="2214335295230338157" at="108,0,110,0">
-        <var name="context" id="2214335295230338161" />
-      </scope>
-      <scope id="2214335295230338165" at="110,0,112,0">
-        <var name="context" id="2214335295230338169" />
-      </scope>
-      <scope id="2214335295230338173" at="112,0,114,0">
-        <var name="context" id="2214335295230338177" />
-      </scope>
-      <scope id="2214335295230338181" at="114,0,116,0">
-        <var name="context" id="2214335295230338185" />
-      </scope>
-      <scope id="2214335295230338189" at="116,0,118,0">
-        <var name="context" id="2214335295230338193" />
-      </scope>
-      <scope id="2214335295230338197" at="118,0,120,0">
-        <var name="context" id="2214335295230338201" />
-      </scope>
-      <scope id="2214335295230338205" at="120,0,122,0">
-        <var name="context" id="2214335295230338209" />
-      </scope>
-      <scope id="2214335295230338213" at="122,0,124,0">
-        <var name="context" id="2214335295230338217" />
-      </scope>
-      <scope id="2214335295230338221" at="124,0,126,0">
-        <var name="context" id="2214335295230338225" />
-      </scope>
-      <scope id="2214335295230338229" at="126,0,128,0">
-        <var name="context" id="2214335295230338233" />
-      </scope>
-      <scope id="2214335295230338237" at="128,0,130,0">
-        <var name="context" id="2214335295230338241" />
-      </scope>
-      <scope id="2214335295230338245" at="130,0,132,0">
-        <var name="context" id="2214335295230338249" />
-      </scope>
-      <scope id="2214335295230338253" at="132,0,134,0">
-        <var name="context" id="2214335295230338257" />
-      </scope>
-      <scope id="2214335295230338261" at="134,0,136,0">
-        <var name="context" id="2214335295230338265" />
-      </scope>
-      <scope id="2214335295230338269" at="136,0,138,0">
-        <var name="context" id="2214335295230338273" />
-      </scope>
-      <scope id="2214335295230338277" at="138,0,140,0">
-        <var name="context" id="2214335295230338281" />
-      </scope>
-      <scope id="2214335295230338285" at="140,0,142,0">
-        <var name="context" id="2214335295230338289" />
-      </scope>
-      <scope id="2214335295230338293" at="142,0,144,0">
-        <var name="context" id="2214335295230338297" />
-      </scope>
-      <scope id="2214335295230338301" at="144,0,146,0">
-        <var name="context" id="2214335295230338305" />
-      </scope>
-      <scope id="2214335295230338309" at="146,0,148,0">
-        <var name="context" id="2214335295230338313" />
-      </scope>
-      <scope id="2214335295230338317" at="148,0,150,0">
-        <var name="context" id="2214335295230338321" />
-      </scope>
-      <scope id="2214335295230338333" at="155,0,157,0">
-        <var name="context" id="2214335295230338337" />
-      </scope>
-      <scope id="2214335295230338349" at="162,0,164,0">
-        <var name="context" id="2214335295230338353" />
-      </scope>
-      <scope id="2214335295230338357" at="164,0,166,0">
-        <var name="context" id="2214335295230338361" />
-      </scope>
-      <scope id="2214335295230338380" at="169,78,171,24">
-        <var name="name" id="8251289970135825766" />
-      </scope>
-      <scope id="2214335295230338381" at="173,0,175,0">
-        <var name="context" id="2214335295230338385" />
-      </scope>
-      <scope id="2214335295230338389" at="175,0,177,0">
-        <var name="context" id="2214335295230338393" />
-      </scope>
-      <scope id="2214335295230338404" at="178,85,180,186" />
-      <scope id="2214335295230338428" at="201,76,203,217" />
-      <scope id="2214335295230338437" at="209,0,211,0">
-        <var name="context" id="2214335295230338441" />
-      </scope>
-      <scope id="2214335295230338461" at="222,0,224,0">
-        <var name="context" id="2214335295230338465" />
-      </scope>
-      <scope id="2214335295230338469" at="224,0,226,0">
-        <var name="context" id="2214335295230338473" />
-      </scope>
-      <scope id="2214335295230338477" at="226,0,228,0">
-        <var name="context" id="2214335295230338481" />
-      </scope>
-      <scope id="2214335295230338485" at="228,0,230,0">
-        <var name="context" id="2214335295230338489" />
-      </scope>
-      <scope id="2214335295230338493" at="230,0,232,0">
-        <var name="context" id="2214335295230338497" />
-      </scope>
-      <scope id="2214335295230338501" at="232,0,234,0">
-        <var name="context" id="2214335295230338505" />
-      </scope>
-      <scope id="2214335295230338509" at="234,0,236,0">
-        <var name="context" id="2214335295230338513" />
-      </scope>
-      <scope id="2214335295230338517" at="236,0,238,0">
-        <var name="context" id="2214335295230338521" />
-      </scope>
-      <scope id="2214335295230338525" at="238,0,240,0">
-        <var name="context" id="2214335295230338529" />
-      </scope>
-      <scope id="2214335295230338533" at="240,0,242,0">
-        <var name="context" id="2214335295230338537" />
-      </scope>
-      <scope id="2214335295230338541" at="242,0,244,0">
-        <var name="context" id="2214335295230338545" />
-      </scope>
-      <scope id="2214335295230338557" at="249,0,251,0">
-        <var name="context" id="2214335295230338561" />
-      </scope>
-      <scope id="2214335295230338565" at="251,0,253,0">
-        <var name="context" id="2214335295230338569" />
-      </scope>
-      <scope id="8251289970133419704" at="254,31,256,188" />
-      <scope id="2214335295230338588" at="260,82,262,217" />
-      <scope id="2214335295230338605" at="294,0,296,0">
-        <var name="context" id="2214335295230338609" />
-      </scope>
-      <scope id="2214335295230338621" at="301,0,303,0">
-        <var name="context" id="2214335295230338625" />
-      </scope>
-      <scope id="2214335295230338629" at="303,0,305,0">
-        <var name="context" id="2214335295230338633" />
-      </scope>
-      <scope id="2214335295230338637" at="305,0,307,0">
-        <var name="context" id="2214335295230338641" />
-      </scope>
-      <scope id="2214335295230338645" at="307,0,309,0">
-        <var name="context" id="2214335295230338649" />
-      </scope>
-      <scope id="2214335295230338653" at="309,0,311,0">
-        <var name="context" id="2214335295230338657" />
-      </scope>
-      <scope id="2214335295230338661" at="311,0,313,0">
-        <var name="context" id="2214335295230338665" />
-      </scope>
-      <scope id="2214335295230338669" at="313,0,315,0">
-        <var name="context" id="2214335295230338673" />
-      </scope>
-      <scope id="2214335295230338677" at="315,0,317,0">
-        <var name="context" id="2214335295230338681" />
-      </scope>
-      <scope id="2214335295230338685" at="317,0,319,0">
-        <var name="context" id="2214335295230338689" />
-      </scope>
-      <scope id="2214335295230338693" at="319,0,321,0">
-        <var name="context" id="2214335295230338697" />
-      </scope>
-      <scope id="2214335295230338701" at="321,0,323,0">
-        <var name="context" id="2214335295230338705" />
-      </scope>
-      <scope id="2214335295230338709" at="323,0,325,0">
-        <var name="context" id="2214335295230338713" />
-      </scope>
-      <scope id="2214335295230338717" at="325,0,327,0">
-        <var name="context" id="2214335295230338721" />
-      </scope>
-      <scope id="2214335295230338725" at="327,0,329,0">
-        <var name="context" id="2214335295230338729" />
-      </scope>
-      <scope id="2214335295230338733" at="329,0,331,0">
-        <var name="context" id="2214335295230338737" />
-      </scope>
-      <scope id="2214335295230338741" at="331,0,333,0">
-        <var name="context" id="2214335295230338745" />
-      </scope>
-      <scope id="2214335295230338749" at="333,0,335,0">
-        <var name="context" id="2214335295230338753" />
-      </scope>
-      <scope id="2214335295230338757" at="335,0,337,0">
-        <var name="context" id="2214335295230338761" />
-      </scope>
-      <scope id="2214335295230338765" at="337,0,339,0">
-        <var name="context" id="2214335295230338769" />
-      </scope>
-      <scope id="2214335295230338781" at="346,0,348,0">
-        <var name="context" id="2214335295230338785" />
-      </scope>
-      <scope id="2214335295230338789" at="348,0,350,0">
-        <var name="context" id="2214335295230338793" />
-      </scope>
-      <scope id="2214335295230338797" at="350,0,352,0">
-        <var name="context" id="2214335295230338801" />
-      </scope>
-      <scope id="2214335295230338813" at="362,0,364,0">
-        <var name="context" id="2214335295230338817" />
-      </scope>
-      <scope id="2214335295230338821" at="364,0,366,0">
-        <var name="context" id="2214335295230338825" />
-      </scope>
-      <scope id="2214335295230338829" at="366,0,368,0">
-        <var name="context" id="2214335295230338833" />
-      </scope>
-      <scope id="2214335295230338837" at="368,0,370,0">
-        <var name="context" id="2214335295230338841" />
-      </scope>
-      <scope id="2214335295230338845" at="370,0,372,0">
-        <var name="context" id="2214335295230338849" />
-      </scope>
-      <scope id="2214335295230338853" at="372,0,374,0">
-        <var name="context" id="2214335295230338857" />
-      </scope>
-      <scope id="2214335295230338861" at="374,0,376,0">
-        <var name="node" id="2214335295230338865" />
-      </scope>
-      <scope id="2214335295230338869" at="376,0,378,0">
-        <var name="node" id="2214335295230338873" />
-      </scope>
-      <scope id="2214335295230338877" at="378,0,380,0">
-        <var name="context" id="2214335295230338881" />
-      </scope>
-      <scope id="2214335295230338885" at="380,0,382,0">
-        <var name="context" id="2214335295230338889" />
-      </scope>
-      <scope id="2214335295230338141" at="85,0,88,0">
-        <var name="context" id="2214335295230338145" />
-      </scope>
-      <scope id="2214335295230338332" at="150,78,153,5" />
-      <scope id="8251289970132993995" at="150,78,153,5" />
-      <scope id="2214335295230338348" at="157,82,160,5" />
-      <scope id="8251289970133000903" at="157,82,160,5" />
-      <scope id="2214335295230338365" at="166,0,169,0">
-        <var name="context" id="2214335295230338369" />
-      </scope>
-      <scope id="2214335295230338405" at="183,0,186,0">
-        <var name="context" id="2214335295230338409" />
-      </scope>
-      <scope id="2214335295230338413" at="188,0,191,0">
-        <var name="context" id="2214335295230338417" />
-      </scope>
-      <scope id="8251289970133278426" at="191,39,194,21">
-        <var name="refByName" id="8251289970133341704" />
-      </scope>
-      <scope id="8251289970134787113" at="196,44,199,19">
-        <var name="literal" id="8251289970134787115" />
-      </scope>
-      <scope id="2214335295230338429" at="206,0,209,0">
-        <var name="context" id="2214335295230338433" />
-      </scope>
-      <scope id="2214335295230338445" at="211,0,214,0">
-        <var name="context" id="2214335295230338449" />
-      </scope>
-      <scope id="2214335295230338556" at="244,92,247,5" />
-      <scope id="8251289970134714803" at="244,92,247,5" />
-      <scope id="2214335295230338589" at="265,0,268,0">
-        <var name="context" id="2214335295230338593" />
-      </scope>
-      <scope id="8251289970136147981" at="270,59,273,7" />
-      <scope id="2214335295230338620" at="296,88,299,5" />
-      <scope id="2214335295230338780" at="341,74,344,52">
-        <var name="ruleRef" id="2214335295232650591" />
-      </scope>
-      <scope id="8251289970134909648" at="353,43,356,7" />
-      <scope id="2214335295230981716" at="382,0,385,0" />
-      <scope id="2214335295231988187" at="385,0,388,0">
-        <var name="parser" id="2214335295231988194" />
-      </scope>
-      <scope id="8251289970135916009" at="88,0,92,0" />
-      <scope id="2214335295230338373" at="169,0,173,0">
-        <var name="context" id="2214335295230338377" />
-      </scope>
-      <scope id="2214335295230338397" at="178,0,182,0">
-        <var name="context" id="2214335295230338401" />
-      </scope>
-      <scope id="2214335295230338421" at="201,0,205,0">
-        <var name="context" id="2214335295230338425" />
-      </scope>
-      <scope id="8251289970136098285" at="215,33,219,7">
-        <var name="atom" id="8251289970136567814" />
-      </scope>
-      <scope id="2214335295230338581" at="260,0,264,0">
-        <var name="context" id="2214335295230338585" />
-      </scope>
-      <scope id="8251289970133751633" at="269,33,273,7" />
-      <scope id="8251289970134747895" at="353,43,357,73" />
-      <scope id="2214335295230338156" at="92,88,97,0">
-        <var name="name" id="8251289970135755965" />
-        <var name="node" id="8251289970135755959" />
-      </scope>
-      <scope id="8251289970135755957" at="100,23,105,52" />
-      <scope id="2214335295230338325" at="150,0,155,0">
-        <var name="context" id="2214335295230338329" />
-      </scope>
-      <scope id="2214335295230338341" at="157,0,162,0">
-        <var name="context" id="2214335295230338345" />
-      </scope>
-      <scope id="8251289970133278422" at="191,0,196,0">
-        <var name="name" id="8251289970133327810" />
-      </scope>
-      <scope id="8251289970134787108" at="196,0,201,0">
-        <var name="value" id="8251289970134787109" />
-      </scope>
-      <scope id="2214335295230338549" at="244,0,249,0">
-        <var name="context" id="2214335295230338553" />
-      </scope>
-      <scope id="2214335295230338580" at="253,83,258,219" />
-      <scope id="2214335295230338613" at="296,0,301,0">
-        <var name="context" id="2214335295230338617" />
-      </scope>
-      <scope id="2214335295230338773" at="341,0,346,0">
-        <var name="context" id="2214335295230338777" />
-      </scope>
-      <scope id="2214335295230338460" at="214,84,220,5" />
-      <scope id="2214335295230338149" at="92,0,99,0">
-        <var name="context" id="2214335295230338153" />
-      </scope>
-      <scope id="8251289970135755955" at="99,47,106,5" />
-      <scope id="2214335295230338573" at="253,0,260,0">
-        <var name="context" id="2214335295230338577" />
-      </scope>
-      <scope id="2214335295230338453" at="214,0,222,0">
-        <var name="context" id="2214335295230338457" />
-      </scope>
-      <scope id="2214335295230338812" at="352,76,360,0" />
-      <scope id="8251289970135756022" at="99,0,108,0">
-        <var name="ruleName" id="8251289970135783344" />
-      </scope>
-      <scope id="2214335295230338604" at="268,74,277,5" />
-      <scope id="2214335295230338805" at="352,0,362,0">
-        <var name="context" id="2214335295230338809" />
-      </scope>
-      <scope id="2214335295230338597" at="268,0,279,0">
-        <var name="context" id="2214335295230338601" />
-      </scope>
-      <scope id="8251289970135002133" at="280,52,291,0">
-        <var name="question" id="8251289970135084449" />
-      </scope>
-      <scope id="8251289970135002131" at="279,83,292,5" />
-      <scope id="8251289970135002200" at="279,0,294,0">
-        <var name="context" id="8251289970135063790" />
-        <var name="currentElement" id="8251289970135002188" />
-      </scope>
-      <unit id="2214335295230337887" at="23,0,390,0" name="org.campagnelab.antlr.plugin.plugin.ANTLRv4ParserListenerImpl" />
-    </file>
-  </root>
   <root nodeRef="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/2872212824181502643">
     <file name="EditorPopup_paste_ActionGroup.java">
-      <node id="2872212824181502643" at="10,0,11,0" concept="12" trace="LOG" />
-      <node id="2872212824181502643" at="11,0,12,0" concept="12" trace="ID" />
-      <node id="2872212824181502643" at="12,42,13,35" concept="14" />
-      <node id="2872212824181502643" at="13,35,14,30" concept="3" />
-      <node id="2872212824181502643" at="14,30,15,25" concept="3" />
-      <node id="2214335295231571801" at="16,9,17,115" concept="3" />
-      <node id="2872212824181502643" at="18,27,19,39" concept="3" />
-      <node id="2872212824181502643" at="15,25,20,5" concept="15" />
-      <node id="2872212824181502643" at="12,0,22,0" concept="2" trace="EditorPopup_paste_ActionGroup#()V" />
+      <node id="2872212824181502643" at="10,0,11,0" concept="9" trace="LOG" />
+      <node id="2872212824181502643" at="11,0,12,0" concept="9" trace="ID" />
+      <node id="2872212824181502643" at="12,42,13,35" concept="10" />
+      <node id="2872212824181502643" at="13,35,14,30" concept="2" />
+      <node id="2872212824181502643" at="14,30,15,25" concept="2" />
+      <node id="2214335295231571801" at="16,9,17,115" concept="2" />
+      <node id="2872212824181502643" at="18,27,19,39" concept="2" />
+      <node id="2872212824181502643" at="15,25,20,5" concept="11" />
+      <node id="2872212824181502643" at="12,0,22,0" concept="1" trace="EditorPopup_paste_ActionGroup#()V" />
       <scope id="2872212824181502643" at="16,9,17,115" />
       <scope id="2872212824181502643" at="18,0,19,39">
         <var name="t" id="2872212824181502643" />
@@ -815,298 +35,137 @@
   </root>
   <root nodeRef="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/2872212824181502669">
     <file name="PasteAsAntlrRules_Action.java">
-      <node id="2872212824181502669" at="28,0,29,0" concept="12" trace="ICON" />
-      <node id="2872212824181502669" at="29,37,30,41" concept="14" />
-      <node id="2872212824181502669" at="30,41,31,35" concept="3" />
-      <node id="2872212824181502669" at="31,35,32,41" concept="3" />
-      <node id="2872212824181502669" at="35,32,36,16" concept="9" />
-      <node id="1433263869221341707" at="39,124,40,19" concept="9" />
-      <node id="1254338965550494526" at="41,5,42,315" concept="9" />
-      <node id="2872212824181502669" at="46,7,47,60" concept="8" />
-      <node id="2872212824181502669" at="47,60,48,63" concept="3" />
-      <node id="2872212824181502669" at="51,42,52,92" concept="3" />
-      <node id="2872212824181502669" at="53,7,54,44" concept="3" />
-      <node id="2872212824181502669" at="58,53,59,19" concept="9" />
-      <node id="2872212824181502669" at="60,5,61,109" concept="3" />
-      <node id="2872212824181502669" at="62,71,63,19" concept="9" />
-      <node id="2872212824181502669" at="64,5,65,90" concept="3" />
-      <node id="2872212824181502669" at="66,65,67,19" concept="9" />
-      <node id="2872212824181502669" at="68,5,69,94" concept="3" />
-      <node id="2872212824181502669" at="70,60,71,19" concept="9" />
-      <node id="2872212824181502669" at="73,158,74,19" concept="9" />
-      <node id="2872212824181502669" at="75,5,76,97" concept="3" />
-      <node id="2872212824181502669" at="77,65,78,19" concept="9" />
-      <node id="2872212824181502669" at="80,5,81,90" concept="8" />
-      <node id="2872212824181502669" at="82,67,83,31" concept="3" />
-      <node id="2872212824181502669" at="84,7,85,75" concept="3" />
-      <node id="2872212824181502669" at="87,70,88,19" concept="9" />
-      <node id="2872212824181502669" at="89,5,90,16" concept="9" />
-      <node id="2872212824181502674" at="93,9,94,259" concept="3" />
-      <node id="2872212824181502669" at="96,42,97,91" concept="3" />
-      <node id="2872212824181502669" at="101,0,102,0" concept="12" trace="LOG" />
-      <node id="1433263869221341705" at="38,87,41,5" concept="6" />
-      <node id="2872212824181502669" at="50,27,53,7" concept="0" />
-      <node id="2872212824181502669" at="50,27,53,7" concept="6" />
-      <node id="2872212824181502669" at="57,95,60,5" concept="6" />
-      <node id="2872212824181502669" at="61,109,64,5" concept="6" />
-      <node id="2872212824181502669" at="65,90,68,5" concept="6" />
-      <node id="2872212824181502669" at="69,94,72,5" concept="6" />
-      <node id="2872212824181502669" at="72,5,75,5" concept="6" />
-      <node id="2872212824181502669" at="76,97,79,5" concept="6" />
-      <node id="2872212824181502669" at="81,90,84,7" concept="6" />
-      <node id="2872212824181502669" at="86,5,89,5" concept="6" />
-      <node id="2872212824181502669" at="95,27,98,7" concept="0" />
-      <node id="2872212824181502669" at="95,27,98,7" concept="6" />
-      <node id="2872212824181502669" at="34,0,38,0" concept="7" trace="isDumbAware#()Z" />
-      <node id="2872212824181502669" at="45,9,49,7" concept="0" />
-      <node id="2872212824181502669" at="60,5,64,5" concept="0" />
-      <node id="2872212824181502669" at="64,5,68,5" concept="0" />
-      <node id="2872212824181502669" at="75,5,79,5" concept="0" />
-      <node id="2872212824181502669" at="29,0,34,0" concept="2" trace="PasteAsAntlrRules_Action#()V" />
-      <node id="2872212824181502669" at="38,0,44,0" concept="7" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
-      <node id="2872212824181502669" at="68,5,75,5" concept="0" />
-      <node id="2872212824181502669" at="79,5,86,5" concept="0" />
-      <node id="2872212824181502669" at="92,96,99,5" concept="15" />
-      <node id="2872212824181502669" at="92,0,101,0" concept="7" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
-      <node id="2872212824181502669" at="79,5,89,5" concept="0" />
-      <node id="2872212824181502669" at="44,89,55,5" concept="15" />
-      <node id="2872212824181502669" at="44,0,57,0" concept="7" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
-      <node id="2872212824181502669" at="57,0,92,0" concept="7" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
-      <scope id="2872212824181502669" at="35,32,36,16" />
-      <scope id="1433263869221341706" at="39,124,40,19" />
-      <scope id="2872212824181502669" at="51,42,52,92" />
-      <scope id="2872212824181502669" at="58,53,59,19" />
-      <scope id="2872212824181502669" at="62,71,63,19" />
-      <scope id="2872212824181502669" at="66,65,67,19" />
-      <scope id="2872212824181502669" at="70,60,71,19" />
-      <scope id="2872212824181502669" at="73,158,74,19" />
-      <scope id="2872212824181502669" at="77,65,78,19" />
-      <scope id="2872212824181502669" at="82,67,83,31" />
-      <scope id="2872212824181502669" at="87,70,88,19" />
-      <scope id="2872212824181502669" at="93,9,94,259" />
-      <scope id="2872212824181502669" at="96,42,97,91" />
-      <scope id="2872212824181502669" at="46,7,48,63">
+      <node id="2872212824181502669" at="29,0,30,0" concept="9" trace="ICON" />
+      <node id="2872212824181502669" at="30,37,31,41" concept="10" />
+      <node id="2872212824181502669" at="31,41,32,35" concept="2" />
+      <node id="2872212824181502669" at="32,35,33,41" concept="2" />
+      <node id="2872212824181502669" at="36,32,37,16" concept="7" />
+      <node id="1433263869221341707" at="40,124,41,19" concept="7" />
+      <node id="1254338965550494526" at="42,5,43,315" concept="7" />
+      <node id="2872212824181502669" at="47,7,48,60" concept="6" />
+      <node id="2872212824181502669" at="48,60,49,63" concept="2" />
+      <node id="2872212824181502669" at="52,42,53,92" concept="2" />
+      <node id="2872212824181502669" at="54,7,55,44" concept="2" />
+      <node id="2872212824181502669" at="59,53,60,19" concept="7" />
+      <node id="2872212824181502669" at="61,5,62,109" concept="2" />
+      <node id="2872212824181502669" at="63,71,64,19" concept="7" />
+      <node id="2872212824181502669" at="65,5,66,90" concept="2" />
+      <node id="2872212824181502669" at="67,65,68,19" concept="7" />
+      <node id="2872212824181502669" at="69,5,70,94" concept="2" />
+      <node id="2872212824181502669" at="71,60,72,19" concept="7" />
+      <node id="2872212824181502669" at="74,158,75,19" concept="7" />
+      <node id="2872212824181502669" at="76,5,77,97" concept="2" />
+      <node id="2872212824181502669" at="78,65,79,19" concept="7" />
+      <node id="2872212824181502669" at="81,5,82,90" concept="6" />
+      <node id="2872212824181502669" at="83,67,84,31" concept="2" />
+      <node id="2872212824181502669" at="85,7,86,75" concept="2" />
+      <node id="2872212824181502669" at="88,70,89,19" concept="7" />
+      <node id="2872212824181502669" at="90,5,91,16" concept="7" />
+      <node id="2872212824181502674" at="94,9,95,259" concept="2" />
+      <node id="2872212824181502669" at="97,42,98,91" concept="2" />
+      <node id="2872212824181502669" at="102,0,103,0" concept="9" trace="LOG" />
+      <node id="1433263869221341705" at="39,87,42,5" concept="4" />
+      <node id="2872212824181502669" at="51,27,54,7" concept="0" />
+      <node id="2872212824181502669" at="51,27,54,7" concept="4" />
+      <node id="2872212824181502669" at="58,95,61,5" concept="4" />
+      <node id="2872212824181502669" at="62,109,65,5" concept="4" />
+      <node id="2872212824181502669" at="66,90,69,5" concept="4" />
+      <node id="2872212824181502669" at="70,94,73,5" concept="4" />
+      <node id="2872212824181502669" at="73,5,76,5" concept="4" />
+      <node id="2872212824181502669" at="77,97,80,5" concept="4" />
+      <node id="2872212824181502669" at="82,90,85,7" concept="4" />
+      <node id="2872212824181502669" at="87,5,90,5" concept="4" />
+      <node id="2872212824181502669" at="96,27,99,7" concept="0" />
+      <node id="2872212824181502669" at="96,27,99,7" concept="4" />
+      <node id="2872212824181502669" at="35,0,39,0" concept="5" trace="isDumbAware#()Z" />
+      <node id="2872212824181502669" at="46,9,50,7" concept="0" />
+      <node id="2872212824181502669" at="61,5,65,5" concept="0" />
+      <node id="2872212824181502669" at="65,5,69,5" concept="0" />
+      <node id="2872212824181502669" at="76,5,80,5" concept="0" />
+      <node id="2872212824181502669" at="30,0,35,0" concept="1" trace="PasteAsAntlrRules_Action#()V" />
+      <node id="2872212824181502669" at="39,0,45,0" concept="5" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="2872212824181502669" at="69,5,76,5" concept="0" />
+      <node id="2872212824181502669" at="80,5,87,5" concept="0" />
+      <node id="2872212824181502669" at="93,96,100,5" concept="11" />
+      <node id="2872212824181502669" at="93,0,102,0" concept="5" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="2872212824181502669" at="80,5,90,5" concept="0" />
+      <node id="2872212824181502669" at="45,89,56,5" concept="11" />
+      <node id="2872212824181502669" at="45,0,58,0" concept="5" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="2872212824181502669" at="58,0,93,0" concept="5" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <scope id="2872212824181502669" at="36,32,37,16" />
+      <scope id="1433263869221341706" at="40,124,41,19" />
+      <scope id="2872212824181502669" at="52,42,53,92" />
+      <scope id="2872212824181502669" at="59,53,60,19" />
+      <scope id="2872212824181502669" at="63,71,64,19" />
+      <scope id="2872212824181502669" at="67,65,68,19" />
+      <scope id="2872212824181502669" at="71,60,72,19" />
+      <scope id="2872212824181502669" at="74,158,75,19" />
+      <scope id="2872212824181502669" at="78,65,79,19" />
+      <scope id="2872212824181502669" at="83,67,84,31" />
+      <scope id="2872212824181502669" at="88,70,89,19" />
+      <scope id="2872212824181502669" at="94,9,95,259" />
+      <scope id="2872212824181502669" at="97,42,98,91" />
+      <scope id="2872212824181502669" at="47,7,49,63">
         <var name="enabled" id="2872212824181502669" />
       </scope>
-      <scope id="2872212824181502669" at="29,37,32,41" />
-      <scope id="2872212824181502669" at="50,27,53,7" />
-      <scope id="2872212824181502669" at="95,0,98,7">
+      <scope id="2872212824181502669" at="30,37,33,41" />
+      <scope id="2872212824181502669" at="51,27,54,7" />
+      <scope id="2872212824181502669" at="96,0,99,7">
         <var name="t" id="2872212824181502669" />
       </scope>
-      <scope id="2872212824181502669" at="95,27,98,7" />
-      <scope id="2872212824181502669" at="34,0,38,0" />
-      <scope id="1254338965550442361" at="38,87,42,315" />
-      <scope id="2872212824181502669" at="45,9,49,7" />
-      <scope id="2872212824181502669" at="50,0,54,44">
+      <scope id="2872212824181502669" at="96,27,99,7" />
+      <scope id="2872212824181502669" at="35,0,39,0" />
+      <scope id="1254338965550442361" at="39,87,43,315" />
+      <scope id="2872212824181502669" at="46,9,50,7" />
+      <scope id="2872212824181502669" at="51,0,55,44">
         <var name="t" id="2872212824181502669" />
       </scope>
-      <scope id="2872212824181502669" at="50,27,54,44" />
-      <scope id="2872212824181502669" at="60,5,64,5" />
-      <scope id="2872212824181502669" at="64,5,68,5" />
-      <scope id="2872212824181502669" at="75,5,79,5" />
-      <scope id="2872212824181502669" at="29,0,34,0" />
-      <scope id="2872212824181502669" at="80,5,85,75">
+      <scope id="2872212824181502669" at="51,27,55,44" />
+      <scope id="2872212824181502669" at="61,5,65,5" />
+      <scope id="2872212824181502669" at="65,5,69,5" />
+      <scope id="2872212824181502669" at="76,5,80,5" />
+      <scope id="2872212824181502669" at="30,0,35,0" />
+      <scope id="2872212824181502669" at="81,5,86,75">
         <var name="editorComponent" id="2872212824181502669" />
       </scope>
-      <scope id="2872212824181502669" at="38,0,44,0">
+      <scope id="2872212824181502669" at="39,0,45,0">
         <var name="_params" id="2872212824181502669" />
         <var name="event" id="2872212824181502669" />
       </scope>
-      <scope id="2872212824181502669" at="68,5,75,5" />
-      <scope id="2872212824181502669" at="92,96,99,5" />
-      <scope id="2872212824181502669" at="92,0,101,0">
+      <scope id="2872212824181502669" at="69,5,76,5" />
+      <scope id="2872212824181502669" at="93,96,100,5" />
+      <scope id="2872212824181502669" at="93,0,102,0">
         <var name="_params" id="2872212824181502669" />
         <var name="event" id="2872212824181502669" />
       </scope>
-      <scope id="2872212824181502669" at="79,5,89,5" />
-      <scope id="2872212824181502669" at="44,89,55,5" />
-      <scope id="2872212824181502669" at="44,0,57,0">
+      <scope id="2872212824181502669" at="80,5,90,5" />
+      <scope id="2872212824181502669" at="45,89,56,5" />
+      <scope id="2872212824181502669" at="45,0,58,0">
         <var name="_params" id="2872212824181502669" />
         <var name="event" id="2872212824181502669" />
       </scope>
-      <scope id="2872212824181502669" at="57,95,90,16" />
-      <scope id="2872212824181502669" at="57,0,92,0">
+      <scope id="2872212824181502669" at="58,95,91,16" />
+      <scope id="2872212824181502669" at="58,0,93,0">
         <var name="_params" id="2872212824181502669" />
         <var name="event" id="2872212824181502669" />
       </scope>
-      <unit id="2872212824181502669" at="27,0,103,0" name="org.campagnelab.antlr.plugin.plugin.PasteAsAntlrRules_Action" />
-    </file>
-  </root>
-  <root nodeRef="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/5646944109420335310">
-    <file name="AntlrPaster.java">
-      <node id="5646944109420336544" at="34,0,35,0" concept="12" trace="LOG" />
-      <node id="5646944109420336563" at="37,118,38,52" concept="8" />
-      <node id="5646944109420336572" at="39,32,40,13" concept="9" />
-      <node id="5646944109420336573" at="41,5,42,104" concept="3" />
-      <node id="5646944109420336590" at="44,99,45,47" concept="8" />
-      <node id="5646944109420336599" at="46,27,47,13" concept="9" />
-      <node id="5646944109420336600" at="48,5,49,91" concept="3" />
-      <node id="5646944109420336611" at="51,42,52,33" concept="8" />
-      <node id="5646944109420336632" at="54,78,55,23" concept="3" />
-      <node id="5646944109420336636" at="56,7,57,12" concept="1" />
-      <node id="5646944109420336642" at="59,27,60,18" concept="9" />
-      <node id="5646944109420336667" at="63,11,64,72" concept="8" />
-      <node id="5646944109420336679" at="65,37,66,31" concept="9" />
-      <node id="5646944109420336653" at="68,47,69,20" concept="9" />
-      <node id="5646944109420336659" at="70,32,71,40" concept="3" />
-      <node id="5646944109420336683" at="73,5,74,16" concept="9" />
-      <node id="5646944109420336699" at="76,170,77,39" concept="8" />
-      <node id="7142405419536707509" at="78,9,79,102" concept="8" />
-      <node id="7142405419536707515" at="79,102,80,77" concept="8" />
-      <node id="7142405419536707521" at="80,77,81,55" concept="8" />
-      <node id="8251289970136526403" at="81,55,82,70" concept="10" />
-      <node id="8251289970135548227" at="83,11,84,123" concept="3" />
-      <node id="8251289970135560238" at="84,123,85,0" concept="11" />
-      <node id="8251289970135632988" at="87,54,88,53" concept="3" />
-      <node id="2663241436901352250" at="90,7,91,0" concept="11" />
-      <node id="2214335295230305213" at="91,0,92,45" concept="10" />
-      <node id="2214335295230540492" at="92,45,93,212" concept="8" />
-      <node id="2663241436901363321" at="93,212,94,32" concept="8" />
-      <node id="8251289970136738431" at="95,23,96,58" concept="8" />
-      <node id="2663241436901338392" at="96,58,97,67" concept="8" />
-      <node id="2663241436901375770" at="97,67,98,242" concept="3" />
-      <node id="2214335295230305198" at="99,14,100,55" concept="8" />
-      <node id="2214335295230305211" at="100,55,101,34" concept="10" />
-      <node id="2214335295230305202" at="101,34,102,84" concept="8" />
-      <node id="2214335295230305206" at="102,84,103,37" concept="3" />
-      <node id="2214335295230566460" at="103,37,104,257" concept="3" />
-      <node id="2214335295231319194" at="105,7,106,0" concept="11" />
-      <node id="2214335295231325664" at="108,52,109,61" concept="3" />
-      <node id="5662895729668301265" at="113,55,114,72" concept="8" />
-      <node id="5662895729668294581" at="115,75,116,19" concept="9" />
-      <node id="5662895729668294600" at="118,61,119,18" concept="9" />
-      <node id="5662895729668294604" at="120,5,121,17" concept="9" />
-      <node id="5646944109420335310" at="123,0,124,0" concept="12" trace="LOG_308197374" />
-      <node id="5646944109420336549" at="35,0,37,0" concept="2" trace="AntlrPaster#()V" />
-      <node id="5646944109420336567" at="38,52,41,5" concept="6" />
-      <node id="5646944109420336594" at="45,47,48,5" concept="6" />
-      <node id="5646944109420336622" at="53,82,56,7" concept="6" />
-      <node id="5646944109420336637" at="58,5,61,5" concept="6" />
-      <node id="5646944109420336674" at="64,72,67,9" concept="6" />
-      <node id="8251289970135632988" at="86,34,89,9" concept="0" />
-      <node id="8251289970135632988" at="86,34,89,9" concept="6" />
-      <node id="2214335295231325664" at="107,39,110,7" concept="0" />
-      <node id="2214335295231325664" at="107,39,110,7" concept="6" />
-      <node id="5662895729668294572" at="114,72,117,5" concept="6" />
-      <node id="5662895729668294592" at="117,5,120,5" concept="6" />
-      <node id="5646944109420336615" at="52,33,58,5" concept="5" />
-      <node id="2663241436901377037" at="99,12,105,7" concept="0" />
-      <node id="5646944109420336553" at="37,0,44,0" concept="7" trace="pasteRules#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/ide/java/newparser/FeatureKind;Ljetbrains/mps/project/Project;)V" />
-      <node id="5646944109420336582" at="44,0,51,0" concept="7" trace="pasteJavaAsClass#(Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/project/Project;)V" />
-      <node id="8251289970135560237" at="82,70,90,7" concept="15" />
-      <node id="5646944109420336650" at="62,66,72,7" concept="15" />
-      <node id="5662895729668271035" at="113,0,123,0" concept="13" trace="areDataAvailableInClipboard#()Z" />
-      <node id="2663241436901373524" at="94,32,105,7" concept="6" />
-      <node id="5646944109420336644" at="61,5,73,5" concept="6" />
-      <node id="5646944109420336607" at="51,0,76,0" concept="7" trace="getStringFromClipboard#()Ljava/lang/String;" />
-      <node id="2214335295231319193" at="77,39,111,5" concept="15" />
-      <node id="5646944109420336685" at="76,0,113,0" concept="7" trace="pasteRulesAsNodes#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;Ljava/lang/String;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/ide/java/newparser/FeatureKind;Ljetbrains/mps/project/Project;)V" />
-      <scope id="5646944109420336552" at="35,24,35,24" />
-      <scope id="5646944109420336571" at="39,32,40,13" />
-      <scope id="5646944109420336598" at="46,27,47,13" />
-      <scope id="5646944109420336631" at="54,78,55,23" />
-      <scope id="5646944109420336641" at="59,27,60,18" />
-      <scope id="5646944109420336678" at="65,37,66,31" />
-      <scope id="5646944109420336651" at="68,0,69,20">
-        <var name="ex" id="5646944109420336655" />
-      </scope>
-      <scope id="5646944109420336652" at="68,47,69,20" />
-      <scope id="5646944109420336657" at="70,0,71,40">
-        <var name="ex" id="5646944109420336664" />
-      </scope>
-      <scope id="5646944109420336658" at="70,32,71,40" />
-      <scope id="8251289970135632988" at="87,54,88,53" />
-      <scope id="2214335295231325664" at="108,52,109,61" />
-      <scope id="5662895729668294573" at="115,75,116,19" />
-      <scope id="5662895729668294593" at="118,61,119,18" />
-      <scope id="5646944109420336549" at="35,0,37,0" />
-      <scope id="8251289970135560239" at="83,11,85,0" />
-      <scope id="8251289970135628654" at="86,0,89,9">
-        <var name="e" id="8251289970135628656" />
-      </scope>
-      <scope id="8251289970135628655" at="86,34,89,9" />
-      <scope id="8251289970135632988" at="86,34,89,9" />
-      <scope id="2663241436901373526" at="95,23,98,242">
-        <var name="rules" id="2663241436901338398" />
-        <var name="visitor" id="8251289970136738432" />
-      </scope>
-      <scope id="2214335295231319196" at="107,0,110,7">
-        <var name="ioException" id="2214335295231319200" />
-      </scope>
-      <scope id="2214335295231319198" at="107,39,110,7" />
-      <scope id="2214335295231325664" at="107,39,110,7" />
-      <scope id="5646944109420336621" at="53,82,57,12" />
-      <scope id="5646944109420336666" at="63,11,67,9">
-        <var name="data" id="5646944109420336668" />
-      </scope>
-      <scope id="5646944109420336562" at="37,118,42,104">
-        <var name="antlrRuleText" id="5646944109420336564" />
-      </scope>
-      <scope id="5646944109420336589" at="44,99,49,91">
-        <var name="javaCode" id="5646944109420336591" />
-      </scope>
-      <scope id="2663241436901377038" at="99,14,104,257">
-        <var name="extractor" id="2214335295230305201" />
-        <var name="walker" id="2214335295230305197" />
-      </scope>
-      <scope id="5646944109420336615" at="52,33,58,5">
-        <var name="trf" id="5646944109420336619" />
-      </scope>
-      <scope id="5646944109420336553" at="37,0,44,0">
-        <var name="anchor" id="5646944109420336556" />
-        <var name="featureKind" id="5646944109420336560" />
-        <var name="operationContext" id="5646944109420336558" />
-        <var name="project" id="912131512389473038" />
-      </scope>
-      <scope id="5646944109420336582" at="44,0,51,0">
-        <var name="model" id="5646944109420336585" />
-        <var name="operationContext" id="5646944109420336587" />
-        <var name="project" id="912131512389473200" />
-      </scope>
-      <scope id="5662895729668271038" at="113,55,121,17">
-        <var name="trf" id="5662895729668301266" />
-      </scope>
-      <scope id="5646944109420336649" at="62,66,72,7" />
-      <scope id="5662895729668271035" at="113,0,123,0" />
-      <scope id="5646944109420336610" at="51,42,74,16">
-        <var name="contents" id="5646944109420336612" />
-      </scope>
-      <scope id="5646944109420336607" at="51,0,76,0" />
-      <scope id="2214335295231319195" at="78,9,106,0">
-        <var name="grammar" id="2214335295230540498" />
-        <var name="lexer" id="7142405419536707508" />
-        <var name="parser" id="7142405419536707514" />
-        <var name="tree" id="7142405419536707520" />
-        <var name="useVisitor" id="2663241436901363324" />
-      </scope>
-      <scope id="5646944109420336698" at="76,170,111,5">
-        <var name="module" id="5646944109420336700" />
-      </scope>
-      <scope id="5646944109420336685" at="76,0,113,0">
-        <var name="anchor" id="5646944109420336688" />
-        <var name="antlrRulesAsText" id="5646944109420336692" />
-        <var name="featureKind" id="5646944109420336696" />
-        <var name="model" id="5646944109420336690" />
-        <var name="operationContext" id="5646944109420336694" />
-        <var name="project" id="912131512389473690" />
-      </scope>
-      <unit id="5646944109420335310" at="33,0,125,0" name="org.campagnelab.antlr.plugin.plugin.AntlrPaster" />
+      <unit id="2872212824181502669" at="28,0,104,0" name="org.campagnelab.antlr.plugin.plugin.PasteAsAntlrRules_Action" />
     </file>
   </root>
   <root nodeRef="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/7142405419536592152">
     <file name="Plugin_ApplicationPlugin.java">
-      <node id="7142405419536592152" at="9,0,10,0" concept="4" trace="myId" />
-      <node id="7142405419536592152" at="12,27,13,16" concept="9" />
-      <node id="7142405419536592152" at="15,30,16,30" concept="10" />
-      <node id="7142405419536592152" at="16,30,17,46" concept="3" />
-      <node id="7142405419536592152" at="17,46,18,14" concept="10" />
-      <node id="7142405419536592152" at="18,14,19,50" concept="3" />
-      <node id="7142405419536592152" at="21,37,22,79" concept="3" />
-      <node id="7142405419536592152" at="22,79,23,99" concept="3" />
-      <node id="7142405419536592152" at="10,0,12,0" concept="2" trace="Plugin_ApplicationPlugin#()V" />
-      <node id="7142405419536592152" at="12,0,15,0" concept="7" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
-      <node id="7142405419536592152" at="21,0,25,0" concept="7" trace="adjustRegularGroups#()V" />
-      <node id="7142405419536592152" at="15,0,21,0" concept="7" trace="createGroups#()V" />
+      <node id="7142405419536592152" at="9,0,10,0" concept="3" trace="myId" />
+      <node id="7142405419536592152" at="12,27,13,16" concept="7" />
+      <node id="7142405419536592152" at="15,30,16,30" concept="8" />
+      <node id="7142405419536592152" at="16,30,17,46" concept="2" />
+      <node id="7142405419536592152" at="17,46,18,14" concept="8" />
+      <node id="7142405419536592152" at="18,14,19,50" concept="2" />
+      <node id="7142405419536592152" at="21,37,22,79" concept="2" />
+      <node id="7142405419536592152" at="22,79,23,99" concept="2" />
+      <node id="7142405419536592152" at="10,0,12,0" concept="1" trace="Plugin_ApplicationPlugin#()V" />
+      <node id="7142405419536592152" at="12,0,15,0" concept="5" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="7142405419536592152" at="21,0,25,0" concept="5" trace="adjustRegularGroups#()V" />
+      <node id="7142405419536592152" at="15,0,21,0" concept="5" trace="createGroups#()V" />
       <scope id="7142405419536592152" at="10,37,10,37" />
       <scope id="7142405419536592152" at="12,27,13,16" />
       <scope id="7142405419536592152" at="10,0,12,0" />
@@ -1116,240 +175,6 @@
       <scope id="7142405419536592152" at="21,0,25,0" />
       <scope id="7142405419536592152" at="15,0,21,0" />
       <unit id="7142405419536592152" at="8,0,26,0" name="org.campagnelab.antlr.plugin.plugin.Plugin_ApplicationPlugin" />
-    </file>
-  </root>
-  <root nodeRef="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/8251289970136807819">
-    <file name="AntlrRuleVisitor.java">
-      <node id="8251289970136912026" at="24,0,25,0" concept="4" trace="rule" />
-      <node id="8251289970136964599" at="25,0,26,0" concept="4" trace="rules" />
-      <node id="2663241436901201669" at="28,73,29,30" concept="3" />
-      <node id="2663241436901209116" at="29,30,30,47" concept="8" />
-      <node id="2663241436901212964" at="31,5,32,106" concept="8" />
-      <node id="2663241436901212964" at="32,106,33,42" concept="8" />
-      <node id="2663241436901212964" at="34,30,35,28" concept="3" />
-      <node id="2663241436901217315" at="35,28,36,78" concept="3" />
-      <node id="2663241436901269849" at="38,5,39,17" concept="9" />
-      <node id="8251289970136809067" at="43,91,44,39" concept="3" />
-      <node id="8251289970136815727" at="44,39,45,225" concept="8" />
-      <node id="8251289970136822654" at="45,225,46,178" concept="3" />
-      <node id="8251289970136864641" at="46,178,47,43" concept="8" />
-      <node id="8251289970136864647" at="47,43,48,62" concept="8" />
-      <node id="8251289970136928851" at="48,62,49,60" concept="8" />
-      <node id="1684107016605133386" at="49,60,50,171" concept="3" />
-      <node id="8251289970136886747" at="50,171,51,16" concept="9" />
-      <node id="8251289970136861406" at="51,16,52,0" concept="11" />
-      <node id="8251289970136983253" at="55,81,56,34" concept="3" />
-      <node id="8251289970136985928" at="56,34,57,51" concept="9" />
-      <node id="1684107016605619583" at="60,87,61,37" concept="3" />
-      <node id="1684107016605527218" at="61,37,62,37" concept="3" />
-      <node id="1684107016605531894" at="62,37,63,233" concept="8" />
-      <node id="1684107016605531900" at="63,233,64,70" concept="8" />
-      <node id="1684107016605531907" at="65,30,66,68" concept="3" />
-      <node id="1684107016605531915" at="68,30,69,229" concept="8" />
-      <node id="1684107016605531924" at="70,81,71,237" concept="3" />
-      <node id="1684107016605531935" at="72,7,73,185" concept="3" />
-      <node id="1684107016605531948" at="74,12,75,215" concept="3" />
-      <node id="1684107016605531960" at="76,5,77,23" concept="9" />
-      <node id="1684107016605627602" at="77,23,78,0" concept="11" />
-      <node id="8251289970137013506" at="82,85,83,36" concept="3" />
-      <node id="8251289970137016352" at="83,36,84,233" concept="8" />
-      <node id="1684107016604517848" at="84,233,85,68" concept="8" />
-      <node id="1684107016604933027" at="86,30,87,68" concept="3" />
-      <node id="2663241436900535685" at="89,30,90,229" concept="8" />
-      <node id="2663241436900565209" at="91,80,92,236" concept="3" />
-      <node id="2663241436900806480" at="93,7,94,185" concept="3" />
-      <node id="2663241436900810135" at="95,12,96,214" concept="3" />
-      <node id="2663241436900982271" at="97,5,98,23" concept="9" />
-      <node id="1684107016604995172" at="101,85,102,36" concept="3" />
-      <node id="1684107016605002442" at="102,36,103,227" concept="8" />
-      <node id="1684107016605199113" at="103,227,104,178" concept="3" />
-      <node id="1684107016605005205" at="105,93,106,236" concept="3" />
-      <node id="1684107016605069515" at="107,5,108,16" concept="9" />
-      <node id="1684107016604868937" at="112,30,113,52" concept="3" />
-      <node id="1684107016604652853" at="114,5,115,48" concept="8" />
-      <node id="1684107016604546207" at="116,33,117,60" concept="8" />
-      <node id="1684107016604618846" at="118,30,119,59" concept="3" />
-      <node id="1684107016604643443" at="120,7,121,23" concept="9" />
-      <node id="1684107016604661647" at="122,12,123,20" concept="9" />
-      <node id="1684107016605641492" at="127,79,128,33" concept="3" />
-      <node id="1684107016605647480" at="129,30,130,53" concept="3" />
-      <node id="1684107016605647486" at="131,5,132,49" concept="8" />
-      <node id="1684107016607039048" at="133,42,134,16" concept="10" />
-      <node id="1684107016607045056" at="134,16,135,16" concept="10" />
-      <node id="1684107016607048943" at="135,16,136,16" concept="10" />
-      <node id="1684107016607056423" at="136,16,137,18" concept="9" />
-      <node id="1684107016605647522" at="138,12,139,20" concept="9" />
-      <node id="1684107016605647343" at="140,5,141,0" concept="11" />
-      <node id="1684107016604627359" at="144,52,145,42" concept="8" />
-      <node id="1684107016604627367" at="146,33,147,191" concept="3" />
-      <node id="1684107016604627379" at="149,33,150,185" concept="3" />
-      <node id="1684107016604627391" at="152,33,153,195" concept="3" />
-      <node id="1684107016604627401" at="154,7,155,0" concept="11" />
-      <node id="1684107016604601084" at="158,39,159,233" concept="8" />
-      <node id="1684107016604601090" at="159,233,160,169" concept="3" />
-      <node id="1684107016604601096" at="160,169,161,21" concept="9" />
-      <node id="1684107016605252496" at="163,44,164,231" concept="8" />
-      <node id="1684107016605252502" at="164,231,165,171" concept="3" />
-      <node id="1684107016605252508" at="165,171,166,19" concept="9" />
-      <node id="8251289970136807819" at="171,0,172,0" concept="12" trace="LOG" />
-      <node id="1684107016605531946" at="74,10,76,5" concept="0" />
-      <node id="2663241436900799694" at="95,10,97,5" concept="0" />
-      <node id="1684107016604658808" at="122,10,124,5" concept="0" />
-      <node id="1684107016605647520" at="138,10,140,5" concept="0" />
-      <node id="1684107016605531907" at="64,70,67,5" concept="0" />
-      <node id="1684107016605531907" at="64,70,67,5" concept="6" />
-      <node id="1684107016605531921" at="69,229,72,7" concept="5" />
-      <node id="1684107016604933027" at="85,68,88,5" concept="0" />
-      <node id="1684107016604933027" at="85,68,88,5" concept="6" />
-      <node id="2663241436900681504" at="90,229,93,7" concept="5" />
-      <node id="1684107016605084740" at="104,178,107,5" concept="5" />
-      <node id="1684107016604868937" at="111,77,114,5" concept="0" />
-      <node id="1684107016604868937" at="111,77,114,5" concept="6" />
-      <node id="1684107016604618844" at="117,60,120,7" concept="6" />
-      <node id="1684107016605647480" at="128,33,131,5" concept="0" />
-      <node id="1684107016605647480" at="128,33,131,5" concept="6" />
-      <node id="1684107016604627365" at="145,42,148,7" concept="6" />
-      <node id="1684107016604627377" at="148,7,151,7" concept="6" />
-      <node id="1684107016604627389" at="151,7,154,7" concept="6" />
-      <node id="2663241436901212964" at="33,42,37,7" concept="16" />
-      <node id="8251289970136983241" at="54,0,59,0" concept="7" trace="visitRuleBlock#(Lorg/antlr/ANTLRv4Parser/RuleBlockContext;)Ljava/lang/Object;" />
-      <node id="1684107016604601078" at="158,0,163,0" concept="7" trace="createRef#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="1684107016605252490" at="163,0,168,0" concept="7" trace="createLiteral#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="2663241436901212964" at="30,47,38,5" concept="0" />
-      <node id="1684107016605647491" at="132,49,140,5" concept="6" />
-      <node id="1684107016605531913" at="67,5,76,5" concept="6" />
-      <node id="2663241436900427530" at="88,5,97,5" concept="6" />
-      <node id="1684107016604633895" at="115,48,124,5" concept="6" />
-      <node id="1684107016604995160" at="100,0,110,0" concept="7" trace="visitRuleAltList#(Lorg/antlr/ANTLRv4Parser/RuleAltListContext;)Ljava/lang/Object;" />
-      <node id="8251289970136809055" at="42,0,54,0" concept="7" trace="visitParserRuleSpec#(Lorg/antlr/ANTLRv4Parser/ParserRuleSpecContext;)Ljava/lang/Object;" />
-      <node id="1684107016604627357" at="143,83,156,5" concept="6" />
-      <node id="2663241436901201657" at="27,0,41,0" concept="7" trace="visitRules#(Lorg/antlr/ANTLRv4Parser/RulesContext;)Ljava/lang/Object;" />
-      <node id="1684107016604627349" at="143,0,158,0" concept="7" trace="addOptionalParams#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/antlr/v4/runtime/ParserRuleContext;)V" />
-      <node id="1684107016604523304" at="110,0,126,0" concept="7" trace="visitElement#(Lorg/antlr/ANTLRv4Parser/ElementContext;)Ljava/lang/Object;" />
-      <node id="1684107016605641480" at="126,0,143,0" concept="7" trace="visitLexerAlt#(Lorg/antlr/ANTLRv4Parser/LexerAltContext;)Ljava/lang/Object;" />
-      <node id="8251289970137013494" at="81,0,100,0" concept="7" trace="visitAlternative#(Lorg/antlr/ANTLRv4Parser/AlternativeContext;)Ljava/lang/Object;" />
-      <node id="1684107016605619571" at="59,0,80,0" concept="7" trace="visitLexerAltList#(Lorg/antlr/ANTLRv4Parser/LexerAltListContext;)Ljava/lang/Object;" />
-      <scope id="1684107016605531907" at="65,30,66,68" />
-      <scope id="1684107016605531923" at="70,81,71,237" />
-      <scope id="1684107016605531947" at="74,12,75,215" />
-      <scope id="1684107016604933027" at="86,30,87,68" />
-      <scope id="2663241436900681508" at="91,80,92,236" />
-      <scope id="2663241436900799695" at="95,12,96,214" />
-      <scope id="1684107016605084744" at="105,93,106,236" />
-      <scope id="1684107016604868937" at="112,30,113,52" />
-      <scope id="1684107016604618845" at="118,30,119,59" />
-      <scope id="1684107016604658809" at="122,12,123,20" />
-      <scope id="1684107016605647480" at="129,30,130,53" />
-      <scope id="1684107016605647521" at="138,12,139,20" />
-      <scope id="1684107016604627366" at="146,33,147,191" />
-      <scope id="1684107016604627378" at="149,33,150,185" />
-      <scope id="1684107016604627390" at="152,33,153,195" />
-      <scope id="2663241436901212964" at="34,30,36,78" />
-      <scope id="8251289970136983249" at="55,81,57,51" />
-      <scope id="1684107016605531907" at="64,70,67,5" />
-      <scope id="1684107016605531921" at="69,229,72,7">
-        <var name="seq" id="1684107016605531922" />
-      </scope>
-      <scope id="1684107016604933027" at="85,68,88,5" />
-      <scope id="2663241436900681504" at="90,229,93,7">
-        <var name="seq" id="2663241436900681506" />
-      </scope>
-      <scope id="1684107016605084740" at="104,178,107,5">
-        <var name="alt" id="1684107016605084742" />
-      </scope>
-      <scope id="1684107016604868937" at="111,77,114,5" />
-      <scope id="1684107016605647480" at="128,33,131,5" />
-      <scope id="1684107016604601083" at="158,39,161,21">
-        <var name="refByName" id="1684107016604601085" />
-      </scope>
-      <scope id="1684107016605252495" at="163,44,166,19">
-        <var name="literal" id="1684107016605252497" />
-      </scope>
-      <scope id="1684107016605647492" at="133,42,137,18" />
-      <scope id="8251289970136983241" at="54,0,59,0">
-        <var name="context" id="8251289970136983245" />
-      </scope>
-      <scope id="1684107016605531914" at="68,30,73,185">
-        <var name="sequence" id="1684107016605531916" />
-      </scope>
-      <scope id="2663241436900427532" at="89,30,94,185">
-        <var name="sequence" id="2663241436900535691" />
-      </scope>
-      <scope id="1684107016604633897" at="116,33,121,23">
-        <var name="refByName" id="1684107016604546213" />
-      </scope>
-      <scope id="1684107016604601078" at="158,0,163,0">
-        <var name="name" id="1684107016604601079" />
-      </scope>
-      <scope id="1684107016605252490" at="163,0,168,0">
-        <var name="value" id="1684107016605252491" />
-      </scope>
-      <scope id="2663241436901212964" at="31,5,37,7">
-        <var name="r_it" id="2663241436901212964" />
-        <var name="r_var" id="2663241436901212964" />
-      </scope>
-      <scope id="1684107016604995168" at="101,85,108,16">
-        <var name="alts" id="1684107016605002448" />
-      </scope>
-      <scope id="8251289970136809063" at="43,91,52,0">
-        <var name="name" id="8251289970136864648" />
-        <var name="node" id="8251289970136864642" />
-        <var name="rhs" id="8251289970136928857" />
-        <var name="rule" id="8251289970136815733" />
-      </scope>
-      <scope id="1684107016604995160" at="100,0,110,0">
-        <var name="context" id="1684107016604995164" />
-      </scope>
-      <scope id="2663241436901201665" at="28,73,39,17">
-        <var name="rules" id="2663241436901209122" />
-      </scope>
-      <scope id="1684107016604627358" at="144,52,155,0">
-        <var name="question" id="1684107016604627360" />
-      </scope>
-      <scope id="8251289970136809055" at="42,0,54,0">
-        <var name="context" id="8251289970136809059" />
-      </scope>
-      <scope id="1684107016604523312" at="111,77,124,5">
-        <var name="result" id="1684107016604652854" />
-      </scope>
-      <scope id="1684107016604627356" at="143,83,156,5" />
-      <scope id="2663241436901201657" at="27,0,41,0">
-        <var name="context" id="2663241436901201661" />
-      </scope>
-      <scope id="1684107016605641488" at="127,79,141,0">
-        <var name="result" id="1684107016605647487" />
-      </scope>
-      <scope id="1684107016604627349" at="143,0,158,0">
-        <var name="context" id="1684107016604627354" />
-        <var name="currentElement" id="1684107016604627352" />
-      </scope>
-      <scope id="8251289970137013502" at="82,85,98,23">
-        <var name="alternative" id="8251289970137016358" />
-        <var name="elements" id="1684107016604517849" />
-      </scope>
-      <scope id="1684107016604523304" at="110,0,126,0">
-        <var name="context" id="1684107016604523308" />
-      </scope>
-      <scope id="1684107016605641480" at="126,0,143,0">
-        <var name="context" id="1684107016605641484" />
-      </scope>
-      <scope id="1684107016605619579" at="60,87,78,0">
-        <var name="alternative" id="1684107016605531895" />
-        <var name="elements" id="1684107016605531901" />
-      </scope>
-      <scope id="8251289970137013494" at="81,0,100,0">
-        <var name="context" id="8251289970137013498" />
-      </scope>
-      <scope id="1684107016605619571" at="59,0,80,0">
-        <var name="context" id="1684107016605619575" />
-      </scope>
-      <unit id="8251289970136807819" at="23,0,173,0" name="org.campagnelab.antlr.plugin.plugin.AntlrRuleVisitor" />
-    </file>
-  </root>
-  <root nodeRef="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/8251289970136807840">
-    <file name="Result.java">
-      <node id="8251289970136808459" at="9,0,10,0" concept="4" trace="rules" />
-      <unit id="8251289970136807840" at="8,0,11,0" name="org.campagnelab.antlr.plugin.plugin.Result" />
     </file>
   </root>
 </debug-info>

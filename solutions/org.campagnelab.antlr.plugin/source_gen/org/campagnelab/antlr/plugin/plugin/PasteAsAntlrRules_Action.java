@@ -18,6 +18,7 @@ import org.apache.log4j.Level;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import org.jetbrains.mps.openapi.model.EditableSModel;
 import jetbrains.mps.ide.editor.MPSEditorDataKeys;
+import org.campagnelab.antlr.parsers.AntlrPaster;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.ide.java.newparser.FeatureKind;
 import jetbrains.mps.project.MPSProject;
