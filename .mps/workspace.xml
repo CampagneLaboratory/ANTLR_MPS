@@ -6,25 +6,19 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec7c4c8-fdb9-475d-a1c5-08cf184915b2" name="Default" comment="Complete build script.">
+    <list default="true" id="1ec7c4c8-fdb9-475d-a1c5-08cf184915b2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/source_gen/ANTLR/persistence/build/ANTLR.xml" afterPath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/source_gen/ANTLR/persistence/build/ANTLR.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/AntlrPaster.java" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/AntlrPaster.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen/org/campagnelab/antlr/plugin/plugin/PasteAsAntlrRules_Action.java" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen/org/campagnelab/antlr/plugin/plugin/PasteAsAntlrRules_Action.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/models/ANTLR/persistence/build.mps" afterPath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/models/ANTLR/persistence/build.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/dependencies" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen.caches/org/campagnelab/antlr/plugin/plugin/dependencies" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen.caches/org/campagnelab/antlr/plugin/plugin/dependencies" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/source_gen.caches/ANTLR/persistence/build/generated" afterPath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/source_gen.caches/ANTLR/persistence/build/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/generated" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen.caches/org/campagnelab/antlr/plugin/plugin/generated" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen.caches/org/campagnelab/antlr/plugin/plugin/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers.msd" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers.msd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/org.campagnelab.antlr.plugin.msd" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/org.campagnelab.antlr.plugin.msd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/models/org/campagnelab/antlr/parsers.mps" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/models/org/campagnelab/antlr/parsers.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/models/org/campagnelab/antlr/plugin/plugin.mps" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/models/org/campagnelab/antlr/plugin/plugin.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/classes_gen/ANTLR/persistence/build/trace.info" afterPath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/classes_gen/ANTLR/persistence/build/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/source_gen/ANTLR/persistence/build/trace.info" afterPath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/source_gen/ANTLR/persistence/build/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/classes_gen/org/campagnelab/antlr/parsers/trace.info" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/classes_gen/org/campagnelab/antlr/parsers/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/trace.info" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/classes_gen/org/campagnelab/antlr/plugin/plugin/trace.info" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/classes_gen/org/campagnelab/antlr/plugin/plugin/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen/org/campagnelab/antlr/plugin/plugin/trace.info" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen/org/campagnelab/antlr/plugin/plugin/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="ANTLR.iws" />
@@ -63,26 +57,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ANTLR" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ANTLR" pinned="false" current-in-tab="true">
         <entry file="mps://node://ANTLR.persistence.build/ANTLR.persistence.build/ANTLR">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="596">
+              <memento viewPositionX="0" viewPositionY="40">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="40" />
-                    <property name="caretX" value="87" />
+                    <property name="caretXRelative" value="56" />
+                    <property name="caretX" value="415" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
-                      <node node_reference="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/6811693360203039502" />
+                    <cellInfo cellId="property_head" cellNumber="0" isInList="false">
+                      <node node_reference="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -100,7 +94,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PasteAsAntlrRules" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PasteAsAntlrRules" pinned="false" current-in-tab="false">
         <entry file="mps://node://org.campagnelab.antlr.plugin/org.campagnelab.antlr.plugin.plugin/PasteAsAntlrRules">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -119,7 +113,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -149,7 +143,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -177,7 +171,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -205,7 +199,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -224,7 +218,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -250,7 +244,7 @@
                 </errorLabels>
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -285,7 +279,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -312,7 +306,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -557,6 +551,28 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ANTLR.persistence.build">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ANTLR">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ANTLR.persistence.build">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Favorites" />
@@ -709,7 +725,7 @@
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.533757" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32937685" sideWeight="0.533757" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -720,7 +736,7 @@
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="MetaR Table Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32937685" sideWeight="0.5289913" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5289913" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -763,7 +779,8 @@
     <MESSAGE value="Correct visitor compilation error by commenting out unfinished part." />
     <MESSAGE value="Add a sketch of custom persistence for ANTRL grammar." />
     <MESSAGE value="Complete build script." />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete build script." />
+    <MESSAGE value="Remove FeatureKind." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove FeatureKind." />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://org.campagnelab.ANTLR/org.antlr.v4.runtime@java_stub/ParserRuleContext">
@@ -1780,7 +1797,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1805,7 +1822,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1816,22 +1833,22 @@
     <entry file="mps://node://ANTLR.persistence.build/ANTLR.persistence.build/ANTLR">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="596">
+          <memento viewPositionX="0" viewPositionY="40">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="40" />
-                <property name="caretX" value="87" />
+                <property name="caretXRelative" value="56" />
+                <property name="caretX" value="415" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
-                  <node node_reference="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/6811693360203039502" />
+                <cellInfo cellId="property_head" cellNumber="0" isInList="false">
+                  <node node_reference="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1859,7 +1876,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1875,7 +1892,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1902,7 +1919,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1929,7 +1946,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1985,7 +2002,7 @@
             </errorLabels>
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2011,7 +2028,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:067c93c6-6724-42d9-b9b8-d8e1ebd8f23a(org.campagnelab.antlr.plugin.plugin)/1433263869221346118" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:4f291851-4a14-4a46-acdb-b3df285248df(ANTLR.persistence.build)/3192865195614131312" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
