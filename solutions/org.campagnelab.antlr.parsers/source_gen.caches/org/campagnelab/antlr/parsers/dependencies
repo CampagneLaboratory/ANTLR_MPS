@@ -32,7 +32,6 @@
     <classNode dependClassName="java.util.List" />
     <classNode dependClassName="javax.print.PrintException" />
     <classNode dependClassName="jetbrains.mps.ide.datatransfer.SModelDataFlavor" />
-    <classNode dependClassName="jetbrains.mps.ide.java.newparser.FeatureKind" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />

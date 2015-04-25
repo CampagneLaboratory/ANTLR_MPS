@@ -20,7 +20,6 @@ import org.jetbrains.mps.openapi.model.EditableSModel;
 import jetbrains.mps.ide.editor.MPSEditorDataKeys;
 import org.campagnelab.antlr.parsers.AntlrPaster;
 import jetbrains.mps.smodel.IOperationContext;
-import jetbrains.mps.ide.java.newparser.FeatureKind;
 import jetbrains.mps.project.MPSProject;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
@@ -92,7 +91,7 @@ public class PasteAsAntlrRules_Action extends BaseAction {
   }
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     try {
-      new AntlrPaster().pasteRules(((SNode) MapSequence.fromMap(_params).get("anchorNode")), ((IOperationContext) MapSequence.fromMap(_params).get("operationContext")), FeatureKind.CLASS_CONTENT, ((MPSProject) MapSequence.fromMap(_params).get("mpsProject")));
+      new AntlrPaster().pasteRules(((SNode) MapSequence.fromMap(_params).get("anchorNode")), ((IOperationContext) MapSequence.fromMap(_params).get("operationContext")), ((MPSProject) MapSequence.fromMap(_params).get("mpsProject")));
     } catch (Throwable t) {
       if (LOG.isEnabledFor(Level.ERROR)) {
         LOG.error("User's action execute method failed. Action:" + "PasteAsAntlrRules", t);

@@ -59,10 +59,6 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
-        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
-        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
-      </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
         <child id="1164903496223" name="catchClause" index="TEbGg" />
@@ -3723,9 +3719,6 @@
             <node concept="37vLTw" id="2BHiRxgllcN" role="37wK5m">
               <ref role="3cqZAo" node="4TtYrYGuXmI" resolve="operationContext" />
             </node>
-            <node concept="37vLTw" id="2BHiRxglyJN" role="37wK5m">
-              <ref role="3cqZAo" node="4TtYrYGuXmK" resolve="featureKind" />
-            </node>
             <node concept="37vLTw" id="2BHiRxglDhq" role="37wK5m">
               <ref role="3cqZAo" node="MCyGswqxce" resolve="project" />
             </node>
@@ -3736,12 +3729,6 @@
         <property role="TrG5h" value="operationContext" />
         <node concept="3uibUv" id="4TtYrYGuXmJ" role="1tU5fm">
           <ref role="3uigEE" to="cu2c:~IOperationContext" resolve="IOperationContext" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="4TtYrYGuXmK" role="3clF46">
-        <property role="TrG5h" value="featureKind" />
-        <node concept="3uibUv" id="4TtYrYGuXmL" role="1tU5fm">
-          <ref role="3uigEE" to="rkxj:4TtYrYGuU_3" resolve="FeatureKind" />
         </node>
       </node>
       <node concept="37vLTG" id="MCyGswqxce" role="3clF46">
@@ -3808,10 +3795,6 @@
             </node>
             <node concept="37vLTw" id="2BHiRxglI9P" role="37wK5m">
               <ref role="3cqZAo" node="4TtYrYGuXnb" resolve="operationContext" />
-            </node>
-            <node concept="Rm8GO" id="4TtYrYGuXnu" role="37wK5m">
-              <ref role="1Px2BO" to="rkxj:4TtYrYGuU_3" resolve="FeatureKind" />
-              <ref role="Rm8GQ" to="rkxj:4TtYrYGuWz5" resolve="CLASS" />
             </node>
             <node concept="37vLTw" id="2BHiRxglt7X" role="37wK5m">
               <ref role="3cqZAo" node="MCyGswqxeK" resolve="project" />
@@ -4368,12 +4351,6 @@
         <property role="TrG5h" value="operationContext" />
         <node concept="3uibUv" id="4TtYrYGuXoR" role="1tU5fm">
           <ref role="3uigEE" to="cu2c:~IOperationContext" resolve="IOperationContext" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="4TtYrYGuXoS" role="3clF46">
-        <property role="TrG5h" value="featureKind" />
-        <node concept="3uibUv" id="4TtYrYGuXoT" role="1tU5fm">
-          <ref role="3uigEE" to="rkxj:4TtYrYGuU_3" resolve="FeatureKind" />
         </node>
       </node>
       <node concept="37vLTG" id="MCyGswqxmq" role="3clF46">

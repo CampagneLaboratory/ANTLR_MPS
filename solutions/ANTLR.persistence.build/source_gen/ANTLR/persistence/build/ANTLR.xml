@@ -3,11 +3,12 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/ANTLR" />
   <property name="build.layout" location="${build.dir}/artifacts/ANTLR" />
-  <property name="idea_home" location="${basedir}/../../../../../Applications/IntelliJ IDEA 14.app/Contents" />
-  <property name="mps_home" location="${basedir}/../../../../../Applications/MPS 3.2.app/Contents" />
-  <property name="plugins_home" location="${basedir}/../../../../../Applications/MPS 3.2.app/Contents/plugins" />
+  <property name="idea_home" location="" />
+  <property name="mps_home" location="" />
+  <property name="plugins_home" location="${mps_home}/plugins" />
   <property name="ANTLR_HOME" location="${basedir}" />
   <property name="artifacts.mpsPlugin" location="${plugins_home}" />
+  <property name="artifacts.mpsCore" location="${plugins_home}" />
   <property name="artifacts.mpsJava" location="${plugins_home}" />
   <property name="artifacts.IDEA" location="${idea_home}" />
   <property file="${artifacts.mpsPlugin}/build.properties" prefix="import.mpsPlugin" />
@@ -201,6 +202,7 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true">
+      <plugin path="${artifacts.mpsCore}/mps-core/META-INF/plugin.xml/../.." />
       <library file="${artifacts.mpsPlugin}/mps-core/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mpsPlugin}/mps-core/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mpsPlugin}/mps-core/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />

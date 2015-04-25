@@ -93,6 +93,7 @@
         <child id="1359186315025500371" name="xml" index="20twgj" />
         <child id="7832771629084912518" name="vendor" index="2iVFfd" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
+        <child id="6592112598314499050" name="content" index="m$_yh" />
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
@@ -100,6 +101,9 @@
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
+      </concept>
+      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
+        <reference id="6592112598314499037" name="target" index="m$_yA" />
       </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
@@ -150,98 +154,23 @@
     <node concept="3b7kt6" id="7twz7e84BNf" role="10PD9s" />
     <node concept="398rNT" id="7twz7e84BNg" role="1l3spd">
       <property role="TrG5h" value="idea_home" />
-      <node concept="55IIr" id="2LflvEoeAKa" role="398pKh">
-        <node concept="2Ry0Ak" id="2LflvEoeEcy" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="2LflvEoeEcA" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="2LflvEoeEcE" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="2LflvEoeEcI" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="2LflvEoeEcM" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="2LflvEoeEd8" role="2Ry0An">
-                    <property role="2Ry0Am" value="Applications" />
-                    <node concept="2Ry0Ak" id="2LflvEoeEdf" role="2Ry0An">
-                      <property role="2Ry0Am" value="IntelliJ IDEA 14.app" />
-                      <node concept="2Ry0Ak" id="2LflvEoeEe2" role="2Ry0An">
-                        <property role="2Ry0Am" value="Contents" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="7twz7e84BNr" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
-      <node concept="55IIr" id="2LflvEoeEdi" role="398pKh">
-        <node concept="2Ry0Ak" id="2LflvEoeEdm" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="2LflvEoeEdq" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="2LflvEoeEdu" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="2LflvEoeEdy" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="2LflvEoeEdA" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="2LflvEoeEdH" role="2Ry0An">
-                    <property role="2Ry0Am" value="Applications" />
-                    <node concept="2Ry0Ak" id="2LflvEoeEdO" role="2Ry0An">
-                      <property role="2Ry0Am" value="MPS 3.2.app" />
-                      <node concept="2Ry0Ak" id="2LflvEoeEdV" role="2Ry0An">
-                        <property role="2Ry0Am" value="Contents" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="7twz7e84BNj" role="1l3spd">
       <property role="TrG5h" value="plugins_home" />
-      <node concept="55IIr" id="2LflvEog6eD" role="398pKh">
-        <node concept="2Ry0Ak" id="2LflvEog6eE" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="2LflvEog6eF" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="2LflvEog6eG" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="2LflvEog6eH" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="2LflvEog6eI" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="2LflvEog6eJ" role="2Ry0An">
-                    <property role="2Ry0Am" value="Applications" />
-                    <node concept="2Ry0Ak" id="2LflvEog6eK" role="2Ry0An">
-                      <property role="2Ry0Am" value="MPS 3.2.app" />
-                      <node concept="2Ry0Ak" id="2LflvEog6eL" role="2Ry0An">
-                        <property role="2Ry0Am" value="Contents" />
-                        <node concept="2Ry0Ak" id="2LflvEog6fM" role="2Ry0An">
-                          <property role="2Ry0Am" value="plugins" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
+      <node concept="398BVA" id="2LflvEogcU_" role="398pKh">
+        <ref role="398BVh" node="7twz7e84BNr" resolve="mps_home" />
+        <node concept="2Ry0Ak" id="2LflvEogcVk" role="iGT6I">
+          <property role="2Ry0Am" value="plugins" />
         </node>
       </node>
     </node>
     <node concept="398rNT" id="5U7ZKlHNTvw" role="1l3spd">
       <property role="TrG5h" value="ANTLR_HOME" />
-      <node concept="55IIr" id="7zlyOSJqiRM" role="398pKh">
-        <node concept="2Ry0Ak" id="7zlyOSJqjaD" role="iGT6I">
+      <node concept="55IIr" id="2LflvEoge$x" role="398pKh">
+        <node concept="2Ry0Ak" id="2LflvEoge$_" role="iGT6I">
           <property role="2Ry0Am" value="" />
         </node>
       </node>
@@ -258,11 +187,20 @@
         <ref role="398BVh" node="7twz7e84BNj" resolve="plugins_home" />
       </node>
     </node>
+    <node concept="2sgV4H" id="2LflvEogg5h" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:5D1dJ7xWer5" resolve="mpsCore" />
+      <node concept="398BVA" id="2LflvEogg6b" role="2JcizS">
+        <ref role="398BVh" node="7twz7e84BNj" resolve="plugins_home" />
+      </node>
+    </node>
     <node concept="2sgV4H" id="2LflvEog75G" role="1l3spa">
       <ref role="1l3spb" to="ffeo:6qT2v0qOlpw" resolve="mpsJava" />
       <node concept="398BVA" id="2LflvEog76y" role="2JcizS">
         <ref role="398BVh" node="7twz7e84BNj" resolve="plugins_home" />
       </node>
+    </node>
+    <node concept="2sgV4H" id="2LflvEogjdQ" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
     </node>
     <node concept="1l3spV" id="7twz7e84BNP" role="1l3spN">
       <node concept="3981dG" id="7twz7e84BNQ" role="39821P">
@@ -379,6 +317,15 @@
       <node concept="2iUeEo" id="7twz7e85Myp" role="2iVFfd">
         <property role="2iUeEt" value="Campagne Laboratory" />
         <property role="2iUeEu" value="http://campagnelab.org" />
+      </node>
+      <node concept="m$_yB" id="2LflvEogj4H" role="m$_yh">
+        <ref role="m$_yA" node="5U7ZKlHMwce" resolve="org.campagnelab.ANTLR" />
+      </node>
+      <node concept="m$_yB" id="2LflvEogj5w" role="m$_yh">
+        <ref role="m$_yA" node="5U7ZKlHMwxz" resolve="org.campagnelab.antlr.parsers" />
+      </node>
+      <node concept="m$_yB" id="2LflvEogj6n" role="m$_yh">
+        <ref role="m$_yA" node="7twz7e84BN$" resolve="org.campagnelab.antlr.persistence" />
       </node>
     </node>
     <node concept="2G$12M" id="7twz7e84BNF" role="3989C9">

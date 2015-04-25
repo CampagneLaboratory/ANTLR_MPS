@@ -93,10 +93,6 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
-        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
-        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
-      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -223,10 +219,6 @@
                 <node concept="1DTwFV" id="2vs9_ygEfbs" role="2OqNvi">
                   <ref role="2WH_rO" node="2vs9_ygEfbe" resolve="operationContext" />
                 </node>
-              </node>
-              <node concept="Rm8GO" id="7Wa0aDjKsie" role="37wK5m">
-                <ref role="Rm8GQ" to="rkxj:7Wa0aDjKsid" resolve="CLASS_CONTENT" />
-                <ref role="1Px2BO" to="rkxj:4TtYrYGuU_3" resolve="FeatureKind" />
               </node>
               <node concept="2OqwBi" id="MCyGswqxb$" role="37wK5m">
                 <node concept="2WthIp" id="MCyGswqxb_" role="2Oq$k0" />

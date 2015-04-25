@@ -6,7 +6,6 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.IOperationContext;
-import jetbrains.mps.ide.java.newparser.FeatureKind;
 import jetbrains.mps.project.Project;
 import org.jetbrains.mps.openapi.model.SModel;
 import java.awt.datatransfer.Transferable;
@@ -34,19 +33,19 @@ public class AntlrPaster {
   private static Logger LOG = LogManager.getLogger(AntlrPaster.class);
   public AntlrPaster() {
   }
-  public void pasteRules(SNode anchor, IOperationContext operationContext, FeatureKind featureKind, Project project) {
+  public void pasteRules(SNode anchor, IOperationContext operationContext, Project project) {
     String antlrRuleText = getStringFromClipboard();
     if (antlrRuleText == null) {
       return;
     }
-    pasteRulesAsNodes(anchor, anchor.getModel(), antlrRuleText, operationContext, featureKind, project);
+    pasteRulesAsNodes(anchor, anchor.getModel(), antlrRuleText, operationContext, project);
   }
   public void pasteJavaAsClass(SModel model, IOperationContext operationContext, Project project) {
     String javaCode = getStringFromClipboard();
     if (javaCode == null) {
       return;
     }
-    pasteRulesAsNodes(null, model, javaCode, operationContext, FeatureKind.CLASS, project);
+    pasteRulesAsNodes(null, model, javaCode, operationContext, project);
   }
   public String getStringFromClipboard() {
     Transferable contents = null;
@@ -73,7 +72,7 @@ public class AntlrPaster {
     }
     return null;
   }
-  public void pasteRulesAsNodes(SNode anchor, SModel model, final String antlrRulesAsText, IOperationContext operationContext, FeatureKind featureKind, Project project) {
+  public void pasteRulesAsNodes(SNode anchor, SModel model, final String antlrRulesAsText, IOperationContext operationContext, Project project) {
     SModule module = model.getModule();
     try {
       ANTLRv4Lexer lexer = new ANTLRv4Lexer(new ANTLRInputStream(new StringReader(antlrRulesAsText)));
