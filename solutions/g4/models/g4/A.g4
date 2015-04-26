@@ -1,0 +1,6 @@
+grammar A{
+A
+	:			null
+;
+
+}

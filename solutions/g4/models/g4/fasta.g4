@@ -1,11 +1,14 @@
-grammar fasta{sequence
+grammar fasta{
+
+sequence
 	:	section;
+
 
 
 
 section
 	:	descriptionline
-sequencelines
-commentline;
+	| sequencelines
+	| commentline;
 
 }

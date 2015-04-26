@@ -4,7 +4,6 @@ package org.campagnelab.ANTLR.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -12,6 +11,6 @@ public class Alternative_Behavior {
   public static void init(SNode thisNode) {
   }
   public static String virtual_toText_5668935624399900127(SNode thisNode) {
-    return ((SNodeOperations.getIndexInParent(thisNode) != 0 ? "\t|\t" : "\t\t")) + BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x631eebe3113b4590L, "rhs")), "virtual_toText_5668935624399900127", new Object[]{}) + "\n";
+    return ((SNodeOperations.getIndexInParent(thisNode) != 0 ? "\t|\t" : "\t\t")) + ToTextOutput_Behavior.call_safeToText_7095100507906137981(thisNode, SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x631eebe3113b4590L, "rhs"))) + "\n";
   }
 }

@@ -54,11 +54,15 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   @Override
   public Object visitRuleBlock(@NotNull ANTLRv4Parser.RuleBlockContext context) {
     // <node> 
+    SNode block = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, "org.campagnelab.ANTLR.structure.ParserRuleBlock")));
     if (context.ruleAltList() != null) {
-      return visitRuleAltList(context.ruleAltList());
-    } else {
-      return null;
+      block = ((SNode) visitRuleAltList(context.ruleAltList()));
+      if (block != null) {
+        return block;
+      }
     }
+    return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, "org.campagnelab.ANTLR.structure.ParserRuleBlock")));
+
   }
   @Override
   public Object visitLexerAltList(@NotNull ANTLRv4Parser.LexerAltListContext context) {
@@ -110,6 +114,14 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
       ListSequence.fromList(SLinkOperations.getChildren(alts, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, 0x631eebe31132d969L, "oneOf"))).addElement((SNode) visitLabeledAlt(alt));
     }
     return alts;
+  }
+  @Override
+  public Object visitLabeledAlt(@NotNull ANTLRv4Parser.LabeledAltContext context) {
+    super.visitLabeledAlt(context);
+    if (context.alternative() != null) {
+      return visitAlternative(context.alternative());
+    }
+    return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative")));
   }
   @Override
   public Object visitElement(@NotNull ANTLRv4Parser.ElementContext context) {

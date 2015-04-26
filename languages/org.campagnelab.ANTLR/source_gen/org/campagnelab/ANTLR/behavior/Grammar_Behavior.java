@@ -9,15 +9,14 @@ import jetbrains.mps.internal.collections.runtime.IterableUtils;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ISelector;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 
 public class Grammar_Behavior {
   public static void init(SNode thisNode) {
   }
-  public static String virtual_toText_5668935624399900127(SNode thisNode) {
+  public static String virtual_toText_5668935624399900127(final SNode thisNode) {
     return "grammar " + SPropertyOperations.getString(thisNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "{\n" + IterableUtils.join(ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).select(new ISelector<SNode, String>() {
       public String select(SNode it) {
-        return BehaviorReflection.invokeVirtual(String.class, it, "virtual_toText_5668935624399900127", new Object[]{});
+        return ToTextOutput_Behavior.call_safeToText_7095100507906137981(thisNode, it);
       }
     }), "\n") + "\n}";
   }
