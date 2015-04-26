@@ -4,7 +4,7 @@ package org.campagnelab.ANTLR.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 
-public abstract class ParserRuleBlock_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
+public abstract class ParserRuleBlock_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor {
   public ParserRuleBlock_BehaviorDescriptor() {
   }
   @Override

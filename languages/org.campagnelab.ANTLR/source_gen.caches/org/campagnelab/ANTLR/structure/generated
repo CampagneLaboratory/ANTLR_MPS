@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="azi7qzw7yy0vxc7fh5qhvwyizcy86wo">
+<dependencies version="2" modelHash="-61o1pov86weualgpqout9ti5cjpthww">
   <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="3trgqsx78ksjj4yzjj8uk37m284lcmt" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="2y5m1tbgov02be84gi16uvvxt47q232" />
@@ -7,7 +7,7 @@
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="19uchsffy2fbhy8fxadw6t0s4o36pge" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="-afok4i31abohs3f5rk0sqlnvuruthqa" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="-77sy6xhjavqcj7zabmxjwdba0x2o622" />
-  <common hash="9rgcqn2hgdt8qgajjttz8zzms8zx2cx" dependsOnNodes="true">
+  <common hash="6zl3e84y3v2ifak09fktcz11pb4eg8b" dependsOnNodes="true">
     <dep root="1684107016605283314" />
     <dep root="1684107016605681834" />
     <dep root="1684107016605681841" />
@@ -16,6 +16,7 @@
     <dep root="1684107016606379934" />
     <dep root="2214335295231699448" />
     <dep root="2214335295231823224" />
+    <dep root="5668935624399898344" />
     <dep root="7142405419534787241" />
     <dep root="7142405419534833720" />
     <dep root="7142405419534833730" />
@@ -35,23 +36,24 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="StructureAspectDescriptor.java" />
   </common>
-  <source id="7142405419534787241" name="Grammar" hash="1cba7g5abevd74tf3rzd0bs71h4ghrn" />
-  <source id="7142405419534833720" name="ParserRule" hash="fm4cqmfhp10okpl9do9reu0q4vjt6p" />
-  <source id="7142405419534833730" name="Alternatives" hash="-ad3eum3i94nk1eqqgdc0zf5ebr01x57" />
-  <source id="7142405419534833731" name="ParserRuleBlock" hash="-1ywmxvpxq3atn5t8kws1ypb2fvtelw0" />
-  <source id="7142405419534833734" name="Sequence" hash="dpxqb3aklfnb8gof0o7xihljys7szc5" />
-  <source id="7142405419534834022" name="ParserRuleRef" hash="5197ttemo7k4tn4dqju51jfp09h0gkp" />
-  <source id="7142405419535385999" name="Alternative" hash="-euxwk1vfzcdxeidtw7juz9pczrm7tg0" />
-  <source id="7142405419535590752" name="LexerToken" hash="-6bvfvzlklh1rzek7vcrgkihwzmvjmm2" />
+  <source id="7142405419534787241" name="Grammar" hash="-3cvlevr40fh3dw7vvbob43ug0ww42pa" />
+  <source id="7142405419534833720" name="ParserRule" hash="abc6wxx5jcnp6yg4zcs4f0hgtze8jde" />
+  <source id="7142405419534833730" name="Alternatives" hash="4aq7tm4hu2mjdt111n2euuzhvt50i6k" />
+  <source id="7142405419534833731" name="ParserRuleBlock" hash="-asmdmjglqr1wdv5rtdtowbxxov3nwyw" />
+  <source id="7142405419534833734" name="Sequence" hash="9j6tu4r7hjw8wli1wqj68sn0qk8lgpr" />
+  <source id="7142405419534834022" name="ParserRuleRef" hash="-7rxfbp6ysys8ua10fcv0ccl53ldppt4" />
+  <source id="7142405419535385999" name="Alternative" hash="n2m2ameu1v35jfdjtp5xwv23awzyq2" />
+  <source id="7142405419535590752" name="LexerToken" hash="-edu3rx8kjxp1d5vd71c8pbivyweq5uu" />
   <source id="7142405419535590783" name="StringLiteral" hash="-axv13kn31ucvr8cedx52qflkze2y4cc" />
-  <source id="7142405419535607099" name="REGEXP" hash="4v2m8yyk9sdpx3zllyvj6z7oayodw28" />
-  <source id="2214335295231699448" name="Parentheses" hash="ddg1d1shdix9kj1pb7mkxqwbz7xsfoh" />
-  <source id="2214335295231823224" name="RuleRefByName" hash="-d96s3sewulkegzkuq9ggglgljeaos5l" />
-  <source id="1684107016605283314" name="Dot" hash="-av5lhdvjg45zr0n6w4s91168f3z3k3j" />
-  <source id="1684107016605681834" name="Rule" hash="-56azu9p3cntbrmlou9m4291nyz92o4d" />
-  <source id="1684107016605681841" name="LexerRule" hash="-5jxylbragxhd94mk69eiwb7kvhe9ts9" />
-  <source id="1684107016605707397" name="LexerRuleBlock" hash="-djc9dco3moyyqo7bs8xbzy0od6h7m3w" />
-  <source id="1684107016605738537" name="LexerAlternative" hash="-89cty6qztfgmibfo17wre48io5trt1u" />
-  <source id="1684107016606379934" name="LexerRuleRef" hash="7aeuz26g7jef9fm4vnelt0n42jpe5mr" />
+  <source id="7142405419535607099" name="REGEXP" hash="dg0f4jt1kf6au4kjl19ktb3k5eb5rth" />
+  <source id="2214335295231699448" name="Parentheses" hash="ewka8siqu5c269007ys6ov9t47b99eo" />
+  <source id="2214335295231823224" name="RuleRefByName" hash="26sbyfcyued2vrrvd49uq9qhsup8xke" />
+  <source id="1684107016605283314" name="Dot" hash="3ci6hwco5ajejmkf6pis74qu46mwqko" />
+  <source id="1684107016605681834" name="Rule" hash="3t7959gg89b3porlg75cta9thcs0f0y" />
+  <source id="1684107016605681841" name="LexerRule" hash="8jhx8u8lwh2o94ondk6hranyg9gp5m4" />
+  <source id="1684107016605707397" name="LexerRuleBlock" hash="-an0ltizaxjqvu0eu8gjw2ztdhied4iz" />
+  <source id="1684107016605738537" name="LexerAlternative" hash="aaufk6rqn526v5aebr7ck8pnkr7htsp" />
+  <source id="1684107016606379934" name="LexerRuleRef" hash="8adu8jalni7p7jae5hrga0tivse172e" />
+  <source id="5668935624399898344" name="ToTextOutput" hash="-33w970s993lv5h7ejj4rjo6ckpd1qda" />
 </dependencies>
 

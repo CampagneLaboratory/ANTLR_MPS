@@ -4,23 +4,30 @@ package org.campagnelab.antlr.persistence.impl;
 
 import org.jetbrains.mps.openapi.persistence.ModelFactory;
 import jetbrains.mps.extapi.model.SModelPersistence;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SModel;
 import org.jetbrains.mps.openapi.persistence.DataSource;
 import java.util.Map;
 import java.io.IOException;
+import org.jetbrains.mps.openapi.persistence.StreamDataSource;
+import org.jetbrains.mps.openapi.persistence.UnsupportedDataSourceException;
+import org.jetbrains.mps.openapi.model.SModelReference;
+import jetbrains.mps.extapi.persistence.FileDataSource;
+import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
+import jetbrains.mps.smodel.SModelId;
+import org.jetbrains.mps.openapi.module.SModuleReference;
+import jetbrains.mps.extapi.model.CustomPersistenceSModel;
+import jetbrains.mps.util.NameUtil;
 import org.jetbrains.mps.openapi.persistence.ModelSaveException;
 import jetbrains.mps.extapi.model.SModelData;
-import org.jetbrains.mps.openapi.model.SModelReference;
-import org.jetbrains.mps.openapi.persistence.StreamDataSource;
-import jetbrains.mps.smodel.SModelId;
 import jetbrains.mps.util.FileUtil;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.smodel.adapter.ids.MetaIdByDeclaration;
-import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import java.io.InputStream;
 import org.antlr.ANTLRv4Lexer;
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -31,22 +38,79 @@ import org.campagnelab.antlr.parsers.AntlrRuleVisitor;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import java.util.Iterator;
+import java.util.Collections;
+import jetbrains.mps.extapi.model.PersistenceProblem;
+import jetbrains.mps.util.IterableUtil;
+import java.io.OutputStream;
+import java.io.BufferedOutputStream;
+import java.io.OutputStreamWriter;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 
 public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
-
+  public static final String EXTENSION = "g4";
+  private static final Logger LOG = LogManager.getLogger(AntlrPersistenceImpl.class);
   @NotNull
   @Override
-  public SModel load(@NotNull DataSource source, @NotNull Map<String, String> map) throws IOException {
-    return null;
+  public SModel load(@NotNull DataSource dataSource, @NotNull Map<String, String> options) throws IOException {
+    if (!((dataSource instanceof StreamDataSource))) {
+      throw new UnsupportedDataSourceException(dataSource);
+    }
+    String moduleRef = options.get(OPTION_MODULEREF);
+    String relPath = options.get(OPTION_RELPATH);
+    String modelName = options.get(OPTION_MODELNAME);
+    boolean contentOnly = "true".equals(options.get(OPTION_CONTENT_ONLY));
+    SModelReference ref;
+    if (relPath == null || moduleRef == null || modelName == null) {
+      if (!(contentOnly)) {
+        if (dataSource instanceof FileDataSource) {
+          AntlrPersistenceImpl.LOG.error("cannot load " + dataSource.getLocation() + ": relPath = " + relPath, new Throwable());
+        }
+        throw new IOException("cannot load xml model from " + dataSource.getLocation());
+      }
+      ref = PersistenceFacade.getInstance().createModelReference(null, SModelId.generate(), "temp");
+    } else {
+      org.jetbrains.mps.openapi.model.SModelId id = PersistenceFacade.getInstance().createModelId("path:" + relPath);
+      SModuleReference mref = PersistenceFacade.getInstance().createModuleReference(moduleRef);
+      if (mref == null) {
+        // TODO fix 
+        return null;
+      }
+      ref = PersistenceFacade.getInstance().createModelReference(mref, id, modelName);
+    }
+    return new CustomPersistenceSModel(ref, (StreamDataSource) dataSource, this);
   }
   @NotNull
   @Override
-  public SModel create(DataSource source, @NotNull Map<String, String> map) throws IOException {
-    return null;
+  public SModel create(DataSource dataSource, @NotNull Map<String, String> options) throws IOException {
+    if (!((dataSource instanceof StreamDataSource))) {
+      throw new UnsupportedDataSourceException(dataSource);
+    }
+    String moduleRef = options.get(OPTION_MODULEREF);
+    String relPath = options.get(OPTION_RELPATH);
+    String modelName = options.get(OPTION_MODELNAME);
+    if (relPath == null || moduleRef == null || modelName == null || !(relPath.equals(NameUtil.pathFromNamespace(modelName) + "." + AntlrPersistenceImpl.EXTENSION))) {
+      throw new IOException("cannot create ANTLR model from " + dataSource.getLocation());
+    }
+    org.jetbrains.mps.openapi.model.SModelId id = PersistenceFacade.getInstance().createModelId("path:" + relPath);
+    SModuleReference mref = PersistenceFacade.getInstance().createModuleReference(moduleRef);
+    if (mref == null) {
+      throw new IOException("cannot create ANTRL model for " + moduleRef);
+    }
+    SModelReference ref = PersistenceFacade.getInstance().createModelReference(mref, id, modelName);
+    return new CustomPersistenceSModel(ref, (StreamDataSource) dataSource, this);
   }
   @Override
-  public boolean canCreate(DataSource source, @NotNull Map<String, String> map) {
-    return false;
+  public boolean canCreate(DataSource dataSource, @NotNull Map<String, String> options) {
+    if (!((dataSource instanceof StreamDataSource))) {
+      return false;
+    }
+    String modelName = options.get(OPTION_MODELNAME);
+    String relPath = NameUtil.pathFromNamespace(modelName) + "." + AntlrPersistenceImpl.EXTENSION;
+    if (!(relPath.equals(options.get(OPTION_RELPATH)))) {
+      return false;
+    }
+    return true;
   }
   @Override
   public boolean needsUpgrade(DataSource source) throws IOException {
@@ -64,7 +128,7 @@ public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
   }
   @Override
   public String getFileExtension() {
-    return ".g4";
+    return EXTENSION;
   }
   @Override
   public String getFormatTitle() {
@@ -112,6 +176,28 @@ public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
     }
   }
   @Override
-  public void writeModel(SModelData data, StreamDataSource source) throws IOException, ModelSaveException {
+  public void writeModel(SModelData model, StreamDataSource source) throws IOException, ModelSaveException {
+    Iterator<SNode> iterator = model.getRootNodes().iterator();
+    SNode root = (iterator.hasNext() ? iterator.next() : null);
+    if (root == null) {
+      throw new ModelSaveException("cannot save empty model", Collections.<SModel.Problem>singletonList(new PersistenceProblem(SModel.Problem.Kind.Save, "cannot save empty model", null, true)));
+    }
+    // TODO check concepts 
+    if (IterableUtil.copyToList(model.getRootNodes()).size() > 1) {
+      throw new ModelSaveException("cannot save more than one root into .xml file", Collections.<SModel.Problem>singletonList(new PersistenceProblem(SModel.Problem.Kind.Save, "cannot save more than one root into .xml file", null, true, -1, -1, root)));
+    }
+    SNode grammar = SNodeOperations.cast(root, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"));
+
+    // <node> 
+    // <node> 
+    // <node> 
+    OutputStream stream = new BufferedOutputStream(source.openOutputStream());
+    try {
+      OutputStreamWriter writer = new OutputStreamWriter(stream, FileUtil.DEFAULT_CHARSET);
+      writer.write(BehaviorReflection.invokeVirtual(String.class, grammar, "virtual_toText_5668935624399900127", new Object[]{}));
+      writer.flush();
+    } finally {
+      FileUtil.closeFileSafe(stream);
+    }
   }
 }

@@ -7,11 +7,14 @@ import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
-public class Grammar_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor {
+public class Grammar_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, ToTextOutput_BehaviorDescriptor {
   public Grammar_BehaviorDescriptor() {
   }
   public String virtual_getFqName_1213877404258(SNode thisNode) {
     return INamedConcept_Behavior.virtual_getFqName_1213877404258(thisNode);
+  }
+  public String virtual_toText_5668935624399900127(SNode thisNode) {
+    return Grammar_Behavior.virtual_toText_5668935624399900127(thisNode);
   }
   @Override
   public String getConceptFqName() {
