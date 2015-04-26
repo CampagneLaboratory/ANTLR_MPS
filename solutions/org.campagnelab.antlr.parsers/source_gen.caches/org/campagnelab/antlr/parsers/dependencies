@@ -27,6 +27,7 @@
     <classNode dependClassName="java.awt.datatransfer.UnsupportedFlavorException" />
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.io.StringReader" />
+    <classNode dependClassName="java.lang.Exception" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.List" />

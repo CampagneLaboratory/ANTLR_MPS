@@ -6,12 +6,13 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SConceptId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
-    <classNode dependClassName="org.campagnelab.ANTLR.constraints.LexerAlternative_Constraints" />
+    <classNode dependClassName="org.campagnelab.ANTLR.constraints.LexerAlt_Constraints" />
     <classNode dependClassName="org.campagnelab.ANTLR.constraints.LexerRule_Constraints" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.ANTLR.constraints.LexerAlternative_Constraints" file="LexerAlternative_Constraints.java">
+  <dependency className="org.campagnelab.ANTLR.constraints.LexerAlt_Constraints" file="LexerAlt_Constraints.java">
     <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />

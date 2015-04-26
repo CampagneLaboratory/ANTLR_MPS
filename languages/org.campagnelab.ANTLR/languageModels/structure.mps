@@ -152,7 +152,7 @@
     <property role="TrG5h" value="LexerToken" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="6cuUYchcHx3" resolve="ParserRuleBlock" />
+    <ref role="1TJDcQ" node="4TgqxIxnOE$" resolve="LexerElement" />
     <node concept="PrWs8" id="4UG6ID2UW$q" role="PzmwI">
       <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
     </node>
@@ -209,7 +209,7 @@
   <node concept="1TIwiD" id="1tv9AyCw3fM">
     <property role="TrG5h" value="Dot" />
     <property role="34LRSv" value="." />
-    <ref role="1TJDcQ" node="6cuUYchcHx3" resolve="ParserRuleBlock" />
+    <ref role="1TJDcQ" node="4TgqxIxnOE$" resolve="LexerElement" />
     <node concept="PrWs8" id="4UG6ID2V88d" role="PzmwI">
       <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
     </node>
@@ -246,21 +246,21 @@
     <node concept="1TJgyj" id="1tv9AyCxEMA" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="alternatives" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="1tv9AyCxMoD" resolve="LexerAlternative" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4TgqxIxvddj" resolve="LexerAltList" />
     </node>
     <node concept="PrWs8" id="4UG6ID2UKpQ" role="PzmwI">
       <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
     </node>
   </node>
   <node concept="1TIwiD" id="1tv9AyCxMoD">
-    <property role="TrG5h" value="LexerAlternative" />
+    <property role="TrG5h" value="LexerAlt" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1tv9AyCxMoE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="elements" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="6cuUYcheOmf" resolve="Alternative" />
+      <ref role="20lvS9" node="4TgqxIxnOE$" resolve="LexerElement" />
     </node>
     <node concept="PrWs8" id="4UG6ID2V07G" role="PzmwI">
       <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
@@ -268,7 +268,7 @@
   </node>
   <node concept="1TIwiD" id="1tv9AyC$eYu">
     <property role="TrG5h" value="LexerRuleRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4TgqxIxnOE$" resolve="LexerElement" />
     <node concept="1TJgyj" id="1tv9AyC$eYv" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="rule" />
@@ -281,6 +281,34 @@
   </node>
   <node concept="PlHQZ" id="4UG6ID2UsrC">
     <property role="TrG5h" value="ToTextOutput" />
+  </node>
+  <node concept="1TIwiD" id="4TgqxIxnOE$">
+    <property role="TrG5h" value="LexerElement" />
+    <ref role="1TJDcQ" node="6cuUYchcHx3" resolve="ParserRuleBlock" />
+  </node>
+  <node concept="1TIwiD" id="4TgqxIxswrj">
+    <property role="TrG5h" value="LexerRuleRefByName" />
+    <ref role="1TJDcQ" node="4TgqxIxnOE$" resolve="LexerElement" />
+    <node concept="1TJgyi" id="4TgqxIxswTo" role="1TKVEl">
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="4TgqxIxswtz" role="PzmwI">
+      <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4TgqxIxvddj">
+    <property role="TrG5h" value="LexerAltList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4TgqxIxvdtp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="alternatives" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="1tv9AyCxMoD" resolve="LexerAlt" />
+    </node>
+    <node concept="PrWs8" id="4TgqxIxvdso" role="PzmwI">
+      <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
+    </node>
   </node>
 </model>
 

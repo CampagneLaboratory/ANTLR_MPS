@@ -10,7 +10,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 
-public class LexerAlternative_Behavior {
+public class LexerAlt_Behavior {
   public static void init(SNode thisNode) {
   }
   public static String virtual_toText_5668935624399900127(final SNode thisNode) {

@@ -67,22 +67,18 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   @Override
   public Object visitLexerAltList(@NotNull ANTLRv4Parser.LexerAltListContext context) {
     super.visitLexerAltList(context);
-    super.visitLexerAltList(context);
-    SNode alternative = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative")));
+    SNode altList = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba17cd353L, "org.campagnelab.ANTLR.structure.LexerAltList")));
     List<ANTLRv4Parser.LexerAltContext> elements = context.lexerAlt();
     if (LOG.isInfoEnabled()) {
       LOG.info("visitAlternative elements.size=" + elements.size());
     }
-    if (elements.size() > 1) {
-      SNode sequence = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d846L, "org.campagnelab.ANTLR.structure.Sequence")));
+    if (elements.size() > 0) {
       for (ANTLRv4Parser.LexerAltContext seq : ListSequence.fromList(elements)) {
-        ListSequence.fromList(SLinkOperations.getChildren(sequence, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d846L, 0x631eebe31132d96bL, "of"))).addElement((SNode) visitLexerAlt(seq));
+        ListSequence.fromList(SLinkOperations.getChildren(altList, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba17cd353L, 0x4e506a1ba17cd759L, "alternatives"))).addElement((SNode) visitLexerAlt(seq));
+
       }
-      SLinkOperations.setTarget(alternative, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x631eebe3113b4590L, "rhs"), sequence);
-    } else {
-      SLinkOperations.setTarget(alternative, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x631eebe3113b4590L, "rhs"), (SNode) visitLexerAlt(elements.get(0)));
     }
-    return alternative;
+    return altList;
 
   }
 
@@ -140,21 +136,77 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     }
   }
   @Override
+  public Object visitLexerRule(@NotNull ANTLRv4Parser.LexerRuleContext context) {
+    super.visitLexerRule(context);
+    SNode lRule = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648b1L, "org.campagnelab.ANTLR.structure.LexerRule")));
+    SLinkOperations.setTarget(lRule, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648b1L, 0x175f2668a886ac7dL, "rhs"), (SNode) visitLexerRuleBlock(context.lexerRuleBlock()));
+    SPropertyOperations.set(lRule, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), context.TOKEN_REF().getText());
+    return lRule;
+  }
+  @Override
   public Object visitLexerAlt(@NotNull ANTLRv4Parser.LexerAltContext context) {
     super.visitLexerAlt(context);
-    if (LOG.isInfoEnabled()) {
-      LOG.info("visitLexerAlt:" + context.getText());
-    }
-    Object result = super.visitLexerAlt(context);
-    if (context.lexerElements() != null) {
-      // <node> 
-      // <node> 
-      // <node> 
-      return null;
-    } else {
-      return result;
-    }
+    SNode lexerAlt = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a8872629L, "org.campagnelab.ANTLR.structure.LexerAlt")));
 
+    if (context.lexerElements() != null) {
+      List<SNode> lexerElements = (List<SNode>) visitLexerElements(context.lexerElements());
+      ListSequence.fromList(SLinkOperations.getChildren(lexerAlt, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a8872629L, 0x175f2668a887262aL, "elements"))).addSequence(ListSequence.fromList(lexerElements));
+    } else {
+    }
+    return lexerAlt;
+
+  }
+  @Override
+  public Object visitLexerElement(@NotNull ANTLRv4Parser.LexerElementContext context) {
+    super.visitLexerElement(context);
+    if (LOG.isInfoEnabled()) {
+      LOG.info("visitLexerElement:" + context.getText());
+    }
+    SNode lexerElement = (SNode) visitLexerAtom(context.lexerAtom());
+    if (context.ebnfSuffix() != null) {
+      addOptionalParams(lexerElement, context.ebnfSuffix());
+    }
+    return lexerElement;
+  }
+  @Override
+  public Object visitLexerAtom(@NotNull ANTLRv4Parser.LexerAtomContext context) {
+    // <node> 
+
+    if (context.DOT() != null) {
+      return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88033f2L, "org.campagnelab.ANTLR.structure.Dot")));
+    }
+    if (context.terminal().STRING_LITERAL() != null) {
+      String litText = context.terminal().STRING_LITERAL().getText();
+      return createLiteral(litText.subSequence(1, litText.length() - 1).toString());
+    }
+    if (context.terminal().TOKEN_REF() != null) {
+      return createLexerRef(context.terminal().getText());
+    }
+    return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e6560L, "org.campagnelab.ANTLR.structure.LexerToken")));
+  }
+  @Override
+  public Object visitLexerRuleBlock(@NotNull ANTLRv4Parser.LexerRuleBlockContext context) {
+    super.visitLexerRuleBlock(context);
+    SNode block = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a886ac85L, "org.campagnelab.ANTLR.structure.LexerRuleBlock")));
+    SLinkOperations.setTarget(block, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a886ac85L, 0x175f2668a886aca6L, "alternatives"), (SNode) visitLexerAltList(context.lexerAltList()));
+    return block;
+  }
+  @Override
+  public Object visitLexerElements(@NotNull ANTLRv4Parser.LexerElementsContext context) {
+    super.visitLexerElements(context);
+    // <node> 
+    List<SNode> lexerElements = new ArrayList<SNode>();
+    if (context.lexerElement() != null) {
+      List<ANTLRv4Parser.LexerElementContext> elements = context.lexerElement();
+      if (LOG.isInfoEnabled()) {
+        LOG.info("visitAlternative elements.size=" + elements.size());
+      }
+      for (ANTLRv4Parser.LexerElementContext seq : ListSequence.fromList(elements)) {
+        lexerElements.add((SNode) visitLexerElement(seq));
+      }
+    } else {
+    }
+    return lexerElements;
   }
   private void addOptionalParams(SNode currentElement, ParserRuleContext context) {
     if (currentElement != null && context != null) {
@@ -168,7 +220,6 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
       if ("*".equals(question)) {
         SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple"), "" + (true));
       }
-
     }
   }
   public SNode createRef(String name) {
@@ -176,6 +227,12 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     SPropertyOperations.set(refByName, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x1ebae6380de70d78L, 0x1ebae6380de70d79L, "name"), name);
     return refByName;
   }
+  public SNode createLexerRef(String name) {
+    SNode refByName = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba17206d3L, "org.campagnelab.ANTLR.structure.LexerRuleRefByName")));
+    SPropertyOperations.set(refByName, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba17206d3L, 0x4e506a1ba1720e58L, "name"), name);
+    return refByName;
+  }
+
   public SNode createLiteral(String value) {
     SNode literal = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, "org.campagnelab.ANTLR.structure.StringLiteral")));
     SPropertyOperations.set(literal, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, 0x631eebe3113e6580L, "literal"), value);

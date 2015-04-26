@@ -56,56 +56,59 @@
     </file>
   </root>
   <root nodeRef="r:3ea820cb-552a-4e36-be62-2f72cccd6e1d(org.campagnelab.ANTLR.constraints)/1684107016606370917">
-    <file name="LexerAlternative_Constraints.java">
-      <node id="1684107016606370917" at="17,41,18,98" concept="11" />
-      <node id="1684107016606370917" at="21,46,22,16" concept="7" />
-      <node id="1684107016606370917" at="25,169,26,84" concept="6" />
-      <node id="1684107016606370917" at="26,84,27,0" concept="8" />
-      <node id="1684107016606370917" at="28,51,29,71" concept="2" />
-      <node id="1684107016606370917" at="30,5,31,0" concept="8" />
-      <node id="1684107016606370917" at="31,0,32,18" concept="7" />
-      <node id="1684107016606418223" at="34,139,35,0" concept="8" />
-      <node id="1684107016606419168" at="35,0,36,600" concept="6" />
-      <node id="1684107016606434915" at="38,54,39,20" concept="7" />
-      <node id="1684107016606438313" at="41,5,42,17" concept="7" />
-      <node id="1684107016606370917" at="44,0,45,0" concept="9" trace="canBeAncesctorBreakingPoint" />
-      <node id="1684107016606370917" at="17,0,20,0" concept="1" trace="LexerAlternative_Constraints#()V" />
-      <node id="1684107016606370917" at="27,0,30,5" concept="4" />
-      <node id="1684107016606432510" at="37,41,40,7" concept="4" />
-      <node id="1684107016606370917" at="20,0,24,0" concept="5" trace="hasOwnCanBeAncestorMethod#()Z" />
-      <node id="1684107016606431130" at="36,600,41,5" concept="3" />
-      <node id="1684107016606370917" at="24,0,34,0" concept="5" trace="canBeAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
-      <node id="1684107016606370917" at="34,0,44,0" concept="10" trace="static_canBeAnAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
-      <scope id="1684107016606370917" at="17,41,18,98" />
-      <scope id="1684107016606370917" at="21,46,22,16" />
-      <scope id="1684107016606370917" at="28,51,29,71" />
-      <scope id="1684107016606432511" at="38,54,39,20" />
-      <scope id="1684107016606370917" at="17,0,20,0" />
-      <scope id="1684107016606431134" at="37,41,40,7" />
-      <scope id="1684107016606370917" at="20,0,24,0" />
-      <scope id="1684107016606431130" at="36,600,41,5">
+    <file name="LexerAlt_Constraints.java">
+      <node id="1684107016606370917" at="18,33,19,98" concept="11" />
+      <node id="1684107016606370917" at="22,46,23,16" concept="7" />
+      <node id="1684107016606370917" at="26,169,27,84" concept="6" />
+      <node id="1684107016606370917" at="27,84,28,0" concept="8" />
+      <node id="1684107016606370917" at="29,51,30,71" concept="2" />
+      <node id="1684107016606370917" at="31,5,32,0" concept="8" />
+      <node id="1684107016606370917" at="32,0,33,18" concept="7" />
+      <node id="1684107016606418223" at="35,139,36,0" concept="8" />
+      <node id="1684107016606419168" at="36,0,37,738" concept="6" />
+      <node id="5643127000000990732" at="38,228,39,18" concept="7" />
+      <node id="1684107016606434915" at="42,54,43,20" concept="7" />
+      <node id="1684107016606438313" at="45,5,46,17" concept="7" />
+      <node id="1684107016606370917" at="48,0,49,0" concept="9" trace="canBeAncesctorBreakingPoint" />
+      <node id="1684107016606370917" at="18,0,21,0" concept="1" trace="LexerAlt_Constraints#()V" />
+      <node id="1684107016606370917" at="28,0,31,5" concept="4" />
+      <node id="5643127000000986716" at="37,738,40,5" concept="4" />
+      <node id="1684107016606432510" at="41,41,44,7" concept="4" />
+      <node id="1684107016606370917" at="21,0,25,0" concept="5" trace="hasOwnCanBeAncestorMethod#()Z" />
+      <node id="1684107016606431130" at="40,5,45,5" concept="3" />
+      <node id="1684107016606370917" at="25,0,35,0" concept="5" trace="canBeAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="1684107016606370917" at="35,0,48,0" concept="10" trace="static_canBeAnAncestor#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;)Z" />
+      <scope id="1684107016606370917" at="18,33,19,98" />
+      <scope id="1684107016606370917" at="22,46,23,16" />
+      <scope id="1684107016606370917" at="29,51,30,71" />
+      <scope id="5643127000000986718" at="38,228,39,18" />
+      <scope id="1684107016606432511" at="42,54,43,20" />
+      <scope id="1684107016606370917" at="18,0,21,0" />
+      <scope id="1684107016606431134" at="41,41,44,7" />
+      <scope id="1684107016606370917" at="21,0,25,0" />
+      <scope id="1684107016606431130" at="40,5,45,5">
         <var name="c" id="1684107016606431132" />
       </scope>
-      <scope id="1684107016606370917" at="25,169,32,18">
+      <scope id="1684107016606370917" at="26,169,33,18">
         <var name="result" id="1684107016606370917" />
       </scope>
-      <scope id="1684107016606370919" at="34,139,42,17">
-        <var name="concepts" id="1684107016606419171" />
-      </scope>
-      <scope id="1684107016606370917" at="24,0,34,0">
+      <scope id="1684107016606370917" at="25,0,35,0">
         <var name="checkingNodeContext" id="1684107016606370917" />
         <var name="childConcept" id="1684107016606370917" />
         <var name="childNode" id="1684107016606370917" />
         <var name="context" id="1684107016606370917" />
         <var name="node" id="1684107016606370917" />
       </scope>
-      <scope id="1684107016606370917" at="34,0,44,0">
+      <scope id="1684107016606370919" at="35,139,46,17">
+        <var name="concepts" id="1684107016606419171" />
+      </scope>
+      <scope id="1684107016606370917" at="35,0,48,0">
         <var name="childConcept" id="1684107016606370917" />
         <var name="childNode" id="1684107016606370917" />
         <var name="node" id="1684107016606370917" />
         <var name="operationContext" id="1684107016606370917" />
       </scope>
-      <unit id="1684107016606370917" at="16,0,46,0" name="org.campagnelab.ANTLR.constraints.LexerAlternative_Constraints" />
+      <unit id="1684107016606370917" at="17,0,50,0" name="org.campagnelab.ANTLR.constraints.LexerAlt_Constraints" />
     </file>
   </root>
 </debug-info>

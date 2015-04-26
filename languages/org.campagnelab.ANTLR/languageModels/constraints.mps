@@ -91,7 +91,13 @@
       <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -174,7 +180,27 @@
                 <ref role="35c_gD" to="ubjp:6cuUYcheOmf" resolve="Alternative" />
               </node>
               <node concept="35c_gC" id="1tv9AyC$uMk" role="2BsfMF">
-                <ref role="35c_gD" to="ubjp:1UUTzwdTKPS" resolve="RuleRefByName" />
+                <ref role="35c_gD" to="ubjp:4TgqxIxswrj" resolve="LexerRuleRefByName" />
+              </node>
+              <node concept="35c_gC" id="4TgqxIxub36" role="2BsfMF">
+                <ref role="35c_gD" to="ubjp:1tv9AyCw3fM" resolve="Dot" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4TgqxIxunTs" role="3cqZAp">
+          <node concept="3clFbS" id="4TgqxIxunTu" role="3clFbx">
+            <node concept="3cpWs6" id="4TgqxIxuoSc" role="3cqZAp">
+              <node concept="3clFbT" id="4TgqxIxuoYw" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4TgqxIxuo6F" role="3clFbw">
+            <node concept="otxO1" id="4TgqxIxunZh" role="2Oq$k0" />
+            <node concept="2Zo12i" id="4TgqxIxuoFD" role="2OqNvi">
+              <node concept="chp4Y" id="4TgqxIxuoLR" role="2Zo12j">
+                <ref role="cht4Q" to="ubjp:4TgqxIxnOE$" resolve="LexerElement" />
               </node>
             </node>
           </node>

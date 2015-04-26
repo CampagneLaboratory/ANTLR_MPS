@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-61o1pov86weualgpqout9ti5cjpthww">
+<dependencies version="2" modelHash="-besmorafkczt9bvk7spxivkd8sf1goj">
   <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="3trgqsx78ksjj4yzjj8uk37m284lcmt" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="2y5m1tbgov02be84gi16uvvxt47q232" />
@@ -16,6 +16,9 @@
     <dep root="1684107016606379934" />
     <dep root="2214335295231699448" />
     <dep root="2214335295231823224" />
+    <dep root="5643126999999269540" />
+    <dep root="5643127000000497363" />
+    <dep root="5643127000001205075" />
     <dep root="5668935624399898344" />
     <dep root="7142405419534787241" />
     <dep root="7142405419534833720" />
@@ -43,17 +46,20 @@
   <source id="7142405419534833734" name="Sequence" hash="9j6tu4r7hjw8wli1wqj68sn0qk8lgpr" />
   <source id="7142405419534834022" name="ParserRuleRef" hash="-7rxfbp6ysys8ua10fcv0ccl53ldppt4" />
   <source id="7142405419535385999" name="Alternative" hash="n2m2ameu1v35jfdjtp5xwv23awzyq2" />
-  <source id="7142405419535590752" name="LexerToken" hash="-edu3rx8kjxp1d5vd71c8pbivyweq5uu" />
+  <source id="7142405419535590752" name="LexerToken" hash="bokpl75g12r6zges1g53lpmgalsrfp9" />
   <source id="7142405419535590783" name="StringLiteral" hash="-axv13kn31ucvr8cedx52qflkze2y4cc" />
   <source id="7142405419535607099" name="REGEXP" hash="dg0f4jt1kf6au4kjl19ktb3k5eb5rth" />
   <source id="2214335295231699448" name="Parentheses" hash="ewka8siqu5c269007ys6ov9t47b99eo" />
   <source id="2214335295231823224" name="RuleRefByName" hash="26sbyfcyued2vrrvd49uq9qhsup8xke" />
-  <source id="1684107016605283314" name="Dot" hash="3ci6hwco5ajejmkf6pis74qu46mwqko" />
+  <source id="1684107016605283314" name="Dot" hash="1yp3sqe5ltbuo3ts3eohn9e7c00cj83" />
   <source id="1684107016605681834" name="Rule" hash="3t7959gg89b3porlg75cta9thcs0f0y" />
   <source id="1684107016605681841" name="LexerRule" hash="8jhx8u8lwh2o94ondk6hranyg9gp5m4" />
-  <source id="1684107016605707397" name="LexerRuleBlock" hash="-an0ltizaxjqvu0eu8gjw2ztdhied4iz" />
-  <source id="1684107016605738537" name="LexerAlternative" hash="aaufk6rqn526v5aebr7ck8pnkr7htsp" />
-  <source id="1684107016606379934" name="LexerRuleRef" hash="8adu8jalni7p7jae5hrga0tivse172e" />
+  <source id="1684107016605707397" name="LexerRuleBlock" hash="1qaynmjuhzwofhg2q7ckqroz1nh51e1" />
+  <source id="1684107016605738537" name="LexerAlt" hash="-ddbxt1mqlytaug4vldm09tkjw5gky13" />
+  <source id="1684107016606379934" name="LexerRuleRef" hash="-dz13ua7vov8r5pqxkglgyp3jcmw60qp" />
   <source id="5668935624399898344" name="ToTextOutput" hash="-33w970s993lv5h7ejj4rjo6ckpd1qda" />
+  <source id="5643126999999269540" name="LexerElement" hash="8vlrl7z3i2l3musric4gqenqx6jw733" />
+  <source id="5643127000000497363" name="LexerRuleRefByName" hash="-aw893gdjmoezrwhl9dp6lrh18wmqub9" />
+  <source id="5643127000001205075" name="LexerAltList" hash="1u4q3qdyt6mtvnqv6qk7osuposstekc" />
 </dependencies>
 

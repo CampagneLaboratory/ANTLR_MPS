@@ -48,8 +48,11 @@
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.Alternatives_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.Dot_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.Grammar_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerAlternative_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerAltList_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerAlt_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerElement_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerRuleBlock_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerRuleRefByName_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerRuleRef_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerRule_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.Parentheses_BehaviorDescriptor" />
@@ -69,7 +72,7 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.Dot_Behavior" />
-    <classNode dependClassName="org.campagnelab.ANTLR.behavior.ParserRuleBlock_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerElement_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
@@ -98,7 +101,7 @@
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.ANTLR.behavior.LexerAlternative_Behavior" file="LexerAlternative_Behavior.java">
+  <dependency className="org.campagnelab.ANTLR.behavior.LexerAltList_Behavior" file="LexerAltList_Behavior.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IterableUtils" />
@@ -109,14 +112,41 @@
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput_Behavior" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
-  <dependency className="org.campagnelab.ANTLR.behavior.LexerAlternative_BehaviorDescriptor" file="LexerAlternative_BehaviorDescriptor.java">
+  <dependency className="org.campagnelab.ANTLR.behavior.LexerAltList_BehaviorDescriptor" file="LexerAltList_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerAlternative_Behavior" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerAltList_Behavior" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.behavior.LexerAlt_Behavior" file="LexerAlt_Behavior.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ISelector" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IterableUtils" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput_Behavior" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.behavior.LexerAlt_BehaviorDescriptor" file="LexerAlt_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerAlt_Behavior" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.behavior.LexerElement_BehaviorDescriptor" file="LexerElement_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.ParserRuleBlock_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.ANTLR.behavior.LexerRuleBlock_Behavior" file="LexerRuleBlock_Behavior.java">
@@ -139,6 +169,22 @@
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="org.campagnelab.ANTLR.behavior.LexerRuleRefByName_Behavior" file="LexerRuleRefByName_Behavior.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.behavior.LexerRuleRefByName_BehaviorDescriptor" file="LexerRuleRefByName_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerElement_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerRuleRefByName_Behavior" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="org.campagnelab.ANTLR.behavior.LexerRuleRef_Behavior" file="LexerRuleRef_Behavior.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
@@ -149,7 +195,7 @@
   <dependency className="org.campagnelab.ANTLR.behavior.LexerRuleRef_BehaviorDescriptor" file="LexerRuleRef_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerElement_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerRuleRef_Behavior" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
@@ -187,8 +233,8 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerElement_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerToken_Behavior" />
-    <classNode dependClassName="org.campagnelab.ANTLR.behavior.ParserRuleBlock_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />

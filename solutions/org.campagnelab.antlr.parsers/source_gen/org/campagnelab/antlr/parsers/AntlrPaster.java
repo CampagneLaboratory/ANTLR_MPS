@@ -92,9 +92,16 @@ public class AntlrPaster {
       SNode grammar = SNodeOperations.getNodeAncestor(anchor, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"), true, false);
       boolean useVisitor = true;
       if (useVisitor) {
-        AntlrRuleVisitor visitor = new AntlrRuleVisitor();
-        List<SNode> rules = (List<SNode>) visitor.visitRules(tree);
-        ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(rules));
+        try {
+          AntlrRuleVisitor visitor = new AntlrRuleVisitor();
+          List<SNode> rules = (List<SNode>) visitor.visitRules(tree);
+          ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(rules));
+
+        } catch (Exception e) {
+          if (LOG_515473768.isEnabledFor(Level.ERROR)) {
+            LOG_515473768.error("Exception when visiting parse tree.", e);
+          }
+        }
       } else {
         ParseTreeWalker walker = new ParseTreeWalker();
         // create standard walker 

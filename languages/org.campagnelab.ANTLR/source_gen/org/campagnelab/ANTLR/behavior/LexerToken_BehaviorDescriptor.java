@@ -6,7 +6,7 @@ import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
-public abstract class LexerToken_BehaviorDescriptor extends ParserRuleBlock_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor, INamedConcept_BehaviorDescriptor {
+public abstract class LexerToken_BehaviorDescriptor extends LexerElement_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor, INamedConcept_BehaviorDescriptor {
   public LexerToken_BehaviorDescriptor() {
   }
   public String virtual_getFqName_1213877404258(SNode thisNode) {

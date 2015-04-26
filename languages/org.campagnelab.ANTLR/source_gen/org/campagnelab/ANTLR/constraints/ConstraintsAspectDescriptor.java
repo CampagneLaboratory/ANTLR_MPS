@@ -15,7 +15,7 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
       case 1:
         return new LexerRule_Constraints();
       case 0:
-        return new LexerAlternative_Constraints();
+        return new LexerAlt_Constraints();
       default:
         return new BaseConstraintsDescriptor(fqName);
     }
@@ -26,9 +26,9 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
       return new LexerRule_Constraints();
     }
     if (id == 0x175f2668a8872629L) {
-      return new LexerAlternative_Constraints();
+      return new LexerAlt_Constraints();
     }
     return new BaseConstraintsDescriptor(conceptId);
   }
-  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"org.campagnelab.ANTLR.structure.LexerAlternative", "org.campagnelab.ANTLR.structure.LexerRule"};
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"org.campagnelab.ANTLR.structure.LexerAlt", "org.campagnelab.ANTLR.structure.LexerRule"};
 }

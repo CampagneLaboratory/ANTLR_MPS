@@ -4,7 +4,7 @@ package org.campagnelab.ANTLR.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class Dot_BehaviorDescriptor extends ParserRuleBlock_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor {
+public class Dot_BehaviorDescriptor extends LexerElement_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor {
   public Dot_BehaviorDescriptor() {
   }
   public String virtual_toText_5668935624399900127(SNode thisNode) {
