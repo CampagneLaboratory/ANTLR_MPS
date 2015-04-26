@@ -1,7 +1,13 @@
 grammar A{
-null
+A
 	:					
 
+
+	|			('A' 'B')
+
 ;
+
+a
+	:	;
 
 }

@@ -27,13 +27,13 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.ids.MetaIdByDeclaration;
 import java.io.InputStream;
 import org.antlr.ANTLRv4Lexer;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.ANTLRv4Parser;
 import org.antlr.v4.runtime.CommonTokenStream;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.campagnelab.antlr.parsers.AntlrRuleVisitor;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -142,6 +142,7 @@ public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
       name = FileUtil.getNameWithoutExtension(((SModelId.RelativePathSModelId) reference.getModelId()).getFileName());
     }
     SNode grammar = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar")));
+    SPropertyOperations.set(grammar, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), name);
     sModel.addLanguage(MetaIdByDeclaration.ref2Id(PersistenceFacade.getInstance().createModuleReference("d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)")), 0);
     sModel.addRootNode(grammar);
     return sModel;
