@@ -53,8 +53,12 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   }
   @Override
   public Object visitRuleBlock(@NotNull ANTLRv4Parser.RuleBlockContext context) {
-    super.visitRuleBlock(context);
-    return visitRuleAltList(context.ruleAltList());
+    // <node> 
+    if (context.ruleAltList() != null) {
+      return visitRuleAltList(context.ruleAltList());
+    } else {
+      return null;
+    }
   }
   @Override
   public Object visitLexerAltList(@NotNull ANTLRv4Parser.LexerAltListContext context) {

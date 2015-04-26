@@ -247,8 +247,8 @@
               <node concept="3x8VRR" id="15CjEiP$zo_" role="2OqNvi" />
             </node>
             <node concept="2YIFZM" id="4UmDqAIXdFL" role="3uHU7w">
-              <ref role="37wK5l" to="c1ko:4UmDqAIX2IV" resolve="areDataAvailableInClipboard" />
-              <ref role="1Pybhc" to="c1ko:4TtYrYGuX3e" resolve="JavaPaster" />
+              <ref role="1Pybhc" to="focp:4TtYrYGuX3e" resolve="AntlrPaster" />
+              <ref role="37wK5l" to="focp:4UmDqAIX2IV" resolve="areDataAvailableInClipboard" />
             </node>
           </node>
         </node>
