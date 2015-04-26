@@ -15,4 +15,10 @@ public class ToTextOutput_Behavior {
       return "";
     }
   }
+  public static String call_safeName_1175268421617889806(SNode thisNode, String name) {
+    return ToTextOutput_Behavior.call_safeString_1175268421617897807(thisNode, "name", name);
+  }
+  public static String call_safeString_1175268421617897807(SNode thisNode, String kind, String value) {
+    return (value == null ? "/*<no-" + kind + ">*/" : value);
+  }
 }

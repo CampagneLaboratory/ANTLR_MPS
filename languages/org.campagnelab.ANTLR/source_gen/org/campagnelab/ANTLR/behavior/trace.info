@@ -56,7 +56,7 @@
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.RuleRefByName_BehaviorDescriptor" />
     </file>
     <file name="Rule_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.ANTLR.behavior.Rule_BehaviorDescriptor" />
+      <unit at="8,0,19,0" name="org.campagnelab.ANTLR.behavior.Rule_BehaviorDescriptor" />
     </file>
     <file name="Sequence_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.Sequence_BehaviorDescriptor" />
@@ -66,6 +66,22 @@
     </file>
     <file name="ToTextOutput_BehaviorDescriptor.java">
       <unit at="7,0,10,0" name="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/1830582854713394829">
+    <file name="Rule_Behavior.java">
+      <node id="1830582854713499836" at="10,75,11,42" concept="4" />
+      <node id="1830582854713394829" at="8,0,10,0" concept="5" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1830582854713394829" at="10,0,13,0" concept="5" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="1830582854713394831" at="8,43,8,43" />
+      <scope id="1830582854713418334" at="10,75,11,42" />
+      <scope id="1830582854713394829" at="8,0,10,0">
+        <var name="thisNode" id="1830582854713394829" />
+      </scope>
+      <scope id="1830582854713394829" at="10,0,13,0">
+        <var name="thisNode" id="1830582854713394829" />
+      </scope>
+      <unit id="1830582854713394829" at="7,0,14,0" name="org.campagnelab.ANTLR.behavior.Rule_Behavior" />
     </file>
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/373739727924885495">
@@ -88,22 +104,37 @@
     <file name="ToTextOutput_Behavior.java">
       <node id="7095100507906222348" at="12,31,13,128" concept="4" />
       <node id="7095100507906233375" at="14,12,15,16" concept="4" />
+      <node id="1175268421617900290" at="18,87,19,93" concept="4" />
+      <node id="1175268421617897811" at="21,103,22,61" concept="4" />
       <node id="5668935624399899990" at="9,0,11,0" concept="5" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="7095100507906222265" at="14,10,16,5" concept="0" />
+      <node id="5668935624399899990" at="18,0,21,0" concept="5" trace="call_safeName_1175268421617889806#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="5668935624399899990" at="21,0,24,0" concept="5" trace="call_safeString_1175268421617897807#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" />
       <node id="7095100507906219779" at="11,96,16,5" concept="2" />
       <node id="5668935624399899990" at="11,0,18,0" concept="5" trace="call_safeToText_7095100507906137981#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624399899992" at="9,43,9,43" />
       <scope id="7095100507906219780" at="12,31,13,128" />
       <scope id="7095100507906222266" at="14,12,15,16" />
+      <scope id="1175268421617889809" at="18,87,19,93" />
+      <scope id="1175268421617897810" at="21,103,22,61" />
       <scope id="5668935624399899990" at="9,0,11,0">
         <var name="thisNode" id="5668935624399899990" />
+      </scope>
+      <scope id="5668935624399899990" at="18,0,21,0">
+        <var name="name" id="1175268421617889841" />
+        <var name="thisNode" id="5668935624399899990" />
+      </scope>
+      <scope id="5668935624399899990" at="21,0,24,0">
+        <var name="kind" id="1175268421617897991" />
+        <var name="thisNode" id="5668935624399899990" />
+        <var name="value" id="1175268421617897818" />
       </scope>
       <scope id="7095100507906137984" at="11,96,16,5" />
       <scope id="5668935624399899990" at="11,0,18,0">
         <var name="thisNode" id="5668935624399899990" />
         <var name="toTextOutput" id="7095100507906176699" />
       </scope>
-      <unit id="5668935624399899990" at="8,0,19,0" name="org.campagnelab.ANTLR.behavior.ToTextOutput_Behavior" />
+      <unit id="5668935624399899990" at="8,0,25,0" name="org.campagnelab.ANTLR.behavior.ToTextOutput_Behavior" />
     </file>
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624399947851">
@@ -125,17 +156,17 @@
       <scope id="5668935624399947851" at="16,0,23,0">
         <var name="thisNode" id="5668935624399947851" />
       </scope>
-      <unit id="5668935624399961929" at="17,411,21,5" name="org.campagnelab.ANTLR.behavior.Grammar_Behavior$1" />
+      <unit id="5668935624399961929" at="17,478,21,5" name="org.campagnelab.ANTLR.behavior.Grammar_Behavior$1" />
       <unit id="5668935624399947851" at="13,0,24,0" name="org.campagnelab.ANTLR.behavior.Grammar_Behavior" />
     </file>
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624399970322">
     <file name="LexerRule_Behavior.java">
-      <node id="5668935624399970441" at="13,75,14,427" concept="4" />
+      <node id="5668935624399970441" at="13,75,14,494" concept="4" />
       <node id="5668935624399970322" at="11,0,13,0" concept="5" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5668935624399970322" at="13,0,16,0" concept="5" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624399970324" at="11,43,11,43" />
-      <scope id="5668935624399970430" at="13,75,14,427" />
+      <scope id="5668935624399970430" at="13,75,14,494" />
       <scope id="5668935624399970322" at="11,0,13,0">
         <var name="thisNode" id="5668935624399970322" />
       </scope>
@@ -282,11 +313,11 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400038778">
     <file name="ParserRule_Behavior.java">
-      <node id="5668935624400038938" at="13,75,14,427" concept="4" />
+      <node id="5668935624400038938" at="13,75,14,494" concept="4" />
       <node id="5668935624400038778" at="11,0,13,0" concept="5" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5668935624400038778" at="13,0,16,0" concept="5" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624400038780" at="11,43,11,43" />
-      <scope id="5668935624400038886" at="13,75,14,427" />
+      <scope id="5668935624400038886" at="13,75,14,494" />
       <scope id="5668935624400038778" at="11,0,13,0">
         <var name="thisNode" id="5668935624400038778" />
       </scope>

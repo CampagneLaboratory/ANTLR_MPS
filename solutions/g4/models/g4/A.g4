@@ -1,6 +1,7 @@
 grammar A{
-A
-	:			null
+null
+	:					
+
 ;
 
 }
