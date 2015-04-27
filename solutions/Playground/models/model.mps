@@ -25,6 +25,7 @@
         <child id="1684107016605707430" name="alternatives" index="2ZQoFe" />
       </concept>
       <concept id="1684107016605283314" name="org.campagnelab.ANTLR.structure.Dot" flags="ng" index="2ZRLmq" />
+      <concept id="5643126999999269540" name="org.campagnelab.ANTLR.structure.LexerElement" flags="ng" index="3J3M2Z" />
       <concept id="5643127000000497363" name="org.campagnelab.ANTLR.structure.LexerRuleRefByName" flags="ng" index="3J8AN8">
         <property id="5643127000000499288" name="name" index="3J8Ah3" />
       </concept>
@@ -319,6 +320,25 @@
               <property role="2sqU3E" value="true" />
             </node>
             <node concept="3J8AN8" id="7_W4cr_dgLz" role="2ZQ012">
+              <property role="3J8Ah3" value="EOL" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2ZQmVp" id="7_W4cr_ghEu" role="1Mb3fo">
+      <property role="TrG5h" value="DESCRIPTIONLINE" />
+      <node concept="2ZQoFH" id="7_W4cr_ghJM" role="2ZQoCl">
+        <node concept="3Jbb_8" id="7_W4cr_ghMs" role="2ZQoFe">
+          <node concept="2ZQ011" id="7_W4cr_ghNL" role="3JbbP2">
+            <node concept="1M88Us" id="7_W4cr_ghOt" role="2ZQ012">
+              <property role="1M88Tz" value="&gt;" />
+            </node>
+            <node concept="3J8AN8" id="7_W4cr_ghOv" role="2ZQ012">
+              <property role="3J8Ah3" value="TEXT" />
+            </node>
+            <node concept="3J3M2Z" id="7_W4cr_ghP3" role="2ZQ012" />
+            <node concept="3J8AN8" id="7_W4cr_ghP5" role="2ZQ012">
               <property role="3J8Ah3" value="EOL" />
             </node>
           </node>

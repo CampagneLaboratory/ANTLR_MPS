@@ -162,14 +162,29 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     if (LOG.isInfoEnabled()) {
       LOG.info("visitLexerElement:" + context.getText());
     }
-    SNode lexerElement = (SNode) visitLexerAtom(context.lexerAtom());
-    if (context.ebnfSuffix() != null) {
-      if (LOG.isInfoEnabled()) {
-        LOG.info("ebnfSuffix:" + context.ebnfSuffix().getText());
+    if (context.lexerAtom() != null) {
+      SNode lexerElement = (SNode) visitLexerAtom(context.lexerAtom());
+      if (context.ebnfSuffix() != null) {
+        if (LOG.isInfoEnabled()) {
+          LOG.info("ebnfSuffix:" + context.ebnfSuffix().getText());
+        }
+        addOptionalParams(lexerElement, context.ebnfSuffix());
       }
-      addOptionalParams(lexerElement, context.ebnfSuffix());
+      return lexerElement;
+    } else if (context.lexerBlock() != null) {
+      /*
+        SNode lexerBlock;
+        lexerBlock = (SNode) visitLexerBlock(context.lexerBlock());
+        if (context.ebnfSuffix() != null) {
+          if (LOG.isInfoEnabled()) {
+            LOG.info("ebnfSuffix:" + context.ebnfSuffix().getText());
+          }
+          // <node> 
+        }
+        return lexerBlock;
+      */
     }
-    return lexerElement;
+    return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L, "org.campagnelab.ANTLR.structure.LexerElement")));
   }
   @Override
   public Object visitLexerAtom(@NotNull ANTLRv4Parser.LexerAtomContext context) {
