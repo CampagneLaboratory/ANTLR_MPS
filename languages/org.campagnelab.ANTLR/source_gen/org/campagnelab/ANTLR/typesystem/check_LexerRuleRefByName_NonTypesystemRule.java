@@ -8,8 +8,10 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.ITranslator2;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
@@ -23,7 +25,11 @@ public class check_LexerRuleRefByName_NonTypesystemRule extends AbstractNonTypes
   public check_LexerRuleRefByName_NonTypesystemRule() {
   }
   public void applyRule(final SNode lexerRuleRefByName, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    SNode first = ListSequence.fromList(SNodeOperations.getNodeDescendants(SNodeOperations.getNodeAncestor(lexerRuleRefByName, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"), false, false), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648b1L, "org.campagnelab.ANTLR.structure.LexerRule"), false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
+    SNode first = ListSequence.fromList(SModelOperations.rootsIncludingImported(SNodeOperations.getModel(lexerRuleRefByName), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"))).translate(new ITranslator2<SNode, SNode>() {
+      public Iterable<SNode> translate(SNode it) {
+        return SNodeOperations.getNodeDescendants(it, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648b1L, "org.campagnelab.ANTLR.structure.LexerRule"), false, new SAbstractConcept[]{});
+      }
+    }).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return eq_w9wi0r_a0a0a0a0a0a0a1(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), SPropertyOperations.getString(lexerRuleRefByName, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba17206d3L, 0x4e506a1ba1720e58L, "name")));
       }

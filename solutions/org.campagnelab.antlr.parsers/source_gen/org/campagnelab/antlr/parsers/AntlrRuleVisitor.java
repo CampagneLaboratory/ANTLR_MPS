@@ -46,8 +46,10 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     SPropertyOperations.set(rule, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), context.RULE_REF().getText());
     TerminalNode node = context.RULE_REF();
     String name = (node == null ? "no-name" : node.getText());
-    SNode rhs = (SNode) visitRuleBlock(context.ruleBlock());
-    SLinkOperations.setTarget(rule, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d838L, 0x631eebe31132d844L, "rhs"), rhs);
+    if (context.ruleBlock() != null) {
+      SNode rhs = (SNode) visitRuleBlock(context.ruleBlock());
+      SLinkOperations.setTarget(rule, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d838L, 0x631eebe31132d844L, "rhs"), rhs);
+    }
     return rule;
 
   }
@@ -69,9 +71,7 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     super.visitLexerAltList(context);
     SNode altList = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba17cd353L, "org.campagnelab.ANTLR.structure.LexerAltList")));
     List<ANTLRv4Parser.LexerAltContext> elements = context.lexerAlt();
-    if (LOG.isInfoEnabled()) {
-      LOG.info("visitAlternative elements.size=" + elements.size());
-    }
+    // <node> 
     if (elements.size() > 0) {
       for (ANTLRv4Parser.LexerAltContext seq : ListSequence.fromList(elements)) {
         ListSequence.fromList(SLinkOperations.getChildren(altList, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba17cd353L, 0x4e506a1ba17cd759L, "alternatives"))).addElement((SNode) visitLexerAlt(seq));
@@ -84,12 +84,9 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
 
   @Override
   public Object visitAlternative(@NotNull ANTLRv4Parser.AlternativeContext context) {
-    super.visitAlternative(context);
     SNode alternative = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative")));
     List<ANTLRv4Parser.ElementContext> elements = context.element();
-    if (LOG.isInfoEnabled()) {
-      LOG.info("visitAlternative elements.size=" + elements.size());
-    }
+    // <node> 
     if (elements.size() > 1) {
       SNode sequence = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d846L, "org.campagnelab.ANTLR.structure.Sequence")));
       for (ANTLRv4Parser.ElementContext seq : ListSequence.fromList(elements)) {
@@ -97,7 +94,9 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
       }
       SLinkOperations.setTarget(alternative, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x631eebe3113b4590L, "rhs"), sequence);
     } else {
-      SLinkOperations.setTarget(alternative, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x631eebe3113b4590L, "rhs"), (SNode) visitElement(elements.get(0)));
+      if (elements.size() == 1) {
+        SLinkOperations.setTarget(alternative, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x631eebe3113b4590L, "rhs"), (SNode) visitElement(elements.get(0)));
+      }
     }
     return alternative;
   }
@@ -121,19 +120,51 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   }
   @Override
   public Object visitElement(@NotNull ANTLRv4Parser.ElementContext context) {
-    if (LOG.isInfoEnabled()) {
-      LOG.info("visitElement:" + context.getText());
-    }
+    // <node> 
     Object result = super.visitElement(context);
+    SNode element;
+    if (context.labeledElement() != null) {
+
+      element = (SNode) visitLabeledElement(context.labeledElement());
+      return element;
+
+    }
+    if (context.ebnf() != null && context.ebnf().block() != null) {
+      if (LOG.isInfoEnabled()) {
+        LOG.info("Visiting ebnf.block():" + context.ebnf().block().getText());
+      }
+      element = (SNode) visitEbnf(context.ebnf());
+      return element;
+    }
     if (context.atom() != null) {
       SNode refByName = createARef(context.atom().getText());
-      if (refByName != null) {
+      element = (SNode) refByName;
+      if (refByName != null && context.ebnfSuffix() != null) {
         addOptionalParams(refByName, context.ebnfSuffix());
       }
       return refByName;
     } else {
       return result;
     }
+  }
+  @Override
+  public Object visitEbnf(@NotNull ANTLRv4Parser.EbnfContext context) {
+    if (context.block() != null) {
+      SNode alternatives;
+      alternatives = (SNode) visitBlock(context.block());
+      if (context.blockSuffix() != null) {
+        if (context.blockSuffix().ebnfSuffix() != null) {
+          addOptionalParams(alternatives, context.blockSuffix().ebnfSuffix());
+        }
+        return alternatives;
+      }
+    }
+    return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, "org.campagnelab.ANTLR.structure.Alternatives")));
+  }
+  @Override
+  public Object visitBlock(@NotNull ANTLRv4Parser.BlockContext context) {
+    SNode alternatives = (SNode) visitAltList(context.altList());
+    return alternatives;
   }
   @Override
   public Object visitLexerRule(@NotNull ANTLRv4Parser.LexerRuleContext context) {
@@ -159,9 +190,7 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   @Override
   public Object visitLexerElement(@NotNull ANTLRv4Parser.LexerElementContext context) {
     super.visitLexerElement(context);
-    if (LOG.isInfoEnabled()) {
-      LOG.info("visitLexerElement:" + context.getText());
-    }
+    // <node> 
     SNode parserRuleBlock = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L, "org.campagnelab.ANTLR.structure.LexerElement")));
     if (context.lexerAtom() != null) {
       parserRuleBlock = (SNode) visitLexerAtom(context.lexerAtom());
@@ -169,9 +198,7 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
       parserRuleBlock = (SNode) visitLexerBlock(context.lexerBlock());
     }
     if (context.ebnfSuffix() != null) {
-      if (LOG.isInfoEnabled()) {
-        LOG.info("ebnfSuffix:" + context.ebnfSuffix().getText());
-      }
+      // <node> 
       addOptionalParams(parserRuleBlock, context.ebnfSuffix());
     }
     return parserRuleBlock;
@@ -223,9 +250,7 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     List<SNode> lexerElements = new ArrayList<SNode>();
     if (context.lexerElement() != null) {
       List<ANTLRv4Parser.LexerElementContext> elements = context.lexerElement();
-      if (LOG.isInfoEnabled()) {
-        LOG.info("visitAlternative elements.size=" + elements.size());
-      }
+      // <node> 
       for (ANTLRv4Parser.LexerElementContext seq : ListSequence.fromList(elements)) {
         lexerElements.add((SNode) visitLexerElement(seq));
       }
@@ -253,14 +278,11 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     }
   }
   public SNode createARef(String name) {
-    if (name.toLowerCase().equals(name)) {
+    if (Character.isLowerCase(name.charAt(0))) {
       return createRef(name);
     } else {
-      if (name.toUpperCase().equals(name)) {
-        return createLexerRef(name);
-      }
+      return createLexerRef(name);
     }
-    return createLexerRef("mixedCase?" + createLexerRef(name));
   }
   public SNode createRef(String name) {
     SNode refByName = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x1ebae6380de70d78L, "org.campagnelab.ANTLR.structure.RuleRefByName")));

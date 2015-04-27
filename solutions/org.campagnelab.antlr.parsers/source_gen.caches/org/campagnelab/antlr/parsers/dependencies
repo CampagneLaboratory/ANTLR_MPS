@@ -54,6 +54,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.module.SModule" />
   </dependency>
   <dependency className="org.campagnelab.antlr.parsers.AntlrRuleVisitor" file="AntlrRuleVisitor.java">
+    <classNode dependClassName="java.lang.Character" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
