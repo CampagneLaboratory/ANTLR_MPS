@@ -67,7 +67,6 @@
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.antlr.ANTLRv4Parser" />
-    <classNode dependClassName="org.antlr.v4.runtime.ParserRuleContext" />
     <classNode dependClassName="org.antlr.v4.runtime.misc.NotNull" />
     <classNode dependClassName="org.antlr.v4.runtime.tree.TerminalNode" />
     <classNode dependClassName="org.apache.log4j.LogManager" />

@@ -42,7 +42,7 @@
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" fqName="jetbrains.mps.lang.plugin" version="0" />
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
-    <language id="d6782141-eafa-4cf7-a85d-1229abdb1152" fqName="org.campagnelab.ANTLR" version="0" />
+    <language id="d6782141-eafa-4cf7-a85d-1229abdb1152" fqName="org.campagnelab.ANTLR" version="3" />
   </languageVersions>
 </solution>
 

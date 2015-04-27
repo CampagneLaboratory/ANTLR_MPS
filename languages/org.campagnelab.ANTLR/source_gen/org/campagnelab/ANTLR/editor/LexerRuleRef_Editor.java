@@ -12,9 +12,6 @@ import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 public class LexerRuleRef_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -55,9 +52,16 @@ public class LexerRuleRef_Editor extends DefaultNodeEditor {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_q5sa8_a0a0(editorContext, node);
+      return this.createCollection_q5sa8_a0a0(editorContext, node);
     }
-    private EditorCell createProperty_q5sa8_a0a0(EditorContext editorContext, SNode node) {
+    private EditorCell createCollection_q5sa8_a0a0(EditorContext editorContext, SNode node) {
+      EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+      editorCell.setCellId("Collection_q5sa8_a0a0");
+      editorCell.addEditorCell(this.createProperty_q5sa8_a0a0a(editorContext, node));
+      editorCell.addEditorCell(this.createComponent_q5sa8_b0a0a(editorContext, node));
+      return editorCell;
+    }
+    private EditorCell createProperty_q5sa8_a0a0a(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -65,9 +69,6 @@ public class LexerRuleRef_Editor extends DefaultNodeEditor {
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name");
-      Style style = new StyleImpl();
-      style.set(StyleAttributes.AUTO_DELETABLE, 0, true);
-      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       Class attributeKind = provider.getRoleAttributeClass();
@@ -75,6 +76,10 @@ public class LexerRuleRef_Editor extends DefaultNodeEditor {
         EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
         return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
       } else
+      return editorCell;
+    }
+    private EditorCell createComponent_q5sa8_b0a0a(EditorContext editorContext, SNode node) {
+      EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.ANTLR.editor.OptionalParamEditor");
       return editorCell;
     }
   }

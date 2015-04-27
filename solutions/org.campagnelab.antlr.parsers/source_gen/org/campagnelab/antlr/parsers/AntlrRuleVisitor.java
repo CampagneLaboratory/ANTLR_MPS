@@ -16,7 +16,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.antlr.v4.runtime.tree.TerminalNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.antlr.v4.runtime.ParserRuleContext;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
@@ -36,6 +35,7 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
         ListSequence.fromList(rules).addElement((SNode) visitRuleSpec(r_var));
       }
     }
+
     return rules;
   }
 
@@ -54,7 +54,7 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   @Override
   public Object visitRuleBlock(@NotNull ANTLRv4Parser.RuleBlockContext context) {
     // <node> 
-    SNode block = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, "org.campagnelab.ANTLR.structure.ParserRuleBlock")));
+    SNode block;
     if (context.ruleAltList() != null) {
       block = ((SNode) visitRuleAltList(context.ruleAltList()));
       if (block != null) {
@@ -164,6 +164,9 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     }
     SNode lexerElement = (SNode) visitLexerAtom(context.lexerAtom());
     if (context.ebnfSuffix() != null) {
+      if (LOG.isInfoEnabled()) {
+        LOG.info("ebnfSuffix:" + context.ebnfSuffix().getText());
+      }
       addOptionalParams(lexerElement, context.ebnfSuffix());
     }
     return lexerElement;
@@ -208,17 +211,22 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     }
     return lexerElements;
   }
-  private void addOptionalParams(SNode currentElement, ParserRuleContext context) {
+  private void addOptionalParams(SNode currentElement, ANTLRv4Parser.EbnfSuffixContext context) {
     if (currentElement != null && context != null) {
       String question = context.getText();
-      if ("?".equals(question)) {
-        SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional"), "" + (true));
-      }
-      if ("+".equals(question)) {
-        SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x72827882b897b9d5L, "plus"), "" + (true));
-      }
-      if ("*".equals(question)) {
-        SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple"), "" + (true));
+      for (char c : question.toCharArray()) {
+        if (LOG.isInfoEnabled()) {
+          LOG.info("c" + c);
+        }
+        if ('?' == c) {
+          SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x797c10c6e517ac38L, 0x797c10c6e517b02cL, "isOptional"), "" + (true));
+        }
+        if ('+' == c) {
+          SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x797c10c6e517ac38L, 0x797c10c6e517bcdaL, "plus"), "" + (true));
+        }
+        if ('*' == c) {
+          SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x797c10c6e517ac38L, 0x797c10c6e517bbd3L, "acceptMultiple"), "" + (true));
+        }
       }
     }
   }

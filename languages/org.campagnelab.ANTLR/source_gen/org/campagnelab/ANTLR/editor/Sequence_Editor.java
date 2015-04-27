@@ -38,6 +38,7 @@ public class Sequence_Editor extends DefaultNodeEditor {
     if (renderingCondition_6lwes5_a2a(node, editorContext)) {
       editorCell.addEditorCell(this.createConstant_6lwes5_c0(editorContext, node));
     }
+    editorCell.addEditorCell(this.createComponent_6lwes5_d0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_6lwes5_a0(EditorContext editorContext, SNode node) {
@@ -96,6 +97,10 @@ public class Sequence_Editor extends DefaultNodeEditor {
   }
   private static boolean renderingCondition_6lwes5_a2a(SNode node, EditorContext editorContext) {
     return (SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648b1L, "org.campagnelab.ANTLR.structure.LexerRule"), false, false) != null);
+  }
+  private EditorCell createComponent_6lwes5_d0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.ANTLR.editor.OptionalParamEditor");
+    return editorCell;
   }
   private EditorCell createComponent_6lwes5_a(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.ANTLR.editor.RHSEditor");

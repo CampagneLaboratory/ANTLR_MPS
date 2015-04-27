@@ -20,6 +20,7 @@ public class LexerRuleRefByName_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_1tibhb_a");
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createProperty_1tibhb_a0(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_1tibhb_b0(editorContext, node));
     return editorCell;
   }
   private EditorCell createProperty_1tibhb_a0(EditorContext editorContext, SNode node) {
@@ -36,6 +37,10 @@ public class LexerRuleRefByName_Editor extends DefaultNodeEditor {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
       return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
     } else
+    return editorCell;
+  }
+  private EditorCell createComponent_1tibhb_b0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.ANTLR.editor.OptionalParamEditor");
     return editorCell;
   }
 }

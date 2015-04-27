@@ -1,0 +1,6 @@
+grammar f{
+COMMENTLINE
+	:				';' . EOL
+;
+
+}

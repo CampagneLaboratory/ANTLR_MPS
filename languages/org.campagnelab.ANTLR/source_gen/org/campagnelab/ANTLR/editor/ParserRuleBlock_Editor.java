@@ -48,11 +48,11 @@ public class ParserRuleBlock_Editor extends DefaultNodeEditor {
   }
   private EditorCell createProperty_47u5j1_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("isOptional");
-    provider.setNoTargetText("<no isOptional>");
+    provider.setRole("isOptional_old");
+    provider.setNoTargetText("<no isOptional_old>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_isOptional");
+    editorCell.setCellId("property_isOptional_old");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
@@ -70,11 +70,11 @@ public class ParserRuleBlock_Editor extends DefaultNodeEditor {
   }
   private EditorCell createProperty_47u5j1_d0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("acceptMultiple");
-    provider.setNoTargetText("<no acceptMultiple>");
+    provider.setRole("acceptMultiple_old");
+    provider.setNoTargetText("<no acceptMultiple_old>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_acceptMultiple");
+    editorCell.setCellId("property_acceptMultiple_old");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
@@ -92,11 +92,11 @@ public class ParserRuleBlock_Editor extends DefaultNodeEditor {
   }
   private EditorCell createProperty_47u5j1_f0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("plus");
-    provider.setNoTargetText("<no plus>");
+    provider.setRole("plus_old");
+    provider.setNoTargetText("<no plus_old>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_plus");
+    editorCell.setCellId("property_plus_old");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();

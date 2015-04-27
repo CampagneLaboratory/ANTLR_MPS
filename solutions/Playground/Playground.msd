@@ -11,7 +11,7 @@
   </usedLanguages>
   <languageVersions>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
-    <language id="d6782141-eafa-4cf7-a85d-1229abdb1152" fqName="org.campagnelab.ANTLR" version="0" />
+    <language id="d6782141-eafa-4cf7-a85d-1229abdb1152" fqName="org.campagnelab.ANTLR" version="3" />
   </languageVersions>
 </solution>
 
