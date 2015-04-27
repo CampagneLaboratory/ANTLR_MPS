@@ -14,7 +14,7 @@
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.Alternatives_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,60,0" name="org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,62,0" name="org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="Dot_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.Dot_BehaviorDescriptor" />
@@ -51,6 +51,9 @@
     </file>
     <file name="LexerToken_BehaviorDescriptor.java">
       <unit at="9,0,23,0" name="org.campagnelab.ANTLR.behavior.LexerToken_BehaviorDescriptor" />
+    </file>
+    <file name="NotSet_BehaviorDescriptor.java">
+      <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.NotSet_BehaviorDescriptor" />
     </file>
     <file name="Parentheses_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.Parentheses_BehaviorDescriptor" />
@@ -522,6 +525,22 @@
       </scope>
       <unit id="5668935624400097338" at="18,234,22,5" name="org.campagnelab.ANTLR.behavior.Alternatives_Behavior$1" />
       <unit id="7142405419535281996" at="13,0,25,0" name="org.campagnelab.ANTLR.behavior.Alternatives_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/987964775448368097">
+    <file name="NotSet_Behavior.java">
+      <node id="987964775448369110" at="12,74,13,253" concept="4" />
+      <node id="987964775448368097" at="10,0,12,0" concept="5" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="987964775448368097" at="12,0,15,0" concept="5" trace="virtual_toText_987964775448368950#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="987964775448368099" at="10,43,10,43" />
+      <scope id="987964775448368953" at="12,74,13,253" />
+      <scope id="987964775448368097" at="10,0,12,0">
+        <var name="thisNode" id="987964775448368097" />
+      </scope>
+      <scope id="987964775448368097" at="12,0,15,0">
+        <var name="thisNode" id="987964775448368097" />
+      </scope>
+      <unit id="987964775448368097" at="9,0,16,0" name="org.campagnelab.ANTLR.behavior.NotSet_Behavior" />
     </file>
   </root>
 </debug-info>

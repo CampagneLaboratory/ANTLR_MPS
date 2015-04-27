@@ -66,6 +66,7 @@
     <classNode dependClassName="org.campagnelab.ANTLR.editor.LexerRuleRefByName_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.LexerRuleRef_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.LexerRule_Editor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.editor.NotSet_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.OptionalParamEditor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.Parentheses_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.ParserRuleBlock_Editor" />
@@ -234,6 +235,22 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeUtil" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.cells.KeyMapImpl" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.editor.NotSet_Editor" file="NotSet_Editor.java">
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.cells.BigCellUtil" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleAttributes" />
+    <classNode dependClassName="jetbrains.mps.editor.runtime.style.StyleImpl" />
+    <classNode dependClassName="jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.EditorManager" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
   <dependency className="org.campagnelab.ANTLR.editor.OptionalParamEditor" file="OptionalParamEditor.java">
     <classNode dependClassName="java.lang.String" />

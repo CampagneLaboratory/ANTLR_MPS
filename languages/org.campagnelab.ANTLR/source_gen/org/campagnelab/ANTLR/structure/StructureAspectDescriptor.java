@@ -26,6 +26,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptLexerRuleRef = new ConceptDescriptorBuilder("org.campagnelab.ANTLR.structure.LexerRuleRef", MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a890ef9eL)).super_("org.campagnelab.ANTLR.structure.LexerElement").super_(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L)).parents("org.campagnelab.ANTLR.structure.LexerElement", "org.campagnelab.ANTLR.structure.ToTextOutput").parentIds(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L), MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4eac1aea42e9c6e8L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(1684107016606379935L, "rule", MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648b1L), false)).references("rule").create();
   /*package*/ final ConceptDescriptor myConceptLexerRuleRefByName = new ConceptDescriptorBuilder("org.campagnelab.ANTLR.structure.LexerRuleRefByName", MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba17206d3L)).super_("org.campagnelab.ANTLR.structure.LexerElement").super_(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L)).parents("org.campagnelab.ANTLR.structure.LexerElement", "org.campagnelab.ANTLR.structure.ToTextOutput").parentIds(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L), MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4eac1aea42e9c6e8L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(5643127000000499288L, "name")).properties("name").create();
   /*package*/ final ConceptDescriptor myConceptLexerToken = new ConceptDescriptorBuilder("org.campagnelab.ANTLR.structure.LexerToken", MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e6560L)).super_("org.campagnelab.ANTLR.structure.LexerElement").super_(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L)).parents("org.campagnelab.ANTLR.structure.LexerElement", "org.campagnelab.ANTLR.structure.ToTextOutput", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L), MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4eac1aea42e9c6e8L), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).abstract_().create();
+  /*package*/ final ConceptDescriptor myConceptNotSet = new ConceptDescriptorBuilder("org.campagnelab.ANTLR.structure.NotSet", MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba9332cba7L)).super_("org.campagnelab.ANTLR.structure.LexerElement").super_(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L)).parents("org.campagnelab.ANTLR.structure.LexerElement", "org.campagnelab.ANTLR.structure.ToTextOutput").parentIds(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L), MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4eac1aea42e9c6e8L)).childDescriptors(new ConceptDescriptorBuilder.Link(987964775448366068L, "regexp", MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113ea53bL), false, false, false)).children(new String[]{"regexp"}, new boolean[]{false}).create();
   /*package*/ final ConceptDescriptor myConceptParentheses = new ConceptDescriptorBuilder("org.campagnelab.ANTLR.structure.Parentheses", MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x1ebae6380de529f8L)).super_("org.campagnelab.ANTLR.structure.ParserRuleBlock").super_(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L)).parents("org.campagnelab.ANTLR.structure.ParserRuleBlock", "org.campagnelab.ANTLR.structure.ToTextOutput").parentIds(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L), MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4eac1aea42e9c6e8L)).childDescriptors(new ConceptDescriptorBuilder.Link(2214335295231699471L, "content", MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d846L), false, false, false)).children(new String[]{"content"}, new boolean[]{false}).alias("(", "").create();
   /*package*/ final ConceptDescriptor myConceptParserRule = new ConceptDescriptorBuilder("org.campagnelab.ANTLR.structure.ParserRule", MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d838L)).super_("org.campagnelab.ANTLR.structure.Rule").super_(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648aaL)).parents("org.campagnelab.ANTLR.structure.Rule", "jetbrains.mps.lang.core.structure.INamedConcept", "org.campagnelab.ANTLR.structure.ToTextOutput").parentIds(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648aaL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L), MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4eac1aea42e9c6e8L)).childDescriptors(new ConceptDescriptorBuilder.Link(7142405419534833732L, "rhs", MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L), false, false, false)).children(new String[]{"rhs"}, new boolean[]{false}).alias("parserRule", "").create();
   /*package*/ final ConceptDescriptor myConceptParserRuleBlock = new ConceptDescriptorBuilder("org.campagnelab.ANTLR.structure.ParserRuleBlock", MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L)).super_("org.campagnelab.ANTLR.structure.HasOptionalParams").super_(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x797c10c6e517ac38L)).parents("org.campagnelab.ANTLR.structure.HasOptionalParams", "org.campagnelab.ANTLR.structure.ToTextOutput").parentIds(MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x797c10c6e517ac38L), MetaIdFactory.conceptId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4eac1aea42e9c6e8L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(7142405419535450693L, "isOptional_old"), new ConceptDescriptorBuilder.Prop(7142405419535450695L, "acceptMultiple_old"), new ConceptDescriptorBuilder.Prop(8251289970134202837L, "plus_old")).properties("isOptional_old", "acceptMultiple_old", "plus_old").abstract_().create();
@@ -39,13 +40,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAlternative, myConceptAlternatives, myConceptDot, myConceptGrammar, myConceptHasOptionalParams, myConceptLexerAlt, myConceptLexerAltList, myConceptLexerBlock, myConceptLexerElement, myConceptLexerRule, myConceptLexerRuleBlock, myConceptLexerRuleRef, myConceptLexerRuleRefByName, myConceptLexerToken, myConceptParentheses, myConceptParserRule, myConceptParserRuleBlock, myConceptParserRuleRef, myConceptREGEXP, myConceptRule, myConceptRuleRefByName, myConceptSequence, myConceptStringLiteral, myConceptToTextOutput);
+    return Arrays.asList(myConceptAlternative, myConceptAlternatives, myConceptDot, myConceptGrammar, myConceptHasOptionalParams, myConceptLexerAlt, myConceptLexerAltList, myConceptLexerBlock, myConceptLexerElement, myConceptLexerRule, myConceptLexerRuleBlock, myConceptLexerRuleRef, myConceptLexerRuleRefByName, myConceptLexerToken, myConceptNotSet, myConceptParentheses, myConceptParserRule, myConceptParserRuleBlock, myConceptParserRuleRef, myConceptREGEXP, myConceptRule, myConceptRuleRefByName, myConceptSequence, myConceptStringLiteral, myConceptToTextOutput);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0cb, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0db, conceptFqName)) {
       case 0:
         return myConceptAlternative;
       case 1:
@@ -75,28 +76,30 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 13:
         return myConceptLexerToken;
       case 14:
-        return myConceptParentheses;
+        return myConceptNotSet;
       case 15:
-        return myConceptParserRule;
+        return myConceptParentheses;
       case 16:
-        return myConceptParserRuleBlock;
+        return myConceptParserRule;
       case 17:
-        return myConceptParserRuleRef;
+        return myConceptParserRuleBlock;
       case 18:
-        return myConceptREGEXP;
+        return myConceptParserRuleRef;
       case 19:
-        return myConceptRule;
+        return myConceptREGEXP;
       case 20:
-        return myConceptRuleRefByName;
+        return myConceptRule;
       case 21:
-        return myConceptSequence;
+        return myConceptRuleRefByName;
       case 22:
-        return myConceptStringLiteral;
+        return myConceptSequence;
       case 23:
+        return myConceptStringLiteral;
+      case 24:
         return myConceptToTextOutput;
       default:
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0cb = new String[]{"org.campagnelab.ANTLR.structure.Alternative", "org.campagnelab.ANTLR.structure.Alternatives", "org.campagnelab.ANTLR.structure.Dot", "org.campagnelab.ANTLR.structure.Grammar", "org.campagnelab.ANTLR.structure.HasOptionalParams", "org.campagnelab.ANTLR.structure.LexerAlt", "org.campagnelab.ANTLR.structure.LexerAltList", "org.campagnelab.ANTLR.structure.LexerBlock", "org.campagnelab.ANTLR.structure.LexerElement", "org.campagnelab.ANTLR.structure.LexerRule", "org.campagnelab.ANTLR.structure.LexerRuleBlock", "org.campagnelab.ANTLR.structure.LexerRuleRef", "org.campagnelab.ANTLR.structure.LexerRuleRefByName", "org.campagnelab.ANTLR.structure.LexerToken", "org.campagnelab.ANTLR.structure.Parentheses", "org.campagnelab.ANTLR.structure.ParserRule", "org.campagnelab.ANTLR.structure.ParserRuleBlock", "org.campagnelab.ANTLR.structure.ParserRuleRef", "org.campagnelab.ANTLR.structure.REGEXP", "org.campagnelab.ANTLR.structure.Rule", "org.campagnelab.ANTLR.structure.RuleRefByName", "org.campagnelab.ANTLR.structure.Sequence", "org.campagnelab.ANTLR.structure.StringLiteral", "org.campagnelab.ANTLR.structure.ToTextOutput"};
+  private static String[] stringSwitchCases_1htk8d_a0a0db = new String[]{"org.campagnelab.ANTLR.structure.Alternative", "org.campagnelab.ANTLR.structure.Alternatives", "org.campagnelab.ANTLR.structure.Dot", "org.campagnelab.ANTLR.structure.Grammar", "org.campagnelab.ANTLR.structure.HasOptionalParams", "org.campagnelab.ANTLR.structure.LexerAlt", "org.campagnelab.ANTLR.structure.LexerAltList", "org.campagnelab.ANTLR.structure.LexerBlock", "org.campagnelab.ANTLR.structure.LexerElement", "org.campagnelab.ANTLR.structure.LexerRule", "org.campagnelab.ANTLR.structure.LexerRuleBlock", "org.campagnelab.ANTLR.structure.LexerRuleRef", "org.campagnelab.ANTLR.structure.LexerRuleRefByName", "org.campagnelab.ANTLR.structure.LexerToken", "org.campagnelab.ANTLR.structure.NotSet", "org.campagnelab.ANTLR.structure.Parentheses", "org.campagnelab.ANTLR.structure.ParserRule", "org.campagnelab.ANTLR.structure.ParserRuleBlock", "org.campagnelab.ANTLR.structure.ParserRuleRef", "org.campagnelab.ANTLR.structure.REGEXP", "org.campagnelab.ANTLR.structure.Rule", "org.campagnelab.ANTLR.structure.RuleRefByName", "org.campagnelab.ANTLR.structure.Sequence", "org.campagnelab.ANTLR.structure.StringLiteral", "org.campagnelab.ANTLR.structure.ToTextOutput"};
 }

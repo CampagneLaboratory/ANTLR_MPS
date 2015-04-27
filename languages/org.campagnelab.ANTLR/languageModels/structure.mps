@@ -360,5 +360,18 @@
       <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
     </node>
   </node>
+  <node concept="1TIwiD" id="QPXbEjcGIB">
+    <property role="TrG5h" value="NotSet" />
+    <ref role="1TJDcQ" node="4TgqxIxnOE$" resolve="LexerElement" />
+    <node concept="1TJgyj" id="QPXbEjcGJO" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="regexp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6cuUYchfEkV" resolve="REGEXP" />
+    </node>
+    <node concept="PrWs8" id="QPXbEjcHfv" role="PzmwI">
+      <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
+    </node>
+  </node>
 </model>
 
