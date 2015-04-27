@@ -1023,14 +1023,10 @@
   <node concept="24kQdi" id="1tv9AyCxUAx">
     <ref role="1XX52x" to="ubjp:1tv9AyCxEM5" resolve="LexerRuleBlock" />
     <node concept="3EZMnI" id="1tv9AyCxUAz" role="2wV5jI">
-      <node concept="3F2HdR" id="1tv9AyCxUF5" role="3EZMnx">
-        <ref role="1NtTu8" to="ubjp:1tv9AyCxEMA" />
-        <node concept="2EHx9g" id="1tv9AyCypYz" role="2czzBx" />
-        <node concept="pVoyu" id="1tv9AyCzBOO" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
       <node concept="l2Vlx" id="1tv9AyCxUAA" role="2iSdaV" />
+      <node concept="3F1sOY" id="28AUPoS7BKu" role="3EZMnx">
+        <ref role="1NtTu8" to="ubjp:1tv9AyCxEMA" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1tv9AyCxUFf">

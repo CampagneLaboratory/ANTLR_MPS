@@ -461,25 +461,18 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400526579">
     <file name="LexerRuleBlock_Behavior.java">
-      <node id="5668935624400542025" at="17,38,18,87" concept="4" />
-      <node id="5668935624400526579" at="13,0,15,0" concept="5" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400541691" at="17,0,20,0" concept="3" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5668935624400526698" at="15,81,20,14" concept="4" />
-      <node id="5668935624400526579" at="15,0,22,0" concept="5" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <scope id="5668935624400526581" at="13,43,13,43" />
-      <scope id="5668935624400541692" at="17,38,18,87" />
-      <scope id="5668935624400526579" at="13,0,15,0">
+      <node id="2460913001945785306" at="12,75,13,255" concept="4" />
+      <node id="5668935624400526579" at="10,0,12,0" concept="5" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400526579" at="12,0,15,0" concept="5" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="5668935624400526581" at="10,43,10,43" />
+      <scope id="5668935624400526687" at="12,75,13,255" />
+      <scope id="5668935624400526579" at="10,0,12,0">
         <var name="thisNode" id="5668935624400526579" />
       </scope>
-      <scope id="5668935624400541691" at="17,0,20,0">
-        <var name="it" id="5668935624400541691" />
-      </scope>
-      <scope id="5668935624400526687" at="15,81,20,14" />
-      <scope id="5668935624400526579" at="15,0,22,0">
+      <scope id="5668935624400526579" at="12,0,15,0">
         <var name="thisNode" id="5668935624400526579" />
       </scope>
-      <unit id="5668935624400541691" at="16,241,20,5" name="org.campagnelab.ANTLR.behavior.LexerRuleBlock_Behavior$1" />
-      <unit id="5668935624400526579" at="12,0,23,0" name="org.campagnelab.ANTLR.behavior.LexerRuleBlock_Behavior" />
+      <unit id="5668935624400526579" at="9,0,16,0" name="org.campagnelab.ANTLR.behavior.LexerRuleBlock_Behavior" />
     </file>
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/7142405419535281996">

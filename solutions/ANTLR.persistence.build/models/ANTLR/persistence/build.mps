@@ -156,6 +156,29 @@
     </node>
     <node concept="398rNT" id="7twz7e84BNr" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
+      <node concept="55IIr" id="28AUPoS8_iZ" role="398pKh">
+        <node concept="2Ry0Ak" id="28AUPoS8_k1" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="28AUPoS8_k4" role="2Ry0An">
+            <property role="2Ry0Am" value=".." />
+            <node concept="2Ry0Ak" id="28AUPoS8_k7" role="2Ry0An">
+              <property role="2Ry0Am" value=".." />
+              <node concept="2Ry0Ak" id="28AUPoS8_ka" role="2Ry0An">
+                <property role="2Ry0Am" value=".." />
+                <node concept="2Ry0Ak" id="28AUPoS8_kd" role="2Ry0An">
+                  <property role="2Ry0Am" value=".." />
+                  <node concept="2Ry0Ak" id="28AUPoS8_ki" role="2Ry0An">
+                    <property role="2Ry0Am" value="Applications" />
+                    <node concept="2Ry0Ak" id="28AUPoS8_kn" role="2Ry0An">
+                      <property role="2Ry0Am" value="MPS 3.2" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="7twz7e84BNj" role="1l3spd">
       <property role="TrG5h" value="plugins_home" />
@@ -528,12 +551,6 @@
           <node concept="3bR9La" id="4UG6ID2XK4H" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5U7ZKlHMwce" resolve="org.campagnelab.ANTLR" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1lrVu1zWeB_" role="3bR37C">
-          <node concept="3bR9La" id="1lrVu1zWeBA" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
       </node>
