@@ -4,7 +4,7 @@
   <property name="build.tmp" location="${build.dir}/tmp/ANTLR" />
   <property name="build.layout" location="${build.dir}/artifacts/ANTLR" />
   <property name="idea_home" location="" />
-  <property name="mps_home" location="" />
+  <property name="mps_home" location="${basedir}/../../../../../Applications/MPS 3.2" />
   <property name="plugins_home" location="${mps_home}/plugins" />
   <property name="ANTLR_HOME" location="${basedir}" />
   <property name="artifacts.mpsPlugin" location="${idea_home}/plugins" />
@@ -28,8 +28,8 @@
     <mkdir dir="${build.tmp}/default/ANTLR.zip/AntlrPersistence/META-INF" />
     <echoxml file="${build.tmp}/default/ANTLR.zip/AntlrPersistence/META-INF/plugin.xml">
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
-        <id>org.campagnelab.antlr.persistence</id>
-        <name>org.campagnelab.ANTLR.persistence</name>
+        <id>org.campagnelab.ANTLR</id>
+        <name>org.campagnelab.ANTLR</name>
         <description>ANTLR persistence.</description>
         <version>1.0</version>
         <vendor url="http://campagnelab.org">Campagne Laboratory</vendor>

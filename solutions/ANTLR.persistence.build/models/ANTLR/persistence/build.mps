@@ -229,7 +229,7 @@
           </node>
         </node>
         <node concept="m$_wl" id="7twz7e84BNT" role="39821P">
-          <ref role="m_rDy" node="7twz7e84BNG" resolve="org.campagnelab.antlr.persistence" />
+          <ref role="m_rDy" node="7twz7e84BNG" resolve="org.campagnelab.ANTLR" />
           <node concept="398223" id="1f830wSkBCU" role="39821P">
             <node concept="L2wRC" id="2LflvEofIOK" role="39821P">
               <ref role="L2wRA" node="7twz7e84BN$" resolve="org.campagnelab.antlr.persistence" />
@@ -264,7 +264,7 @@
       </node>
     </node>
     <node concept="m$_wf" id="7twz7e84BNG" role="3989C9">
-      <property role="m$_wk" value="org.campagnelab.antlr.persistence" />
+      <property role="m$_wk" value="org.campagnelab.ANTLR" />
       <node concept="2pNNFK" id="7ZoWiKceyAv" role="20twgj">
         <property role="2pNNFO" value="extensions" />
         <node concept="2pNNFK" id="7ZoWiKceyBr" role="3o6s8t">
@@ -309,7 +309,7 @@
       </node>
       <node concept="3_J27D" id="7twz7e84BNH" role="m$_yQ">
         <node concept="3Mxwew" id="7twz7e84BNI" role="3MwsjC">
-          <property role="3MwjfP" value="org.campagnelab.ANTLR.persistence" />
+          <property role="3MwjfP" value="org.campagnelab.ANTLR" />
         </node>
       </node>
       <node concept="3_J27D" id="7twz7e84BNJ" role="m$_w8">
