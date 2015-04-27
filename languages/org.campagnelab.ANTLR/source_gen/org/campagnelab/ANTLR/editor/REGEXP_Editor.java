@@ -7,10 +7,6 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.openapi.editor.style.Style;
-import jetbrains.mps.editor.runtime.style.StyleImpl;
-import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
@@ -27,22 +23,11 @@ public class REGEXP_Editor extends DefaultNodeEditor {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_5dzy69_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createConstant_5dzy69_a0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_5dzy69_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_5dzy69_c0(editorContext, node));
-    editorCell.addEditorCell(this.createComponent_5dzy69_d0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_5dzy69_a0(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_5dzy69_b0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_5dzy69_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "[");
-    editorCell.setCellId("Constant_5dzy69_a0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createProperty_5dzy69_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_5dzy69_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("regexp");
     provider.setNoTargetText("<no regexp>");
@@ -58,16 +43,7 @@ public class REGEXP_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_5dzy69_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "]");
-    editorCell.setCellId("Constant_5dzy69_c0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createComponent_5dzy69_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createComponent_5dzy69_b0(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.ANTLR.editor.OptionalParamEditor");
     return editorCell;
   }

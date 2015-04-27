@@ -162,29 +162,28 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     if (LOG.isInfoEnabled()) {
       LOG.info("visitLexerElement:" + context.getText());
     }
+    SNode parserRuleBlock = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L, "org.campagnelab.ANTLR.structure.LexerElement")));
     if (context.lexerAtom() != null) {
-      SNode lexerElement = (SNode) visitLexerAtom(context.lexerAtom());
-      if (context.ebnfSuffix() != null) {
-        if (LOG.isInfoEnabled()) {
-          LOG.info("ebnfSuffix:" + context.ebnfSuffix().getText());
-        }
-        addOptionalParams(lexerElement, context.ebnfSuffix());
-      }
-      return lexerElement;
+      parserRuleBlock = (SNode) visitLexerAtom(context.lexerAtom());
     } else if (context.lexerBlock() != null) {
-      /*
-        SNode lexerBlock;
-        lexerBlock = (SNode) visitLexerBlock(context.lexerBlock());
-        if (context.ebnfSuffix() != null) {
-          if (LOG.isInfoEnabled()) {
-            LOG.info("ebnfSuffix:" + context.ebnfSuffix().getText());
-          }
-          // <node> 
-        }
-        return lexerBlock;
-      */
+      parserRuleBlock = (SNode) visitLexerBlock(context.lexerBlock());
     }
-    return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L, "org.campagnelab.ANTLR.structure.LexerElement")));
+    if (context.ebnfSuffix() != null) {
+      if (LOG.isInfoEnabled()) {
+        LOG.info("ebnfSuffix:" + context.ebnfSuffix().getText());
+      }
+      addOptionalParams(parserRuleBlock, context.ebnfSuffix());
+    }
+    return parserRuleBlock;
+  }
+  @Override
+  public Object visitLexerBlock(@NotNull ANTLRv4Parser.LexerBlockContext context) {
+    SNode sequence = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x155bede063d71d12L, "org.campagnelab.ANTLR.structure.LexerBlock")));
+
+    if (context.lexerAltList() != null) {
+      ListSequence.fromList(SLinkOperations.getChildren(sequence, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x155bede063d71d12L, 0x155bede063d71d13L, "elements"))).addElement((SNode) visitLexerAltList(context.lexerAltList()));
+    }
+    return sequence;
   }
   @Override
   public Object visitLexerAtom(@NotNull ANTLRv4Parser.LexerAtomContext context) {
@@ -193,13 +192,21 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     if (context.DOT() != null) {
       return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88033f2L, "org.campagnelab.ANTLR.structure.Dot")));
     }
-    if (context.terminal().STRING_LITERAL() != null) {
-      String litText = context.terminal().STRING_LITERAL().getText();
-      return createLiteral(litText.subSequence(1, litText.length() - 1).toString());
+    if (context.terminal() != null) {
+      if (context.terminal().STRING_LITERAL() != null) {
+        String litText = context.terminal().STRING_LITERAL().getText();
+        return createLiteral(litText.subSequence(1, litText.length() - 1).toString());
+      }
+      if (context.terminal().TOKEN_REF() != null) {
+        return createLexerRef(context.terminal().getText());
+      }
     }
-    if (context.terminal().TOKEN_REF() != null) {
-      return createLexerRef(context.terminal().getText());
+    if (context.LEXER_CHAR_SET() != null) {
+      SNode regexp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113ea53bL, "org.campagnelab.ANTLR.structure.REGEXP")));
+      SPropertyOperations.set(regexp, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113ea53bL, 0x631eebe3113ea679L, "regexp"), context.LEXER_CHAR_SET().getText());
+      return regexp;
     }
+
     return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e6560L, "org.campagnelab.ANTLR.structure.LexerToken")));
   }
   @Override

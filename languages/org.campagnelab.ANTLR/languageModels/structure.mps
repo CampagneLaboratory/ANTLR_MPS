@@ -314,7 +314,7 @@
   </node>
   <node concept="1TIwiD" id="4TgqxIxvddj">
     <property role="TrG5h" value="LexerAltList" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6cuUYchcHx3" resolve="ParserRuleBlock" />
     <node concept="1TJgyj" id="4TgqxIxvdtp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="alternatives" />
@@ -339,6 +339,19 @@
     <node concept="1TJgyi" id="7_W4cr_5VNq" role="1TKVEl">
       <property role="TrG5h" value="plus" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1lrVu1zPLOi">
+    <property role="TrG5h" value="LexerBlock" />
+    <ref role="1TJDcQ" node="4TgqxIxnOE$" resolve="LexerElement" />
+    <node concept="1TJgyj" id="1lrVu1zPLOj" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="4TgqxIxvddj" resolve="LexerAltList" />
+    </node>
+    <node concept="PrWs8" id="1lrVu1zPLTN" role="PzmwI">
+      <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
     </node>
   </node>
 </model>

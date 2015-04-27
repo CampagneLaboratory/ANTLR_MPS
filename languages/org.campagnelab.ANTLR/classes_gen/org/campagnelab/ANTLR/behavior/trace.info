@@ -14,7 +14,7 @@
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.Alternatives_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,58,0" name="org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,60,0" name="org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="Dot_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.Dot_BehaviorDescriptor" />
@@ -26,10 +26,13 @@
       <unit at="7,0,15,0" name="org.campagnelab.ANTLR.behavior.HasOptionalParams_BehaviorDescriptor" />
     </file>
     <file name="LexerAltList_BehaviorDescriptor.java">
-      <unit at="8,0,19,0" name="org.campagnelab.ANTLR.behavior.LexerAltList_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.LexerAltList_BehaviorDescriptor" />
     </file>
     <file name="LexerAlt_BehaviorDescriptor.java">
       <unit at="8,0,19,0" name="org.campagnelab.ANTLR.behavior.LexerAlt_BehaviorDescriptor" />
+    </file>
+    <file name="LexerBlock_BehaviorDescriptor.java">
+      <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.LexerBlock_BehaviorDescriptor" />
     </file>
     <file name="LexerElement_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.ANTLR.behavior.LexerElement_BehaviorDescriptor" />
@@ -78,6 +81,29 @@
     </file>
     <file name="ToTextOutput_BehaviorDescriptor.java">
       <unit at="7,0,10,0" name="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/1539085245680655989">
+    <file name="LexerBlock_Behavior.java">
+      <node id="1539085245680739454" at="17,38,18,87" concept="4" />
+      <node id="1539085245680655989" at="13,0,15,0" concept="5" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1539085245680739109" at="17,0,20,0" concept="3" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1539085245680716446" at="15,81,20,19" concept="4" />
+      <node id="1539085245680655989" at="15,0,22,0" concept="5" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="1539085245680655991" at="13,43,13,43" />
+      <scope id="1539085245680739110" at="17,38,18,87" />
+      <scope id="1539085245680655989" at="13,0,15,0">
+        <var name="thisNode" id="1539085245680655989" />
+      </scope>
+      <scope id="1539085245680739109" at="17,0,20,0">
+        <var name="it" id="1539085245680739109" />
+      </scope>
+      <scope id="1539085245680716445" at="15,81,20,19" />
+      <scope id="1539085245680655989" at="15,0,22,0">
+        <var name="thisNode" id="1539085245680655989" />
+      </scope>
+      <unit id="1539085245680739109" at="16,243,20,5" name="org.campagnelab.ANTLR.behavior.LexerBlock_Behavior$1" />
+      <unit id="1539085245680655989" at="12,0,23,0" name="org.campagnelab.ANTLR.behavior.LexerBlock_Behavior" />
     </file>
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/1830582854713394829">

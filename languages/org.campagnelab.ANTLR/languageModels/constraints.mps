@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -159,7 +159,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="1tv9AyC$cL_">
-    <ref role="1M2myG" to="ubjp:1tv9AyCxMoD" resolve="LexerAlternative" />
+    <ref role="1M2myG" to="ubjp:1tv9AyCxMoD" resolve="LexerAlt" />
     <node concept="Um2eU" id="1tv9AyC$cLA" role="1kkKnR">
       <node concept="3clFbS" id="1tv9AyC$cLB" role="2VODD2">
         <node concept="3clFbH" id="1tv9AyC$okJ" role="3cqZAp" />
@@ -184,6 +184,12 @@
               </node>
               <node concept="35c_gC" id="4TgqxIxub36" role="2BsfMF">
                 <ref role="35c_gD" to="ubjp:1tv9AyCw3fM" resolve="Dot" />
+              </node>
+              <node concept="35c_gC" id="1lrVu1zS1Yt" role="2BsfMF">
+                <ref role="35c_gD" to="ubjp:1tv9AyCxMoD" resolve="LexerAlt" />
+              </node>
+              <node concept="35c_gC" id="1lrVu1zS4TK" role="2BsfMF">
+                <ref role="35c_gD" to="ubjp:4TgqxIxvddj" resolve="LexerAltList" />
               </node>
             </node>
           </node>

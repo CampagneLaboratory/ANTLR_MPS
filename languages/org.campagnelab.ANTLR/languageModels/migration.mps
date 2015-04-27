@@ -9,12 +9,12 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" />
     <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
-    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" implicit="true" />
-    <import index="slm6" ref="90746344-04fd-4286-97d5-b46ae6a81709/r:52a3d974-bd4f-4651-ba6e-a2de5e336d95(jetbrains.mps.lang.migration/jetbrains.mps.lang.migration.methods)" implicit="true" />
+    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" implicit="true" />
+    <import index="ec5l" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.model(MPS.OpenAPI/org.jetbrains.mps.openapi.model@java_stub)" implicit="true" />
+    <import index="slm6" ref="90746344-04fd-4286-97d5-b46ae6a81709/r:52a3d974-bd4f-4651-ba6e-a2de5e336d95(jetbrains.mps.lang.migration/jetbrains.mps.lang.migration.methods)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -29,6 +29,10 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -63,6 +67,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -209,8 +216,36 @@
               </node>
             </node>
             <node concept="2OqwBi" id="7_W4cr_5V1i" role="33vP2m">
-              <node concept="37vLTw" id="7_W4cr_5V1j" role="2Oq$k0">
-                <ref role="3cqZAo" node="7_W4cr_5V15" resolve="models" />
+              <node concept="2OqwBi" id="28AUPoS5aPU" role="2Oq$k0">
+                <node concept="37vLTw" id="7_W4cr_5V1j" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7_W4cr_5V15" resolve="models" />
+                </node>
+                <node concept="3zZkjj" id="28AUPoS5aWA" role="2OqNvi">
+                  <node concept="1bVj0M" id="28AUPoS5aWB" role="23t8la">
+                    <node concept="3clFbS" id="28AUPoS5aWC" role="1bW5cS">
+                      <node concept="3clFbF" id="28AUPoS5aWD" role="3cqZAp">
+                        <node concept="3fqX7Q" id="28AUPoS5aWE" role="3clFbG">
+                          <node concept="2OqwBi" id="28AUPoS5aWF" role="3fr31v">
+                            <node concept="Rm8GO" id="28AUPoS5aWG" role="2Oq$k0">
+                              <ref role="1Px2BO" to="cu2c:~LanguageAspect" resolve="LanguageAspect" />
+                              <ref role="Rm8GQ" to="cu2c:~LanguageAspect.MIGRATION" resolve="MIGRATION" />
+                            </node>
+                            <node concept="liA8E" id="28AUPoS5aWH" role="2OqNvi">
+                              <ref role="37wK5l" to="cu2c:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
+                              <node concept="37vLTw" id="28AUPoS5aWI" role="37wK5m">
+                                <ref role="3cqZAo" node="28AUPoS5aWJ" resolve="model" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="28AUPoS5aWJ" role="1bW2Oz">
+                      <property role="TrG5h" value="model" />
+                      <node concept="2jxLKc" id="28AUPoS5aWK" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="3goQfb" id="7_W4cr_5V1k" role="2OqNvi">
                 <node concept="1bVj0M" id="7_W4cr_5V1l" role="23t8la">
@@ -277,8 +312,8 @@
                       <node concept="liA8E" id="7_W4cr_5V0Y" role="2OqNvi">
                         <ref role="37wK5l" to="ec5l:~SNode.setProperty(org.jetbrains.mps.openapi.language.SProperty,java.lang.String):void" resolve="setProperty" />
                         <node concept="355D3s" id="7_W4cr_5V0Z" role="37wK5m">
-                          <ref role="355D3t" to="ubjp:7_W4cr_5UKS" resolve="HasOptionalParams" />
                           <ref role="355D3u" to="ubjp:6cuUYchf495" resolve="isOptional_old" />
+                          <ref role="355D3t" to="ubjp:6cuUYchcHx3" resolve="ParserRuleBlock" />
                         </node>
                         <node concept="10Nm6u" id="7_W4cr_5V10" role="37wK5m" />
                       </node>
@@ -338,8 +373,8 @@
                           </node>
                         </node>
                         <node concept="355D3s" id="7_W4cr_5V1U" role="3uHU7w">
-                          <ref role="355D3t" to="ubjp:7_W4cr_5UKS" resolve="HasOptionalParams" />
                           <ref role="355D3u" to="ubjp:6cuUYchf495" resolve="isOptional_old" />
+                          <ref role="355D3t" to="ubjp:6cuUYchcHx3" resolve="ParserRuleBlock" />
                         </node>
                       </node>
                     </node>
@@ -456,8 +491,36 @@
               </node>
             </node>
             <node concept="2OqwBi" id="7_W4cr_5VJT" role="33vP2m">
-              <node concept="37vLTw" id="7_W4cr_5VJU" role="2Oq$k0">
-                <ref role="3cqZAo" node="7_W4cr_5VJG" resolve="models" />
+              <node concept="2OqwBi" id="28AUPoS58Ad" role="2Oq$k0">
+                <node concept="37vLTw" id="7_W4cr_5VJU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7_W4cr_5VJG" resolve="models" />
+                </node>
+                <node concept="3zZkjj" id="28AUPoS59RB" role="2OqNvi">
+                  <node concept="1bVj0M" id="28AUPoS59RD" role="23t8la">
+                    <node concept="3clFbS" id="28AUPoS59RE" role="1bW5cS">
+                      <node concept="3clFbF" id="28AUPoS5a8N" role="3cqZAp">
+                        <node concept="3fqX7Q" id="28AUPoS54Lq" role="3clFbG">
+                          <node concept="2OqwBi" id="28AUPoS54Ls" role="3fr31v">
+                            <node concept="Rm8GO" id="28AUPoS54Lt" role="2Oq$k0">
+                              <ref role="1Px2BO" to="cu2c:~LanguageAspect" resolve="LanguageAspect" />
+                              <ref role="Rm8GQ" to="cu2c:~LanguageAspect.MIGRATION" resolve="MIGRATION" />
+                            </node>
+                            <node concept="liA8E" id="28AUPoS54Lu" role="2OqNvi">
+                              <ref role="37wK5l" to="cu2c:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
+                              <node concept="37vLTw" id="28AUPoS558C" role="37wK5m">
+                                <ref role="3cqZAo" node="28AUPoS59RF" resolve="model" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="28AUPoS59RF" role="1bW2Oz">
+                      <property role="TrG5h" value="model" />
+                      <node concept="2jxLKc" id="28AUPoS59RG" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="3goQfb" id="7_W4cr_5VJV" role="2OqNvi">
                 <node concept="1bVj0M" id="7_W4cr_5VJW" role="23t8la">
@@ -524,7 +587,7 @@
                       <node concept="liA8E" id="7_W4cr_5VJ_" role="2OqNvi">
                         <ref role="37wK5l" to="ec5l:~SNode.setProperty(org.jetbrains.mps.openapi.language.SProperty,java.lang.String):void" resolve="setProperty" />
                         <node concept="355D3s" id="7_W4cr_5VJA" role="37wK5m">
-                          <ref role="355D3t" to="ubjp:7_W4cr_5UKS" resolve="HasOptionalParams" />
+                          <ref role="355D3t" to="ubjp:6cuUYchcHx3" resolve="ParserRuleBlock" />
                           <ref role="355D3u" to="ubjp:6cuUYchf497" resolve="acceptMultiple_old" />
                         </node>
                         <node concept="10Nm6u" id="7_W4cr_5VJB" role="37wK5m" />
@@ -585,7 +648,7 @@
                           </node>
                         </node>
                         <node concept="355D3s" id="7_W4cr_5VKx" role="3uHU7w">
-                          <ref role="355D3t" to="ubjp:7_W4cr_5UKS" resolve="HasOptionalParams" />
+                          <ref role="355D3t" to="ubjp:6cuUYchcHx3" resolve="ParserRuleBlock" />
                           <ref role="355D3u" to="ubjp:6cuUYchf497" resolve="acceptMultiple_old" />
                         </node>
                       </node>
@@ -703,8 +766,36 @@
               </node>
             </node>
             <node concept="2OqwBi" id="7_W4cr_5VO0" role="33vP2m">
-              <node concept="37vLTw" id="7_W4cr_5VO1" role="2Oq$k0">
-                <ref role="3cqZAo" node="7_W4cr_5VNN" resolve="models" />
+              <node concept="2OqwBi" id="28AUPoS5dz9" role="2Oq$k0">
+                <node concept="37vLTw" id="7_W4cr_5VO1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7_W4cr_5VNN" resolve="models" />
+                </node>
+                <node concept="3zZkjj" id="28AUPoS5dDF" role="2OqNvi">
+                  <node concept="1bVj0M" id="28AUPoS5dDG" role="23t8la">
+                    <node concept="3clFbS" id="28AUPoS5dDH" role="1bW5cS">
+                      <node concept="3clFbF" id="28AUPoS5dDI" role="3cqZAp">
+                        <node concept="3fqX7Q" id="28AUPoS5dDJ" role="3clFbG">
+                          <node concept="2OqwBi" id="28AUPoS5dDK" role="3fr31v">
+                            <node concept="Rm8GO" id="28AUPoS5dDL" role="2Oq$k0">
+                              <ref role="Rm8GQ" to="cu2c:~LanguageAspect.MIGRATION" resolve="MIGRATION" />
+                              <ref role="1Px2BO" to="cu2c:~LanguageAspect" resolve="LanguageAspect" />
+                            </node>
+                            <node concept="liA8E" id="28AUPoS5dDM" role="2OqNvi">
+                              <ref role="37wK5l" to="cu2c:~LanguageAspect.is(org.jetbrains.mps.openapi.model.SModel):boolean" resolve="is" />
+                              <node concept="37vLTw" id="28AUPoS5dDN" role="37wK5m">
+                                <ref role="3cqZAo" node="28AUPoS5dDO" resolve="model" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="Rh6nW" id="28AUPoS5dDO" role="1bW2Oz">
+                      <property role="TrG5h" value="model" />
+                      <node concept="2jxLKc" id="28AUPoS5dDP" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="3goQfb" id="7_W4cr_5VO2" role="2OqNvi">
                 <node concept="1bVj0M" id="7_W4cr_5VO3" role="23t8la">
@@ -771,8 +862,8 @@
                       <node concept="liA8E" id="7_W4cr_5VNG" role="2OqNvi">
                         <ref role="37wK5l" to="ec5l:~SNode.setProperty(org.jetbrains.mps.openapi.language.SProperty,java.lang.String):void" resolve="setProperty" />
                         <node concept="355D3s" id="7_W4cr_5VNH" role="37wK5m">
-                          <ref role="355D3t" to="ubjp:7_W4cr_5UKS" resolve="HasOptionalParams" />
                           <ref role="355D3u" to="ubjp:7a2u8aS_VBl" resolve="plus_old" />
+                          <ref role="355D3t" to="ubjp:6cuUYchcHx3" resolve="ParserRuleBlock" />
                         </node>
                         <node concept="10Nm6u" id="7_W4cr_5VNI" role="37wK5m" />
                       </node>
@@ -832,8 +923,8 @@
                           </node>
                         </node>
                         <node concept="355D3s" id="7_W4cr_5VOC" role="3uHU7w">
-                          <ref role="355D3t" to="ubjp:7_W4cr_5UKS" resolve="HasOptionalParams" />
                           <ref role="355D3u" to="ubjp:7a2u8aS_VBl" resolve="plus_old" />
+                          <ref role="355D3t" to="ubjp:6cuUYchcHx3" resolve="ParserRuleBlock" />
                         </node>
                       </node>
                     </node>

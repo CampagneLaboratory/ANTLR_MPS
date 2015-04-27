@@ -297,9 +297,6 @@
       <node concept="m$_yC" id="7twz7e84BNM" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
-      <node concept="m$_yC" id="2LflvEog3ne" role="m$_yJ">
-        <ref role="m$_y1" node="7twz7e84BNG" resolve="org.campagnelab.antlr.persistence" />
-      </node>
       <node concept="3_J27D" id="7twz7e84BNN" role="m_cZH">
         <node concept="3Mxwew" id="7twz7e84BNO" role="3MwsjC">
           <property role="3MwjfP" value="AntlrPersistence" />
@@ -470,9 +467,15 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1lrVu1zWeBr" role="3bR37C">
+          <node concept="3bR9La" id="1lrVu1zWeBs" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:3dkXFAFlpj8" resolve="jetbrains.mps.persistence" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5U7ZKlHMwce" role="2G$12L">
-        <property role="BnDLt" value="false" />
+        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="org.campagnelab.ANTLR" />
         <property role="3LESm3" value="d6782141-eafa-4cf7-a85d-1229abdb1152" />
         <property role="2GAjPV" value="false" />
@@ -525,6 +528,12 @@
           <node concept="3bR9La" id="4UG6ID2XK4H" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="5U7ZKlHMwce" resolve="org.campagnelab.ANTLR" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1lrVu1zWeB_" role="3bR37C">
+          <node concept="3bR9La" id="1lrVu1zWeBA" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
       </node>
