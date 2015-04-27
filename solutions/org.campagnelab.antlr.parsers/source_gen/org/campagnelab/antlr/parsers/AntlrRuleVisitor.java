@@ -162,9 +162,21 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, "org.campagnelab.ANTLR.structure.Alternatives")));
   }
   @Override
-  public Object visitBlock(@NotNull ANTLRv4Parser.BlockContext context) {
-    SNode alternatives = (SNode) visitAltList(context.altList());
+  public Object visitAltList(@NotNull ANTLRv4Parser.AltListContext context) {
+    SNode alternatives = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, "org.campagnelab.ANTLR.structure.Alternatives")));
+    SLinkOperations.getChildren(alternatives, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, 0x631eebe31132d969L, "oneOf")).clear();
+    for (ANTLRv4Parser.AlternativeContext alt : ListSequence.fromList(context.alternative())) {
+      ListSequence.fromList(SLinkOperations.getChildren(alternatives, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, 0x631eebe31132d969L, "oneOf"))).addElement((SNode) visitAlternative(alt));
+    }
+
     return alternatives;
+  }
+  @Override
+  public Object visitBlock(@NotNull ANTLRv4Parser.BlockContext context) {
+    SNode seq = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d846L, "org.campagnelab.ANTLR.structure.Sequence")));
+    SNode alternatives = (SNode) visitAltList(context.altList());
+    ListSequence.fromList(SLinkOperations.getChildren(seq, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d846L, 0x631eebe31132d96bL, "of"))).addElement(alternatives);
+    return seq;
   }
   @Override
   public Object visitLexerRule(@NotNull ANTLRv4Parser.LexerRuleContext context) {

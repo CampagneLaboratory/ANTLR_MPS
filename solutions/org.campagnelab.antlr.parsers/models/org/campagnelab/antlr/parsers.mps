@@ -5742,7 +5742,7 @@
               <node concept="3cpWsn" id="QPXbEiY0lV" role="3cpWs9">
                 <property role="TrG5h" value="alternatives" />
                 <node concept="3Tqbb2" id="QPXbEiY0_Y" role="1tU5fm">
-                  <ref role="ehGHo" to="ubjp:6cuUYchcHx2" resolve="Alternatives" />
+                  <ref role="ehGHo" to="ubjp:6cuUYchcHx6" resolve="Sequence" />
                 </node>
               </node>
             </node>
@@ -5764,7 +5764,7 @@
                     </node>
                   </node>
                   <node concept="3Tqbb2" id="QPXbEiYgPq" role="10QFUM">
-                    <ref role="ehGHo" to="ubjp:6cuUYchcHx2" resolve="Alternatives" />
+                    <ref role="ehGHo" to="ubjp:6cuUYchcHx6" resolve="Sequence" />
                   </node>
                 </node>
               </node>
@@ -5857,6 +5857,106 @@
         <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
       </node>
     </node>
+    <node concept="3clFb_" id="QPXbEjivlz" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="visitAltList" />
+      <property role="DiZV1" value="false" />
+      <property role="IEkAT" value="false" />
+      <node concept="3Tm1VV" id="QPXbEjivl$" role="1B3o_S" />
+      <node concept="3uibUv" id="QPXbEjivlE" role="3clF45">
+        <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+      </node>
+      <node concept="37vLTG" id="QPXbEjivlB" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="QPXbEjivlC" role="1tU5fm">
+          <ref role="3uigEE" to="vii6:~ANTLRv4Parser$AltListContext" resolve="ANTLRv4Parser.AltListContext" />
+        </node>
+        <node concept="2AHcQZ" id="QPXbEjivlD" role="2AJF6D">
+          <ref role="2AI5Lk" to="ftbm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="QPXbEjivlF" role="3clF47">
+        <node concept="3cpWs8" id="QPXbEjiyIy" role="3cqZAp">
+          <node concept="3cpWsn" id="QPXbEjiyI_" role="3cpWs9">
+            <property role="TrG5h" value="alternatives" />
+            <node concept="3Tqbb2" id="QPXbEjiyIx" role="1tU5fm">
+              <ref role="ehGHo" to="ubjp:6cuUYchcHx2" resolve="Alternatives" />
+            </node>
+            <node concept="2ShNRf" id="QPXbEji_pl" role="33vP2m">
+              <node concept="3zrR0B" id="QPXbEji_o1" role="2ShVmc">
+                <node concept="3Tqbb2" id="QPXbEji_o2" role="3zrR0E">
+                  <ref role="ehGHo" to="ubjp:6cuUYchcHx2" resolve="Alternatives" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="QPXbEjjJDC" role="3cqZAp">
+          <node concept="2OqwBi" id="QPXbEjjNC9" role="3clFbG">
+            <node concept="2OqwBi" id="QPXbEjjMoF" role="2Oq$k0">
+              <node concept="37vLTw" id="QPXbEjjJDA" role="2Oq$k0">
+                <ref role="3cqZAo" node="QPXbEjiyI_" resolve="alternatives" />
+              </node>
+              <node concept="3Tsc0h" id="QPXbEjjMVK" role="2OqNvi">
+                <ref role="3TtcxE" to="ubjp:6cuUYchcH_D" />
+              </node>
+            </node>
+            <node concept="liA8E" id="QPXbEjjS8f" role="2OqNvi">
+              <ref role="37wK5l" to="k7g3:~List.clear():void" resolve="clear" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="QPXbEji_Wd" role="3cqZAp">
+          <node concept="2GrKxI" id="QPXbEji_Wf" role="2Gsz3X">
+            <property role="TrG5h" value="alt" />
+          </node>
+          <node concept="3clFbS" id="QPXbEji_Wh" role="2LFqv$">
+            <node concept="3clFbF" id="QPXbEjiB$g" role="3cqZAp">
+              <node concept="2OqwBi" id="QPXbEjiDaB" role="3clFbG">
+                <node concept="2OqwBi" id="QPXbEjiBFs" role="2Oq$k0">
+                  <node concept="37vLTw" id="QPXbEjiB$f" role="2Oq$k0">
+                    <ref role="3cqZAo" node="QPXbEjiyI_" resolve="alternatives" />
+                  </node>
+                  <node concept="3Tsc0h" id="QPXbEjiCuI" role="2OqNvi">
+                    <ref role="3TtcxE" to="ubjp:6cuUYchcH_D" />
+                  </node>
+                </node>
+                <node concept="TSZUe" id="QPXbEjiH$k" role="2OqNvi">
+                  <node concept="10QFUN" id="QPXbEjiIB_" role="25WWJ7">
+                    <node concept="3Tqbb2" id="QPXbEjiIZ2" role="10QFUM">
+                      <ref role="ehGHo" to="ubjp:6cuUYcheOmf" resolve="Alternative" />
+                    </node>
+                    <node concept="1rXfSq" id="QPXbEjiHM1" role="10QFUP">
+                      <ref role="37wK5l" node="7a2u8aSKDNQ" resolve="visitAlternative" />
+                      <node concept="2GrUjf" id="QPXbEjiIa$" role="37wK5m">
+                        <ref role="2Gs0qQ" node="QPXbEji_Wf" resolve="alt" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="QPXbEjiAgE" role="2GsD0m">
+            <node concept="37vLTw" id="QPXbEjiA6l" role="2Oq$k0">
+              <ref role="3cqZAo" node="QPXbEjivlB" resolve="context" />
+            </node>
+            <node concept="liA8E" id="QPXbEjiBqc" role="2OqNvi">
+              <ref role="37wK5l" to="vii6:~ANTLRv4Parser$AltListContext.alternative():java.util.List" resolve="alternative" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="QPXbEji_qO" role="3cqZAp" />
+        <node concept="3cpWs6" id="QPXbEjiKNQ" role="3cqZAp">
+          <node concept="37vLTw" id="QPXbEjiLbN" role="3cqZAk">
+            <ref role="3cqZAo" node="QPXbEjiyI_" resolve="alternatives" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="QPXbEjivlG" role="2AJF6D">
+        <ref role="2AI5Lk" to="e2lb:~Override" resolve="Override" />
+      </node>
+    </node>
     <node concept="3clFb_" id="QPXbEiVwIZ" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="visitBlock" />
@@ -5876,6 +5976,21 @@
         </node>
       </node>
       <node concept="3clFbS" id="QPXbEiVwJ7" role="3clF47">
+        <node concept="3cpWs8" id="QPXbEjgNbS" role="3cqZAp">
+          <node concept="3cpWsn" id="QPXbEjgNbY" role="3cpWs9">
+            <property role="TrG5h" value="seq" />
+            <node concept="3Tqbb2" id="QPXbEjgNg7" role="1tU5fm">
+              <ref role="ehGHo" to="ubjp:6cuUYchcHx6" resolve="Sequence" />
+            </node>
+            <node concept="2ShNRf" id="QPXbEjgNuZ" role="33vP2m">
+              <node concept="3zrR0B" id="QPXbEjgNtE" role="2ShVmc">
+                <node concept="3Tqbb2" id="QPXbEjgNtF" role="3zrR0E">
+                  <ref role="ehGHo" to="ubjp:6cuUYchcHx6" resolve="Sequence" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="QPXbEiZhaa" role="3cqZAp">
           <node concept="3cpWsn" id="QPXbEiZhab" role="3cpWs9">
             <property role="TrG5h" value="alternatives" />
@@ -5884,7 +5999,7 @@
             </node>
             <node concept="10QFUN" id="QPXbEiZhWt" role="33vP2m">
               <node concept="1rXfSq" id="QPXbEiV$x0" role="10QFUP">
-                <ref role="37wK5l" to="vii6:~ANTLRv4ParserBaseVisitor.visitAltList(org.antlr.ANTLRv4Parser$AltListContext):java.lang.Object" resolve="visitAltList" />
+                <ref role="37wK5l" node="QPXbEjivlz" resolve="visitAltList" />
                 <node concept="2OqwBi" id="QPXbEiVzZL" role="37wK5m">
                   <node concept="37vLTw" id="QPXbEiVzRU" role="2Oq$k0">
                     <ref role="3cqZAo" node="QPXbEiVwJ3" resolve="context" />
@@ -5900,9 +6015,26 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="QPXbEiZhKF" role="3cqZAp">
-          <node concept="37vLTw" id="QPXbEiZhKD" role="3clFbG">
-            <ref role="3cqZAo" node="QPXbEiZhab" resolve="alternatives" />
+        <node concept="3clFbF" id="QPXbEjgNBO" role="3cqZAp">
+          <node concept="2OqwBi" id="QPXbEjgOH3" role="3clFbG">
+            <node concept="2OqwBi" id="QPXbEjgNEU" role="2Oq$k0">
+              <node concept="37vLTw" id="QPXbEjgNBM" role="2Oq$k0">
+                <ref role="3cqZAo" node="QPXbEjgNbY" resolve="seq" />
+              </node>
+              <node concept="3Tsc0h" id="QPXbEjgNVL" role="2OqNvi">
+                <ref role="3TtcxE" to="ubjp:6cuUYchcH_F" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="QPXbEjgTAH" role="2OqNvi">
+              <node concept="37vLTw" id="QPXbEjgTR4" role="25WWJ7">
+                <ref role="3cqZAo" node="QPXbEiZhab" resolve="alternatives" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="QPXbEjgUvF" role="3cqZAp">
+          <node concept="37vLTw" id="QPXbEjgUvD" role="3clFbG">
+            <ref role="3cqZAo" node="QPXbEjgNbY" resolve="seq" />
           </node>
         </node>
       </node>

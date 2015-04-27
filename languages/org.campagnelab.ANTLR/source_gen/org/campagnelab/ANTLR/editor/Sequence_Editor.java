@@ -39,6 +39,7 @@ public class Sequence_Editor extends DefaultNodeEditor {
       editorCell.addEditorCell(this.createConstant_6lwes5_c0(editorContext, node));
     }
     editorCell.addEditorCell(this.createComponent_6lwes5_d0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_6lwes5_e0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_6lwes5_a0(EditorContext editorContext, SNode node) {
@@ -48,7 +49,7 @@ public class Sequence_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_6lwes5_a0a(SNode node, EditorContext editorContext) {
-    return (SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648b1L, "org.campagnelab.ANTLR.structure.LexerRule"), false, false) != null);
+    return (SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative"), false, false) != null);
   }
   private EditorCell createRefNodeList_6lwes5_b0(EditorContext editorContext, SNode node) {
     AbstractCellListHandler handler = new Sequence_Editor.ofListHandler_6lwes5_b0(node, "of", editorContext);
@@ -96,10 +97,16 @@ public class Sequence_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_6lwes5_a2a(SNode node, EditorContext editorContext) {
-    return (SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648b1L, "org.campagnelab.ANTLR.structure.LexerRule"), false, false) != null);
+    return (SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative"), false, false) != null);
   }
   private EditorCell createComponent_6lwes5_d0(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.ANTLR.editor.OptionalParamEditor");
+    return editorCell;
+  }
+  private EditorCell createConstant_6lwes5_e0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " ");
+    editorCell.setCellId("Constant_6lwes5_e0");
+    editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createComponent_6lwes5_a(EditorContext editorContext, SNode node) {
