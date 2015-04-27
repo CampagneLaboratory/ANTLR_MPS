@@ -18,13 +18,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ec7c4c8-fdb9-475d-a1c5-08cf184915b2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/AntlrRuleVisitor.java" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/AntlrRuleVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/model/generated" afterPath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/model/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/generated" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Playground/models/model.mps" afterPath="$PROJECT_DIR$/solutions/Playground/models/model.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/models/org/campagnelab/antlr/parsers.mps" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/models/org/campagnelab/antlr/parsers.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/classes_gen/org/campagnelab/antlr/parsers/trace.info" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/classes_gen/org/campagnelab/antlr/parsers/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/trace.info" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="ANTLR.iws" />
@@ -63,11 +56,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SimpleGrammar" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SimpleGrammar" pinned="false" current-in-tab="false">
         <entry file="mps://node://Playground/model/SimpleGrammar">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="169">
+              <memento viewPositionX="0" viewPositionY="149">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
@@ -82,7 +75,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/8753890222135446755" viewPositionX="0" viewPositionY="-4">
+              <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222137280153" viewPositionX="0" viewPositionY="-4">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -110,7 +103,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/8753890222135446755" viewPositionX="0" viewPositionY="-4">
+              <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222137280153" viewPositionX="0" viewPositionY="-4">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -139,7 +132,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/8753890222135446755" viewPositionX="0" viewPositionY="-4">
+              <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222137280153" viewPositionX="0" viewPositionY="-4">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -149,7 +142,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AntlrRuleVisitor" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AntlrRuleVisitor" pinned="false" current-in-tab="true">
         <entry file="mps://node://org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers/AntlrRuleVisitor">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -157,18 +150,18 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="8" />
-                    <property name="caretX" value="324" />
+                    <property name="caretXRelative" value="476" />
+                    <property name="caretX" value="560" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_y9czm0_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222136981375" />
+                    <cellInfo cellId="property_text" cellNumber="0" isInList="false">
+                      <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222137280153" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/8753890222135446755" viewPositionX="0" viewPositionY="-4">
+              <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222137280153" viewPositionX="0" viewPositionY="-4">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -196,7 +189,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/8753890222135446755" viewPositionX="0" viewPositionY="-4">
+              <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222137280153" viewPositionX="0" viewPositionY="-4">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -616,7 +609,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
@@ -629,7 +622,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27164418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27164418" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.533757" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1114,7 +1107,8 @@
     <MESSAGE value="Set name of model on new grammar." />
     <MESSAGE value="Cleanup the Lexer AST. Make it more similar to  the parse tree." />
     <MESSAGE value="Refactor optional parameters to put them also on lexer atoms." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor optional parameters to put them also on lexer atoms." />
+    <MESSAGE value="Fix NPE in LexerElement." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix NPE in LexerElement." />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://jetbrains.mps.build/jetbrains.mps.build.util/RelativePathHelper">
@@ -2256,7 +2250,7 @@
     <entry file="mps://node://Playground/model/SimpleGrammar">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="169">
+          <memento viewPositionX="0" viewPositionY="149">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
@@ -2271,7 +2265,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/8753890222135446755" viewPositionX="0" viewPositionY="-4">
+          <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222137280153" viewPositionX="0" viewPositionY="-4">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2286,18 +2280,18 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="8" />
-                <property name="caretX" value="324" />
+                <property name="caretXRelative" value="476" />
+                <property name="caretX" value="560" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_y9czm0_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222136981375" />
+                <cellInfo cellId="property_text" cellNumber="0" isInList="false">
+                  <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222137280153" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/8753890222135446755" viewPositionX="0" viewPositionY="-4">
+          <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222137280153" viewPositionX="0" viewPositionY="-4">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2323,7 +2317,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/8753890222135446755" viewPositionX="0" viewPositionY="-4">
+          <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222137280153" viewPositionX="0" viewPositionY="-4">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2350,7 +2344,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/8753890222135446755" viewPositionX="0" viewPositionY="-4">
+          <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222137280153" viewPositionX="0" viewPositionY="-4">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2377,7 +2371,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/8753890222135446755" viewPositionX="0" viewPositionY="-4">
+          <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/8753890222137280153" viewPositionX="0" viewPositionY="-4">
             <selectionStack />
             <errorLabels />
             <folded />

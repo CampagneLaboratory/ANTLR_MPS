@@ -5883,6 +5883,11 @@
               </node>
             </node>
             <node concept="3clFbS" id="7_W4cr_e_wo" role="3eOfB_">
+              <node concept="3SKdUt" id="7_W4cr_gtOy" role="3cqZAp">
+                <node concept="3SKdUq" id="7_W4cr_gwqp" role="3SKWNk">
+                  <property role="3SKdUp" value="TODO handle blocks LexerBlock, possibly convert to Sequence" />
+                </node>
+              </node>
               <node concept="u8gfJ" id="7_W4cr_g8nR" role="3cqZAp">
                 <node concept="3cpWs8" id="7_W4cr_fntZ" role="u8lrQ">
                   <node concept="3cpWsn" id="7_W4cr_fnu5" role="3cpWs9">
