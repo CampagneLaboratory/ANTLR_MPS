@@ -22,6 +22,7 @@ public class LexerRuleRef_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_q5sa8_a");
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createRefCell_q5sa8_a0(editorContext, node));
+    editorCell.addEditorCell(this.createComponent_q5sa8_b0(editorContext, node));
     return editorCell;
   }
   private EditorCell createRefCell_q5sa8_a0(EditorContext editorContext, SNode node) {
@@ -52,16 +53,9 @@ public class LexerRuleRef_Editor extends DefaultNodeEditor {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createCollection_q5sa8_a0a0(editorContext, node);
+      return this.createProperty_q5sa8_a0a0(editorContext, node);
     }
-    private EditorCell createCollection_q5sa8_a0a0(EditorContext editorContext, SNode node) {
-      EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-      editorCell.setCellId("Collection_q5sa8_a0a0");
-      editorCell.addEditorCell(this.createProperty_q5sa8_a0a0a(editorContext, node));
-      editorCell.addEditorCell(this.createComponent_q5sa8_b0a0a(editorContext, node));
-      return editorCell;
-    }
-    private EditorCell createProperty_q5sa8_a0a0a(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_q5sa8_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -78,9 +72,9 @@ public class LexerRuleRef_Editor extends DefaultNodeEditor {
       } else
       return editorCell;
     }
-    private EditorCell createComponent_q5sa8_b0a0a(EditorContext editorContext, SNode node) {
-      EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.ANTLR.editor.OptionalParamEditor");
-      return editorCell;
-    }
+  }
+  private EditorCell createComponent_q5sa8_b0(EditorContext editorContext, SNode node) {
+    EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.ANTLR.editor.OptionalParamEditor");
+    return editorCell;
   }
 }

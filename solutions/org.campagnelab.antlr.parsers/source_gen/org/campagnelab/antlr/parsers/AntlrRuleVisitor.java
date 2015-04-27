@@ -126,7 +126,7 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     }
     Object result = super.visitElement(context);
     if (context.atom() != null) {
-      SNode refByName = createRef(context.atom().getText());
+      SNode refByName = createARef(context.atom().getText());
       if (refByName != null) {
         addOptionalParams(refByName, context.ebnfSuffix());
       }
@@ -251,6 +251,16 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
         }
       }
     }
+  }
+  public SNode createARef(String name) {
+    if (name.toLowerCase().equals(name)) {
+      return createRef(name);
+    } else {
+      if (name.toUpperCase().equals(name)) {
+        return createLexerRef(name);
+      }
+    }
+    return createLexerRef("mixedCase?" + createLexerRef(name));
   }
   public SNode createRef(String name) {
     SNode refByName = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x1ebae6380de70d78L, "org.campagnelab.ANTLR.structure.RuleRefByName")));

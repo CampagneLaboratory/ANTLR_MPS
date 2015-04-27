@@ -16,6 +16,8 @@ import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import org.campagnelab.ANTLR.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
+import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
+import org.campagnelab.ANTLR.typesystem.TypesystemDescriptor;
 
 public class Language extends LanguageRuntime {
   public static String MODULE_REF = "d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)";
@@ -58,6 +60,9 @@ public class Language extends LanguageRuntime {
     }
     if (descriptorClass == StructureAspectDescriptor.class) {
       return (T) new org.campagnelab.ANTLR.structure.StructureAspectDescriptor();
+    }
+    if (descriptorClass == IHelginsDescriptor.class) {
+      return (T) new TypesystemDescriptor();
     }
     return super.createAspectDescriptor(descriptorClass);
   }

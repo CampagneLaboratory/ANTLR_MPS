@@ -57,9 +57,11 @@
     <classNode dependClassName="org.campagnelab.ANTLR.editor.Alternatives_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.Dot_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.Grammar_Editor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.editor.HasOptionalParams_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.LexerAltList_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.LexerAlt_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.LexerBlock_Editor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.editor.LexerElement_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.LexerRuleBlock_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.LexerRuleRefByName_Editor" />
     <classNode dependClassName="org.campagnelab.ANTLR.editor.LexerRuleRef_Editor" />
@@ -97,6 +99,13 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.style.Style" />
     <classNode dependClassName="jetbrains.mps.smodel.action.NodeFactoryManager" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.editor.HasOptionalParams_Editor" file="HasOptionalParams_Editor.java">
+    <classNode dependClassName="jetbrains.mps.editor.runtime.cells.BigCellUtil" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>
@@ -151,6 +160,13 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.CellActionType" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="jetbrains.mps.smodel.action.NodeFactoryManager" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.editor.LexerElement_Editor" file="LexerElement_Editor.java">
+    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Collection" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
   </dependency>

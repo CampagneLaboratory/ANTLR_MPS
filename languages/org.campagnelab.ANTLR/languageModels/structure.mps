@@ -300,6 +300,9 @@
   <node concept="1TIwiD" id="4TgqxIxnOE$">
     <property role="TrG5h" value="LexerElement" />
     <ref role="1TJDcQ" node="6cuUYchcHx3" resolve="ParserRuleBlock" />
+    <node concept="PrWs8" id="4L89IP53b22" role="PzmwI">
+      <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4TgqxIxswrj">
     <property role="TrG5h" value="LexerRuleRefByName" />
@@ -339,6 +342,9 @@
     <node concept="1TJgyi" id="7_W4cr_5VNq" role="1TKVEl">
       <property role="TrG5h" value="plus" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="SdFjRJ9qwM" role="PzmwI">
+      <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
     </node>
   </node>
   <node concept="1TIwiD" id="1lrVu1zPLOi">
