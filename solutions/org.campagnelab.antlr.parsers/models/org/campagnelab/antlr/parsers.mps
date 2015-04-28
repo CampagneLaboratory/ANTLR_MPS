@@ -26,6 +26,7 @@
     <import index="ajxo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#org.apache.log4j(MPS.Core/org.apache.log4j@java_stub)" />
     <import index="4xk" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ide(MPS.IDEA/com.intellij.ide@java_stub)" />
     <import index="ftbm" ref="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr.v4.runtime.misc(org.campagnelab.ANTLR/org.antlr.v4.runtime.misc@java_stub)" />
+    <import index="msyo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.util(MPS.Core/jetbrains.mps.util@java_stub)" />
     <import index="ijbl" ref="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -4114,8 +4115,17 @@
                       <node concept="37vLTw" id="7a2u8aSF5JG" role="37wK5m">
                         <ref role="3cqZAo" node="6cuUYchjQYU" resolve="parser" />
                       </node>
-                      <node concept="Xl_RD" id="7a2u8aSF5Lf" role="37wK5m">
-                        <property role="Xl_RC" value="/Users/fac2003/IdeaProjects/git/grammars-v4/out-sdksjdksd22.ps" />
+                      <node concept="2OqwBi" id="GEXlCD6qrM" role="37wK5m">
+                        <node concept="2YIFZM" id="GEXlCD6pZu" role="2Oq$k0">
+                          <ref role="37wK5l" to="msyo:~MacrosFactory.getGlobal():jetbrains.mps.util.MacroHelper" resolve="getGlobal" />
+                          <ref role="1Pybhc" to="msyo:~MacrosFactory" resolve="MacrosFactory" />
+                        </node>
+                        <node concept="liA8E" id="GEXlCD6qIL" role="2OqNvi">
+                          <ref role="37wK5l" to="msyo:~MacroHelper.expandPath(java.lang.String):java.lang.String" resolve="expandPath" />
+                          <node concept="Xl_RD" id="GEXlCD6qR9" role="37wK5m">
+                            <property role="Xl_RC" value="${ANTLR_HOME}/tree.ps" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
