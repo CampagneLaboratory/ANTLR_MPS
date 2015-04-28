@@ -26,6 +26,7 @@
     <import index="ajxo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#org.apache.log4j(MPS.Core/org.apache.log4j@java_stub)" />
     <import index="4xk" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.ide(MPS.IDEA/com.intellij.ide@java_stub)" />
     <import index="ftbm" ref="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr.v4.runtime.misc(org.campagnelab.ANTLR/org.antlr.v4.runtime.misc@java_stub)" />
+    <import index="ijbl" ref="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -227,6 +228,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -5561,7 +5563,7 @@
                     </node>
                   </node>
                   <node concept="3Tqbb2" id="4L89IP5bYy8" role="10QFUM">
-                    <ref role="ehGHo" to="ubjp:6cuUYchcHx2" resolve="Alternatives" />
+                    <ref role="ehGHo" to="ubjp:6cuUYchcHx3" resolve="ParserRuleBlock" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="4L89IP5bWkh" role="37vLTJ">
@@ -5812,11 +5814,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3cpWs6" id="QPXbEiYdyK" role="3cqZAp">
-                  <node concept="37vLTw" id="QPXbEiYdPa" role="3cqZAk">
-                    <ref role="3cqZAo" node="QPXbEiY0lV" resolve="alternatives" />
-                  </node>
-                </node>
               </node>
               <node concept="3y3z36" id="QPXbEiY75u" role="3clFbw">
                 <node concept="10Nm6u" id="QPXbEiY7os" role="3uHU7w" />
@@ -5830,6 +5827,27 @@
                 </node>
               </node>
             </node>
+            <node concept="34ab3g" id="QPXbEjnJp2" role="3cqZAp">
+              <property role="35gtTG" value="info" />
+              <node concept="3cpWs3" id="QPXbEjnLZh" role="34bqiv">
+                <node concept="2OqwBi" id="QPXbEjnMm1" role="3uHU7w">
+                  <node concept="37vLTw" id="QPXbEjnMcw" role="2Oq$k0">
+                    <ref role="3cqZAo" node="QPXbEiY0lV" resolve="alternatives" />
+                  </node>
+                  <node concept="2qgKlT" id="QPXbEjnN8P" role="2OqNvi">
+                    <ref role="37wK5l" to="ijbl:4UG6ID2UsRv" resolve="toText" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="QPXbEjnJp4" role="3uHU7B">
+                  <property role="Xl_RC" value="visitEbnf returning: " />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="QPXbEiYdyK" role="3cqZAp">
+              <node concept="37vLTw" id="QPXbEiYdPa" role="3cqZAk">
+                <ref role="3cqZAo" node="QPXbEiY0lV" resolve="alternatives" />
+              </node>
+            </node>
           </node>
           <node concept="3y3z36" id="QPXbEiXWlU" role="3clFbw">
             <node concept="10Nm6u" id="QPXbEiXWEA" role="3uHU7w" />
@@ -5841,6 +5859,12 @@
                 <ref role="37wK5l" to="vii6:~ANTLRv4Parser$EbnfContext.block():org.antlr.ANTLRv4Parser$BlockContext" resolve="block" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="34ab3g" id="QPXbEjnYrv" role="3cqZAp">
+          <property role="35gtTG" value="info" />
+          <node concept="Xl_RD" id="QPXbEjnYr$" role="34bqiv">
+            <property role="Xl_RC" value="returning EMPTY ALTERNATIVES: " />
           </node>
         </node>
         <node concept="3cpWs6" id="QPXbEiYvZ4" role="3cqZAp">

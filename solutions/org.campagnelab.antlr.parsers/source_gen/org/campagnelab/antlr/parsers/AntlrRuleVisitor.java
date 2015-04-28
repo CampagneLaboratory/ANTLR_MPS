@@ -16,6 +16,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.antlr.v4.runtime.tree.TerminalNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
@@ -156,8 +157,14 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
         if (context.blockSuffix().ebnfSuffix() != null) {
           addOptionalParams(alternatives, context.blockSuffix().ebnfSuffix());
         }
-        return alternatives;
       }
+      if (LOG.isInfoEnabled()) {
+        LOG.info("visitEbnf returning: " + BehaviorReflection.invokeVirtual(String.class, alternatives, "virtual_toText_5668935624399900127", new Object[]{}));
+      }
+      return alternatives;
+    }
+    if (LOG.isInfoEnabled()) {
+      LOG.info("returning EMPTY ALTERNATIVES: ");
     }
     return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, "org.campagnelab.ANTLR.structure.Alternatives")));
   }
