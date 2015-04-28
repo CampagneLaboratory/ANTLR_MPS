@@ -55,7 +55,7 @@
     <node concept="1TJgyj" id="6cuUYchcHwV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="rules" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1tv9AyCx$yE" resolve="Rule" />
     </node>
     <node concept="PrWs8" id="6cuUYchcHw2" role="PzmwI">
