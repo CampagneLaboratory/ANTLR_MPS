@@ -18,6 +18,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ec7c4c8-fdb9-475d-a1c5-08cf184915b2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/structure/StructureAspectDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/structure/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/structure/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Playground/models/model.mps" afterPath="$PROJECT_DIR$/solutions/Playground/models/model.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="ANTLR.iws" />
@@ -88,7 +91,7 @@
                 </errorLabels>
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -116,7 +119,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -152,7 +155,7 @@
                 </errorLabels>
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -180,7 +183,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -190,26 +193,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="R" pinned="true" current-in-tab="false">
+      <file leaf-file-name="R" pinned="true" current-in-tab="true">
         <entry file="mps://node://Playground/model/R">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
+              <memento viewPositionX="0" viewPositionY="1480">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
                     <property name="caretX" value="15" />
                     <property name="caretXRelative" value="0" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="empty_rules" cellNumber="0" isInList="false">
-                      <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/5496686145715206238" />
+                    <cellInfo cellId="Constant_sl1xhu_d0" cellNumber="0" isInList="false">
+                      <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -218,7 +221,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Grammar" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Grammar" pinned="false" current-in-tab="false">
         <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/Grammar">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
@@ -237,7 +240,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -265,7 +268,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -293,7 +296,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -321,7 +324,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -357,7 +360,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -1398,7 +1401,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Handle +,? and *." />
     <MESSAGE value="Start to split lexer rules from parser rules and using a visitor." />
     <MESSAGE value="Remove all generated sources." />
     <MESSAGE value="Correct visitor compilation error by commenting out unfinished part." />
@@ -1423,7 +1425,8 @@
     <MESSAGE value="Support NotSet e.g., ~[\n\r]" />
     <MESSAGE value="Improve the visitor some more. Still missing a few bits to support the grammar of the R language." />
     <MESSAGE value="Fix parsing of block. Was incorrectly returning empty alternatives." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix parsing of block. Was incorrectly returning empty alternatives." />
+    <MESSAGE value="Make grammars with no rules valid." />
+    <option name="LAST_COMMIT_MESSAGE" value="Make grammars with no rules valid." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/LexerAlt_Editor.java">
@@ -2430,7 +2433,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2481,7 +2484,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2514,7 +2517,7 @@
             </errorLabels>
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2553,7 +2556,7 @@
             </errorLabels>
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2579,7 +2582,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2606,7 +2609,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2640,7 +2643,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2652,22 +2655,22 @@
     <entry file="mps://node://Playground/model/R">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
+          <memento viewPositionX="0" viewPositionY="1480">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
                 <property name="caretX" value="15" />
                 <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_rules" cellNumber="0" isInList="false">
-                  <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/5496686145715206238" />
+                <cellInfo cellId="Constant_sl1xhu_d0" cellNumber="0" isInList="false">
+                  <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2693,7 +2696,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2719,7 +2722,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/7142405419534833723" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/987964775451615560" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
