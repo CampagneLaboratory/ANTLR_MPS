@@ -39,6 +39,7 @@
     <classNode dependClassName="jetbrains.mps.project.Project" />
     <classNode dependClassName="jetbrains.mps.smodel.IOperationContext" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.util.MacrosFactory" />
     <classNode dependClassName="org.antlr.ANTLRv4Lexer" />
     <classNode dependClassName="org.antlr.ANTLRv4Parser" />
     <classNode dependClassName="org.antlr.v4.runtime.ANTLRInputStream" />

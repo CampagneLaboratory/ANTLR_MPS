@@ -75,9 +75,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6cuUYchcHx3" resolve="ParserRuleBlock" />
     </node>
-    <node concept="PrWs8" id="6cuUYchcHwT" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="PrWs8" id="4UG6ID2UYHO" role="PzmwI">
       <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
     </node>
@@ -237,6 +234,9 @@
     <node concept="PrWs8" id="4UG6ID2UGhZ" role="PzmwI">
       <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
     </node>
+    <node concept="PrWs8" id="6CrG2UA1$fr" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1tv9AyCx$yL">
     <property role="TrG5h" value="LexerRule" />
@@ -247,9 +247,6 @@
       <property role="20kJfa" value="rhs" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1tv9AyCxEM5" resolve="LexerRuleBlock" />
-    </node>
-    <node concept="PrWs8" id="1tv9AyCy7Xw" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="4UG6ID2WDPY" role="PzmwI">
       <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />

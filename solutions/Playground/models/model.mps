@@ -3,9 +3,19 @@
   <persistence version="9" />
   <languages>
     <use id="d6782141-eafa-4cf7-a85d-1229abdb1152" name="org.campagnelab.ANTLR" version="3" />
+    <use id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps" version="0" />
   </languages>
   <imports />
   <registry>
+    <language id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps">
+      <concept id="7645898506791953195" name="org.campagnelab.antlr.tomps.structure.Mapper" flags="ng" index="3c7pc5">
+        <reference id="7645898506791953297" name="alternative" index="3c7peZ" />
+      </concept>
+      <concept id="7645898506791951234" name="org.campagnelab.antlr.tomps.structure.ConvertToMPS" flags="ng" index="3c7qIG">
+        <reference id="7645898506791951337" name="grammar" index="3c7qJ7" />
+        <child id="7645898506791953299" name="mappers" index="3c7peX" />
+      </concept>
+    </language>
     <language id="d6782141-eafa-4cf7-a85d-1229abdb1152" name="org.campagnelab.ANTLR">
       <concept id="8753890222134504504" name="org.campagnelab.ANTLR.structure.HasOptionalParams" flags="ng" index="2sqVNY">
         <property id="8753890222134505516" name="isOptional" index="2sqU3E" />
@@ -5506,6 +5516,18 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="3c7qIG" id="6CrG2UA1X28">
+    <ref role="3c7qJ7" node="QPXbEj1xst" resolve="ANTRL_Parser" />
+    <node concept="3c7pc5" id="6CrG2UA1X29" role="3c7peX">
+      <ref role="3c7peZ" node="QPXbEjlHCw" />
+    </node>
+    <node concept="3c7pc5" id="6CrG2UA2Yw_" role="3c7peX">
+      <ref role="3c7peZ" node="QPXbEjkD2O" />
+    </node>
+    <node concept="3c7pc5" id="6CrG2UA3CS0" role="3c7peX">
+      <ref role="3c7peZ" node="QPXbEjkD8L" />
     </node>
   </node>
 </model>

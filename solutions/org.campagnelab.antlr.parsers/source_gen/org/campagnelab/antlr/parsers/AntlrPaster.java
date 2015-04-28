@@ -19,6 +19,7 @@ import org.antlr.v4.runtime.ANTLRInputStream;
 import java.io.StringReader;
 import org.antlr.ANTLRv4Parser;
 import org.antlr.v4.runtime.CommonTokenStream;
+import jetbrains.mps.util.MacrosFactory;
 import javax.print.PrintException;
 import org.apache.log4j.Level;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -80,7 +81,7 @@ public class AntlrPaster {
       ANTLRv4Parser.RulesContext tree = parser.rules();
       // use the following to print types of nodes on the parse tree: 
       try {
-        ((ANTLRv4Parser.RulesContext) tree).save(parser, "/Users/fac2003/IdeaProjects/git/grammars-v4/out-sdksjdksd22.ps");
+        ((ANTLRv4Parser.RulesContext) tree).save(parser, MacrosFactory.getGlobal().expandPath("${ANTLR_HOME}/tree.ps"));
 
       } catch (PrintException e) {
         if (LOG_515473768.isEnabledFor(Level.ERROR)) {
