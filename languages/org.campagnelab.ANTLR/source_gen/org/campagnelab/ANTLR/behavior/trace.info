@@ -14,7 +14,7 @@
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.Alternatives_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,62,0" name="org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,64,0" name="org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="Dot_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.Dot_BehaviorDescriptor" />
@@ -69,6 +69,9 @@
     </file>
     <file name="REGEXP_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.REGEXP_BehaviorDescriptor" />
+    </file>
+    <file name="Range_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.ANTLR.behavior.Range_BehaviorDescriptor" />
     </file>
     <file name="RuleRefByName_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.RuleRefByName_BehaviorDescriptor" />
@@ -541,6 +544,22 @@
         <var name="thisNode" id="987964775448368097" />
       </scope>
       <unit id="987964775448368097" at="9,0,16,0" name="org.campagnelab.ANTLR.behavior.NotSet_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/987964775451668707">
+    <file name="Range_Behavior.java">
+      <node id="987964775451669584" at="12,71,13,488" concept="4" />
+      <node id="987964775451668707" at="10,0,12,0" concept="5" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="987964775451668707" at="12,0,15,0" concept="5" trace="call_toText_987964775451669576#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="987964775451668709" at="10,43,10,43" />
+      <scope id="987964775451669579" at="12,71,13,488" />
+      <scope id="987964775451668707" at="10,0,12,0">
+        <var name="thisNode" id="987964775451668707" />
+      </scope>
+      <scope id="987964775451668707" at="12,0,15,0">
+        <var name="thisNode" id="987964775451668707" />
+      </scope>
+      <unit id="987964775451668707" at="9,0,16,0" name="org.campagnelab.ANTLR.behavior.Range_Behavior" />
     </file>
   </root>
 </debug-info>

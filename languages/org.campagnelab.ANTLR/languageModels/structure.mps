@@ -373,5 +373,24 @@
       <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
     </node>
   </node>
+  <node concept="1TIwiD" id="QPXbEjpiZH">
+    <property role="TrG5h" value="Range" />
+    <ref role="1TJDcQ" node="4TgqxIxnOE$" resolve="LexerElement" />
+    <node concept="1TJgyj" id="QPXbEjpj3s" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="start" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6cuUYchfAlZ" resolve="StringLiteral" />
+    </node>
+    <node concept="1TJgyj" id="QPXbEjpj3u" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="end" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6cuUYchfAlZ" resolve="StringLiteral" />
+    </node>
+    <node concept="PrWs8" id="QPXbEjpj3x" role="PzmwI">
+      <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
+    </node>
+  </node>
 </model>
 

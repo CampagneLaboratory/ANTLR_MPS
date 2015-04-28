@@ -16,7 +16,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.antlr.v4.runtime.tree.TerminalNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
@@ -131,9 +130,7 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
 
     }
     if (context.ebnf() != null && context.ebnf().block() != null) {
-      if (LOG.isInfoEnabled()) {
-        LOG.info("Visiting ebnf.block():" + context.ebnf().block().getText());
-      }
+      // <node> 
       element = (SNode) visitEbnf(context.ebnf());
       return element;
     }
@@ -158,15 +155,25 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
           addOptionalParams(alternatives, context.blockSuffix().ebnfSuffix());
         }
       }
-      if (LOG.isInfoEnabled()) {
-        LOG.info("visitEbnf returning: " + BehaviorReflection.invokeVirtual(String.class, alternatives, "virtual_toText_5668935624399900127", new Object[]{}));
-      }
+      // <node> 
       return alternatives;
     }
-    if (LOG.isInfoEnabled()) {
-      LOG.info("returning EMPTY ALTERNATIVES: ");
-    }
+    // <node> 
     return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, "org.campagnelab.ANTLR.structure.Alternatives")));
+  }
+  @Override
+  public Object visitRange(@NotNull ANTLRv4Parser.RangeContext context) {
+    SNode range = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba93652fedL, "org.campagnelab.ANTLR.structure.Range")));
+    context.getStart();
+    if (context.STRING_LITERAL().size() < 1) {
+      return range;
+    }
+    SLinkOperations.setTarget(range, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba93652fedL, 0xdb5f4ba936530dcL, "start"), createTrimmedLiteral(context.STRING_LITERAL().get(0).getText()));
+    if (context.STRING_LITERAL().size() < 2) {
+      return range;
+    }
+    SLinkOperations.setTarget(range, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba93652fedL, 0xdb5f4ba936530deL, "end"), createTrimmedLiteral(context.STRING_LITERAL().get(1).getText()));
+    return range;
   }
   @Override
   public Object visitAltList(@NotNull ANTLRv4Parser.AltListContext context) {
@@ -234,6 +241,9 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   @Override
   public Object visitLexerAtom(@NotNull ANTLRv4Parser.LexerAtomContext context) {
     // <node> 
+    if (context.range() != null) {
+      return visitRange(context.range());
+    }
     if (context.notSet() != null) {
       SNode notSet = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba9332cba7L, "org.campagnelab.ANTLR.structure.NotSet")));
       SLinkOperations.setTarget(notSet, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba9332cba7L, 0xdb5f4ba9332cbf4L, "regexp"), (SNode) visitSetElement(context.notSet().setElement()));
@@ -245,7 +255,7 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     if (context.terminal() != null) {
       if (context.terminal().STRING_LITERAL() != null) {
         String litText = context.terminal().STRING_LITERAL().getText();
-        return createLiteral(litText.subSequence(1, litText.length() - 1).toString());
+        return createTrimmedLiteral(litText);
       }
       if (context.terminal().TOKEN_REF() != null) {
         return createLexerRef(context.terminal().getText());
@@ -331,6 +341,12 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     SPropertyOperations.set(literal, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, 0x631eebe3113e6580L, "literal"), value);
     return literal;
   }
+  public SNode createTrimmedLiteral(String value) {
+    SNode literal = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, "org.campagnelab.ANTLR.structure.StringLiteral")));
+    SPropertyOperations.set(literal, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, 0x631eebe3113e6580L, "literal"), value.subSequence(1, value.length() - 1).toString());
+    return literal;
+  }
+
 
 
 

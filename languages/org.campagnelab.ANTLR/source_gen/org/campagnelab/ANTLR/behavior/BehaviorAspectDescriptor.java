@@ -17,19 +17,19 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new ParserRule_BehaviorDescriptor();
       case 1:
         return new Alternatives_BehaviorDescriptor();
-      case 19:
+      case 20:
         return new Sequence_BehaviorDescriptor();
       case 16:
         return new ParserRuleRef_BehaviorDescriptor();
       case 0:
         return new Alternative_BehaviorDescriptor();
-      case 20:
+      case 21:
         return new StringLiteral_BehaviorDescriptor();
       case 17:
         return new REGEXP_BehaviorDescriptor();
       case 14:
         return new Parentheses_BehaviorDescriptor();
-      case 18:
+      case 19:
         return new RuleRefByName_BehaviorDescriptor();
       case 2:
         return new Dot_BehaviorDescriptor();
@@ -53,9 +53,11 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new LexerBlock_BehaviorDescriptor();
       case 13:
         return new NotSet_BehaviorDescriptor();
+      case 18:
+        return new Range_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.ANTLR.structure.Alternative", "org.campagnelab.ANTLR.structure.Alternatives", "org.campagnelab.ANTLR.structure.Dot", "org.campagnelab.ANTLR.structure.Grammar", "org.campagnelab.ANTLR.structure.HasOptionalParams", "org.campagnelab.ANTLR.structure.LexerAlt", "org.campagnelab.ANTLR.structure.LexerAltList", "org.campagnelab.ANTLR.structure.LexerBlock", "org.campagnelab.ANTLR.structure.LexerElement", "org.campagnelab.ANTLR.structure.LexerRule", "org.campagnelab.ANTLR.structure.LexerRuleBlock", "org.campagnelab.ANTLR.structure.LexerRuleRef", "org.campagnelab.ANTLR.structure.LexerRuleRefByName", "org.campagnelab.ANTLR.structure.NotSet", "org.campagnelab.ANTLR.structure.Parentheses", "org.campagnelab.ANTLR.structure.ParserRule", "org.campagnelab.ANTLR.structure.ParserRuleRef", "org.campagnelab.ANTLR.structure.REGEXP", "org.campagnelab.ANTLR.structure.RuleRefByName", "org.campagnelab.ANTLR.structure.Sequence", "org.campagnelab.ANTLR.structure.StringLiteral"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.ANTLR.structure.Alternative", "org.campagnelab.ANTLR.structure.Alternatives", "org.campagnelab.ANTLR.structure.Dot", "org.campagnelab.ANTLR.structure.Grammar", "org.campagnelab.ANTLR.structure.HasOptionalParams", "org.campagnelab.ANTLR.structure.LexerAlt", "org.campagnelab.ANTLR.structure.LexerAltList", "org.campagnelab.ANTLR.structure.LexerBlock", "org.campagnelab.ANTLR.structure.LexerElement", "org.campagnelab.ANTLR.structure.LexerRule", "org.campagnelab.ANTLR.structure.LexerRuleBlock", "org.campagnelab.ANTLR.structure.LexerRuleRef", "org.campagnelab.ANTLR.structure.LexerRuleRefByName", "org.campagnelab.ANTLR.structure.NotSet", "org.campagnelab.ANTLR.structure.Parentheses", "org.campagnelab.ANTLR.structure.ParserRule", "org.campagnelab.ANTLR.structure.ParserRuleRef", "org.campagnelab.ANTLR.structure.REGEXP", "org.campagnelab.ANTLR.structure.Range", "org.campagnelab.ANTLR.structure.RuleRefByName", "org.campagnelab.ANTLR.structure.Sequence", "org.campagnelab.ANTLR.structure.StringLiteral"};
 }
