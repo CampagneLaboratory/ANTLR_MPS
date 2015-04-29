@@ -10,8 +10,12 @@
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.LanguageAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.BehaviorAspectDescriptor" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.structure.StructureAspectDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />

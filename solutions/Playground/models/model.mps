@@ -5,15 +5,22 @@
     <use id="d6782141-eafa-4cf7-a85d-1229abdb1152" name="org.campagnelab.ANTLR" version="3" />
     <use id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" />
+  </imports>
   <registry>
     <language id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps">
-      <concept id="7645898506791953195" name="org.campagnelab.antlr.tomps.structure.Mapper" flags="ng" index="3c7pc5">
+      <concept id="7645898506791953195" name="org.campagnelab.antlr.tomps.structure.AlternativeMapper" flags="ng" index="3c7pc5">
         <reference id="7645898506791953297" name="alternative" index="3c7peZ" />
       </concept>
       <concept id="7645898506791951234" name="org.campagnelab.antlr.tomps.structure.ConvertToMPS" flags="ng" index="3c7qIG">
         <reference id="7645898506791951337" name="grammar" index="3c7qJ7" />
-        <child id="7645898506791953299" name="mappers" index="3c7peX" />
+        <child id="7645898506791953299" name="altMappers" index="3c7peX" />
+        <child id="7627187573639526920" name="conceptMapper" index="1zPSMS" />
+      </concept>
+      <concept id="7627187573639526914" name="org.campagnelab.antlr.tomps.structure.ConceptMapper" flags="ng" index="1zPSMM">
+        <reference id="7627187573639526915" name="concept" index="1zPSMN" />
+        <reference id="7627187573639526917" name="rule" index="1zPSMP" />
       </concept>
     </language>
     <language id="d6782141-eafa-4cf7-a85d-1229abdb1152" name="org.campagnelab.ANTLR">
@@ -5519,7 +5526,17 @@
     </node>
   </node>
   <node concept="3c7qIG" id="6CrG2UA1X28">
+    <property role="TrG5h" value="ConvertToMPS_ANTRL_Parser" />
     <ref role="3c7qJ7" node="QPXbEj1xst" resolve="ANTRL_Parser" />
+    <node concept="3c7pc5" id="6BpdF0a4j8z" role="3c7peX">
+      <ref role="3c7peZ" node="QPXbEjkD1u" />
+    </node>
+    <node concept="3c7pc5" id="6BpdF0a4j8I" role="3c7peX">
+      <ref role="3c7peZ" node="QPXbEjkDlC" />
+    </node>
+    <node concept="3c7pc5" id="6BpdF0a4j8C" role="3c7peX">
+      <ref role="3c7peZ" node="QPXbEjkD2O" />
+    </node>
     <node concept="3c7pc5" id="6CrG2UA1X29" role="3c7peX">
       <ref role="3c7peZ" node="QPXbEjlHCw" />
     </node>
@@ -5528,6 +5545,13 @@
     </node>
     <node concept="3c7pc5" id="6CrG2UA3CS0" role="3c7peX">
       <ref role="3c7peZ" node="QPXbEjkD8L" />
+    </node>
+    <node concept="1zPSMM" id="6BpdF0a42k6" role="1zPSMS">
+      <ref role="1zPSMP" node="QPXbEjkDkV" resolve="parserRuleSpec" />
+      <ref role="1zPSMN" to="ubjp:1tv9AyCx$yE" resolve="Rule" />
+    </node>
+    <node concept="1zPSMM" id="6BpdF0a4mW1" role="1zPSMS">
+      <ref role="1zPSMP" node="QPXbEjkE5X" resolve="atom" />
     </node>
   </node>
 </model>

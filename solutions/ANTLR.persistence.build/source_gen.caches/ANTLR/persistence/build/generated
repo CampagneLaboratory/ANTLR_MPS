@@ -1,3 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="c677ms3k5yam0pzb3ia705fjpgja93o" />
+<dependencies version="2" modelHash="c677ms3k5yam0pzb3ia705fjpgja93o">
+  <dep model="r:54537613-52b5-40a8-b223-e87f0960b04f(jetbrains.mps.build.mps.generator.template.main@generator)" hash="56jxj4qz0bh11k6am75bt6jhdy7djg7" />
+  <dep model="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" hash="-dphi7rk3hgg8gpgazo5o3zgvaw7e4k6" />
+  <dep model="r:d8d06a40-eb90-4ad9-a679-19e3fc235859(jetbrains.mps.build.workflow.generator.template.main@generator)" hash="-78ck6msrgy9wdp5iuo3qydkh34o5l4w" />
+  <dep model="r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)" hash="bnl25kd0j9zanqkl4v2n51bpjfrs4b9" />
+  <dep model="r:fdebfc98-bbd7-4c50-8a8d-eda16da9406e(jetbrains.mps.build.generator.template.main@generator)" hash="c7whiwmynft3eumabc0bzop7k3pmwi2" />
+  <common hash="-7unjrbqa8wxqqazrveisuatvz3uu7sa" />
+  <source id="8602029716109688013" name="ANTLR" hash="19fulwm0nlvwq3b2iuyuabduks9z2qk">
+    <dep model="r:54537613-52b5-40a8-b223-e87f0960b04f(jetbrains.mps.build.mps.generator.template.main@generator)" />
+    <dep model="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
+    <dep model="r:d8d06a40-eb90-4ad9-a679-19e3fc235859(jetbrains.mps.build.workflow.generator.template.main@generator)" />
+    <dep model="r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)" />
+    <dep model="r:fdebfc98-bbd7-4c50-8a8d-eda16da9406e(jetbrains.mps.build.generator.template.main@generator)" />
+    <file name="ANTLR.xml" />
+  </source>
+</dependencies>
 

@@ -1,14 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
+    <file name="AlternativeMapper_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.AlternativeMapper_BehaviorDescriptor" />
+    </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,24,0" name="org.campagnelab.antlr.tomps.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,26,0" name="org.campagnelab.antlr.tomps.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="ConceptMapper_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.ConceptMapper_BehaviorDescriptor" />
     </file>
     <file name="ConvertToMPS_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.ConvertToMPS_BehaviorDescriptor" />
+      <unit at="9,0,20,0" name="org.campagnelab.antlr.tomps.behavior.ConvertToMPS_BehaviorDescriptor" />
     </file>
-    <file name="Mapper_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.Mapper_BehaviorDescriptor" />
+  </root>
+  <root nodeRef="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/7627187573639416094">
+    <file name="ConvertToMPS_Behavior.java">
+      <node id="7627187573639487079" at="15,72,16,344" concept="1" />
+      <node id="8739959356374474901" at="16,344,17,54" concept="1" />
+      <node id="8739959356374482832" at="18,24,19,18" concept="2" />
+      <node id="8739959356374486173" at="20,5,21,0" concept="3" />
+      <node id="1213877404261" at="21,0,22,81" concept="1" />
+      <node id="1213877404272" at="23,30,24,18" concept="2" />
+      <node id="1213877404280" at="25,5,26,33" concept="2" />
+      <node id="7627187573639416094" at="13,0,15,0" concept="4" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8739959356374481691" at="17,54,20,5" concept="0" />
+      <node id="1213877404270" at="22,81,25,5" concept="0" />
+      <node id="7627187573639416094" at="15,0,28,0" concept="4" trace="virtual_getFqName_1213877404258#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="7627187573639416096" at="13,43,13,43" />
+      <scope id="8739959356374481694" at="18,24,19,18" />
+      <scope id="1213877404271" at="23,30,24,18" />
+      <scope id="7627187573639416094" at="13,0,15,0">
+        <var name="thisNode" id="7627187573639416094" />
+      </scope>
+      <scope id="1213877404260" at="15,72,26,33">
+        <var name="longName" id="1213877404262" />
+        <var name="model" id="8739959356374474902" />
+        <var name="name" id="7627187573639487082" />
+      </scope>
+      <scope id="7627187573639416094" at="15,0,28,0">
+        <var name="thisNode" id="7627187573639416094" />
+      </scope>
+      <unit id="7627187573639416094" at="12,0,29,0" name="org.campagnelab.antlr.tomps.behavior.ConvertToMPS_Behavior" />
     </file>
   </root>
 </debug-info>

@@ -15,9 +15,11 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   public Collection<ConceptEditor> getEditors(ConceptDescriptor descriptor) {
     switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0b, descriptor.getConceptFqName())) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new ConvertToMPS_Editor());
+        return Collections.<ConceptEditor>singletonList(new AlternativeMapper_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new Mapper_Editor());
+        return Collections.<ConceptEditor>singletonList(new ConceptMapper_Editor());
+      case 2:
+        return Collections.<ConceptEditor>singletonList(new ConvertToMPS_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -27,5 +29,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.ConvertToMPS", "org.campagnelab.antlr.tomps.structure.Mapper"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.AlternativeMapper", "org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS"};
 }

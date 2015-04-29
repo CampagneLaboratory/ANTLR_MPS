@@ -4,11 +4,11 @@ package org.campagnelab.antlr.tomps.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 
-public class Mapper_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
-  public Mapper_BehaviorDescriptor() {
+public class ConceptMapper_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
+  public ConceptMapper_BehaviorDescriptor() {
   }
   @Override
   public String getConceptFqName() {
-    return "org.campagnelab.antlr.tomps.structure.Mapper";
+    return "org.campagnelab.antlr.tomps.structure.ConceptMapper";
   }
 }

@@ -33,21 +33,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
-public class Mapper_Editor extends DefaultNodeEditor {
+public class AlternativeMapper_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_j5ilxx_a(editorContext, node);
+    return this.createCollection_cj2frz_a(editorContext, node);
   }
-  private EditorCell createCollection_j5ilxx_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_cj2frz_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_j5ilxx_a");
+    editorCell.setCellId("Collection_cj2frz_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createReadOnlyModelAccessor_j5ilxx_a0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_j5ilxx_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_j5ilxx_c0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_j5ilxx_d0(editorContext, node));
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_cj2frz_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_cj2frz_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_cj2frz_c0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_cj2frz_d0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createReadOnlyModelAccessor_j5ilxx_a0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createReadOnlyModelAccessor_cj2frz_a0(final EditorContext editorContext, final SNode node) {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
       public String getText() {
         if (SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x6a1bb02ea6062391L, "alternative")) == null) {
@@ -63,15 +63,15 @@ public class Mapper_Editor extends DefaultNodeEditor {
     }, node);
     editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
     editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
-    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPartExt[]{new Mapper_Editor.Mapper_generic_cellMenu_j5ilxx_a0a0()}));
-    editorCell.setCellId("ReadOnlyModelAccessor_j5ilxx_a0");
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPartExt[]{new AlternativeMapper_Editor.AlternativeMapper_generic_cellMenu_cj2frz_a0a0()}));
+    editorCell.setCellId("ReadOnlyModelAccessor_cj2frz_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.ITALIC);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
-  public static class Mapper_generic_cellMenu_j5ilxx_a0a0 extends AbstractCellMenuPart_Generic_Group {
-    public Mapper_generic_cellMenu_j5ilxx_a0a0() {
+  public static class AlternativeMapper_generic_cellMenu_cj2frz_a0a0 extends AbstractCellMenuPart_Generic_Group {
+    public AlternativeMapper_generic_cellMenu_cj2frz_a0a0() {
     }
     public List<?> createParameterObjects(SNode node, IOperationContext operationContext, EditorContext editorContext) {
       return ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, "org.campagnelab.antlr.tomps.structure.ConvertToMPS"), false, false), MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, 0x6a1bb02ea6061be9L, "grammar")), MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).translate(new ITranslator2<SNode, SNode>() {
@@ -96,21 +96,21 @@ public class Mapper_Editor extends DefaultNodeEditor {
       return SPropertyOperations.getString(SNodeOperations.getNodeAncestor(parameterObject, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648aaL, "org.campagnelab.ANTLR.structure.Rule"), false, false), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + ":" + BehaviorReflection.invokeVirtual(String.class, parameterObject, "virtual_toText_5668935624399900127", new Object[]{});
     }
   }
-  private EditorCell createConstant_j5ilxx_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cj2frz_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "->");
-    editorCell.setCellId("Constant_j5ilxx_b0");
+    editorCell.setCellId("Constant_cj2frz_b0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_j5ilxx_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cj2frz_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
-    editorCell.setCellId("Constant_j5ilxx_c0");
+    editorCell.setCellId("Constant_cj2frz_c0");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_j5ilxx_d0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_cj2frz_d0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_j5ilxx_d0");
+    editorCell.setCellId("Constant_cj2frz_d0");
     editorCell.setDefaultText("");
     return editorCell;
   }

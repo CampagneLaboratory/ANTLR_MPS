@@ -47,7 +47,7 @@
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.LexerRuleRef_BehaviorDescriptor" />
     </file>
     <file name="LexerRule_BehaviorDescriptor.java">
-      <unit at="9,0,23,0" name="org.campagnelab.ANTLR.behavior.LexerRule_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.LexerRule_BehaviorDescriptor" />
     </file>
     <file name="LexerToken_BehaviorDescriptor.java">
       <unit at="9,0,23,0" name="org.campagnelab.ANTLR.behavior.LexerToken_BehaviorDescriptor" />
@@ -65,7 +65,7 @@
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.ParserRuleRef_BehaviorDescriptor" />
     </file>
     <file name="ParserRule_BehaviorDescriptor.java">
-      <unit at="9,0,23,0" name="org.campagnelab.ANTLR.behavior.ParserRule_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.ParserRule_BehaviorDescriptor" />
     </file>
     <file name="REGEXP_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.REGEXP_BehaviorDescriptor" />
@@ -77,7 +77,7 @@
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.RuleRefByName_BehaviorDescriptor" />
     </file>
     <file name="Rule_BehaviorDescriptor.java">
-      <unit at="8,0,19,0" name="org.campagnelab.ANTLR.behavior.Rule_BehaviorDescriptor" />
+      <unit at="10,0,24,0" name="org.campagnelab.ANTLR.behavior.Rule_BehaviorDescriptor" />
     </file>
     <file name="Sequence_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.Sequence_BehaviorDescriptor" />
