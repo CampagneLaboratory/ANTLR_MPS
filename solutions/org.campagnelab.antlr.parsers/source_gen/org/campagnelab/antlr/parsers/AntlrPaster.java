@@ -25,8 +25,9 @@ import org.apache.log4j.Level;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.List;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 import jetbrains.mps.ide.datatransfer.SModelDataFlavor;
 
@@ -78,10 +79,10 @@ public class AntlrPaster {
     try {
       ANTLRv4Lexer lexer = new ANTLRv4Lexer(new ANTLRInputStream(new StringReader(antlrRulesAsText)));
       ANTLRv4Parser parser = new ANTLRv4Parser(new CommonTokenStream(lexer));
-      ANTLRv4Parser.RulesContext tree = parser.rules();
+      ANTLRv4Parser.GrammarSpecContext tree = parser.grammarSpec();
       // use the following to print types of nodes on the parse tree: 
       try {
-        ((ANTLRv4Parser.RulesContext) tree).save(parser, MacrosFactory.getGlobal().expandPath("${ANTLR_HOME}/tree.ps"));
+        ((ANTLRv4Parser.GrammarSpecContext) tree).save(parser, MacrosFactory.getGlobal().expandPath("${ANTLR_HOME}/tree.ps"));
 
       } catch (PrintException e) {
         if (LOG_515473768.isEnabledFor(Level.ERROR)) {
@@ -95,9 +96,15 @@ public class AntlrPaster {
       if (useVisitor) {
         try {
           AntlrRuleVisitor visitor = new AntlrRuleVisitor();
-          List<SNode> rules = (List<SNode>) visitor.visitRules(tree);
+          SNode parsedGrammar = (SNode) visitor.visitGrammarSpec(tree);
+          List<SNode> rules = (List<SNode>) SLinkOperations.getChildren(parsedGrammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"));
           ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(rules));
-
+          if (SLinkOperations.getTarget(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens")) == null) {
+            SLinkOperations.setTarget(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens"), SLinkOperations.getTarget(parsedGrammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens")));
+          } else {
+            ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens")), MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f1505L, 0x7c18b9e171f2eb1L, "tokens"))).addSequence(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(parsedGrammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens")), MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f1505L, 0x7c18b9e171f2eb1L, "tokens"))));
+          }
+          SPropertyOperations.set(grammar, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(parsedGrammar, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
         } catch (Exception e) {
           if (LOG_515473768.isEnabledFor(Level.ERROR)) {
             LOG_515473768.error("Exception when visiting parse tree.", e);

@@ -196,8 +196,12 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   public Object visitLexerRule(@NotNull ANTLRv4Parser.LexerRuleContext context) {
     super.visitLexerRule(context);
     SNode lRule = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648b1L, "org.campagnelab.ANTLR.structure.LexerRule")));
-    SLinkOperations.setTarget(lRule, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648b1L, 0x175f2668a886ac7dL, "rhs"), (SNode) visitLexerRuleBlock(context.lexerRuleBlock()));
-    SPropertyOperations.set(lRule, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), context.TOKEN_REF().getText());
+    if (context.lexerRuleBlock() != null) {
+      SLinkOperations.setTarget(lRule, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648b1L, 0x175f2668a886ac7dL, "rhs"), (SNode) visitLexerRuleBlock(context.lexerRuleBlock()));
+    }
+    if (context.TOKEN_REF() != null) {
+      SPropertyOperations.set(lRule, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), context.TOKEN_REF().getText());
+    }
     return lRule;
   }
   @Override
@@ -212,6 +216,41 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     }
     return lexerAlt;
 
+  }
+  @Override
+  public Object visitTokensSpec(@NotNull ANTLRv4Parser.TokensSpecContext context) {
+    SNode spec = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f1505L, "org.campagnelab.ANTLR.structure.TokenSpec")));
+
+    for (ANTLRv4Parser.IdContext id : ListSequence.fromList(context.id())) {
+      if (LOG.isInfoEnabled()) {
+        LOG.info("Adding id=" + id.toString());
+      }
+      SNode token = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f2eb3L, "org.campagnelab.ANTLR.structure.Token")));
+      SPropertyOperations.set(token, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), id.getText());
+      ListSequence.fromList(SLinkOperations.getChildren(spec, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f1505L, 0x7c18b9e171f2eb1L, "tokens"))).addElement(token);
+    }
+    return spec;
+  }
+  @Override
+  public Object visitGrammarSpec(@NotNull ANTLRv4Parser.GrammarSpecContext context) {
+    SNode grammar = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar")));
+    for (ANTLRv4Parser.PrequelConstructContext prequel : ListSequence.fromList(context.prequelConstruct())) {
+      if (prequel.tokensSpec() != null) {
+        SLinkOperations.setTarget(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens"), (SNode) visitTokensSpec(prequel.tokensSpec()));
+      }
+    }
+    if (context.rules() != null) {
+      ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList((List<SNode>) visitRules(context.rules())));
+    }
+    SPropertyOperations.set(grammar, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), context.id().getText());
+    return grammar;
+  }
+  @Override
+  public Object visitPrequelConstruct(@NotNull ANTLRv4Parser.PrequelConstructContext context) {
+    if (context.tokensSpec() != null) {
+      return visitTokensSpec(context.tokensSpec());
+    }
+    return null;
   }
   @Override
   public Object visitLexerElement(@NotNull ANTLRv4Parser.LexerElementContext context) {

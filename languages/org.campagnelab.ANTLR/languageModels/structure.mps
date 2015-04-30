@@ -14,6 +14,7 @@
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -52,6 +53,11 @@
     <property role="TrG5h" value="Grammar" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="v1yTSn7W9P" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tokens" />
+      <ref role="20lvS9" node="v1yTSn7Lk5" resolve="TokenSpec" />
+    </node>
     <node concept="1TJgyj" id="6cuUYchcHwV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="rules" />
@@ -390,6 +396,35 @@
     </node>
     <node concept="PrWs8" id="QPXbEjpj3x" role="PzmwI">
       <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="v1yTSn7Lk5">
+    <property role="TrG5h" value="TokenSpec" />
+    <property role="R4oN_" value="Specification for TOKENS" />
+    <property role="34LRSv" value="tokens" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="v1yTSn7MUL" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tokens" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="v1yTSn7MUN" resolve="Token" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="v1yTSn7MUN">
+    <property role="TrG5h" value="Token" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="v1yTSn7N5g" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="v1yTSnbNW3">
+    <property role="TrG5h" value="TokenRef" />
+    <ref role="1TJDcQ" node="6cuUYchcHx3" resolve="ParserRuleBlock" />
+    <node concept="1TJgyj" id="v1yTSnbNW4" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="token" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="v1yTSn7MUN" resolve="Token" />
     </node>
   </node>
 </model>

@@ -14,6 +14,7 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
@@ -35,8 +36,9 @@ public class Grammar_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createProperty_pxfnoi_b0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_pxfnoi_c0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_pxfnoi_d0(editorContext, node));
-    editorCell.addEditorCell(this.createCollection_pxfnoi_e0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_pxfnoi_f0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_pxfnoi_e0(editorContext, node));
+    editorCell.addEditorCell(this.createCollection_pxfnoi_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_pxfnoi_g0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_pxfnoi_a0(EditorContext editorContext, SNode node) {
@@ -82,17 +84,38 @@ public class Grammar_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCollection_pxfnoi_e0(EditorContext editorContext, SNode node) {
-    EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
-    editorCell.setCellId("Collection_pxfnoi_e0");
+  private EditorCell createRefNode_pxfnoi_e0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
+    provider.setRole("tokens");
+    provider.setNoTargetText("<no tokens>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    if (editorCell.getRole() == null) {
+      editorCell.setRole("tokens");
+    }
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(this.createRefNodeList_pxfnoi_a4a(editorContext, node));
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
     return editorCell;
   }
-  private EditorCell createRefNodeList_pxfnoi_a4a(EditorContext editorContext, SNode node) {
-    AbstractCellListHandler handler = new Grammar_Editor.rulesListHandler_pxfnoi_a4a(node, "rules", editorContext);
+  private EditorCell createCollection_pxfnoi_f0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createVertical(editorContext, node);
+    editorCell.setCellId("Collection_pxfnoi_f0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createRefNodeList_pxfnoi_a5a(editorContext, node));
+    return editorCell;
+  }
+  private EditorCell createRefNodeList_pxfnoi_a5a(EditorContext editorContext, SNode node) {
+    AbstractCellListHandler handler = new Grammar_Editor.rulesListHandler_pxfnoi_a5a(node, "rules", editorContext);
     EditorCell_Collection editorCell = handler.createCells(editorContext, new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_rules");
     Style style = new StyleImpl();
@@ -101,8 +124,8 @@ public class Grammar_Editor extends DefaultNodeEditor {
     editorCell.setRole(handler.getElementRole());
     return editorCell;
   }
-  private static class rulesListHandler_pxfnoi_a4a extends RefNodeListHandler {
-    public rulesListHandler_pxfnoi_a4a(SNode ownerNode, String childRole, EditorContext context) {
+  private static class rulesListHandler_pxfnoi_a5a extends RefNodeListHandler {
+    public rulesListHandler_pxfnoi_a5a(SNode ownerNode, String childRole, EditorContext context) {
       super(ownerNode, childRole, context, false);
     }
     public SNode createNodeToInsert(EditorContext editorContext) {
@@ -133,9 +156,9 @@ public class Grammar_Editor extends DefaultNodeEditor {
       }
     }
   }
-  private EditorCell createConstant_pxfnoi_f0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_pxfnoi_g0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "}");
-    editorCell.setCellId("Constant_pxfnoi_f0");
+    editorCell.setCellId("Constant_pxfnoi_g0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
     style.set(StyleAttributes.MATCHING_LABEL, 0, "body-paren");
