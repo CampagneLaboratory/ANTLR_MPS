@@ -22,5 +22,8 @@
   <node concept="1TIwiD" id="6BpdF0abWTJ">
     <property role="TrG5h" value="Atom" />
   </node>
+  <node concept="1TIwiD" id="3_THA0UdV_x">
+    <property role="TrG5h" value="Prog" />
+  </node>
 </model>
 
