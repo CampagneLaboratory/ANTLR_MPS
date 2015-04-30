@@ -12,8 +12,10 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
   }
   public ConstraintsDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0b, fqName)) {
-      case 0:
+      case 1:
         return new ConvertToMPS_Constraints();
+      case 0:
+        return new ConceptMapper_Constraints();
       default:
         return new BaseConstraintsDescriptor(fqName);
     }
@@ -23,7 +25,10 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
     if (id == 0x6a1bb02ea6061b82L) {
       return new ConvertToMPS_Constraints();
     }
+    if (id == 0x69d936b00a0eba02L) {
+      return new ConceptMapper_Constraints();
+    }
     return new BaseConstraintsDescriptor(conceptId);
   }
-  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.ConvertToMPS"};
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS"};
 }

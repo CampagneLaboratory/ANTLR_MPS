@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" />
+    <import index="6q58" ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)" />
   </imports>
   <registry>
     <language id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps">
@@ -14,6 +15,7 @@
         <reference id="7645898506791953297" name="alternative" index="3c7peZ" />
       </concept>
       <concept id="7645898506791951234" name="org.campagnelab.antlr.tomps.structure.ConvertToMPS" flags="ng" index="3c7qIG">
+        <property id="7627187573639936517" name="destinationLanguageName" index="1zNsMP" />
         <reference id="7645898506791951337" name="grammar" index="3c7qJ7" />
         <child id="7645898506791953299" name="altMappers" index="3c7peX" />
         <child id="7627187573639526920" name="conceptMapper" index="1zPSMS" />
@@ -5526,10 +5528,14 @@
     </node>
   </node>
   <node concept="3c7qIG" id="6CrG2UA1X28">
-    <property role="TrG5h" value="ConvertToMPS_ANTRL_Parser" />
-    <ref role="3c7qJ7" node="QPXbEj1xst" resolve="ANTRL_Parser" />
+    <property role="TrG5h" value="ConvertToMPS_R" />
+    <property role="1zNsMP" value="org.campagnelab.metar.R" />
+    <ref role="3c7qJ7" node="4L89IP5aBxu" resolve="R" />
     <node concept="3c7pc5" id="6BpdF0a4j8z" role="3c7peX">
       <ref role="3c7peZ" node="QPXbEjkD1u" />
+    </node>
+    <node concept="3c7pc5" id="6BpdF0a7A94" role="3c7peX">
+      <ref role="3c7peZ" node="QPXbEjkD2S" />
     </node>
     <node concept="3c7pc5" id="6BpdF0a4j8I" role="3c7peX">
       <ref role="3c7peZ" node="QPXbEjkDlC" />
@@ -5548,10 +5554,11 @@
     </node>
     <node concept="1zPSMM" id="6BpdF0a42k6" role="1zPSMS">
       <ref role="1zPSMP" node="QPXbEjkDkV" resolve="parserRuleSpec" />
-      <ref role="1zPSMN" to="ubjp:1tv9AyCx$yE" resolve="Rule" />
+      <ref role="1zPSMN" to="6q58:6BpdF0abHs1" resolve="NewConcept" />
     </node>
     <node concept="1zPSMM" id="6BpdF0a4mW1" role="1zPSMS">
       <ref role="1zPSMP" node="QPXbEjkE5X" resolve="atom" />
+      <ref role="1zPSMN" to="6q58:6BpdF0abWTJ" resolve="Atom" />
     </node>
   </node>
 </model>

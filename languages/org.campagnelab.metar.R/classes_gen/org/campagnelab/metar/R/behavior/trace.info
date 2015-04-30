@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <root>
+    <file name="Atom_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Atom_BehaviorDescriptor" />
+    </file>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="9,0,24,0" name="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="NewConcept_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.NewConcept_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

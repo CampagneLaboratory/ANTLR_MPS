@@ -34,6 +34,8 @@ import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import java.util.ArrayList;
+import org.campagnelab.antlr.tomps.behavior.ConvertToMPS_Behavior;
 
 public class ConceptMapper_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -101,6 +103,9 @@ public class ConceptMapper_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_mzlmup_c0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "concept<");
     editorCell.setCellId("Constant_mzlmup_c0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.PLAIN);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -115,7 +120,10 @@ public class ConceptMapper_Editor extends DefaultNodeEditor {
       editorCell.setReferenceCell(true);
       editorCell.setRole("concept");
     }
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.PLAIN);
+    editorCell.getStyle().putAll(style);
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new ConceptMapper_Editor.ConceptMapper_generic_cellMenu_mzlmup_a0d0()}));
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
@@ -142,6 +150,9 @@ public class ConceptMapper_Editor extends DefaultNodeEditor {
       EditorCell editorCell;
       editorCell = provider.createEditorCell(editorContext);
       editorCell.setCellId("property_name");
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD);
+      editorCell.getStyle().putAll(style);
       editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
       SNode attributeConcept = provider.getRoleAttribute();
       Class attributeKind = provider.getRoleAttributeClass();
@@ -152,9 +163,32 @@ public class ConceptMapper_Editor extends DefaultNodeEditor {
       return editorCell;
     }
   }
+  public static class ConceptMapper_generic_cellMenu_mzlmup_a0d0 extends AbstractCellMenuPart_Generic_Group {
+    public ConceptMapper_generic_cellMenu_mzlmup_a0d0() {
+    }
+    public List<?> createParameterObjects(SNode node, IOperationContext operationContext, EditorContext editorContext) {
+      List<SNode> decls = ListSequence.fromList(new ArrayList<SNode>());
+      for (SNode c : ListSequence.fromList(ConvertToMPS_Behavior.call_getLanguage_7627187573640238110(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, "org.campagnelab.antlr.tomps.structure.ConvertToMPS"), false, false)).getConceptDeclarations())) {
+        ListSequence.fromList(decls).addElement((SNode) c);
+      }
+      return decls;
+    }
+    protected void handleAction(Object parameterObject, SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
+      this.handleAction_impl((SNode) parameterObject, node, model, operationContext, editorContext);
+    }
+    public void handleAction_impl(SNode parameterObject, SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
+      SLinkOperations.setTarget(node, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x69d936b00a0eba02L, 0x69d936b00a0eba03L, "concept"), parameterObject);
+    }
+    public boolean isReferentPresentation() {
+      return false;
+    }
+  }
   private EditorCell createConstant_mzlmup_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ">");
     editorCell.setCellId("Constant_mzlmup_e0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.PLAIN);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
