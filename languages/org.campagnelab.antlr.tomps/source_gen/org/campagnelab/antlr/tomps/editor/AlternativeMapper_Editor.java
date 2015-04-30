@@ -67,6 +67,7 @@ public class AlternativeMapper_Editor extends DefaultNodeEditor {
     editorCell.setCellId("ReadOnlyModelAccessor_cj2frz_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.ITALIC);
+    style.set(StyleAttributes.NAVIGATABLE_REFERENCE, 0, "alternative");
     editorCell.getStyle().putAll(style);
     return editorCell;
   }

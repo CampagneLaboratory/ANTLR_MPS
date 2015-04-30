@@ -60,6 +60,9 @@
       </concept>
       <concept id="1165420626554" name="jetbrains.mps.lang.editor.structure.CellMenuPart_Generic_Group_Handler" flags="in" index="1ouSdP" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="1227861515039" name="jetbrains.mps.lang.editor.structure.NavigatableReferenceStyleClassItem" flags="ln" index="3yfXC2">
+        <reference id="1227861587090" name="link" index="3ygfmf" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -395,6 +398,9 @@
         <node concept="Vb9p2" id="6CrG2UA1BPG" role="3F10Kt">
           <property role="Vbekb" value="ITALIC" />
         </node>
+        <node concept="3yfXC2" id="6BpdF0aev_r" role="3F10Kt">
+          <ref role="3ygfmf" to="3elq:6CrG2UA1yeh" />
+        </node>
         <node concept="OXEIz" id="6CrG2UA30Bk" role="P5bDN">
           <node concept="1ou48o" id="6CrG2UA30J5" role="OY2wv">
             <property role="1ezIyd" value="custom" />
@@ -610,6 +616,9 @@
         <node concept="Vb9p2" id="6BpdF0a44pF" role="3F10Kt">
           <property role="Vbekb" value="ITALIC" />
         </node>
+        <node concept="3yfXC2" id="6BpdF0aekL3" role="3F10Kt">
+          <ref role="3ygfmf" to="3elq:6BpdF0a3FC5" />
+        </node>
       </node>
       <node concept="l2Vlx" id="6BpdF0a3SeQ" role="2iSdaV" />
       <node concept="3F0ifn" id="6BpdF0a459F" role="3EZMnx">
@@ -725,6 +734,9 @@
           </node>
         </node>
         <node concept="Vb9p2" id="6BpdF0a7sl2" role="3F10Kt" />
+        <node concept="3yfXC2" id="6BpdF0ae9N1" role="3F10Kt">
+          <ref role="3ygfmf" to="3elq:6BpdF0a3FC3" />
+        </node>
       </node>
       <node concept="3F0ifn" id="6BpdF0a46Vi" role="3EZMnx">
         <property role="3F0ifm" value="&gt;" />

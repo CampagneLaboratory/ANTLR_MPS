@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="5qa4qv8gu3ljhu58z8kb8rxwa4u89q0">
+<dependencies version="2" modelHash="-acy0v7ldi89pn9t3zmb6cs3c5lyhoqf">
   <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="3trgqsx78ksjj4yzjj8uk37m284lcmt" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="2y5m1tbgov02be84gi16uvvxt47q232" />
@@ -49,7 +49,7 @@
   <source id="7142405419534833731" name="ParserRuleBlock" hash="b9ut2cu6l36ie3iekf8h2te11tlhw8f" />
   <source id="7142405419534833734" name="Sequence" hash="9j6tu4r7hjw8wli1wqj68sn0qk8lgpr" />
   <source id="7142405419534834022" name="ParserRuleRef" hash="-7rxfbp6ysys8ua10fcv0ccl53ldppt4" />
-  <source id="7142405419535385999" name="Alternative" hash="n2m2ameu1v35jfdjtp5xwv23awzyq2" />
+  <source id="7142405419535385999" name="Alternative" hash="3xjrhbv7wgrb0kujxgcmzidlzo5nytl" />
   <source id="7142405419535590752" name="LexerToken" hash="bokpl75g12r6zges1g53lpmgalsrfp9" />
   <source id="7142405419535590783" name="StringLiteral" hash="-axv13kn31ucvr8cedx52qflkze2y4cc" />
   <source id="7142405419535607099" name="REGEXP" hash="dg0f4jt1kf6au4kjl19ktb3k5eb5rth" />

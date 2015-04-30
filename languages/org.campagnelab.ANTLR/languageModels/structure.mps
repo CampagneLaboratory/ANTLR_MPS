@@ -159,6 +159,9 @@
     <node concept="PrWs8" id="4UG6ID2Vg6H" role="PzmwI">
       <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
     </node>
+    <node concept="PrWs8" id="6BpdF0adqdc" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6cuUYchfAlw">
     <property role="TrG5h" value="LexerToken" />

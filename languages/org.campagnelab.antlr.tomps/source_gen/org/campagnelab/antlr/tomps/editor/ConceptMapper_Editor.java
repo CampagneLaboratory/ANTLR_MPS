@@ -69,6 +69,7 @@ public class ConceptMapper_Editor extends DefaultNodeEditor {
     editorCell.setCellId("ReadOnlyModelAccessor_mzlmup_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.ITALIC);
+    style.set(StyleAttributes.NAVIGATABLE_REFERENCE, 0, "rule");
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
@@ -122,6 +123,7 @@ public class ConceptMapper_Editor extends DefaultNodeEditor {
     }
     Style style = new StyleImpl();
     style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.PLAIN);
+    style.set(StyleAttributes.NAVIGATABLE_REFERENCE, 0, "concept");
     editorCell.getStyle().putAll(style);
     editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new ConceptMapper_Editor.ConceptMapper_generic_cellMenu_mzlmup_a0d0()}));
     SNode attributeConcept = provider.getRoleAttribute();
