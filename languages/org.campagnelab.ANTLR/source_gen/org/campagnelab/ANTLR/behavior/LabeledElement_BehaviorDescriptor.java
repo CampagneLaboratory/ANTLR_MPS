@@ -12,6 +12,9 @@ public class LabeledElement_BehaviorDescriptor extends ParserRuleBlock_BehaviorD
   public String virtual_getFqName_1213877404258(SNode thisNode) {
     return INamedConcept_Behavior.virtual_getFqName_1213877404258(thisNode);
   }
+  public String virtual_toText_5668935624399900127(SNode thisNode) {
+    return LabeledElement_Behavior.virtual_toText_5668935624399900127(thisNode);
+  }
   @Override
   public String getConceptFqName() {
     return "org.campagnelab.ANTLR.structure.LabeledElement";

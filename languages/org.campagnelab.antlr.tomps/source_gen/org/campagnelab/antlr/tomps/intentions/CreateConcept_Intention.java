@@ -67,7 +67,7 @@ public class CreateConcept_Intention implements IntentionFactory {
     }
     public void execute(final SNode node, final EditorContext editorContext) {
       SNode decl = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, "jetbrains.mps.lang.structure.structure.ConceptDeclaration")));
-      SModel structureModel = LanguageAspect.STRUCTURE.get(ConceptMapper_Behavior.call_getLanguage_7627187573640578145(node));
+      SModel structureModel = LanguageAspect.STRUCTURE.get(ConceptMapper_Behavior.call_language_7627187573640578145(node));
       String ruleName = SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x69d936b00a0eba02L, 0x69d936b00a0eba05L, "rule")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
       String upperCasedName = "" + Character.toUpperCase(ruleName.charAt(0)) + ruleName.subSequence(1, ruleName.length());
       SPropertyOperations.set(decl, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), upperCasedName);

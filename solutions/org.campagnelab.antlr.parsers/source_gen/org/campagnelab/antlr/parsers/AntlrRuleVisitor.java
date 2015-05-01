@@ -144,6 +144,9 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     if (context.DOT() != null) {
       return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88033f2L, "org.campagnelab.ANTLR.structure.Dot")));
     }
+    if (context.terminal() != null) {
+      return visitTerminal(context.terminal());
+    }
     if (context.elementOptions() != null) {
       // TODO 
     }
@@ -321,13 +324,8 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
       return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88033f2L, "org.campagnelab.ANTLR.structure.Dot")));
     }
     if (context.terminal() != null) {
-      if (context.terminal().STRING_LITERAL() != null) {
-        String litText = context.terminal().STRING_LITERAL().getText();
-        return createTrimmedLiteral(litText);
-      }
-      if (context.terminal().TOKEN_REF() != null) {
-        return createLexerRef(context.terminal().getText());
-      }
+      SNode element = (SNode) visitTerminal(context.terminal());
+      return element;
     }
     if (context.LEXER_CHAR_SET() != null) {
       SNode regexp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113ea53bL, "org.campagnelab.ANTLR.structure.REGEXP")));
@@ -336,6 +334,17 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     }
 
     return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e6560L, "org.campagnelab.ANTLR.structure.LexerToken")));
+  }
+  @Override
+  public Object visitTerminal(@NotNull ANTLRv4Parser.TerminalContext context) {
+    if (context.STRING_LITERAL() != null) {
+      String litText = context.STRING_LITERAL().getText();
+      return createTrimmedLiteral(litText);
+    }
+    if (context.TOKEN_REF() != null) {
+      return createLexerRef(context.TOKEN_REF().getText());
+    }
+    return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L, "org.campagnelab.ANTLR.structure.LexerElement")));
   }
   @Override
   public Object visitSetElement(@NotNull ANTLRv4Parser.SetElementContext context) {

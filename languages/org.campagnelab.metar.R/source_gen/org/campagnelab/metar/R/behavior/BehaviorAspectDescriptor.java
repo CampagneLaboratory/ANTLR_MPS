@@ -15,9 +15,11 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new NewConcept_BehaviorDescriptor();
       case 0:
         return new Atom_BehaviorDescriptor();
+      case 2:
+        return new Prog_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.metar.R.structure.Atom", "org.campagnelab.metar.R.structure.NewConcept"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.metar.R.structure.Atom", "org.campagnelab.metar.R.structure.NewConcept", "org.campagnelab.metar.R.structure.Prog"};
 }

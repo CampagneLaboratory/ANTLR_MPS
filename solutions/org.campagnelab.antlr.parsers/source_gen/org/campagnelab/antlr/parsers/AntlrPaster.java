@@ -39,7 +39,7 @@ public class AntlrPaster {
     if (clipboardText == null) {
       return;
     }
-    if (clipboardText.contains("lexer grammar") || clipboardText.contains("parser grammar")) {
+    if (clipboardText.contains("grammar ")) {
       if (LOG_515473768.isInfoEnabled()) {
         LOG_515473768.info("Pasting clipboard text as full grammar");
       }
