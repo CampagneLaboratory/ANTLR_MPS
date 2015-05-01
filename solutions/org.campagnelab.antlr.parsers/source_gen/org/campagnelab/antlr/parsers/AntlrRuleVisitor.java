@@ -234,6 +234,9 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   @Override
   public Object visitGrammarSpec(@NotNull ANTLRv4Parser.GrammarSpecContext context) {
     SNode grammar = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar")));
+    if (LOG.isInfoEnabled()) {
+      LOG.info("comment=" + context.DOC_COMMENT().getText());
+    }
     for (ANTLRv4Parser.PrequelConstructContext prequel : ListSequence.fromList(context.prequelConstruct())) {
       if (prequel.tokensSpec() != null) {
         SLinkOperations.setTarget(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens"), (SNode) visitTokensSpec(prequel.tokensSpec()));
@@ -342,9 +345,6 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     if (currentElement != null && context != null) {
       String question = context.getText();
       for (char c : question.toCharArray()) {
-        if (LOG.isInfoEnabled()) {
-          LOG.info("c" + c);
-        }
         if ('?' == c) {
           SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x797c10c6e517ac38L, 0x797c10c6e517b02cL, "isOptional"), "" + (true));
         }

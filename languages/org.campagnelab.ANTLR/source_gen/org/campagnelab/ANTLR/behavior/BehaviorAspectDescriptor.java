@@ -55,9 +55,15 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new NotSet_BehaviorDescriptor();
       case 18:
         return new Range_BehaviorDescriptor();
+      case 24:
+        return new TokenSpec_BehaviorDescriptor();
+      case 22:
+        return new Token_BehaviorDescriptor();
+      case 23:
+        return new TokenRef_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.ANTLR.structure.Alternative", "org.campagnelab.ANTLR.structure.Alternatives", "org.campagnelab.ANTLR.structure.Dot", "org.campagnelab.ANTLR.structure.Grammar", "org.campagnelab.ANTLR.structure.HasOptionalParams", "org.campagnelab.ANTLR.structure.LexerAlt", "org.campagnelab.ANTLR.structure.LexerAltList", "org.campagnelab.ANTLR.structure.LexerBlock", "org.campagnelab.ANTLR.structure.LexerElement", "org.campagnelab.ANTLR.structure.LexerRule", "org.campagnelab.ANTLR.structure.LexerRuleBlock", "org.campagnelab.ANTLR.structure.LexerRuleRef", "org.campagnelab.ANTLR.structure.LexerRuleRefByName", "org.campagnelab.ANTLR.structure.NotSet", "org.campagnelab.ANTLR.structure.Parentheses", "org.campagnelab.ANTLR.structure.ParserRule", "org.campagnelab.ANTLR.structure.ParserRuleRef", "org.campagnelab.ANTLR.structure.REGEXP", "org.campagnelab.ANTLR.structure.Range", "org.campagnelab.ANTLR.structure.RuleRefByName", "org.campagnelab.ANTLR.structure.Sequence", "org.campagnelab.ANTLR.structure.StringLiteral"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.ANTLR.structure.Alternative", "org.campagnelab.ANTLR.structure.Alternatives", "org.campagnelab.ANTLR.structure.Dot", "org.campagnelab.ANTLR.structure.Grammar", "org.campagnelab.ANTLR.structure.HasOptionalParams", "org.campagnelab.ANTLR.structure.LexerAlt", "org.campagnelab.ANTLR.structure.LexerAltList", "org.campagnelab.ANTLR.structure.LexerBlock", "org.campagnelab.ANTLR.structure.LexerElement", "org.campagnelab.ANTLR.structure.LexerRule", "org.campagnelab.ANTLR.structure.LexerRuleBlock", "org.campagnelab.ANTLR.structure.LexerRuleRef", "org.campagnelab.ANTLR.structure.LexerRuleRefByName", "org.campagnelab.ANTLR.structure.NotSet", "org.campagnelab.ANTLR.structure.Parentheses", "org.campagnelab.ANTLR.structure.ParserRule", "org.campagnelab.ANTLR.structure.ParserRuleRef", "org.campagnelab.ANTLR.structure.REGEXP", "org.campagnelab.ANTLR.structure.Range", "org.campagnelab.ANTLR.structure.RuleRefByName", "org.campagnelab.ANTLR.structure.Sequence", "org.campagnelab.ANTLR.structure.StringLiteral", "org.campagnelab.ANTLR.structure.Token", "org.campagnelab.ANTLR.structure.TokenRef", "org.campagnelab.ANTLR.structure.TokenSpec"};
 }

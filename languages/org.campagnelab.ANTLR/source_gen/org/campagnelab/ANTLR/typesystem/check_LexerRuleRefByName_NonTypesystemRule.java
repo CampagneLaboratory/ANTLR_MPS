@@ -46,6 +46,28 @@ public class check_LexerRuleRefByName_NonTypesystemRule extends AbstractNonTypes
         }
       }
     }
+    SNode token = ListSequence.fromList(SModelOperations.rootsIncludingImported(SNodeOperations.getModel(lexerRuleRefByName), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"))).translate(new ITranslator2<SNode, SNode>() {
+      public Iterable<SNode> translate(SNode it) {
+        return SNodeOperations.getNodeDescendants(it, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f2eb3L, "org.campagnelab.ANTLR.structure.Token"), false, new SAbstractConcept[]{});
+      }
+    }).findFirst(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return eq_w9wi0r_a0a0a0a0a0a2a1(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), SPropertyOperations.getString(lexerRuleRefByName, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba17206d3L, 0x4e506a1ba1720e58L, "name")));
+      }
+    });
+    if (token != null) {
+      {
+        MessageTarget errorTarget = new NodeMessageTarget();
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(lexerRuleRefByName, "RefByName can be replaced with Token reference", "r:605281ab-5c41-4f2b-8300-326aa196a028(org.campagnelab.ANTLR.typesystem)", "558881339884336387", null, errorTarget);
+        {
+          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.campagnelab.ANTLR.typesystem.ReplaceLexerRuleRefByNameWithToken_QuickFix", true);
+          intentionProvider.putArgument("refByName", lexerRuleRefByName);
+          intentionProvider.putArgument("token", token);
+          _reporter_2309309498.addIntentionProvider(intentionProvider);
+        }
+      }
+    }
+
   }
   public String getApplicableConceptFQName() {
     return "org.campagnelab.ANTLR.structure.LexerRuleRefByName";
@@ -60,6 +82,9 @@ public class check_LexerRuleRefByName_NonTypesystemRule extends AbstractNonTypes
     return false;
   }
   private static boolean eq_w9wi0r_a0a0a0a0a0a0a1(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
+  }
+  private static boolean eq_w9wi0r_a0a0a0a0a0a2a1(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }

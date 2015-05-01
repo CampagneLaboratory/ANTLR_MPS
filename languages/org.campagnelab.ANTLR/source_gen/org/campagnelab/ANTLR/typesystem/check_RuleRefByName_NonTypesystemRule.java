@@ -46,6 +46,28 @@ public class check_RuleRefByName_NonTypesystemRule extends AbstractNonTypesystem
           _reporter_2309309498.addIntentionProvider(intentionProvider);
         }
       }
+
+    }
+    SNode token = ListSequence.fromList(SModelOperations.rootsIncludingImported(SNodeOperations.getModel(ruleRefByName), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"))).translate(new ITranslator2<SNode, SNode>() {
+      public Iterable<SNode> translate(SNode it) {
+        return SNodeOperations.getNodeDescendants(it, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f2eb3L, "org.campagnelab.ANTLR.structure.Token"), false, new SAbstractConcept[]{});
+      }
+    }).findFirst(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return eq_z47h4a_a0a0a0a0a0a3a1(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), SPropertyOperations.getString(ruleRefByName, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x1ebae6380de70d78L, 0x1ebae6380de70d79L, "name")));
+      }
+    });
+    if (token != null) {
+      {
+        MessageTarget errorTarget = new NodeMessageTarget();
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(ruleRefByName, "RefByName can be replaced with Token reference", "r:605281ab-5c41-4f2b-8300-326aa196a028(org.campagnelab.ANTLR.typesystem)", "558881339884317060", null, errorTarget);
+        {
+          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.campagnelab.ANTLR.typesystem.ReplaceParserRuleRefByNameWithToken_QuickFix", true);
+          intentionProvider.putArgument("refByName", ruleRefByName);
+          intentionProvider.putArgument("token", token);
+          _reporter_2309309498.addIntentionProvider(intentionProvider);
+        }
+      }
     }
   }
   public String getApplicableConceptFQName() {
@@ -61,6 +83,9 @@ public class check_RuleRefByName_NonTypesystemRule extends AbstractNonTypesystem
     return false;
   }
   private static boolean eq_z47h4a_a0a0a0a0a0a0a1(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
+  }
+  private static boolean eq_z47h4a_a0a0a0a0a0a3a1(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }

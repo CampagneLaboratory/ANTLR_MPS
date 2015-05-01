@@ -68,6 +68,9 @@
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.RuleRefByName_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.Sequence_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.StringLiteral_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.TokenRef_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.TokenSpec_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.Token_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.ANTLR.behavior.Dot_Behavior" file="Dot_Behavior.java">
@@ -471,6 +474,28 @@
   <dependency className="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" file="ToTextOutput_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.behavior.TokenRef_BehaviorDescriptor" file="TokenRef_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.ParserRuleBlock_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.behavior.TokenSpec_BehaviorDescriptor" file="TokenSpec_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.behavior.Token_BehaviorDescriptor" file="Token_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
 </dependenciesRoot>
 

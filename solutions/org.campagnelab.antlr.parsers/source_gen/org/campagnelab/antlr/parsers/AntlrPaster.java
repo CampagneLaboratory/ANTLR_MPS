@@ -19,15 +19,15 @@ import org.antlr.v4.runtime.ANTLRInputStream;
 import java.io.StringReader;
 import org.antlr.ANTLRv4Parser;
 import org.antlr.v4.runtime.CommonTokenStream;
-import jetbrains.mps.util.MacrosFactory;
-import javax.print.PrintException;
-import org.apache.log4j.Level;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.List;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.apache.log4j.Level;
+import jetbrains.mps.util.MacrosFactory;
+import javax.print.PrintException;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
 import jetbrains.mps.ide.datatransfer.SModelDataFlavor;
 
@@ -36,18 +36,28 @@ public class AntlrPaster {
   public AntlrPaster() {
   }
   public void pasteRules(SNode anchor, IOperationContext operationContext, Project project) {
-    String antlrRuleText = getStringFromClipboard();
-    if (antlrRuleText == null) {
+    String clipboardText = getStringFromClipboard();
+    if (clipboardText == null) {
       return;
     }
-    pasteRulesAsNodes(anchor, anchor.getModel(), antlrRuleText, operationContext, project);
+    if (clipboardText.contains("lexer grammar") || clipboardText.contains("parser grammar")) {
+      if (LOG_515473768.isInfoEnabled()) {
+        LOG_515473768.info("Pasting clipboard text as full grammar");
+      }
+      pasteGrammarAsNodes(anchor, anchor.getModel(), clipboardText, operationContext, project);
+    } else {
+      if (LOG_515473768.isInfoEnabled()) {
+        LOG_515473768.info("Pasting clipboard text as rules");
+      }
+      pasteRulesAsNodes(anchor, anchor.getModel(), clipboardText, operationContext, project);
+    }
   }
   public void pasteJavaAsClass(SModel model, IOperationContext operationContext, Project project) {
     String javaCode = getStringFromClipboard();
     if (javaCode == null) {
       return;
     }
-    pasteRulesAsNodes(null, model, javaCode, operationContext, project);
+    pasteGrammarAsNodes(null, model, javaCode, operationContext, project);
   }
   public String getStringFromClipboard() {
     Transferable contents = null;
@@ -74,15 +84,50 @@ public class AntlrPaster {
     }
     return null;
   }
-  public void pasteRulesAsNodes(SNode anchor, SModel model, final String antlrRulesAsText, IOperationContext operationContext, Project project) {
+  public void pasteGrammarAsNodes(SNode anchor, SModel model, final String antlrRulesAsText, IOperationContext operationContext, Project project) {
     SModule module = model.getModule();
     try {
       ANTLRv4Lexer lexer = new ANTLRv4Lexer(new ANTLRInputStream(new StringReader(antlrRulesAsText)));
       ANTLRv4Parser parser = new ANTLRv4Parser(new CommonTokenStream(lexer));
       ANTLRv4Parser.GrammarSpecContext tree = parser.grammarSpec();
       // use the following to print types of nodes on the parse tree: 
+      saveTreeAsPostScript(tree, parser);
+
+      // initiate walk of tree with listener 
+      SNode grammar = SNodeOperations.getNodeAncestor(anchor, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"), true, false);
       try {
-        ((ANTLRv4Parser.GrammarSpecContext) tree).save(parser, MacrosFactory.getGlobal().expandPath("${ANTLR_HOME}/tree.ps"));
+        AntlrRuleVisitor visitor = new AntlrRuleVisitor();
+        SNode parsedGrammar = (SNode) visitor.visitGrammarSpec(tree);
+        List<SNode> rules = (List<SNode>) SLinkOperations.getChildren(parsedGrammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"));
+        ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(rules));
+        if (SLinkOperations.getTarget(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens")) == null) {
+          SLinkOperations.setTarget(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens"), SLinkOperations.getTarget(parsedGrammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens")));
+        } else {
+          ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens")), MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f1505L, 0x7c18b9e171f2eb1L, "tokens"))).addSequence(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(parsedGrammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens")), MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f1505L, 0x7c18b9e171f2eb1L, "tokens"))));
+        }
+        SPropertyOperations.set(grammar, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(parsedGrammar, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+      } catch (Exception e) {
+        if (LOG_515473768.isEnabledFor(Level.ERROR)) {
+          LOG_515473768.error("Exception when visiting parse tree.", e);
+        }
+      }
+
+    } catch (IOException ioException) {
+      if (LOG_515473768.isEnabledFor(Level.ERROR)) {
+        LOG_515473768.error("Unable to paste ", ioException);
+      }
+    }
+  }
+
+  public void pasteRulesAsNodes(SNode anchor, SModel model, final String antlrRulesAsText, IOperationContext operationContext, Project project) {
+    SModule module = model.getModule();
+    try {
+      ANTLRv4Lexer lexer = new ANTLRv4Lexer(new ANTLRInputStream(new StringReader(antlrRulesAsText)));
+      ANTLRv4Parser parser = new ANTLRv4Parser(new CommonTokenStream(lexer));
+      ANTLRv4Parser.RulesContext tree = parser.rules();
+      // use the following to print types of nodes on the parse tree: 
+      try {
+        ((ANTLRv4Parser.RulesContext) tree).save(parser, MacrosFactory.getGlobal().expandPath("${ANTLR_HOME}/tree.ps"));
 
       } catch (PrintException e) {
         if (LOG_515473768.isEnabledFor(Level.ERROR)) {
@@ -92,35 +137,34 @@ public class AntlrPaster {
 
       // initiate walk of tree with listener 
       SNode grammar = SNodeOperations.getNodeAncestor(anchor, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"), true, false);
-      boolean useVisitor = true;
-      if (useVisitor) {
-        try {
-          AntlrRuleVisitor visitor = new AntlrRuleVisitor();
-          SNode parsedGrammar = (SNode) visitor.visitGrammarSpec(tree);
-          List<SNode> rules = (List<SNode>) SLinkOperations.getChildren(parsedGrammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"));
-          ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(rules));
-          if (SLinkOperations.getTarget(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens")) == null) {
-            SLinkOperations.setTarget(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens"), SLinkOperations.getTarget(parsedGrammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens")));
-          } else {
-            ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens")), MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f1505L, 0x7c18b9e171f2eb1L, "tokens"))).addSequence(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(parsedGrammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x7c18b9e171fc275L, "tokens")), MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f1505L, 0x7c18b9e171f2eb1L, "tokens"))));
-          }
-          SPropertyOperations.set(grammar, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), SPropertyOperations.getString(parsedGrammar, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-        } catch (Exception e) {
-          if (LOG_515473768.isEnabledFor(Level.ERROR)) {
-            LOG_515473768.error("Exception when visiting parse tree.", e);
-          }
+      try {
+        AntlrRuleVisitor visitor = new AntlrRuleVisitor();
+        List<SNode> rules = (List<SNode>) visitor.visitRules(tree);
+        ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(rules));
+      } catch (Exception e) {
+        if (LOG_515473768.isEnabledFor(Level.ERROR)) {
+          LOG_515473768.error("Exception when visiting Rules parse tree.", e);
         }
-      } else {
-        ParseTreeWalker walker = new ParseTreeWalker();
-        // create standard walker 
-        ANTLRv4ParserListenerImpl extractor = new ANTLRv4ParserListenerImpl(parser);
-        walker.walk(extractor, tree);
-        ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(extractor.getRules()));
       }
+      ParseTreeWalker walker = new ParseTreeWalker();
+      // create standard walker 
+      ANTLRv4ParserListenerImpl extractor = new ANTLRv4ParserListenerImpl(parser);
+      walker.walk(extractor, tree);
+      ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(extractor.getRules()));
 
     } catch (IOException ioException) {
       if (LOG_515473768.isEnabledFor(Level.ERROR)) {
         LOG_515473768.error("Unable to paste ", ioException);
+      }
+    }
+  }
+  private void saveTreeAsPostScript(ANTLRv4Parser.GrammarSpecContext tree, ANTLRv4Parser parser) throws IOException {
+    try {
+      ((ANTLRv4Parser.GrammarSpecContext) tree).save(parser, MacrosFactory.getGlobal().expandPath("${ANTLR_HOME}/tree.ps"));
+
+    } catch (PrintException e) {
+      if (LOG_515473768.isEnabledFor(Level.ERROR)) {
+        LOG_515473768.error("PrintException: ", e);
       }
     }
   }
