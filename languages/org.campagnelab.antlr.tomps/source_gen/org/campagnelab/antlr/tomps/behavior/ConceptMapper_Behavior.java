@@ -7,6 +7,14 @@ import jetbrains.mps.smodel.Language;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.jetbrains.mps.openapi.model.SModel;
+import jetbrains.mps.smodel.LanguageAspect;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptMapper_Behavior {
   public static void init(SNode thisNode) {
@@ -22,5 +30,49 @@ public class ConceptMapper_Behavior {
   }
   public static SNode call_grammar_558881339893016520(SNode thisNode) {
     return SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(thisNode, MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, "org.campagnelab.antlr.tomps.structure.ConvertToMPS"), false, false), MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, 0x6a1bb02ea6061be9L, "grammar"));
+  }
+  public static SNode call_looupOrCreate_558881339902604483(SNode thisNode, String name) {
+    final String upperCasedName = "" + Character.toUpperCase(name.charAt(0)) + name.subSequence(1, name.length());
+    SModel structureModel = LanguageAspect.STRUCTURE.get(ConceptMapper_Behavior.call_language_7627187573640578145(thisNode));
+    SNode first = ListSequence.fromList(SModelOperations.roots(structureModel, MetaAdapterFactory.getConcept(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, "jetbrains.mps.lang.structure.structure.ConceptDeclaration"))).findFirst(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return eq_z4rl0_a0a0a0a0a0a2a5(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), upperCasedName);
+      }
+    });
+    if (first != null) {
+      return first;
+    } else {
+      return ConceptMapper_Behavior.call_createConcept_558881339898873634(thisNode, name);
+    }
+  }
+  public static SNode call_createConcept_558881339898873634(SNode thisNode, String name) {
+    final String upperCasedName = "" + Character.toUpperCase(name.charAt(0)) + name.subSequence(1, name.length());
+    SModel structureModel = LanguageAspect.STRUCTURE.get(ConceptMapper_Behavior.call_language_7627187573640578145(thisNode));
+    // create the concept if one with the same name does not already exist: 
+    if (ListSequence.fromList(SModelOperations.roots(structureModel, MetaAdapterFactory.getConcept(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, "jetbrains.mps.lang.structure.structure.ConceptDeclaration"))).all(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return neq_z4rl0_a0a0a0a0a0d0g(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), upperCasedName);
+      }
+    })) {
+      SNode decl = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, "jetbrains.mps.lang.structure.structure.ConceptDeclaration")));
+      SModelOperations.addRootNode(structureModel, decl);
+      SPropertyOperations.set(decl, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), upperCasedName);
+      return decl;
+    } else {
+      return null;
+    }
+  }
+  public static Iterable<SNode> call_altMappers_558881339902034843(final SNode thisNode) {
+    return ListSequence.fromList(SNodeOperations.getNodeDescendants(ConceptMapper_Behavior.call_converter_558881339892985529(thisNode), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, "org.campagnelab.antlr.tomps.structure.AlternativeMapper"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return AlternativeMapper_Behavior.call_rule_558881339899314132(it) == SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x69d936b00a0eba02L, 0x69d936b00a0eba05L, "rule"));
+      }
+    });
+  }
+  private static boolean eq_z4rl0_a0a0a0a0a0a2a5(Object a, Object b) {
+    return (a != null ? a.equals(b) : a == b);
+  }
+  private static boolean neq_z4rl0_a0a0a0a0a0d0g(Object a, Object b) {
+    return !(((a != null ? a.equals(b) : a == b)));
   }
 }

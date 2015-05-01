@@ -76,6 +76,12 @@
   <node concept="1TIwiD" id="6CrG2UA1ycF">
     <property role="TrG5h" value="AlternativeMapper" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="v1yTSowJw7" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="map" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="v1yTSowJws" resolve="Mapper" />
+    </node>
     <node concept="1TJgyi" id="v1yTSnZZ1I" role="1TKVEl">
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -95,6 +101,9 @@
       <property role="20kJfa" value="returns" />
       <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
     </node>
+    <node concept="PrWs8" id="v1yTSoxNjZ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6BpdF0a3FC2">
     <property role="TrG5h" value="ConceptMapper" />
@@ -109,6 +118,22 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="concept" />
       <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="v1yTSowJws">
+    <property role="TrG5h" value="Mapper" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="v1yTSowJwt" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="rule" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ubjp:6cuUYchcH_A" resolve="ParserRuleRef" />
+    </node>
+    <node concept="1TJgyj" id="v1yTSowJwv" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="to" />
+      <ref role="20lvS9" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
     </node>
   </node>
 </model>

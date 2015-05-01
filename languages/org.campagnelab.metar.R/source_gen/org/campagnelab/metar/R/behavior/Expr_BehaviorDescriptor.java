@@ -4,11 +4,11 @@ package org.campagnelab.metar.R.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 
-public class NewConcept_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
-  public NewConcept_BehaviorDescriptor() {
+public class Expr_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
+  public Expr_BehaviorDescriptor() {
   }
   @Override
   public String getConceptFqName() {
-    return "org.campagnelab.metar.R.structure.NewConcept";
+    return "org.campagnelab.metar.R.structure.Expr";
   }
 }

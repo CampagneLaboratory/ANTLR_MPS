@@ -4,11 +4,13 @@ package org.campagnelab.antlr.tomps.generator.template.main;
 
 import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.template.PropertyMacroContext;
+import org.campagnelab.antlr.tomps.behavior.AlternativeMapper_Behavior;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.generator.template.ReferenceMacroContext;
 import org.campagnelab.antlr.tomps.behavior.ConceptMapper_Behavior;
+import jetbrains.mps.generator.template.IfMacroContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -17,6 +19,9 @@ import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 @Generated
 public class QueriesGenerated {
   public final boolean NEEDS_OPCONTEXT = false;
+  public static Object propertyMacro_GetPropertyValue_558881339902552449(final PropertyMacroContext _context) {
+    return AlternativeMapper_Behavior.call_subConceptPrefix_558881339901663656(_context.getNode());
+  }
   public static Object propertyMacro_GetPropertyValue_558881339892992162(final PropertyMacroContext _context) {
 
     return "visit" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x69d936b00a0eba02L, 0x69d936b00a0eba05L, "rule")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + "Context";
@@ -35,6 +40,21 @@ public class QueriesGenerated {
   }
   public static Object referenceMacro_GetReferent_558881339893021123(final ReferenceMacroContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x69d936b00a0eba02L, 0x69d936b00a0eba03L, "concept"));
+  }
+  public static Object referenceMacro_GetReferent_558881339902213637(final ReferenceMacroContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17e92154L, "returns"));
+  }
+  public static Object referenceMacro_GetReferent_558881339902124673(final ReferenceMacroContext _context) {
+    return "subConceptPrefix";
+  }
+  public static Object referenceMacro_GetReferent_558881339902300943(final ReferenceMacroContext _context) {
+    return "subConceptPrefix";
+  }
+  public static boolean ifMacro_Condition_558881339902083120(final IfMacroContext _context) {
+    return (SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17e92154L, "returns")) != null);
+  }
+  public static Iterable<SNode> sourceNodesQuery_558881339902026674(final SourceSubstituteMacroNodesContext _context) {
+    return ConceptMapper_Behavior.call_altMappers_558881339902034843(_context.getNode());
   }
   public static Iterable<SNode> sourceNodesQuery_558881339892892222(final SourceSubstituteMacroNodesContext _context) {
     return ListSequence.fromList(SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, 0x69d936b00a0eba08L, "conceptMapper"))).where(new IWhereFilter<SNode>() {

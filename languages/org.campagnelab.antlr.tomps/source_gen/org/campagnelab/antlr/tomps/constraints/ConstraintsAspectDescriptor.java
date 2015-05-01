@@ -18,6 +18,8 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
         return new ConceptMapper_Constraints();
       case 0:
         return new AlternativeMapper_Constraints();
+      case 3:
+        return new Mapper_Constraints();
       default:
         return new BaseConstraintsDescriptor(fqName);
     }
@@ -33,7 +35,10 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
     if (id == 0x6a1bb02ea606232bL) {
       return new AlternativeMapper_Constraints();
     }
+    if (id == 0x7c18b9e1882f81cL) {
+      return new Mapper_Constraints();
+    }
     return new BaseConstraintsDescriptor(conceptId);
   }
-  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.AlternativeMapper", "org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS"};
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.AlternativeMapper", "org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS", "org.campagnelab.antlr.tomps.structure.Mapper"};
 }

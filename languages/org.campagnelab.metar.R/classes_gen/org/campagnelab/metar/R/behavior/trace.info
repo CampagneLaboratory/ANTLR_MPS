@@ -5,10 +5,13 @@
       <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Atom_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,26,0" name="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,28,0" name="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
     </file>
-    <file name="NewConcept_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.NewConcept_BehaviorDescriptor" />
+    <file name="Expr_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
+    </file>
+    <file name="FunctionExpr_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.FunctionExpr_BehaviorDescriptor" />
     </file>
     <file name="Prog_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Prog_BehaviorDescriptor" />

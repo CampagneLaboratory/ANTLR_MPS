@@ -12,10 +12,16 @@
   </imports>
   <registry>
     <language id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps">
+      <concept id="558881339902982172" name="org.campagnelab.antlr.tomps.structure.Mapper" flags="ng" index="vgRe2">
+        <reference id="558881339902982175" name="to" index="vgRe1" />
+        <reference id="558881339902982173" name="rule" index="vgRe3" />
+      </concept>
       <concept id="7645898506791953195" name="org.campagnelab.antlr.tomps.structure.AlternativeMapper" flags="ng" index="3c7pc5">
         <property id="558881339894394992" name="fullText" index="gfBJI" />
         <property id="558881339894394990" name="id" index="gfBJK" />
+        <reference id="558881339892900180" name="returns" index="gaaFa" />
         <reference id="7645898506791953297" name="alternative" index="3c7peZ" />
+        <child id="558881339902982151" name="map" index="vgRep" />
       </concept>
       <concept id="7645898506791951234" name="org.campagnelab.antlr.tomps.structure.ConvertToMPS" flags="ng" index="3c7qIG">
         <property id="7627187573639936517" name="destinationLanguageName" index="1zNsMP" />
@@ -29,6 +35,10 @@
       </concept>
     </language>
     <language id="d6782141-eafa-4cf7-a85d-1229abdb1152" name="org.campagnelab.ANTLR">
+      <concept id="558881339889629829" name="org.campagnelab.ANTLR.structure.LabeledElement" flags="ng" index="gtF4r">
+        <property id="558881339889843987" name="operator" index="guZid" />
+        <child id="558881339889665839" name="element" index="gt$ML" />
+      </concept>
       <concept id="558881339879658757" name="org.campagnelab.ANTLR.structure.TokenSpec" flags="ng" index="gRDUr">
         <child id="558881339879665329" name="tokens" index="gREkJ" />
       </concept>
@@ -1664,7 +1674,6 @@
       <ref role="1zPSMP" node="v1yTSogb6H" resolve="prog" />
     </node>
     <node concept="1zPSMM" id="6BpdF0a42k6" role="1zPSMS">
-      <ref role="1zPSMN" to="6q58:6BpdF0abHs1" resolve="NewConcept" />
       <ref role="1zPSMP" node="v1yTSnTzBw" resolve="parserRuleSpec" />
     </node>
     <node concept="1zPSMM" id="6BpdF0a4mW1" role="1zPSMS">
@@ -1676,12 +1685,17 @@
     </node>
     <node concept="1zPSMM" id="3_THA0UifJN" role="1zPSMS">
       <ref role="1zPSMP" node="v1yTSogbf2" resolve="expr" />
+      <ref role="1zPSMN" to="6q58:v1yTSopGJE" resolve="Expr" />
     </node>
     <node concept="1zPSMM" id="3_THA0UifKV" role="1zPSMS">
       <ref role="1zPSMP" node="v1yTSogboV" resolve="form" />
     </node>
     <node concept="1zPSMM" id="3_THA0UifLG" role="1zPSMS">
       <ref role="1zPSMP" node="v1yTSnBW$h" resolve="ID" />
+    </node>
+    <node concept="1zPSMM" id="v1yTSowIQf" role="1zPSMS">
+      <ref role="1zPSMP" node="v1yTSogbog" resolve="formlist" />
+      <ref role="1zPSMN" to="6q58:v1yTSowIQo" resolve="Formlist" />
     </node>
     <node concept="3c7pc5" id="v1yTSofi0M" role="3c7peX">
       <property role="gfBJI" value="&#9;&#9;ID&#10;" />
@@ -1697,6 +1711,348 @@
       <property role="gfBJI" value="&#9;|&#9;'...'&#10;" />
       <property role="gfBJK" value="form:..." />
       <ref role="3c7peZ" node="v1yTSogbpe" resolve="form:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrs2" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;(expr '[[' sublist ']' ']')&#10;" />
+      <property role="gfBJK" value="expr:expr[[sublist]]" />
+      <ref role="3c7peZ" node="v1yTSogbiV" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrs3" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr '[' sublist ']')&#10;" />
+      <property role="gfBJK" value="expr:expr[sublist]" />
+      <ref role="3c7peZ" node="v1yTSogbj2" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrs4" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr ('::'&#10;':::') expr)&#10;" />
+      <property role="gfBJK" value="expr:expr:::::expr" />
+      <ref role="3c7peZ" node="v1yTSogbj8" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrs5" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;'::'&#10;" />
+      <property role="gfBJK" value="expr:::" />
+      <ref role="3c7peZ" node="v1yTSogbje" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrs6" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;':::'&#10;" />
+      <property role="gfBJK" value="expr::::" />
+      <ref role="3c7peZ" node="v1yTSogbjg" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrs7" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr ('$'&#10;'@') expr)&#10;" />
+      <property role="gfBJK" value="expr:expr$@expr" />
+      <ref role="3c7peZ" node="v1yTSogbjj" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrs8" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;'$'&#10;" />
+      <property role="gfBJK" value="expr:$" />
+      <ref role="3c7peZ" node="v1yTSogbjp" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrs9" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'@'&#10;" />
+      <property role="gfBJK" value="expr:@" />
+      <ref role="3c7peZ" node="v1yTSogbjr" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsa" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr '^' expr)&#10;" />
+      <property role="gfBJK" value="expr:expr^expr" />
+      <ref role="3c7peZ" node="v1yTSogbju" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsb" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(('-'&#10;'+') expr)&#10;" />
+      <property role="gfBJK" value="expr:-+expr" />
+      <ref role="3c7peZ" node="v1yTSogbjz" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsc" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;'-'&#10;" />
+      <property role="gfBJK" value="expr:-" />
+      <ref role="3c7peZ" node="v1yTSogbjC" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsd" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'+'&#10;" />
+      <property role="gfBJK" value="expr:+" />
+      <ref role="3c7peZ" node="v1yTSogbjE" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrse" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr ':' expr)&#10;" />
+      <property role="gfBJK" value="expr:expr:expr" />
+      <ref role="3c7peZ" node="v1yTSogbjH" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsf" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr USER_OP expr)&#10;" />
+      <property role="gfBJK" value="expr:exprUSER_OPexpr" />
+      <ref role="3c7peZ" node="v1yTSogbjM" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsg" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr ('*'&#10;'/') expr)&#10;" />
+      <property role="gfBJK" value="expr:expr*/expr" />
+      <ref role="3c7peZ" node="v1yTSogbjR" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsh" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;'*'&#10;" />
+      <property role="gfBJK" value="expr:*" />
+      <ref role="3c7peZ" node="v1yTSogbjX" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsi" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'/'&#10;" />
+      <property role="gfBJK" value="expr:/" />
+      <ref role="3c7peZ" node="v1yTSogbjZ" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsj" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr ('+'&#10;'-') expr)&#10;" />
+      <property role="gfBJK" value="expr:expr+-expr" />
+      <ref role="3c7peZ" node="v1yTSogbk2" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsk" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;'+'&#10;" />
+      <property role="gfBJK" value="expr:+" />
+      <ref role="3c7peZ" node="v1yTSogbk8" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsl" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'-'&#10;" />
+      <property role="gfBJK" value="expr:-" />
+      <ref role="3c7peZ" node="v1yTSogbka" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsm" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr ('&gt;'&#10;'&gt;='&#10;'&lt;'&#10;'&lt;='&#10;'=='&#10;'!=') expr)&#10;" />
+      <property role="gfBJK" value="expr:expr&gt;&gt;=&lt;&lt;===!=expr" />
+      <ref role="3c7peZ" node="v1yTSogbkd" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsn" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;'&gt;'&#10;" />
+      <property role="gfBJK" value="expr:&gt;" />
+      <ref role="3c7peZ" node="v1yTSogbkj" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrso" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'&gt;='&#10;" />
+      <property role="gfBJK" value="expr:&gt;=" />
+      <ref role="3c7peZ" node="v1yTSogbkl" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsp" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'&lt;'&#10;" />
+      <property role="gfBJK" value="expr:&lt;" />
+      <ref role="3c7peZ" node="v1yTSogbkn" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsq" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'&lt;='&#10;" />
+      <property role="gfBJK" value="expr:&lt;=" />
+      <ref role="3c7peZ" node="v1yTSogbkp" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsr" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'=='&#10;" />
+      <property role="gfBJK" value="expr:==" />
+      <ref role="3c7peZ" node="v1yTSogbkr" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrss" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'!='&#10;" />
+      <property role="gfBJK" value="expr:!=" />
+      <ref role="3c7peZ" node="v1yTSogbkt" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrst" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;('!' expr)&#10;" />
+      <property role="gfBJK" value="expr:!expr" />
+      <ref role="3c7peZ" node="v1yTSogbkw" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsu" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr ('&amp;'&#10;'&amp;&amp;') expr)&#10;" />
+      <property role="gfBJK" value="expr:expr&amp;&amp;&amp;expr" />
+      <ref role="3c7peZ" node="v1yTSogbk$" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsv" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;'&amp;'&#10;" />
+      <property role="gfBJK" value="expr:&amp;" />
+      <ref role="3c7peZ" node="v1yTSogbkE" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsw" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'&amp;&amp;'&#10;" />
+      <property role="gfBJK" value="expr:&amp;&amp;" />
+      <ref role="3c7peZ" node="v1yTSogbkG" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsx" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr ('|'&#10;'||') expr)&#10;" />
+      <property role="gfBJK" value="expr:expr|||expr" />
+      <ref role="3c7peZ" node="v1yTSogbkJ" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsy" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;'|'&#10;" />
+      <property role="gfBJK" value="expr:|" />
+      <ref role="3c7peZ" node="v1yTSogbkP" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsz" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'||'&#10;" />
+      <property role="gfBJK" value="expr:||" />
+      <ref role="3c7peZ" node="v1yTSogbkR" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrs$" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;('~' expr)&#10;" />
+      <property role="gfBJK" value="expr:~expr" />
+      <ref role="3c7peZ" node="v1yTSogbkU" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrs_" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr '~' expr)&#10;" />
+      <property role="gfBJK" value="expr:expr~expr" />
+      <ref role="3c7peZ" node="v1yTSogbkY" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsA" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr ('&lt;-'&#10;'&lt;&lt;-'&#10;'='&#10;'-&gt;'&#10;'-&gt;&gt;'&#10;':=') expr)&#10;" />
+      <property role="gfBJK" value="expr:expr&lt;-&lt;&lt;-=-&gt;-&gt;&gt;:=expr" />
+      <ref role="3c7peZ" node="v1yTSogbl3" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsB" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;'&lt;-'&#10;" />
+      <property role="gfBJK" value="expr:&lt;-" />
+      <ref role="3c7peZ" node="v1yTSogbl9" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsC" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'&lt;&lt;-'&#10;" />
+      <property role="gfBJK" value="expr:&lt;&lt;-" />
+      <ref role="3c7peZ" node="v1yTSogblb" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsD" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'='&#10;" />
+      <property role="gfBJK" value="expr:=" />
+      <ref role="3c7peZ" node="v1yTSogbld" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsE" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'-&gt;'&#10;" />
+      <property role="gfBJK" value="expr:-&gt;" />
+      <ref role="3c7peZ" node="v1yTSogblf" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsF" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'-&gt;&gt;'&#10;" />
+      <property role="gfBJK" value="expr:-&gt;&gt;" />
+      <ref role="3c7peZ" node="v1yTSogblh" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsG" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;':='&#10;" />
+      <property role="gfBJK" value="expr::=" />
+      <ref role="3c7peZ" node="v1yTSogblj" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsH" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;('function' '(' formlist ')' expr)&#10;" />
+      <property role="gfBJK" value="expr:function(formlist)expr" />
+      <ref role="3c7peZ" node="v1yTSogblm" resolve="expr:" />
+      <ref role="gaaFa" to="6q58:v1yTSos36g" resolve="FunctionExpr" />
+      <node concept="vgRe2" id="v1yTSox$EF" role="vgRep">
+        <ref role="vgRe3" node="v1yTSogqBs" />
+        <ref role="vgRe1" to="6q58:v1yTSowJwy" />
+      </node>
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsI" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(expr '(' sublist ')')&#10;" />
+      <property role="gfBJK" value="expr:expr(sublist)" />
+      <ref role="3c7peZ" node="v1yTSogblt" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsJ" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;('{' exprlist '}')&#10;" />
+      <property role="gfBJK" value="expr:{exprlist}" />
+      <ref role="3c7peZ" node="v1yTSogblz" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsK" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;('if' '(' expr ')' expr)&#10;" />
+      <property role="gfBJK" value="expr:if(expr)expr" />
+      <ref role="3c7peZ" node="v1yTSogblC" resolve="expr:" />
+      <ref role="gaaFa" to="6q58:v1yTSoviEO" resolve="IfExpr" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsL" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;('if' '(' expr ')' expr 'else' expr)&#10;" />
+      <property role="gfBJK" value="expr:if(expr)exprelseexpr" />
+      <ref role="3c7peZ" node="v1yTSogblJ" resolve="expr:" />
+      <ref role="gaaFa" to="6q58:v1yTSoviEO" resolve="IfExpr" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsM" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;('for' '(' ID 'in' expr ')' expr)&#10;" />
+      <property role="gfBJK" value="expr:for(IDinexpr)expr" />
+      <ref role="3c7peZ" node="v1yTSogblS" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsN" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;('while' '(' expr ')' expr)&#10;" />
+      <property role="gfBJK" value="expr:while(expr)expr" />
+      <ref role="3c7peZ" node="v1yTSogbm1" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsO" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;('repeat' expr)&#10;" />
+      <property role="gfBJK" value="expr:repeatexpr" />
+      <ref role="3c7peZ" node="v1yTSogbm8" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsP" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;('?' expr)&#10;" />
+      <property role="gfBJK" value="expr:?expr" />
+      <ref role="3c7peZ" node="v1yTSogbmc" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsQ" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'next'&#10;" />
+      <property role="gfBJK" value="expr:next" />
+      <ref role="3c7peZ" node="v1yTSogbmg" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsR" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'break'&#10;" />
+      <property role="gfBJK" value="expr:break" />
+      <ref role="3c7peZ" node="v1yTSogbmi" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsS" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;('(' expr ')')&#10;" />
+      <property role="gfBJK" value="expr:(expr)" />
+      <ref role="3c7peZ" node="v1yTSogbmk" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsT" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;ID&#10;" />
+      <property role="gfBJK" value="expr:ID" />
+      <ref role="3c7peZ" node="v1yTSogbmp" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsU" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;STRING&#10;" />
+      <property role="gfBJK" value="expr:STRING" />
+      <ref role="3c7peZ" node="v1yTSogbmr" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsV" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;HEX&#10;" />
+      <property role="gfBJK" value="expr:HEX" />
+      <ref role="3c7peZ" node="v1yTSogbmt" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsW" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;INT&#10;" />
+      <property role="gfBJK" value="expr:INT" />
+      <ref role="3c7peZ" node="v1yTSogbmv" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsX" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;FLOAT&#10;" />
+      <property role="gfBJK" value="expr:FLOAT" />
+      <ref role="3c7peZ" node="v1yTSogbmx" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsY" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;COMPLEX&#10;" />
+      <property role="gfBJK" value="expr:COMPLEX" />
+      <ref role="3c7peZ" node="v1yTSogbmz" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrsZ" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'NULL'&#10;" />
+      <property role="gfBJK" value="expr:NULL" />
+      <ref role="3c7peZ" node="v1yTSogbm_" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrt0" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'NA'&#10;" />
+      <property role="gfBJK" value="expr:NA" />
+      <ref role="3c7peZ" node="v1yTSogbmB" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrt1" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'Inf'&#10;" />
+      <property role="gfBJK" value="expr:Inf" />
+      <ref role="3c7peZ" node="v1yTSogbmD" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrt2" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'NaN'&#10;" />
+      <property role="gfBJK" value="expr:NaN" />
+      <ref role="3c7peZ" node="v1yTSogbmF" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrt3" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'TRUE'&#10;" />
+      <property role="gfBJK" value="expr:TRUE" />
+      <ref role="3c7peZ" node="v1yTSogbmH" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="v1yTSogrt4" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'FALSE'&#10;" />
+      <property role="gfBJK" value="expr:FALSE" />
+      <ref role="3c7peZ" node="v1yTSogbmJ" resolve="expr:" />
     </node>
   </node>
   <node concept="1Mbc_a" id="v1yTSnTwTB">
@@ -4551,8 +4907,12 @@
         <node concept="1M9qTG" id="v1yTSogblm" role="1Mb3aa">
           <property role="TrG5h" value="expr:" />
           <node concept="1Mb3e_" id="v1yTSogbln" role="1M9qTN">
-            <node concept="1M88Us" id="v1yTSogblo" role="1Mb3a8">
-              <property role="1M88Tz" value="function" />
+            <node concept="gtF4r" id="v1yTSogPFU" role="1Mb3a8">
+              <property role="TrG5h" value="subConceptPrefix" />
+              <property role="guZid" value="0" />
+              <node concept="1M88Us" id="v1yTSogblo" role="gt$ML">
+                <property role="1M88Tz" value="function" />
+              </node>
             </node>
             <node concept="1M88Us" id="v1yTSogblp" role="1Mb3a8">
               <property role="1M88Tz" value="(" />
@@ -4617,8 +4977,12 @@
         <node concept="1M9qTG" id="v1yTSogblC" role="1Mb3aa">
           <property role="TrG5h" value="expr:" />
           <node concept="1Mb3e_" id="v1yTSogblD" role="1M9qTN">
-            <node concept="1M88Us" id="v1yTSogblE" role="1Mb3a8">
-              <property role="1M88Tz" value="if" />
+            <node concept="gtF4r" id="v1yTSoviEy" role="1Mb3a8">
+              <property role="TrG5h" value="subConceptPrefix" />
+              <property role="guZid" value="0" />
+              <node concept="1M88Us" id="v1yTSogblE" role="gt$ML">
+                <property role="1M88Tz" value="if" />
+              </node>
             </node>
             <node concept="1M88Us" id="v1yTSogblF" role="1Mb3a8">
               <property role="1M88Tz" value="(" />
@@ -4643,8 +5007,12 @@
         <node concept="1M9qTG" id="v1yTSogblJ" role="1Mb3aa">
           <property role="TrG5h" value="expr:" />
           <node concept="1Mb3e_" id="v1yTSogblK" role="1M9qTN">
-            <node concept="1M88Us" id="v1yTSogblL" role="1Mb3a8">
-              <property role="1M88Tz" value="if" />
+            <node concept="gtF4r" id="v1yTSoviEE" role="1Mb3a8">
+              <property role="TrG5h" value="subConceptPrefix" />
+              <property role="guZid" value="0" />
+              <node concept="1M88Us" id="v1yTSogblL" role="gt$ML">
+                <property role="1M88Tz" value="if" />
+              </node>
             </node>
             <node concept="1M88Us" id="v1yTSogblM" role="1Mb3a8">
               <property role="1M88Tz" value="(" />

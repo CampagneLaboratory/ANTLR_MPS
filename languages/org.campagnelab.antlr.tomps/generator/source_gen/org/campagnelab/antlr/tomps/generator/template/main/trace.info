@@ -5,33 +5,45 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="17,0,47,0" name="org.campagnelab.antlr.tomps.generator.template.main.QueriesGenerated" />
+      <unit at="19,0,67,0" name="org.campagnelab.antlr.tomps.generator.template.main.QueriesGenerated" />
     </file>
   </root>
   <root nodeRef="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/558881339893084427">
     <file name="QueriesGenerated.java">
-      <node id="558881339893006517" at="20,111,21,0" concept="2" />
-      <node id="558881339892993983" at="21,0,22,353" concept="1" />
-      <node id="558881339893123276" at="24,111,25,352" concept="1" />
-      <node id="558881339892955256" at="27,108,28,447" concept="1" />
-      <node id="558881339892896160" at="30,108,31,99" concept="1" />
-      <node id="558881339893019889" at="33,108,34,189" concept="1" />
-      <node id="558881339893021125" at="36,108,37,189" concept="1" />
-      <node id="558881339893303868" at="41,39,42,185" concept="1" />
-      <node id="558881339893301842" at="41,0,44,0" concept="0" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="558881339892893138" at="39,119,44,7" concept="1" />
-      <scope id="558881339893120807" at="24,111,25,352" />
-      <scope id="558881339892955175" at="27,108,28,447" />
-      <scope id="558881339892896040" at="30,108,31,99" />
-      <scope id="558881339893019883" at="33,108,34,189" />
-      <scope id="558881339893021124" at="36,108,37,189" />
-      <scope id="558881339893301843" at="41,39,42,185" />
-      <scope id="558881339892992163" at="20,111,22,353" />
-      <scope id="558881339893301842" at="41,0,44,0">
+      <node id="558881339902554011" at="22,111,23,99" concept="1" />
+      <node id="558881339893006517" at="25,111,26,0" concept="2" />
+      <node id="558881339892993983" at="26,0,27,353" concept="1" />
+      <node id="558881339893123276" at="29,111,30,352" concept="1" />
+      <node id="558881339892955256" at="32,108,33,447" concept="1" />
+      <node id="558881339892896160" at="35,108,36,99" concept="1" />
+      <node id="558881339893019889" at="38,108,39,189" concept="1" />
+      <node id="558881339893021125" at="41,108,42,189" concept="1" />
+      <node id="558881339902213639" at="44,108,45,188" concept="1" />
+      <node id="558881339902126243" at="47,108,48,30" concept="1" />
+      <node id="558881339902300945" at="50,108,51,30" concept="1" />
+      <node id="558881339902073889" at="53,93,54,198" concept="1" />
+      <node id="558881339902027211" at="56,119,57,89" concept="1" />
+      <node id="558881339893303868" at="61,39,62,185" concept="1" />
+      <node id="558881339893301842" at="61,0,64,0" concept="0" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="558881339892893138" at="59,119,64,7" concept="1" />
+      <scope id="558881339902552450" at="22,111,23,99" />
+      <scope id="558881339893120807" at="29,111,30,352" />
+      <scope id="558881339892955175" at="32,108,33,447" />
+      <scope id="558881339892896040" at="35,108,36,99" />
+      <scope id="558881339893019883" at="38,108,39,189" />
+      <scope id="558881339893021124" at="41,108,42,189" />
+      <scope id="558881339902213638" at="44,108,45,188" />
+      <scope id="558881339902124674" at="47,108,48,30" />
+      <scope id="558881339902300944" at="50,108,51,30" />
+      <scope id="558881339902083122" at="53,93,54,198" />
+      <scope id="558881339902026676" at="56,119,57,89" />
+      <scope id="558881339893301843" at="61,39,62,185" />
+      <scope id="558881339892992163" at="25,111,27,353" />
+      <scope id="558881339893301842" at="61,0,64,0">
         <var name="it" id="558881339893301842" />
       </scope>
-      <scope id="558881339892892224" at="39,119,44,7" />
-      <unit id="558881339893301842" at="40,232,44,5" name="org.campagnelab.antlr.tomps.generator.template.main.QueriesGenerated$1" />
+      <scope id="558881339892892224" at="59,119,64,7" />
+      <unit id="558881339893301842" at="60,232,64,5" name="org.campagnelab.antlr.tomps.generator.template.main.QueriesGenerated$1" />
     </file>
   </root>
 </debug-info>
