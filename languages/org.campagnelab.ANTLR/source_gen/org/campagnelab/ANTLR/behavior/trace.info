@@ -15,7 +15,7 @@
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.Alternatives_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,70,0" name="org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,72,0" name="org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="Dot_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.Dot_BehaviorDescriptor" />
@@ -25,6 +25,9 @@
     </file>
     <file name="HasOptionalParams_BehaviorDescriptor.java">
       <unit at="8,0,19,0" name="org.campagnelab.ANTLR.behavior.HasOptionalParams_BehaviorDescriptor" />
+    </file>
+    <file name="LabeledElement_BehaviorDescriptor.java">
+      <unit at="9,0,20,0" name="org.campagnelab.ANTLR.behavior.LabeledElement_BehaviorDescriptor" />
     </file>
     <file name="LexerAltList_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.LexerAltList_BehaviorDescriptor" />

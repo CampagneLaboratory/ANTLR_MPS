@@ -17,45 +17,7 @@
     </breakpoint>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec7c4c8-fdb9-475d-a1c5-08cf184915b2" name="Default" comment="Preliminary support for tokens. Note that we now parse the grammar, rather than just the rules.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/ClearAll_Intention.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/IntentionsDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/ReplaceLexerRuleRefByNameWithToken_QuickFix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/ReplaceParserRuleRefByNameWithToken_QuickFix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/TokenRef_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/TokenSpec_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Token_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/intentions/dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/intentions/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/languageModels/intentions.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/intentions/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/AntlrPaster.java" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/AntlrPaster.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/AntlrRuleVisitor.java" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/AntlrRuleVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/BehaviorAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/BehaviorAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/check_LexerRuleRefByName_NonTypesystemRule.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/check_LexerRuleRefByName_NonTypesystemRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/check_RuleRefByName_NonTypesystemRule.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/check_RuleRefByName_NonTypesystemRule.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/typesystem/dependencies" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/typesystem/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/generator/source_gen.caches/org/campagnelab/ANTLR/generator/template/main/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/generator/source_gen.caches/org/campagnelab/ANTLR/generator/template/main/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/actions/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/actions/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/behavior/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/behavior/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/constraints/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/constraints/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/editor/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/migration/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/migration/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/structure/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/typesystem/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/typesystem/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/generated" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Playground/models/model.mps" afterPath="$PROJECT_DIR$/solutions/Playground/models/model.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/models/org/campagnelab/antlr/parsers.mps" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/models/org/campagnelab/antlr/parsers.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/typesystem/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/typesystem/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/classes_gen/org/campagnelab/antlr/parsers/trace.info" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/classes_gen/org/campagnelab/antlr/parsers/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/trace.info" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/languageModels/typesystem.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/languageModels/typesystem.mps" />
+    <list default="true" id="1ec7c4c8-fdb9-475d-a1c5-08cf184915b2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="ANTLR.iws" />
@@ -98,22 +60,115 @@
         <entry file="mps://node://org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers/AntlrRuleVisitor">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="4823">
+              <memento viewPositionX="0" viewPositionY="1426">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="79" />
+                    <property name="caretX" value="47" />
                     <property name="caretXRelative" value="0" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="Constant_eb7h0d_a0" cellNumber="0" isInList="false">
-                      <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/1684107016604627365" />
+                      <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/63376716038263322" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AntlrRuleVisitor.java" pinned="false" current-in-tab="false">
+        <entry file="previewo.c.antlr.parsers/AntlrRuleVisitor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2614" max-vertical-offset="7378">
+              <caret line="166" column="39" selection-start-line="166" selection-start-column="39" selection-end-line="166" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LabeledElement" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/LabeledElement">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="151" />
+                    <property name="caretXRelative" value="12" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a" cellNumber="0" isInList="false">
+                      <node node_reference="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/558881339890113301" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/558881339889629927" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LABELING_OPERATOR" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/LABELING_OPERATOR">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="233" />
+                    <property name="caretXRelative" value="20" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_externalValue" cellNumber="0" isInList="false">
+                      <node node_reference="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/558881339889844025" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ANTLRv4ParserBaseVisitor" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.ANTLR/org.antlr@java_stub/ANTLRv4ParserBaseVisitor">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="269">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                    <property name="caretX" value="0" />
+                    <property name="caretXRelative" value="-31" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Collection_359zr8_a" cellNumber="0" isInList="false">
+                      <node node_reference="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr(org.campagnelab.ANTLR/org.antlr@java_stub)/~ANTLRv4ParserBaseVisitor.visitLabeledAlt%28org.antlr.ANTLRv4Parser$LabeledAltContext%29:java.lang.Object" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -141,7 +196,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -154,22 +209,22 @@
         <entry file="mps://node://org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers/AntlrPaster">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="788">
+              <memento viewPositionX="0" viewPositionY="1428">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="135" />
-                    <property name="caretXRelative" value="56" />
+                    <property name="caretX" value="63" />
+                    <property name="caretXRelative" value="0" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/558881339884701958" />
+                    <cellInfo cellId="Constant_7h2wce_a" cellNumber="0" isInList="false">
+                      <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/2214335295231319194" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -182,24 +237,24 @@
         <entry file="mps://node://Playground/model/ANTLRv4Lexer">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
+              <memento viewPositionX="0" viewPositionY="1457">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="selectionStart" value="0" />
                     <property name="hasNonTrivialSelection" value="true" />
-                    <property name="caretX" value="335" />
-                    <property name="selectionEnd" value="14" />
-                    <property name="caretXRelative" value="84" />
+                    <property name="caretX" value="71" />
+                    <property name="selectionEnd" value="11" />
+                    <property name="caretXRelative" value="56" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339887125620" />
+                      <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339888092410" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -212,125 +267,22 @@
         <entry file="mps://node://Playground/model/ANTLRv4Parser">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="2899">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="79" />
-                    <property name="caretXRelative" value="12" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_npjry0_b0" cellNumber="0" isInList="false">
-                      <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels>
-                  <errorLabel errorText="" cellId="property_name" cellNumber="0" isInList="false">
-                    <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889144327" />
-                  </errorLabel>
-                </errorLabels>
-                <folded />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConvertToMPS_R" pinned="false" current-in-tab="false">
-        <entry file="mps://node://Playground/model/ConvertToMPS_R">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="107" />
-                    <property name="caretXRelative" value="4" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/7645898506792063112" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RuleRefByName" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/RuleRefByName">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="55" />
-                    <property name="caretXRelative" value="8" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_eb7h0d_c4a" cellNumber="0" isInList="false">
-                      <node node_reference="r:605281ab-5c41-4f2b-8300-326aa196a028(org.campagnelab.ANTLR.typesystem)/558881339884317058" />
-                    </cellInfo>
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
-                    <property name="role" value="statement" />
-                    <property name="modelId" value="r:605281ab-5c41-4f2b-8300-326aa196a028(org.campagnelab.ANTLR.typesystem)" />
-                    <property name="firstNodeId" value="558881339884317058" />
-                    <property name="parentNodeId" value="5496686145711484520" />
-                    <property name="lastNodeId" value="558881339884317058" />
-                  </stackElement>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.NodeRangeSelection">
-                    <property name="role" value="statement" />
-                    <property name="modelId" value="r:605281ab-5c41-4f2b-8300-326aa196a028(org.campagnelab.ANTLR.typesystem)" />
-                    <property name="firstNodeId" value="558881339884317058" />
-                    <property name="parentNodeId" value="5496686145711484520" />
-                    <property name="lastNodeId" value="558881339884317023" />
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-              </inspectorMemento>
-              <node node_ref="r:605281ab-5c41-4f2b-8300-326aa196a028(org.campagnelab.ANTLR.typesystem)/5496686145711484519" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReplaceLexerRuleRefByNameWithToken" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.typesystem/ReplaceLexerRuleRefByNameWithToken">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
                     <property name="caretX" value="183" />
-                    <property name="caretXRelative" value="92" />
+                    <property name="caretXRelative" value="108" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:605281ab-5c41-4f2b-8300-326aa196a028(org.campagnelab.ANTLR.typesystem)/558881339884319081" />
+                      <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -339,58 +291,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReplaceParserRuleRefByNameWithToken" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.typesystem/ReplaceParserRuleRefByNameWithToken">
+      <file leaf-file-name="ANTLRv4Parser" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.ANTLR/org.antlr@java_stub/ANTLRv4Parser">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
+              <memento viewPositionX="0" viewPositionY="622">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
                     <property name="caretX" value="0" />
-                    <property name="caretXRelative" value="-15" />
+                    <property name="caretXRelative" value="-31" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_la7hkt_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:605281ab-5c41-4f2b-8300-326aa196a028(org.campagnelab.ANTLR.typesystem)/558881339884323012" />
+                    <cellInfo cellId="Collection_t6d1qn_a" cellNumber="0" isInList="false">
+                      <node node_reference="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr(org.campagnelab.ANTLR/org.antlr@java_stub)/~ANTLRv4Parser.STAR" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
               </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StringLiteral" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/StringLiteral">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="423" />
-                    <property name="caretXRelative" value="4" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="ReadOnlyModelAccessor_abi8e8_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/7142405419535590793" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-              </inspectorMemento>
-              <node node_ref="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/7142405419535590791" />
             </state>
           </provider>
         </entry>
@@ -436,6 +359,10 @@
   <component name="NodeEditorSearchHistory">
     <option name="searches">
       <list>
+        <option value="visitLabele" />
+        <option value="visit" />
+        <option value="labeled" />
+        <option value="QUESTION" />
         <option value="RULE_REF" />
         <option value="TOKEN" />
         <option value="IMPORT" />
@@ -462,10 +389,6 @@
         <option value="LexerRule" />
         <option value="visitRuleAltList" />
         <option value="LexerEleme" />
-        <option value="exitLexerR" />
-        <option value="LexerAlt" />
-        <option value="literal" />
-        <option value="STRING_LITERAL" />
       </list>
     </option>
   </component>
@@ -597,6 +520,80 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="all models">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="stubs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.antlr">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.ANTLR">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="all models">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="stubs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.ANTLR">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="all models">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.ANTLR">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Empty">
@@ -648,6 +645,24 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="org.campagnelab.ANTLR.editor">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.ANTLR">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.ANTLR.structure">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -862,19 +877,19 @@
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.4986835" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32914045" sideWeight="0.5007899" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31551364" sideWeight="0.6129542" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960506" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.49921012" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3207547" sideWeight="0.6129542" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31551364" sideWeight="0.6129542" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32914045" sideWeight="0.49921012" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.49921012" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31551364" sideWeight="0.3870458" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31551364" sideWeight="0.3870458" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.7530279" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -897,216 +912,7 @@
   </component>
   <component name="UsagesViewTool">
     <version id="0.9997" />
-    <tabs>
-      <tab>
-        <result_provider class_name="jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.UnionNode">
-          <children>
-            <jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-              <children />
-              <generated_finder class_name="jetbrains.mps.lang.structure.findUsages.NodeUsages_Finder" />
-            </jetbrains.mps.ide.findusages.findalgorithm.resultproviders.treenodes.FinderNode>
-          </children>
-        </result_provider>
-        <query>
-          <scope scope_class="jetbrains.mps.ide.findusages.model.scopes.ProjectScope" />
-          <holder holder_class="jetbrains.mps.ide.findusages.model.holders.NodeHolder">
-            <node ref="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339887125620" />
-          </holder>
-        </query>
-        <usage_view>
-          <tree_wrapper>
-            <node_representator />
-            <view_options>
-              <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
-            </view_options>
-            <contents>
-              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.MainNodeData" caption="" info="" excluded="false" expanded="true" isresult="false" results_section="false">
-                <role name="main root" />
-              </data>
-              <children>
-                <child>
-                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.SearchedNodesNodeData" caption="Searched nodes" info="" excluded="false" expanded="true" isresult="false" results_section="false">
-                    <role name="searched nodes" />
-                  </data>
-                  <children>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Searched nodes&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="false" category="Searched nodes" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="Playground" info="" excluded="false" expanded="true" isresult="false" results_section="false" module_ref="9cd4e741-b111-4205-8421-b614f2ea2c17(Playground)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="model" info="" excluded="false" expanded="false" isresult="false" results_section="false">
-                                <role name="model" />
-                                <model uid="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ANTLRv4Lexer" info="" excluded="false" expanded="true" isresult="false" results_section="false">
-                                    <role name="root" />
-                                    <node>
-                                      <node model="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" id="987964775445721711" />
-                                    </node>
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="LEXER_CHAR_SET" info="role: &lt;i&gt;tokens&lt;/i&gt;; in: &lt;i&gt;tokens&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="false">
-                                        <role name="target" />
-                                        <node>
-                                          <node model="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" id="558881339887125620" />
-                                        </node>
-                                      </data>
-                                      <children />
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                  </children>
-                </child>
-                <child>
-                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ResultsNodeData" caption="results" info="" excluded="false" expanded="true" isresult="false" results_section="false">
-                    <role name="results" />
-                  </data>
-                  <children>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="Playground" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="9cd4e741-b111-4205-8421-b614f2ea2c17(Playground)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="model" info="" excluded="false" expanded="true" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ANTLRv4Parser" info="" excluded="false" expanded="true" isresult="false" results_section="true">
-                                    <role name="root" />
-                                    <node>
-                                      <node model="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" id="558881339889144327" />
-                                    </node>
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="lexerAtom" info="role: &lt;i&gt;rules&lt;/i&gt;; in: &lt;i&gt;ANTLRv4Parser&lt;/i&gt;" excluded="false" expanded="false" isresult="false" results_section="true">
-                                        <role name="root to target" />
-                                        <node>
-                                          <node model="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" id="558881339889156598" />
-                                        </node>
-                                      </data>
-                                      <children>
-                                        <child>
-                                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="lexerAtom:" info="role: &lt;i&gt;oneOf&lt;/i&gt;; in: &lt;i&gt;Alternatives&lt;/i&gt;" excluded="false" expanded="false" isresult="false" results_section="true">
-                                            <role name="root to target" />
-                                            <node>
-                                              <node model="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" id="558881339889156647" />
-                                            </node>
-                                          </data>
-                                          <children>
-                                            <child>
-                                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="LEXER_CHAR_SET" info="role: &lt;i&gt;rhs&lt;/i&gt;; in: &lt;i&gt;lexerAtom:&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true">
-                                                <role name="target" />
-                                                <node>
-                                                  <node model="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" id="558881339889158999" />
-                                                </node>
-                                              </data>
-                                              <children />
-                                            </child>
-                                          </children>
-                                        </child>
-                                      </children>
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                    <child>
-                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.CategoryNodeData" caption="&lt;b&gt;Node Usages&lt;/b&gt;" info="" excluded="false" expanded="true" isresult="false" results_section="true" category="Node Usages" category_kind="Category">
-                        <role name="category:Category" />
-                      </data>
-                      <children>
-                        <child>
-                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" caption="Playground" info="" excluded="false" expanded="true" isresult="false" results_section="true" module_ref="9cd4e741-b111-4205-8421-b614f2ea2c17(Playground)">
-                            <role name="module" />
-                          </data>
-                          <children>
-                            <child>
-                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" caption="model" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                <role name="model" />
-                                <model uid="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" />
-                              </data>
-                              <children>
-                                <child>
-                                  <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="ANTLRv4Parser" info="" excluded="false" expanded="false" isresult="false" results_section="true">
-                                    <role name="root" />
-                                    <node>
-                                      <node model="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" id="558881339889144327" />
-                                    </node>
-                                  </data>
-                                  <children>
-                                    <child>
-                                      <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="setElement" info="role: &lt;i&gt;rules&lt;/i&gt;; in: &lt;i&gt;ANTLRv4Parser&lt;/i&gt;" excluded="false" expanded="false" isresult="false" results_section="true">
-                                        <role name="root to target" />
-                                        <node>
-                                          <node model="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" id="558881339889157034" />
-                                        </node>
-                                      </data>
-                                      <children>
-                                        <child>
-                                          <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="setElement:" info="role: &lt;i&gt;oneOf&lt;/i&gt;; in: &lt;i&gt;Alternatives&lt;/i&gt;" excluded="false" expanded="false" isresult="false" results_section="true">
-                                            <role name="root to target" />
-                                            <node>
-                                              <node model="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" id="558881339889157083" />
-                                            </node>
-                                          </data>
-                                          <children>
-                                            <child>
-                                              <data data_class="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" caption="LEXER_CHAR_SET" info="role: &lt;i&gt;rhs&lt;/i&gt;; in: &lt;i&gt;setElement:&lt;/i&gt;" excluded="false" expanded="false" isresult="true" results_section="true">
-                                                <role name="target" />
-                                                <node>
-                                                  <node model="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" id="558881339889159036" />
-                                                </node>
-                                              </data>
-                                              <children />
-                                            </child>
-                                          </children>
-                                        </child>
-                                      </children>
-                                    </child>
-                                  </children>
-                                </child>
-                              </children>
-                            </child>
-                          </children>
-                        </child>
-                      </children>
-                    </child>
-                  </children>
-                </child>
-              </children>
-            </contents>
-          </tree_wrapper>
-        </usage_view>
-      </tab>
-    </tabs>
+    <tabs />
     <default_view_options>
       <options category_option="false" module_option="true" model_option="true" root_option="true" path_option="false" count_option="true" info_option="true" view_searched_nodes_option="true" group_searched_nodes_option="true" autoscroll_option="false" />
     </default_view_options>
@@ -1126,9 +932,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Add a sketch of custom persistence for ANTRL grammar." />
-    <MESSAGE value="Complete build script." />
-    <MESSAGE value="Remove FeatureKind." />
     <MESSAGE value="Fix the build script." />
     <MESSAGE value="Add a toText method to convert the grammar back to text. Not as nice as a visitor, but this will do for now to test persistence." />
     <MESSAGE value="Adjust formatting of text output." />
@@ -1151,80 +954,12 @@
     <MESSAGE value="Paste R grammar. Almost there. Need to support range of characters to finish." />
     <MESSAGE value="Draft tomps mapping configuration." />
     <MESSAGE value="Preliminary support for tokens. Note that we now parse the grammar, rather than just the rules." />
-    <option name="LAST_COMMIT_MESSAGE" value="Preliminary support for tokens. Note that we now parse the grammar, rather than just the rules." />
+    <MESSAGE value="Fully support tokens. Now determine whether to paste rules or full grammar depending on the presence of &quot;lexer grammar&quot; or &quot;parser grammar&quot; in the text being pasted." />
+    <MESSAGE value="Support labeled parser elements." />
+    <MESSAGE value="Remove spuriour call to old Listener. Remove listerner implementation since it is no longer used." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove spuriour call to old Listener. Remove listerner implementation since it is no longer used." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/ParserRuleRef">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="247" />
-                <property name="caretXRelative" value="4" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/7142405419535276036" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:00000000-0000-4000-0000-011c89590298(jetbrains.mps.lang.editor.constraints)/1213104840151" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-          <node node_ref="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/7142405419535276036" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/LexerRuleBlock">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="359" />
-                <property name="caretXRelative" value="116" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/1684107016605772193" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/5496686145713911730" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-          <node node_ref="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/1684107016605772193" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://jetbrains.mps.lang.editor/jetbrains.mps.lang.editor.structure/CellModel_Component">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/1539085245680653728" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-          <node node_ref="r:00000000-0000-4000-0000-011c89590298(jetbrains.mps.lang.editor.constraints)/1213104840151" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/LexerRuleRef_Editor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="950" max-vertical-offset="1564">
@@ -1970,32 +1705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://org.campagnelab.ANTLR/org.antlr@java_stub/ANTLRv4Parser">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="14019">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="159" />
-                <property name="caretXRelative" value="60" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReferencePresentation_91bvrs_a0a0" cellNumber="0" isInList="false">
-                  <node node_reference="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr(org.campagnelab.ANTLR/org.antlr@java_stub)/558881339883866696" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:605281ab-5c41-4f2b-8300-326aa196a028(org.campagnelab.ANTLR.typesystem)/5496686145712211313" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://org.campagnelab.ANTLR/org.antlr.v4.runtime.tree@java_stub/AbstractParseTreeVisitor">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -2026,41 +1735,6 @@
             <folded />
           </inspectorMemento>
           <node node_ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/558881339879658757" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.campagnelab.ANTLR/org.antlr@java_stub/ANTLRv4ParserBaseVisitor">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretX" value="0" />
-                <property name="caretXRelative" value="-31" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_359zr8_a" cellNumber="0" isInList="false">
-                  <node node_reference="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr(org.campagnelab.ANTLR/org.antlr@java_stub)/~ANTLRv4ParserBaseVisitor.visitAltList%28org.antlr.ANTLRv4Parser$AltListContext%29:java.lang.Object" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:605281ab-5c41-4f2b-8300-326aa196a028(org.campagnelab.ANTLR.typesystem)/558881339884336387" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="539" />
-                <property name="caretXRelative" value="144" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:605281ab-5c41-4f2b-8300-326aa196a028(org.campagnelab.ANTLR.typesystem)/558881339884341408" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
         </state>
       </provider>
     </entry>
@@ -2201,7 +1875,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/558881339889211987" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2228,7 +1902,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/987964775443790628" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2253,7 +1927,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/558881339889629741" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2279,7 +1953,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/558881339889843987" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2305,7 +1979,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/558881339889902011" viewPositionX="0" viewPositionY="-7">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2317,22 +1991,22 @@
     <entry file="mps://node://org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers/AntlrPaster">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="788">
+          <memento viewPositionX="0" viewPositionY="1428">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="135" />
-                <property name="caretXRelative" value="56" />
+                <property name="caretX" value="63" />
+                <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/558881339884701958" />
+                <cellInfo cellId="Constant_7h2wce_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/2214335295231319194" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2343,22 +2017,22 @@
     <entry file="mps://node://org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers/AntlrRuleVisitor">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="4823">
+          <memento viewPositionX="0" viewPositionY="1426">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="79" />
+                <property name="caretX" value="47" />
                 <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="Constant_eb7h0d_a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/1684107016604627365" />
+                  <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/63376716038263322" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2369,24 +2043,24 @@
     <entry file="mps://node://Playground/model/ANTLRv4Lexer">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
+          <memento viewPositionX="0" viewPositionY="1457">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="selectionStart" value="0" />
                 <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretX" value="335" />
-                <property name="selectionEnd" value="14" />
-                <property name="caretXRelative" value="84" />
+                <property name="caretX" value="71" />
+                <property name="selectionEnd" value="11" />
+                <property name="caretXRelative" value="56" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339887125620" />
+                  <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339888092410" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2412,7 +2086,110 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.ANTLR/org.antlr@java_stub/ANTLRv4Parser">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="622">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-31" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_t6d1qn_a" cellNumber="0" isInList="false">
+                  <node node_reference="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr(org.campagnelab.ANTLR/org.antlr@java_stub)/~ANTLRv4Parser.STAR" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.ANTLR/org.antlr@java_stub/ANTLRv4ParserBaseVisitor">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="269">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
+                <property name="caretX" value="0" />
+                <property name="caretXRelative" value="-31" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Collection_359zr8_a" cellNumber="0" isInList="false">
+                  <node node_reference="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr(org.campagnelab.ANTLR/org.antlr@java_stub)/~ANTLRv4ParserBaseVisitor.visitLabeledAlt%28org.antlr.ANTLRv4Parser$LabeledAltContext%29:java.lang.Object" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/LabeledElement">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="151" />
+                <property name="caretXRelative" value="12" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/558881339890113301" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/558881339889629927" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/LABELING_OPERATOR">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="233" />
+                <property name="caretXRelative" value="20" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_externalValue" cellNumber="0" isInList="false">
+                  <node node_reference="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/558881339889844025" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2423,26 +2200,22 @@
     <entry file="mps://node://Playground/model/ANTLRv4Parser">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="2899">
+          <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="79" />
-                <property name="caretXRelative" value="12" />
+                <property name="caretX" value="183" />
+                <property name="caretXRelative" value="108" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_npjry0_b0" cellNumber="0" isInList="false">
-                  <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
-            <errorLabels>
-              <errorLabel errorText="" cellId="property_name" cellNumber="0" isInList="false">
-                <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889144327" />
-              </errorLabel>
-            </errorLabels>
+            <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339889156792" viewPositionX="0" viewPositionY="-7">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339892698727" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />

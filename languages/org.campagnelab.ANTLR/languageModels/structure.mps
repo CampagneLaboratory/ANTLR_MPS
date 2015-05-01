@@ -13,6 +13,14 @@
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
+      <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
+        <reference id="1083171729157" name="memberDataType" index="M4eZT" />
+        <child id="1083172003582" name="member" index="M5hS2" />
+      </concept>
+      <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
+        <property id="1083923523172" name="externalValue" index="1uS6qo" />
+        <property id="1083923523171" name="internalValue" index="1uS6qv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -425,6 +433,35 @@
       <property role="20kJfa" value="token" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="v1yTSn7MUN" resolve="Token" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="v1yTSnHNE5">
+    <property role="TrG5h" value="LabeledElement" />
+    <ref role="1TJDcQ" node="6cuUYchcHx3" resolve="ParserRuleBlock" />
+    <node concept="1TJgyi" id="v1yTSnIBWj" role="1TKVEl">
+      <property role="TrG5h" value="operator" />
+      <ref role="AX2Wp" node="v1yTSnIBWR" resolve="LABELING_OPERATOR" />
+    </node>
+    <node concept="1TJgyj" id="v1yTSnHWsJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="element" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6cuUYchcHx3" resolve="ParserRuleBlock" />
+    </node>
+    <node concept="PrWs8" id="v1yTSnHNFw" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="AxPO7" id="v1yTSnIBWR">
+    <property role="TrG5h" value="LABELING_OPERATOR" />
+    <ref role="M4eZT" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="M4N5e" id="v1yTSnIBWS" role="M5hS2">
+      <property role="1uS6qo" value="=" />
+      <property role="1uS6qv" value="0" />
+    </node>
+    <node concept="M4N5e" id="v1yTSnIBWT" role="M5hS2">
+      <property role="1uS6qv" value="1" />
+      <property role="1uS6qo" value="+=" />
     </node>
   </node>
 </model>

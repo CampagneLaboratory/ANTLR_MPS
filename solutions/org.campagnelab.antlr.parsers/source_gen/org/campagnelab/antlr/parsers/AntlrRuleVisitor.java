@@ -16,6 +16,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.antlr.v4.runtime.tree.TerminalNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
@@ -112,7 +113,6 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   }
   @Override
   public Object visitLabeledAlt(@NotNull ANTLRv4Parser.LabeledAltContext context) {
-    super.visitLabeledAlt(context);
     if (context.alternative() != null) {
       return visitAlternative(context.alternative());
     }
@@ -121,29 +121,55 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   @Override
   public Object visitElement(@NotNull ANTLRv4Parser.ElementContext context) {
     // <node> 
-    Object result = super.visitElement(context);
-    SNode element;
-    if (context.labeledElement() != null) {
-
-      element = (SNode) visitLabeledElement(context.labeledElement());
-      return element;
-
-    }
+    SNode element = null;
     if (context.ebnf() != null && context.ebnf().block() != null) {
       // <node> 
       element = (SNode) visitEbnf(context.ebnf());
+      // EBNF cannot be followed by ebnf suffix, return immediately: 
       return element;
     }
-    if (context.atom() != null) {
-      SNode refByName = createARef(context.atom().getText());
-      element = (SNode) refByName;
-      if (refByName != null && context.ebnfSuffix() != null) {
-        addOptionalParams(refByName, context.ebnfSuffix());
-      }
-      return refByName;
-    } else {
-      return result;
+    if (context.labeledElement() != null) {
+      element = (SNode) visitLabeledElement(context.labeledElement());
     }
+    if (context.atom() != null) {
+      element = (SNode) visitAtom(context.atom());
+    }
+    if (element != null && context.ebnfSuffix() != null) {
+      addOptionalParams(element, context.ebnfSuffix());
+    }
+    return element;
+  }
+  @Override
+  public Object visitAtom(@NotNull ANTLRv4Parser.AtomContext context) {
+    if (context.DOT() != null) {
+      return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88033f2L, "org.campagnelab.ANTLR.structure.Dot")));
+    }
+    if (context.elementOptions() != null) {
+      // TODO 
+    }
+    SNode refByName = createARef(context.getText());
+    refByName = (SNode) refByName;
+    return refByName;
+  }
+  @Override
+  public Object visitLabeledElement(@NotNull ANTLRv4Parser.LabeledElementContext context) {
+    SNode labeledElement = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, "org.campagnelab.ANTLR.structure.LabeledElement")));
+    if (context.id() != null) {
+      SPropertyOperations.set(labeledElement, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), context.id().getText());
+    }
+    if (context.atom() != null) {
+      SLinkOperations.setTarget(labeledElement, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, 0x7c18b9e17b7c72fL, "element"), (SNode) visitAtom(context.atom()));
+    }
+    if (context.block() != null) {
+      SLinkOperations.setTarget(labeledElement, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, 0x7c18b9e17b7c72fL, "element"), (SNode) visitBlock(context.block()));
+    }
+    if (context.ASSIGN() != null) {
+      SPropertyOperations.set(labeledElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, 0x7c18b9e17ba7f13L, "operator"), "" + (Integer.parseInt(SEnumOperations.getEnumMemberValue(SEnumOperations.getEnumMember(SEnumOperations.getEnum("r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)", "LABELING_OPERATOR"), "=")))));
+    }
+    if (context.PLUS_ASSIGN() != null) {
+      SPropertyOperations.set(labeledElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, 0x7c18b9e17ba7f13L, "operator"), "" + (Integer.parseInt(SEnumOperations.getEnumMemberValue(SEnumOperations.getEnumMember(SEnumOperations.getEnum("r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)", "LABELING_OPERATOR"), "+=")))));
+    }
+    return labeledElement;
   }
   @Override
   public Object visitEbnf(@NotNull ANTLRv4Parser.EbnfContext context) {
@@ -343,6 +369,15 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   }
   private void addOptionalParams(SNode currentElement, ANTLRv4Parser.EbnfSuffixContext context) {
     if (currentElement != null && context != null) {
+      /*
+        if (context.STAR() != null && context.STAR().getSymbol().getTokenIndex() == ANTLRv4Parser.STAR) {
+          SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x797c10c6e517ac38L, 0x797c10c6e517bbd3L, "acceptMultiple"), "" + (true));
+
+        }
+        if (context.PLUS() != null && context.PLUS().getSymbol().getTokenIndex() == ANTLRv4Parser.PLUS) {
+          SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x797c10c6e517ac38L, 0x797c10c6e517b02cL, "isOptional"), "" + (true));
+        }
+      */
       String question = context.getText();
       for (char c : question.toCharArray()) {
         if ('?' == c) {

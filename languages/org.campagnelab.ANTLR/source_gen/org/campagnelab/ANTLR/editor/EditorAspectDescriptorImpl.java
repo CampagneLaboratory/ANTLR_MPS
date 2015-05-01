@@ -25,46 +25,48 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 4:
         return Collections.<ConceptEditor>singletonList(new HasOptionalParams_Editor());
       case 5:
-        return Collections.<ConceptEditor>singletonList(new LexerAlt_Editor());
+        return Collections.<ConceptEditor>singletonList(new LabeledElement_Editor());
       case 6:
-        return Collections.<ConceptEditor>singletonList(new LexerAltList_Editor());
+        return Collections.<ConceptEditor>singletonList(new LexerAlt_Editor());
       case 7:
-        return Collections.<ConceptEditor>singletonList(new LexerBlock_Editor());
+        return Collections.<ConceptEditor>singletonList(new LexerAltList_Editor());
       case 8:
-        return Collections.<ConceptEditor>singletonList(new LexerElement_Editor());
+        return Collections.<ConceptEditor>singletonList(new LexerBlock_Editor());
       case 9:
-        return Collections.<ConceptEditor>singletonList(new LexerRule_Editor());
+        return Collections.<ConceptEditor>singletonList(new LexerElement_Editor());
       case 10:
-        return Collections.<ConceptEditor>singletonList(new LexerRuleBlock_Editor());
+        return Collections.<ConceptEditor>singletonList(new LexerRule_Editor());
       case 11:
-        return Collections.<ConceptEditor>singletonList(new LexerRuleRef_Editor());
+        return Collections.<ConceptEditor>singletonList(new LexerRuleBlock_Editor());
       case 12:
-        return Collections.<ConceptEditor>singletonList(new LexerRuleRefByName_Editor());
+        return Collections.<ConceptEditor>singletonList(new LexerRuleRef_Editor());
       case 13:
-        return Collections.<ConceptEditor>singletonList(new NotSet_Editor());
+        return Collections.<ConceptEditor>singletonList(new LexerRuleRefByName_Editor());
       case 14:
-        return Collections.<ConceptEditor>singletonList(new Parentheses_Editor());
+        return Collections.<ConceptEditor>singletonList(new NotSet_Editor());
       case 15:
-        return Collections.<ConceptEditor>singletonList(new ParserRule_Editor());
+        return Collections.<ConceptEditor>singletonList(new Parentheses_Editor());
       case 16:
-        return Collections.<ConceptEditor>singletonList(new ParserRuleBlock_Editor());
+        return Collections.<ConceptEditor>singletonList(new ParserRule_Editor());
       case 17:
-        return Collections.<ConceptEditor>singletonList(new ParserRuleRef_Editor());
+        return Collections.<ConceptEditor>singletonList(new ParserRuleBlock_Editor());
       case 18:
-        return Collections.<ConceptEditor>singletonList(new REGEXP_Editor());
+        return Collections.<ConceptEditor>singletonList(new ParserRuleRef_Editor());
       case 19:
-        return Collections.<ConceptEditor>singletonList(new Range_Editor());
+        return Collections.<ConceptEditor>singletonList(new REGEXP_Editor());
       case 20:
-        return Collections.<ConceptEditor>singletonList(new RuleRefByName_Editor());
+        return Collections.<ConceptEditor>singletonList(new Range_Editor());
       case 21:
-        return Collections.<ConceptEditor>singletonList(new Sequence_Editor());
+        return Collections.<ConceptEditor>singletonList(new RuleRefByName_Editor());
       case 22:
-        return Collections.<ConceptEditor>singletonList(new StringLiteral_Editor());
+        return Collections.<ConceptEditor>singletonList(new Sequence_Editor());
       case 23:
-        return Collections.<ConceptEditor>singletonList(new Token_Editor());
+        return Collections.<ConceptEditor>singletonList(new StringLiteral_Editor());
       case 24:
-        return Collections.<ConceptEditor>singletonList(new TokenRef_Editor());
+        return Collections.<ConceptEditor>singletonList(new Token_Editor());
       case 25:
+        return Collections.<ConceptEditor>singletonList(new TokenRef_Editor());
+      case 26:
         return Collections.<ConceptEditor>singletonList(new TokenSpec_Editor());
       default:
     }
@@ -88,6 +90,6 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.ANTLR.structure.Alternative", "org.campagnelab.ANTLR.structure.Alternatives", "org.campagnelab.ANTLR.structure.Dot", "org.campagnelab.ANTLR.structure.Grammar", "org.campagnelab.ANTLR.structure.HasOptionalParams", "org.campagnelab.ANTLR.structure.LexerAlt", "org.campagnelab.ANTLR.structure.LexerAltList", "org.campagnelab.ANTLR.structure.LexerBlock", "org.campagnelab.ANTLR.structure.LexerElement", "org.campagnelab.ANTLR.structure.LexerRule", "org.campagnelab.ANTLR.structure.LexerRuleBlock", "org.campagnelab.ANTLR.structure.LexerRuleRef", "org.campagnelab.ANTLR.structure.LexerRuleRefByName", "org.campagnelab.ANTLR.structure.NotSet", "org.campagnelab.ANTLR.structure.Parentheses", "org.campagnelab.ANTLR.structure.ParserRule", "org.campagnelab.ANTLR.structure.ParserRuleBlock", "org.campagnelab.ANTLR.structure.ParserRuleRef", "org.campagnelab.ANTLR.structure.REGEXP", "org.campagnelab.ANTLR.structure.Range", "org.campagnelab.ANTLR.structure.RuleRefByName", "org.campagnelab.ANTLR.structure.Sequence", "org.campagnelab.ANTLR.structure.StringLiteral", "org.campagnelab.ANTLR.structure.Token", "org.campagnelab.ANTLR.structure.TokenRef", "org.campagnelab.ANTLR.structure.TokenSpec"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.ANTLR.structure.Alternative", "org.campagnelab.ANTLR.structure.Alternatives", "org.campagnelab.ANTLR.structure.Dot", "org.campagnelab.ANTLR.structure.Grammar", "org.campagnelab.ANTLR.structure.HasOptionalParams", "org.campagnelab.ANTLR.structure.LabeledElement", "org.campagnelab.ANTLR.structure.LexerAlt", "org.campagnelab.ANTLR.structure.LexerAltList", "org.campagnelab.ANTLR.structure.LexerBlock", "org.campagnelab.ANTLR.structure.LexerElement", "org.campagnelab.ANTLR.structure.LexerRule", "org.campagnelab.ANTLR.structure.LexerRuleBlock", "org.campagnelab.ANTLR.structure.LexerRuleRef", "org.campagnelab.ANTLR.structure.LexerRuleRefByName", "org.campagnelab.ANTLR.structure.NotSet", "org.campagnelab.ANTLR.structure.Parentheses", "org.campagnelab.ANTLR.structure.ParserRule", "org.campagnelab.ANTLR.structure.ParserRuleBlock", "org.campagnelab.ANTLR.structure.ParserRuleRef", "org.campagnelab.ANTLR.structure.REGEXP", "org.campagnelab.ANTLR.structure.Range", "org.campagnelab.ANTLR.structure.RuleRefByName", "org.campagnelab.ANTLR.structure.Sequence", "org.campagnelab.ANTLR.structure.StringLiteral", "org.campagnelab.ANTLR.structure.Token", "org.campagnelab.ANTLR.structure.TokenRef", "org.campagnelab.ANTLR.structure.TokenSpec"};
   private static String[] stringSwitchCases_xbvbvu_a0a0c = new String[]{"org.campagnelab.ANTLR.structure.HasOptionalParams", "org.campagnelab.ANTLR.structure.ParserRuleBlock"};
 }

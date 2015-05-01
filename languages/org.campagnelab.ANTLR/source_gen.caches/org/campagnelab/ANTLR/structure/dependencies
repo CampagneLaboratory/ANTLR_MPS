@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="org.campagnelab.ANTLR.structure.LABELING_OPERATOR" file="LABELING_OPERATOR.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.backports.LinkedList" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.structure.LABELING_OPERATOR_PropertySupport" file="LABELING_OPERATOR_PropertySupport.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Iterator" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="org.campagnelab.ANTLR.structure.LABELING_OPERATOR" />
+    <classNode extendsClassName="jetbrains.mps.smodel.PropertySupport" />
+  </dependency>
   <dependency className="org.campagnelab.ANTLR.structure.StructureAspectDescriptor" file="StructureAspectDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />

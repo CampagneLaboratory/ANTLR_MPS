@@ -28,7 +28,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.apache.log4j.Level;
 import jetbrains.mps.util.MacrosFactory;
 import javax.print.PrintException;
-import org.antlr.v4.runtime.tree.ParseTreeWalker;
 import jetbrains.mps.ide.datatransfer.SModelDataFlavor;
 
 public class AntlrPaster {
@@ -146,11 +145,6 @@ public class AntlrPaster {
           LOG_515473768.error("Exception when visiting Rules parse tree.", e);
         }
       }
-      ParseTreeWalker walker = new ParseTreeWalker();
-      // create standard walker 
-      ANTLRv4ParserListenerImpl extractor = new ANTLRv4ParserListenerImpl(parser);
-      walker.walk(extractor, tree);
-      ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(extractor.getRules()));
 
     } catch (IOException ioException) {
       if (LOG_515473768.isEnabledFor(Level.ERROR)) {
