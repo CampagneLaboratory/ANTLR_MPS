@@ -22,7 +22,7 @@ public class AddLabel_Intention implements IntentionFactory {
   public AddLabel_Intention() {
   }
   public String getConcept() {
-    return "org.campagnelab.ANTLR.structure.StringLiteral";
+    return "org.campagnelab.ANTLR.structure.ParserRuleBlock";
   }
   public String getPresentation() {
     return "AddLabel";

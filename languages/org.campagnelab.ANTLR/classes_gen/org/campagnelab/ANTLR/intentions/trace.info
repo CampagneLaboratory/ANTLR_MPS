@@ -96,7 +96,7 @@
   <root nodeRef="r:e1d4c225-523b-4e33-a0ab-b970dbb75eba(org.campagnelab.ANTLR.intentions)/558881339898711177">
     <file name="AddLabel_Intention.java">
       <node id="558881339898711177" at="21,0,22,0" concept="2" trace="myCachedExecutable" />
-      <node id="558881339898711177" at="24,30,25,59" concept="6" />
+      <node id="558881339898711177" at="24,30,25,61" concept="6" />
       <node id="558881339898711177" at="27,35,28,22" concept="6" />
       <node id="558881339898711177" at="30,41,31,65" concept="6" />
       <node id="558881339898711177" at="33,37,34,35" concept="6" />
@@ -131,7 +131,7 @@
       <node id="558881339898711177" at="63,0,69,0" concept="4" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <scope id="558881339898711177" at="22,31,22,31" />
       <scope id="558881339898711177" at="58,38,58,38" />
-      <scope id="558881339898711177" at="24,30,25,59" />
+      <scope id="558881339898711177" at="24,30,25,61" />
       <scope id="558881339898711177" at="27,35,28,22" />
       <scope id="558881339898711177" at="30,41,31,65" />
       <scope id="558881339898711177" at="33,37,34,35" />

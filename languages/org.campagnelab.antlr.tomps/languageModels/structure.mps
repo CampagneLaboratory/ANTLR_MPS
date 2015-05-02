@@ -169,5 +169,15 @@
       <ref role="20lvS9" node="4EJnNxxClL3" resolve="ExampleConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4EJnNxxFvTR">
+    <property role="TrG5h" value="LabeledElementSource" />
+    <ref role="1TJDcQ" node="3xPTlDSVFvt" resolve="Source" />
+    <node concept="1TJgyj" id="4EJnNxxFw5T" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="labeled" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ubjp:v1yTSnHNE5" resolve="LabeledElement" />
+    </node>
+  </node>
 </model>
 

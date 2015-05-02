@@ -4464,48 +4464,54 @@
         <node concept="1M9qTG" id="v1yTSogbl3" role="1Mb3aa">
           <property role="TrG5h" value="expr:" />
           <node concept="1Mb3e_" id="v1yTSogbl4" role="1M9qTN">
+            <node concept="gVFit" id="4EJnNxxGDD_" role="1Mb3a8">
+              <ref role="gVFiq" node="4EJnNxxGDDf" resolve="BINARY_OPERATION" />
+            </node>
             <node concept="1Mb3a5" id="v1yTSogqBN" role="1Mb3a8">
               <property role="2sqUGl" value="false" />
               <property role="2sqU3E" value="false" />
               <property role="2sqUKs" value="false" />
               <ref role="1Mb3a4" node="v1yTSogbf2" resolve="expr" />
             </node>
-            <node concept="1Mb3e_" id="v1yTSogbl6" role="1Mb3a8">
-              <node concept="1Mb3ex" id="v1yTSogbl7" role="1Mb3a8">
-                <node concept="1M9qTG" id="v1yTSogbl9" role="1Mb3aa">
-                  <property role="TrG5h" value="expr:" />
-                  <node concept="1M88Us" id="v1yTSogbla" role="1M9qTN">
-                    <property role="1M88Tz" value="&lt;-" />
+            <node concept="gtF4r" id="4EJnNxxFvTn" role="1Mb3a8">
+              <property role="TrG5h" value="operator" />
+              <node concept="1Mb3e_" id="v1yTSogbl6" role="gt$ML">
+                <node concept="1Mb3ex" id="v1yTSogbl7" role="1Mb3a8">
+                  <node concept="1M9qTG" id="v1yTSogbl9" role="1Mb3aa">
+                    <property role="TrG5h" value="expr:" />
+                    <node concept="1M88Us" id="v1yTSogbla" role="1M9qTN">
+                      <property role="1M88Tz" value="&lt;-" />
+                    </node>
                   </node>
-                </node>
-                <node concept="1M9qTG" id="v1yTSogblb" role="1Mb3aa">
-                  <property role="TrG5h" value="expr:" />
-                  <node concept="1M88Us" id="v1yTSogblc" role="1M9qTN">
-                    <property role="1M88Tz" value="&lt;&lt;-" />
+                  <node concept="1M9qTG" id="v1yTSogblb" role="1Mb3aa">
+                    <property role="TrG5h" value="expr:" />
+                    <node concept="1M88Us" id="v1yTSogblc" role="1M9qTN">
+                      <property role="1M88Tz" value="&lt;&lt;-" />
+                    </node>
                   </node>
-                </node>
-                <node concept="1M9qTG" id="v1yTSogbld" role="1Mb3aa">
-                  <property role="TrG5h" value="expr:" />
-                  <node concept="1M88Us" id="v1yTSogble" role="1M9qTN">
-                    <property role="1M88Tz" value="=" />
+                  <node concept="1M9qTG" id="v1yTSogbld" role="1Mb3aa">
+                    <property role="TrG5h" value="expr:" />
+                    <node concept="1M88Us" id="v1yTSogble" role="1M9qTN">
+                      <property role="1M88Tz" value="=" />
+                    </node>
                   </node>
-                </node>
-                <node concept="1M9qTG" id="v1yTSogblf" role="1Mb3aa">
-                  <property role="TrG5h" value="expr:" />
-                  <node concept="1M88Us" id="v1yTSogblg" role="1M9qTN">
-                    <property role="1M88Tz" value="-&gt;" />
+                  <node concept="1M9qTG" id="v1yTSogblf" role="1Mb3aa">
+                    <property role="TrG5h" value="expr:" />
+                    <node concept="1M88Us" id="v1yTSogblg" role="1M9qTN">
+                      <property role="1M88Tz" value="-&gt;" />
+                    </node>
                   </node>
-                </node>
-                <node concept="1M9qTG" id="v1yTSogblh" role="1Mb3aa">
-                  <property role="TrG5h" value="expr:" />
-                  <node concept="1M88Us" id="v1yTSogbli" role="1M9qTN">
-                    <property role="1M88Tz" value="-&gt;&gt;" />
+                  <node concept="1M9qTG" id="v1yTSogblh" role="1Mb3aa">
+                    <property role="TrG5h" value="expr:" />
+                    <node concept="1M88Us" id="v1yTSogbli" role="1M9qTN">
+                      <property role="1M88Tz" value="-&gt;&gt;" />
+                    </node>
                   </node>
-                </node>
-                <node concept="1M9qTG" id="v1yTSogblj" role="1Mb3aa">
-                  <property role="TrG5h" value="expr:" />
-                  <node concept="1M88Us" id="v1yTSogblk" role="1M9qTN">
-                    <property role="1M88Tz" value=":=" />
+                  <node concept="1M9qTG" id="v1yTSogblj" role="1Mb3aa">
+                    <property role="TrG5h" value="expr:" />
+                    <node concept="1M88Us" id="v1yTSogblk" role="1M9qTN">
+                      <property role="1M88Tz" value=":=" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -5872,6 +5878,11 @@
         </node>
       </node>
     </node>
+    <node concept="gRDUr" id="4EJnNxxGDDe" role="gR$BF">
+      <node concept="gREkH" id="4EJnNxxGDDf" role="gREkJ">
+        <property role="TrG5h" value="BINARY_OPERATION" />
+      </node>
+    </node>
   </node>
   <node concept="3c7qIG" id="1QnnJL6MGC_">
     <property role="TrG5h" value="ConvertToMPS_R" />
@@ -5972,14 +5983,14 @@
       <ref role="3c7peZ" node="v1yTSogbk2" resolve="expr:" />
     </node>
     <node concept="3c7pc5" id="1QnnJL6MH4z" role="3c7peX">
-      <property role="gfBJI" value="&#9;&#9;'+'&#10;" />
+      <property role="gfBJI" value="&#9;|&#9;'+'&#10;" />
       <property role="gfBJK" value="expr:+" />
-      <ref role="3c7peZ" node="v1yTSogbk8" resolve="expr:" />
+      <ref role="3c7peZ" node="v1yTSogbjE" resolve="expr:" />
     </node>
     <node concept="3c7pc5" id="1QnnJL6MH4$" role="3c7peX">
-      <property role="gfBJI" value="&#9;|&#9;'-'&#10;" />
+      <property role="gfBJI" value="&#9;&#9;'-'&#10;" />
       <property role="gfBJK" value="expr:-" />
-      <ref role="3c7peZ" node="v1yTSogbka" resolve="expr:" />
+      <ref role="3c7peZ" node="v1yTSogbjC" resolve="expr:" />
     </node>
     <node concept="3c7pc5" id="1QnnJL6MH4_" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;(expr ('&gt;'&#10;'&gt;='&#10;'&lt;'&#10;'&lt;='&#10;'=='&#10;'!=') expr)&#10;" />
@@ -6061,11 +6072,6 @@
       <property role="gfBJK" value="expr:expr~expr" />
       <ref role="3c7peZ" node="v1yTSogbkY" resolve="expr:" />
     </node>
-    <node concept="3c7pc5" id="1QnnJL6MH4P" role="3c7peX">
-      <property role="gfBJI" value="&#9;|&#9;(expr ('&lt;-'&#10;'&lt;&lt;-'&#10;'='&#10;'-&gt;'&#10;'-&gt;&gt;'&#10;':=') expr)&#10;" />
-      <property role="gfBJK" value="expr:expr&lt;-&lt;&lt;-=-&gt;-&gt;&gt;:=expr" />
-      <ref role="3c7peZ" node="v1yTSogbl3" resolve="expr:" />
-    </node>
     <node concept="3c7pc5" id="1QnnJL6MH4Q" role="3c7peX">
       <property role="gfBJI" value="&#9;&#9;'&lt;-'&#10;" />
       <property role="gfBJK" value="expr:&lt;-" />
@@ -6099,9 +6105,9 @@
     <node concept="3c7pc5" id="1QnnJL6MH4W" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;(subConceptPrefix='function' '(' formlist ')' expr)&#10;" />
       <property role="gfBJK" value="expr:function(formlist)expr" />
-      <ref role="3c7peZ" node="v1yTSogblm" resolve="expr:" />
       <ref role="34cEr5" node="1QnnJL6MH4f" />
       <ref role="gaaFa" to="6q58:v1yTSos36g" resolve="FunctionExpr" />
+      <ref role="3c7peZ" node="v1yTSogblm" resolve="expr:" />
       <node concept="vgRe2" id="1QnnJL6MH6z" role="vgRep">
         <ref role="vgRe1" to="6q58:3xPTlDT3iP5" />
         <node concept="10APa$" id="4EJnNxxBdOJ" role="10yyU7">
@@ -6122,16 +6128,16 @@
     <node concept="3c7pc5" id="1QnnJL6MH4Z" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;(subConceptPrefix='if' '(' expr ')' expr)&#10;" />
       <property role="gfBJK" value="expr:if(expr)expr" />
-      <ref role="3c7peZ" node="v1yTSogblC" resolve="expr:" />
       <ref role="34cEr5" node="1QnnJL6MH4f" />
       <ref role="gaaFa" to="6q58:v1yTSoviEO" resolve="IfExpr" />
+      <ref role="3c7peZ" node="v1yTSogblC" resolve="expr:" />
     </node>
     <node concept="3c7pc5" id="1QnnJL6MH50" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;(subConceptPrefix='if' '(' expr ')' expr 'else' expr)&#10;" />
       <property role="gfBJK" value="expr:if(expr)exprelseexpr" />
-      <ref role="3c7peZ" node="v1yTSogblJ" resolve="expr:" />
       <ref role="34cEr5" node="1QnnJL6MH4f" />
       <ref role="gaaFa" to="6q58:v1yTSoviEO" resolve="IfExpr" />
+      <ref role="3c7peZ" node="v1yTSogblJ" resolve="expr:" />
       <node concept="vgRe2" id="4EJnNxxAwc4" role="vgRep">
         <ref role="vgRe1" to="6q58:3xPTlDT3iP5" />
         <node concept="10APa$" id="4EJnNxxAwc8" role="10yyU7">
@@ -6233,6 +6239,22 @@
       <property role="gfBJI" value="&#9;|&#9;'FALSE'&#10;" />
       <property role="gfBJK" value="expr:FALSE" />
       <ref role="3c7peZ" node="v1yTSogbmJ" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="4EJnNxxGDEZ" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;'+'&#10;" />
+      <property role="gfBJK" value="expr:+" />
+      <ref role="3c7peZ" node="v1yTSogbk8" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="4EJnNxxGDF0" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;'-'&#10;" />
+      <property role="gfBJK" value="expr:-" />
+      <ref role="3c7peZ" node="v1yTSogbka" resolve="expr:" />
+    </node>
+    <node concept="3c7pc5" id="4EJnNxxGDF1" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;( expr operator=('&lt;-'&#10;'&lt;&lt;-'&#10;'='&#10;'-&gt;'&#10;'-&gt;&gt;'&#10;':=') expr)&#10;" />
+      <property role="gfBJK" value="expr:expr&lt;-&lt;&lt;-=-&gt;-&gt;&gt;:=expr" />
+      <ref role="3c7peZ" node="v1yTSogbl3" resolve="expr:" />
+      <ref role="34cEr5" node="1QnnJL6MH4f" />
     </node>
   </node>
 </model>

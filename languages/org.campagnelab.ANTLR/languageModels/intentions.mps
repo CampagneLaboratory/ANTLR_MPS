@@ -110,7 +110,7 @@
   </node>
   <node concept="2S6QgY" id="v1yTSogsM9">
     <property role="TrG5h" value="AddLabel" />
-    <ref role="2ZfgGC" to="ubjp:6cuUYchfAlZ" resolve="StringLiteral" />
+    <ref role="2ZfgGC" to="ubjp:6cuUYchcHx3" resolve="ParserRuleBlock" />
     <node concept="2S6ZIM" id="v1yTSogsMa" role="2ZfVej">
       <node concept="3clFbS" id="v1yTSogsMb" role="2VODD2">
         <node concept="3clFbF" id="v1yTSogsTS" role="3cqZAp">
