@@ -17,6 +17,7 @@ import jetbrains.mps.smodel.runtime.ReferencePresentationContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
+import org.campagnelab.antlr.tomps.behavior.Mapper_Behavior;
 import org.jetbrains.mps.openapi.model.SNodeReference;
 import jetbrains.mps.smodel.SNodePointer;
 
@@ -46,9 +47,7 @@ public class Mapper_Constraints extends BaseConstraintsDescriptor {
           }
           @Override
           public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
-            // TODO uncomment below 
-            // <node> 
-            return null;
+            return Mapper_Behavior.call_linkDeclarations_4068410015139474010(_context.getReferenceNode(), Mapper_Behavior.call_concept_558881339903199920(_context.getReferenceNode()));
           }
           @Override
           public SNodeReference getSearchScopeValidatorNode() {
