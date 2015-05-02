@@ -156,5 +156,18 @@
       <ref role="20lvS9" to="ubjp:6cuUYchcH_A" resolve="ParserRuleRef" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4EJnNxxClL3">
+    <property role="TrG5h" value="ExampleConcept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4EJnNxxClLt" role="1TKVEl">
+      <property role="TrG5h" value="aStringProperty" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="4EJnNxxClLr" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="aChild" />
+      <ref role="20lvS9" node="4EJnNxxClL3" resolve="ExampleConcept" />
+    </node>
+  </node>
 </model>
 

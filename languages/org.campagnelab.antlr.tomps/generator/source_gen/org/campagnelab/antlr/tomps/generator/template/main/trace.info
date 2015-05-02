@@ -5,45 +5,59 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="19,0,67,0" name="org.campagnelab.antlr.tomps.generator.template.main.QueriesGenerated" />
+      <unit at="21,0,84,0" name="org.campagnelab.antlr.tomps.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/5381624775491836178">
+    <file name="QueriesGenerated.java">
+      <node id="5381624775491889124" at="58,109,59,487" concept="1" />
+      <node id="5381624775491893583" at="61,109,62,788" concept="1" />
+      <scope id="5381624775492258372" at="58,109,59,487" />
+      <scope id="5381624775492257677" at="61,109,62,788" />
     </file>
   </root>
   <root nodeRef="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/558881339893084427">
     <file name="QueriesGenerated.java">
-      <node id="558881339902554011" at="22,111,23,99" concept="1" />
-      <node id="558881339893006517" at="25,111,26,0" concept="2" />
-      <node id="558881339892993983" at="26,0,27,353" concept="1" />
-      <node id="558881339893123276" at="29,111,30,352" concept="1" />
-      <node id="558881339892955256" at="32,108,33,447" concept="1" />
-      <node id="558881339892896160" at="35,108,36,99" concept="1" />
-      <node id="558881339893019889" at="38,108,39,189" concept="1" />
-      <node id="558881339893021125" at="41,108,42,189" concept="1" />
-      <node id="558881339902213639" at="44,108,45,188" concept="1" />
-      <node id="558881339902126243" at="47,108,48,30" concept="1" />
-      <node id="558881339902300945" at="50,108,51,30" concept="1" />
-      <node id="558881339902073889" at="53,93,54,198" concept="1" />
-      <node id="558881339902027211" at="56,119,57,89" concept="1" />
-      <node id="558881339893303868" at="61,39,62,185" concept="1" />
-      <node id="558881339893301842" at="61,0,64,0" concept="0" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="558881339892893138" at="59,119,64,7" concept="1" />
-      <scope id="558881339902552450" at="22,111,23,99" />
-      <scope id="558881339893120807" at="29,111,30,352" />
-      <scope id="558881339892955175" at="32,108,33,447" />
-      <scope id="558881339892896040" at="35,108,36,99" />
-      <scope id="558881339893019883" at="38,108,39,189" />
-      <scope id="558881339893021124" at="41,108,42,189" />
-      <scope id="558881339902213638" at="44,108,45,188" />
-      <scope id="558881339902124674" at="47,108,48,30" />
-      <scope id="558881339902300944" at="50,108,51,30" />
-      <scope id="558881339902083122" at="53,93,54,198" />
-      <scope id="558881339902026676" at="56,119,57,89" />
-      <scope id="558881339893301843" at="61,39,62,185" />
-      <scope id="558881339892992163" at="25,111,27,353" />
-      <scope id="558881339893301842" at="61,0,64,0">
+      <node id="558881339902554011" at="24,111,25,99" concept="1" />
+      <node id="558881339893006517" at="27,111,28,0" concept="2" />
+      <node id="558881339892993983" at="28,0,29,353" concept="1" />
+      <node id="558881339893123276" at="31,111,32,352" concept="1" />
+      <node id="558881339892955256" at="34,108,35,447" concept="1" />
+      <node id="558881339892896160" at="37,108,38,99" concept="1" />
+      <node id="558881339893019889" at="40,108,41,189" concept="1" />
+      <node id="558881339893021125" at="43,108,44,189" concept="1" />
+      <node id="558881339902213639" at="46,108,47,188" concept="1" />
+      <node id="5381624775491795193" at="49,109,50,182" concept="1" />
+      <node id="558881339902126243" at="52,108,53,30" concept="1" />
+      <node id="558881339902300945" at="55,108,56,30" concept="1" />
+      <node id="558881339902073889" at="64,93,65,198" concept="1" />
+      <node id="5381624775491835524" at="67,108,68,189" concept="1" />
+      <node id="5381624775491789919" at="70,120,71,188" concept="1" />
+      <node id="558881339902027211" at="73,119,74,89" concept="1" />
+      <node id="558881339893303868" at="78,39,79,185" concept="1" />
+      <node id="558881339893301842" at="78,0,81,0" concept="0" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="558881339892893138" at="76,119,81,7" concept="1" />
+      <scope id="558881339902552450" at="24,111,25,99" />
+      <scope id="558881339893120807" at="31,111,32,352" />
+      <scope id="558881339892955175" at="34,108,35,447" />
+      <scope id="558881339892896040" at="37,108,38,99" />
+      <scope id="558881339893019883" at="40,108,41,189" />
+      <scope id="558881339893021124" at="43,108,44,189" />
+      <scope id="558881339902213638" at="46,108,47,188" />
+      <scope id="5381624775491795187" at="49,109,50,182" />
+      <scope id="558881339902124674" at="52,108,53,30" />
+      <scope id="558881339902300944" at="55,108,56,30" />
+      <scope id="558881339902083122" at="64,93,65,198" />
+      <scope id="5381624775491835518" at="67,108,68,189" />
+      <scope id="5381624775491789186" at="70,120,71,188" />
+      <scope id="558881339902026676" at="73,119,74,89" />
+      <scope id="558881339893301843" at="78,39,79,185" />
+      <scope id="558881339892992163" at="27,111,29,353" />
+      <scope id="558881339893301842" at="78,0,81,0">
         <var name="it" id="558881339893301842" />
       </scope>
-      <scope id="558881339892892224" at="59,119,64,7" />
-      <unit id="558881339893301842" at="60,232,64,5" name="org.campagnelab.antlr.tomps.generator.template.main.QueriesGenerated$1" />
+      <scope id="558881339892892224" at="76,119,81,7" />
+      <unit id="558881339893301842" at="77,232,81,5" name="org.campagnelab.antlr.tomps.generator.template.main.QueriesGenerated$1" />
     </file>
   </root>
 </debug-info>
