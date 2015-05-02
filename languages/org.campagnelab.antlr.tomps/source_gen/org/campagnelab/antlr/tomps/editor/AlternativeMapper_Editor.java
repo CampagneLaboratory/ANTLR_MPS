@@ -223,6 +223,8 @@ public class AlternativeMapper_Editor extends DefaultNodeEditor {
     editorCell.setCellId("refNodeList_map");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, 0, AlternativeMapper_Editor._StyleParameter_QueryFunction_cj2frz_a0e0((editorCell == null ? null : editorCell.getContext()), (editorCell == null ? null : editorCell.getSNode())));
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, AlternativeMapper_Editor._StyleParameter_QueryFunction_cj2frz_a2e0((editorCell == null ? null : editorCell.getContext()), (editorCell == null ? null : editorCell.getSNode())));
     editorCell.getStyle().putAll(style);
     editorCell.setRole(handler.getElementRole());
     return editorCell;
@@ -260,6 +262,9 @@ public class AlternativeMapper_Editor extends DefaultNodeEditor {
     }
   }
   private static boolean _StyleParameter_QueryFunction_cj2frz_a0e0(EditorContext editorContext, SNode node) {
+    return ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e1882f807L, "map"))).isNotEmpty();
+  }
+  private static boolean _StyleParameter_QueryFunction_cj2frz_a2e0(EditorContext editorContext, SNode node) {
     return ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e1882f807L, "map"))).isNotEmpty();
   }
   private EditorCell createConstant_cj2frz_f0(EditorContext editorContext, SNode node) {

@@ -6,13 +6,15 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" implicit="true" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -123,17 +125,33 @@
   <node concept="1TIwiD" id="v1yTSowJws">
     <property role="TrG5h" value="Mapper" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="v1yTSowJwt" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="rule" />
+    <node concept="1TJgyj" id="3xPTlDSZWJt" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="source" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="ubjp:6cuUYchcH_A" resolve="ParserRuleRef" />
+      <ref role="20lvS9" node="3xPTlDSVFvt" resolve="Source" />
     </node>
     <node concept="1TJgyj" id="v1yTSowJwv" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="to" />
       <ref role="20lvS9" to="tpce:f_TJgxE" resolve="LinkDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3xPTlDSVFvt">
+    <property role="TrG5h" value="Source" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3xPTlDSVFvY">
+    <property role="TrG5h" value="ParserRuleSource" />
+    <ref role="1TJDcQ" node="3xPTlDSVFvt" resolve="Source" />
+    <node concept="1TJgyj" id="3xPTlDSVFXp" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="rule" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="ubjp:6cuUYchcH_A" resolve="ParserRuleRef" />
     </node>
   </node>
 </model>

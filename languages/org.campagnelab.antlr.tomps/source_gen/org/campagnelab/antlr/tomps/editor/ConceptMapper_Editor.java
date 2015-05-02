@@ -92,7 +92,7 @@ public class ConceptMapper_Editor extends DefaultNodeEditor {
       return this.getDescriptionText_internal((SNode) parameterObject);
     }
     public String getDescriptionText_internal(SNode parameterObject) {
-      return SPropertyOperations.getString(parameterObject, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+      return "#" + Integer.toString(SNodeOperations.getIndexInParent(parameterObject));
     }
   }
   private EditorCell createConstant_mzlmup_b0(EditorContext editorContext, SNode node) {

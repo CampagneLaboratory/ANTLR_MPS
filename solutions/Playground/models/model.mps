@@ -14,7 +14,11 @@
     <language id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps">
       <concept id="558881339902982172" name="org.campagnelab.antlr.tomps.structure.Mapper" flags="ng" index="vgRe2">
         <reference id="558881339902982175" name="to" index="vgRe1" />
-        <reference id="558881339902982173" name="rule" index="vgRe3" />
+        <reference id="558881339902982173" name="source" index="vgRe3" />
+        <child id="4068410015138958301" name="source" index="10yyU7" />
+      </concept>
+      <concept id="4068410015137839102" name="org.campagnelab.antlr.tomps.structure.ParserRuleSource" flags="ng" index="10APa$">
+        <reference id="4068410015137840985" name="rule" index="10APC3" />
       </concept>
       <concept id="7645898506791953195" name="org.campagnelab.antlr.tomps.structure.AlternativeMapper" flags="ng" index="3c7pc5">
         <property id="558881339894394992" name="fullText" index="gfBJI" />
@@ -1932,9 +1936,11 @@
       <property role="gfBJK" value="expr:function(formlist)expr" />
       <ref role="3c7peZ" node="v1yTSogblm" resolve="expr:" />
       <ref role="gaaFa" to="6q58:v1yTSos36g" resolve="FunctionExpr" />
-      <node concept="vgRe2" id="v1yTSox$EF" role="vgRep">
-        <ref role="vgRe3" node="v1yTSogqBs" />
+      <node concept="vgRe2" id="3xPTlDT1xYq" role="vgRep">
         <ref role="vgRe1" to="6q58:v1yTSowJwy" />
+        <node concept="10APa$" id="3xPTlDT1xYu" role="10yyU7">
+          <ref role="10APC3" node="v1yTSogqBs" />
+        </node>
       </node>
     </node>
     <node concept="3c7pc5" id="v1yTSogrsI" role="3c7peX">
@@ -1958,6 +1964,12 @@
       <property role="gfBJK" value="expr:if(expr)exprelseexpr" />
       <ref role="3c7peZ" node="v1yTSogblJ" resolve="expr:" />
       <ref role="gaaFa" to="6q58:v1yTSoviEO" resolve="IfExpr" />
+      <node concept="vgRe2" id="3xPTlDSXmNg" role="vgRep">
+        <ref role="vgRe3" to=":3xPTlDSZjp_" />
+        <node concept="10APa$" id="3xPTlDT1s$$" role="10yyU7">
+          <ref role="10APC3" node="v1yTSogqHL" />
+        </node>
+      </node>
     </node>
     <node concept="3c7pc5" id="v1yTSogrsM" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;('for' '(' ID 'in' expr ')' expr)&#10;" />

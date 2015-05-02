@@ -14,12 +14,12 @@
     <import index="88zw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.module(MPS.OpenAPI/org.jetbrains.mps.openapi.module@java_stub)" />
     <import index="vsqj" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.project(MPS.Core/jetbrains.mps.project@java_stub)" />
     <import index="t3eg" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/f:java_stub#8865b7a8-5271-43d3-884c-6fd1d9cfdd34#org.jetbrains.mps.openapi.language(MPS.OpenAPI/org.jetbrains.mps.openapi.language@java_stub)" />
-    <import index="ijbl" ref="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" implicit="true" />
     <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" implicit="true" />
     <import index="k4hm" ref="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)" implicit="true" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="ijbl" ref="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)" implicit="true" />
     <import index="3elq" ref="r:d6ed95b0-0023-42ab-bb27-99fdde507c48(org.campagnelab.antlr.tomps.structure)" implicit="true" />
   </imports>
   <registry>
@@ -546,47 +546,6 @@
   </node>
   <node concept="1M2fIO" id="v1yTSoxAfY">
     <ref role="1M2myG" to="3elq:v1yTSowJws" resolve="Mapper" />
-    <node concept="1N5Pfh" id="v1yTSoxAiC" role="1Mr941">
-      <ref role="1N5Vy1" to="3elq:v1yTSowJwt" />
-      <node concept="Bn3R3" id="v1yTSo$ZXM" role="Bn3R6">
-        <node concept="3clFbS" id="v1yTSo$ZXN" role="2VODD2">
-          <node concept="3clFbF" id="v1yTSo_02L" role="3cqZAp">
-            <node concept="2OqwBi" id="v1yTSo_0wj" role="3clFbG">
-              <node concept="2OqwBi" id="v1yTSo_06L" role="2Oq$k0">
-                <node concept="Bn53e" id="v1yTSoAf1G" role="2Oq$k0" />
-                <node concept="3TrEf2" id="v1yTSoAfmN" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ubjp:6cuUYchcH_B" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="v1yTSo_0Mb" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1MUpDS" id="v1yTSoAdm4" role="1N6uqs">
-        <node concept="3clFbS" id="v1yTSoAdm5" role="2VODD2">
-          <node concept="3clFbF" id="v1yTSoAdt9" role="3cqZAp">
-            <node concept="2OqwBi" id="v1yTSoAdta" role="3clFbG">
-              <node concept="2OqwBi" id="v1yTSoAdtb" role="2Oq$k0">
-                <node concept="3kakTB" id="v1yTSoAdtc" role="2Oq$k0" />
-                <node concept="2qgKlT" id="v1yTSoAdXz" role="2OqNvi">
-                  <ref role="37wK5l" to="k4hm:v1yTSox_OX" resolve="alternative" />
-                </node>
-              </node>
-              <node concept="2Rf3mk" id="v1yTSoAeAX" role="2OqNvi">
-                <node concept="1xMEDy" id="v1yTSoAeAZ" role="1xVPHs">
-                  <node concept="chp4Y" id="v1yTSoAeJo" role="ri$Ld">
-                    <ref role="cht4Q" to="ubjp:6cuUYchcH_A" resolve="ParserRuleRef" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1N5Pfh" id="v1yTSo_8IN" role="1Mr941">
       <ref role="1N5Vy1" to="3elq:v1yTSowJwv" />
       <node concept="Bn3R3" id="v1yTSo_9Xl" role="Bn3R6">
@@ -613,6 +572,50 @@
               </node>
               <node concept="3Tsc0h" id="v1yTSo_9Gu" role="2OqNvi">
                 <ref role="3TtcxE" to="tpce:f_TKVDF" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3xPTlDSVFXr">
+    <ref role="1M2myG" to="3elq:3xPTlDSVFvY" resolve="ParserRuleSource" />
+    <node concept="1N5Pfh" id="3xPTlDSWv$y" role="1Mr941">
+      <ref role="1N5Vy1" to="3elq:3xPTlDSVFXp" />
+      <node concept="Bn3R3" id="3xPTlDSWv_4" role="Bn3R6">
+        <node concept="3clFbS" id="3xPTlDSWv_0" role="2VODD2">
+          <node concept="3clFbF" id="3xPTlDSWv$A" role="3cqZAp">
+            <node concept="2OqwBi" id="3xPTlDSWv_2" role="3clFbG">
+              <node concept="2OqwBi" id="3xPTlDSWv$Y" role="2Oq$k0">
+                <node concept="Bn53e" id="3xPTlDSWv$W" role="2Oq$k0" />
+                <node concept="3TrEf2" id="3xPTlDSWv_6" role="2OqNvi">
+                  <ref role="3Tt5mk" to="ubjp:6cuUYchcH_B" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="3xPTlDSWv$$" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1MUpDS" id="3xPTlDSWv$I" role="1N6uqs">
+        <node concept="3clFbS" id="3xPTlDSWv$G" role="2VODD2">
+          <node concept="3clFbF" id="3xPTlDSWv$M" role="3cqZAp">
+            <node concept="2OqwBi" id="3xPTlDSWv$O" role="3clFbG">
+              <node concept="2OqwBi" id="3xPTlDSWv$S" role="2Oq$k0">
+                <node concept="3kakTB" id="3xPTlDSWv$E" role="2Oq$k0" />
+                <node concept="2qgKlT" id="3xPTlDSWv$U" role="2OqNvi">
+                  <ref role="37wK5l" to="k4hm:3xPTlDSW3GT" resolve="alternative" />
+                </node>
+              </node>
+              <node concept="2Rf3mk" id="3xPTlDSWv$C" role="2OqNvi">
+                <node concept="1xMEDy" id="3xPTlDSWv$K" role="1xVPHs">
+                  <node concept="chp4Y" id="3xPTlDSWv$Q" role="ri$Ld">
+                    <ref role="cht4Q" to="ubjp:6cuUYchcH_A" resolve="ParserRuleRef" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
