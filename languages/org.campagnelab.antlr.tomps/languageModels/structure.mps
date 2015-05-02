@@ -98,13 +98,15 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="ubjp:6cuUYcheOmf" resolve="Alternative" />
     </node>
+    <node concept="1TJgyj" id="652oLa_scnn" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="conceptMapper" />
+      <ref role="20lvS9" node="6BpdF0a3FC2" resolve="ConceptMapper" />
+    </node>
     <node concept="1TJgyj" id="v1yTSnUi5k" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="returns" />
       <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
-    </node>
-    <node concept="PrWs8" id="v1yTSoxNjZ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="6BpdF0a3FC2">
