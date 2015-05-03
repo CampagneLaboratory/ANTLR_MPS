@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <root>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="9,0,22,0" name="org.campagnelab.ANTLR45.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="GrammarSpec_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.ANTLR45.behavior.GrammarSpec_BehaviorDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

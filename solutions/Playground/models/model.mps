@@ -9,6 +9,7 @@
     <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" />
     <import index="6q58" ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)" />
     <import index="gxyq" ref="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" />
+    <import index="t2fd" ref="r:76bb4746-3632-407a-baf4-a91dcd5939a8(org.campagnelab.ANTLR45.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -20,6 +21,7 @@
       <concept id="5381624775492632183" name="org.campagnelab.antlr.tomps.structure.LabeledElementSource" flags="ng" index="F0E5f">
         <reference id="5381624775492632953" name="labeled" index="F0lT1" />
       </concept>
+      <concept id="5381624775493521560" name="org.campagnelab.antlr.tomps.structure.Destination" flags="ng" index="F5cYw" />
       <concept id="5381624775493521561" name="org.campagnelab.antlr.tomps.structure.ChildDestination" flags="ng" index="F5cYx">
         <reference id="5381624775493523154" name="to" index="F5cBE" />
       </concept>
@@ -6281,6 +6283,76 @@
           <ref role="3KT_mD" to="6q58:4EJnNxxIQv9" resolve="operator" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="3c7qIG" id="WSCumwWVRt">
+    <property role="TrG5h" value="ConvertToMPS_ANTLRv4Parser" />
+    <property role="1zNsMP" value="org.campagnelab.ANTLR45" />
+    <ref role="3c7qJ7" node="v1yTSnTwTB" resolve="ANTLRv4Parser" />
+    <node concept="1zPSMM" id="WSCumwXJX6" role="1zPSMS">
+      <ref role="1zPSMP" node="v1yTSnTzuq" resolve="grammarSpec" />
+      <ref role="1zPSMN" to="t2fd:WSCumwXJX8" resolve="GrammarSpec" />
+    </node>
+    <node concept="1zPSMM" id="WSCumwXMMk" role="1zPSMS">
+      <ref role="1zPSMP" node="v1yTSnTzAA" resolve="rules" />
+      <ref role="1zPSMN" to="t2fd:WSCumwXMMx" resolve="Rules" />
+    </node>
+    <node concept="1zPSMM" id="WSCumwXMMn" role="1zPSMS">
+      <ref role="1zPSMP" node="v1yTSnTzAR" resolve="ruleSpec" />
+      <ref role="1zPSMN" to="t2fd:WSCumwXMMA" resolve="RuleSpec" />
+    </node>
+    <node concept="1zPSMM" id="WSCumwXMMI" role="1zPSMS">
+      <ref role="1zPSMP" node="v1yTSnTzBw" resolve="parserRuleSpec" />
+      <ref role="1zPSMN" to="t2fd:WSCumwXMMN" resolve="ParserRuleSpec" />
+    </node>
+    <node concept="3c7pc5" id="WSCumwXJX9" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;(DOC_COMMENT grammarType id SEMI prequelConstruct rules modeSpec EOF)&#10;" />
+      <property role="gfBJK" value="grammarSpec:DOC_COMMENTgrammarTypeidSEMIprequelConstructrulesmodeSpec" />
+      <ref role="3c7peZ" node="v1yTSnTzuB" resolve="grammarSpec:" />
+      <ref role="34cEr5" node="WSCumwXJX6" />
+      <node concept="vgRe2" id="WSCumwXMMV" role="vgRep">
+        <node concept="10APa$" id="WSCumwXMN1" role="10yyU7">
+          <ref role="10APC3" node="v1yTSnT$iI" />
+        </node>
+        <node concept="3KT_mC" id="WSCumwY5ak" role="F5cX0">
+          <ref role="3KT_mD" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+      <node concept="vgRe2" id="WSCumwY5au" role="vgRep">
+        <node concept="10APa$" id="WSCumwY5aB" role="10yyU7">
+          <ref role="10APC3" node="v1yTSnT$mh" />
+        </node>
+        <node concept="F5cYx" id="WSCumwY5aF" role="F5cX0">
+          <ref role="F5cBE" to="t2fd:WSCumwY5aD" />
+        </node>
+      </node>
+    </node>
+    <node concept="3c7pc5" id="WSCumwXMMy" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;ruleSpec&#10;" />
+      <property role="gfBJK" value="rules:ruleSpec" />
+      <ref role="3c7peZ" node="v1yTSnTzAF" resolve="rules:" />
+      <ref role="34cEr5" node="WSCumwXMMk" />
+      <node concept="vgRe2" id="WSCumwY5aH" role="vgRep">
+        <node concept="F5cYw" id="WSCumwY5aJ" role="F5cX0" />
+        <node concept="10APa$" id="WSCumwY5aN" role="10yyU7">
+          <ref role="10APC3" node="v1yTSnT$g5" />
+        </node>
+      </node>
+    </node>
+    <node concept="3c7pc5" id="WSCumwXMMB" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;parserRuleSpec&#10;" />
+      <property role="gfBJK" value="ruleSpec:parserRuleSpec" />
+      <ref role="3c7peZ" node="v1yTSnTzAY" resolve="ruleSpec:" />
+    </node>
+    <node concept="3c7pc5" id="WSCumwXMMC" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;lexerRule&#10;" />
+      <property role="gfBJK" value="ruleSpec:lexerRule" />
+      <ref role="3c7peZ" node="v1yTSnTzB0" resolve="ruleSpec:" />
+    </node>
+    <node concept="3c7pc5" id="WSCumwXMMO" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;(DOC_COMMENT ruleModifiers RULE_REF ARG_ACTION ruleReturns throwsSpec localsSpec rulePrequel COLON ruleBlock SEMI exceptionGroup)&#10;" />
+      <property role="gfBJK" value="parserRuleSpec:DOC_COMMENTruleModifiersRULE_REFruleReturnsthrowsSpeclocalsSpecrulePrequelCOLONruleBlockSEMIexceptionGroup" />
+      <ref role="3c7peZ" node="v1yTSnTzBL" resolve="parserRuleSpec:" />
     </node>
   </node>
 </model>
