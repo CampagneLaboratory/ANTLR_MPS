@@ -13,9 +13,17 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
       case 0:
         return new GrammarSpec_BehaviorDescriptor();
+      case 4:
+        return new Rules_BehaviorDescriptor();
+      case 3:
+        return new RuleSpec_BehaviorDescriptor();
+      case 2:
+        return new ParserRuleSpec_BehaviorDescriptor();
+      case 1:
+        return new OptionValue_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.ANTLR45.structure.GrammarSpec"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.ANTLR45.structure.GrammarSpec", "org.campagnelab.ANTLR45.structure.OptionValue", "org.campagnelab.ANTLR45.structure.ParserRuleSpec", "org.campagnelab.ANTLR45.structure.RuleSpec", "org.campagnelab.ANTLR45.structure.Rules"};
 }

@@ -12,7 +12,6 @@ import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceScopeProvider;
@@ -25,14 +24,14 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.model.SNodeReference;
 import jetbrains.mps.smodel.SNodePointer;
 
-public class ParserRuleSource_Constraints extends BaseConstraintsDescriptor {
-  public ParserRuleSource_Constraints() {
-    super(MetaIdFactory.conceptId(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7feL));
+public class LabeledElementSource_Constraints extends BaseConstraintsDescriptor {
+  public LabeledElementSource_Constraints() {
+    super(MetaIdFactory.conceptId(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861adfe77L));
   }
   @Override
   protected Map<SReferenceLinkId, ReferenceConstraintsDescriptor> getNotDefaultSReferenceLinks() {
     Map<SReferenceLinkId, ReferenceConstraintsDescriptor> references = new HashMap<SReferenceLinkId, ReferenceConstraintsDescriptor>();
-    references.put(MetaIdFactory.refId(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7feL, 0x3875e55a78eebf59L), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7feL, 0x3875e55a78eebf59L), this) {
+    references.put(MetaIdFactory.refId(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861adfe77L, 0x4aaf5f3861ae0179L), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861adfe77L, 0x4aaf5f3861ae0179L), this) {
       @Override
       public boolean hasOwnOnReferenceSetHandler() {
         return true;
@@ -43,7 +42,7 @@ public class ParserRuleSource_Constraints extends BaseConstraintsDescriptor {
       }
       @Override
       public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
-        SPropertyOperations.set(referenceNode, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7ddL, 0x2884e9c78702dfbfL, "id"), SPropertyOperations.getString(SLinkOperations.getTarget(newReferentNode, MetaAdapterFactory.getReferenceLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d966L, 0x631eebe31132d967L, "rule")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+        SPropertyOperations.set(referenceNode, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7ddL, 0x2884e9c78702dfbfL, "id"), SPropertyOperations.getString(newReferentNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
       }
       @Override
       public boolean hasOwnScopeProvider() {
@@ -59,20 +58,20 @@ public class ParserRuleSource_Constraints extends BaseConstraintsDescriptor {
           }
           @Override
           public String getPresentation(final IOperationContext operationContext, final ReferencePresentationContext _context) {
-            return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getParameterNode(), MetaAdapterFactory.getReferenceLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d966L, 0x631eebe31132d967L, "rule")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+            return SPropertyOperations.getString(_context.getParameterNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
           }
           @Override
           public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
-            return SNodeOperations.getNodeDescendants(Source_Behavior.call_alternative_4068410015137938233(_context.getReferenceNode()), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d966L, "org.campagnelab.ANTLR.structure.ParserRuleRef"), false, new SAbstractConcept[]{});
+            return SNodeOperations.getNodeDescendants(Source_Behavior.call_alternative_4068410015137938233(_context.getReferenceNode()), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, "org.campagnelab.ANTLR.structure.LabeledElement"), false, new SAbstractConcept[]{});
           }
           @Override
           public SNodeReference getSearchScopeValidatorNode() {
-            return breakingNode_h1cv4m_a0a3a0a0a4a0b0a1a1;
+            return breakingNode_5iystp_a0a3a0a0a4a0b0a1a1;
           }
         };
       }
     });
     return references;
   }
-  private static SNodePointer breakingNode_h1cv4m_a0a3a0a0a4a0b0a1a1 = new SNodePointer("r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)", "4068410015138052398");
+  private static SNodePointer breakingNode_5iystp_a0a3a0a0a4a0b0a1a1 = new SNodePointer("r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)", "2919715501616077406");
 }

@@ -253,6 +253,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -336,9 +339,15 @@
           <property role="Vbekb" value="BOLD" />
         </node>
       </node>
-      <node concept="3F0ifn" id="6BpdF0a3Ot7" role="3EZMnx">
+      <node concept="3F0ifn" id="2y4Usu6QXKv" role="3EZMnx">
+        <property role="3F0ifm" value="parser canonical classname:" />
+      </node>
+      <node concept="3F0A7n" id="2y4Usu6QXLZ" role="3EZMnx">
+        <ref role="1NtTu8" to="3elq:2y4Usu6QddD" resolve="parserCanonicalClassName" />
+      </node>
+      <node concept="3F0ifn" id="2y4Usu6QXOe" role="3EZMnx">
         <property role="3F0ifm" value="" />
-        <node concept="pVoyu" id="6BpdF0a3Otz" role="3F10Kt">
+        <node concept="pVoyu" id="2y4Usu6QXOY" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
@@ -998,6 +1007,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3xPTlDSW8KH">
+    <property role="3GE5qa" value="sources" />
     <ref role="1XX52x" to="3elq:3xPTlDSVFvY" resolve="ParserRuleSource" />
     <node concept="3EZMnI" id="3xPTlDSW8Mp" role="2wV5jI">
       <node concept="l2Vlx" id="3xPTlDSW8Mq" role="2iSdaV" />
@@ -1034,6 +1044,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3xPTlDSZ$BH">
+    <property role="3GE5qa" value="sources" />
     <ref role="1XX52x" to="3elq:3xPTlDSVFvt" resolve="Source" />
     <node concept="1HlG4h" id="3xPTlDSZF1L" role="2wV5jI">
       <node concept="1HfYo3" id="3xPTlDSZF1N" role="1HlULh">
@@ -1446,6 +1457,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="2uLbzznpxUK">
+    <property role="3GE5qa" value="destinations" />
     <ref role="1XX52x" to="3elq:4EJnNxxIT2o" resolve="Destination" />
     <node concept="1HlG4h" id="2uLbzznpxUP" role="2wV5jI">
       <node concept="3k4GqR" id="WSCumwYc9R" role="3F10Kt">

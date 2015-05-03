@@ -53,5 +53,8 @@
   <node concept="1TIwiD" id="WSCumwXMMN">
     <property role="TrG5h" value="ParserRuleSpec" />
   </node>
+  <node concept="1TIwiD" id="2y4Usu72R14">
+    <property role="TrG5h" value="OptionValue" />
+  </node>
 </model>
 

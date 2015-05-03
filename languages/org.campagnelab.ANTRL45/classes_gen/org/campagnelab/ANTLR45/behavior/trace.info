@@ -2,10 +2,22 @@
 <debug-info>
   <root>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,22,0" name="org.campagnelab.ANTLR45.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,30,0" name="org.campagnelab.ANTLR45.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="GrammarSpec_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.ANTLR45.behavior.GrammarSpec_BehaviorDescriptor" />
+      <unit at="10,0,21,0" name="org.campagnelab.ANTLR45.behavior.GrammarSpec_BehaviorDescriptor" />
+    </file>
+    <file name="OptionValue_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.ANTLR45.behavior.OptionValue_BehaviorDescriptor" />
+    </file>
+    <file name="ParserRuleSpec_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.ANTLR45.behavior.ParserRuleSpec_BehaviorDescriptor" />
+    </file>
+    <file name="RuleSpec_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.ANTLR45.behavior.RuleSpec_BehaviorDescriptor" />
+    </file>
+    <file name="Rules_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.ANTLR45.behavior.Rules_BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

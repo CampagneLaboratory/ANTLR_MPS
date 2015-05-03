@@ -8,7 +8,7 @@
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="19uchsffy2fbhy8fxadw6t0s4o36pge" />
   <dep model="r:00000000-0000-4000-0000-011c89590303(jetbrains.mps.lang.smodel.generator.baseLanguage.template.main@generator)" hash="-bwx21k9wk9xyh3aznc167jknjnlkpc4" />
   <dep model="r:229ce18d-2bb0-4d5b-a7cd-cec65841e459(jetbrains.mps.lang.behavior.generator.template.main@generator)" hash="-8zwzjr88rs157i918mf2p5od5miyzlr" />
-  <dep model="r:76bb4746-3632-407a-baf4-a91dcd5939a8(org.campagnelab.ANTLR45.structure)" hash="-171hfz8gommpfalh99ud9xqvluz2g7x" />
+  <dep model="r:76bb4746-3632-407a-baf4-a91dcd5939a8(org.campagnelab.ANTLR45.structure)" hash="52ymkmenun1zgcouf69e6hyrfxwm6zq" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="-afok4i31abohs3f5rk0sqlnvuruthqa" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="-77sy6xhjavqcj7zabmxjwdba0x2o622" />
   <common hash="-1b67w0g00rrg9asoc84qzkkx0u7xiys" dependsOnNodes="true">
@@ -25,6 +25,10 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="BehaviorAspectDescriptor.java" />
     <file name="GrammarSpec_BehaviorDescriptor.java" />
+    <file name="OptionValue_BehaviorDescriptor.java" />
+    <file name="ParserRuleSpec_BehaviorDescriptor.java" />
+    <file name="RuleSpec_BehaviorDescriptor.java" />
+    <file name="Rules_BehaviorDescriptor.java" />
   </common>
 </dependencies>
 

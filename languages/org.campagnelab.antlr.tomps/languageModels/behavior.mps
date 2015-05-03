@@ -237,6 +237,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -2157,6 +2160,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3xPTlDSW3Gf">
+    <property role="3GE5qa" value="sources" />
     <ref role="13h7C2" to="3elq:3xPTlDSVFvt" resolve="Source" />
     <node concept="13i0hz" id="3xPTlDSW3GT" role="13h7CS">
       <property role="TrG5h" value="alternative" />
@@ -2216,6 +2220,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3xPTlDSWT51">
+    <property role="3GE5qa" value="sources" />
     <ref role="13h7C2" to="3elq:3xPTlDSVFvY" resolve="ParserRuleSource" />
     <node concept="13hLZK" id="3xPTlDSWT52" role="13h7CW">
       <node concept="3clFbS" id="3xPTlDSWT53" role="2VODD2" />
@@ -2270,6 +2275,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4EJnNxxGjac">
+    <property role="3GE5qa" value="sources" />
     <ref role="13h7C2" to="3elq:4EJnNxxFvTR" resolve="LabeledElementSource" />
     <node concept="13hLZK" id="4EJnNxxGjad" role="13h7CW">
       <node concept="3clFbS" id="4EJnNxxGjae" role="2VODD2" />
@@ -2319,6 +2325,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2uLbzznpugR">
+    <property role="3GE5qa" value="destinations" />
     <ref role="13h7C2" to="3elq:4EJnNxxIT2p" resolve="ChildDestination" />
     <node concept="13i0hz" id="2uLbzznpx0z" role="13h7CS">
       <property role="TrG5h" value="name" />
@@ -2366,6 +2373,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2uLbzznpwAe">
+    <property role="3GE5qa" value="destinations" />
     <ref role="13h7C2" to="3elq:4EJnNxxIT2o" resolve="Destination" />
     <node concept="13i0hz" id="2uLbzznpwAh" role="13h7CS">
       <property role="TrG5h" value="name" />
@@ -2388,6 +2396,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2uLbzznqRwu">
+    <property role="3GE5qa" value="destinations" />
     <ref role="13h7C2" to="3elq:2uLbzznlRIg" resolve="PropertyDestination" />
     <node concept="13hLZK" id="2uLbzznqRwv" role="13h7CW">
       <node concept="3clFbS" id="2uLbzznqRww" role="2VODD2" />
