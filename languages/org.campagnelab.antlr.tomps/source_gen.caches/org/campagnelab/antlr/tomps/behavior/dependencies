@@ -25,13 +25,30 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.AlternativeMapper_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ChildDestination_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ConceptMapper_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ConvertToMPS_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ExampleConcept_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.LabeledElementSource_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.Mapper_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ParserRuleSource_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.PropertyDestination_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.antlr.tomps.behavior.ChildDestination_Behavior" file="ChildDestination_Behavior.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="org.campagnelab.antlr.tomps.behavior.ChildDestination_BehaviorDescriptor" file="ChildDestination_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ChildDestination_Behavior" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.Destination_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.antlr.tomps.behavior.ConceptMapper_Behavior" file="ConceptMapper_Behavior.java">
     <classNode dependClassName="java.lang.Character" />
@@ -95,6 +112,16 @@
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="org.campagnelab.antlr.tomps.behavior.Destination_Behavior" file="Destination_Behavior.java">
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="org.campagnelab.antlr.tomps.behavior.Destination_BehaviorDescriptor" file="Destination_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="org.campagnelab.antlr.tomps.behavior.ExampleConcept_BehaviorDescriptor" file="ExampleConcept_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -154,6 +181,21 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ParserRuleSource_Behavior" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.Source_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.antlr.tomps.behavior.PropertyDestination_Behavior" file="PropertyDestination_Behavior.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="org.campagnelab.antlr.tomps.behavior.PropertyDestination_BehaviorDescriptor" file="PropertyDestination_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.Destination_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.PropertyDestination_Behavior" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>

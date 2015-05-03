@@ -60,7 +60,27 @@ public class AlternativeMapper_Behavior {
     return "" + Character.toUpperCase(value.charAt(0)) + value.substring(1, value.length()).toString();
   }
   public static String call_subConceptPrefix_558881339901663656(SNode thisNode) {
-    return SPropertyOperations.getString(SNodeOperations.cast(SLinkOperations.getTarget(AlternativeMapper_Behavior.call_subConceptPrefix_558881339899304009(thisNode), MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, 0x7c18b9e17b7c72fL, "element")), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, "org.campagnelab.ANTLR.structure.StringLiteral")), MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, 0x631eebe3113e6580L, "literal"));
+    SNode element = SLinkOperations.getTarget(AlternativeMapper_Behavior.call_subConceptPrefix_558881339899304009(thisNode), MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, 0x7c18b9e17b7c72fL, "element"));
+    {
+      final SNode l = element;
+      if (SNodeOperations.isInstanceOf(l, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, "org.campagnelab.ANTLR.structure.StringLiteral"))) {
+        return SPropertyOperations.getString(SNodeOperations.cast(element, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, "org.campagnelab.ANTLR.structure.StringLiteral")), MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, 0x631eebe3113e6580L, "literal"));
+      }
+    }
+    {
+      final SNode l = element;
+      if (SNodeOperations.isInstanceOf(l, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d966L, "org.campagnelab.ANTLR.structure.ParserRuleRef"))) {
+        return SPropertyOperations.getString(SNodeOperations.cast(element, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d966L, "org.campagnelab.ANTLR.structure.ParserRuleRef")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+      }
+    }
+    {
+      final SNode t = element;
+      if (SNodeOperations.isInstanceOf(t, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e172f3f03L, "org.campagnelab.ANTLR.structure.TokenRef"))) {
+        return SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(element, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e172f3f03L, "org.campagnelab.ANTLR.structure.TokenRef")), MetaAdapterFactory.getReferenceLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e172f3f03L, 0x7c18b9e172f3f04L, "token")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+      }
+    }
+    return "<invalid concept prefix>";
+
   }
   private static boolean eq_i4n1t_a0a0a0a0a0a0h(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);

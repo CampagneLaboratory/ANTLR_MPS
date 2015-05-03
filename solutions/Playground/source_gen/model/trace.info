@@ -1,3 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info />
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <root nodeRef="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/2132277386195683877">
+    <file name="R_ToMpsVisitor.java">
+      <node id="2132277386195683877" at="17,63,18,222" concept="3" />
+      <node id="2132277386195683877" at="19,120,20,226" concept="0" />
+      <node id="2132277386195683877" at="20,226,21,27" concept="5" />
+      <node id="2132277386195683877" at="21,27,22,125" concept="0" />
+      <node id="2132277386195683877" at="22,125,23,0" concept="6" />
+      <node id="2132277386195683877" at="25,120,26,220" concept="0" />
+      <node id="2132277386195683877" at="26,220,27,27" concept="5" />
+      <node id="2132277386195683877" at="27,27,28,0" concept="6" />
+      <node id="2132277386195683877" at="30,120,31,220" concept="0" />
+      <node id="2132277386195683877" at="31,220,32,27" concept="5" />
+      <node id="2132277386195683877" at="32,27,33,186" concept="0" />
+      <node id="2132277386195683877" at="33,186,34,0" concept="6" />
+      <node id="2132277386195683877" at="36,112,37,234" concept="0" />
+      <node id="2132277386195683877" at="37,234,38,27" concept="5" />
+      <node id="2132277386195683877" at="38,27,39,261" concept="0" />
+      <node id="2132277386195683877" at="39,261,40,0" concept="6" />
+      <node id="2132277386195683877" at="41,5,42,21" concept="5" />
+      <node id="2132277386195683877" at="42,21,43,18" concept="4" />
+      <node id="2132277386195683877" at="24,5,29,5" concept="1" />
+      <node id="2132277386195683877" at="18,222,24,5" concept="1" />
+      <node id="2132277386195683877" at="29,5,35,5" concept="1" />
+      <node id="2132277386195683877" at="35,5,41,5" concept="1" />
+      <node id="2132277386195683877" at="17,0,45,0" concept="2" trace="visitexprContext#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2132277386195683877" at="25,120,28,0" />
+      <scope id="2132277386195683877" at="19,120,23,0" />
+      <scope id="2132277386195683877" at="30,120,34,0" />
+      <scope id="2132277386195683877" at="36,112,40,0" />
+      <scope id="2132277386195683877" at="17,63,43,18">
+        <var name="result" id="2132277386195683877" />
+      </scope>
+      <scope id="2132277386195683877" at="17,0,45,0">
+        <var name="context" id="2132277386195683877" />
+      </scope>
+      <unit id="2132277386195683877" at="15,0,47,0" name="model.R_ToMpsVisitor" />
+    </file>
+  </root>
+</debug-info>
 

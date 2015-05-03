@@ -1,3 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependenciesRoot />
+<dependenciesRoot>
+  <dependency className="model.R_ToMpsVisitor" file="R_ToMpsVisitor.java">
+    <classNode dependClassName="RParser.ExprContext" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="org.antlr.v4.runtime.tree.AbstractParseTreeVisitor" />
+    <classNode extendsClassName="org.antlr.v4.runtime.tree.ParseTreeVisitor" />
+  </dependency>
+</dependenciesRoot>
 

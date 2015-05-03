@@ -16,9 +16,6 @@ import java.util.List;
 import jetbrains.mps.openapi.editor.cells.SubstituteAction;
 import jetbrains.mps.nodeEditor.cellMenu.CellContext;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
-import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
-import jetbrains.mps.nodeEditor.InlineCellProvider;
-import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 
 public class Mapper_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -30,7 +27,7 @@ public class Mapper_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createRefNode_j5ilxx_a0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_j5ilxx_b0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_j5ilxx_c0(editorContext, node));
+    editorCell.addEditorCell(this.createRefNode_j5ilxx_c0(editorContext, node));
     return editorCell;
   }
   private EditorCell createRefNode_j5ilxx_a0(EditorContext editorContext, SNode node) {
@@ -66,18 +63,16 @@ public class Mapper_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createRefCell_j5ilxx_c0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
-    provider.setRole("to");
-    provider.setNoTargetText("<no to>");
+  private EditorCell createRefNode_j5ilxx_c0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
+    provider.setRole("destination");
+    provider.setNoTargetText("<no destination>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new Mapper_Editor._Inline_j5ilxx_a2a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
-      editorCell.setReferenceCell(true);
-      editorCell.setRole("to");
+      editorCell.setRole("destination");
     }
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new Mapper_Editor.Mapper_component_cellMenu_j5ilxx_a0c0()}));
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
@@ -86,32 +81,13 @@ public class Mapper_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  public static class _Inline_j5ilxx_a2a extends InlineCellProvider {
-    public _Inline_j5ilxx_a2a() {
-      super();
+  public static class Mapper_component_cellMenu_j5ilxx_a0c0 implements SubstituteInfoPartExt {
+    private DestinationRefMenu myComponent;
+    public Mapper_component_cellMenu_j5ilxx_a0c0() {
+      this.myComponent = new DestinationRefMenu();
     }
-    public EditorCell createEditorCell(EditorContext editorContext) {
-      return this.createEditorCell(editorContext, this.getSNode());
-    }
-    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_j5ilxx_a0c0(editorContext, node);
-    }
-    private EditorCell createProperty_j5ilxx_a0c0(EditorContext editorContext, SNode node) {
-      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-      provider.setRole("role");
-      provider.setNoTargetText("<no role>");
-      provider.setReadOnly(true);
-      EditorCell editorCell;
-      editorCell = provider.createEditorCell(editorContext);
-      editorCell.setCellId("property_role");
-      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-      SNode attributeConcept = provider.getRoleAttribute();
-      Class attributeKind = provider.getRoleAttributeClass();
-      if (attributeConcept != null) {
-        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-        return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-      } else
-      return editorCell;
+    public List<SubstituteAction> createActions(CellContext cellContext, EditorContext editorContext) {
+      return this.myComponent.createSubstituteActions(cellContext, editorContext);
     }
   }
 }

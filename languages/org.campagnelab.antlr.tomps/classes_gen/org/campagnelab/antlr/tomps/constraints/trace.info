@@ -15,7 +15,60 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,50,0" name="org.campagnelab.antlr.tomps.constraints.ConstraintsAspectDescriptor" />
+      <unit at="10,0,60,0" name="org.campagnelab.antlr.tomps.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/2860118060024411667">
+    <file name="PropertyDestination_Constraints.java">
+      <node id="2860118060024411667" at="27,44,28,98" concept="12" />
+      <node id="2860118060024411667" at="31,98,32,135" concept="6" />
+      <node id="2860118060024411667" at="35,44,36,20" concept="7" />
+      <node id="2860118060024411667" at="43,44,44,24" concept="7" />
+      <node id="2860118060024411728" at="47,128,48,147" concept="7" />
+      <node id="2860118060024429815" at="51,142,52,243" concept="6" />
+      <node id="2860118060024411719" at="52,243,53,146" concept="7" />
+      <node id="2860118060024411667" at="56,63,57,58" concept="7" />
+      <node id="2860118060024411667" at="61,7,62,22" concept="7" />
+      <node id="2860118060024411667" at="64,0,65,0" concept="10" trace="breakingNode_ofqllk_a0a3a0a0a1a0b0a1a1" />
+      <node id="2860118060024411667" at="27,0,30,0" concept="2" trace="PropertyDestination_Constraints#()V" />
+      <node id="2860118060024411667" at="34,0,38,0" concept="5" trace="hasOwnScopeProvider#()Z" />
+      <node id="2860118060024411667" at="42,0,46,0" concept="5" trace="hasPresentation#()Z" />
+      <node id="2860118060024411667" at="46,0,50,0" concept="5" trace="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
+      <node id="2860118060024411667" at="55,0,59,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="2860118060024411667" at="50,0,55,0" concept="5" trace="createSearchScopeOrListOfNodes#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljava/lang/Object;" />
+      <node id="2860118060024411667" at="40,56,59,10" concept="7" />
+      <node id="2860118060024411667" at="38,0,61,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="2860118060024411667" at="32,135,61,7" concept="3" />
+      <node id="2860118060024411667" at="30,0,64,0" concept="5" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="2860118060024411667" at="27,44,28,98" />
+      <scope id="2860118060024411667" at="35,44,36,20" />
+      <scope id="2860118060024411667" at="43,44,44,24" />
+      <scope id="2860118060024411727" at="47,128,48,147" />
+      <scope id="2860118060024411667" at="56,63,57,58" />
+      <scope id="2860118060024411718" at="51,142,53,146">
+        <var name="mapper" id="2860118060024429821" />
+      </scope>
+      <scope id="2860118060024411667" at="27,0,30,0" />
+      <scope id="2860118060024411667" at="34,0,38,0" />
+      <scope id="2860118060024411667" at="42,0,46,0" />
+      <scope id="2860118060024411667" at="46,0,50,0">
+        <var name="_context" id="2860118060024411667" />
+        <var name="operationContext" id="2860118060024411667" />
+      </scope>
+      <scope id="2860118060024411667" at="55,0,59,0" />
+      <scope id="2860118060024411667" at="50,0,55,0">
+        <var name="_context" id="2860118060024411667" />
+        <var name="operationContext" id="2860118060024411667" />
+      </scope>
+      <scope id="2860118060024411667" at="40,56,59,10" />
+      <scope id="2860118060024411667" at="38,0,61,0" />
+      <scope id="2860118060024411667" at="31,98,62,22">
+        <var name="references" id="2860118060024411667" />
+      </scope>
+      <scope id="2860118060024411667" at="30,0,64,0" />
+      <unit id="2860118060024411667" at="41,19,59,9" name="org.campagnelab.antlr.tomps.constraints.PropertyDestination_Constraints$2" />
+      <unit id="2860118060024411667" at="33,128,61,5" name="org.campagnelab.antlr.tomps.constraints.PropertyDestination_Constraints$1" />
+      <unit id="2860118060024411667" at="26,0,66,0" name="org.campagnelab.antlr.tomps.constraints.PropertyDestination_Constraints" />
     </file>
   </root>
   <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/4068410015137840987">
@@ -68,6 +121,59 @@
       <unit id="4068410015137840987" at="27,0,66,0" name="org.campagnelab.antlr.tomps.constraints.ParserRuleSource_Constraints" />
     </file>
   </root>
+  <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/5381624775493523156">
+    <file name="ChildDestination_Constraints.java">
+      <node id="5381624775493523156" at="27,41,28,98" concept="12" />
+      <node id="5381624775493523156" at="31,98,32,135" concept="6" />
+      <node id="5381624775493523156" at="35,44,36,20" concept="7" />
+      <node id="5381624775493523156" at="43,44,44,24" concept="7" />
+      <node id="2860118060024409499" at="47,128,48,147" concept="7" />
+      <node id="2860118060024451725" at="51,142,52,243" concept="6" />
+      <node id="2860118060024451733" at="52,243,53,142" concept="7" />
+      <node id="5381624775493523156" at="56,63,57,58" concept="7" />
+      <node id="5381624775493523156" at="61,7,62,22" concept="7" />
+      <node id="5381624775493523156" at="64,0,65,0" concept="10" trace="breakingNode_eoe544_a0a3a0a0a1a0b0a1a1" />
+      <node id="5381624775493523156" at="27,0,30,0" concept="2" trace="ChildDestination_Constraints#()V" />
+      <node id="5381624775493523156" at="34,0,38,0" concept="5" trace="hasOwnScopeProvider#()Z" />
+      <node id="5381624775493523156" at="42,0,46,0" concept="5" trace="hasPresentation#()Z" />
+      <node id="5381624775493523156" at="46,0,50,0" concept="5" trace="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
+      <node id="5381624775493523156" at="55,0,59,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="5381624775493523156" at="50,0,55,0" concept="5" trace="createSearchScopeOrListOfNodes#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljava/lang/Object;" />
+      <node id="5381624775493523156" at="40,56,59,10" concept="7" />
+      <node id="5381624775493523156" at="38,0,61,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="5381624775493523156" at="32,135,61,7" concept="3" />
+      <node id="5381624775493523156" at="30,0,64,0" concept="5" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="5381624775493523156" at="27,41,28,98" />
+      <scope id="5381624775493523156" at="35,44,36,20" />
+      <scope id="5381624775493523156" at="43,44,44,24" />
+      <scope id="2860118060024408070" at="47,128,48,147" />
+      <scope id="5381624775493523156" at="56,63,57,58" />
+      <scope id="2860118060024403712" at="51,142,53,142">
+        <var name="mapper" id="2860118060024451726" />
+      </scope>
+      <scope id="5381624775493523156" at="27,0,30,0" />
+      <scope id="5381624775493523156" at="34,0,38,0" />
+      <scope id="5381624775493523156" at="42,0,46,0" />
+      <scope id="5381624775493523156" at="46,0,50,0">
+        <var name="_context" id="5381624775493523156" />
+        <var name="operationContext" id="5381624775493523156" />
+      </scope>
+      <scope id="5381624775493523156" at="55,0,59,0" />
+      <scope id="5381624775493523156" at="50,0,55,0">
+        <var name="_context" id="5381624775493523156" />
+        <var name="operationContext" id="5381624775493523156" />
+      </scope>
+      <scope id="5381624775493523156" at="40,56,59,10" />
+      <scope id="5381624775493523156" at="38,0,61,0" />
+      <scope id="5381624775493523156" at="31,98,62,22">
+        <var name="references" id="5381624775493523156" />
+      </scope>
+      <scope id="5381624775493523156" at="30,0,64,0" />
+      <unit id="5381624775493523156" at="41,19,59,9" name="org.campagnelab.antlr.tomps.constraints.ChildDestination_Constraints$2" />
+      <unit id="5381624775493523156" at="33,128,61,5" name="org.campagnelab.antlr.tomps.constraints.ChildDestination_Constraints$1" />
+      <unit id="5381624775493523156" at="26,0,66,0" name="org.campagnelab.antlr.tomps.constraints.ChildDestination_Constraints" />
+    </file>
+  </root>
   <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/558881339894395322">
     <file name="AlternativeMapper_Constraints.java">
       <node id="558881339894395322" at="23,42,24,98" concept="12" />
@@ -115,52 +221,11 @@
   </root>
   <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/558881339903206398">
     <file name="Mapper_Constraints.java">
-      <node id="558881339903206398" at="25,31,26,97" concept="12" />
-      <node id="558881339903206398" at="29,98,30,135" concept="6" />
-      <node id="558881339903206398" at="33,44,34,20" concept="7" />
-      <node id="558881339903206398" at="41,44,42,24" concept="7" />
-      <node id="558881339904389244" at="45,128,46,190" concept="7" />
-      <node id="558881339904134938" at="49,142,50,184" concept="7" />
-      <node id="558881339903206398" at="53,63,54,58" concept="7" />
-      <node id="558881339903206398" at="58,7,59,22" concept="7" />
-      <node id="558881339903206398" at="61,0,62,0" concept="10" trace="breakingNode_va35wc_a0a3a0a0a1a0b0a1a1" />
-      <node id="558881339903206398" at="25,0,28,0" concept="2" trace="Mapper_Constraints#()V" />
-      <node id="558881339903206398" at="32,0,36,0" concept="5" trace="hasOwnScopeProvider#()Z" />
-      <node id="558881339903206398" at="40,0,44,0" concept="5" trace="hasPresentation#()Z" />
-      <node id="558881339903206398" at="44,0,48,0" concept="5" trace="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
-      <node id="558881339903206398" at="48,0,52,0" concept="5" trace="createSearchScopeOrListOfNodes#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljava/lang/Object;" />
-      <node id="558881339903206398" at="52,0,56,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
-      <node id="558881339903206398" at="38,56,56,10" concept="7" />
-      <node id="558881339903206398" at="36,0,58,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-      <node id="558881339903206398" at="30,135,58,7" concept="3" />
-      <node id="558881339903206398" at="28,0,61,0" concept="5" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
-      <scope id="558881339903206398" at="25,31,26,97" />
-      <scope id="558881339903206398" at="33,44,34,20" />
-      <scope id="558881339903206398" at="41,44,42,24" />
-      <scope id="558881339904139094" at="45,128,46,190" />
-      <scope id="558881339904145403" at="49,142,50,184" />
-      <scope id="558881339903206398" at="53,63,54,58" />
-      <scope id="558881339903206398" at="25,0,28,0" />
-      <scope id="558881339903206398" at="32,0,36,0" />
-      <scope id="558881339903206398" at="40,0,44,0" />
-      <scope id="558881339903206398" at="44,0,48,0">
-        <var name="_context" id="558881339903206398" />
-        <var name="operationContext" id="558881339903206398" />
-      </scope>
-      <scope id="558881339903206398" at="48,0,52,0">
-        <var name="_context" id="558881339903206398" />
-        <var name="operationContext" id="558881339903206398" />
-      </scope>
-      <scope id="558881339903206398" at="52,0,56,0" />
-      <scope id="558881339903206398" at="38,56,56,10" />
-      <scope id="558881339903206398" at="36,0,58,0" />
-      <scope id="558881339903206398" at="29,98,59,22">
-        <var name="references" id="558881339903206398" />
-      </scope>
-      <scope id="558881339903206398" at="28,0,61,0" />
-      <unit id="558881339903206398" at="39,19,56,9" name="org.campagnelab.antlr.tomps.constraints.Mapper_Constraints$2" />
-      <unit id="558881339903206398" at="31,126,58,5" name="org.campagnelab.antlr.tomps.constraints.Mapper_Constraints$1" />
-      <unit id="558881339903206398" at="24,0,63,0" name="org.campagnelab.antlr.tomps.constraints.Mapper_Constraints" />
+      <node id="558881339903206398" at="9,31,10,97" concept="12" />
+      <node id="558881339903206398" at="9,0,12,0" concept="2" trace="Mapper_Constraints#()V" />
+      <scope id="558881339903206398" at="9,31,10,97" />
+      <scope id="558881339903206398" at="9,0,12,0" />
+      <unit id="558881339903206398" at="8,0,13,0" name="org.campagnelab.antlr.tomps.constraints.Mapper_Constraints" />
     </file>
   </root>
   <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/7627187573639494635">

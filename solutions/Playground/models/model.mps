@@ -9,12 +9,19 @@
     <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" />
     <import index="6q58" ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)" />
     <import index="gxyq" ref="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps">
       <concept id="558881339902982172" name="org.campagnelab.antlr.tomps.structure.Mapper" flags="ng" index="vgRe2">
-        <reference id="558881339902982175" name="to" index="vgRe1" />
+        <child id="5381624775493521528" name="destination" index="F5cX0" />
         <child id="4068410015138958301" name="source" index="10yyU7" />
+      </concept>
+      <concept id="5381624775492632183" name="org.campagnelab.antlr.tomps.structure.LabeledElementSource" flags="ng" index="F0E5f">
+        <reference id="5381624775492632953" name="labeled" index="F0lT1" />
+      </concept>
+      <concept id="5381624775493521561" name="org.campagnelab.antlr.tomps.structure.ChildDestination" flags="ng" index="F5cYx">
+        <reference id="5381624775493523154" name="to" index="F5cBE" />
       </concept>
       <concept id="4068410015137839102" name="org.campagnelab.antlr.tomps.structure.ParserRuleSource" flags="ng" index="10APa$">
         <reference id="4068410015137840985" name="rule" index="10APC3" />
@@ -36,6 +43,9 @@
       <concept id="7627187573639526914" name="org.campagnelab.antlr.tomps.structure.ConceptMapper" flags="ng" index="1zPSMM">
         <reference id="7627187573639526915" name="concept" index="1zPSMN" />
         <reference id="7627187573639526917" name="rule" index="1zPSMP" />
+      </concept>
+      <concept id="2860118060022856592" name="org.campagnelab.antlr.tomps.structure.PropertyDestination" flags="ng" index="3KT_mC">
+        <reference id="2860118060022856593" name="to" index="3KT_mD" />
       </concept>
     </language>
     <language id="d6782141-eafa-4cf7-a85d-1229abdb1152" name="org.campagnelab.ANTLR">
@@ -4464,8 +4474,11 @@
         <node concept="1M9qTG" id="v1yTSogbl3" role="1Mb3aa">
           <property role="TrG5h" value="expr:" />
           <node concept="1Mb3e_" id="v1yTSogbl4" role="1M9qTN">
-            <node concept="gVFit" id="4EJnNxxGDD_" role="1Mb3a8">
-              <ref role="gVFiq" node="4EJnNxxGDDf" resolve="BINARY_OPERATION" />
+            <node concept="gtF4r" id="4EJnNxxIlQS" role="1Mb3a8">
+              <property role="TrG5h" value="subConceptPrefix" />
+              <node concept="gVFit" id="4EJnNxxGDD_" role="gt$ML">
+                <ref role="gVFiq" node="4EJnNxxGDDf" resolve="BINARY_OPERATION" />
+              </node>
             </node>
             <node concept="1Mb3a5" id="v1yTSogqBN" role="1Mb3a8">
               <property role="2sqUGl" value="false" />
@@ -6108,10 +6121,12 @@
       <ref role="34cEr5" node="1QnnJL6MH4f" />
       <ref role="gaaFa" to="6q58:v1yTSos36g" resolve="FunctionExpr" />
       <ref role="3c7peZ" node="v1yTSogblm" resolve="expr:" />
-      <node concept="vgRe2" id="1QnnJL6MH6z" role="vgRep">
-        <ref role="vgRe1" to="6q58:3xPTlDT3iP5" />
-        <node concept="10APa$" id="4EJnNxxBdOJ" role="10yyU7">
-          <ref role="10APC3" node="v1yTSogqBs" />
+      <node concept="vgRe2" id="2uLbzznsmHK" role="vgRep">
+        <node concept="F5cYx" id="2uLbzznu64j" role="F5cX0">
+          <ref role="F5cBE" to="6q58:v1yTSowJwy" />
+        </node>
+        <node concept="10APa$" id="2uLbzznu64l" role="10yyU7">
+          <ref role="10APC3" node="v1yTSogqEa" />
         </node>
       </node>
     </node>
@@ -6138,10 +6153,12 @@
       <ref role="34cEr5" node="1QnnJL6MH4f" />
       <ref role="gaaFa" to="6q58:v1yTSoviEO" resolve="IfExpr" />
       <ref role="3c7peZ" node="v1yTSogblJ" resolve="expr:" />
-      <node concept="vgRe2" id="4EJnNxxAwc4" role="vgRep">
-        <ref role="vgRe1" to="6q58:3xPTlDT3iP5" />
-        <node concept="10APa$" id="4EJnNxxAwc8" role="10yyU7">
+      <node concept="vgRe2" id="2uLbzznpt3U" role="vgRep">
+        <node concept="10APa$" id="2uLbzznpt40" role="10yyU7">
           <ref role="10APC3" node="v1yTSogqHL" />
+        </node>
+        <node concept="3KT_mC" id="2uLbzznrnJ4" role="F5cX0">
+          <ref role="3KT_mD" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>
@@ -6255,6 +6272,15 @@
       <property role="gfBJK" value="expr:expr&lt;-&lt;&lt;-=-&gt;-&gt;&gt;:=expr" />
       <ref role="3c7peZ" node="v1yTSogbl3" resolve="expr:" />
       <ref role="34cEr5" node="1QnnJL6MH4f" />
+      <ref role="gaaFa" to="6q58:4EJnNxxIQ1D" resolve="BinaryOperationExpr" />
+      <node concept="vgRe2" id="4EJnNxxIlq3" role="vgRep">
+        <node concept="F0E5f" id="4EJnNxxIlQQ" role="10yyU7">
+          <ref role="F0lT1" node="4EJnNxxFvTn" resolve="operator" />
+        </node>
+        <node concept="3KT_mC" id="2uLbzzns_Ks" role="F5cX0">
+          <ref role="3KT_mD" to="6q58:4EJnNxxIQv9" resolve="operator" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

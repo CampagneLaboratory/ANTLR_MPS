@@ -61,5 +61,40 @@ public class Mapper_Behavior {
     } while (concept != null);
     return links;
   }
+  public static void call_propertyDeclarationsForConceptInterface_2860118060023510633(final SNode thisNode, final List<SNode> properties, SNode concept) {
+    if (LOG.isInfoEnabled()) {
+      LOG.info("adding links:" + IterableUtils.join(ListSequence.fromList(properties).select(new ISelector<SNode, String>() {
+        public String select(SNode it) {
+          return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, 0xf98052f333L, "role"));
+        }
+      }), " "));
+    }
+    ListSequence.fromList(properties).addSequence(ListSequence.fromList(SLinkOperations.getChildren(concept, MetaAdapterFactory.getContainmentLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x1103553c5ffL, 0xf979c3ba6cL, "propertyDeclaration"))));
+    ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), concept, "virtual_getImmediateSuperconcepts_1222430305282", new Object[]{})).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        Mapper_Behavior.call_propertyDeclarationsForConceptInterface_2860118060023510633(thisNode, properties, it);
+      }
+    });
+  }
+  public static List<SNode> call_propertyDeclarations_2860118060023510679(final SNode thisNode, SNode concept) {
+    final List<SNode> properties = new ArrayList<SNode>();
+    do {
+      if (LOG.isInfoEnabled()) {
+        LOG.info("adding links:" + IterableUtils.join(ListSequence.fromList(properties).select(new ISelector<SNode, String>() {
+          public String select(SNode it) {
+            return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, 0xf98052f333L, "role"));
+          }
+        }), " "));
+      }
+      ListSequence.fromList(properties).addSequence(ListSequence.fromList(SLinkOperations.getChildren(concept, MetaAdapterFactory.getContainmentLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x1103553c5ffL, 0xf979c3ba6cL, "propertyDeclaration"))));
+      ListSequence.fromList(SLinkOperations.getChildren(concept, MetaAdapterFactory.getContainmentLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, 0x110358d693eL, "implements"))).visitAll(new IVisitor<SNode>() {
+        public void visit(SNode iconcept) {
+          Mapper_Behavior.call_propertyDeclarationsForConceptInterface_2860118060023510633(thisNode, properties, SLinkOperations.getTarget(iconcept, MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x110356fc618L, 0x110356fe029L, "intfc")));
+        }
+      });
+      concept = SLinkOperations.getTarget(concept, MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, 0xf979be93cfL, "extends"));
+    } while (concept != null);
+    return properties;
+  }
   protected static Logger LOG = LogManager.getLogger(Mapper_Behavior.class);
 }

@@ -21,10 +21,12 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 2:
         return Collections.<ConceptEditor>singletonList(new ConvertToMPS_Editor());
       case 3:
-        return Collections.<ConceptEditor>singletonList(new Mapper_Editor());
+        return Collections.<ConceptEditor>singletonList(new Destination_Editor());
       case 4:
-        return Collections.<ConceptEditor>singletonList(new ParserRuleSource_Editor());
+        return Collections.<ConceptEditor>singletonList(new Mapper_Editor());
       case 5:
+        return Collections.<ConceptEditor>singletonList(new ParserRuleSource_Editor());
+      case 6:
         return Collections.<ConceptEditor>singletonList(new Source_Editor());
       default:
     }
@@ -35,5 +37,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.AlternativeMapper", "org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS", "org.campagnelab.antlr.tomps.structure.Mapper", "org.campagnelab.antlr.tomps.structure.ParserRuleSource", "org.campagnelab.antlr.tomps.structure.Source"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.AlternativeMapper", "org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS", "org.campagnelab.antlr.tomps.structure.Destination", "org.campagnelab.antlr.tomps.structure.Mapper", "org.campagnelab.antlr.tomps.structure.ParserRuleSource", "org.campagnelab.antlr.tomps.structure.Source"};
 }
