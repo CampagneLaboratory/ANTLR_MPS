@@ -13,4 +13,7 @@ public class PropertyDestination_Behavior {
   public static String virtual_name_2860118060023810449(SNode thisNode) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x27b12e38d7577b90L, 0x27b12e38d7577b91L, "to")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
+  public static SNode virtual_to_1096804516885006638(SNode thisNode) {
+    return SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x27b12e38d7577b90L, 0x27b12e38d7577b91L, "to"));
+  }
 }

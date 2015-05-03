@@ -13,6 +13,9 @@ import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.util.EqualUtil;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
 public class ParserRuleSource_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -39,6 +42,12 @@ public class ParserRuleSource_Editor extends DefaultNodeEditor {
     editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
     editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
     editorCell.setCellId("ReadOnlyModelAccessor_dhlp1n_a0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.NAVIGATABLE_NODE, 0, ParserRuleSource_Editor._StyleParameter_QueryFunction_dhlp1n_a0a0((editorCell == null ? null : editorCell.getContext()), (editorCell == null ? null : editorCell.getSNode())));
+    editorCell.getStyle().putAll(style);
     return editorCell;
+  }
+  private static SNode _StyleParameter_QueryFunction_dhlp1n_a0a0(EditorContext editorContext, SNode node) {
+    return BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), node, "virtual_parserObject_4068410015138622604", new Object[]{});
   }
 }

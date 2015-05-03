@@ -20,7 +20,7 @@
       <unit at="9,0,38,0" name="org.campagnelab.antlr.tomps.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="ChildDestination_BehaviorDescriptor.java">
-      <unit at="7,0,18,0" name="org.campagnelab.antlr.tomps.behavior.ChildDestination_BehaviorDescriptor" />
+      <unit at="7,0,21,0" name="org.campagnelab.antlr.tomps.behavior.ChildDestination_BehaviorDescriptor" />
     </file>
     <file name="ConceptMapper_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.ConceptMapper_BehaviorDescriptor" />
@@ -29,7 +29,7 @@
       <unit at="12,0,29,0" name="org.campagnelab.antlr.tomps.behavior.ConvertToMPS_BehaviorDescriptor" />
     </file>
     <file name="Destination_BehaviorDescriptor.java">
-      <unit at="8,0,17,0" name="org.campagnelab.antlr.tomps.behavior.Destination_BehaviorDescriptor" />
+      <unit at="8,0,18,0" name="org.campagnelab.antlr.tomps.behavior.Destination_BehaviorDescriptor" />
     </file>
     <file name="ExampleConcept_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.ExampleConcept_BehaviorDescriptor" />
@@ -44,26 +44,32 @@
       <unit at="7,0,21,0" name="org.campagnelab.antlr.tomps.behavior.ParserRuleSource_BehaviorDescriptor" />
     </file>
     <file name="PropertyDestination_BehaviorDescriptor.java">
-      <unit at="7,0,18,0" name="org.campagnelab.antlr.tomps.behavior.PropertyDestination_BehaviorDescriptor" />
+      <unit at="7,0,21,0" name="org.campagnelab.antlr.tomps.behavior.PropertyDestination_BehaviorDescriptor" />
     </file>
     <file name="Source_BehaviorDescriptor.java">
-      <unit at="8,0,18,0" name="org.campagnelab.antlr.tomps.behavior.Source_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.Source_BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/2860118060023800887">
     <file name="ChildDestination_Behavior.java">
       <node id="2860118060023802341" at="13,73,14,317" concept="7" />
+      <node id="1096804516885023008" at="16,70,17,174" concept="7" />
       <node id="2860118060023800887" at="11,0,13,0" concept="11" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2860118060023800887" at="13,0,16,0" concept="11" trace="virtual_name_2860118060023810449#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="2860118060023800887" at="16,0,19,0" concept="11" trace="virtual_to_1096804516885006638#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="2860118060023800889" at="11,43,11,43" />
       <scope id="2860118060023812135" at="13,73,14,317" />
+      <scope id="1096804516885022695" at="16,70,17,174" />
       <scope id="2860118060023800887" at="11,0,13,0">
         <var name="thisNode" id="2860118060023800887" />
       </scope>
       <scope id="2860118060023800887" at="13,0,16,0">
         <var name="thisNode" id="2860118060023800887" />
       </scope>
-      <unit id="2860118060023800887" at="10,0,17,0" name="org.campagnelab.antlr.tomps.behavior.ChildDestination_Behavior" />
+      <scope id="2860118060023800887" at="16,0,19,0">
+        <var name="thisNode" id="2860118060023800887" />
+      </scope>
+      <unit id="2860118060023800887" at="10,0,20,0" name="org.campagnelab.antlr.tomps.behavior.ChildDestination_Behavior" />
     </file>
   </root>
   <root nodeRef="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/2860118060023810446">
@@ -79,17 +85,23 @@
   <root nodeRef="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/2860118060024166430">
     <file name="PropertyDestination_Behavior.java">
       <node id="2860118060024166444" at="13,73,14,319" concept="7" />
+      <node id="1096804516885031341" at="16,70,17,174" concept="7" />
       <node id="2860118060024166430" at="11,0,13,0" concept="11" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2860118060024166430" at="13,0,16,0" concept="11" trace="virtual_name_2860118060023810449#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="2860118060024166430" at="16,0,19,0" concept="11" trace="virtual_to_1096804516885006638#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="2860118060024166432" at="11,43,11,43" />
       <scope id="2860118060024166437" at="13,73,14,319" />
+      <scope id="1096804516885031236" at="16,70,17,174" />
       <scope id="2860118060024166430" at="11,0,13,0">
         <var name="thisNode" id="2860118060024166430" />
       </scope>
       <scope id="2860118060024166430" at="13,0,16,0">
         <var name="thisNode" id="2860118060024166430" />
       </scope>
-      <unit id="2860118060024166430" at="10,0,17,0" name="org.campagnelab.antlr.tomps.behavior.PropertyDestination_Behavior" />
+      <scope id="2860118060024166430" at="16,0,19,0">
+        <var name="thisNode" id="2860118060024166430" />
+      </scope>
+      <unit id="2860118060024166430" at="10,0,20,0" name="org.campagnelab.antlr.tomps.behavior.PropertyDestination_Behavior" />
     </file>
   </root>
   <root nodeRef="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/4068410015137938191">
