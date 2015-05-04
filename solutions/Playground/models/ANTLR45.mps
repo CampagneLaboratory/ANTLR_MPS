@@ -18,12 +18,16 @@
       <concept id="5381624775493521561" name="org.campagnelab.antlr.tomps.structure.ChildDestination" flags="ng" index="F5cYx">
         <reference id="5381624775493523154" name="to" index="F5cBE" />
       </concept>
+      <concept id="4068410015137839069" name="org.campagnelab.antlr.tomps.structure.Source" flags="ng" index="10APa7">
+        <property id="2919715501615800255" name="id" index="2JxzpS" />
+      </concept>
       <concept id="4068410015137839102" name="org.campagnelab.antlr.tomps.structure.ParserRuleSource" flags="ng" index="10APa$">
         <reference id="4068410015137840985" name="rule" index="10APC3" />
       </concept>
       <concept id="7645898506791953195" name="org.campagnelab.antlr.tomps.structure.AlternativeMapper" flags="ng" index="3c7pc5">
         <property id="558881339894394992" name="fullText" index="gfBJI" />
         <property id="558881339894394990" name="id" index="gfBJK" />
+        <reference id="558881339892900180" name="returns" index="gaaFa" />
         <reference id="7008272901878105559" name="conceptMapper" index="34cEr5" />
         <reference id="7645898506791953297" name="alternative" index="3c7peZ" />
         <child id="558881339902982151" name="map" index="vgRep" />
@@ -134,8 +138,8 @@
       <ref role="1zPSMP" node="v1yTSnTzAA" resolve="rules" />
     </node>
     <node concept="1zPSMM" id="WSCumwXMMn" role="1zPSMS">
-      <ref role="1zPSMN" to="t2fd:WSCumwXMMA" resolve="RuleSpec" />
       <ref role="1zPSMP" node="v1yTSnTzAR" resolve="ruleSpec" />
+      <ref role="1zPSMN" to="t2fd:WSCumwXMMA" resolve="RuleSpec" />
     </node>
     <node concept="1zPSMM" id="WSCumwXMMI" role="1zPSMS">
       <ref role="1zPSMN" to="t2fd:WSCumwXMMN" resolve="ParserRuleSpec" />
@@ -145,11 +149,16 @@
       <ref role="1zPSMP" node="v1yTSnTzxZ" resolve="optionValue" />
       <ref role="1zPSMN" to="t2fd:2y4Usu72R14" resolve="OptionValue" />
     </node>
+    <node concept="1zPSMM" id="7JSGHIZPwIp" role="1zPSMS">
+      <ref role="1zPSMP" node="v1yTSnTzKb" resolve="lexerElement" />
+      <ref role="1zPSMN" to="t2fd:7JSGHIZPwIN" resolve="LexerElement" />
+    </node>
     <node concept="3c7pc5" id="WSCumwXJX9" role="3c7peX">
       <property role="gfBJI" value="&#9;&#9;(DOC_COMMENT grammarType id SEMI prequelConstruct rules modeSpec EOF)&#10;" />
       <property role="gfBJK" value="grammarSpec:DOC_COMMENTgrammarTypeidSEMIprequelConstructrulesmodeSpec" />
       <ref role="34cEr5" node="WSCumwXJX6" />
       <ref role="3c7peZ" node="v1yTSnTzuB" resolve="grammarSpec:" />
+      <ref role="gaaFa" to="t2fd:WSCumwXJX8" resolve="GrammarSpec" />
       <node concept="vgRe2" id="WSCumwXMMV" role="vgRep">
         <node concept="3KT_mC" id="WSCumwY5ak" role="F5cX0">
           <ref role="3KT_mD" to="tpck:h0TrG11" resolve="name" />
@@ -158,12 +167,13 @@
           <ref role="10APC3" node="v1yTSnT$iI" />
         </node>
       </node>
-      <node concept="vgRe2" id="WSCumwY5au" role="vgRep">
-        <node concept="F5cYx" id="WSCumwY5aF" role="F5cX0">
-          <ref role="F5cBE" to="t2fd:WSCumwY5aD" />
-        </node>
-        <node concept="10APa$" id="2y4Usu70cL8" role="10yyU7">
+      <node concept="vgRe2" id="4l9KHP9KwDP" role="vgRep">
+        <node concept="10APa$" id="4l9KHP9KwE1" role="10yyU7">
+          <property role="2JxzpS" value="rules" />
           <ref role="10APC3" node="v1yTSnT$mh" />
+        </node>
+        <node concept="F5cYx" id="7JSGHIZRefl" role="F5cX0">
+          <ref role="F5cBE" to="t2fd:WSCumwY5aD" />
         </node>
       </node>
     </node>
@@ -187,6 +197,36 @@
       <property role="gfBJI" value="&#9;&#9;(DOC_COMMENT ruleModifiers RULE_REF ARG_ACTION ruleReturns throwsSpec localsSpec rulePrequel COLON ruleBlock SEMI exceptionGroup)&#10;" />
       <property role="gfBJK" value="parserRuleSpec:DOC_COMMENTruleModifiersRULE_REFruleReturnsthrowsSpeclocalsSpecrulePrequelCOLONruleBlockSEMIexceptionGroup" />
       <ref role="3c7peZ" node="v1yTSnTzBL" resolve="parserRuleSpec:" />
+      <ref role="34cEr5" node="WSCumwXMMI" />
+      <ref role="gaaFa" to="t2fd:7JSGHIZPwIX" resolve="DocCommentParserRuleSpec" />
+    </node>
+    <node concept="3c7pc5" id="7JSGHIZPwIw" role="3c7peX">
+      <property role="gfBJI" value="&#9;&#9;(labeledLexerElement ebnfSuffix)&#10;" />
+      <property role="gfBJK" value="lexerElement:labeledLexerElementebnfSuffix" />
+      <ref role="3c7peZ" node="v1yTSnTzKu" resolve="lexerElement:" />
+      <ref role="34cEr5" node="7JSGHIZPwIp" />
+      <ref role="gaaFa" to="t2fd:7JSGHIZPwIY" resolve="Label_ALexerElement" />
+    </node>
+    <node concept="3c7pc5" id="7JSGHIZPwIx" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(lexerAtom ebnfSuffix)&#10;" />
+      <property role="gfBJK" value="lexerElement:lexerAtomebnfSuffix" />
+      <ref role="3c7peZ" node="v1yTSnTzKy" resolve="lexerElement:" />
+      <ref role="34cEr5" node="7JSGHIZPwIp" />
+      <ref role="gaaFa" to="t2fd:7JSGHIZPwIZ" resolve="Label_BLexerElement" />
+    </node>
+    <node concept="3c7pc5" id="7JSGHIZPwIy" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(lexerBlock ebnfSuffix)&#10;" />
+      <property role="gfBJK" value="lexerElement:lexerBlockebnfSuffix" />
+      <ref role="3c7peZ" node="v1yTSnTzKA" resolve="lexerElement:" />
+      <ref role="34cEr5" node="7JSGHIZPwIp" />
+      <ref role="gaaFa" to="t2fd:7JSGHIZPwJ0" resolve="Label_CLexerElement" />
+    </node>
+    <node concept="3c7pc5" id="7JSGHIZPwIz" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(ACTION QUESTION)&#10;" />
+      <property role="gfBJK" value="lexerElement:ACTIONQUESTION" />
+      <ref role="3c7peZ" node="v1yTSnTzKE" resolve="lexerElement:" />
+      <ref role="34cEr5" node="7JSGHIZPwIp" />
+      <ref role="gaaFa" to="t2fd:7JSGHIZPwJ1" resolve="ACTIONLexerElement" />
     </node>
   </node>
   <node concept="1Mbc_a" id="QPXbEj2B9J">
@@ -1358,6 +1398,8 @@
       <node concept="1Mb3ex" id="v1yTSnTzu_" role="1Mb3eB">
         <node concept="1M9qTG" id="v1yTSnTzuB" role="1Mb3aa">
           <property role="TrG5h" value="grammarSpec:" />
+          <property role="2yxwTd" value="true" />
+          <property role="2zsUtJ" value="DocComment" />
           <node concept="1Mb3e_" id="v1yTSnTzuC" role="1M9qTN">
             <node concept="2ZNWBQ" id="v1yTSnT$mq" role="1Mb3a8">
               <property role="2sqUGl" value="false" />
@@ -1942,6 +1984,8 @@
       <node concept="1Mb3ex" id="v1yTSnTzBJ" role="1Mb3eB">
         <node concept="1M9qTG" id="v1yTSnTzBL" role="1Mb3aa">
           <property role="TrG5h" value="parserRuleSpec:" />
+          <property role="2yxwTd" value="true" />
+          <property role="2zsUtJ" value="DocComment" />
           <node concept="1Mb3e_" id="v1yTSnTzBM" role="1M9qTN">
             <node concept="2ZNWBQ" id="v1yTSnT$gP" role="1Mb3a8">
               <property role="2sqUGl" value="false" />
@@ -2510,6 +2554,8 @@
       <node concept="1Mb3ex" id="v1yTSnTzKs" role="1Mb3eB">
         <node concept="1M9qTG" id="v1yTSnTzKu" role="1Mb3aa">
           <property role="TrG5h" value="lexerElement:" />
+          <property role="2yxwTd" value="true" />
+          <property role="2zsUtJ" value="Label_A" />
           <node concept="1Mb3e_" id="v1yTSnTzKv" role="1M9qTN">
             <node concept="1Mb3a5" id="v1yTSnT$dD" role="1Mb3a8">
               <property role="2sqUGl" value="false" />
@@ -2527,6 +2573,8 @@
         </node>
         <node concept="1M9qTG" id="v1yTSnTzKy" role="1Mb3aa">
           <property role="TrG5h" value="lexerElement:" />
+          <property role="2yxwTd" value="true" />
+          <property role="2zsUtJ" value="Label_B" />
           <node concept="1Mb3e_" id="v1yTSnTzKz" role="1M9qTN">
             <node concept="1Mb3a5" id="v1yTSnT$e1" role="1Mb3a8">
               <property role="2sqUGl" value="false" />
@@ -2544,6 +2592,8 @@
         </node>
         <node concept="1M9qTG" id="v1yTSnTzKA" role="1Mb3aa">
           <property role="TrG5h" value="lexerElement:" />
+          <property role="2yxwTd" value="true" />
+          <property role="2zsUtJ" value="Label_C" />
           <node concept="1Mb3e_" id="v1yTSnTzKB" role="1M9qTN">
             <node concept="1Mb3a5" id="v1yTSnT$p$" role="1Mb3a8">
               <property role="2sqUGl" value="false" />
@@ -2561,6 +2611,8 @@
         </node>
         <node concept="1M9qTG" id="v1yTSnTzKE" role="1Mb3aa">
           <property role="TrG5h" value="lexerElement:" />
+          <property role="2yxwTd" value="true" />
+          <property role="2zsUtJ" value="ACTION" />
           <node concept="1Mb3e_" id="v1yTSnTzKF" role="1M9qTN">
             <node concept="2ZNWBQ" id="v1yTSnT$h9" role="1Mb3a8">
               <property role="2sqUGl" value="false" />
