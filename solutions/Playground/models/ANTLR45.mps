@@ -90,6 +90,8 @@
         <property id="7142405419535590784" name="literal" index="1M88Tz" />
       </concept>
       <concept id="7142405419535385999" name="org.campagnelab.ANTLR.structure.Alternative" flags="ng" index="1M9qTG">
+        <property id="7891183316660196135" name="hasLabel" index="2yxwTd" />
+        <property id="7891183316658862597" name="label" index="2zsUtJ" />
         <child id="7142405419535386000" name="rhs" index="1M9qTN" />
       </concept>
       <concept id="7142405419534834022" name="org.campagnelab.ANTLR.structure.ParserRuleRef" flags="ng" index="1Mb3a5">
@@ -2236,6 +2238,7 @@
       <node concept="1Mb3ex" id="v1yTSnTzFN" role="1Mb3eB">
         <node concept="1M9qTG" id="v1yTSnTzFP" role="1Mb3aa">
           <property role="TrG5h" value="ruleModifier:" />
+          <property role="2yxwTd" value="true" />
           <node concept="2ZNWBQ" id="v1yTSnT$eV" role="1M9qTN">
             <property role="2sqUGl" value="false" />
             <property role="2sqU3E" value="false" />
@@ -2245,6 +2248,7 @@
         </node>
         <node concept="1M9qTG" id="v1yTSnTzFR" role="1Mb3aa">
           <property role="TrG5h" value="ruleModifier:" />
+          <property role="2yxwTd" value="true" />
           <node concept="2ZNWBQ" id="v1yTSnT$f$" role="1M9qTN">
             <property role="2sqUGl" value="false" />
             <property role="2sqU3E" value="false" />
@@ -2254,6 +2258,7 @@
         </node>
         <node concept="1M9qTG" id="v1yTSnTzFT" role="1Mb3aa">
           <property role="TrG5h" value="ruleModifier:" />
+          <property role="2yxwTd" value="true" />
           <node concept="2ZNWBQ" id="v1yTSnT$fv" role="1M9qTN">
             <property role="2sqUGl" value="false" />
             <property role="2sqU3E" value="false" />
@@ -2263,6 +2268,7 @@
         </node>
         <node concept="1M9qTG" id="v1yTSnTzFV" role="1Mb3aa">
           <property role="TrG5h" value="ruleModifier:" />
+          <property role="2yxwTd" value="true" />
           <node concept="2ZNWBQ" id="v1yTSnT$gj" role="1M9qTN">
             <property role="2sqUGl" value="false" />
             <property role="2sqU3E" value="false" />
@@ -3618,6 +3624,8 @@
       <node concept="1Mb3ex" id="v1yTSnT$1_" role="1Mb3eB">
         <node concept="1M9qTG" id="v1yTSnT$1B" role="1Mb3aa">
           <property role="TrG5h" value="id:" />
+          <property role="2yxwTd" value="true" />
+          <property role="2zsUtJ" value="RULE_REF" />
           <node concept="gVFit" id="v1yTSnT$jR" role="1M9qTN">
             <property role="2sqUGl" value="false" />
             <property role="2sqU3E" value="false" />
@@ -3627,11 +3635,62 @@
         </node>
         <node concept="1M9qTG" id="v1yTSnT$1D" role="1Mb3aa">
           <property role="TrG5h" value="id:" />
+          <property role="2yxwTd" value="true" />
+          <property role="2zsUtJ" value="TOKEN_REF" />
           <node concept="gVFit" id="v1yTSnT$fN" role="1M9qTN">
             <property role="2sqUGl" value="false" />
             <property role="2sqU3E" value="false" />
             <property role="2sqUKs" value="false" />
             <ref role="gVFiq" node="v1yTSn$ghM" resolve="TOKEN_REF" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1Mb3fr" id="6Q37mFf7V5O" role="1Mb3fo">
+      <property role="TrG5h" value="prequelConstruct" />
+      <node concept="1Mb3ex" id="6Q37mFf7V5X" role="1Mb3eB">
+        <node concept="1M9qTG" id="6Q37mFf7V5Z" role="1Mb3aa">
+          <property role="2yxwTd" value="true" />
+          <property role="TrG5h" value="prequelConstruct:" />
+          <property role="2zsUtJ" value="a" />
+          <node concept="1Mb3a5" id="6Q37mFf7VfH" role="1M9qTN">
+            <property role="2sqUGl" value="false" />
+            <property role="2sqU3E" value="false" />
+            <property role="2sqUKs" value="false" />
+            <ref role="1Mb3a4" node="v1yTSnTzwF" resolve="optionsSpec" />
+          </node>
+        </node>
+        <node concept="1M9qTG" id="6Q37mFf7V61" role="1Mb3aa">
+          <property role="2zsUtJ" value="DELEGATE_GRAMMARS" />
+          <property role="2yxwTd" value="true" />
+          <property role="TrG5h" value="prequelConstruct:" />
+          <node concept="1Mb3a5" id="6Q37mFf7VfL" role="1M9qTN">
+            <property role="2sqUGl" value="false" />
+            <property role="2sqU3E" value="false" />
+            <property role="2sqUKs" value="false" />
+            <ref role="1Mb3a4" node="v1yTSnTzyW" resolve="delegateGrammars" />
+          </node>
+        </node>
+        <node concept="1M9qTG" id="6Q37mFf7V63" role="1Mb3aa">
+          <property role="2zsUtJ" value="TOKEN_SPECS" />
+          <property role="2yxwTd" value="true" />
+          <property role="TrG5h" value="prequelConstruct:" />
+          <node concept="1Mb3a5" id="6Q37mFf7VfF" role="1M9qTN">
+            <property role="2sqUGl" value="false" />
+            <property role="2sqU3E" value="false" />
+            <property role="2sqUKs" value="false" />
+            <ref role="1Mb3a4" node="v1yTSnTz$k" resolve="tokensSpec" />
+          </node>
+        </node>
+        <node concept="1M9qTG" id="6Q37mFf7V65" role="1Mb3aa">
+          <property role="2zsUtJ" value="ACTION" />
+          <property role="2yxwTd" value="true" />
+          <property role="TrG5h" value="prequelConstruct:" />
+          <node concept="1Mb3a5" id="6Q37mFf7VfJ" role="1M9qTN">
+            <property role="2sqUGl" value="false" />
+            <property role="2sqU3E" value="false" />
+            <property role="2sqUKs" value="false" />
+            <ref role="1Mb3a4" node="v1yTSnTz_b" resolve="action" />
           </node>
         </node>
       </node>

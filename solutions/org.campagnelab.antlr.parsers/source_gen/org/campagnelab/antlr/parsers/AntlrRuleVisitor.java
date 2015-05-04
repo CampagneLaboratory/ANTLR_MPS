@@ -113,10 +113,15 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   }
   @Override
   public Object visitLabeledAlt(@NotNull ANTLRv4Parser.LabeledAltContext context) {
+    SNode alt = null;
     if (context.alternative() != null) {
-      return visitAlternative(context.alternative());
+      alt = (SNode) visitAlternative(context.alternative());
     }
-    return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative")));
+    if (context.POUND() != null) {
+      SPropertyOperations.set(alt, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x6d831d6acef0ba05L, "label"), context.id().getText());
+      SPropertyOperations.set(alt, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x6d831d6acf051327L, "hasLabel"), "" + (true));
+    }
+    return alt;
   }
   @Override
   public Object visitElement(@NotNull ANTLRv4Parser.ElementContext context) {

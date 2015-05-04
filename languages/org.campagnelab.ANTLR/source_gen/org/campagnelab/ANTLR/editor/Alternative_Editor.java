@@ -15,6 +15,9 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
 import org.campagnelab.ANTLR.behavior.Alternative_Behavior;
@@ -38,6 +41,9 @@ public class Alternative_Editor extends DefaultNodeEditor {
       editorCell.addEditorCell(this.createConstant_ods2m7_b0(editorContext, node));
     }
     editorCell.addEditorCell(this.createRefNode_ods2m7_c0(editorContext, node));
+    if (renderingCondition_ods2m7_a3a(node, editorContext)) {
+      editorCell.addEditorCell(this.createCollection_ods2m7_d0(editorContext, node));
+    }
     return editorCell;
   }
   private EditorCell createConstant_ods2m7_a0(EditorContext editorContext, SNode node) {
@@ -70,6 +76,41 @@ public class Alternative_Editor extends DefaultNodeEditor {
     if (editorCell.getRole() == null) {
       editorCell.setRole("rhs");
     }
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+  private EditorCell createCollection_ods2m7_d0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_ods2m7_d0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.SELECTABLE, 0, false);
+    editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(this.createConstant_ods2m7_a3a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_ods2m7_b3a(editorContext, node));
+    return editorCell;
+  }
+  private static boolean renderingCondition_ods2m7_a3a(SNode node, EditorContext editorContext) {
+    return SPropertyOperations.getBoolean(node, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x6d831d6acf051327L, "hasLabel"));
+  }
+  private EditorCell createConstant_ods2m7_a3a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "#");
+    editorCell.setCellId("Constant_ods2m7_a3a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_ods2m7_b3a(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("label");
+    provider.setNoTargetText("<no label>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_label");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="21,0,120,0" name="org.campagnelab.antlr.tomps.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/1096804516885652131">
+    <file name="QueriesGenerated.java">
+      <node id="1096804516885652532" at="79,109,80,20" concept="1" />
+      <node id="1096804516885652538" at="82,109,83,184" concept="1" />
+      <scope id="1096804516885652531" at="79,109,80,20" />
+      <scope id="1096804516885652537" at="82,109,83,184" />
+    </file>
+  </root>
+  <root nodeRef="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/1096804516885659635">
+    <file name="QueriesGenerated.java">
+      <node id="1096804516885662287" at="85,109,86,175" concept="1" />
+      <scope id="1096804516885661084" at="85,109,86,175" />
+    </file>
+  </root>
+  <root nodeRef="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/1096804516885678769">
+    <file name="QueriesGenerated.java">
+      <node id="1096804516885685482" at="88,109,89,331" concept="1" />
+      <scope id="1096804516885685476" at="88,109,89,331" />
+    </file>
+  </root>
+  <root nodeRef="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/2860118060024666827">
+    <file name="QueriesGenerated.java">
+      <node id="2860118060025025489" at="67,109,68,20" concept="1" />
+      <node id="2860118060024669105" at="70,109,71,184" concept="1" />
+      <scope id="2860118060025025005" at="67,109,68,20" />
+      <scope id="2860118060024669099" at="70,109,71,184" />
+    </file>
+  </root>
+  <root nodeRef="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/2860118060024775109">
+    <file name="QueriesGenerated.java">
+      <node id="2860118060025898089" at="73,109,74,20" concept="1" />
+      <node id="2860118060025897502" at="76,109,77,184" concept="1" />
+      <scope id="2860118060025897727" at="73,109,74,20" />
+      <scope id="2860118060025897496" at="76,109,77,184" />
+    </file>
+  </root>
+  <root nodeRef="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/2919715501614062732">
+    <file name="QueriesGenerated.java">
+      <node id="2919715501615532906" at="34,112,35,379" concept="1" />
+      <node id="2919715501614119293" at="97,108,98,194" concept="1" />
+      <node id="2919715501614119302" at="100,108,101,189" concept="1" />
+      <node id="2919715501614119321" at="116,120,117,188" concept="1" />
+      <scope id="2919715501614119309" at="34,112,35,379" />
+      <scope id="2919715501614119292" at="97,108,98,194" />
+      <scope id="2919715501614119301" at="100,108,101,189" />
+      <scope id="2919715501614119320" at="116,120,117,188" />
+    </file>
+  </root>
+  <root nodeRef="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/5381624775491836178">
+    <file name="QueriesGenerated.java">
+      <node id="5381624775491889124" at="61,109,62,487" concept="1" />
+      <node id="5381624775491893583" at="64,109,65,788" concept="1" />
+      <scope id="5381624775492258372" at="61,109,62,487" />
+      <scope id="5381624775492257677" at="64,109,65,788" />
+    </file>
+  </root>
+  <root nodeRef="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/5381624775493318158">
+    <file name="QueriesGenerated.java">
+      <node id="1096804516885658022" at="94,108,95,189" concept="1" />
+      <scope id="1096804516885657937" at="94,108,95,189" />
+    </file>
+  </root>
+  <root nodeRef="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/558881339893084427">
+    <file name="QueriesGenerated.java">
+      <node id="558881339902554011" at="24,111,25,99" concept="1" />
+      <node id="558881339893006517" at="27,111,28,0" concept="2" />
+      <node id="558881339892993983" at="28,0,29,353" concept="1" />
+      <node id="558881339893123276" at="31,111,32,352" concept="1" />
+      <node id="558881339892955256" at="37,108,38,473" concept="1" />
+      <node id="558881339892896160" at="40,108,41,99" concept="1" />
+      <node id="558881339893019889" at="43,108,44,189" concept="1" />
+      <node id="558881339893021125" at="46,108,47,189" concept="1" />
+      <node id="558881339902213639" at="49,108,50,188" concept="1" />
+      <node id="558881339902126243" at="52,108,53,30" concept="1" />
+      <node id="558881339902300945" at="55,108,56,30" concept="1" />
+      <node id="2919715501613173467" at="58,109,59,221" concept="1" />
+      <node id="558881339902073889" at="91,93,92,198" concept="1" />
+      <node id="558881339902027211" at="103,119,104,89" concept="1" />
+      <node id="2919715501614612403" at="106,120,107,89" concept="1" />
+      <node id="558881339893303868" at="111,39,112,185" concept="1" />
+      <node id="558881339893301842" at="111,0,114,0" concept="0" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="558881339892893138" at="109,119,114,7" concept="1" />
+      <scope id="558881339902552450" at="24,111,25,99" />
+      <scope id="558881339893120807" at="31,111,32,352" />
+      <scope id="558881339892955175" at="37,108,38,473" />
+      <scope id="558881339892896040" at="40,108,41,99" />
+      <scope id="558881339893019883" at="43,108,44,189" />
+      <scope id="558881339893021124" at="46,108,47,189" />
+      <scope id="558881339902213638" at="49,108,50,188" />
+      <scope id="558881339902124674" at="52,108,53,30" />
+      <scope id="558881339902300944" at="55,108,56,30" />
+      <scope id="1096804516885722970" at="58,109,59,221" />
+      <scope id="558881339902083122" at="91,93,92,198" />
+      <scope id="558881339902026676" at="103,119,104,89" />
+      <scope id="2919715501614612397" at="106,120,107,89" />
+      <scope id="558881339893301843" at="111,39,112,185" />
+      <scope id="558881339892992163" at="27,111,29,353" />
+      <scope id="558881339893301842" at="111,0,114,0">
+        <var name="it" id="558881339893301842" />
+      </scope>
+      <scope id="558881339892892224" at="109,119,114,7" />
+      <unit id="558881339893301842" at="110,232,114,5" name="org.campagnelab.antlr.tomps.generator.template.main.QueriesGenerated$1" />
+    </file>
+  </root>
+</debug-info>
+

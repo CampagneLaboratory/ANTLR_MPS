@@ -168,6 +168,14 @@
   <node concept="1TIwiD" id="6cuUYcheOmf">
     <property role="TrG5h" value="Alternative" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6Q37mFeWbC5" role="1TKVEl">
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6Q37mFf1hcB" role="1TKVEl">
+      <property role="TrG5h" value="hasLabel" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="6cuUYcheOmg" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="rhs" />

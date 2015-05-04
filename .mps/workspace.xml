@@ -18,62 +18,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ec7c4c8-fdb9-475d-a1c5-08cf184915b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/Playground/models/ANTLR45.mps" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/Playground/source_gen/ANTLR45/ANTLRv4Parser_ToMpsVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/LabeledElementSource_Constraints.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/ParserRuleSpec_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/RuleSpec_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/Rules_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/ANTLR45/dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/ANTLR45/generated" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/solutions/Playground/source_gen/ANTLR45/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/BehaviorAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/BehaviorAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/ConstraintsAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/ConstraintsAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/ConvertToMPS_Editor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/ConvertToMPS_Editor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/GrammarSpec_BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/GrammarSpec_BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/ParserRuleSource_Constraints.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/ParserRuleSource_Constraints.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Playground/Playground.msd" afterPath="$PROJECT_DIR$/solutions/Playground/Playground.msd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen/org/campagnelab/antlr/tomps/generator/template/main/QueriesGenerated.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen/org/campagnelab/antlr/tomps/generator/template/main/QueriesGenerated.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen/model/R_ToMpsVisitor.java" afterPath="$PROJECT_DIR$/solutions/Playground/source_gen/model/R_ToMpsVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/Source_BehaviorDescriptor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/Source_BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/behavior.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/behavior.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/constraints.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/constraints.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/constraints/dependencies" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/constraints/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/model/dependencies" afterPath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/model/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/behavior/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/behavior/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/structure/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/structure/generated" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/LabelAllAlternatives_Intention.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/OptionValue_BehaviorDescriptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/classes_gen/org/campagnelab/antlr/tomps/generator/template/main/trace.info" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/generator/classes_gen/org/campagnelab/ANTLR/generator/template/main/trace.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/generator/source_gen.caches/org/campagnelab/ANTRL45/generator/template/main/dependencies" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/generator/source_gen.caches/org/campagnelab/ANTRL45/generator/template/main/generated" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/generator/source_gen/org/campagnelab/ANTRL45/generator/template/main/QueriesGenerated.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/generator/source_gen/org/campagnelab/ANTRL45/generator/template/main/trace.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/classes_gen/ANTLR/persistence/build/trace.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/source_gen.caches/ANTLR/persistence/build/dependencies" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/source_gen.caches/ANTLR/persistence/build/generated" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/source_gen/ANTLR/persistence/build/ANTLR.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/ANTLR.persistence.build/source_gen/ANTLR/persistence/build/trace.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/ANTLR45/dependencies" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/ANTLR45/generated" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/model/dependencies" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/model/generated" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen/ANTLR45/ANTLRv4Parser_ToMpsVisitor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen/ANTLR45/trace.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen/model/R_ToMpsVisitor.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen/model/trace.info" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Playground/models/ANTLR45.mps" afterPath="$PROJECT_DIR$/solutions/Playground/models/ANTLR45.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/Alternative_Editor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/Alternative_Editor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/AntlrRuleVisitor.java" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/AntlrRuleVisitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/IntentionsDescriptor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/IntentionsDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/structure/StructureAspectDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/editor/dependencies" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/editor/dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/intentions/dependencies" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/intentions/dependencies" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/languageModels/editor.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/behavior/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/behavior/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/constraints/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/constraints/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/editor/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/editor/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/intentions/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/intentions/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/migration/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/migration/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/structure/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/structure/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/typesystem/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/typesystem/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen.caches/org/campagnelab/antlr/tomps/generator/template/main/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen.caches/org/campagnelab/antlr/tomps/generator/template/main/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/behavior/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/behavior/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/constraints/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/constraints/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/editor/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/editor/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/intentions/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/intentions/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/structure/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/model/generated" afterPath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/model/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/template/main@generator.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/generated" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.persistence/source_gen.caches/org/campagnelab/antlr/persistence/impl/generated" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.persistence/source_gen.caches/org/campagnelab/antlr/persistence/impl/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen.caches/org/campagnelab/antlr/plugin/plugin/generated" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen.caches/org/campagnelab/antlr/plugin/plugin/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/languageModels/intentions.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/languageModels/intentions.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Playground/models/model.mps" afterPath="$PROJECT_DIR$/solutions/Playground/models/model.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/org.campagnelab.ANTRL45.mpl" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/org.campagnelab.ANTRL45.mpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.mpl" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.mpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/languageModels/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/classes_gen/org/campagnelab/ANTLR45/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/classes_gen/org/campagnelab/ANTLR45/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/classes_gen/org/campagnelab/ANTLR45/structure/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/classes_gen/org/campagnelab/ANTLR45/structure/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/structure/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/structure/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/constraints/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/editor/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen/org/campagnelab/antlr/tomps/generator/template/main/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen/org/campagnelab/antlr/tomps/generator/template/main/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen/model/trace.info" afterPath="$PROJECT_DIR$/solutions/Playground/source_gen/model/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/models/org/campagnelab/antlr/parsers.mps" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/models/org/campagnelab/antlr/parsers.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/languageModels/structure.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/editor/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/editor/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/intentions/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/intentions/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/classes_gen/org/campagnelab/antlr/parsers/trace.info" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/classes_gen/org/campagnelab/antlr/parsers/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/trace.info" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="ANTLR.iws" />
@@ -91,7 +91,7 @@
       <list>
         <TabState>
           <option name="title" value="Console" />
-          <option name="history" value="kaurqQAABAAHKDLqKAiiTkbEiXiv8GNaMJMAAB1UZW1wTW9kZWxfMTQzMDY2NTUzMDc5Njc1NjAwMBdI7lXCgw/LSdmqaozpqz2QnwAALlRlbXBNb2R1bGVlZTU1YzI4My0wZmNiLTQ5ZDktYWE2YS04Y2U5YWIzZDkwOWb/////q6urq1paWloAAs6rUZUl6k8im5IQO5XKjAwAABdqZXRicmFpbnMubXBzLmxhbmcuY29yZQABAAABEDluqqQAAA1JTmFtZWRDb25jZXB0ABIAAQAAARA5bsBBAAAEbmFtZQAAAADeGthtblBKArMG1NF/ZMN1AAAaamV0YnJhaW5zLm1wcy5jb25zb2xlLmJhc2UAAxX7NAUfclosAAALQ29uc29sZVJvb3QAEgAAAAAAAhX7NAUfcluvAAAHaGlzdG9yeQAV+zQFH3JbsQAADWNvbW1hbmRIb2xkZXIABOJxYKy0SEsAAA1Db21tYW5kSG9sZGVyABIAAAAAAAAKg18owaoCvgAAB0hpc3RvcnkAEgAAAAAAAKWlpaUABd4a2G1uUEoCswbU0X9kw3UBAAAABf/////yZpHSDe9MBq7GLLkMSvCkAAAdamV0YnJhaW5zLm1wcy5jb25zb2xlLnNjcmlwdHP/////GoVUxOuEQ7qMNG8NkMbnWgAAH2pldGJyYWlucy5tcHMuY29uc29sZS5ibENvbW1hbmT/////peTeU0ajRNqqs2j98cNO0AAAIWpldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kc/////+ZWnOUf3ZLi6kpxTRIcIEGAAAmamV0YnJhaW5zLm1wcy5jb25zb2xlLmludGVybmFsQ29tbWFuZHP/////AAAAARdI+8Jd0l2kSDqLGXCSjhti1wAAJGpldGJyYWlucy5tcHMuZGV2a2l0LmdlbmVyYWwtcHVycG9zZQAAAAUHKDWbHSt3xEbfm/KyXL6jIlQAACRqZXRicmFpbnMubXBzLmNvbnNvbGUuYmFzZS5zdHJ1Y3R1cmVw/////wco5xLzU1w8QoitzofJVqUv+wAAJ2pldGJyYWlucy5tcHMuY29uc29sZS5zY3JpcHRzLnN0cnVjdHVyZXD/////ByiTW6DucpFMqqgH126PxpORAAApamV0YnJhaW5zLm1wcy5jb25zb2xlLmJsQ29tbWFuZC5zdHJ1Y3R1cmVw/////wcoE1pgbwN2TFyauEAw8FGgYgAAK2pldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kcy5zdHJ1Y3R1cmVw/////wcokERSBqlzTB23YDDlx3t0lwAAMGpldGJyYWlucy5tcHMuY29uc29sZS5pbnRlcm5hbENvbW1hbmRzLnN0cnVjdHVyZXD/////urq6ugAAAAEAARgohOnHhs971P//ewAAAAAAAAAAAAIAAxgohOnHhs98CgAAewAAAAAAAAAAAAB9AAIYKITpx4bPfAsAAXsAAQAAAQAAAAkAAAAAAAAAAH19" />
+          <option name="history" value="kaurqQAABAAHKF85UfVqsE8Ap/uHUNQGe3YAAB1UZW1wTW9kZWxfMTQzMDc0MjEyNDIwODczMzAwMBdIUj2cbO6TToG1zT+xsTMFBgAALlRlbXBNb2R1bGU1MjNkOWM2Yy1lZTkzLTRlODEtYjVjZC0zZmIxYjEzMzA1MDb/////q6urq1paWloABKXk3lNGo0TaqrNo/fHDTtAAACFqZXRicmFpbnMubXBzLmNvbnNvbGUuaWRlQ29tbWFuZHMAAidrNx53wKEbAAAQUmVtb3ZlR2VuU291cmNlcwASAAAAAAAAJ2s3HnT4hQkAAAVDbGVhbgASAAAAAAAAzqtRlSXqTyKbkhA7lcqMDAAAF2pldGJyYWlucy5tcHMubGFuZy5jb3JlAAEAAAEQOW6qpAAADUlOYW1lZENvbmNlcHQAEgABAAABEDluwEEAAARuYW1lAAAAABqFVMTrhEO6jDRvDZDG51oAAB9qZXRicmFpbnMubXBzLmNvbnNvbGUuYmxDb21tYW5kAANqQKNZZWCp2QAADEJMRXhwcmVzc2lvbgASAAAAAAABakCjWWVgqkIAAApleHByZXNzaW9uADvGRCF2C6z9AAAPUXVlcnlFeHByZXNzaW9uABIAAAAAAAE7xkQhdhblSAAACXBhcmFtZXRlcgA7xkQhdhbd+QAAElF1ZXJ5UGFyYW1ldGVyTGlzdAASAAAAAAAA3hrYbW5QSgKzBtTRf2TDdQAAGmpldGJyYWlucy5tcHMuY29uc29sZS5iYXNlAAMV+zQFH3JaLAAAC0NvbnNvbGVSb290ABIAAAAAAAIV+zQFH3JbrwAAB2hpc3RvcnkAFfs0BR9yW7EAAA1jb21tYW5kSG9sZGVyAATicWCstEhLAAANQ29tbWFuZEhvbGRlcgASAAAAAAABBOJxYKy0SSQAAAdjb21tYW5kAAqDXyjBqgK+AAAHSGlzdG9yeQASAAAAAAABY9ozeStd9JoAAARpdGVtAKWlpaUABd4a2G1uUEoCswbU0X9kw3UBAAAADv/////yZpHSDe9MBq7GLLkMSvCkAAAdamV0YnJhaW5zLm1wcy5jb25zb2xlLnNjcmlwdHP/////GoVUxOuEQ7qMNG8NkMbnWgEAAAAI/////6Xk3lNGo0TaqrNo/fHDTtABAAAAAv////+ZWnOUf3ZLi6kpxTRIcIEGAAAmamV0YnJhaW5zLm1wcy5jb25zb2xlLmludGVybmFsQ29tbWFuZHP/////AAAAARdI+8Jd0l2kSDqLGXCSjhti1wAAJGpldGJyYWlucy5tcHMuZGV2a2l0LmdlbmVyYWwtcHVycG9zZQAAAAUHKDWbHSt3xEbfm/KyXL6jIlQAACRqZXRicmFpbnMubXBzLmNvbnNvbGUuYmFzZS5zdHJ1Y3R1cmVw/////wco5xLzU1w8QoitzofJVqUv+wAAJ2pldGJyYWlucy5tcHMuY29uc29sZS5zY3JpcHRzLnN0cnVjdHVyZXD/////ByiTW6DucpFMqqgH126PxpORAAApamV0YnJhaW5zLm1wcy5jb25zb2xlLmJsQ29tbWFuZC5zdHJ1Y3R1cmVw/////wcoE1pgbwN2TFyauEAw8FGgYgAAK2pldGJyYWlucy5tcHMuY29uc29sZS5pZGVDb21tYW5kcy5zdHJ1Y3R1cmVw/////wcokERSBqlzTB23YDDlx3t0lwAAMGpldGJyYWlucy5tcHMuY29uc29sZS5pbnRlcm5hbENvbW1hbmRzLnN0cnVjdHVyZXD/////urq6ugAAAAEABhhtgx1qzvCAWP//ewAAAAAAAAAAAAIACBhtgx1qzvCAjgACewAAAAAAAAAAAAIABxhtgx1qzwli7wAFewABAAABAAAAEgAAAAAAAAABAAMYbYMdas8JYvAABHsAAAAAAAAAAAABAAEYbYMdas8JYvEAAHsAAAAAAAAAAAABAAUYbYMdas8JYvIAAXsAAAAAAAAAAAAAfX19fQAHGG2DHWrPCWbdAAV7AAEAAAEAAAASAAAAAAAAAAEAAxhtgx1qzwlm3gAEewAAAAAAAAAAAAEAABhtgx1qzwlm3wAAewAAAAAAAAAAAAEABRhtgx1qzwlm4AABewAAAAAAAAAAAAB9fX19fQAHGG2DHWrO8ICPAAN7AAEAAAEAAAASAAAAAAAAAAB9fQ==" />
         </TabState>
       </list>
     </option>
@@ -131,7 +131,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -160,7 +160,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -189,7 +189,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -199,26 +199,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConvertToMPS_ANTLRv4Parser" pinned="false" current-in-tab="true">
-        <entry file="mps://node://Playground/Playground.ANTLR45/ConvertToMPS_ANTLRv4Parser">
+      <file leaf-file-name="ANTLRv4Parser" pinned="false" current-in-tab="false">
+        <entry file="mps://node://Playground/ANTLR45/ANTLRv4Parser">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="64" />
-                    <property name="caretX" value="79" />
+                    <property name="caretXRelative" value="4" />
+                    <property name="caretX" value="115" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="ReadOnlyModelAccessor_cj2frz_a0" cellNumber="0" isInList="false">
-                      <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" />
+                    <cellInfo cellId="property_label" cellNumber="0" isInList="false">
+                      <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339892710133" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
-                <errorLabels />
+                <errorLabels>
+                  <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
+                    <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/7891183316661940607" />
+                  </errorLabel>
+                  <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
+                    <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339892710137" />
+                  </errorLabel>
+                  <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
+                    <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339892710133" />
+                  </errorLabel>
+                  <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
+                    <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339892710135" />
+                  </errorLabel>
+                  <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
+                    <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339892710139" />
+                  </errorLabel>
+                </errorLabels>
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -227,26 +243,112 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ANTLRv4Parser" pinned="false" current-in-tab="false">
-        <entry file="mps://node://Playground/ANTLR45/ANTLRv4Parser">
+      <file leaf-file-name="R" pinned="false" current-in-tab="true">
+        <entry file="mps://node://Playground/model/R">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="17" viewPositionY="487">
+              <memento viewPositionX="0" viewPositionY="460">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="20" />
-                    <property name="caretX" value="67" />
+                    <property name="caretXRelative" value="8" />
+                    <property name="caretX" value="23" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339892712881" />
+                      <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParserRule" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/ParserRule">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="32" />
+                    <property name="caretX" value="265" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:e1d4c225-523b-4e33-a0ab-b970dbb75eba(org.campagnelab.ANTLR.intentions)/7891183316662466519" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:e1d4c225-523b-4e33-a0ab-b970dbb75eba(org.campagnelab.ANTLR.intentions)/7891183316662017579" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Alternative" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/Alternative">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="4" />
+                    <property name="caretX" value="303" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a" cellNumber="0" isInList="false">
+                      <node node_reference="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/7891183316659900282" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/7142405419535386971" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AntlrRuleVisitor" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers/AntlrRuleVisitor">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="1531">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="8" />
+                    <property name="caretX" value="55" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_kov3ab_i0" cellNumber="0" isInList="false">
+                      <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/1684107016605084740" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -259,21 +361,21 @@
         <entry file="mps://node://Playground/ANTLR45/ANTLRv4Lexer">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
+              <memento viewPositionX="0" viewPositionY="203">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-179" />
+                    <property name="caretXRelative" value="-15" />
                     <property name="caretX" value="0" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_fda921_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339887125619" />
+                    <cellInfo cellId="Collection_sl1xhu_a" cellNumber="0" isInList="false">
+                      <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339888090079" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -324,6 +426,7 @@
   <component name="NodeEditorSearchHistory">
     <option name="searches">
       <list>
+        <option value="POUND" />
         <option value="id()" />
         <option value="visitElement" />
         <option value="visitAtom" />
@@ -353,7 +456,6 @@
         <option value="visitL" />
         <option value="Dot" />
         <option value="visitLexerAlt" />
-        <option value="Atom" />
       </list>
     </option>
   </component>
@@ -454,6 +556,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
+      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -467,126 +571,6 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Modules Pool">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Modules Pool">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Languages">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Modules Pool">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Languages">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="jetbrains">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Modules Pool">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Languages">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="jetbrains">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="lang">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Modules Pool">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Languages">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="jetbrains">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="lang">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="jetbrains.mps.lang.structure">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Modules Pool">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Languages">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="jetbrains">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="lang">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="jetbrains.mps.lang.structure">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="jetbrains.mps.lang.structure.structure">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="Project">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
@@ -601,7 +585,7 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps">
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.ANTLR">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -615,11 +599,55 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps">
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.ANTLR">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps.intentions">
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.ANTLR.intentions">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.ANTLR">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.ANTLR.structure">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.parsers">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.parsers">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Actions">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -660,32 +688,8 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ANTLR.persistence.build">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ANTLR">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="ANTLR.persistence.build">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="FileSystem" />
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -821,20 +825,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789317" sideWeight="0.4988086" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264095" sideWeight="0.61318505" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.49921012" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32789317" sideWeight="0.4988086" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.4986835" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27323273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27323273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.7530279" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960506" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -917,8 +921,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Fix NPE in LexerElement." />
-    <MESSAGE value="Adjust migration to noit modify itself. Revert effects of a previous modification in migration." />
     <MESSAGE value="Fix behavior for LexerRuleBlock." />
     <MESSAGE value="Rename plugin to org.campagnelab.ANTLR." />
     <MESSAGE value="Add quick fixes and error messages to replace references by name with references to rules (parser or lexer rules)." />
@@ -942,36 +944,11 @@
     <MESSAGE value="Support properties as destination of a mapping as well." />
     <MESSAGE value="Add navigation on the source and destination of the mapper." />
     <MESSAGE value="Add a new language for ANTLR4.5, to help as example and can populate from the grammar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a new language for ANTLR4.5, to help as example and can populate from the grammar." />
+    <MESSAGE value="Improve generator." />
+    <MESSAGE value="Improve generator. Add ANTRL45 as language target for ANTRL grammar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve generator. Add ANTRL45 as language target for ANTRL grammar." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/Alternative">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="92" />
-                <property name="caretX" value="239" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400110000" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/558881339901663575" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-          <node node_ref="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400110000" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/ToTextOutput">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
@@ -1184,20 +1161,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/Destination_BehaviorDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49295774" vertical-offset="0" max-vertical-offset="426">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/PropertyDestination_BehaviorDescriptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="56" max-vertical-offset="322">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://org.campagnelab.metar.R/org.campagnelab.metar.R.structure/Formlist">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
@@ -1359,31 +1322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://Playground/model/R">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-31" />
-                <property name="caretX" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_ods2m7_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639702" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/1096804516885006638" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://org.campagnelab.ANTLR45/org.campagnelab.ANTLR45.structure/GrammarSpec">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
@@ -1527,32 +1465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://Playground/Playground.ANTLR45/ConvertToMPS_ANTLRv4Parser">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="64" />
-                <property name="caretX" value="79" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReadOnlyModelAccessor_cj2frz_a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://ANTLR.persistence.build/ANTLR.persistence.build/ANTLR">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -1572,34 +1484,6 @@
             <folded />
           </memento>
           <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884840265" viewPositionX="0" viewPositionY="-4">
-            <selectionStack />
-            <errorLabels />
-            <folded />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers/AntlrRuleVisitor">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="selectionEnd" value="24" />
-                <property name="hasNonTrivialSelection" value="true" />
-                <property name="caretXRelative" value="196" />
-                <property name="selectionStart" value="13" />
-                <property name="caretX" value="511" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ReferencePresentation_91bvrs_a0a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/2663241436900391706" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorLabels />
-            <folded />
-          </memento>
-          <inspectorMemento currentlyEditedNode="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr.v4.runtime(org.campagnelab.ANTLR/org.antlr.v4.runtime@java_stub)/2919715501609657757" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -1932,13 +1816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solutions/Playground/source_gen/ANTLR45/ANTLRv4Parser_ToMpsVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="812">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.structure/ConceptMapper">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
@@ -2002,13 +1879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/solutions/Playground/source_gen/model/R_ToMpsVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.148148" vertical-offset="14" max-vertical-offset="882">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://Playground/model/ConvertToMPS_R">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
@@ -2044,22 +1914,38 @@
     <entry file="mps://node://Playground/ANTLR45/ANTLRv4Parser">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="17" viewPositionY="487">
+          <memento viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="20" />
-                <property name="caretX" value="67" />
+                <property name="caretXRelative" value="4" />
+                <property name="caretX" value="115" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339892712881" />
+                <cellInfo cellId="property_label" cellNumber="0" isInList="false">
+                  <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339892710133" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
-            <errorLabels />
+            <errorLabels>
+              <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
+                <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/7891183316661940607" />
+              </errorLabel>
+              <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
+                <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339892710137" />
+              </errorLabel>
+              <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
+                <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339892710133" />
+              </errorLabel>
+              <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
+                <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339892710135" />
+              </errorLabel>
+              <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
+                <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339892710139" />
+              </errorLabel>
+            </errorLabels>
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2085,7 +1971,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2139,7 +2025,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2274,7 +2160,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2286,21 +2172,127 @@
     <entry file="mps://node://Playground/ANTLR45/ANTLRv4Lexer">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
+          <memento viewPositionX="0" viewPositionY="203">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                <property name="caretXRelative" value="-179" />
+                <property name="caretXRelative" value="-15" />
                 <property name="caretX" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Collection_fda921_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339887125619" />
+                <cellInfo cellId="Collection_sl1xhu_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/558881339888090079" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/1096804516884851892" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/Alternative">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="4" />
+                <property name="caretX" value="303" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a" cellNumber="0" isInList="false">
+                  <node node_reference="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/7891183316659900282" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:8fcdc1d5-62b0-49c3-b59b-b0f3e41cf2ff(org.campagnelab.ANTLR.editor)/7142405419535386971" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers/AntlrRuleVisitor">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="1531">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="8" />
+                <property name="caretX" value="55" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_kov3ab_i0" cellNumber="0" isInList="false">
+                  <node node_reference="r:2f13ba2d-997e-46e4-8052-c5c9be3d2309(org.campagnelab.antlr.parsers)/1684107016605084740" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://org.campagnelab.ANTLR/org.campagnelab.ANTLR.structure/ParserRule">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="32" />
+                <property name="caretX" value="265" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:e1d4c225-523b-4e33-a0ab-b970dbb75eba(org.campagnelab.ANTLR.intentions)/7891183316662466519" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorLabels />
+            <folded />
+          </inspectorMemento>
+          <node node_ref="r:e1d4c225-523b-4e33-a0ab-b970dbb75eba(org.campagnelab.ANTLR.intentions)/7891183316662017579" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Playground/model/R">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="460">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="8" />
+                <property name="caretX" value="23" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorLabels />
+            <folded />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:561b2c1b-face-4418-a4cf-8e485e42cbb9(model)/558881339898639298" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />

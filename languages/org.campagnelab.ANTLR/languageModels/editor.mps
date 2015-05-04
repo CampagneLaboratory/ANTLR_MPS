@@ -6,9 +6,9 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="ijbl" ref="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" implicit="true" />
+    <import index="ijbl" ref="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
@@ -412,6 +412,30 @@
         <ref role="1NtTu8" to="ubjp:6cuUYcheOmg" />
       </node>
       <node concept="l2Vlx" id="6cuUYcheO_w" role="2iSdaV" />
+      <node concept="3EZMnI" id="6Q37mFf08LI" role="3EZMnx">
+        <node concept="VPM3Z" id="6Q37mFf08LK" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="6Q37mFf08Xz" role="3EZMnx">
+          <property role="3F0ifm" value="#" />
+        </node>
+        <node concept="3F0A7n" id="6Q37mFf08XU" role="3EZMnx">
+          <ref role="1NtTu8" to="ubjp:6Q37mFeWbC5" resolve="label" />
+        </node>
+        <node concept="l2Vlx" id="6Q37mFf08LN" role="2iSdaV" />
+        <node concept="pkWqt" id="6Q37mFf08XZ" role="pqm2j">
+          <node concept="3clFbS" id="6Q37mFf08Y0" role="2VODD2">
+            <node concept="3clFbF" id="6Q37mFf1hru" role="3cqZAp">
+              <node concept="2OqwBi" id="6Q37mFf1hwt" role="3clFbG">
+                <node concept="pncrf" id="6Q37mFf1hrs" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6Q37mFf1hXV" role="2OqNvi">
+                  <ref role="3TsBF5" to="ubjp:6Q37mFf1hcB" resolve="hasLabel" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3EZMnI" id="v1yTSofigb" role="6VMZX">
       <node concept="l2Vlx" id="v1yTSofigc" role="2iSdaV" />
