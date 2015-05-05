@@ -20,6 +20,7 @@
       </concept>
       <concept id="4068410015137839069" name="org.campagnelab.antlr.tomps.structure.Source" flags="ng" index="10APa7">
         <property id="2919715501615800255" name="id" index="2JxzpS" />
+        <property id="228211030963748552" name="cardinality" index="TgrDL" />
       </concept>
       <concept id="4068410015137839102" name="org.campagnelab.antlr.tomps.structure.ParserRuleSource" flags="ng" index="10APa$">
         <reference id="4068410015137840985" name="rule" index="10APC3" />
@@ -170,6 +171,7 @@
       <node concept="vgRe2" id="4l9KHP9KwDP" role="vgRep">
         <node concept="10APa$" id="4l9KHP9KwE1" role="10yyU7">
           <property role="2JxzpS" value="rules" />
+          <property role="TgrDL" value="0..n" />
           <ref role="10APC3" node="v1yTSnT$mh" />
         </node>
         <node concept="F5cYx" id="7JSGHIZRefl" role="F5cX0">

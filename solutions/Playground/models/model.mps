@@ -12,14 +12,28 @@
   </imports>
   <registry>
     <language id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps">
+      <concept id="558881339902982172" name="org.campagnelab.antlr.tomps.structure.Mapper" flags="ng" index="vgRe2">
+        <child id="5381624775493521528" name="destination" index="F5cX0" />
+        <child id="4068410015138958301" name="source" index="10yyU7" />
+      </concept>
+      <concept id="5381624775492632183" name="org.campagnelab.antlr.tomps.structure.LabeledElementSource" flags="ng" index="F0E5f">
+        <property id="228211030963748552" name="cardinality" index="TgrDL" />
+        <reference id="5381624775492632953" name="labeled" index="F0lT1" />
+      </concept>
+      <concept id="4068410015137839069" name="org.campagnelab.antlr.tomps.structure.Source" flags="ng" index="10APa7">
+        <property id="2919715501615800255" name="id" index="2JxzpS" />
+        <property id="228211030963748552" name="cardinality" index="TgrDM" />
+      </concept>
       <concept id="7645898506791953195" name="org.campagnelab.antlr.tomps.structure.AlternativeMapper" flags="ng" index="3c7pc5">
         <property id="558881339894394992" name="fullText" index="gfBJI" />
         <property id="558881339894394990" name="id" index="gfBJK" />
         <reference id="558881339892900180" name="returns" index="gaaFa" />
         <reference id="7008272901878105559" name="conceptMapper" index="34cEr5" />
         <reference id="7645898506791953297" name="alternative" index="3c7peZ" />
+        <child id="558881339902982151" name="map" index="vgRep" />
       </concept>
       <concept id="7645898506791951234" name="org.campagnelab.antlr.tomps.structure.ConvertToMPS" flags="ng" index="3c7qIG">
+        <property id="2919715501613044585" name="parserCanonicalClassName" index="2In3EI" />
         <property id="7627187573639936517" name="destinationLanguageName" index="1zNsMP" />
         <reference id="7645898506791951337" name="grammar" index="3c7qJ7" />
         <child id="7645898506791953299" name="altMappers" index="3c7peX" />
@@ -28,6 +42,9 @@
       <concept id="7627187573639526914" name="org.campagnelab.antlr.tomps.structure.ConceptMapper" flags="ng" index="1zPSMM">
         <reference id="7627187573639526915" name="concept" index="1zPSMN" />
         <reference id="7627187573639526917" name="rule" index="1zPSMP" />
+      </concept>
+      <concept id="2860118060022856592" name="org.campagnelab.antlr.tomps.structure.PropertyDestination" flags="ng" index="3KT_mC">
+        <reference id="2860118060022856593" name="to" index="3KT_mD" />
       </concept>
     </language>
     <language id="d6782141-eafa-4cf7-a85d-1229abdb1152" name="org.campagnelab.ANTLR">
@@ -2515,6 +2532,7 @@
   <node concept="3c7qIG" id="1QnnJL6MGC_">
     <property role="TrG5h" value="ConvertToMPS_R" />
     <property role="1zNsMP" value="org.campagnelab.metar.R" />
+    <property role="2In3EI" value="org." />
     <ref role="3c7qJ7" node="v1yTSofVrp" resolve="R" />
     <node concept="1zPSMM" id="1QnnJL6MH4f" role="1zPSMS">
       <ref role="1zPSMP" node="v1yTSogbf2" resolve="expr" />
@@ -2638,6 +2656,17 @@
       <ref role="3c7peZ" node="v1yTSogbl3" resolve="expr:" />
       <ref role="34cEr5" node="1QnnJL6MH4f" />
       <ref role="gaaFa" to="6q58:4EJnNxxIQ1D" resolve="BinaryOperationExpr" />
+      <node concept="vgRe2" id="cELb$Uv3eA" role="vgRep">
+        <node concept="F0E5f" id="cELb$Uv3eK" role="10yyU7">
+          <property role="2JxzpS" value="operator" />
+          <property role="TgrDL" value="1" />
+          <property role="TgrDM" value="0..1" />
+          <ref role="F0lT1" node="4EJnNxxFvTn" resolve="operator" />
+        </node>
+        <node concept="3KT_mC" id="cELb$Uw4FS" role="F5cX0">
+          <ref role="3KT_mD" to="6q58:4EJnNxxIQv9" resolve="operator" />
+        </node>
+      </node>
     </node>
     <node concept="3c7pc5" id="4l9KHPa3qTw" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;(subConceptPrefix='function' '(' formlist ')' expr)&#10;" />
