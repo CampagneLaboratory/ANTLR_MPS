@@ -153,6 +153,10 @@ public class ConvertToMPS_Editor extends DefaultNodeEditor {
   private EditorCell createConstant_ha86o5_e0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "parser canonical classname:");
     editorCell.setCellId("Constant_ha86o5_e0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, 0, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }

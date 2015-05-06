@@ -345,6 +345,12 @@
       </node>
       <node concept="3F0ifn" id="2y4Usu6QXKv" role="3EZMnx">
         <property role="3F0ifm" value="parser canonical classname:" />
+        <node concept="pVoyu" id="cELb$UwpJ9" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="cELb$UwpJc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0A7n" id="2y4Usu6QXLZ" role="3EZMnx">
         <ref role="1NtTu8" to="3elq:2y4Usu6QddD" resolve="parserCanonicalClassName" />

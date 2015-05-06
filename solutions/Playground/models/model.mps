@@ -17,12 +17,10 @@
         <child id="4068410015138958301" name="source" index="10yyU7" />
       </concept>
       <concept id="5381624775492632183" name="org.campagnelab.antlr.tomps.structure.LabeledElementSource" flags="ng" index="F0E5f">
-        <property id="228211030963748552" name="cardinality" index="TgrDL" />
         <reference id="5381624775492632953" name="labeled" index="F0lT1" />
       </concept>
       <concept id="4068410015137839069" name="org.campagnelab.antlr.tomps.structure.Source" flags="ng" index="10APa7">
         <property id="2919715501615800255" name="id" index="2JxzpS" />
-        <property id="228211030963748552" name="cardinality" index="TgrDM" />
       </concept>
       <concept id="7645898506791953195" name="org.campagnelab.antlr.tomps.structure.AlternativeMapper" flags="ng" index="3c7pc5">
         <property id="558881339894394992" name="fullText" index="gfBJI" />
@@ -2532,7 +2530,7 @@
   <node concept="3c7qIG" id="1QnnJL6MGC_">
     <property role="TrG5h" value="ConvertToMPS_R" />
     <property role="1zNsMP" value="org.campagnelab.metar.R" />
-    <property role="2In3EI" value="org." />
+    <property role="2In3EI" value="org.campagnelab.antlr.r.parsers.R" />
     <ref role="3c7qJ7" node="v1yTSofVrp" resolve="R" />
     <node concept="1zPSMM" id="1QnnJL6MH4f" role="1zPSMS">
       <ref role="1zPSMP" node="v1yTSogbf2" resolve="expr" />
@@ -2657,14 +2655,12 @@
       <ref role="34cEr5" node="1QnnJL6MH4f" />
       <ref role="gaaFa" to="6q58:4EJnNxxIQ1D" resolve="BinaryOperationExpr" />
       <node concept="vgRe2" id="cELb$Uv3eA" role="vgRep">
-        <node concept="F0E5f" id="cELb$Uv3eK" role="10yyU7">
-          <property role="2JxzpS" value="operator" />
-          <property role="TgrDL" value="1" />
-          <property role="TgrDM" value="0..1" />
-          <ref role="F0lT1" node="4EJnNxxFvTn" resolve="operator" />
-        </node>
         <node concept="3KT_mC" id="cELb$Uw4FS" role="F5cX0">
           <ref role="3KT_mD" to="6q58:4EJnNxxIQv9" resolve="operator" />
+        </node>
+        <node concept="F0E5f" id="cELb$Uwp$X" role="10yyU7">
+          <property role="2JxzpS" value="operator" />
+          <ref role="F0lT1" node="4EJnNxxFvTn" resolve="operator" />
         </node>
       </node>
     </node>

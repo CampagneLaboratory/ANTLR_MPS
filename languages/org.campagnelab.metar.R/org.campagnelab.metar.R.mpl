@@ -4,6 +4,9 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
     </modelRoot>
+    <modelRoot contentPath="${module}" type="java_classes">
+      <sourceRoot location="r.parsers-1.0-SNAPSHOT.jar" />
+    </modelRoot>
   </models>
   <accessoryModels />
   <generators>
@@ -41,6 +44,9 @@
       <mapping-priorities />
     </generator>
   </generators>
+  <stubModelEntries>
+    <stubModelEntry path="${module}/r.parsers-1.0-SNAPSHOT.jar" />
+  </stubModelEntries>
   <sourcePath />
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
