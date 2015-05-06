@@ -115,8 +115,32 @@
     <classNode dependClassName="org.campagnelab.antlr.tomps.intentions.CreateConceptAndLabelsForAlt_Intention" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.intentions.CreateConceptAndLabels_Intention" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.intentions.CreateConcept_Intention" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.intentions.RenameLabelsFromConceptsIn_Intention" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.intentions.ResolveAllAlternativesById_Intention" />
     <classNode extendsClassName="jetbrains.mps.intentions.BaseIntentionsDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.antlr.tomps.intentions.RenameLabelsFromConceptsIn_Intention" file="RenameLabelsFromConceptsIn_Intention.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.ArrayList" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionDescriptor" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionExecutable" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionType" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IVisitor" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.IWhereFilter" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.AlternativeMapper_Behavior" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
+    <classNode extendsClassName="jetbrains.mps.intentions.IntentionFactory" />
   </dependency>
   <dependency className="org.campagnelab.antlr.tomps.intentions.ResolveAllAlternativesById_Intention" file="ResolveAllAlternativesById_Intention.java">
     <classNode dependClassName="java.lang.Object" />

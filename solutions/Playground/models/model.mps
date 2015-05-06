@@ -668,7 +668,7 @@
         <node concept="1M9qTG" id="v1yTSogbjj" role="1Mb3aa">
           <property role="TrG5h" value="expr:" />
           <property role="2yxwTd" value="true" />
-          <property role="2zsUtJ" value="$" />
+          <property role="2zsUtJ" value="Dollar" />
           <node concept="1Mb3e_" id="v1yTSogbjk" role="1M9qTN">
             <node concept="1Mb3a5" id="v1yTSogqKa" role="1Mb3a8">
               <property role="2sqUGl" value="false" />
@@ -703,7 +703,7 @@
         <node concept="1M9qTG" id="v1yTSogbju" role="1Mb3aa">
           <property role="TrG5h" value="expr:" />
           <property role="2yxwTd" value="true" />
-          <property role="2zsUtJ" value="^" />
+          <property role="2zsUtJ" value="Not" />
           <node concept="1Mb3e_" id="v1yTSogbjv" role="1M9qTN">
             <node concept="1Mb3a5" id="v1yTSogqKN" role="1Mb3a8">
               <property role="2sqUGl" value="false" />
@@ -801,7 +801,7 @@
         <node concept="1M9qTG" id="v1yTSogbjR" role="1Mb3aa">
           <property role="TrG5h" value="expr:" />
           <property role="2yxwTd" value="true" />
-          <property role="2zsUtJ" value="*" />
+          <property role="2zsUtJ" value="Mult" />
           <node concept="1Mb3e_" id="v1yTSogbjS" role="1M9qTN">
             <node concept="1Mb3a5" id="v1yTSogqGw" role="1Mb3a8">
               <property role="2sqUGl" value="false" />
@@ -2562,14 +2562,14 @@
       <property role="gfBJK" value="expr:expr$@expr" />
       <ref role="3c7peZ" node="v1yTSogbjj" resolve="expr:" />
       <ref role="34cEr5" node="1QnnJL6MH4f" />
-      <ref role="gaaFa" to="6q58:7JSGHIZRlXw" resolve="$Expr" />
+      <ref role="gaaFa" to="6q58:7JSGHIZRlXw" resolve="DollarExpr" />
     </node>
     <node concept="3c7pc5" id="4l9KHPa3qTj" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;(expr '^' expr)&#10;" />
       <property role="gfBJK" value="expr:expr^expr" />
       <ref role="3c7peZ" node="v1yTSogbju" resolve="expr:" />
       <ref role="34cEr5" node="1QnnJL6MH4f" />
-      <ref role="gaaFa" to="6q58:7JSGHIZRlXx" resolve="^Expr" />
+      <ref role="gaaFa" to="6q58:7JSGHIZRlXx" resolve="NotExpr" />
     </node>
     <node concept="3c7pc5" id="4l9KHPa3qTk" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;(('-'&#10;'+') expr)&#10;" />
@@ -2597,7 +2597,7 @@
       <property role="gfBJK" value="expr:expr*/expr" />
       <ref role="3c7peZ" node="v1yTSogbjR" resolve="expr:" />
       <ref role="34cEr5" node="1QnnJL6MH4f" />
-      <ref role="gaaFa" to="6q58:7JSGHIZRlX_" resolve="*Expr" />
+      <ref role="gaaFa" to="6q58:7JSGHIZRlX_" resolve="MultExpr" />
     </node>
     <node concept="3c7pc5" id="4l9KHPa3qTo" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;(expr ('+'&#10;'-') expr)&#10;" />

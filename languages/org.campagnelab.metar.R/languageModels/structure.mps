@@ -65,12 +65,12 @@
     <ref role="1TJDcQ" node="7JSGHIZRlXs" resolve="Expr" />
   </node>
   <node concept="1TIwiD" id="7JSGHIZRlXw">
-    <property role="TrG5h" value="$Expr" />
+    <property role="TrG5h" value="DollarExpr" />
     <property role="OYydz" value="$" />
     <ref role="1TJDcQ" node="7JSGHIZRlXs" resolve="Expr" />
   </node>
   <node concept="1TIwiD" id="7JSGHIZRlXx">
-    <property role="TrG5h" value="^Expr" />
+    <property role="TrG5h" value="NotExpr" />
     <property role="OYydz" value="^" />
     <ref role="1TJDcQ" node="7JSGHIZRlXs" resolve="Expr" />
   </node>
@@ -90,7 +90,7 @@
     <ref role="1TJDcQ" node="7JSGHIZRlXs" resolve="Expr" />
   </node>
   <node concept="1TIwiD" id="7JSGHIZRlX_">
-    <property role="TrG5h" value="*Expr" />
+    <property role="TrG5h" value="MultExpr" />
     <property role="OYydz" value="*" />
     <ref role="1TJDcQ" node="7JSGHIZRlXs" resolve="Expr" />
   </node>
