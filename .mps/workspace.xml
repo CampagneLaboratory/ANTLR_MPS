@@ -18,106 +18,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ec7c4c8-fdb9-475d-a1c5-08cf184915b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/!Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/&amp;Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/(Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/+Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/-Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/::Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/:Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/&gt;Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/?Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/Atom_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/BehaviorAspectDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/BinaryOperationExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/BooleanOrExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/BreakExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/ComplexExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/DollarExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/FalseExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/FloatExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/ForExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/FunctionExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/HexExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/IdExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/IfExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/InfExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/IntExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/Language.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/MultExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/NaExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/NanExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/NextExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/NotExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/NullExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/RepeatExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/StringExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/structure/StructureAspectDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/TrueExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/UserOpExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/WhileExpr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/[Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/[[Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/behavior/dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/constraints/dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/editor/dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/structure/dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/typesystem/dependencies" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/behavior/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/constraints/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/editor/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/structure/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/typesystem/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/constraints/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/editor/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/structure/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/typesystem/trace.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/{Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/|Expr_BehaviorDescriptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/~Expr_BehaviorDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Playground/models/ANTLR45.mps" afterPath="$PROJECT_DIR$/solutions/Playground/models/ANTLR45.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/AddLabel_Intention.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/AddLabel_Intention.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/LabelAllAlternatives_Intention.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/LabelAllAlternatives_Intention.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/generator/source_gen.caches/org/campagnelab/ANTLR/generator/template/main/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/generator/source_gen.caches/org/campagnelab/ANTLR/generator/template/main/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/actions/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/actions/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/behavior/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/behavior/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/constraints/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/constraints/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/editor/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/intentions/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/intentions/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/migration/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/migration/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/structure/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/typesystem/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/typesystem/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/generator/source_gen.caches/org/campagnelab/ANTLR45/generator/template/main/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/generator/source_gen.caches/org/campagnelab/ANTLR45/generator/template/main/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/behavior/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/behavior/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/constraints/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/constraints/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/editor/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/structure/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/typesystem/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/typesystem/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen.caches/org/campagnelab/antlr/tomps/generator/template/main/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen.caches/org/campagnelab/antlr/tomps/generator/template/main/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/actions/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/actions/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/behavior/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/behavior/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/constraints/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/constraints/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/editor/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/editor/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/intentions/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/intentions/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/refactorings/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/refactorings/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/structure/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/typesystem/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/typesystem/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/generated" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.persistence/source_gen.caches/org/campagnelab/antlr/persistence/impl/generated" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.persistence/source_gen.caches/org/campagnelab/antlr/persistence/impl/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen.caches/org/campagnelab/antlr/plugin/plugin/generated" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen.caches/org/campagnelab/antlr/plugin/plugin/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/languageModels/intentions.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/languageModels/intentions.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/org.campagnelab.ANTLR.mpl" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/org.campagnelab.ANTLR.mpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/languageModels/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/intentions/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/intentions/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="ANTLR.iws" />
@@ -175,7 +75,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -203,7 +103,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -231,7 +131,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -455,7 +355,7 @@
                 </errorLabels>
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -483,7 +383,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -511,7 +411,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -539,7 +439,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -552,35 +452,22 @@
         <entry file="mps://node://Playground/ANTLR45/R">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
+              <memento viewPositionX="0" viewPositionY="634">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="12" />
-                    <property name="caretX" value="307" />
+                    <property name="caretXRelative" value="100" />
+                    <property name="caretX" value="235" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="property_label" cellNumber="0" isInList="false">
-                      <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" />
+                      <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
-                <errorLabels>
-                  <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
-                    <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784438" />
-                  </errorLabel>
-                  <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
-                    <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784440" />
-                  </errorLabel>
-                  <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
-                    <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784432" />
-                  </errorLabel>
-                  <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
-                    <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784434" />
-                  </errorLabel>
-                </errorLabels>
+                <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -608,7 +495,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -636,7 +523,7 @@
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -1242,7 +1129,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Support references across roots inside the same model, to enable refs from parser to lexer, when LexerRules are in different files.&#10;Expand visitor to support ebnfBlocks." />
     <MESSAGE value="Support NotSet e.g., ~[\n\r]" />
     <MESSAGE value="Improve the visitor some more. Still missing a few bits to support the grammar of the R language." />
     <MESSAGE value="Fix parsing of block. Was incorrectly returning empty alternatives." />
@@ -1267,7 +1153,8 @@
     <MESSAGE value="Add intention to label all the alternatives of a rule. Handle generation for labeled alternatives (needs testing).&#10;Add create concepts and labels intention (on concept mapper and in alternative mapper).&#10;Add concepts for elements of the metar.R language. Some concepts have incorrect names, but this will be changed with refactoring in the future (this language currently does not compile)." />
     <MESSAGE value="Add cardinality for sources. Currently need to be specified manually, but may be infered from the grammar in the future. Generate addAll in the visitor when cardinality is not 1 or 0..1." />
     <MESSAGE value="Add ANTRL_R jar file to metar.R language and configure mps grammar converter with the name of the language." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ANTRL_R jar file to metar.R language and configure mps grammar converter with the name of the language." />
+    <MESSAGE value="Fix LabelAllAlternatives intention.&#10;Label expressions." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix LabelAllAlternatives intention.&#10;Label expressions." />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://Playground/model/ConvertToMPS_R">
@@ -2755,7 +2642,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2781,7 +2668,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2807,7 +2694,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2833,7 +2720,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2859,7 +2746,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2885,7 +2772,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -2911,7 +2798,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -3133,7 +3020,7 @@
             </errorLabels>
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -3159,7 +3046,7 @@
             <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
@@ -3170,35 +3057,22 @@
     <entry file="mps://node://Playground/ANTLR45/R">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
+          <memento viewPositionX="0" viewPositionY="634">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretXRelative" value="12" />
-                <property name="caretX" value="307" />
+                <property name="caretXRelative" value="100" />
+                <property name="caretX" value="235" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="property_label" cellNumber="0" isInList="false">
-                  <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" />
+                  <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
-            <errorLabels>
-              <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
-                <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784438" />
-              </errorLabel>
-              <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
-                <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784440" />
-              </errorLabel>
-              <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
-                <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784432" />
-              </errorLabel>
-              <errorLabel errorText="" cellId="property_label" cellNumber="0" isInList="false">
-                <node node_reference="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784434" />
-              </errorLabel>
-            </errorLabels>
+            <errorLabels />
             <folded />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784216" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:898b9172-136d-42db-8da7-dff50f6e1968(ANTLR45)/3578183104953784454" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorLabels />
             <folded />
