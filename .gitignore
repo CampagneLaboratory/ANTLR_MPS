@@ -1,0 +1,9 @@
+.mps/workspace.xml
+*/*/source_gen/**/*
+*/*/source_gen.caches/**/*
+*/*/classes_gen/**/*.class
+*/*/classes_gen/**/trace.info
+trace.info
+dependencies
+generated
+
