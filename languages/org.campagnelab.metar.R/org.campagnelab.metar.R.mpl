@@ -5,7 +5,7 @@
       <sourceRoot location="languageModels" />
     </modelRoot>
     <modelRoot contentPath="${module}" type="java_classes">
-      <sourceRoot location="r.parsers-1.0-SNAPSHOT.jar" />
+      <sourceRoot location="R.parsers-1.0-SNAPSHOT-complete.jar" />
     </modelRoot>
   </models>
   <accessoryModels />
@@ -45,7 +45,7 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="${module}/r.parsers-1.0-SNAPSHOT.jar" />
+    <stubModelEntry path="${module}/R.parsers-1.0-SNAPSHOT-complete.jar" />
   </stubModelEntries>
   <sourcePath />
   <usedDevKits>

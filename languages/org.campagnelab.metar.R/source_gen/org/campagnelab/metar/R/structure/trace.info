@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<debug-info>
-  <root>
-    <file name="StructureAspectDescriptor.java">
-      <unit at="13,0,154,0" name="org.campagnelab.metar.R.structure.StructureAspectDescriptor" />
-    </file>
-  </root>
-</debug-info>
-
