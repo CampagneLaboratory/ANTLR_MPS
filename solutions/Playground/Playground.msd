@@ -11,6 +11,7 @@
     <dependency reexport="false">3b58810c-8431-4bbb-99ea-b4671e02dd13(org.campagnelab.metar.R)</dependency>
     <dependency reexport="false">8a78e17e-fdc7-41c9-a783-10c22ed2f6d5(org.campagnelab.ANTLR45)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+    <dependency reexport="false">b283f144-ab8b-47c6-9ed5-c8f24c9c43e5(org.campagnelab.metar.R.functions)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)</usedLanguage>
