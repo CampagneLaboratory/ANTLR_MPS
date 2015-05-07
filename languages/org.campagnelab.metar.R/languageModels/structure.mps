@@ -345,5 +345,59 @@
       <ref role="20lvS9" node="7JSGHIZRlXs" resolve="Expr" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5cfnfJE0bQr">
+    <property role="TrG5h" value="Parameters" />
+    <node concept="1TJgyj" id="5cfnfJE0ces" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="5cfnfJE0gfr" resolve="Parameter" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5cfnfJE0gfr">
+    <property role="TrG5h" value="Parameter" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5cfnfJE0grc" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7JSGHIZRlXs" resolve="Expr" />
+    </node>
+    <node concept="1TJgyi" id="5cfnfJE0gr6" role="1TKVEl">
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5cfnfJE0RzU">
+    <property role="TrG5h" value="ExprSub" />
+    <property role="OYydz" value="Expr" />
+    <ref role="1TJDcQ" node="5cfnfJE0gfr" resolve="Parameter" />
+  </node>
+  <node concept="1TIwiD" id="5cfnfJE0RzV">
+    <property role="TrG5h" value="IDSub" />
+    <property role="OYydz" value="ID" />
+    <ref role="1TJDcQ" node="5cfnfJE0gfr" resolve="Parameter" />
+  </node>
+  <node concept="1TIwiD" id="5cfnfJE0RzW">
+    <property role="TrG5h" value="STRINGSub" />
+    <property role="OYydz" value="STRING" />
+    <ref role="1TJDcQ" node="5cfnfJE0gfr" resolve="Parameter" />
+  </node>
+  <node concept="1TIwiD" id="5cfnfJE0RzX">
+    <property role="TrG5h" value="NULLSub" />
+    <property role="OYydz" value="NULL" />
+    <ref role="1TJDcQ" node="5cfnfJE0gfr" resolve="Parameter" />
+  </node>
+  <node concept="1TIwiD" id="5cfnfJE0RzY">
+    <property role="TrG5h" value="VARARGSSub" />
+    <property role="OYydz" value="VARARGS" />
+    <property role="34LRSv" value="..." />
+    <ref role="1TJDcQ" node="5cfnfJE0gfr" resolve="Parameter" />
+  </node>
+  <node concept="1TIwiD" id="5cfnfJE0RzZ">
+    <property role="TrG5h" value="EmptySub" />
+    <property role="OYydz" value="Empty" />
+    <ref role="1TJDcQ" node="5cfnfJE0gfr" resolve="Parameter" />
+  </node>
 </model>
 

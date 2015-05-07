@@ -14,7 +14,7 @@
       <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Atom_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,130,0" name="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,146,0" name="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BinaryOperationExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.BinaryOperationExpr_BehaviorDescriptor" />
@@ -52,6 +52,12 @@
     <file name="ElementAccessExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ElementAccessExpr_BehaviorDescriptor" />
     </file>
+    <file name="EmptySub_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.EmptySub_BehaviorDescriptor" />
+    </file>
+    <file name="ExprSub_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ExprSub_BehaviorDescriptor" />
+    </file>
     <file name="Expr_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
     </file>
@@ -88,6 +94,9 @@
     <file name="IDExpr_BehaviorDescriptor.java">
       <unit at="9,0,20,0" name="org.campagnelab.metar.R.behavior.IDExpr_BehaviorDescriptor" />
     </file>
+    <file name="IDSub_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.IDSub_BehaviorDescriptor" />
+    </file>
     <file name="IfElseExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.IfElseExpr_BehaviorDescriptor" />
     </file>
@@ -115,6 +124,9 @@
     <file name="NAExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.NAExpr_BehaviorDescriptor" />
     </file>
+    <file name="NULLSub_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.NULLSub_BehaviorDescriptor" />
+    </file>
     <file name="NaNExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.NaNExpr_BehaviorDescriptor" />
     </file>
@@ -130,6 +142,12 @@
     <file name="OrExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.OrExpr_BehaviorDescriptor" />
     </file>
+    <file name="Parameter_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Parameter_BehaviorDescriptor" />
+    </file>
+    <file name="Parameters_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Parameters_BehaviorDescriptor" />
+    </file>
     <file name="ParenthesizedExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ParenthesizedExpr_BehaviorDescriptor" />
     </file>
@@ -138,6 +156,9 @@
     </file>
     <file name="RepeatExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.RepeatExpr_BehaviorDescriptor" />
+    </file>
+    <file name="STRINGSub_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.STRINGSub_BehaviorDescriptor" />
     </file>
     <file name="StringExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.StringExpr_BehaviorDescriptor" />
@@ -165,6 +186,9 @@
     </file>
     <file name="UserOpExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.UserOpExpr_BehaviorDescriptor" />
+    </file>
+    <file name="VARARGSSub_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.VARARGSSub_BehaviorDescriptor" />
     </file>
     <file name="WhileExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.WhileExpr_BehaviorDescriptor" />

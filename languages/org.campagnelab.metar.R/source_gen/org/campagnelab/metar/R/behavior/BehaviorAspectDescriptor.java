@@ -17,63 +17,63 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new BinaryOperationExpr_BehaviorDescriptor();
       case 6:
         return new BooleanOrExpr_BehaviorDescriptor();
-      case 16:
+      case 17:
         return new Expr_BehaviorDescriptor();
       case 14:
         return new DollarExpr_BehaviorDescriptor();
-      case 39:
+      case 43:
         return new NotExpr_BehaviorDescriptor();
-      case 53:
+      case 60:
         return new UserOpExpr_BehaviorDescriptor();
-      case 34:
+      case 37:
         return new MultExpr_BehaviorDescriptor();
-      case 23:
+      case 25:
         return new FunctionExpr_BehaviorDescriptor();
-      case 29:
+      case 32:
         return new IfExpr_BehaviorDescriptor();
-      case 21:
+      case 23:
         return new ForExpr_BehaviorDescriptor();
-      case 54:
+      case 62:
         return new WhileExpr_BehaviorDescriptor();
-      case 44:
+      case 50:
         return new RepeatExpr_BehaviorDescriptor();
-      case 38:
+      case 42:
         return new NextExpr_BehaviorDescriptor();
       case 7:
         return new BreakExpr_BehaviorDescriptor();
-      case 45:
+      case 52:
         return new StringExpr_BehaviorDescriptor();
-      case 25:
+      case 27:
         return new HexExpr_BehaviorDescriptor();
-      case 31:
+      case 34:
         return new IntExpr_BehaviorDescriptor();
-      case 19:
+      case 21:
         return new FloatExpr_BehaviorDescriptor();
       case 12:
         return new ComplexExpr_BehaviorDescriptor();
-      case 40:
+      case 44:
         return new NullExpr_BehaviorDescriptor();
-      case 30:
+      case 33:
         return new InfExpr_BehaviorDescriptor();
-      case 48:
+      case 55:
         return new TrueExpr_BehaviorDescriptor();
-      case 17:
+      case 19:
         return new FalseExpr_BehaviorDescriptor();
       case 15:
         return new ElementAccessExpr_BehaviorDescriptor();
-      case 33:
+      case 36:
         return new ListAccessExpr_BehaviorDescriptor();
       case 10:
         return new ColonsExpr_BehaviorDescriptor();
       case 8:
         return new CaretExpr_BehaviorDescriptor();
-      case 51:
+      case 58:
         return new UnaryOperatorExpr_BehaviorDescriptor();
       case 9:
         return new ColonExpr_BehaviorDescriptor();
-      case 50:
+      case 57:
         return new USER_OPExpr_BehaviorDescriptor();
-      case 35:
+      case 38:
         return new MultiplicationExpr_BehaviorDescriptor();
       case 0:
         return new AdditionExpr_BehaviorDescriptor();
@@ -81,49 +81,65 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new ComparisonExpr_BehaviorDescriptor();
       case 1:
         return new AndExpr_BehaviorDescriptor();
-      case 41:
+      case 45:
         return new OrExpr_BehaviorDescriptor();
-      case 52:
+      case 59:
         return new UnaryTildeExpr_BehaviorDescriptor();
-      case 47:
+      case 54:
         return new TildeExpr_BehaviorDescriptor();
       case 2:
         return new AssignmentOperatorExpr_BehaviorDescriptor();
-      case 22:
+      case 24:
         return new FunctionCallExpr_BehaviorDescriptor();
       case 5:
         return new BodyExpr_BehaviorDescriptor();
-      case 28:
+      case 31:
         return new IfElseExpr_BehaviorDescriptor();
-      case 24:
-        return new HelpExpr_BehaviorDescriptor();
-      case 42:
-        return new ParenthesizedExpr_BehaviorDescriptor();
-      case 27:
-        return new IDExpr_BehaviorDescriptor();
-      case 46:
-        return new StringLiteralExpr_BehaviorDescriptor();
       case 26:
+        return new HelpExpr_BehaviorDescriptor();
+      case 48:
+        return new ParenthesizedExpr_BehaviorDescriptor();
+      case 29:
+        return new IDExpr_BehaviorDescriptor();
+      case 53:
+        return new StringLiteralExpr_BehaviorDescriptor();
+      case 28:
         return new HexLiteralExpr_BehaviorDescriptor();
-      case 32:
+      case 35:
         return new IntLiteralExpr_BehaviorDescriptor();
-      case 20:
+      case 22:
         return new FloatLiteralExpr_BehaviorDescriptor();
       case 13:
         return new ComplexLiteralExpr_BehaviorDescriptor();
-      case 37:
+      case 41:
         return new NaNExpr_BehaviorDescriptor();
-      case 49:
+      case 56:
         return new TrueLiteralExpr_BehaviorDescriptor();
-      case 18:
+      case 20:
         return new FalseLiteralExpr_BehaviorDescriptor();
-      case 36:
+      case 39:
         return new NAExpr_BehaviorDescriptor();
-      case 43:
+      case 49:
         return new Prog_BehaviorDescriptor();
+      case 47:
+        return new Parameters_BehaviorDescriptor();
+      case 46:
+        return new Parameter_BehaviorDescriptor();
+      case 18:
+        return new ExprSub_BehaviorDescriptor();
+      case 30:
+        return new IDSub_BehaviorDescriptor();
+      case 51:
+        return new STRINGSub_BehaviorDescriptor();
+      case 40:
+        return new NULLSub_BehaviorDescriptor();
+      case 61:
+        return new VARARGSSub_BehaviorDescriptor();
+      case 16:
+        return new EmptySub_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.metar.R.structure.AdditionExpr", "org.campagnelab.metar.R.structure.AndExpr", "org.campagnelab.metar.R.structure.AssignmentOperatorExpr", "org.campagnelab.metar.R.structure.Atom", "org.campagnelab.metar.R.structure.BinaryOperationExpr", "org.campagnelab.metar.R.structure.BodyExpr", "org.campagnelab.metar.R.structure.BooleanOrExpr", "org.campagnelab.metar.R.structure.BreakExpr", "org.campagnelab.metar.R.structure.CaretExpr", "org.campagnelab.metar.R.structure.ColonExpr", "org.campagnelab.metar.R.structure.ColonsExpr", "org.campagnelab.metar.R.structure.ComparisonExpr", "org.campagnelab.metar.R.structure.ComplexExpr", "org.campagnelab.metar.R.structure.ComplexLiteralExpr", "org.campagnelab.metar.R.structure.DollarExpr", "org.campagnelab.metar.R.structure.ElementAccessExpr", "org.campagnelab.metar.R.structure.Expr", "org.campagnelab.metar.R.structure.FalseExpr", "org.campagnelab.metar.R.structure.FalseLiteralExpr", "org.campagnelab.metar.R.structure.FloatExpr", "org.campagnelab.metar.R.structure.FloatLiteralExpr", "org.campagnelab.metar.R.structure.ForExpr", "org.campagnelab.metar.R.structure.FunctionCallExpr", "org.campagnelab.metar.R.structure.FunctionExpr", "org.campagnelab.metar.R.structure.HelpExpr", "org.campagnelab.metar.R.structure.HexExpr", "org.campagnelab.metar.R.structure.HexLiteralExpr", "org.campagnelab.metar.R.structure.IDExpr", "org.campagnelab.metar.R.structure.IfElseExpr", "org.campagnelab.metar.R.structure.IfExpr", "org.campagnelab.metar.R.structure.InfExpr", "org.campagnelab.metar.R.structure.IntExpr", "org.campagnelab.metar.R.structure.IntLiteralExpr", "org.campagnelab.metar.R.structure.ListAccessExpr", "org.campagnelab.metar.R.structure.MultExpr", "org.campagnelab.metar.R.structure.MultiplicationExpr", "org.campagnelab.metar.R.structure.NAExpr", "org.campagnelab.metar.R.structure.NaNExpr", "org.campagnelab.metar.R.structure.NextExpr", "org.campagnelab.metar.R.structure.NotExpr", "org.campagnelab.metar.R.structure.NullExpr", "org.campagnelab.metar.R.structure.OrExpr", "org.campagnelab.metar.R.structure.ParenthesizedExpr", "org.campagnelab.metar.R.structure.Prog", "org.campagnelab.metar.R.structure.RepeatExpr", "org.campagnelab.metar.R.structure.StringExpr", "org.campagnelab.metar.R.structure.StringLiteralExpr", "org.campagnelab.metar.R.structure.TildeExpr", "org.campagnelab.metar.R.structure.TrueExpr", "org.campagnelab.metar.R.structure.TrueLiteralExpr", "org.campagnelab.metar.R.structure.USER_OPExpr", "org.campagnelab.metar.R.structure.UnaryOperatorExpr", "org.campagnelab.metar.R.structure.UnaryTildeExpr", "org.campagnelab.metar.R.structure.UserOpExpr", "org.campagnelab.metar.R.structure.WhileExpr"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.metar.R.structure.AdditionExpr", "org.campagnelab.metar.R.structure.AndExpr", "org.campagnelab.metar.R.structure.AssignmentOperatorExpr", "org.campagnelab.metar.R.structure.Atom", "org.campagnelab.metar.R.structure.BinaryOperationExpr", "org.campagnelab.metar.R.structure.BodyExpr", "org.campagnelab.metar.R.structure.BooleanOrExpr", "org.campagnelab.metar.R.structure.BreakExpr", "org.campagnelab.metar.R.structure.CaretExpr", "org.campagnelab.metar.R.structure.ColonExpr", "org.campagnelab.metar.R.structure.ColonsExpr", "org.campagnelab.metar.R.structure.ComparisonExpr", "org.campagnelab.metar.R.structure.ComplexExpr", "org.campagnelab.metar.R.structure.ComplexLiteralExpr", "org.campagnelab.metar.R.structure.DollarExpr", "org.campagnelab.metar.R.structure.ElementAccessExpr", "org.campagnelab.metar.R.structure.EmptySub", "org.campagnelab.metar.R.structure.Expr", "org.campagnelab.metar.R.structure.ExprSub", "org.campagnelab.metar.R.structure.FalseExpr", "org.campagnelab.metar.R.structure.FalseLiteralExpr", "org.campagnelab.metar.R.structure.FloatExpr", "org.campagnelab.metar.R.structure.FloatLiteralExpr", "org.campagnelab.metar.R.structure.ForExpr", "org.campagnelab.metar.R.structure.FunctionCallExpr", "org.campagnelab.metar.R.structure.FunctionExpr", "org.campagnelab.metar.R.structure.HelpExpr", "org.campagnelab.metar.R.structure.HexExpr", "org.campagnelab.metar.R.structure.HexLiteralExpr", "org.campagnelab.metar.R.structure.IDExpr", "org.campagnelab.metar.R.structure.IDSub", "org.campagnelab.metar.R.structure.IfElseExpr", "org.campagnelab.metar.R.structure.IfExpr", "org.campagnelab.metar.R.structure.InfExpr", "org.campagnelab.metar.R.structure.IntExpr", "org.campagnelab.metar.R.structure.IntLiteralExpr", "org.campagnelab.metar.R.structure.ListAccessExpr", "org.campagnelab.metar.R.structure.MultExpr", "org.campagnelab.metar.R.structure.MultiplicationExpr", "org.campagnelab.metar.R.structure.NAExpr", "org.campagnelab.metar.R.structure.NULLSub", "org.campagnelab.metar.R.structure.NaNExpr", "org.campagnelab.metar.R.structure.NextExpr", "org.campagnelab.metar.R.structure.NotExpr", "org.campagnelab.metar.R.structure.NullExpr", "org.campagnelab.metar.R.structure.OrExpr", "org.campagnelab.metar.R.structure.Parameter", "org.campagnelab.metar.R.structure.Parameters", "org.campagnelab.metar.R.structure.ParenthesizedExpr", "org.campagnelab.metar.R.structure.Prog", "org.campagnelab.metar.R.structure.RepeatExpr", "org.campagnelab.metar.R.structure.STRINGSub", "org.campagnelab.metar.R.structure.StringExpr", "org.campagnelab.metar.R.structure.StringLiteralExpr", "org.campagnelab.metar.R.structure.TildeExpr", "org.campagnelab.metar.R.structure.TrueExpr", "org.campagnelab.metar.R.structure.TrueLiteralExpr", "org.campagnelab.metar.R.structure.USER_OPExpr", "org.campagnelab.metar.R.structure.UnaryOperatorExpr", "org.campagnelab.metar.R.structure.UnaryTildeExpr", "org.campagnelab.metar.R.structure.UserOpExpr", "org.campagnelab.metar.R.structure.VARARGSSub", "org.campagnelab.metar.R.structure.WhileExpr"};
 }

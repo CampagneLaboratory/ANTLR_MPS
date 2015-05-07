@@ -28,7 +28,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptComplexLiteralExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.ComplexLiteralExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c8L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptDollarExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.DollarExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f60L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).alias("$", "").create();
   /*package*/ final ConceptDescriptor myConceptElementAccessExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.ElementAccessExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453afL)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).alias("[[", "").create();
+  /*package*/ final ConceptDescriptor myConceptEmptySub = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.EmptySub", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378ffL)).super_("org.campagnelab.metar.R.structure.Parameter").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL)).parents("org.campagnelab.metar.R.structure.Parameter").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL)).create();
   /*package*/ final ConceptDescriptor myConceptExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.Expr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).create();
+  /*package*/ final ConceptDescriptor myConceptExprSub = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.ExprSub", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378faL)).super_("org.campagnelab.metar.R.structure.Parameter").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL)).parents("org.campagnelab.metar.R.structure.Parameter").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL)).create();
   /*package*/ final ConceptDescriptor myConceptFalseExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.FalseExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f81L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptFalseLiteralExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.FalseLiteralExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453ccL)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).alias("FALSE", "").create();
   /*package*/ final ConceptDescriptor myConceptFloatExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.FloatExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f7aL)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
@@ -40,6 +42,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptHexExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.HexExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f78L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptHexLiteralExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.HexLiteralExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c5L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptIDExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.IDExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c3L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).create();
+  /*package*/ final ConceptDescriptor myConceptIDSub = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.IDSub", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378fbL)).super_("org.campagnelab.metar.R.structure.Parameter").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL)).parents("org.campagnelab.metar.R.structure.Parameter").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL)).create();
   /*package*/ final ConceptDescriptor myConceptIfElseExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.IfElseExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c0L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptIfExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.IfExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f6fL)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptInfExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.InfExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f7eL)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).alias("Inf", "").create();
@@ -49,14 +52,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptMultExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.MultExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f65L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptMultiplicationExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.MultiplicationExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453b6L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptNAExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.NAExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a842937026bcfcL)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).alias("NA", "").create();
+  /*package*/ final ConceptDescriptor myConceptNULLSub = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.NULLSub", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378fdL)).super_("org.campagnelab.metar.R.structure.Parameter").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL)).parents("org.campagnelab.metar.R.structure.Parameter").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL)).create();
   /*package*/ final ConceptDescriptor myConceptNaNExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.NaNExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453caL)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).alias("NaN", "").create();
   /*package*/ final ConceptDescriptor myConceptNextExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.NextExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f74L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptNotExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.NotExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f61L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptNullExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.NullExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f7cL)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptOrExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.OrExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453baL)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
+  /*package*/ final ConceptDescriptor myConceptParameter = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.Parameter", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(5985104666831161030L, "id")).properties("id").childDescriptors(new ConceptDescriptorBuilder.Link(5985104666831161036L, "expr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL), false, false, false)).children(new String[]{"expr"}, new boolean[]{false}).create();
+  /*package*/ final ConceptDescriptor myConceptParameters = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.Parameters", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea00bd9bL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(5985104666831143836L, "list", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL), false, true, false)).children(new String[]{"list"}, new boolean[]{true}).create();
   /*package*/ final ConceptDescriptor myConceptParenthesizedExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.ParenthesizedExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c2L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptProg = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.Prog", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x6912564f4225b021L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).childDescriptors(new ConceptDescriptorBuilder.Link(7571208821975398051L, "expressions", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL), true, true, false)).children(new String[]{"expressions"}, new boolean[]{true}).alias("RProgram", "").create();
   /*package*/ final ConceptDescriptor myConceptRepeatExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.RepeatExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f72L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
+  /*package*/ final ConceptDescriptor myConceptSTRINGSub = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.STRINGSub", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378fcL)).super_("org.campagnelab.metar.R.structure.Parameter").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL)).parents("org.campagnelab.metar.R.structure.Parameter").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL)).create();
   /*package*/ final ConceptDescriptor myConceptStringExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.StringExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f77L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptStringLiteralExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.StringLiteralExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c4L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(7571208821975560537L, "value")).properties("value").create();
   /*package*/ final ConceptDescriptor myConceptTildeExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.TildeExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453bcL)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
@@ -66,17 +73,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptUnaryOperatorExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.UnaryOperatorExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453b3L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptUnaryTildeExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.UnaryTildeExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453bbL)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
   /*package*/ final ConceptDescriptor myConceptUserOpExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.UserOpExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f64L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
+  /*package*/ final ConceptDescriptor myConceptVARARGSSub = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.VARARGSSub", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378feL)).super_("org.campagnelab.metar.R.structure.Parameter").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL)).parents("org.campagnelab.metar.R.structure.Parameter").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL)).alias("...", "").create();
   /*package*/ final ConceptDescriptor myConceptWhileExpr = new ConceptDescriptorBuilder("org.campagnelab.metar.R.structure.WhileExpr", MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f71L)).super_("org.campagnelab.metar.R.structure.Expr").super_(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).parents("org.campagnelab.metar.R.structure.Expr").parentIds(MetaIdFactory.conceptId(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f5cL)).create();
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAdditionExpr, myConceptAndExpr, myConceptAssignmentOperatorExpr, myConceptAtom, myConceptBinaryOperationExpr, myConceptBodyExpr, myConceptBooleanOrExpr, myConceptBreakExpr, myConceptCaretExpr, myConceptColonExpr, myConceptColonsExpr, myConceptComparisonExpr, myConceptComplexExpr, myConceptComplexLiteralExpr, myConceptDollarExpr, myConceptElementAccessExpr, myConceptExpr, myConceptFalseExpr, myConceptFalseLiteralExpr, myConceptFloatExpr, myConceptFloatLiteralExpr, myConceptForExpr, myConceptFunctionCallExpr, myConceptFunctionExpr, myConceptHelpExpr, myConceptHexExpr, myConceptHexLiteralExpr, myConceptIDExpr, myConceptIfElseExpr, myConceptIfExpr, myConceptInfExpr, myConceptIntExpr, myConceptIntLiteralExpr, myConceptListAccessExpr, myConceptMultExpr, myConceptMultiplicationExpr, myConceptNAExpr, myConceptNaNExpr, myConceptNextExpr, myConceptNotExpr, myConceptNullExpr, myConceptOrExpr, myConceptParenthesizedExpr, myConceptProg, myConceptRepeatExpr, myConceptStringExpr, myConceptStringLiteralExpr, myConceptTildeExpr, myConceptTrueExpr, myConceptTrueLiteralExpr, myConceptUSER_OPExpr, myConceptUnaryOperatorExpr, myConceptUnaryTildeExpr, myConceptUserOpExpr, myConceptWhileExpr);
+    return Arrays.asList(myConceptAdditionExpr, myConceptAndExpr, myConceptAssignmentOperatorExpr, myConceptAtom, myConceptBinaryOperationExpr, myConceptBodyExpr, myConceptBooleanOrExpr, myConceptBreakExpr, myConceptCaretExpr, myConceptColonExpr, myConceptColonsExpr, myConceptComparisonExpr, myConceptComplexExpr, myConceptComplexLiteralExpr, myConceptDollarExpr, myConceptElementAccessExpr, myConceptEmptySub, myConceptExpr, myConceptExprSub, myConceptFalseExpr, myConceptFalseLiteralExpr, myConceptFloatExpr, myConceptFloatLiteralExpr, myConceptForExpr, myConceptFunctionCallExpr, myConceptFunctionExpr, myConceptHelpExpr, myConceptHexExpr, myConceptHexLiteralExpr, myConceptIDExpr, myConceptIDSub, myConceptIfElseExpr, myConceptIfExpr, myConceptInfExpr, myConceptIntExpr, myConceptIntLiteralExpr, myConceptListAccessExpr, myConceptMultExpr, myConceptMultiplicationExpr, myConceptNAExpr, myConceptNULLSub, myConceptNaNExpr, myConceptNextExpr, myConceptNotExpr, myConceptNullExpr, myConceptOrExpr, myConceptParameter, myConceptParameters, myConceptParenthesizedExpr, myConceptProg, myConceptRepeatExpr, myConceptSTRINGSub, myConceptStringExpr, myConceptStringLiteralExpr, myConceptTildeExpr, myConceptTrueExpr, myConceptTrueLiteralExpr, myConceptUSER_OPExpr, myConceptUnaryOperatorExpr, myConceptUnaryTildeExpr, myConceptUserOpExpr, myConceptVARARGSSub, myConceptWhileExpr);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0hc, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0pc, conceptFqName)) {
       case 0:
         return myConceptAdditionExpr;
       case 1:
@@ -110,86 +118,102 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 15:
         return myConceptElementAccessExpr;
       case 16:
-        return myConceptExpr;
+        return myConceptEmptySub;
       case 17:
-        return myConceptFalseExpr;
+        return myConceptExpr;
       case 18:
-        return myConceptFalseLiteralExpr;
+        return myConceptExprSub;
       case 19:
-        return myConceptFloatExpr;
+        return myConceptFalseExpr;
       case 20:
-        return myConceptFloatLiteralExpr;
+        return myConceptFalseLiteralExpr;
       case 21:
-        return myConceptForExpr;
+        return myConceptFloatExpr;
       case 22:
-        return myConceptFunctionCallExpr;
+        return myConceptFloatLiteralExpr;
       case 23:
-        return myConceptFunctionExpr;
+        return myConceptForExpr;
       case 24:
-        return myConceptHelpExpr;
+        return myConceptFunctionCallExpr;
       case 25:
-        return myConceptHexExpr;
+        return myConceptFunctionExpr;
       case 26:
-        return myConceptHexLiteralExpr;
+        return myConceptHelpExpr;
       case 27:
-        return myConceptIDExpr;
+        return myConceptHexExpr;
       case 28:
-        return myConceptIfElseExpr;
+        return myConceptHexLiteralExpr;
       case 29:
-        return myConceptIfExpr;
+        return myConceptIDExpr;
       case 30:
-        return myConceptInfExpr;
+        return myConceptIDSub;
       case 31:
-        return myConceptIntExpr;
+        return myConceptIfElseExpr;
       case 32:
-        return myConceptIntLiteralExpr;
+        return myConceptIfExpr;
       case 33:
-        return myConceptListAccessExpr;
+        return myConceptInfExpr;
       case 34:
-        return myConceptMultExpr;
+        return myConceptIntExpr;
       case 35:
-        return myConceptMultiplicationExpr;
+        return myConceptIntLiteralExpr;
       case 36:
-        return myConceptNAExpr;
+        return myConceptListAccessExpr;
       case 37:
-        return myConceptNaNExpr;
+        return myConceptMultExpr;
       case 38:
-        return myConceptNextExpr;
+        return myConceptMultiplicationExpr;
       case 39:
-        return myConceptNotExpr;
+        return myConceptNAExpr;
       case 40:
-        return myConceptNullExpr;
+        return myConceptNULLSub;
       case 41:
-        return myConceptOrExpr;
+        return myConceptNaNExpr;
       case 42:
-        return myConceptParenthesizedExpr;
+        return myConceptNextExpr;
       case 43:
-        return myConceptProg;
+        return myConceptNotExpr;
       case 44:
-        return myConceptRepeatExpr;
+        return myConceptNullExpr;
       case 45:
-        return myConceptStringExpr;
+        return myConceptOrExpr;
       case 46:
-        return myConceptStringLiteralExpr;
+        return myConceptParameter;
       case 47:
-        return myConceptTildeExpr;
+        return myConceptParameters;
       case 48:
-        return myConceptTrueExpr;
+        return myConceptParenthesizedExpr;
       case 49:
-        return myConceptTrueLiteralExpr;
+        return myConceptProg;
       case 50:
-        return myConceptUSER_OPExpr;
+        return myConceptRepeatExpr;
       case 51:
-        return myConceptUnaryOperatorExpr;
+        return myConceptSTRINGSub;
       case 52:
-        return myConceptUnaryTildeExpr;
+        return myConceptStringExpr;
       case 53:
-        return myConceptUserOpExpr;
+        return myConceptStringLiteralExpr;
       case 54:
+        return myConceptTildeExpr;
+      case 55:
+        return myConceptTrueExpr;
+      case 56:
+        return myConceptTrueLiteralExpr;
+      case 57:
+        return myConceptUSER_OPExpr;
+      case 58:
+        return myConceptUnaryOperatorExpr;
+      case 59:
+        return myConceptUnaryTildeExpr;
+      case 60:
+        return myConceptUserOpExpr;
+      case 61:
+        return myConceptVARARGSSub;
+      case 62:
         return myConceptWhileExpr;
       default:
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0hc = new String[]{"org.campagnelab.metar.R.structure.AdditionExpr", "org.campagnelab.metar.R.structure.AndExpr", "org.campagnelab.metar.R.structure.AssignmentOperatorExpr", "org.campagnelab.metar.R.structure.Atom", "org.campagnelab.metar.R.structure.BinaryOperationExpr", "org.campagnelab.metar.R.structure.BodyExpr", "org.campagnelab.metar.R.structure.BooleanOrExpr", "org.campagnelab.metar.R.structure.BreakExpr", "org.campagnelab.metar.R.structure.CaretExpr", "org.campagnelab.metar.R.structure.ColonExpr", "org.campagnelab.metar.R.structure.ColonsExpr", "org.campagnelab.metar.R.structure.ComparisonExpr", "org.campagnelab.metar.R.structure.ComplexExpr", "org.campagnelab.metar.R.structure.ComplexLiteralExpr", "org.campagnelab.metar.R.structure.DollarExpr", "org.campagnelab.metar.R.structure.ElementAccessExpr", "org.campagnelab.metar.R.structure.Expr", "org.campagnelab.metar.R.structure.FalseExpr", "org.campagnelab.metar.R.structure.FalseLiteralExpr", "org.campagnelab.metar.R.structure.FloatExpr", "org.campagnelab.metar.R.structure.FloatLiteralExpr", "org.campagnelab.metar.R.structure.ForExpr", "org.campagnelab.metar.R.structure.FunctionCallExpr", "org.campagnelab.metar.R.structure.FunctionExpr", "org.campagnelab.metar.R.structure.HelpExpr", "org.campagnelab.metar.R.structure.HexExpr", "org.campagnelab.metar.R.structure.HexLiteralExpr", "org.campagnelab.metar.R.structure.IDExpr", "org.campagnelab.metar.R.structure.IfElseExpr", "org.campagnelab.metar.R.structure.IfExpr", "org.campagnelab.metar.R.structure.InfExpr", "org.campagnelab.metar.R.structure.IntExpr", "org.campagnelab.metar.R.structure.IntLiteralExpr", "org.campagnelab.metar.R.structure.ListAccessExpr", "org.campagnelab.metar.R.structure.MultExpr", "org.campagnelab.metar.R.structure.MultiplicationExpr", "org.campagnelab.metar.R.structure.NAExpr", "org.campagnelab.metar.R.structure.NaNExpr", "org.campagnelab.metar.R.structure.NextExpr", "org.campagnelab.metar.R.structure.NotExpr", "org.campagnelab.metar.R.structure.NullExpr", "org.campagnelab.metar.R.structure.OrExpr", "org.campagnelab.metar.R.structure.ParenthesizedExpr", "org.campagnelab.metar.R.structure.Prog", "org.campagnelab.metar.R.structure.RepeatExpr", "org.campagnelab.metar.R.structure.StringExpr", "org.campagnelab.metar.R.structure.StringLiteralExpr", "org.campagnelab.metar.R.structure.TildeExpr", "org.campagnelab.metar.R.structure.TrueExpr", "org.campagnelab.metar.R.structure.TrueLiteralExpr", "org.campagnelab.metar.R.structure.USER_OPExpr", "org.campagnelab.metar.R.structure.UnaryOperatorExpr", "org.campagnelab.metar.R.structure.UnaryTildeExpr", "org.campagnelab.metar.R.structure.UserOpExpr", "org.campagnelab.metar.R.structure.WhileExpr"};
+  private static String[] stringSwitchCases_1htk8d_a0a0pc = new String[]{"org.campagnelab.metar.R.structure.AdditionExpr", "org.campagnelab.metar.R.structure.AndExpr", "org.campagnelab.metar.R.structure.AssignmentOperatorExpr", "org.campagnelab.metar.R.structure.Atom", "org.campagnelab.metar.R.structure.BinaryOperationExpr", "org.campagnelab.metar.R.structure.BodyExpr", "org.campagnelab.metar.R.structure.BooleanOrExpr", "org.campagnelab.metar.R.structure.BreakExpr", "org.campagnelab.metar.R.structure.CaretExpr", "org.campagnelab.metar.R.structure.ColonExpr", "org.campagnelab.metar.R.structure.ColonsExpr", "org.campagnelab.metar.R.structure.ComparisonExpr", "org.campagnelab.metar.R.structure.ComplexExpr", "org.campagnelab.metar.R.structure.ComplexLiteralExpr", "org.campagnelab.metar.R.structure.DollarExpr", "org.campagnelab.metar.R.structure.ElementAccessExpr", "org.campagnelab.metar.R.structure.EmptySub", "org.campagnelab.metar.R.structure.Expr", "org.campagnelab.metar.R.structure.ExprSub", "org.campagnelab.metar.R.structure.FalseExpr", "org.campagnelab.metar.R.structure.FalseLiteralExpr", "org.campagnelab.metar.R.structure.FloatExpr", "org.campagnelab.metar.R.structure.FloatLiteralExpr", "org.campagnelab.metar.R.structure.ForExpr", "org.campagnelab.metar.R.structure.FunctionCallExpr", "org.campagnelab.metar.R.structure.FunctionExpr", "org.campagnelab.metar.R.structure.HelpExpr", "org.campagnelab.metar.R.structure.HexExpr", "org.campagnelab.metar.R.structure.HexLiteralExpr", "org.campagnelab.metar.R.structure.IDExpr", "org.campagnelab.metar.R.structure.IDSub", "org.campagnelab.metar.R.structure.IfElseExpr", "org.campagnelab.metar.R.structure.IfExpr", "org.campagnelab.metar.R.structure.InfExpr", "org.campagnelab.metar.R.structure.IntExpr", "org.campagnelab.metar.R.structure.IntLiteralExpr", "org.campagnelab.metar.R.structure.ListAccessExpr", "org.campagnelab.metar.R.structure.MultExpr", "org.campagnelab.metar.R.structure.MultiplicationExpr", "org.campagnelab.metar.R.structure.NAExpr", "org.campagnelab.metar.R.structure.NULLSub", "org.campagnelab.metar.R.structure.NaNExpr", "org.campagnelab.metar.R.structure.NextExpr", "org.campagnelab.metar.R.structure.NotExpr", "org.campagnelab.metar.R.structure.NullExpr", "org.campagnelab.metar.R.structure.OrExpr", "org.campagnelab.metar.R.structure.Parameter", "org.campagnelab.metar.R.structure.Parameters", "org.campagnelab.metar.R.structure.ParenthesizedExpr", "org.campagnelab.metar.R.structure.Prog", "org.campagnelab.metar.R.structure.RepeatExpr", "org.campagnelab.metar.R.structure.STRINGSub", "org.campagnelab.metar.R.structure.StringExpr", "org.campagnelab.metar.R.structure.StringLiteralExpr", "org.campagnelab.metar.R.structure.TildeExpr", "org.campagnelab.metar.R.structure.TrueExpr", "org.campagnelab.metar.R.structure.TrueLiteralExpr", "org.campagnelab.metar.R.structure.USER_OPExpr", "org.campagnelab.metar.R.structure.UnaryOperatorExpr", "org.campagnelab.metar.R.structure.UnaryTildeExpr", "org.campagnelab.metar.R.structure.UserOpExpr", "org.campagnelab.metar.R.structure.VARARGSSub", "org.campagnelab.metar.R.structure.WhileExpr"};
 }

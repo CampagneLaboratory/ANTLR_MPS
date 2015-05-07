@@ -7,53 +7,12 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 import org.antlr.v4.runtime.RuleContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.annotations.NotNull;
-import org.campagnelab.antlr.r.complete.R2.ProgContext;
+import org.campagnelab.antlr.r.complete.R2Parser;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.campagnelab.antlr.r.complete.R2.ElementAccessContext;
-import org.campagnelab.antlr.r.complete.R2.ListAccessContext;
-import org.campagnelab.antlr.r.complete.R2.ColonsContext;
-import org.campagnelab.antlr.r.complete.R2.DollarContext;
-import org.campagnelab.antlr.r.complete.R2.CaretContext;
-import org.campagnelab.antlr.r.complete.R2.UnaryOperatorContext;
-import org.campagnelab.antlr.r.complete.R2.ColonContext;
-import org.campagnelab.antlr.r.complete.R2.USER_OPContext;
-import org.campagnelab.antlr.r.complete.R2.MultiplicationContext;
-import org.campagnelab.antlr.r.complete.R2.AdditionContext;
-import org.campagnelab.antlr.r.complete.R2.ComparisonContext;
-import org.campagnelab.antlr.r.complete.R2.NotContext;
-import org.campagnelab.antlr.r.complete.R2.AndContext;
-import org.campagnelab.antlr.r.complete.R2.OrContext;
-import org.campagnelab.antlr.r.complete.R2.UnaryTildeContext;
-import org.campagnelab.antlr.r.complete.R2.TildeContext;
-import org.campagnelab.antlr.r.complete.R2.AssignmentOperatorContext;
-import org.campagnelab.antlr.r.complete.R2.FunctionContext;
-import org.campagnelab.antlr.r.complete.R2.FunctionCallContext;
-import org.campagnelab.antlr.r.complete.R2.BodyContext;
-import org.campagnelab.antlr.r.complete.R2.IfContext;
-import org.campagnelab.antlr.r.complete.R2.IfElseContext;
-import org.campagnelab.antlr.r.complete.R2.ForContext;
-import org.campagnelab.antlr.r.complete.R2.WhileContext;
-import org.campagnelab.antlr.r.complete.R2.RepeatContext;
-import org.campagnelab.antlr.r.complete.R2.HelpContext;
-import org.campagnelab.antlr.r.complete.R2.NextContext;
-import org.campagnelab.antlr.r.complete.R2.BreakContext;
-import org.campagnelab.antlr.r.complete.R2.ParenthesizedContext;
-import org.campagnelab.antlr.r.complete.R2.IDContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.campagnelab.antlr.r.complete.R2.StringLiteralContext;
-import org.campagnelab.antlr.r.complete.R2.HexLiteralContext;
-import org.campagnelab.antlr.r.complete.R2.IntLiteralContext;
-import org.campagnelab.antlr.r.complete.R2.FloatLiteralContext;
-import org.campagnelab.antlr.r.complete.R2.ComplexLiteralContext;
-import org.campagnelab.antlr.r.complete.R2.NullContext;
-import org.campagnelab.antlr.r.complete.R2.NAContext;
-import org.campagnelab.antlr.r.complete.R2.InfContext;
-import org.campagnelab.antlr.r.complete.R2.NaNContext;
-import org.campagnelab.antlr.r.complete.R2.TrueLiteralContext;
-import org.campagnelab.antlr.r.complete.R2.FalseLiteralContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 
 public class R2_ToMpsVisitor extends R2BaseVisitor implements ParseTreeVisitor {
 
@@ -63,258 +22,323 @@ public class R2_ToMpsVisitor extends R2BaseVisitor implements ParseTreeVisitor {
     }
     return o;
   }
-  public SNode visitProgContext(@NotNull ProgContext context) {
-    SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x6912564f4225b021L, "org.campagnelab.metar.R.structure.Prog")));
-    // fill-in children: 
-    SLinkOperations.getTarget(result, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x6912564f4225b021L, 0x6912564f4225b6a3L, "expressions")).addSequence(convert(visit(context.expr()), false));
-
-    return result;
-  }
-  public SNode visitElementAccessContext(@NotNull ElementAccessContext context) {
+  public SNode visitElementAccessContext(@NotNull R2Parser.ElementAccessContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453afL, "org.campagnelab.metar.R.structure.ElementAccessExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitListAccessContext(@NotNull ListAccessContext context) {
+  public SNode visitListAccessContext(@NotNull R2Parser.ListAccessContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453b0L, "org.campagnelab.metar.R.structure.ListAccessExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitColonsContext(@NotNull ColonsContext context) {
+  public SNode visitColonsContext(@NotNull R2Parser.ColonsContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453b1L, "org.campagnelab.metar.R.structure.ColonsExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitDollarContext(@NotNull DollarContext context) {
+  public SNode visitDollarContext(@NotNull R2Parser.DollarContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f60L, "org.campagnelab.metar.R.structure.DollarExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitCaretContext(@NotNull CaretContext context) {
+  public SNode visitCaretContext(@NotNull R2Parser.CaretContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453b2L, "org.campagnelab.metar.R.structure.CaretExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitUnaryOperatorContext(@NotNull UnaryOperatorContext context) {
+  public SNode visitUnaryOperatorContext(@NotNull R2Parser.UnaryOperatorContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453b3L, "org.campagnelab.metar.R.structure.UnaryOperatorExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitColonContext(@NotNull ColonContext context) {
+  public SNode visitColonContext(@NotNull R2Parser.ColonContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453b4L, "org.campagnelab.metar.R.structure.ColonExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitUSER_OPContext(@NotNull USER_OPContext context) {
+  public SNode visitUSER_OPContext(@NotNull R2Parser.USER_OPContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453b5L, "org.campagnelab.metar.R.structure.USER_OPExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitMultiplicationContext(@NotNull MultiplicationContext context) {
+  public SNode visitMultiplicationContext(@NotNull R2Parser.MultiplicationContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453b6L, "org.campagnelab.metar.R.structure.MultiplicationExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitAdditionContext(@NotNull AdditionContext context) {
+  public SNode visitAdditionContext(@NotNull R2Parser.AdditionContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453b7L, "org.campagnelab.metar.R.structure.AdditionExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitComparisonContext(@NotNull ComparisonContext context) {
+  public SNode visitComparisonContext(@NotNull R2Parser.ComparisonContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453b8L, "org.campagnelab.metar.R.structure.ComparisonExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitNotContext(@NotNull NotContext context) {
+  public SNode visitNotContext(@NotNull R2Parser.NotContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f61L, "org.campagnelab.metar.R.structure.NotExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitAndContext(@NotNull AndContext context) {
+  public SNode visitAndContext(@NotNull R2Parser.AndContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453b9L, "org.campagnelab.metar.R.structure.AndExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitOrContext(@NotNull OrContext context) {
+  public SNode visitOrContext(@NotNull R2Parser.OrContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453baL, "org.campagnelab.metar.R.structure.OrExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitUnaryTildeContext(@NotNull UnaryTildeContext context) {
+  public SNode visitUnaryTildeContext(@NotNull R2Parser.UnaryTildeContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453bbL, "org.campagnelab.metar.R.structure.UnaryTildeExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitTildeContext(@NotNull TildeContext context) {
+  public SNode visitTildeContext(@NotNull R2Parser.TildeContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453bcL, "org.campagnelab.metar.R.structure.TildeExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitAssignmentOperatorContext(@NotNull AssignmentOperatorContext context) {
+  public SNode visitAssignmentOperatorContext(@NotNull R2Parser.AssignmentOperatorContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453bdL, "org.campagnelab.metar.R.structure.AssignmentOperatorExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitFunctionContext(@NotNull FunctionContext context) {
+  public SNode visitFunctionContext(@NotNull R2Parser.FunctionContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f6cL, "org.campagnelab.metar.R.structure.FunctionExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitFunctionCallContext(@NotNull FunctionCallContext context) {
+  public SNode visitFunctionCallContext(@NotNull R2Parser.FunctionCallContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453beL, "org.campagnelab.metar.R.structure.FunctionCallExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitBodyContext(@NotNull BodyContext context) {
+  public SNode visitBodyContext(@NotNull R2Parser.BodyContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453bfL, "org.campagnelab.metar.R.structure.BodyExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitIfContext(@NotNull IfContext context) {
+  public SNode visitIfContext(@NotNull R2Parser.IfContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f6fL, "org.campagnelab.metar.R.structure.IfExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitIfElseContext(@NotNull IfElseContext context) {
+  public SNode visitIfElseContext(@NotNull R2Parser.IfElseContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c0L, "org.campagnelab.metar.R.structure.IfElseExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitForContext(@NotNull ForContext context) {
+  public SNode visitForContext(@NotNull R2Parser.ForContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f70L, "org.campagnelab.metar.R.structure.ForExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitWhileContext(@NotNull WhileContext context) {
+  public SNode visitWhileContext(@NotNull R2Parser.WhileContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f71L, "org.campagnelab.metar.R.structure.WhileExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitRepeatContext(@NotNull RepeatContext context) {
+  public SNode visitRepeatContext(@NotNull R2Parser.RepeatContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f72L, "org.campagnelab.metar.R.structure.RepeatExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitHelpContext(@NotNull HelpContext context) {
+  public SNode visitHelpContext(@NotNull R2Parser.HelpContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c1L, "org.campagnelab.metar.R.structure.HelpExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitNextContext(@NotNull NextContext context) {
+  public SNode visitNextContext(@NotNull R2Parser.NextContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f74L, "org.campagnelab.metar.R.structure.NextExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitBreakContext(@NotNull BreakContext context) {
+  public SNode visitBreakContext(@NotNull R2Parser.BreakContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f75L, "org.campagnelab.metar.R.structure.BreakExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitParenthesizedContext(@NotNull ParenthesizedContext context) {
+  public SNode visitParenthesizedContext(@NotNull R2Parser.ParenthesizedContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c2L, "org.campagnelab.metar.R.structure.ParenthesizedExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitIDContext(@NotNull IDContext context) {
+  public SNode visitIDContext(@NotNull R2Parser.IDContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c3L, "org.campagnelab.metar.R.structure.IDExpr")));
     // fill-in children: 
     SPropertyOperations.set(result, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "" + (convert(context.ID(), true)));
 
     return result;
   }
-  public SNode visitStringLiteralContext(@NotNull StringLiteralContext context) {
+  public SNode visitStringLiteralContext(@NotNull R2Parser.StringLiteralContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c4L, "org.campagnelab.metar.R.structure.StringLiteralExpr")));
     // fill-in children: 
     SPropertyOperations.set(result, MetaAdapterFactory.getProperty(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c4L, 0x6912564f42283159L, "value"), "" + (convert(context.STRING(), true)));
 
     return result;
   }
-  public SNode visitHexLiteralContext(@NotNull HexLiteralContext context) {
+  public SNode visitHexLiteralContext(@NotNull R2Parser.HexLiteralContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c5L, "org.campagnelab.metar.R.structure.HexLiteralExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitIntLiteralContext(@NotNull IntLiteralContext context) {
+  public SNode visitIntLiteralContext(@NotNull R2Parser.IntLiteralContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c6L, "org.campagnelab.metar.R.structure.IntLiteralExpr")));
     // fill-in children: 
     Integer.parseInt(SPropertyOperations.getInteger(result, MetaAdapterFactory.getProperty(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c6L, 0x6912564f42283157L, "value"))) = convert(context.INT(), false);
 
     return result;
   }
-  public SNode visitFloatLiteralContext(@NotNull FloatLiteralContext context) {
+  public SNode visitFloatLiteralContext(@NotNull R2Parser.FloatLiteralContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c7L, "org.campagnelab.metar.R.structure.FloatLiteralExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitComplexLiteralContext(@NotNull ComplexLiteralContext context) {
+  public SNode visitComplexLiteralContext(@NotNull R2Parser.ComplexLiteralContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453c8L, "org.campagnelab.metar.R.structure.ComplexLiteralExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitNullContext(@NotNull NullContext context) {
+  public SNode visitNullContext(@NotNull R2Parser.NullContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f7cL, "org.campagnelab.metar.R.structure.NullExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitNAContext(@NotNull NAContext context) {
+  public SNode visitNAContext(@NotNull R2Parser.NAContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a842937026bcfcL, "org.campagnelab.metar.R.structure.NAExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitInfContext(@NotNull InfContext context) {
+  public SNode visitInfContext(@NotNull R2Parser.InfContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x7bf8b2dbbfdd5f7eL, "org.campagnelab.metar.R.structure.InfExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitNaNContext(@NotNull NaNContext context) {
+  public SNode visitNaNContext(@NotNull R2Parser.NaNContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453caL, "org.campagnelab.metar.R.structure.NaNExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitTrueLiteralContext(@NotNull TrueLiteralContext context) {
+  public SNode visitTrueLiteralContext(@NotNull R2Parser.TrueLiteralContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453cbL, "org.campagnelab.metar.R.structure.TrueLiteralExpr")));
     // fill-in children: 
 
     return result;
   }
-  public SNode visitFalseLiteralContext(@NotNull FalseLiteralContext context) {
+  public SNode visitFalseLiteralContext(@NotNull R2Parser.FalseLiteralContext context) {
     SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x31a84293701453ccL, "org.campagnelab.metar.R.structure.FalseLiteralExpr")));
+    // fill-in children: 
+
+    return result;
+  }
+  public SNode visitProgramContext(@NotNull R2Parser.ProgramContext context) {
+    SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x6912564f4225b021L, "org.campagnelab.metar.R.structure.Prog")));
+    // fill-in children: 
+    SLinkOperations.getTarget(result, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x6912564f4225b021L, 0x6912564f4225b6a3L, "expressions")).addSequence(convert(visit(context.expr()), false));
+
+    return result;
+  }
+  public SNode visitParametersContext(@NotNull R2Parser.ParametersContext context) {
+    SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea00bd9bL, "org.campagnelab.metar.R.structure.Parameters")));
+    // fill-in children: 
+    SLinkOperations.getTarget(result, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea00bd9bL, 0x530f5cfbea00c39cL, "list")).addSequence(convert(visit(context.sub()), false));
+
+    return result;
+  }
+  public SNode visitSubExprContext(@NotNull R2Parser.SubExprContext context) {
+    SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378faL, "org.campagnelab.metar.R.structure.ExprSub")));
+    // fill-in children: 
+    SLinkOperations.setTarget(result, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL, 0x530f5cfbea0106ccL, "expr"), convert(visit(context.expr()), false));
+
+    return result;
+  }
+  public SNode visitIdSubContext(@NotNull R2Parser.IdSubContext context) {
+    SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378fbL, "org.campagnelab.metar.R.structure.IDSub")));
+    // fill-in children: 
+    SPropertyOperations.set(result, MetaAdapterFactory.getProperty(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL, 0x530f5cfbea0106c6L, "id"), "" + (convert(context.ID(), true)));
+
+    return result;
+  }
+  public SNode visitIdSubContext(@NotNull R2Parser.IdSubContext context) {
+    SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378fbL, "org.campagnelab.metar.R.structure.IDSub")));
+    // fill-in children: 
+    SPropertyOperations.set(result, MetaAdapterFactory.getProperty(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL, 0x530f5cfbea0106c6L, "id"), "" + (convert(context.ID(), true)));
+    SLinkOperations.setTarget(result, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0103dbL, 0x530f5cfbea0106ccL, "expr"), convert(visit(context.expr()), false));
+
+    return result;
+  }
+  public SNode visitStringContext(@NotNull R2Parser.StringContext context) {
+    SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378fcL, "org.campagnelab.metar.R.structure.STRINGSub")));
+    // fill-in children: 
+
+    return result;
+  }
+  public SNode visitStringExprContext(@NotNull R2Parser.StringExprContext context) {
+    SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378fcL, "org.campagnelab.metar.R.structure.STRINGSub")));
+    // fill-in children: 
+
+    return result;
+  }
+  public SNode visitNullSubContext(@NotNull R2Parser.NullSubContext context) {
+    SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378fdL, "org.campagnelab.metar.R.structure.NULLSub")));
+    // fill-in children: 
+
+    return result;
+  }
+  public SNode visitNullSubContext(@NotNull R2Parser.NullSubContext context) {
+    SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378fdL, "org.campagnelab.metar.R.structure.NULLSub")));
+    // fill-in children: 
+
+    return result;
+  }
+  public SNode visitVarargsContext(@NotNull R2Parser.VarargsContext context) {
+    SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378feL, "org.campagnelab.metar.R.structure.VARARGSSub")));
+    // fill-in children: 
+
+    return result;
+  }
+  public SNode visitEmptyContext(@NotNull R2Parser.EmptyContext context) {
+    SNode result = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x530f5cfbea0378ffL, "org.campagnelab.metar.R.structure.EmptySub")));
     // fill-in children: 
 
     return result;
