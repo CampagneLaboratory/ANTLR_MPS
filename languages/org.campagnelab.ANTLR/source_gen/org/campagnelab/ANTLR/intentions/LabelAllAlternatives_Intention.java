@@ -77,7 +77,7 @@ public class LabelAllAlternatives_Intention implements IntentionFactory {
     public void execute(final SNode node, final EditorContext editorContext) {
       ListSequence.fromList(SNodeOperations.getNodeDescendants(ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, "org.campagnelab.ANTLR.structure.Alternatives"), false, new SAbstractConcept[]{})).first(), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode it) {
-          return !(SPropertyOperations.getBoolean(it, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x6d831d6acf051327L, "hasLabel")));
+          return !(SPropertyOperations.getBoolean(it, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, 0x6d831d6acf051327L, "hasLabel"))) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(SNodeOperations.getParent(it)), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648aaL, "org.campagnelab.ANTLR.structure.Rule"));
         }
       }).visitAll(new IVisitor<SNode>() {
         public void visit(SNode alt) {

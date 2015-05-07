@@ -20,7 +20,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class SourceRefMenu extends AbstractCellMenuComponent {
   public SourceRefMenu() {
-    super(new SubstituteInfoPartExt[]{new SourceRefMenu.Mapper_generic_cellMenu_gcsa23_a0(), new SourceRefMenu.Mapper_generic_cellMenu_gcsa23_b0()});
+    super(new SubstituteInfoPartExt[]{new SourceRefMenu.Mapper_generic_cellMenu_gcsa23_a0(), new SourceRefMenu.Mapper_generic_cellMenu_gcsa23_b0(), new SourceRefMenu.Mapper_generic_cellMenu_gcsa23_c0()});
   }
   public static class Mapper_generic_cellMenu_gcsa23_a0 extends AbstractCellMenuPart_Generic_Group {
     public Mapper_generic_cellMenu_gcsa23_a0() {
@@ -72,6 +72,35 @@ public class SourceRefMenu extends AbstractCellMenuComponent {
     }
     public String getMatchingText_internal(SNode parameterObject) {
       return SPropertyOperations.getString(SLinkOperations.getTarget(parameterObject, MetaAdapterFactory.getReferenceLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d966L, 0x631eebe31132d967L, "rule")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+    }
+    public String getDescriptionText(Object parameterObject) {
+      return this.getDescriptionText_internal((SNode) parameterObject);
+    }
+    public String getDescriptionText_internal(SNode parameterObject) {
+      return "#" + SNodeOperations.getIndexInParent(parameterObject);
+    }
+  }
+  public static class Mapper_generic_cellMenu_gcsa23_c0 extends AbstractCellMenuPart_Generic_Group {
+    public Mapper_generic_cellMenu_gcsa23_c0() {
+    }
+    public List<?> createParameterObjects(SNode node, IOperationContext operationContext, EditorContext editorContext) {
+      return SNodeOperations.getNodeDescendants(Mapper_Behavior.call_alternative_558881339903204669(node), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a890ef9eL, "org.campagnelab.ANTLR.structure.LexerRuleRef"), false, new SAbstractConcept[]{});
+    }
+    protected void handleAction(Object parameterObject, SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
+      this.handleAction_impl((SNode) parameterObject, node, model, operationContext, editorContext);
+    }
+    public void handleAction_impl(SNode parameterObject, SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
+      SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source"), SModelOperations.createNewNode(model, null, SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6912564f422833dbL, "org.campagnelab.antlr.tomps.structure.LexerRuleSource"))));
+      SLinkOperations.setTarget(SNodeOperations.as(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6912564f422833dbL, "org.campagnelab.antlr.tomps.structure.LexerRuleSource")), MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6912564f422833dbL, 0x6912564f422833dcL, "rule"), parameterObject);
+    }
+    public boolean isReferentPresentation() {
+      return false;
+    }
+    public String getMatchingText(Object parameterObject) {
+      return this.getMatchingText_internal((SNode) parameterObject);
+    }
+    public String getMatchingText_internal(SNode parameterObject) {
+      return SPropertyOperations.getString(SLinkOperations.getTarget(parameterObject, MetaAdapterFactory.getReferenceLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a890ef9eL, 0x175f2668a890ef9fL, "rule")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
     }
     public String getDescriptionText(Object parameterObject) {
       return this.getDescriptionText_internal((SNode) parameterObject);

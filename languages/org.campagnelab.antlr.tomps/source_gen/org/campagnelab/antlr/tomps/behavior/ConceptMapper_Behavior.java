@@ -80,6 +80,9 @@ public class ConceptMapper_Behavior {
       }
     });
   }
+  public static String call_upperCaseFirstChar_4917522066818939248(SNode thisNode, String value) {
+    return "" + Character.toUpperCase(value.charAt(0)) + value.substring(1, value.length()).toString();
+  }
   private static boolean eq_z4rl0_a0a0a0a0a0a2a5(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }

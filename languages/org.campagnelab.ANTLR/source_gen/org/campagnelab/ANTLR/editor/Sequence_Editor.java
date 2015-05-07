@@ -9,6 +9,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
@@ -49,7 +50,7 @@ public class Sequence_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_6lwes5_a0a(SNode node, EditorContext editorContext) {
-    return (SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative"), false, false) != null);
+    return SNodeOperations.getNodeAncestorWhereConceptInList(node, new SAbstractConcept[]{MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative")}, false, false) != SNodeOperations.getParent(node);
   }
   private EditorCell createRefNodeList_6lwes5_b0(EditorContext editorContext, SNode node) {
     AbstractCellListHandler handler = new Sequence_Editor.ofListHandler_6lwes5_b0(node, "of", editorContext);
@@ -97,7 +98,7 @@ public class Sequence_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_6lwes5_a2a(SNode node, EditorContext editorContext) {
-    return (SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative"), false, false) != null);
+    return SNodeOperations.getNodeAncestorWhereConceptInList(node, new SAbstractConcept[]{MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative")}, false, false) != SNodeOperations.getParent(node);
   }
   private EditorCell createComponent_6lwes5_d0(EditorContext editorContext, SNode node) {
     EditorCell editorCell = editorContext.getCellFactory().createEditorComponentCell(node, "org.campagnelab.ANTLR.editor.OptionalParamEditor");
