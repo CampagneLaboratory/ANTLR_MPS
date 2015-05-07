@@ -18,389 +18,162 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ec7c4c8-fdb9-475d-a1c5-08cf184915b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/R.parsers-1.0-SNAPSHOT-complete.jar" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/actions/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/behavior/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/constraints/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/editor/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/intentions/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/migration/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/structure/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/classes_gen/org/campagnelab/ANTLR/typesystem/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/generator/source_gen.caches/org/campagnelab/ANTLR/generator/template/main/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/generator/source_gen.caches/org/campagnelab/ANTLR/generator/template/main/generated" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/generator/source_gen/org/campagnelab/ANTLR/generator/template/main/QueriesGenerated.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/generator/source_gen/org/campagnelab/ANTLR/generator/template/main/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/actions/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/actions/generated" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/behavior/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/behavior/generated" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/constraints/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/constraints/generated" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/editor/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/editor/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/intentions/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/intentions/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/migration/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/migration/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/structure/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/structure/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/typesystem/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen.caches/org/campagnelab/ANTLR/typesystem/generated" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/Language.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/actions/QueriesGenerated.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/actions/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Alternative_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Alternative_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Alternatives_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Alternatives_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/BehaviorAspectDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Dot_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Dot_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Grammar_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Grammar_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/HasOptionalParams_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/HasOptionalParams_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LabeledElement_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LabeledElement_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerAltList_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerAltList_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerAlt_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerAlt_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerBlock_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerBlock_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerElement_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerRuleBlock_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerRuleBlock_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerRuleRefByName_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerRuleRefByName_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerRuleRef_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerRuleRef_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerRule_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerRule_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerToken_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/LexerToken_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/NotSet_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/NotSet_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Parentheses_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Parentheses_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/ParserRuleBlock_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/ParserRuleBlock_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/ParserRuleRef_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/ParserRuleRef_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/ParserRule_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/ParserRule_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/REGEXP_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/REGEXP_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Range_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Range_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/RuleRefByName_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/RuleRefByName_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Rule_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Rule_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Sequence_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Sequence_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/StringLiteral_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/StringLiteral_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/ToTextOutput_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/ToTextOutput_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/TokenRef_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/TokenRef_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/TokenSpec_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/Token_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/behavior/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/constraints/ConstraintsAspectDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/constraints/LexerAlt_Constraints.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/constraints/LexerRule_Constraints.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/constraints/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/Alternative_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/Alternatives_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/Dot_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/EditorAspectDescriptorImpl.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/Grammar_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/HasOptionalParams_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/LabeledElement_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/LexerAltList_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/LexerAlt_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/LexerBlock_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/LexerElement_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/LexerRuleBlock_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/LexerRuleRefByName_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/LexerRuleRef_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/LexerRule_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/MultiplicityKeyMap.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/NotSet_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/OptionalParamEditor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/Parentheses_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/ParserRuleBlock_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/ParserRuleRef_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/ParserRule_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/REGEXP_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/RHSEditor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/Range_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/RuleRefByName_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/Sequence_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/StringLiteral_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/TokenRef_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/TokenSpec_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/Token_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/editor/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/AddLabel_Intention.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/ClearAll_Intention.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/IntentionsDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/LabelAllAlternatives_Intention.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/intentions/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/migration/MigrationDescriptorImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/migration/Move_property_acceptMultiple.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/migration/Move_property_isOptional.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/migration/Move_property_plus.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/migration/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/structure/LABELING_OPERATOR.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/structure/LABELING_OPERATOR_PropertySupport.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/structure/StructureAspectDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/structure/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/FixAlternativeName_QuickFix.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/ReplaceLexerRuleRefByNameWithToken_QuickFix.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/ReplaceLexerRuleRefByName_QuickFix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/ReplaceParserRuleRefByNameWithToken_QuickFix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/ReplaceParserRuleRefByName_QuickFix.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/TypesystemDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/check_Alternative_NonTypesystemRule.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/check_LexerRuleRefByName_NonTypesystemRule.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/check_RuleRefByName_NonTypesystemRule.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/source_gen/org/campagnelab/ANTLR/typesystem/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/classes_gen/org/campagnelab/ANTLR45/behavior/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/classes_gen/org/campagnelab/ANTLR45/constraints/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/classes_gen/org/campagnelab/ANTLR45/editor/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/classes_gen/org/campagnelab/ANTLR45/structure/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/classes_gen/org/campagnelab/ANTLR45/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/classes_gen/org/campagnelab/ANTLR45/typesystem/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/generator/source_gen.caches/org/campagnelab/ANTLR45/generator/template/main/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/generator/source_gen.caches/org/campagnelab/ANTLR45/generator/template/main/generated" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/generator/source_gen/org/campagnelab/ANTLR45/generator/template/main/QueriesGenerated.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/generator/source_gen/org/campagnelab/ANTLR45/generator/template/main/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/behavior/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/behavior/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/constraints/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/constraints/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/editor/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/editor/generated" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/structure/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/structure/generated" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/typesystem/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen.caches/org/campagnelab/ANTLR45/typesystem/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/Language.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/ACTIONLexerElement_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/BehaviorAspectDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/DocCommentGrammarSpec_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/DocCommentParserRuleSpec_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/GrammarSpec_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/Label_ALexerElement_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/Label_BLexerElement_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/Label_CLexerElement_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/LexerElement_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/OptionValue_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/ParserRuleSpec_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/RuleSpec_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/Rules_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/behavior/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/constraints/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/editor/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/structure/StructureAspectDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/structure/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/source_gen/org/campagnelab/ANTLR45/typesystem/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/actions/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/behavior/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/constraints/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/editor/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/intentions/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/refactorings/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/structure/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/typesystem/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/classes_gen/org/campagnelab/antlr/tomps/generator/template/main/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen.caches/org/campagnelab/antlr/tomps/generator/template/main/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen.caches/org/campagnelab/antlr/tomps/generator/template/main/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen/org/campagnelab/antlr/tomps/generator/template/main/QueriesGenerated.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen/org/campagnelab/antlr/tomps/generator/template/main/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/actions/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/actions/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/behavior/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/behavior/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/constraints/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/constraints/generated" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/editor/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/editor/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/intentions/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/intentions/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/refactorings/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/refactorings/generated" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/structure/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/structure/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/typesystem/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/typesystem/generated" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/Language.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/actions/QueriesGenerated.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/actions/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/AlternativeMapper_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/AlternativeMapper_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/BehaviorAspectDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/ChildDestination_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/ChildDestination_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/ConceptMapper_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/ConceptMapper_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/ConvertToMPS_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/ConvertToMPS_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/Destination_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/Destination_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/ExampleConcept_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/LabeledElementSource_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/LabeledElementSource_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/Mapper_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/Mapper_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/ParserRuleSource_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/ParserRuleSource_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/PropertyDestination_Behavior.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/PropertyDestination_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/Source_Behavior.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/Source_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/AlternativeMapper_Constraints.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/ChildDestination_Constraints.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/ConceptMapper_Constraints.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/ConstraintsAspectDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/ConvertToMPS_Constraints.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/LabeledElementSource_Constraints.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/Mapper_Constraints.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/ParserRuleSource_Constraints.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/PropertyDestination_Constraints.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/constraints/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/AlternativeMapper_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/ConceptMapper_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/ConvertToMPS_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/DestinationRefMenu.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/Destination_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/EditorAspectDescriptorImpl.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/Mapper_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/ParserRuleSource_Editor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/SourceEditorComponent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/SourceRefMenu.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/Source_Editor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/tompsStyle_StyleSheet.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/AddAllAlternatives_Intention.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/AddLabelSubconcept_Intention.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/CreateConceptAndLabelsForAlt_Intention.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/CreateConceptAndLabels_Intention.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/CreateConcept_Intention.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/IntentionsDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/RenameLabelsFromConceptsIn_Intention.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/ResolveAllAlternativesById_Intention.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/refactorings/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/structure/StructureAspectDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/structure/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/typesystem/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/behavior/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/constraints/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/editor/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/structure/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/typesystem/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/behavior/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/constraints/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/editor/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/structure/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/typesystem/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/Language.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/!Expr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/&amp;Expr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/(Expr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/+Expr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/-Expr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/::Expr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/:Expr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/&gt;Expr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/?Expr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/Atom_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/BehaviorAspectDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/BinaryOperationExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/BooleanOrExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/BreakExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/ComplexExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/DollarExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/Expr_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/FalseExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/FloatExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/ForExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/FunctionExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/HexExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/IdExpr_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/IfExpr_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/InfExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/IntExpr_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/MultExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/NaExpr_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/NanExpr_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/NextExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/NotExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/NullExpr_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/RepeatExpr_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/StringExpr_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/TrueExpr_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/UserOpExpr_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/WhileExpr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/[Expr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/[[Expr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/{Expr_BehaviorDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/|Expr_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/~Expr_BehaviorDescriptor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/constraints/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/editor/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/structure/StructureAspectDescriptor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/structure/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/typesystem/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/model/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen.caches/model/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen/model/R_ToMpsVisitor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/Playground/source_gen/model/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/classes_gen/org/campagnelab/antlr/parsers/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen.caches/org/campagnelab/antlr/parsers/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/AntlrPaster.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/AntlrRuleVisitor.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/Result.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/source_gen/org/campagnelab/antlr/parsers/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.persistence/classes_gen/org/campagnelab/antlr/persistence/impl/trace.info" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.persistence/source_gen.caches/org/campagnelab/antlr/persistence/impl/dependencies" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.persistence/source_gen.caches/org/campagnelab/antlr/persistence/impl/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.persistence/source_gen/org/campagnelab/antlr/persistence/impl/AntlrPersistenceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.persistence/source_gen/org/campagnelab/antlr/persistence/impl/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/classes_gen/org/campagnelab/antlr/plugin/plugin/trace.info" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen.caches/org/campagnelab/antlr/plugin/plugin/dependencies" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen.caches/org/campagnelab/antlr/plugin/plugin/generated" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen/org/campagnelab/antlr/plugin/plugin/EditorPopup_paste_ActionGroup.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen/org/campagnelab/antlr/plugin/plugin/PasteAsAntlrRules_Action.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen/org/campagnelab/antlr/plugin/plugin/Plugin_ApplicationPlugin.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/source_gen/org/campagnelab/antlr/plugin/plugin/trace.info" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/languageModels/editor.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/template/main@generator.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/Playground/models/model.mps" afterPath="$PROJECT_DIR$/solutions/Playground/models/model.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/org.campagnelab.metar.R.mpl" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/org.campagnelab.metar.R.mpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/languageModels/structure.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="ANTLR.iws" />
@@ -470,8 +243,8 @@
       <file leaf-file-name="R2_ToMpsVisitor.java" pinned="false" current-in-tab="true">
         <entry file="previewmodel/R2_ToMpsVisitor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29430893" vertical-offset="617" max-vertical-offset="4438">
-              <caret line="57" column="48" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.45365855" vertical-offset="617" max-vertical-offset="4438">
+              <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -918,33 +691,11 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps">
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.metar.R">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps#7645898506791942665">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps.generator.template.main">
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.metar.R.structure">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -1135,7 +886,7 @@
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3301887" sideWeight="0.6134808" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3259958" sideWeight="0.4986835" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259958" sideWeight="0.4986835" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.4986835" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1145,12 +896,12 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960506" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3259958" sideWeight="0.5013165" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3259958" sideWeight="0.5650342" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.46814114" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3259958" sideWeight="0.43496576" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3259958" sideWeight="0.43496576" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
