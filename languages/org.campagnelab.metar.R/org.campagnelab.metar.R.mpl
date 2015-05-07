@@ -48,6 +48,9 @@
     <stubModelEntry path="${module}/R.parsers-1.0-SNAPSHOT-complete.jar" />
   </stubModelEntries>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="true">d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)</dependency>
+  </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
