@@ -48,6 +48,10 @@
     <stubModelEntry path="${module}/R.parsers-1.0-SNAPSHOT-functions.jar" />
   </stubModelEntries>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="true">b283f144-ab8b-47c6-9ed5-c8f24c9c43e5(org.campagnelab.metar.R.functions)</dependency>
+    <dependency reexport="true">d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)</dependency>
+  </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>

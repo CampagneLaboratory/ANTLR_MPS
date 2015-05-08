@@ -2175,9 +2175,7 @@
           </node>
         </node>
         <node concept="3clFbF" id="4l9KHP9LGZ3" role="3cqZAp">
-          <node concept="Xl_RD" id="4l9KHP9LGZ4" role="3clFbG">
-            <property role="Xl_RC" value="&lt;invalid concept prefix&gt;" />
-          </node>
+          <node concept="10Nm6u" id="2jteU2rQniI" role="3clFbG" />
         </node>
       </node>
     </node>

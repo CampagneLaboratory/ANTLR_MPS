@@ -124,7 +124,7 @@ public class AlternativeMapper_Behavior {
         return AlternativeMapper_Behavior.call_upperToCamel_4992735917598315489(thisNode, SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(element, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e172f3f03L, "org.campagnelab.ANTLR.structure.TokenRef")), MetaAdapterFactory.getReferenceLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e172f3f03L, 0x7c18b9e172f3f04L, "token")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")).toLowerCase());
       }
     }
-    return "<invalid concept prefix>";
+    return null;
   }
   private static boolean eq_i4n1t_a0a0a0a0a0a0h(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
