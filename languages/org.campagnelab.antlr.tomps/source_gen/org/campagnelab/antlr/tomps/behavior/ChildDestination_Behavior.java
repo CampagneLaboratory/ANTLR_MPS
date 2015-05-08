@@ -16,4 +16,7 @@ public class ChildDestination_Behavior {
   public static SNode virtual_to_1096804516885006638(SNode thisNode) {
     return SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861bb9099L, 0x4aaf5f3861bb96d2L, "to"));
   }
+  public static SNode virtual_type_6247096756518626823(SNode thisNode) {
+    return null;
+  }
 }

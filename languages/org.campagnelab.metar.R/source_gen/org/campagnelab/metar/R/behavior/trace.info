@@ -11,7 +11,10 @@
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.AssignmentOperatorExpr_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,108,0" name="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,110,0" name="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="BinaryOperator_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.BinaryOperator_BehaviorDescriptor" />
     </file>
     <file name="BodyExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.BodyExpr_BehaviorDescriptor" />

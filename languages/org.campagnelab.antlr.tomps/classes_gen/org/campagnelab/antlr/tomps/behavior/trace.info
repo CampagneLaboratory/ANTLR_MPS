@@ -22,7 +22,7 @@
       <unit at="9,0,46,0" name="org.campagnelab.antlr.tomps.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="ChildDestination_BehaviorDescriptor.java">
-      <unit at="7,0,21,0" name="org.campagnelab.antlr.tomps.behavior.ChildDestination_BehaviorDescriptor" />
+      <unit at="7,0,24,0" name="org.campagnelab.antlr.tomps.behavior.ChildDestination_BehaviorDescriptor" />
     </file>
     <file name="ConceptMapper_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.ConceptMapper_BehaviorDescriptor" />
@@ -31,7 +31,7 @@
       <unit at="12,0,29,0" name="org.campagnelab.antlr.tomps.behavior.ConvertToMPS_BehaviorDescriptor" />
     </file>
     <file name="Destination_BehaviorDescriptor.java">
-      <unit at="8,0,18,0" name="org.campagnelab.antlr.tomps.behavior.Destination_BehaviorDescriptor" />
+      <unit at="8,0,19,0" name="org.campagnelab.antlr.tomps.behavior.Destination_BehaviorDescriptor" />
     </file>
     <file name="ExampleConcept_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.ExampleConcept_BehaviorDescriptor" />
@@ -49,31 +49,34 @@
       <unit at="7,0,21,0" name="org.campagnelab.antlr.tomps.behavior.ParserRuleSource_BehaviorDescriptor" />
     </file>
     <file name="PropertyDestination_BehaviorDescriptor.java">
-      <unit at="7,0,21,0" name="org.campagnelab.antlr.tomps.behavior.PropertyDestination_BehaviorDescriptor" />
+      <unit at="7,0,24,0" name="org.campagnelab.antlr.tomps.behavior.PropertyDestination_BehaviorDescriptor" />
     </file>
     <file name="Source_BehaviorDescriptor.java">
       <unit at="8,0,18,0" name="org.campagnelab.antlr.tomps.behavior.Source_BehaviorDescriptor" />
     </file>
     <file name="ToBooleanDestination_BehaviorDescriptor.java">
-      <unit at="7,0,21,0" name="org.campagnelab.antlr.tomps.behavior.ToBooleanDestination_BehaviorDescriptor" />
+      <unit at="7,0,24,0" name="org.campagnelab.antlr.tomps.behavior.ToBooleanDestination_BehaviorDescriptor" />
     </file>
     <file name="ToFloatDestination_BehaviorDescriptor.java">
-      <unit at="7,0,21,0" name="org.campagnelab.antlr.tomps.behavior.ToFloatDestination_BehaviorDescriptor" />
+      <unit at="7,0,24,0" name="org.campagnelab.antlr.tomps.behavior.ToFloatDestination_BehaviorDescriptor" />
     </file>
     <file name="ToIntDestination_BehaviorDescriptor.java">
-      <unit at="7,0,21,0" name="org.campagnelab.antlr.tomps.behavior.ToIntDestination_BehaviorDescriptor" />
+      <unit at="7,0,24,0" name="org.campagnelab.antlr.tomps.behavior.ToIntDestination_BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/2860118060023800887">
     <file name="ChildDestination_Behavior.java">
       <node id="2860118060023802341" at="13,73,14,317" concept="8" />
       <node id="1096804516885023008" at="16,70,17,174" concept="8" />
+      <node id="6247096756518655798" at="19,72,20,16" concept="8" />
       <node id="2860118060023800887" at="11,0,13,0" concept="12" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2860118060023800887" at="13,0,16,0" concept="12" trace="virtual_name_2860118060023810449#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="2860118060023800887" at="16,0,19,0" concept="12" trace="virtual_to_1096804516885006638#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2860118060023800887" at="19,0,22,0" concept="12" trace="virtual_type_6247096756518626823#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="2860118060023800889" at="11,43,11,43" />
       <scope id="2860118060023812135" at="13,73,14,317" />
       <scope id="1096804516885022695" at="16,70,17,174" />
+      <scope id="6247096756518633186" at="19,72,20,16" />
       <scope id="2860118060023800887" at="11,0,13,0">
         <var name="thisNode" id="2860118060023800887" />
       </scope>
@@ -83,7 +86,10 @@
       <scope id="2860118060023800887" at="16,0,19,0">
         <var name="thisNode" id="2860118060023800887" />
       </scope>
-      <unit id="2860118060023800887" at="10,0,20,0" name="org.campagnelab.antlr.tomps.behavior.ChildDestination_Behavior" />
+      <scope id="2860118060023800887" at="19,0,22,0">
+        <var name="thisNode" id="2860118060023800887" />
+      </scope>
+      <unit id="2860118060023800887" at="10,0,23,0" name="org.campagnelab.antlr.tomps.behavior.ChildDestination_Behavior" />
     </file>
   </root>
   <root nodeRef="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/2860118060023810446">
@@ -98,24 +104,30 @@
   </root>
   <root nodeRef="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/2860118060024166430">
     <file name="PropertyDestination_Behavior.java">
-      <node id="2860118060024166444" at="13,73,14,319" concept="8" />
-      <node id="1096804516885031341" at="16,70,17,174" concept="8" />
-      <node id="2860118060024166430" at="11,0,13,0" concept="12" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="2860118060024166430" at="13,0,16,0" concept="12" trace="virtual_name_2860118060023810449#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="2860118060024166430" at="16,0,19,0" concept="12" trace="virtual_to_1096804516885006638#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="2860118060024166432" at="11,43,11,43" />
-      <scope id="2860118060024166437" at="13,73,14,319" />
-      <scope id="1096804516885031236" at="16,70,17,174" />
-      <scope id="2860118060024166430" at="11,0,13,0">
+      <node id="2860118060024166444" at="14,73,15,319" concept="8" />
+      <node id="1096804516885031341" at="17,70,18,174" concept="8" />
+      <node id="6247096756518628444" at="20,72,21,455" concept="8" />
+      <node id="2860118060024166430" at="12,0,14,0" concept="12" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2860118060024166430" at="14,0,17,0" concept="12" trace="virtual_name_2860118060023810449#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="2860118060024166430" at="17,0,20,0" concept="12" trace="virtual_to_1096804516885006638#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2860118060024166430" at="20,0,23,0" concept="12" trace="virtual_type_6247096756518626823#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2860118060024166432" at="12,43,12,43" />
+      <scope id="2860118060024166437" at="14,73,15,319" />
+      <scope id="1096804516885031236" at="17,70,18,174" />
+      <scope id="6247096756518628278" at="20,72,21,455" />
+      <scope id="2860118060024166430" at="12,0,14,0">
         <var name="thisNode" id="2860118060024166430" />
       </scope>
-      <scope id="2860118060024166430" at="13,0,16,0">
+      <scope id="2860118060024166430" at="14,0,17,0">
         <var name="thisNode" id="2860118060024166430" />
       </scope>
-      <scope id="2860118060024166430" at="16,0,19,0">
+      <scope id="2860118060024166430" at="17,0,20,0">
         <var name="thisNode" id="2860118060024166430" />
       </scope>
-      <unit id="2860118060024166430" at="10,0,20,0" name="org.campagnelab.antlr.tomps.behavior.PropertyDestination_Behavior" />
+      <scope id="2860118060024166430" at="20,0,23,0">
+        <var name="thisNode" id="2860118060024166430" />
+      </scope>
+      <unit id="2860118060024166430" at="11,0,24,0" name="org.campagnelab.antlr.tomps.behavior.PropertyDestination_Behavior" />
     </file>
   </root>
   <root nodeRef="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/4068410015137938191">
@@ -158,68 +170,125 @@
   </root>
   <root nodeRef="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/4917522066816691650">
     <file name="ToIntDestination_Behavior.java">
-      <node id="4917522066816692812" at="13,73,14,283" concept="8" />
-      <node id="4917522066816696856" at="16,70,17,306" concept="8" />
-      <node id="4917522066816691650" at="11,0,13,0" concept="12" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="4917522066816691650" at="13,0,16,0" concept="12" trace="virtual_name_2860118060023810449#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="4917522066816691650" at="16,0,19,0" concept="12" trace="virtual_to_1096804516885006638#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="4917522066816691652" at="11,43,11,43" />
-      <scope id="4917522066816691657" at="13,73,14,283" />
-      <scope id="4917522066816691663" at="16,70,17,306" />
-      <scope id="4917522066816691650" at="11,0,13,0">
+      <node id="4917522066816692812" at="15,73,16,283" concept="8" />
+      <node id="4917522066816696856" at="18,70,19,306" concept="8" />
+      <node id="6247096756518658345" at="21,72,22,47" concept="8" />
+      <node id="6247096756518658343" at="24,60,25,63" concept="7" />
+      <node id="6247096756518658343" at="25,63,26,30" concept="7" />
+      <node id="6247096756518658343" at="26,30,27,223" concept="0" />
+      <node id="6247096756518658343" at="26,30,27,223" concept="0" />
+      <node id="6247096756518658343" at="26,30,27,223" concept="3" />
+      <node id="6247096756518658343" at="27,223,28,24" concept="8" />
+      <node id="4917522066816691650" at="13,0,15,0" concept="12" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4917522066816691650" at="15,0,18,0" concept="12" trace="virtual_name_2860118060023810449#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4917522066816691650" at="18,0,21,0" concept="12" trace="virtual_to_1096804516885006638#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4917522066816691650" at="21,0,24,0" concept="12" trace="virtual_type_6247096756518626823#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6247096756518658343" at="24,0,30,0" concept="12" trace="_quotation_createNode_ohs6ez_a0a2#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="4917522066816691652" at="13,43,13,43" />
+      <scope id="4917522066816691657" at="15,73,16,283" />
+      <scope id="4917522066816691663" at="18,70,19,306" />
+      <scope id="6247096756518658217" at="21,72,22,47" />
+      <scope id="6247096756518658343" at="26,30,27,223" />
+      <scope id="4917522066816691650" at="13,0,15,0">
         <var name="thisNode" id="4917522066816691650" />
       </scope>
-      <scope id="4917522066816691650" at="13,0,16,0">
+      <scope id="4917522066816691650" at="15,0,18,0">
         <var name="thisNode" id="4917522066816691650" />
       </scope>
-      <scope id="4917522066816691650" at="16,0,19,0">
+      <scope id="4917522066816691650" at="18,0,21,0">
         <var name="thisNode" id="4917522066816691650" />
       </scope>
-      <unit id="4917522066816691650" at="10,0,20,0" name="org.campagnelab.antlr.tomps.behavior.ToIntDestination_Behavior" />
+      <scope id="4917522066816691650" at="21,0,24,0">
+        <var name="thisNode" id="4917522066816691650" />
+      </scope>
+      <scope id="6247096756518658343" at="24,60,28,24">
+        <var name="facade" id="6247096756518658343" />
+        <var name="quotedNode_1" id="6247096756518658343" />
+      </scope>
+      <scope id="6247096756518658343" at="24,0,30,0" />
+      <unit id="4917522066816691650" at="12,0,31,0" name="org.campagnelab.antlr.tomps.behavior.ToIntDestination_Behavior" />
     </file>
   </root>
   <root nodeRef="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/4917522066817436080">
     <file name="ToBooleanDestination_Behavior.java">
-      <node id="4917522066817436146" at="13,73,14,283" concept="8" />
-      <node id="4917522066817436156" at="16,70,17,306" concept="8" />
-      <node id="4917522066817436080" at="11,0,13,0" concept="12" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="4917522066817436080" at="13,0,16,0" concept="12" trace="virtual_name_2860118060023810449#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="4917522066817436080" at="16,0,19,0" concept="12" trace="virtual_to_1096804516885006638#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="4917522066817436082" at="11,43,11,43" />
-      <scope id="4917522066817436145" at="13,73,14,283" />
-      <scope id="4917522066817436155" at="16,70,17,306" />
-      <scope id="4917522066817436080" at="11,0,13,0">
+      <node id="4917522066817436146" at="15,73,16,283" concept="8" />
+      <node id="4917522066817436156" at="18,70,19,306" concept="8" />
+      <node id="6247096756518656094" at="21,72,22,47" concept="8" />
+      <node id="6247096756518656092" at="24,60,25,63" concept="7" />
+      <node id="6247096756518656092" at="25,63,26,30" concept="7" />
+      <node id="6247096756518656092" at="26,30,27,223" concept="0" />
+      <node id="6247096756518656092" at="26,30,27,223" concept="0" />
+      <node id="6247096756518656092" at="26,30,27,223" concept="3" />
+      <node id="6247096756518656092" at="27,223,28,24" concept="8" />
+      <node id="4917522066817436080" at="13,0,15,0" concept="12" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4917522066817436080" at="15,0,18,0" concept="12" trace="virtual_name_2860118060023810449#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4917522066817436080" at="18,0,21,0" concept="12" trace="virtual_to_1096804516885006638#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4917522066817436080" at="21,0,24,0" concept="12" trace="virtual_type_6247096756518626823#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6247096756518656092" at="24,0,30,0" concept="12" trace="_quotation_createNode_7pzd3s_a0a2#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="4917522066817436082" at="13,43,13,43" />
+      <scope id="4917522066817436145" at="15,73,16,283" />
+      <scope id="4917522066817436155" at="18,70,19,306" />
+      <scope id="6247096756518655951" at="21,72,22,47" />
+      <scope id="6247096756518656092" at="26,30,27,223" />
+      <scope id="4917522066817436080" at="13,0,15,0">
         <var name="thisNode" id="4917522066817436080" />
       </scope>
-      <scope id="4917522066817436080" at="13,0,16,0">
+      <scope id="4917522066817436080" at="15,0,18,0">
         <var name="thisNode" id="4917522066817436080" />
       </scope>
-      <scope id="4917522066817436080" at="16,0,19,0">
+      <scope id="4917522066817436080" at="18,0,21,0">
         <var name="thisNode" id="4917522066817436080" />
       </scope>
-      <unit id="4917522066817436080" at="10,0,20,0" name="org.campagnelab.antlr.tomps.behavior.ToBooleanDestination_Behavior" />
+      <scope id="4917522066817436080" at="21,0,24,0">
+        <var name="thisNode" id="4917522066817436080" />
+      </scope>
+      <scope id="6247096756518656092" at="24,60,28,24">
+        <var name="facade" id="6247096756518656092" />
+        <var name="quotedNode_1" id="6247096756518656092" />
+      </scope>
+      <scope id="6247096756518656092" at="24,0,30,0" />
+      <unit id="4917522066817436080" at="12,0,31,0" name="org.campagnelab.antlr.tomps.behavior.ToBooleanDestination_Behavior" />
     </file>
   </root>
   <root nodeRef="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/4917522066817641169">
     <file name="ToFloatDestination_Behavior.java">
-      <node id="4917522066817641358" at="13,73,14,283" concept="8" />
-      <node id="4917522066817641368" at="16,70,17,306" concept="8" />
-      <node id="4917522066817641169" at="11,0,13,0" concept="12" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="4917522066817641169" at="13,0,16,0" concept="12" trace="virtual_name_2860118060023810449#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="4917522066817641169" at="16,0,19,0" concept="12" trace="virtual_to_1096804516885006638#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="4917522066817641171" at="11,43,11,43" />
-      <scope id="4917522066817641357" at="13,73,14,283" />
-      <scope id="4917522066817641367" at="16,70,17,306" />
-      <scope id="4917522066817641169" at="11,0,13,0">
+      <node id="4917522066817641358" at="15,73,16,283" concept="8" />
+      <node id="4917522066817641368" at="18,70,19,306" concept="8" />
+      <node id="6247096756518656439" at="21,72,22,47" concept="8" />
+      <node id="6247096756518658012" at="24,60,25,63" concept="7" />
+      <node id="6247096756518658012" at="25,63,26,30" concept="7" />
+      <node id="6247096756518658012" at="26,30,27,221" concept="0" />
+      <node id="6247096756518658012" at="26,30,27,221" concept="0" />
+      <node id="6247096756518658012" at="26,30,27,221" concept="3" />
+      <node id="6247096756518658012" at="27,221,28,24" concept="8" />
+      <node id="4917522066817641169" at="13,0,15,0" concept="12" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4917522066817641169" at="15,0,18,0" concept="12" trace="virtual_name_2860118060023810449#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4917522066817641169" at="18,0,21,0" concept="12" trace="virtual_to_1096804516885006638#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4917522066817641169" at="21,0,24,0" concept="12" trace="virtual_type_6247096756518626823#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6247096756518658012" at="24,0,30,0" concept="12" trace="_quotation_createNode_al22mq_a0a2#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="4917522066817641171" at="13,43,13,43" />
+      <scope id="4917522066817641357" at="15,73,16,283" />
+      <scope id="4917522066817641367" at="18,70,19,306" />
+      <scope id="6247096756518656301" at="21,72,22,47" />
+      <scope id="6247096756518658012" at="26,30,27,221" />
+      <scope id="4917522066817641169" at="13,0,15,0">
         <var name="thisNode" id="4917522066817641169" />
       </scope>
-      <scope id="4917522066817641169" at="13,0,16,0">
+      <scope id="4917522066817641169" at="15,0,18,0">
         <var name="thisNode" id="4917522066817641169" />
       </scope>
-      <scope id="4917522066817641169" at="16,0,19,0">
+      <scope id="4917522066817641169" at="18,0,21,0">
         <var name="thisNode" id="4917522066817641169" />
       </scope>
-      <unit id="4917522066817641169" at="10,0,20,0" name="org.campagnelab.antlr.tomps.behavior.ToFloatDestination_Behavior" />
+      <scope id="4917522066817641169" at="21,0,24,0">
+        <var name="thisNode" id="4917522066817641169" />
+      </scope>
+      <scope id="6247096756518658012" at="24,60,28,24">
+        <var name="facade" id="6247096756518658012" />
+        <var name="quotedNode_1" id="6247096756518658012" />
+      </scope>
+      <scope id="6247096756518658012" at="24,0,30,0" />
+      <unit id="4917522066817641169" at="12,0,31,0" name="org.campagnelab.antlr.tomps.behavior.ToFloatDestination_Behavior" />
     </file>
   </root>
   <root nodeRef="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/5381624775492842124">

@@ -13,6 +13,9 @@ public class ToFloatDestination_BehaviorDescriptor extends Destination_BehaviorD
   public SNode virtual_to_1096804516885006638(SNode thisNode) {
     return ToFloatDestination_Behavior.virtual_to_1096804516885006638(thisNode);
   }
+  public SNode virtual_type_6247096756518626823(SNode thisNode) {
+    return ToFloatDestination_Behavior.virtual_type_6247096756518626823(thisNode);
+  }
   @Override
   public String getConceptFqName() {
     return "org.campagnelab.antlr.tomps.structure.ToFloatDestination";

@@ -14,4 +14,5 @@ public abstract class Destination_BehaviorDescriptor extends BaseConcept_Behavio
   }
   public abstract String virtual_name_2860118060023810449(SNode thisNode);
   public abstract SNode virtual_to_1096804516885006638(SNode thisNode);
+  public abstract SNode virtual_type_6247096756518626823(SNode thisNode);
 }

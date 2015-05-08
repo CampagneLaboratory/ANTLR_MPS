@@ -24,6 +24,7 @@
     <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>
     <usedLanguage>7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</usedLanguage>
     <usedLanguage>83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)</usedLanguage>
+    <usedLanguage>b283f144-ab8b-47c6-9ed5-c8f24c9c43e5(org.campagnelab.metar.R.functions)</usedLanguage>
   </usedLanguages>
   <languageVersions>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="1" />
@@ -37,6 +38,7 @@
     <language id="8a78e17e-fdc7-41c9-a783-10c22ed2f6d5" fqName="org.campagnelab.ANTLR45" version="0" />
     <language id="932d719c-e931-44d5-990c-e115f79b5942" fqName="org.campagnelab.antlr.tomps" version="-1" />
     <language id="3b58810c-8431-4bbb-99ea-b4671e02dd13" fqName="org.campagnelab.metar.R" version="0" />
+    <language id="b283f144-ab8b-47c6-9ed5-c8f24c9c43e5" fqName="org.campagnelab.metar.R.functions" version="-1" />
   </languageVersions>
 </solution>
 

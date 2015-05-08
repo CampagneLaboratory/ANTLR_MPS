@@ -9,6 +9,7 @@ public class IntentionsDescriptor extends BaseIntentionsDescriptor {
   public void init() {
     IntentionsManager.getInstance().registerIntentionFactory(new AddLabel_Intention());
     IntentionsManager.getInstance().registerIntentionFactory(new ClearAll_Intention());
+    IntentionsManager.getInstance().registerIntentionFactory(new DefineLabel_Intention());
     IntentionsManager.getInstance().registerIntentionFactory(new LabelAllAlternatives_Intention());
   }
 }
