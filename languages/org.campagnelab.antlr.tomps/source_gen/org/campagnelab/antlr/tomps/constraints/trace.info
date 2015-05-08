@@ -15,7 +15,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,65,0" name="org.campagnelab.antlr.tomps.constraints.ConstraintsAspectDescriptor" />
+      <unit at="10,0,70,0" name="org.campagnelab.antlr.tomps.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/2860118060024411667">
@@ -483,6 +483,76 @@
       <unit id="7627187573641817679" at="39,19,51,9" name="org.campagnelab.antlr.tomps.constraints.ConceptMapper_Constraints$2" />
       <unit id="7627187573641817679" at="31,128,53,5" name="org.campagnelab.antlr.tomps.constraints.ConceptMapper_Constraints$1" />
       <unit id="7627187573641817679" at="24,0,58,0" name="org.campagnelab.antlr.tomps.constraints.ConceptMapper_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/8739557558226394246">
+    <file name="LexerRuleSource_Constraints.java">
+      <node id="8739557558226394246" at="29,40,30,98" concept="12" />
+      <node id="8739557558226394246" at="33,98,34,135" concept="6" />
+      <node id="8739557558226394246" at="37,52,38,20" concept="7" />
+      <node id="8739557558226394246" at="41,116,42,20" concept="7" />
+      <node id="8739557558226468017" at="45,119,46,487" concept="3" />
+      <node id="8739557558226394246" at="49,44,50,20" concept="7" />
+      <node id="8739557558226394246" at="57,44,58,24" concept="7" />
+      <node id="8739557558226489870" at="61,128,62,348" concept="7" />
+      <node id="8739557558226481346" at="65,142,66,312" concept="7" />
+      <node id="8739557558226394246" at="69,63,70,57" concept="7" />
+      <node id="8739557558226394246" at="74,7,75,22" concept="7" />
+      <node id="8739557558226394246" at="77,0,78,0" concept="10" trace="breakingNode_dppn1_a0a3a0a0a4a0b0a1a1" />
+      <node id="8739557558226394246" at="29,0,32,0" concept="2" trace="LexerRuleSource_Constraints#()V" />
+      <node id="8739557558226394246" at="36,0,40,0" concept="5" trace="hasOwnOnReferenceSetHandler#()Z" />
+      <node id="8739557558226394246" at="40,0,44,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8739557558226394246" at="44,0,48,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8739557558226394246" at="48,0,52,0" concept="5" trace="hasOwnScopeProvider#()Z" />
+      <node id="8739557558226394246" at="56,0,60,0" concept="5" trace="hasPresentation#()Z" />
+      <node id="8739557558226394246" at="60,0,64,0" concept="5" trace="getPresentation#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferencePresentationContext;)Ljava/lang/String;" />
+      <node id="8739557558226394246" at="64,0,68,0" concept="5" trace="createSearchScopeOrListOfNodes#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljava/lang/Object;" />
+      <node id="8739557558226394246" at="68,0,72,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="8739557558226394246" at="54,56,72,10" concept="7" />
+      <node id="8739557558226394246" at="52,0,74,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="8739557558226394246" at="34,135,74,7" concept="3" />
+      <node id="8739557558226394246" at="32,0,77,0" concept="5" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="8739557558226394246" at="29,40,30,98" />
+      <scope id="8739557558226394246" at="37,52,38,20" />
+      <scope id="8739557558226394246" at="41,116,42,20" />
+      <scope id="8739557558226397930" at="45,119,46,487" />
+      <scope id="8739557558226394246" at="49,44,50,20" />
+      <scope id="8739557558226394246" at="57,44,58,24" />
+      <scope id="8739557558226488255" at="61,128,62,348" />
+      <scope id="8739557558226481277" at="65,142,66,312" />
+      <scope id="8739557558226394246" at="69,63,70,57" />
+      <scope id="8739557558226394246" at="29,0,32,0" />
+      <scope id="8739557558226394246" at="36,0,40,0" />
+      <scope id="8739557558226394246" at="40,0,44,0">
+        <var name="newReferentNode" id="8739557558226394246" />
+        <var name="oldReferentNode" id="8739557558226394246" />
+        <var name="referenceNode" id="8739557558226394246" />
+      </scope>
+      <scope id="8739557558226394246" at="44,0,48,0">
+        <var name="newReferentNode" id="8739557558226394246" />
+        <var name="oldReferentNode" id="8739557558226394246" />
+        <var name="referenceNode" id="8739557558226394246" />
+      </scope>
+      <scope id="8739557558226394246" at="48,0,52,0" />
+      <scope id="8739557558226394246" at="56,0,60,0" />
+      <scope id="8739557558226394246" at="60,0,64,0">
+        <var name="_context" id="8739557558226394246" />
+        <var name="operationContext" id="8739557558226394246" />
+      </scope>
+      <scope id="8739557558226394246" at="64,0,68,0">
+        <var name="_context" id="8739557558226394246" />
+        <var name="operationContext" id="8739557558226394246" />
+      </scope>
+      <scope id="8739557558226394246" at="68,0,72,0" />
+      <scope id="8739557558226394246" at="54,56,72,10" />
+      <scope id="8739557558226394246" at="52,0,74,0" />
+      <scope id="8739557558226394246" at="33,98,75,22">
+        <var name="references" id="8739557558226394246" />
+      </scope>
+      <scope id="8739557558226394246" at="32,0,77,0" />
+      <unit id="8739557558226394246" at="55,19,72,9" name="org.campagnelab.antlr.tomps.constraints.LexerRuleSource_Constraints$2" />
+      <unit id="8739557558226394246" at="35,128,74,5" name="org.campagnelab.antlr.tomps.constraints.LexerRuleSource_Constraints$1" />
+      <unit id="8739557558226394246" at="28,0,79,0" name="org.campagnelab.antlr.tomps.constraints.LexerRuleSource_Constraints" />
     </file>
   </root>
 </debug-info>
