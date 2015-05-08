@@ -18,12 +18,6 @@
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.Atom_BehaviorDescriptor" file="Atom_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Arrays" />
@@ -32,81 +26,50 @@
     <classNode dependClassName="org.campagnelab.metar.R.behavior.AdditionExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.AndExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.AssignmentOperatorExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Atom_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.BinaryOperationExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.BodyExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.BooleanOrExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.BreakExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.CaretExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.ColonExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.ColonsExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.ComparisonExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.ComplexExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.ComplexLiteralExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.DollarExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.ElementAccessExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.EmptySub_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.ExprSub_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.FalseExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.FalseLiteralExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.FloatExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.FloatLiteralExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.ForExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.FunctionCallExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.FunctionExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.HelpExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.HexExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.HexLiteralExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.IDExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.IDSub_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.IfElseExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.IfExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.InfExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.IntExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.IntLiteralExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.ListAccessExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.MultExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.MultiplicationExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.NAExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.NULLSub_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.NaNExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.NextExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.NotExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.NullExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.OrExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Parameter_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Parameters_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.ParenthesizedExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Prog_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.metar.R.behavior.ProgramProg_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.RepeatExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.STRINGSub_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.StringExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.StringLiteralExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.TildeExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.TrueExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.TrueLiteralExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.USER_OPExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.UnaryOperatorExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.UnaryTildeExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.UserOpExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.VARARGSSub_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.WhileExpr_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.BinaryOperationExpr_BehaviorDescriptor" file="BinaryOperationExpr_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.BodyExpr_BehaviorDescriptor" file="BodyExpr_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.BooleanOrExpr_BehaviorDescriptor" file="BooleanOrExpr_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
@@ -142,12 +105,6 @@
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.ComplexExpr_BehaviorDescriptor" file="ComplexExpr_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.ComplexLiteralExpr_BehaviorDescriptor" file="ComplexLiteralExpr_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -166,37 +123,13 @@
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.EmptySub_BehaviorDescriptor" file="EmptySub_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Parameter_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.ExprSub_BehaviorDescriptor" file="ExprSub_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Parameter_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" file="Expr_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.FalseExpr_BehaviorDescriptor" file="FalseExpr_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.FalseLiteralExpr_BehaviorDescriptor" file="FalseLiteralExpr_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.FloatExpr_BehaviorDescriptor" file="FloatExpr_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
@@ -232,12 +165,6 @@
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.HexExpr_BehaviorDescriptor" file="HexExpr_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.HexLiteralExpr_BehaviorDescriptor" file="HexLiteralExpr_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -247,17 +174,7 @@
   <dependency className="org.campagnelab.metar.R.behavior.IDExpr_BehaviorDescriptor" file="IDExpr_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="java.lang.Cloneable" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.IDSub_BehaviorDescriptor" file="IDSub_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Parameter_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.IfElseExpr_BehaviorDescriptor" file="IfElseExpr_BehaviorDescriptor.java">
@@ -278,12 +195,6 @@
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.IntExpr_BehaviorDescriptor" file="IntExpr_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.IntLiteralExpr_BehaviorDescriptor" file="IntLiteralExpr_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -291,12 +202,6 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.ListAccessExpr_BehaviorDescriptor" file="ListAccessExpr_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.MultExpr_BehaviorDescriptor" file="MultExpr_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
@@ -312,12 +217,6 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.NULLSub_BehaviorDescriptor" file="NULLSub_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Parameter_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.NaNExpr_BehaviorDescriptor" file="NaNExpr_BehaviorDescriptor.java">
@@ -350,18 +249,6 @@
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.Parameter_BehaviorDescriptor" file="Parameter_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.Parameters_BehaviorDescriptor" file="Parameters_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.ParenthesizedExpr_BehaviorDescriptor" file="ParenthesizedExpr_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -374,19 +261,13 @@
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="org.campagnelab.metar.R.behavior.ProgramProg_BehaviorDescriptor" file="ProgramProg_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.campagnelab.metar.R.behavior.Prog_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.RepeatExpr_BehaviorDescriptor" file="RepeatExpr_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.STRINGSub_BehaviorDescriptor" file="STRINGSub_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Parameter_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.StringExpr_BehaviorDescriptor" file="StringExpr_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
@@ -399,12 +280,6 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.TildeExpr_BehaviorDescriptor" file="TildeExpr_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.TrueExpr_BehaviorDescriptor" file="TrueExpr_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
@@ -432,18 +307,6 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.UserOpExpr_BehaviorDescriptor" file="UserOpExpr_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
-  <dependency className="org.campagnelab.metar.R.behavior.VARARGSSub_BehaviorDescriptor" file="VARARGSSub_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Parameter_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.WhileExpr_BehaviorDescriptor" file="WhileExpr_BehaviorDescriptor.java">

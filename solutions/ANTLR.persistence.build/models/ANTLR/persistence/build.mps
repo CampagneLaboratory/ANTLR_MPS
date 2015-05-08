@@ -553,6 +553,12 @@
             <ref role="3bR37D" node="5U7ZKlHMwce" resolve="org.campagnelab.ANTLR" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5mPDeVwgeCB" role="3bR37C">
+          <node concept="3bR9La" id="5mPDeVwgeCC" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

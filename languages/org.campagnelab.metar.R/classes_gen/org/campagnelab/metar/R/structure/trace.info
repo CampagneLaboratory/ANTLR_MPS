@@ -2,7 +2,7 @@
 <debug-info>
   <root>
     <file name="StructureAspectDescriptor.java">
-      <unit at="13,0,220,0" name="org.campagnelab.metar.R.structure.StructureAspectDescriptor" />
+      <unit at="13,0,163,0" name="org.campagnelab.metar.R.structure.StructureAspectDescriptor" />
     </file>
   </root>
 </debug-info>
