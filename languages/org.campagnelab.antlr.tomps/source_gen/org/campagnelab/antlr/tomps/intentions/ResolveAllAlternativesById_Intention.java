@@ -86,6 +86,8 @@ public class ResolveAllAlternativesById_Intention implements IntentionFactory {
               LOG.warn("not found: " + SPropertyOperations.getString(altMapper, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17fff06eL, "id")));
             }
           }
+          // TODO propagate resolve to source and destinations.. 
+          // <node> 
         }
       });
     }

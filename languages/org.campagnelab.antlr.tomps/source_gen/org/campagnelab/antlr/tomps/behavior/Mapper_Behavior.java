@@ -14,6 +14,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import java.util.ArrayList;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import java.util.Iterator;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 
@@ -40,6 +42,20 @@ public class Mapper_Behavior {
         Mapper_Behavior.call_linkDeclarationsForConceptInterface_4068410015139836194(thisNode, links, it);
       }
     });
+  }
+  public static void call_someMethod_6247096756516935321(SNode thisNode) {
+    List<SNode> list = new ArrayList<SNode>();
+    List<SNode> other = new ArrayList<SNode>();
+    SNode example = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861a15c43L, "org.campagnelab.antlr.tomps.structure.ExampleConcept")));
+    {
+      Iterator<SNode> element_it = ListSequence.fromList(list).iterator();
+      SNode element_var;
+      while (element_it.hasNext()) {
+        element_var = element_it.next();
+        SNode c = element_var;
+        ListSequence.fromList(SLinkOperations.getChildren(example, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861a15c43L, 0x32ac4b93a7718b4L, "listChild"))).addElement(c);
+      }
+    }
   }
   public static List<SNode> call_linkDeclarations_4068410015139474010(final SNode thisNode, SNode concept) {
     final List<SNode> links = new ArrayList<SNode>();

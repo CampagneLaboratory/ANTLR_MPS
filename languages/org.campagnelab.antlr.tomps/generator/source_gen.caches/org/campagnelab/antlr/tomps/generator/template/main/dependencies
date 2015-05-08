@@ -19,6 +19,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.AlternativeMapper_Behavior" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ConceptMapper_Behavior" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.Mapper_Behavior" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
 </dependenciesRoot>
