@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="AdditionExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.AdditionExpr_BehaviorDescriptor" />
@@ -11,13 +13,16 @@
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.AssignmentOperatorExpr_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,110,0" name="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,112,0" name="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="BinaryOperator_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.BinaryOperator_BehaviorDescriptor" />
     </file>
     <file name="BodyExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.BodyExpr_BehaviorDescriptor" />
+    </file>
+    <file name="BooleanLiteral_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.BooleanLiteral_BehaviorDescriptor" />
     </file>
     <file name="BreakExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.BreakExpr_BehaviorDescriptor" />
@@ -67,8 +72,8 @@
     <file name="HexLiteralExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.HexLiteralExpr_BehaviorDescriptor" />
     </file>
-    <file name="IDExpr_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.IDExpr_BehaviorDescriptor" />
+    <file name="Identifier_BehaviorDescriptor.java">
+      <unit at="9,0,20,0" name="org.campagnelab.metar.R.behavior.Identifier_BehaviorDescriptor" />
     </file>
     <file name="IfElseExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.IfElseExpr_BehaviorDescriptor" />
@@ -138,6 +143,17 @@
     </file>
     <file name="WhileExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.WhileExpr_BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/1229604057012669910">
+    <file name="TrueLiteralExpr_Behavior.java">
+      <node id="1229604057012689046" at="10,43,11,176" concept="0" />
+      <node id="1229604057012669910" at="10,0,13,0" concept="1" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="1229604057012669912" at="10,43,11,176" />
+      <scope id="1229604057012669910" at="10,0,13,0">
+        <var name="thisNode" id="1229604057012669910" />
+      </scope>
+      <unit id="1229604057012669910" at="9,0,14,0" name="org.campagnelab.metar.R.behavior.TrueLiteralExpr_Behavior" />
     </file>
   </root>
 </debug-info>

@@ -19,6 +19,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -181,6 +182,14 @@
       <property role="TrG5h" value="aStringProperty" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="14grA08D0Kg" role="1TKVEl">
+      <property role="TrG5h" value="anIntProperty" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="14grA08D0LH" role="1TKVEl">
+      <property role="TrG5h" value="aBooleanProperty" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="4EJnNxxClLr" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="aChild" />
@@ -255,6 +264,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4EJnNxxIT2o" resolve="Destination" />
     </node>
+    <node concept="PrWs8" id="14grA08JhsM" role="PzmwI">
+      <ref role="PrY4T" node="14grA08JhsB" resolve="IToConverter" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4gYz4fZN4o8">
     <property role="3GE5qa" value="destinations" />
@@ -266,6 +278,9 @@
       <property role="20kJfa" value="toConvert" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4EJnNxxIT2o" resolve="Destination" />
+    </node>
+    <node concept="PrWs8" id="14grA08JhHh" role="PzmwI">
+      <ref role="PrY4T" node="14grA08JhsB" resolve="IToConverter" />
     </node>
   </node>
   <node concept="1TIwiD" id="4gYz4fZNQtz">
@@ -279,6 +294,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4EJnNxxIT2o" resolve="Destination" />
     </node>
+    <node concept="PrWs8" id="14grA08JhsK" role="PzmwI">
+      <ref role="PrY4T" node="14grA08JhsB" resolve="IToConverter" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="14grA08JhsB">
+    <property role="3GE5qa" value="destinations" />
+    <property role="TrG5h" value="IToConverter" />
   </node>
 </model>
 

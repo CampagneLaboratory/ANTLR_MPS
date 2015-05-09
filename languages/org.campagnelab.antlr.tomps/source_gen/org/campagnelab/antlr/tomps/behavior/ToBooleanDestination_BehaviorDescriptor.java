@@ -4,7 +4,7 @@ package org.campagnelab.antlr.tomps.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class ToBooleanDestination_BehaviorDescriptor extends Destination_BehaviorDescriptor {
+public class ToBooleanDestination_BehaviorDescriptor extends Destination_BehaviorDescriptor implements IToConverter_BehaviorDescriptor {
   public ToBooleanDestination_BehaviorDescriptor() {
   }
   public String virtual_name_2860118060023810449(SNode thisNode) {

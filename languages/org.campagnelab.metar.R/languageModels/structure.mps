@@ -5,15 +5,25 @@
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+  </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
+      </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -195,29 +205,48 @@
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaR">
-    <property role="TrG5h" value="IDExpr" />
+    <property role="TrG5h" value="Identifier" />
     <property role="OYydz" value="ID" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="PrWs8" id="14grA08BBka" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaS">
     <property role="TrG5h" value="StringLiteralExpr" />
     <property role="OYydz" value="stringLiteral" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyi" id="14grA08BBle" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaT">
     <property role="TrG5h" value="HexLiteralExpr" />
     <property role="OYydz" value="hexLiteral" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyi" id="14grA08BBli" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaU">
     <property role="TrG5h" value="IntLiteralExpr" />
     <property role="OYydz" value="intLiteral" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyi" id="14grA08BBlA" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaV">
     <property role="TrG5h" value="FloatLiteralExpr" />
     <property role="OYydz" value="floatLiteral" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyi" id="14grA08BBq5" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaW">
     <property role="TrG5h" value="ComplexLiteralExpr" />
@@ -247,12 +276,12 @@
   <node concept="1TIwiD" id="5mPDeVwiPb1">
     <property role="TrG5h" value="TrueLiteralExpr" />
     <property role="OYydz" value="trueLiteral" />
-    <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <ref role="1TJDcQ" node="14grA08BCRd" resolve="BooleanLiteral" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPb2">
     <property role="TrG5h" value="FalseLiteralExpr" />
     <property role="OYydz" value="falseLiteral" />
-    <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <ref role="1TJDcQ" node="14grA08BCRd" resolve="BooleanLiteral" />
   </node>
   <node concept="1TIwiD" id="5qM9mr9JOd5">
     <property role="TrG5h" value="BinaryOperator" />
@@ -268,6 +297,14 @@
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="14grA08BCRd">
+    <property role="TrG5h" value="BooleanLiteral" />
+    <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyi" id="14grA08BCRe" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

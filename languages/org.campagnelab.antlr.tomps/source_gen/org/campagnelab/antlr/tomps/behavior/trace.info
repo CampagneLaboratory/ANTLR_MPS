@@ -36,6 +36,9 @@
     <file name="ExampleConcept_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.ExampleConcept_BehaviorDescriptor" />
     </file>
+    <file name="IToConverter_BehaviorDescriptor.java">
+      <unit at="6,0,8,0" name="org.campagnelab.antlr.tomps.behavior.IToConverter_BehaviorDescriptor" />
+    </file>
     <file name="LabeledElementSource_BehaviorDescriptor.java">
       <unit at="7,0,21,0" name="org.campagnelab.antlr.tomps.behavior.LabeledElementSource_BehaviorDescriptor" />
     </file>

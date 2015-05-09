@@ -9,6 +9,7 @@ import java.util.Collection;
 import jetbrains.mps.generator.runtime.TemplateModule;
 import jetbrains.mps.generator.runtime.TemplateUtil;
 import jetbrains.mps.smodel.runtime.LanguageAspectDescriptor;
+import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 
 public class Language extends LanguageRuntime {
@@ -38,6 +39,9 @@ public class Language extends LanguageRuntime {
   }
   @Override
   protected <T extends LanguageAspectDescriptor> T createAspectDescriptor(Class<T> descriptorClass) {
+    if (descriptorClass == BehaviorAspectDescriptor.class) {
+      return (T) new org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor();
+    }
     if (descriptorClass == StructureAspectDescriptor.class) {
       return (T) new org.campagnelab.metar.R.structure.StructureAspectDescriptor();
     }
