@@ -11,4 +11,7 @@ public class ParserRuleBlock_Behavior {
   public static String virtual_toText_5668935624399900127(SNode thisNode) {
     return BehaviorReflection.invokeSuper(String.class, thisNode, "org.campagnelab.ANTLR.structure.HasOptionalParams", "virtual_toText_5668935624399900127", new Object[]{});
   }
+  public static boolean virtual_needsVisit_3737166271522571641(SNode thisNode) {
+    return true;
+  }
 }

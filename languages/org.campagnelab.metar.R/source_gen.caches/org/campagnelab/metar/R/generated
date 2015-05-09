@@ -4,7 +4,7 @@
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" hash="3fyiqhtyu9fdn3b1geb5x1v0fve8a7y" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="19uchsffy2fbhy8fxadw6t0s4o36pge" />
   <dep model="r:94f9fbfd-8735-4bd3-9dc2-31b0eaf8abca(org.campagnelab.metar.R.typesystem)" hash="-91u9vb1ig5ttfnpef6b4t55a28viuot" />
-  <dep model="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)" hash="53cfpxarhe36es1dfcvszb24y73z6ks" />
+  <dep model="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)" hash="ein17oljp9y653zu3p7dcu2zelsulfo" />
   <dep model="r:aaf90db9-c063-474d-ae34-b6cf5ac1b1d2(org.campagnelab.metar.R.editor)" hash="-c7a8ssb3w9tcrmwvsww7vxsm4vdoqxg" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="-afok4i31abohs3f5rk0sqlnvuruthqa" />
   <dep model="r:bbac9b32-ad23-4a73-9931-fe439dd26b5d(org.campagnelab.metar.R.constraints)" hash="a51e47yfbvapj7rkaf8cygldfsgwp58" />

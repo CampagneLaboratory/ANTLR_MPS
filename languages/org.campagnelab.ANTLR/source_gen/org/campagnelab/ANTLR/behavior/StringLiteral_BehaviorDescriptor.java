@@ -7,6 +7,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 public class StringLiteral_BehaviorDescriptor extends LexerToken_BehaviorDescriptor {
   public StringLiteral_BehaviorDescriptor() {
   }
+  public boolean virtual_needsVisit_3737166271522571641(SNode thisNode) {
+    return StringLiteral_Behavior.virtual_needsVisit_3737166271522571641(thisNode);
+  }
   public String virtual_toText_5668935624399900127(SNode thisNode) {
     return StringLiteral_Behavior.virtual_toText_5668935624399900127(thisNode);
   }

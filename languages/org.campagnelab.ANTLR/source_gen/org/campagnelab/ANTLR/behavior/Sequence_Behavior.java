@@ -8,6 +8,8 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.ISelector;
+import jetbrains.mps.internal.collections.runtime.ILeftCombinator;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 
 public class Sequence_Behavior {
   public static void init(SNode thisNode) {
@@ -18,5 +20,12 @@ public class Sequence_Behavior {
         return ToTextOutput_Behavior.call_safeToText_7095100507906137981(thisNode, it);
       }
     }), " ") + ")";
+  }
+  public static boolean virtual_needsVisit_3737166271522571641(SNode thisNode) {
+    return ListSequence.fromList(SLinkOperations.getChildren(thisNode, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d846L, 0x631eebe31132d96bL, "of"))).foldLeft(false, new ILeftCombinator<SNode, Boolean>() {
+      public Boolean combine(Boolean needsVisit, SNode it) {
+        return needsVisit || BehaviorReflection.invokeVirtual(Boolean.TYPE, it, "virtual_needsVisit_3737166271522571641", new Object[]{});
+      }
+    });
   }
 }

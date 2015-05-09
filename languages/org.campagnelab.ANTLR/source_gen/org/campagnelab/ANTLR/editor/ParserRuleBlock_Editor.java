@@ -12,6 +12,12 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
+import jetbrains.mps.nodeEditor.cells.ModelAccessor;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import jetbrains.mps.util.EqualUtil;
+import jetbrains.mps.openapi.editor.cells.CellActionType;
+import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 
 public class ParserRuleBlock_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -38,6 +44,8 @@ public class ParserRuleBlock_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createProperty_47u5j1_d0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_47u5j1_e0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_47u5j1_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_47u5j1_g0(editorContext, node));
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_47u5j1_h0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_47u5j1_a0(EditorContext editorContext, SNode node) {
@@ -104,6 +112,28 @@ public class ParserRuleBlock_Editor extends DefaultNodeEditor {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
       return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
     } else
+    return editorCell;
+  }
+  private EditorCell createConstant_47u5j1_g0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "needsVisit=");
+    editorCell.setCellId("Constant_47u5j1_g0");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createReadOnlyModelAccessor_47u5j1_h0(final EditorContext editorContext, final SNode node) {
+    EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
+      public String getText() {
+        return Boolean.toString(BehaviorReflection.invokeVirtual(Boolean.TYPE, node, "virtual_needsVisit_3737166271522571641", new Object[]{}));
+      }
+      public void setText(String s) {
+      }
+      public boolean isValidText(String s) {
+        return EqualUtil.equals(s, getText());
+      }
+    }, node);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ReadOnlyModelAccessor_47u5j1_h0");
     return editorCell;
   }
 }

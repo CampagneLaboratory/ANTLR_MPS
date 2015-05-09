@@ -29,6 +29,7 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="ijbl" ref="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1834,6 +1835,61 @@
                   </node>
                 </node>
                 <node concept="raruj" id="14grA08ZanM" role="lGtFl" />
+                <node concept="1W57fq" id="3ft5eLKF2bH" role="lGtFl">
+                  <node concept="3IZrLx" id="3ft5eLKF2bJ" role="3IZSJc">
+                    <node concept="3clFbS" id="3ft5eLKF2bL" role="2VODD2">
+                      <node concept="3clFbF" id="3ft5eLKF3wG" role="3cqZAp">
+                        <node concept="2OqwBi" id="3ft5eLKF6b8" role="3clFbG">
+                          <node concept="2OqwBi" id="3ft5eLKF4sj" role="2Oq$k0">
+                            <node concept="2OqwBi" id="3ft5eLKF3Tr" role="2Oq$k0">
+                              <node concept="30H73N" id="3ft5eLKF3wF" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="3ft5eLKF4az" role="2OqNvi">
+                                <ref role="3Tt5mk" to="3elq:4EJnNxxFw5T" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="3ft5eLKF5NW" role="2OqNvi">
+                              <ref role="3Tt5mk" to="ubjp:v1yTSnHWsJ" />
+                            </node>
+                          </node>
+                          <node concept="2qgKlT" id="3ft5eLKIaVW" role="2OqNvi">
+                            <ref role="37wK5l" to="ijbl:3ft5eLKF8lT" resolve="needsVisit" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="gft3U" id="3ft5eLKIbhC" role="UU_$l">
+                    <node concept="2OqwBi" id="3ft5eLKIczY" role="gfFT$">
+                      <node concept="2OqwBi" id="3ft5eLKIb$z" role="2Oq$k0">
+                        <node concept="37vLTw" id="3ft5eLKIbwd" role="2Oq$k0">
+                          <ref role="3cqZAo" node="WSCumx0Qu7" resolve="context" />
+                        </node>
+                        <node concept="2OwXpG" id="3ft5eLKIc6B" role="2OqNvi">
+                          <ref role="2Oxat5" to="h3hk:~RuleContext.parent" resolve="parent" />
+                          <node concept="1ZhdrF" id="3ft5eLKIdlQ" role="lGtFl">
+                            <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1197029447546/1197029500499" />
+                            <property role="2qtEX8" value="fieldDeclaration" />
+                            <node concept="3$xsQk" id="3ft5eLKIdlR" role="3$ytzL">
+                              <node concept="3clFbS" id="3ft5eLKIdlS" role="2VODD2">
+                                <node concept="3clFbF" id="3ft5eLKIdoZ" role="3cqZAp">
+                                  <node concept="2OqwBi" id="3ft5eLKIdp0" role="3clFbG">
+                                    <node concept="30H73N" id="3ft5eLKIdp1" role="2Oq$k0" />
+                                    <node concept="2qgKlT" id="3ft5eLKIdp2" role="2OqNvi">
+                                      <ref role="37wK5l" to="k4hm:3xPTlDSWS6G" resolve="name" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3ft5eLKIkbE" role="2OqNvi">
+                        <ref role="37wK5l" to="h3hk:~RuleContext.getText():java.lang.String" resolve="getText" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

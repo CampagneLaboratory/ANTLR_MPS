@@ -13,6 +13,15 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.openapi.editor.style.Style;
+import jetbrains.mps.editor.runtime.style.StyleImpl;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
+import jetbrains.mps.nodeEditor.cells.ModelAccessor;
+import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import jetbrains.mps.util.EqualUtil;
+import jetbrains.mps.openapi.editor.cells.CellActionType;
+import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 
 public class RHSEditor implements ConceptEditorComponent {
   public Collection<String> getContextHints() {
@@ -30,6 +39,8 @@ public class RHSEditor implements ConceptEditorComponent {
     editorCell.addEditorCell(this.createProperty_c471p1_d0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_c471p1_e0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_c471p1_f0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_c471p1_g0(editorContext, node));
+    editorCell.addEditorCell(this.createReadOnlyModelAccessor_c471p1_h0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_c471p1_a0(EditorContext editorContext, SNode node) {
@@ -96,6 +107,31 @@ public class RHSEditor implements ConceptEditorComponent {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
       return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
     } else
+    return editorCell;
+  }
+  private EditorCell createConstant_c471p1_g0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "needsVisit=");
+    editorCell.setCellId("Constant_c471p1_g0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, 0, true);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createReadOnlyModelAccessor_c471p1_h0(final EditorContext editorContext, final SNode node) {
+    EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
+      public String getText() {
+        return Boolean.toString(BehaviorReflection.invokeVirtual(Boolean.TYPE, node, "virtual_needsVisit_3737166271522571641", new Object[]{}));
+      }
+      public void setText(String s) {
+      }
+      public boolean isValidText(String s) {
+        return EqualUtil.equals(s, getText());
+      }
+    }, node);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ReadOnlyModelAccessor_c471p1_h0");
     return editorCell;
   }
 }

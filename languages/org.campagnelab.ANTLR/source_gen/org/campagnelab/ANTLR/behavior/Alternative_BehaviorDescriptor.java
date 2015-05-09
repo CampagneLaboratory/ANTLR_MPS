@@ -12,6 +12,9 @@ public class Alternative_BehaviorDescriptor extends BaseConcept_BehaviorDescript
   public String virtual_getFqName_1213877404258(SNode thisNode) {
     return Alternative_Behavior.virtual_getFqName_1213877404258(thisNode);
   }
+  public boolean virtual_needsVisit_3737166271522613971(SNode thisNode) {
+    return Alternative_Behavior.virtual_needsVisit_3737166271522613971(thisNode);
+  }
   public String virtual_toText_5668935624399900127(SNode thisNode) {
     return Alternative_Behavior.virtual_toText_5668935624399900127(thisNode);
   }

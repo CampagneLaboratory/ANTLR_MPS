@@ -7,6 +7,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 public abstract class ParserRuleBlock_BehaviorDescriptor extends HasOptionalParams_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor {
   public ParserRuleBlock_BehaviorDescriptor() {
   }
+  public boolean virtual_needsVisit_3737166271522571641(SNode thisNode) {
+    return ParserRuleBlock_Behavior.virtual_needsVisit_3737166271522571641(thisNode);
+  }
   public String virtual_toText_5668935624399900127(SNode thisNode) {
     return ParserRuleBlock_Behavior.virtual_toText_5668935624399900127(thisNode);
   }

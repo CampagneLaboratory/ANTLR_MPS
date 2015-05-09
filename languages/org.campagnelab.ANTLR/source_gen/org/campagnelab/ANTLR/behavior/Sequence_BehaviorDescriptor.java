@@ -7,6 +7,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 public class Sequence_BehaviorDescriptor extends ParserRuleBlock_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor {
   public Sequence_BehaviorDescriptor() {
   }
+  public boolean virtual_needsVisit_3737166271522571641(SNode thisNode) {
+    return Sequence_Behavior.virtual_needsVisit_3737166271522571641(thisNode);
+  }
   public String virtual_toText_5668935624399900127(SNode thisNode) {
     return Sequence_Behavior.virtual_toText_5668935624399900127(thisNode);
   }

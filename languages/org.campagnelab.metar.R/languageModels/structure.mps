@@ -304,6 +304,10 @@
   <node concept="1TIwiD" id="5qM9mr9JOd5">
     <property role="TrG5h" value="BinaryOperator" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyi" id="3ft5eLKEjP3" role="1TKVEl">
+      <property role="TrG5h" value="operator" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="5qM9mr9JOd6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="left" />

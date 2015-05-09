@@ -12,4 +12,7 @@ public class StringLiteral_Behavior {
   public static String virtual_toText_5668935624399900127(SNode thisNode) {
     return "'" + SPropertyOperations.getString(thisNode, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, 0x631eebe3113e6580L, "literal")) + "'";
   }
+  public static boolean virtual_needsVisit_3737166271522571641(SNode thisNode) {
+    return false;
+  }
 }
