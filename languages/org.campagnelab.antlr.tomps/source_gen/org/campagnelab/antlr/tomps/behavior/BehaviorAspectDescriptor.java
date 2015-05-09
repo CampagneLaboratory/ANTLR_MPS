@@ -17,29 +17,33 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new AlternativeMapper_BehaviorDescriptor();
       case 2:
         return new ConceptMapper_BehaviorDescriptor();
-      case 7:
-        return new Mapper_BehaviorDescriptor();
       case 8:
+        return new Mapper_BehaviorDescriptor();
+      case 10:
         return new ParserRuleSource_BehaviorDescriptor();
-      case 4:
-        return new ExampleConcept_BehaviorDescriptor();
       case 5:
+        return new ExampleConcept_BehaviorDescriptor();
+      case 6:
         return new LabeledElementSource_BehaviorDescriptor();
       case 1:
         return new ChildDestination_BehaviorDescriptor();
-      case 9:
-        return new PropertyDestination_BehaviorDescriptor();
-      case 6:
-        return new LexerRuleSource_BehaviorDescriptor();
-      case 12:
-        return new ToIntDestination_BehaviorDescriptor();
-      case 10:
-        return new ToBooleanDestination_BehaviorDescriptor();
       case 11:
+        return new PropertyDestination_BehaviorDescriptor();
+      case 7:
+        return new LexerRuleSource_BehaviorDescriptor();
+      case 14:
+        return new ToIntDestination_BehaviorDescriptor();
+      case 12:
+        return new ToBooleanDestination_BehaviorDescriptor();
+      case 13:
         return new ToFloatDestination_BehaviorDescriptor();
+      case 9:
+        return new NewVisitor_BehaviorDescriptor();
+      case 4:
+        return new ConverterName_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.AlternativeMapper", "org.campagnelab.antlr.tomps.structure.ChildDestination", "org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS", "org.campagnelab.antlr.tomps.structure.ExampleConcept", "org.campagnelab.antlr.tomps.structure.LabeledElementSource", "org.campagnelab.antlr.tomps.structure.LexerRuleSource", "org.campagnelab.antlr.tomps.structure.Mapper", "org.campagnelab.antlr.tomps.structure.ParserRuleSource", "org.campagnelab.antlr.tomps.structure.PropertyDestination", "org.campagnelab.antlr.tomps.structure.ToBooleanDestination", "org.campagnelab.antlr.tomps.structure.ToFloatDestination", "org.campagnelab.antlr.tomps.structure.ToIntDestination"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.AlternativeMapper", "org.campagnelab.antlr.tomps.structure.ChildDestination", "org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS", "org.campagnelab.antlr.tomps.structure.ConverterName", "org.campagnelab.antlr.tomps.structure.ExampleConcept", "org.campagnelab.antlr.tomps.structure.LabeledElementSource", "org.campagnelab.antlr.tomps.structure.LexerRuleSource", "org.campagnelab.antlr.tomps.structure.Mapper", "org.campagnelab.antlr.tomps.structure.NewVisitor", "org.campagnelab.antlr.tomps.structure.ParserRuleSource", "org.campagnelab.antlr.tomps.structure.PropertyDestination", "org.campagnelab.antlr.tomps.structure.ToBooleanDestination", "org.campagnelab.antlr.tomps.structure.ToFloatDestination", "org.campagnelab.antlr.tomps.structure.ToIntDestination"};
 }

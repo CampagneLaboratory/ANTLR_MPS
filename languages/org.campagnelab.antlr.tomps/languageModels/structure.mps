@@ -9,6 +9,7 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -301,6 +302,29 @@
   <node concept="PlHQZ" id="14grA08JhsB">
     <property role="3GE5qa" value="destinations" />
     <property role="TrG5h" value="IToConverter" />
+  </node>
+  <node concept="1TIwiD" id="14grA08SSVB">
+    <property role="TrG5h" value="NewVisitor" />
+    <property role="34LRSv" value="new visitor" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyi" id="14grA09jXTS" role="1TKVEl">
+      <property role="TrG5h" value="generatedClassName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="14grA08T5ix" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="converter" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6CrG2UA1xI2" resolve="ConvertToMPS" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="14grA09bMXT">
+    <property role="TrG5h" value="ConverterName" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="14grA09bMXU" role="1TKVEl">
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

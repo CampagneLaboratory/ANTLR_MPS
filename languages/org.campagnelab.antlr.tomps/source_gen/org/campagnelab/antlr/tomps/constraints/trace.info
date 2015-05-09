@@ -15,7 +15,50 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,70,0" name="org.campagnelab.antlr.tomps.constraints.ConstraintsAspectDescriptor" />
+      <unit at="10,0,75,0" name="org.campagnelab.antlr.tomps.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/1229604057024290426">
+    <file name="NewVisitor_Constraints.java">
+      <node id="1229604057024290426" at="21,35,22,98" concept="12" />
+      <node id="1229604057024290426" at="25,98,26,135" concept="6" />
+      <node id="1229604057024290426" at="29,52,30,20" concept="7" />
+      <node id="1229604057024290426" at="33,116,34,20" concept="7" />
+      <node id="1229604057024290739" at="37,119,38,272" concept="3" />
+      <node id="1229604057024290426" at="42,56,43,42" concept="7" />
+      <node id="1229604057024290426" at="45,7,46,22" concept="7" />
+      <node id="1229604057024290426" at="21,0,24,0" concept="2" trace="NewVisitor_Constraints#()V" />
+      <node id="1229604057024290426" at="28,0,32,0" concept="5" trace="hasOwnOnReferenceSetHandler#()Z" />
+      <node id="1229604057024290426" at="32,0,36,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1229604057024290426" at="36,0,40,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1229604057024290426" at="40,0,45,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="1229604057024290426" at="26,135,45,7" concept="3" />
+      <node id="1229604057024290426" at="24,0,48,0" concept="5" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
+      <scope id="1229604057024290426" at="21,35,22,98" />
+      <scope id="1229604057024290426" at="29,52,30,20" />
+      <scope id="1229604057024290426" at="33,116,34,20" />
+      <scope id="1229604057024290735" at="37,119,38,272" />
+      <scope id="1229604057024290426" at="42,56,43,42" />
+      <scope id="1229604057024290426" at="21,0,24,0" />
+      <scope id="1229604057024290426" at="28,0,32,0" />
+      <scope id="1229604057024290426" at="32,0,36,0">
+        <var name="newReferentNode" id="1229604057024290426" />
+        <var name="oldReferentNode" id="1229604057024290426" />
+        <var name="referenceNode" id="1229604057024290426" />
+      </scope>
+      <scope id="1229604057024290426" at="36,0,40,0">
+        <var name="newReferentNode" id="1229604057024290426" />
+        <var name="oldReferentNode" id="1229604057024290426" />
+        <var name="referenceNode" id="1229604057024290426" />
+      </scope>
+      <scope id="1229604057024290426" at="40,0,45,0" />
+      <scope id="1229604057024290426" at="25,98,46,22">
+        <var name="references" id="1229604057024290426" />
+      </scope>
+      <scope id="1229604057024290426" at="24,0,48,0" />
+      <unit id="1229604057024290426" at="43,19,43,41" name="org.campagnelab.antlr.tomps.constraints.NewVisitor_Constraints$2" />
+      <unit id="1229604057024290426" at="27,128,45,5" name="org.campagnelab.antlr.tomps.constraints.NewVisitor_Constraints$1" />
+      <unit id="1229604057024290426" at="20,0,49,0" name="org.campagnelab.antlr.tomps.constraints.NewVisitor_Constraints" />
     </file>
   </root>
   <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/2860118060024411667">

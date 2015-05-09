@@ -10,6 +10,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -345,6 +346,31 @@
   </registry>
   <node concept="13h7C7" id="6BpdF0a3g$u">
     <ref role="13h7C2" to="3elq:6CrG2UA1xI2" resolve="ConvertToMPS" />
+    <node concept="13i0hz" id="14grA09hT8$" role="13h7CS">
+      <property role="TrG5h" value="getGeneratedClassName" />
+      <node concept="3Tm1VV" id="14grA09hT8_" role="1B3o_S" />
+      <node concept="17QB3L" id="14grA09hUem" role="3clF45" />
+      <node concept="3clFbS" id="14grA09hT8B" role="3clF47">
+        <node concept="3clFbF" id="14grA09nQT7" role="3cqZAp">
+          <node concept="3cpWs3" id="v1yTSnV8zd" role="3clFbG">
+            <node concept="Xl_RD" id="v1yTSnV8ze" role="3uHU7w">
+              <property role="Xl_RC" value="_ToMpsVisitor" />
+            </node>
+            <node concept="2OqwBi" id="v1yTSnV8zf" role="3uHU7B">
+              <node concept="2OqwBi" id="v1yTSnV8zg" role="2Oq$k0">
+                <node concept="13iPFW" id="14grA09i25x" role="2Oq$k0" />
+                <node concept="3TrEf2" id="v1yTSnV8zi" role="2OqNvi">
+                  <ref role="3Tt5mk" to="3elq:6CrG2UA1xJD" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="v1yTSnV8zj" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="hEwIO9y" role="13h7CS">
       <property role="13i0is" value="false" />
       <property role="TrG5h" value="getFqName" />
@@ -3373,6 +3399,12 @@
     </node>
     <node concept="13hLZK" id="4gYz4fZNQFi" role="13h7CW">
       <node concept="3clFbS" id="4gYz4fZNQFj" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="14grA09hSNO">
+    <ref role="13h7C2" to="3elq:14grA08SSVB" resolve="NewVisitor" />
+    <node concept="13hLZK" id="14grA09hSNP" role="13h7CW">
+      <node concept="3clFbS" id="14grA09hSNQ" role="2VODD2" />
     </node>
   </node>
 </model>

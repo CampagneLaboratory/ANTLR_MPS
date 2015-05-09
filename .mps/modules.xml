@@ -14,6 +14,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.antlr.persistence/org.campagnelab.antlr.persistence.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/org.campagnelab.antlr.plugin.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.metar.r.parsers/org.campagnelab.metar.r.parsers.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.cmapagnelab.metar.R.plugin/org.cmapagnelab.metar.R.plugin.msd" folder="" />
     </projectModules>
   </component>
 </project>

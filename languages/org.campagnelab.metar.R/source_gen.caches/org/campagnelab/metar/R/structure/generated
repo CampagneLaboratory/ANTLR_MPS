@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="6h9hj1e30sj9kujjoy3g8mhjfr6k6mv">
+<dependencies version="2" modelHash="67dpdekxuigzt0725hwft85xf92wz5k">
   <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="3trgqsx78ksjj4yzjj8uk37m284lcmt" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="2y5m1tbgov02be84gi16uvvxt47q232" />
@@ -63,8 +63,8 @@
     <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
     <file name="StructureAspectDescriptor.java" />
   </common>
-  <source id="6176023809880685261" name="Prog" hash="-ai166ujgqj25po1z7zpbzyxsiybmbu" />
-  <source id="6176023809880685262" name="ProgramProg" hash="-318xrg8nna89xqsyvzmm7me1iuoe2tt" />
+  <source id="6176023809880685261" name="Prog" hash="-4t6jtwaq7ffft29wr8n22nxr3hpnvj0" />
+  <source id="6176023809880685262" name="ProgramProg" hash="-b229h77i9j46qp2hlsj2509laltleju" />
   <source id="6176023809880707737" name="Expr" hash="-cjylwbmuscn62atx6rj7fqc7ozd5kzv" />
   <source id="6176023809880707738" name="ElementAccessExpr" hash="-a27ue7lgrkl2f3gq9wycjabwgs2s0yx" />
   <source id="6176023809880707739" name="ListAccessExpr" hash="d5hy0lar1wa4ulfp11z10blrwh7ls65" />

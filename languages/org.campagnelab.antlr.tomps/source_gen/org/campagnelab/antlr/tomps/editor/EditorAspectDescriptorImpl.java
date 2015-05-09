@@ -27,14 +27,16 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 5:
         return Collections.<ConceptEditor>singletonList(new Mapper_Editor());
       case 6:
-        return Collections.<ConceptEditor>singletonList(new ParserRuleSource_Editor());
+        return Collections.<ConceptEditor>singletonList(new NewVisitor_Editor());
       case 7:
-        return Collections.<ConceptEditor>singletonList(new Source_Editor());
+        return Collections.<ConceptEditor>singletonList(new ParserRuleSource_Editor());
       case 8:
-        return Collections.<ConceptEditor>singletonList(new ToBooleanDestination_Editor());
+        return Collections.<ConceptEditor>singletonList(new Source_Editor());
       case 9:
-        return Collections.<ConceptEditor>singletonList(new ToFloatDestination_Editor());
+        return Collections.<ConceptEditor>singletonList(new ToBooleanDestination_Editor());
       case 10:
+        return Collections.<ConceptEditor>singletonList(new ToFloatDestination_Editor());
+      case 11:
         return Collections.<ConceptEditor>singletonList(new ToIntDestination_Editor());
       default:
     }
@@ -53,6 +55,6 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.AlternativeMapper", "org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS", "org.campagnelab.antlr.tomps.structure.Destination", "org.campagnelab.antlr.tomps.structure.LexerRuleSource", "org.campagnelab.antlr.tomps.structure.Mapper", "org.campagnelab.antlr.tomps.structure.ParserRuleSource", "org.campagnelab.antlr.tomps.structure.Source", "org.campagnelab.antlr.tomps.structure.ToBooleanDestination", "org.campagnelab.antlr.tomps.structure.ToFloatDestination", "org.campagnelab.antlr.tomps.structure.ToIntDestination"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.AlternativeMapper", "org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS", "org.campagnelab.antlr.tomps.structure.Destination", "org.campagnelab.antlr.tomps.structure.LexerRuleSource", "org.campagnelab.antlr.tomps.structure.Mapper", "org.campagnelab.antlr.tomps.structure.NewVisitor", "org.campagnelab.antlr.tomps.structure.ParserRuleSource", "org.campagnelab.antlr.tomps.structure.Source", "org.campagnelab.antlr.tomps.structure.ToBooleanDestination", "org.campagnelab.antlr.tomps.structure.ToFloatDestination", "org.campagnelab.antlr.tomps.structure.ToIntDestination"};
   private static String[] stringSwitchCases_xbvbvu_a0a0c = new String[]{"org.campagnelab.antlr.tomps.structure.Source"};
 }

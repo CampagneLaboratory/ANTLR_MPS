@@ -7,19 +7,9 @@
   <imports />
   <registry>
     <language id="3b58810c-8431-4bbb-99ea-b4671e02dd13" name="org.campagnelab.metar.R">
-      <concept id="7571208821975396385" name="org.campagnelab.metar.R.structure.Prog" flags="ng" index="FdYpI">
-        <child id="7571208821975398051" name="expressions" index="FdY3G" />
-      </concept>
-      <concept id="3578183104953865143" name="org.campagnelab.metar.R.structure.AdditionExpr" flags="ng" index="11J14$" />
-      <concept id="8933086517775916892" name="org.campagnelab.metar.R.structure.Expr" flags="ng" index="349uQ7" />
+      <concept id="6176023809880685262" name="org.campagnelab.metar.R.structure.ProgramProg" flags="ng" index="2PZPSw" />
     </language>
   </registry>
-  <node concept="FdYpI" id="6$il$X29Xap">
-    <node concept="11J14$" id="6$il$X29Xas" role="FdY3G" />
-    <node concept="349uQ7" id="6$il$X29Xav" role="FdY3G" />
-    <node concept="349uQ7" id="6$il$X29Xay" role="FdY3G" />
-    <node concept="349uQ7" id="6$il$X29XaA" role="FdY3G" />
-    <node concept="349uQ7" id="6$il$X29XaF" role="FdY3G" />
-  </node>
+  <node concept="2PZPSw" id="14grA09BqK8" />
 </model>
 

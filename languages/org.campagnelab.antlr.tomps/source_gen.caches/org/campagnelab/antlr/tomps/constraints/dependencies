@@ -80,6 +80,7 @@
     <classNode dependClassName="org.campagnelab.antlr.tomps.constraints.LabeledElementSource_Constraints" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.constraints.LexerRuleSource_Constraints" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.constraints.Mapper_Constraints" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.constraints.NewVisitor_Constraints" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.constraints.ParserRuleSource_Constraints" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.constraints.PropertyDestination_Constraints" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
@@ -169,6 +170,23 @@
   </dependency>
   <dependency className="org.campagnelab.antlr.tomps.constraints.Mapper_Constraints" file="Mapper_Constraints.java">
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.antlr.tomps.constraints.NewVisitor_Constraints" file="NewVisitor_Constraints.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.HashMap" />
+    <classNode dependClassName="java.util.Map" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SReferenceLinkId" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ReferenceScopeProvider" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseScopeProvider" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ConvertToMPS_Behavior" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.antlr.tomps.constraints.ParserRuleSource_Constraints" file="ParserRuleSource_Constraints.java">

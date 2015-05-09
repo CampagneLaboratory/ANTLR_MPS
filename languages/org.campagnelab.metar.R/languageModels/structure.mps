@@ -43,18 +43,18 @@
   </registry>
   <node concept="1TIwiD" id="5mPDeVwiJFd">
     <property role="TrG5h" value="Prog" />
+    <node concept="1TJgyj" id="14grA08Vlmy" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiJFe">
     <property role="TrG5h" value="ProgramProg" />
     <property role="OYydz" value="Program" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="5mPDeVwiJFd" resolve="Prog" />
-    <node concept="1TJgyj" id="5mPDeVwiJFn" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expressions" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPap">
     <property role="TrG5h" value="Expr" />
