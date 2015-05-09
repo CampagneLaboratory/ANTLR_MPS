@@ -7,10 +7,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.List;
-import jetbrains.mps.internal.collections.runtime.IterableUtils;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.internal.collections.runtime.ISelector;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import java.util.ArrayList;
@@ -29,13 +26,7 @@ public class Mapper_Behavior {
     return AlternativeMapper_Behavior.call_visitorReturnConcept_558881339892896625(SNodeOperations.cast(SNodeOperations.getParent(thisNode), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, "org.campagnelab.antlr.tomps.structure.AlternativeMapper")));
   }
   public static void call_linkDeclarationsForConceptInterface_4068410015139836194(final SNode thisNode, final List<SNode> links, SNode concept) {
-    if (LOG.isInfoEnabled()) {
-      LOG.info("adding links:" + IterableUtils.join(ListSequence.fromList(links).select(new ISelector<SNode, String>() {
-        public String select(SNode it) {
-          return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, 0xf98052f333L, "role"));
-        }
-      }), " "));
-    }
+    // <node> 
     ListSequence.fromList(links).addSequence(ListSequence.fromList(SLinkOperations.getChildren(concept, MetaAdapterFactory.getContainmentLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x1103553c5ffL, 0xf979c3ba6bL, "linkDeclaration"))));
     ListSequence.fromList(BehaviorReflection.invokeVirtual((Class<List<SNode>>) ((Class) Object.class), concept, "virtual_getImmediateSuperconcepts_1222430305282", new Object[]{})).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
@@ -60,13 +51,7 @@ public class Mapper_Behavior {
   public static List<SNode> call_linkDeclarations_4068410015139474010(final SNode thisNode, SNode concept) {
     final List<SNode> links = new ArrayList<SNode>();
     do {
-      if (LOG.isInfoEnabled()) {
-        LOG.info("adding links:" + IterableUtils.join(ListSequence.fromList(links).select(new ISelector<SNode, String>() {
-          public String select(SNode it) {
-            return SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086aL, 0xf98052f333L, "role"));
-          }
-        }), " "));
-      }
+      // <node> 
       ListSequence.fromList(links).addSequence(ListSequence.fromList(SLinkOperations.getChildren(concept, MetaAdapterFactory.getContainmentLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x1103553c5ffL, 0xf979c3ba6bL, "linkDeclaration"))));
       ListSequence.fromList(SLinkOperations.getChildren(concept, MetaAdapterFactory.getContainmentLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, 0x110358d693eL, "implements"))).visitAll(new IVisitor<SNode>() {
         public void visit(SNode iconcept) {
