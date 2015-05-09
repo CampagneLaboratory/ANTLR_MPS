@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-3zdcprmedc8fav44zap1396coib5wmu">
+<dependencies version="2" modelHash="-72u9thln9tutex126v4r13bzp8yhcse">
   <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
   <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
@@ -25,7 +25,7 @@
   <dep model="r:d6ed95b0-0023-42ab-bb27-99fdde507c48(org.campagnelab.antlr.tomps.structure)" hash="7jpulsezdbh9d8ndu8t5hv1g9tjtaz4" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="-77sy6xhjavqcj7zabmxjwdba0x2o622" />
   <dep model="r:fc76aa36-3cff-41c7-b94b-eee0e8341932(jetbrains.mps.internal.collections.runtime)" hash="5535r32jwwfmtrdtdx118lb0ijmrsuo" />
-  <common hash="3lubiz7pemdcibpxqihis5zan9fww53" dependsOnNodes="true">
+  <common hash="-6spyhw39lq3uldzk1wz81xu40t1doc1" dependsOnNodes="true">
     <dep root="1096804516885659630" />
     <dep root="1096804516885659635" />
     <dep root="1096804516885678769" />
@@ -73,6 +73,7 @@
   <source id="558881339893084427" name="reduce_ConvertToMPS" hash="-8kr4mpi1448avkhde8nw1f2g49amo31">
     <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902e9(jetbrains.mps.lang.generator.generator.baseLanguage.template.main@generator)" />
   </source>
   <source id="5381624775491836178" name="ReduceParserRuleSource" hash="-3ifr6ot9ag290gf9mffkbjv6diu1rzn">
     <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
@@ -83,7 +84,7 @@
   <source id="2860118060024666827" name="reduce_PropertyDestination" hash="2fxn3ed5tqvuarx07ysm3sp9gq6ppz2">
     <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
   </source>
-  <source id="2860118060024775109" name="reduce_LinkDestination" hash="-525n6sm8ptil1ni8ccdt0ttb5m4035h">
+  <source id="2860118060024775109" name="reduce_LinkDestination" hash="-3e46ml36x98focm5k11dreer5rkc3wf">
     <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
   </source>
   <source id="1096804516885659630" name="ParserLexerElement" hash="-5qn2q5tegx475ci4djf7am5vd2ka0k">
@@ -95,7 +96,7 @@
   <source id="1096804516885678769" name="case_ParserRuleRef" hash="2tkmwa255emrtsnlw7cezxren1dhipd">
     <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
   </source>
-  <source id="2919715501614062732" name="AddChildren" hash="-4p87fhkdv7spwe0h21117ixv015fce8">
+  <source id="2919715501614062732" name="AddChildren" hash="5pzfkk07h8j4lv7xr7qfwan9i88dync">
     <dep model="r:00000000-0000-4000-0000-011c895902e8(jetbrains.mps.lang.generator.structure)" />
   </source>
   <source id="7571208821975872371" name="ReduceLexerRuleSource" hash="3fdxz2u9n19impjnpz0ycsqyerfrtgv">

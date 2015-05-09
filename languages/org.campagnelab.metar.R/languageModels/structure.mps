@@ -158,11 +158,29 @@
     <property role="TrG5h" value="BodyExpr" />
     <property role="OYydz" value="body" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyj" id="3ft5eLKDehD" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3ft5eLKDg7m" resolve="Exprlist" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaI">
     <property role="TrG5h" value="IfExpr" />
     <property role="OYydz" value="if" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyj" id="14grA09L5NV" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
+    <node concept="1TJgyj" id="14grA09L5OO" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaJ">
     <property role="TrG5h" value="IfElseExpr" />
@@ -305,6 +323,15 @@
     <node concept="1TJgyi" id="14grA08BCRe" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ft5eLKDg7m">
+    <property role="TrG5h" value="Exprlist" />
+    <node concept="1TJgyj" id="3ft5eLKDg7n" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
     </node>
   </node>
 </model>
