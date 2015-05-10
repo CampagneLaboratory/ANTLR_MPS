@@ -1708,6 +1708,36 @@
       <ref role="gaaFa" to="6q58:5mPDeVwiPaJ" resolve="IfElseExpr" />
       <ref role="34cEr5" node="5mPDeVwiP90" />
       <ref role="3c7peZ" node="36CgDdK4Lx6" resolve="expr:" />
+      <node concept="vgRe2" id="1AEWcufLkAC" role="vgRep">
+        <node concept="F0E5f" id="1AEWcufLkSW" role="10yyU7">
+          <property role="2JxzpS" value="body" />
+          <property role="TgrDL" value="1" />
+          <ref role="F0lT1" node="14grA09LkaP" resolve="body" />
+        </node>
+        <node concept="F5cYx" id="1AEWcufLkUq" role="F5cX0">
+          <ref role="F5cBE" to="6q58:1AEWcufLkT7" />
+        </node>
+      </node>
+      <node concept="vgRe2" id="1AEWcufLkUs" role="vgRep">
+        <node concept="F0E5f" id="1AEWcufLkU_" role="10yyU7">
+          <property role="2JxzpS" value="condition" />
+          <property role="TgrDL" value="1" />
+          <ref role="F0lT1" node="14grA09Lj3a" resolve="condition" />
+        </node>
+        <node concept="F5cYx" id="1AEWcufLkUB" role="F5cX0">
+          <ref role="F5cBE" to="6q58:1AEWcufLkT6" />
+        </node>
+      </node>
+      <node concept="vgRe2" id="1AEWcufLkUD" role="vgRep">
+        <node concept="F0E5f" id="1AEWcufLkUP" role="10yyU7">
+          <property role="2JxzpS" value="alternative" />
+          <property role="TgrDL" value="1" />
+          <ref role="F0lT1" node="14grA09Lkba" resolve="alternative" />
+        </node>
+        <node concept="F5cYx" id="1AEWcufLkUR" role="F5cX0">
+          <ref role="F5cBE" to="6q58:1AEWcufLkUh" />
+        </node>
+      </node>
     </node>
     <node concept="3c7pc5" id="5mPDeVwiP9p" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;('for' '(' ID 'in' expr ')' expr)&#10;" />

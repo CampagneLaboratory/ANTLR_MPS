@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="8yosw4nvemkve6q2arko37mfq8fypar">
+<dependencies version="2" modelHash="-c6h8ws8ebk2zl9411xlvtzranw8yixf">
   <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" hash="3fyiqhtyu9fdn3b1geb5x1v0fve8a7y" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="19uchsffy2fbhy8fxadw6t0s4o36pge" />
   <dep model="r:54b4b70b-9af5-414f-8d8d-548b74ba599c(org.campagnelab.antlr.tomps.editor)" hash="-biciybsk5qybdtjjoy1m2aek3pnoxq0" />
-  <dep model="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)" hash="-cr6ezvzxu9devo59jedflb4v9umxnqi" />
+  <dep model="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)" hash="-5kijhzfl9aectcwm4q1vgfqrnzghz25" />
   <dep model="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)" hash="4je1plbfv53yin9gf6gshgidkbfrwzu" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="-afok4i31abohs3f5rk0sqlnvuruthqa" />
   <dep model="r:d363f102-ad41-4d6a-8901-8bbfa0aef5f9(org.campagnelab.antlr.tomps.actions)" hash="-acqbjtqt3z5eey7obnyvy6aompmzw0v" />

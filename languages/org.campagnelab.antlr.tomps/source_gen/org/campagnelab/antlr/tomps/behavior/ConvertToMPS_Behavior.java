@@ -45,16 +45,12 @@ public class ConvertToMPS_Behavior {
   }
   public static Scope virtual_getScope_3734116213129936182(SNode thisNode, SNode kind, SNode child) {
     if (kind == MetaAdapterFactory.getConcept(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, "jetbrains.mps.lang.structure.structure.ConceptDeclaration").getDeclarationNode()) {
-      if (LOG.isInfoEnabled()) {
-        LOG.info("scope: kind=" + kind);
-      }
+      // <node> 
 
       List<SNode> concepts = ListSequence.fromList(new ArrayList<SNode>());
       for (SNode c : ListSequence.fromList(ConvertToMPS_Behavior.call_getLanguage_7627187573640238110(thisNode).getConceptDeclarations())) {
         ListSequence.fromList(concepts).addElement(((SNode) c));
-        if (LOG.isInfoEnabled()) {
-          LOG.info("adding " + c.getName());
-        }
+        // <node> 
       }
       return ListScope.forNamedElements(concepts);
     }
