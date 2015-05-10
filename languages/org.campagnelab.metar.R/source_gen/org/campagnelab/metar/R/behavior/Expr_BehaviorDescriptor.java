@@ -4,7 +4,7 @@ package org.campagnelab.metar.R.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 
-public class Expr_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
+public abstract class Expr_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
   public Expr_BehaviorDescriptor() {
   }
   @Override

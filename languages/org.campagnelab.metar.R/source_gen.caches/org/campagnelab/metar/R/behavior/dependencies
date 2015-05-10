@@ -39,7 +39,6 @@
     <classNode dependClassName="org.campagnelab.metar.R.behavior.ElementAccessExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.EmptyExprlist_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.EmptyLine_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.Exprlist_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.FalseLiteralExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.FloatLiteralExpr_BehaviorDescriptor" />

@@ -21,6 +21,11 @@
         <child id="1229604057031924987" name="condition" index="oP3ar" />
         <child id="1229604057031925044" name="body" index="oP3dk" />
       </concept>
+      <concept id="6176023809880707759" name="org.campagnelab.metar.R.structure.IfElseExpr" flags="ng" index="2PZJp1">
+        <child id="1849555336890240657" name="else" index="2mrVTm" />
+        <child id="1849555336890240583" name="body" index="2mrVU0" />
+        <child id="1849555336890240582" name="condition" index="2mrVU1" />
+      </concept>
       <concept id="6176023809880707756" name="org.campagnelab.metar.R.structure.FunctionCallExpr" flags="ng" index="2PZJp2">
         <child id="3737166271524886452" name="id" index="134Gdo" />
         <child id="3737166271524886450" name="parameters" index="134Gdu" />
@@ -29,12 +34,11 @@
         <child id="3737166271522071657" name="list" index="13uv25" />
       </concept>
       <concept id="6176023809880707754" name="org.campagnelab.metar.R.structure.AssignmentOperatorExpr" flags="ng" index="2PZJp4" />
-      <concept id="6176023809880707750" name="org.campagnelab.metar.R.structure.AndExpr" flags="ng" index="2PZJp8" />
+      <concept id="6176023809880707755" name="org.campagnelab.metar.R.structure.FunctionExpr" flags="ng" index="2PZJp5" />
       <concept id="6176023809880707748" name="org.campagnelab.metar.R.structure.ComparisonExpr" flags="ng" index="2PZJpa" />
       <concept id="6176023809880707749" name="org.campagnelab.metar.R.structure.NotExpr" flags="ng" index="2PZJpb">
         <child id="1849555336877107648" name="expr" index="2nlx$7" />
       </concept>
-      <concept id="6176023809880707745" name="org.campagnelab.metar.R.structure.USER_OPExpr" flags="ng" index="2PZJpf" />
       <concept id="6176023809880707770" name="org.campagnelab.metar.R.structure.IntLiteralExpr" flags="ng" index="2PZJpk">
         <property id="1229604057012663654" name="value" index="pzxG6" />
       </concept>
@@ -47,7 +51,6 @@
         <child id="3737166271524034477" name="body" index="137Wd1" />
         <child id="3737166271524034493" name="list" index="137Wdh" />
       </concept>
-      <concept id="6176023809880707737" name="org.campagnelab.metar.R.structure.Expr" flags="ng" index="2PZJpR" />
       <concept id="6176023809880685262" name="org.campagnelab.metar.R.structure.ProgramProg" flags="ng" index="2PZPSw" />
       <concept id="6176023809880685261" name="org.campagnelab.metar.R.structure.Prog" flags="ng" index="2PZPSz">
         <child id="1229604057017832866" name="expressions" index="pZjJ2" />
@@ -126,6 +129,7 @@
         </node>
       </node>
     </node>
+    <node concept="3cU4HJ" id="1_qnSjlVs_V" role="pZjJ2" />
     <node concept="2PZJp0" id="1AEWcufMko3" role="pZjJ2">
       <node concept="2PZJp2" id="1AEWcufMko4" role="oP3ar">
         <node concept="2PZJpb" id="1AEWcufMko5" role="134Gdo">
@@ -329,17 +333,42 @@
         </node>
       </node>
     </node>
-    <node concept="3cU4HJ" id="1_qnSjlIdZ$" role="pZjJ2" />
+    <node concept="2PZJp4" id="1_qnSjlL_Qf" role="pZjJ2">
+      <property role="13t2AJ" value="=" />
+      <node concept="2PZJp5" id="1_qnSjlLC27" role="2v3moI" />
+      <node concept="2PZJpp" id="1_qnSjlLBZO" role="2v3mow">
+        <property role="TrG5h" value="a" />
+      </node>
+    </node>
+    <node concept="3cU4HJ" id="1_qnSjlLC2a" role="pZjJ2" />
     <node concept="2PZJp0" id="1_qnSjlKi4A" role="pZjJ2">
-      <node concept="2PZJp8" id="1_qnSjlKi6T" role="oP3ar">
-        <property role="13t2AJ" value="&amp;&amp;" />
-        <node concept="2PZJpR" id="1_qnSjlKi6V" role="2v3moI" />
-        <node concept="2PZJpf" id="1_qnSjlKi9i" role="2v3mow">
-          <node concept="2PZJpR" id="1_qnSjlKi9k" role="2v3moI" />
-          <node concept="2PZJpR" id="1_qnSjlKi9m" role="2v3mow" />
+      <node concept="2PZJp3" id="1_qnSjlVsrY" role="oP3dk">
+        <node concept="13u1kU" id="1_qnSjlVss0" role="13uv25">
+          <node concept="2PZJpk" id="1_qnSjlVss6" role="13u1kV">
+            <property role="pzxG6" value="1" />
+          </node>
         </node>
       </node>
-      <node concept="2PZJpR" id="1_qnSjlKi4E" role="oP3dk" />
+      <node concept="2v3moz" id="1_qnSjlUrUE" role="oP3ar">
+        <property role="13t2AJ" value="&amp;&amp;" />
+        <node concept="2PZJoG" id="1_qnSjlUrUQ" role="2v3moI" />
+        <node concept="2PZJoJ" id="1_qnSjlUrUN" role="2v3mow">
+          <property role="pzIeI" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="2PZJp1" id="1_qnSjlVsus" role="pZjJ2">
+      <node concept="2PZJp3" id="1_qnSjlVswX" role="2mrVU0">
+        <node concept="13u1kU" id="1_qnSjlVswZ" role="13uv25">
+          <node concept="2PZJoJ" id="1_qnSjlVsx3" role="13u1kV">
+            <property role="pzIeI" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="2PZJoJ" id="1_qnSjlVswU" role="2mrVU1">
+        <property role="pzIeI" value="true" />
+      </node>
+      <node concept="2PZJoG" id="1_qnSjlVsx5" role="2mrVTm" />
     </node>
     <node concept="2PZJp0" id="1AEWcufMkpl" role="pZjJ2">
       <node concept="2PZJpa" id="1AEWcufMkpm" role="oP3ar">
