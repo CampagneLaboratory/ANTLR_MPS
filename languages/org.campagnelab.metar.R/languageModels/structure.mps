@@ -101,6 +101,7 @@
   <node concept="1TIwiD" id="5mPDeVwiPaw">
     <property role="TrG5h" value="ColonExpr" />
     <property role="OYydz" value="Colon" />
+    <property role="34LRSv" value=":" />
     <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPax">
@@ -142,6 +143,7 @@
   <node concept="1TIwiD" id="5mPDeVwiPaB">
     <property role="TrG5h" value="OrExpr" />
     <property role="OYydz" value="Or" />
+    <property role="34LRSv" value="|" />
     <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaC">
@@ -152,6 +154,7 @@
   <node concept="1TIwiD" id="5mPDeVwiPaD">
     <property role="TrG5h" value="TildeExpr" />
     <property role="OYydz" value="Tilde" />
+    <property role="34LRSv" value="~" />
     <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaE">
@@ -237,6 +240,7 @@
   <node concept="1TIwiD" id="5mPDeVwiPaK">
     <property role="TrG5h" value="ForExpr" />
     <property role="OYydz" value="for" />
+    <property role="34LRSv" value="for" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
     <node concept="1TJgyj" id="3ft5eLKKHuX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -263,7 +267,14 @@
   <node concept="1TIwiD" id="5mPDeVwiPaM">
     <property role="TrG5h" value="RepeatExpr" />
     <property role="OYydz" value="repeat" />
+    <property role="34LRSv" value="repeat" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyj" id="1_qnSjlVW36" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaN">
     <property role="TrG5h" value="HelpExpr" />
@@ -278,6 +289,7 @@
   <node concept="1TIwiD" id="5mPDeVwiPaP">
     <property role="TrG5h" value="BreakExpr" />
     <property role="OYydz" value="break" />
+    <property role="34LRSv" value="break" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaQ">
