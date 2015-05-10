@@ -431,11 +431,7 @@
     <property role="TrG5h" value="reduce_ConvertToMPS" />
     <node concept="3clFbW" id="14grA09BIpX" role="jymVt">
       <node concept="3cqZAl" id="14grA09BIpZ" role="3clF45" />
-      <node concept="3Tm1VV" id="14grA09BIq0" role="1B3o_S">
-        <node concept="2ZBi8u" id="14grA09Dy4p" role="lGtFl">
-          <ref role="2rW$FS" node="14grA09Dycg" resolve="CONSTRUCTOR" />
-        </node>
-      </node>
+      <node concept="3Tm1VV" id="14grA09BIq0" role="1B3o_S" />
       <node concept="3clFbS" id="14grA09BIq1" role="3clF47">
         <node concept="XkiVB" id="14grA09BLli" role="3cqZAp">
           <ref role="37wK5l" to="kgkk:~AbstractParseTreeVisitor.&lt;init&gt;()" resolve="AbstractParseTreeVisitor" />
