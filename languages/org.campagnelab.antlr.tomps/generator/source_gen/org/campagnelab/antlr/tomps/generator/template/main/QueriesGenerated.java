@@ -59,7 +59,7 @@ public class QueriesGenerated {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x69d936b00a0eba02L, 0x69d936b00a0eba03L, "concept"));
   }
   public static Object referenceMacro_GetReferent_558881339902213637(final ReferenceMacroContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17e92154L, "returns"));
+    return AlternativeMapper_Behavior.call_visitorReturnConcept_558881339892896625(_context.getNode());
   }
   public static Object referenceMacro_GetReferent_6247096756522584080(final ReferenceMacroContext _context) {
     return "subConceptPrefix";
@@ -77,7 +77,7 @@ public class QueriesGenerated {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17e92154L, "returns"));
   }
   public static Object referenceMacro_GetReferent_8933086517774776060(final ReferenceMacroContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17e92154L, "returns"));
+    return AlternativeMapper_Behavior.call_visitorReturnConcept_558881339892896625(_context.getNode());
   }
   public static Object referenceMacro_GetReferent_1096804516885722969(final ReferenceMacroContext _context) {
     String parserName = SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, 0x2884e9c786d8d369L, "parserCanonicalClassName"));

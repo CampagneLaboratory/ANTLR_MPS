@@ -542,7 +542,7 @@
   </node>
   <node concept="3dkpOd" id="5qM9mr9JOBA">
     <property role="TrG5h" value="DefineLabel" />
-    <ref role="2ZfgGC" to="ubjp:6cuUYchcH_A" resolve="ParserRuleRef" />
+    <ref role="2ZfgGC" to="ubjp:6cuUYchcHx3" resolve="ParserRuleBlock" />
     <node concept="2Sbjvc" id="5qM9mr9JOBB" role="2ZfgGD">
       <node concept="3clFbS" id="5qM9mr9JOBC" role="2VODD2">
         <node concept="3cpWs8" id="5qM9mr9K3rU" role="3cqZAp">

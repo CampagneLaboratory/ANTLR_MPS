@@ -88,6 +88,10 @@
     <property role="TrG5h" value="UnaryOperatorExpr" />
     <property role="OYydz" value="UnaryOperator" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyi" id="7FGhCGSAVMK" role="1TKVEl">
+      <property role="TrG5h" value="operator" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaw">
     <property role="TrG5h" value="ColonExpr" />
@@ -118,6 +122,12 @@
     <property role="TrG5h" value="NotExpr" />
     <property role="OYydz" value="Not" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyj" id="1AEWcueZeB0" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaA">
     <property role="TrG5h" value="AndExpr" />
@@ -161,7 +171,8 @@
     <node concept="1TJgyj" id="3ft5eLKNXuO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="id" />
-      <ref role="20lvS9" node="5mPDeVwiPaR" resolve="Identifier" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
     </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaH">
@@ -366,6 +377,7 @@
   </node>
   <node concept="1TIwiD" id="3ft5eLKNXvb">
     <property role="TrG5h" value="Sublist" />
+    <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
     <node concept="1TJgyj" id="3ft5eLKOdNx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expressions" />

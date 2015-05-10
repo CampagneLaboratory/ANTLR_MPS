@@ -91,7 +91,7 @@
       <unit at="7,0,21,0" name="org.campagnelab.ANTLR.behavior.StringLiteral_BehaviorDescriptor" />
     </file>
     <file name="ToTextOutput_BehaviorDescriptor.java">
-      <unit at="6,0,8,0" name="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
+      <unit at="7,0,10,0" name="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
     </file>
     <file name="TokenRef_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.TokenRef_BehaviorDescriptor" />

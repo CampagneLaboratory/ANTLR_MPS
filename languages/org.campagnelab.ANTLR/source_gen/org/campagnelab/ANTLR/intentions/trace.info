@@ -180,7 +180,7 @@
   </root>
   <root nodeRef="r:e1d4c225-523b-4e33-a0ab-b970dbb75eba(org.campagnelab.ANTLR.intentions)/6247096756517947878">
     <file name="DefineLabel_Intention.java">
-      <node id="6247096756517947878" at="28,30,29,59" concept="8" />
+      <node id="6247096756517947878" at="28,30,29,61" concept="8" />
       <node id="6247096756517947878" at="31,35,32,25" concept="8" />
       <node id="6247096756517947878" at="34,41,35,68" concept="8" />
       <node id="6247096756517947878" at="37,37,38,35" concept="8" />
@@ -223,7 +223,7 @@
       <node id="6247096756517947878" at="65,0,72,0" concept="6" trace="parameter#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/List;" />
       <node id="6247096756517947878" at="55,0,65,0" concept="6" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
       <scope id="6247096756517947878" at="26,34,26,34" />
-      <scope id="6247096756517947878" at="28,30,29,59" />
+      <scope id="6247096756517947878" at="28,30,29,61" />
       <scope id="6247096756517947878" at="31,35,32,25" />
       <scope id="6247096756517947878" at="34,41,35,68" />
       <scope id="6247096756517947878" at="37,37,38,35" />

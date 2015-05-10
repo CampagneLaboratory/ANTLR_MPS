@@ -426,12 +426,21 @@
       <ref role="2rTdP9" to="3elq:6CrG2UA1xI2" resolve="ConvertToMPS" />
       <ref role="2rZz_L" to="tpee:6LFqxSRBTg8" resolve="MethodDeclaration" />
     </node>
+    <node concept="2rT7sh" id="mR$BK_aYz8" role="2rTMjI">
+      <property role="TrG5h" value="CONVERTER_CONSTRUCTOR" />
+      <ref role="2rTdP9" to="3elq:6CrG2UA1xI2" resolve="ConvertToMPS" />
+      <ref role="2rZz_L" to="tpee:fzclF84" resolve="ConstructorDeclaration" />
+    </node>
   </node>
   <node concept="312cEu" id="v1yTSnUZ4b">
     <property role="TrG5h" value="reduce_ConvertToMPS" />
     <node concept="3clFbW" id="14grA09BIpX" role="jymVt">
       <node concept="3cqZAl" id="14grA09BIpZ" role="3clF45" />
-      <node concept="3Tm1VV" id="14grA09BIq0" role="1B3o_S" />
+      <node concept="3Tm1VV" id="14grA09BIq0" role="1B3o_S">
+        <node concept="2ZBi8u" id="mR$BK_b1hj" role="lGtFl">
+          <ref role="2rW$FS" node="mR$BK_aYz8" resolve="CONVERTER_CONSTRUCTOR" />
+        </node>
+      </node>
       <node concept="3clFbS" id="14grA09BIq1" role="3clF47">
         <node concept="XkiVB" id="14grA09BLli" role="3cqZAp">
           <ref role="37wK5l" to="kgkk:~AbstractParseTreeVisitor.&lt;init&gt;()" resolve="AbstractParseTreeVisitor" />
@@ -876,8 +885,8 @@
                             <node concept="3clFbF" id="v1yTSotNS7" role="3cqZAp">
                               <node concept="2OqwBi" id="v1yTSotNS8" role="3clFbG">
                                 <node concept="30H73N" id="v1yTSotNSa" role="2Oq$k0" />
-                                <node concept="3TrEf2" id="v1yTSotQMv" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="3elq:v1yTSnUi5k" />
+                                <node concept="2qgKlT" id="4JX7pxM9fSA" role="2OqNvi">
+                                  <ref role="37wK5l" to="k4hm:v1yTSnUhdL" resolve="visitorReturnConcept" />
                                 </node>
                               </node>
                             </node>
@@ -1327,8 +1336,8 @@
                         <node concept="3clFbF" id="7JSGHIZMZrY" role="3cqZAp">
                           <node concept="2OqwBi" id="7JSGHIZMZrZ" role="3clFbG">
                             <node concept="30H73N" id="7JSGHIZMZs0" role="2Oq$k0" />
-                            <node concept="3TrEf2" id="7JSGHIZMZs1" role="2OqNvi">
-                              <ref role="3Tt5mk" to="3elq:v1yTSnUi5k" />
+                            <node concept="2qgKlT" id="4JX7pxM9cyK" role="2OqNvi">
+                              <ref role="37wK5l" to="k4hm:v1yTSnUhdL" resolve="visitorReturnConcept" />
                             </node>
                           </node>
                         </node>
