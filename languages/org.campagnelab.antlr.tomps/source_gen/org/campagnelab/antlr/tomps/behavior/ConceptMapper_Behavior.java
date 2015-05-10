@@ -17,6 +17,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import org.apache.log4j.Logger;
@@ -179,36 +180,40 @@ public class ConceptMapper_Behavior {
       LOG.info("visiting ruleRef");
     }
     final String ruleRefName = SPropertyOperations.getString(SLinkOperations.getTarget(ruleRef, MetaAdapterFactory.getReferenceLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d966L, 0x631eebe31132d967L, "rule")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+    final Wrappers._T<String> c = new Wrappers._T<String>();
     SNode cellModel = BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(altMapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e1882f807L, "map"))).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode mapper) {
         if (LOG.isInfoEnabled()) {
           LOG.info("Testing source:" + BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}) + " looking:" + ruleRefName);
         }
-        return eq_z4rl0_a0b0a0a0a0b0a2a51(BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}), ruleRefName);
+        c.value = SPropertyOperations.getString_def(SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7ddL, 0x32ac4b93a6b7ec8L, "cardinality"), "0..1");
+        return eq_z4rl0_a0c0a0a0a0b0a3a51(BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}), ruleRefName);
       }
-    }), MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")), "virtual_cellModel_1849555336881449838", new Object[]{});
+    }), MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")), "virtual_cellModel_1849555336881449838", new Object[]{c.value});
     if (cellModel != null) {
       return cellModel;
     }
-    return _quotation_createNode_z4rl0_a4a41(ruleRefName);
+    return _quotation_createNode_z4rl0_a5a41(ruleRefName);
   }
   public static SNode call_cellModel_1849555336887504686(SNode thisNode, SNode ruleRef, SNode altMapper) {
     if (LOG.isInfoEnabled()) {
       LOG.info("visiting lexerRuleRef");
     }
     final String ruleRefName = SPropertyOperations.getString(SLinkOperations.getTarget(ruleRef, MetaAdapterFactory.getReferenceLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a890ef9eL, 0x175f2668a890ef9fL, "rule")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+    final Wrappers._T<String> c = new Wrappers._T<String>();
     SNode cellModel = BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(altMapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e1882f807L, "map"))).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode mapper) {
         if (LOG.isInfoEnabled()) {
           LOG.info("Testing source:" + BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}) + " looking:" + ruleRefName);
         }
-        return eq_z4rl0_a0b0a0a0a0b0a2a61(BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}), ruleRefName);
+        c.value = SPropertyOperations.getString_def(SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7ddL, 0x32ac4b93a6b7ec8L, "cardinality"), "0..1");
+        return eq_z4rl0_a0c0a0a0a0b0a3a61(BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}), ruleRefName);
       }
-    }), MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")), "virtual_cellModel_1849555336881449838", new Object[]{});
+    }), MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")), "virtual_cellModel_1849555336881449838", new Object[]{c.value});
     if (cellModel != null) {
       return cellModel;
     }
-    return _quotation_createNode_z4rl0_a4a51(ruleRefName);
+    return _quotation_createNode_z4rl0_a5a51(ruleRefName);
   }
   public static SNode call_cellModel_1849555336879378070(SNode thisNode, SNode literal, SNode altMapper) {
     if (LOG.isInfoEnabled()) {
@@ -221,18 +226,20 @@ public class ConceptMapper_Behavior {
     if (LOG.isInfoEnabled()) {
       LOG.info("visiting labeledElement");
     }
+    final Wrappers._T<String> c = new Wrappers._T<String>();
     SNode cellModel = BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(altMapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e1882f807L, "map"))).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode mapper) {
         if (LOG.isInfoEnabled()) {
           LOG.info("Testing source:" + BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}) + " looking:" + SPropertyOperations.getString(labeledElement, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
         }
-        return eq_z4rl0_a0b0a0a0a0b0a1a81(BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}), SPropertyOperations.getString(labeledElement, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+        c.value = SPropertyOperations.getString_def(SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7ddL, 0x32ac4b93a6b7ec8L, "cardinality"), "0..1");
+        return eq_z4rl0_a0c0a0a0a0b0a2a81(BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}), SPropertyOperations.getString(labeledElement, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
       }
-    }), MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")), "virtual_cellModel_1849555336881449838", new Object[]{});
+    }), MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")), "virtual_cellModel_1849555336881449838", new Object[]{c.value});
     if (cellModel != null) {
       return cellModel;
     }
-    return _quotation_createNode_z4rl0_a3a71(SPropertyOperations.getString(labeledElement, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    return _quotation_createNode_z4rl0_a4a71(SPropertyOperations.getString(labeledElement, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
   }
   public static SNode call_cellModel_1849555336880419944(final SNode thisNode, SNode sequence, final SNode altMapper) {
     if (LOG.isInfoEnabled()) {
@@ -280,14 +287,14 @@ public class ConceptMapper_Behavior {
     quotedNode_1.addChild(MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eaff2517L, 0xf9eaff2518L, "childCellModel"), quotedNode_2);
     return quotedNode_1;
   }
-  private static SNode _quotation_createNode_z4rl0_a4a41(Object parameter_1) {
+  private static SNode _quotation_createNode_z4rl0_a5a41(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
     quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eb01232eL, "jetbrains.mps.lang.editor.structure.CellModel_Constant"), null, null, false);
     SNodeAccessUtil.setProperty(quotedNode_2, MetaAdapterFactory.getProperty(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eb01232eL, 0xf9eb01232fL, "text"), (String) parameter_1);
     return quotedNode_2;
   }
-  private static SNode _quotation_createNode_z4rl0_a4a51(Object parameter_1) {
+  private static SNode _quotation_createNode_z4rl0_a5a51(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
     quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eb01232eL, "jetbrains.mps.lang.editor.structure.CellModel_Constant"), null, null, false);
@@ -301,7 +308,7 @@ public class ConceptMapper_Behavior {
     SNodeAccessUtil.setProperty(quotedNode_2, MetaAdapterFactory.getProperty(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eb01232eL, 0xf9eb01232fL, "text"), (String) parameter_1);
     return quotedNode_2;
   }
-  private static SNode _quotation_createNode_z4rl0_a3a71(Object parameter_1) {
+  private static SNode _quotation_createNode_z4rl0_a4a71(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
     quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eb01232eL, "jetbrains.mps.lang.editor.structure.CellModel_Constant"), null, null, false);
@@ -314,13 +321,13 @@ public class ConceptMapper_Behavior {
   private static boolean neq_z4rl0_a0a0a0a0a0d0h(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
   }
-  private static boolean eq_z4rl0_a0b0a0a0a0b0a2a51(Object a, Object b) {
+  private static boolean eq_z4rl0_a0c0a0a0a0b0a3a51(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean eq_z4rl0_a0b0a0a0a0b0a2a61(Object a, Object b) {
+  private static boolean eq_z4rl0_a0c0a0a0a0b0a3a61(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean eq_z4rl0_a0b0a0a0a0b0a1a81(Object a, Object b) {
+  private static boolean eq_z4rl0_a0c0a0a0a0b0a2a81(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }

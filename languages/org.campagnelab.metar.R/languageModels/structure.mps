@@ -11,6 +11,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -189,6 +190,7 @@
   <node concept="1TIwiD" id="5mPDeVwiPaI">
     <property role="TrG5h" value="IfExpr" />
     <property role="OYydz" value="if" />
+    <property role="34LRSv" value="if" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
     <node concept="1TJgyj" id="14grA09L5NV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -206,6 +208,7 @@
   <node concept="1TIwiD" id="5mPDeVwiPaJ">
     <property role="TrG5h" value="IfElseExpr" />
     <property role="OYydz" value="ifElse" />
+    <property role="34LRSv" value="if else" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
     <node concept="1TJgyj" id="1AEWcufLkT6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -386,6 +389,10 @@
   </node>
   <node concept="1TIwiD" id="3ft5eLKDg7m">
     <property role="TrG5h" value="Exprlist" />
+    <node concept="1TJgyi" id="1AEWcufQz8S" role="1TKVEl">
+      <property role="TrG5h" value="separator" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="3ft5eLKDg7n" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expressions" />
@@ -399,7 +406,7 @@
     <node concept="1TJgyj" id="3ft5eLKOdNx" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expressions" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
     </node>
   </node>
@@ -407,6 +414,10 @@
     <property role="TrG5h" value="EmptyExprlist" />
     <property role="OYydz" value="empty" />
     <ref role="1TJDcQ" node="3ft5eLKNXvb" resolve="Sublist" />
+  </node>
+  <node concept="1TIwiD" id="1_qnSjlGxjF">
+    <property role="TrG5h" value="EmptyLine" />
+    <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
   </node>
 </model>
 

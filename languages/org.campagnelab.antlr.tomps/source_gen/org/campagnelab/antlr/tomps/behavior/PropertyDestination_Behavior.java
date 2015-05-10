@@ -25,7 +25,7 @@ public class PropertyDestination_Behavior {
   public static SNode virtual_type_6247096756518626823(SNode thisNode) {
     return BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x27b12e38d7577b90L, 0x27b12e38d7577b91L, "to")), MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086bL, 0xfc26f42fe5L, "dataType")), "virtual_toBaseLanguageType_1213877229718", new Object[]{});
   }
-  public static SNode virtual_cellModel_1849555336881449838(SNode thisNode) {
+  public static SNode virtual_cellModel_1849555336881449838(SNode thisNode, String cardinality) {
     if (LOG.isInfoEnabled()) {
       LOG.info("visiting destination (property)");
     }

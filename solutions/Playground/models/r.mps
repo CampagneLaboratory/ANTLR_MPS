@@ -29,10 +29,12 @@
         <child id="3737166271522071657" name="list" index="13uv25" />
       </concept>
       <concept id="6176023809880707754" name="org.campagnelab.metar.R.structure.AssignmentOperatorExpr" flags="ng" index="2PZJp4" />
+      <concept id="6176023809880707750" name="org.campagnelab.metar.R.structure.AndExpr" flags="ng" index="2PZJp8" />
       <concept id="6176023809880707748" name="org.campagnelab.metar.R.structure.ComparisonExpr" flags="ng" index="2PZJpa" />
       <concept id="6176023809880707749" name="org.campagnelab.metar.R.structure.NotExpr" flags="ng" index="2PZJpb">
         <child id="1849555336877107648" name="expr" index="2nlx$7" />
       </concept>
+      <concept id="6176023809880707745" name="org.campagnelab.metar.R.structure.USER_OPExpr" flags="ng" index="2PZJpf" />
       <concept id="6176023809880707770" name="org.campagnelab.metar.R.structure.IntLiteralExpr" flags="ng" index="2PZJpk">
         <property id="1229604057012663654" name="value" index="pzxG6" />
       </concept>
@@ -45,6 +47,7 @@
         <child id="3737166271524034477" name="body" index="137Wd1" />
         <child id="3737166271524034493" name="list" index="137Wdh" />
       </concept>
+      <concept id="6176023809880707737" name="org.campagnelab.metar.R.structure.Expr" flags="ng" index="2PZJpR" />
       <concept id="6176023809880685262" name="org.campagnelab.metar.R.structure.ProgramProg" flags="ng" index="2PZPSw" />
       <concept id="6176023809880685261" name="org.campagnelab.metar.R.structure.Prog" flags="ng" index="2PZPSz">
         <child id="1229604057017832866" name="expressions" index="pZjJ2" />
@@ -55,6 +58,7 @@
       <concept id="3737166271522079190" name="org.campagnelab.metar.R.structure.Exprlist" flags="ng" index="13u1kU">
         <child id="3737166271522079191" name="expressions" index="13u1kV" />
       </concept>
+      <concept id="1826877622977697003" name="org.campagnelab.metar.R.structure.EmptyLine" flags="ng" index="3cU4HJ" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -325,11 +329,17 @@
         </node>
       </node>
     </node>
-    <node concept="2PZJoJ" id="1AEWcufMkpj" role="pZjJ2">
-      <property role="pzIeI" value="true" />
-    </node>
-    <node concept="2PZJoJ" id="1AEWcufMkpk" role="pZjJ2">
-      <property role="pzIeI" value="true" />
+    <node concept="3cU4HJ" id="1_qnSjlIdZ$" role="pZjJ2" />
+    <node concept="2PZJp0" id="1_qnSjlKi4A" role="pZjJ2">
+      <node concept="2PZJp8" id="1_qnSjlKi6T" role="oP3ar">
+        <property role="13t2AJ" value="&amp;&amp;" />
+        <node concept="2PZJpR" id="1_qnSjlKi6V" role="2v3moI" />
+        <node concept="2PZJpf" id="1_qnSjlKi9i" role="2v3mow">
+          <node concept="2PZJpR" id="1_qnSjlKi9k" role="2v3moI" />
+          <node concept="2PZJpR" id="1_qnSjlKi9m" role="2v3mow" />
+        </node>
+      </node>
+      <node concept="2PZJpR" id="1_qnSjlKi4E" role="oP3dk" />
     </node>
     <node concept="2PZJp0" id="1AEWcufMkpl" role="pZjJ2">
       <node concept="2PZJpa" id="1AEWcufMkpm" role="oP3ar">

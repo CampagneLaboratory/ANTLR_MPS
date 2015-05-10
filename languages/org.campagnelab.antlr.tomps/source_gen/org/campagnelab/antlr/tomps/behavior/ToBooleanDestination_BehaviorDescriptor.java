@@ -7,8 +7,8 @@ import org.jetbrains.mps.openapi.model.SNode;
 public class ToBooleanDestination_BehaviorDescriptor extends Destination_BehaviorDescriptor implements IToConverter_BehaviorDescriptor {
   public ToBooleanDestination_BehaviorDescriptor() {
   }
-  public SNode virtual_cellModel_1849555336881449838(SNode thisNode) {
-    return ToBooleanDestination_Behavior.virtual_cellModel_1849555336881449838(thisNode);
+  public SNode virtual_cellModel_1849555336881449838(SNode thisNode, String cardinality) {
+    return ToBooleanDestination_Behavior.virtual_cellModel_1849555336881449838(thisNode, cardinality);
   }
   public String virtual_name_2860118060023810449(SNode thisNode) {
     return ToBooleanDestination_Behavior.virtual_name_2860118060023810449(thisNode);

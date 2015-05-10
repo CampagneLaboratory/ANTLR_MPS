@@ -7,8 +7,8 @@ import org.jetbrains.mps.openapi.model.SNode;
 public class PropertyDestination_BehaviorDescriptor extends Destination_BehaviorDescriptor {
   public PropertyDestination_BehaviorDescriptor() {
   }
-  public SNode virtual_cellModel_1849555336881449838(SNode thisNode) {
-    return PropertyDestination_Behavior.virtual_cellModel_1849555336881449838(thisNode);
+  public SNode virtual_cellModel_1849555336881449838(SNode thisNode, String cardinality) {
+    return PropertyDestination_Behavior.virtual_cellModel_1849555336881449838(thisNode, cardinality);
   }
   public String virtual_name_2860118060023810449(SNode thisNode) {
     return PropertyDestination_Behavior.virtual_name_2860118060023810449(thisNode);
