@@ -1234,6 +1234,24 @@
       <ref role="gaaFa" to="6q58:5mPDeVwiPaq" resolve="ElementAccessExpr" />
       <ref role="34cEr5" node="5mPDeVwiP90" />
       <ref role="3c7peZ" node="36CgDdK4Luh" resolve="expr:" />
+      <node concept="vgRe2" id="1_qnSjm12Qt" role="vgRep">
+        <node concept="10APa$" id="1_qnSjm13ak" role="10yyU7">
+          <property role="2JxzpS" value="expr" />
+          <ref role="10APC3" node="36CgDdK50U6" />
+        </node>
+        <node concept="F5cYx" id="1_qnSjm13ar" role="F5cX0">
+          <ref role="F5cBE" to="6q58:1_qnSjm13am" />
+        </node>
+      </node>
+      <node concept="vgRe2" id="1_qnSjm13at" role="vgRep">
+        <node concept="10APa$" id="1_qnSjm13aA" role="10yyU7">
+          <property role="2JxzpS" value="sublist" />
+          <ref role="10APC3" node="50lwYX0Kke0" />
+        </node>
+        <node concept="F5cYx" id="1_qnSjm13aC" role="F5cX0">
+          <ref role="F5cBE" to="6q58:1_qnSjm13ao" />
+        </node>
+      </node>
     </node>
     <node concept="3c7pc5" id="5mPDeVwiP94" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;(expr '[' sublist ']')&#10;" />
@@ -1241,6 +1259,24 @@
       <ref role="34cEr5" node="5mPDeVwiP90" />
       <ref role="gaaFa" to="6q58:5mPDeVwiPar" resolve="ListAccessExpr" />
       <ref role="3c7peZ" node="36CgDdK4Luo" resolve="expr:" />
+      <node concept="vgRe2" id="1_qnSjm13b2" role="vgRep">
+        <node concept="F5cYx" id="1_qnSjm13W8" role="F5cX0">
+          <ref role="F5cBE" to="6q58:1_qnSjm13gx" />
+        </node>
+        <node concept="10APa$" id="1_qnSjm13We" role="10yyU7">
+          <property role="2JxzpS" value="expr" />
+          <ref role="10APC3" node="36CgDdK50ST" />
+        </node>
+      </node>
+      <node concept="vgRe2" id="1_qnSjm13b5" role="vgRep">
+        <node concept="F5cYx" id="1_qnSjm13Wa" role="F5cX0">
+          <ref role="F5cBE" to="6q58:1_qnSjm13gz" />
+        </node>
+        <node concept="10APa$" id="1_qnSjm13Wc" role="10yyU7">
+          <property role="2JxzpS" value="sublist" />
+          <ref role="10APC3" node="50lwYX0Kke7" />
+        </node>
+      </node>
     </node>
     <node concept="3c7pc5" id="5mPDeVwiP95" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;(expr ('::'&#10;':::') expr)&#10;" />
@@ -1593,6 +1629,15 @@
       <ref role="34cEr5" node="5mPDeVwiP90" />
       <ref role="gaaFa" to="6q58:5mPDeVwiPaC" resolve="UnaryTildeExpr" />
       <ref role="3c7peZ" node="36CgDdK4Lwg" resolve="expr:" />
+      <node concept="vgRe2" id="1_qnSjm34qX" role="vgRep">
+        <node concept="10APa$" id="1_qnSjm34r3" role="10yyU7">
+          <property role="2JxzpS" value="expr" />
+          <ref role="10APC3" node="36CgDdK50PQ" />
+        </node>
+        <node concept="F5cYx" id="1_qnSjm34r7" role="F5cX0">
+          <ref role="F5cBE" to="6q58:1_qnSjm34r5" />
+        </node>
+      </node>
     </node>
     <node concept="3c7pc5" id="5mPDeVwiP9i" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;(expr '~' expr)&#10;" />
@@ -1847,6 +1892,15 @@
       <ref role="gaaFa" to="6q58:5mPDeVwiPaN" resolve="HelpExpr" />
       <ref role="3c7peZ" node="36CgDdK4Lxz" resolve="expr:" />
       <ref role="34cEr5" node="5mPDeVwiP90" />
+      <node concept="vgRe2" id="1_qnSjm34RT" role="vgRep">
+        <node concept="10APa$" id="1_qnSjm34RZ" role="10yyU7">
+          <property role="2JxzpS" value="expr" />
+          <ref role="10APC3" node="36CgDdK50RL" />
+        </node>
+        <node concept="F5cYx" id="1_qnSjm34S1" role="F5cX0">
+          <ref role="F5cBE" to="6q58:1_qnSjm34RR" />
+        </node>
+      </node>
     </node>
     <node concept="3c7pc5" id="5mPDeVwiP9t" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;'next'&#10;" />
@@ -1868,6 +1922,15 @@
       <ref role="3c7peZ" node="36CgDdK4LxF" resolve="expr:" />
       <ref role="34cEr5" node="5mPDeVwiP90" />
       <ref role="gaaFa" to="6q58:5mPDeVwiPaQ" resolve="ParenthesizedExpr" />
+      <node concept="vgRe2" id="1_qnSjm34S5" role="vgRep">
+        <node concept="10APa$" id="1_qnSjm34Sb" role="10yyU7">
+          <property role="2JxzpS" value="expr" />
+          <ref role="10APC3" node="36CgDdK50Ut" />
+        </node>
+        <node concept="F5cYx" id="1_qnSjm34Sd" role="F5cX0">
+          <ref role="F5cBE" to="6q58:1_qnSjm34S3" />
+        </node>
+      </node>
     </node>
     <node concept="3c7pc5" id="5mPDeVwiP9w" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;ID&#10;" />

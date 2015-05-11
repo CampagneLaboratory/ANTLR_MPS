@@ -69,11 +69,35 @@
     <property role="TrG5h" value="ElementAccessExpr" />
     <property role="OYydz" value="ElementAccess" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyj" id="1_qnSjm13am" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
+    <node concept="1TJgyj" id="1_qnSjm13ao" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sublist" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3ft5eLKNXvb" resolve="Sublist" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPar">
     <property role="TrG5h" value="ListAccessExpr" />
     <property role="OYydz" value="ListAccess" />
+    <property role="34LRSv" value="[" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyj" id="1_qnSjm13gx" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
+    <node concept="1TJgyj" id="1_qnSjm13gz" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="indices" />
+      <ref role="20lvS9" node="3ft5eLKNXvb" resolve="Sublist" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPas">
     <property role="TrG5h" value="ColonsExpr" />
@@ -151,6 +175,12 @@
     <property role="TrG5h" value="UnaryTildeExpr" />
     <property role="OYydz" value="UnaryTilde" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyj" id="1_qnSjm34r5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaD">
     <property role="TrG5h" value="TildeExpr" />
@@ -292,6 +322,11 @@
     <property role="TrG5h" value="HelpExpr" />
     <property role="OYydz" value="help" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyj" id="1_qnSjm34RR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaO">
     <property role="TrG5h" value="NextExpr" />
@@ -308,6 +343,11 @@
     <property role="TrG5h" value="ParenthesizedExpr" />
     <property role="OYydz" value="parenthesized" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyj" id="1_qnSjm34S3" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaR">
     <property role="TrG5h" value="Identifier" />
