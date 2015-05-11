@@ -3,12 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="b283f144-ab8b-47c6-9ed5-c8f24c9c43e5" name="org.campagnelab.metar.R.functions" version="-1" />
+    <use id="d6782141-eafa-4cf7-a85d-1229abdb1152" name="org.campagnelab.ANTLR" version="-1" />
+    <use id="3b58810c-8431-4bbb-99ea-b4671e02dd13" name="org.campagnelab.metar.R" version="-1" />
   </languages>
   <imports>
     <import index="l9mf" ref="b283f144-ab8b-47c6-9ed5-c8f24c9c43e5/f:java_stub#b283f144-ab8b-47c6-9ed5-c8f24c9c43e5#org.campagnelab.antlr.r.functions(org.campagnelab.metar.R.functions/org.campagnelab.antlr.r.functions@java_stub)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="6q58" ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)" implicit="true" />
     <import index="9pzz" ref="r:7c61d32c-8a71-4a4c-8ef2-924ba52bdef4(org.campagnelab.metar.R.functions.structure)" implicit="true" />
   </imports>
   <registry>
@@ -141,13 +142,38 @@
     <property role="1zNsMP" value="org.campagnelab.metar.R.functions" />
     <property role="2In3EI" value="org.campagnelab.antlr.r.functions.RParser" />
     <ref role="3c7qJ7" node="16FggLC9o_z" resolve="RFunctions" />
+    <node concept="3c7pc5" id="7BS5aCD4eyx" role="3c7peX">
+      <property role="gfBJI" value="&#9;|&#9;(left=expr ('&lt;-'&#10;'&lt;&lt;-'&#10;'='&#10;'-&gt;'&#10;'-&gt;&gt;'&#10;':=') right=expr)&#10;" />
+      <property role="gfBJK" value="expr:expr&lt;-&lt;&lt;-=-&gt;-&gt;&gt;:=expr" />
+      <ref role="34cEr5" node="7BS5aCD2OkV" />
+      <ref role="3c7peZ" node="16FggLC9CeI" resolve="expr:" />
+      <ref role="gaaFa" to="6q58:5qM9mr9JOd5" resolve="BinaryOperator" />
+      <node concept="vgRe2" id="7BS5aCD4fZ3" role="vgRep">
+        <node concept="F0E5f" id="7BS5aCD4fZc" role="10yyU7">
+          <property role="2JxzpS" value="left" />
+          <ref role="F0lT1" node="7BS5aCD4fO9" resolve="left" />
+        </node>
+        <node concept="F5cYx" id="7BS5aCD4gOC" role="F5cX0">
+          <ref role="F5cBE" to="6q58:5qM9mr9JOd6" />
+        </node>
+      </node>
+      <node concept="vgRe2" id="7BS5aCD4g9z" role="vgRep">
+        <node concept="F0E5f" id="7BS5aCD4g9M" role="10yyU7">
+          <property role="2JxzpS" value="right" />
+          <ref role="F0lT1" node="7BS5aCD4fOI" resolve="right" />
+        </node>
+        <node concept="F5cYx" id="7BS5aCD4gOF" role="F5cX0">
+          <ref role="F5cBE" to="6q58:5qM9mr9JOd8" />
+        </node>
+      </node>
+    </node>
     <node concept="1zPSMM" id="7BS5aCD2Obm" role="1zPSMS">
       <ref role="1zPSMN" to="9pzz:16FggLCmgzR" resolve="Prog" />
       <ref role="1zPSMP" node="16FggLC9C0l" resolve="prog" />
     </node>
     <node concept="1zPSMM" id="7BS5aCD2OkV" role="1zPSMS">
-      <ref role="1zPSMN" to="9pzz:16FggLCa5g4" resolve="Expr" />
       <ref role="1zPSMP" node="16FggLC9C8G" resolve="expr" />
+      <ref role="1zPSMN" to="9pzz:7BS5aCD4guD" resolve="Expr" />
     </node>
     <node concept="1zPSMM" id="7BS5aCD2OkY" role="1zPSMS">
       <ref role="1zPSMN" to="9pzz:16FggLCa6yV" resolve="FormalParameters" />
@@ -177,7 +203,6 @@
       <property role="gfBJI" value="&#9;&#9;(param+=form ((',' param+=form)))&#10;" />
       <property role="gfBJK" value="formlist:form,form" />
       <ref role="34cEr5" node="7BS5aCD2OkY" />
-      <ref role="gaaFa" to="9pzz:16FggLCa6yV" resolve="FormalParameters" />
       <ref role="3c7peZ" node="16FggLC9Cif" resolve="formlist:" />
       <node concept="vgRe2" id="7BS5aCD2Pw4" role="vgRep">
         <node concept="F0E5f" id="7BS5aCD2Pwb" role="10yyU7">
@@ -195,7 +220,6 @@
       <property role="gfBJK" value="form:ID" />
       <ref role="3c7peZ" node="16FggLC9CiV" resolve="form:" />
       <ref role="34cEr5" node="7BS5aCD2Ol2" />
-      <ref role="gaaFa" to="9pzz:7BS5aCD2OuH" resolve="FormalParameter" />
       <node concept="vgRe2" id="7BS5aCD2RlS" role="vgRep">
         <node concept="FeAmk" id="7BS5aCD2RlY" role="10yyU7">
           <property role="2JxzpS" value="ID" />
@@ -204,33 +228,6 @@
         </node>
         <node concept="3KT_mC" id="7BS5aCD2Rm0" role="F5cX0">
           <ref role="3KT_mD" to="tpck:h0TrG11" resolve="name" />
-        </node>
-      </node>
-    </node>
-    <node concept="3c7pc5" id="7BS5aCD2Rli" role="3c7peX">
-      <property role="gfBJI" value="&#9;|&#9;(ID '=' expr)&#10;" />
-      <property role="gfBJK" value="form:ID=expr" />
-      <ref role="3c7peZ" node="16FggLC9CiX" resolve="form:" />
-      <ref role="34cEr5" node="7BS5aCD2Ol2" />
-      <ref role="gaaFa" to="9pzz:7BS5aCD2OuH" resolve="FormalParameter" />
-      <node concept="vgRe2" id="7BS5aCD2Rm2" role="vgRep">
-        <node concept="FeAmk" id="7BS5aCD2Rm8" role="10yyU7">
-          <property role="2JxzpS" value="ID" />
-          <property role="TgrDL" value="1" />
-          <ref role="FeAmj" node="16FggLC9RCt" />
-        </node>
-        <node concept="3KT_mC" id="7BS5aCD2Rma" role="F5cX0">
-          <ref role="3KT_mD" to="tpck:h0TrG11" resolve="name" />
-        </node>
-      </node>
-      <node concept="vgRe2" id="7BS5aCD2Rmc" role="vgRep">
-        <node concept="10APa$" id="7BS5aCD2Rml" role="10yyU7">
-          <property role="2JxzpS" value="expr" />
-          <property role="TgrDL" value="1" />
-          <ref role="10APC3" node="16FggLC9R_f" />
-        </node>
-        <node concept="3KT_mC" id="7BS5aCD2Rmn" role="F5cX0">
-          <ref role="3KT_mD" to="9pzz:7BS5aCD2PFI" resolve="defaultValue" />
         </node>
       </node>
     </node>
@@ -748,12 +745,16 @@
         </node>
         <node concept="1M9qTG" id="16FggLC9CeI" role="1Mb3aa">
           <property role="TrG5h" value="expr:" />
+          <property role="2zsUtJ" value="&lt;-" />
           <node concept="1Mb3e_" id="16FggLC9CeJ" role="1M9qTN">
-            <node concept="1Mb3a5" id="16FggLC9RFY" role="1Mb3a8">
-              <property role="2sqUGl" value="false" />
-              <property role="2sqU3E" value="false" />
-              <property role="2sqUKs" value="false" />
-              <ref role="1Mb3a4" node="16FggLC9C8G" resolve="expr" />
+            <node concept="gtF4r" id="7BS5aCD4fO9" role="1Mb3a8">
+              <property role="TrG5h" value="left" />
+              <node concept="1Mb3a5" id="16FggLC9RFY" role="gt$ML">
+                <property role="2sqUGl" value="false" />
+                <property role="2sqU3E" value="false" />
+                <property role="2sqUKs" value="false" />
+                <ref role="1Mb3a4" node="16FggLC9C8G" resolve="expr" />
+              </node>
             </node>
             <node concept="1Mb3e_" id="16FggLC9CeL" role="1Mb3a8">
               <node concept="1Mb3ex" id="16FggLC9CeM" role="1Mb3a8">
@@ -795,11 +796,14 @@
                 </node>
               </node>
             </node>
-            <node concept="1Mb3a5" id="16FggLC9R_r" role="1Mb3a8">
-              <property role="2sqUGl" value="false" />
-              <property role="2sqU3E" value="false" />
-              <property role="2sqUKs" value="false" />
-              <ref role="1Mb3a4" node="16FggLC9C8G" resolve="expr" />
+            <node concept="gtF4r" id="7BS5aCD4fOI" role="1Mb3a8">
+              <property role="TrG5h" value="right" />
+              <node concept="1Mb3a5" id="16FggLC9R_r" role="gt$ML">
+                <property role="2sqUGl" value="false" />
+                <property role="2sqU3E" value="false" />
+                <property role="2sqUKs" value="false" />
+                <ref role="1Mb3a4" node="16FggLC9C8G" resolve="expr" />
+              </node>
             </node>
           </node>
         </node>

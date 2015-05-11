@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="6q58" ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -42,11 +43,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="16FggLCa5g4">
-    <property role="TrG5h" value="Expr" />
-    <property role="3GE5qa" value="" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
   <node concept="1TIwiD" id="16FggLCa6yV">
     <property role="TrG5h" value="FormalParameters" />
     <property role="3GE5qa" value="" />
@@ -63,7 +59,7 @@
     <property role="OYydz" value="Function" />
     <property role="34LRSv" value="function" />
     <property role="3GE5qa" value="" />
-    <ref role="1TJDcQ" node="16FggLCa5g4" resolve="Expr" />
+    <ref role="1TJDcQ" to="6q58:5mPDeVwiPap" resolve="Expr" />
     <node concept="PrWs8" id="16FggLCacjK" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -94,6 +90,29 @@
     </node>
     <node concept="PrWs8" id="7BS5aCD2PFK" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7BS5aCD4guD">
+    <property role="TrG5h" value="Expr" />
+  </node>
+  <node concept="1TIwiD" id="5qM9mr9JOd5">
+    <property role="TrG5h" value="BinaryOperator" />
+    <ref role="1TJDcQ" node="7BS5aCD4guD" resolve="Expr" />
+    <node concept="1TJgyi" id="3ft5eLKEjP3" role="1TKVEl">
+      <property role="TrG5h" value="operator" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="5qM9mr9JOd6" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="left" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="6q58:5mPDeVwiPap" resolve="Expr" />
+    </node>
+    <node concept="1TJgyj" id="5qM9mr9JOd8" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="right" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="6q58:5mPDeVwiPap" resolve="Expr" />
     </node>
   </node>
 </model>
