@@ -1,3 +1,333 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<debug-info />
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BreakStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="8,0,24,0" name="org.campagnelab.metar.R.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:94f9fbfd-8735-4bd3-9dc2-31b0eaf8abca(org.campagnelab.metar.R.typesystem)/1499760628228416019">
+    <file name="IdMustBeLinked_NonTypesystemRule.java">
+      <node id="1499760628228424769" at="26,187,27,611" concept="7" />
+      <node id="1499760628228441801" at="29,9,30,38" concept="7" />
+      <node id="1499760628228454146" at="33,15,34,68" concept="7" />
+      <node id="1499760628228454146" at="34,68,35,251" concept="7" />
+      <node id="1499760628228454146" at="36,17,37,150" concept="7" />
+      <node id="1499760628228454146" at="37,150,38,65" concept="3" />
+      <node id="1499760628228454146" at="38,65,39,70" concept="3" />
+      <node id="1499760628228454146" at="39,70,40,79" concept="3" />
+      <node id="1499760628228454242" at="42,15,43,24" concept="9" />
+      <node id="1499760628228458911" at="47,26,48,16" concept="1" />
+      <node id="1499760628228435731" at="50,7,51,0" concept="10" />
+      <node id="1499760628228416019" at="54,46,55,61" concept="8" />
+      <node id="1499760628228416019" at="58,5,59,130" concept="7" />
+      <node id="1499760628228416019" at="59,130,60,45" concept="8" />
+      <node id="1499760628228416019" at="63,30,64,17" concept="8" />
+      <node id="1499760628228449549" at="66,70,67,46" concept="8" />
+      <node id="1499760628228423332" at="69,55,70,43" concept="8" />
+      <node id="1499760628228416019" at="23,0,25,0" concept="2" trace="IdMustBeLinked_NonTypesystemRule#()V" />
+      <node id="1499760628228458172" at="46,9,49,9" concept="5" />
+      <node id="1499760628228416019" at="54,0,57,0" concept="6" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
+      <node id="1499760628228416019" at="63,0,66,0" concept="6" trace="overrides#()Z" />
+      <node id="1499760628228449549" at="66,0,69,0" concept="11" trace="eq_xovj1l_a0a0b0a0b0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="1499760628228423332" at="69,0,72,0" concept="11" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="1499760628228416019" at="57,68,61,5" concept="0" />
+      <node id="1499760628228454146" at="35,251,41,17" concept="0" />
+      <node id="1499760628228416019" at="57,0,63,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1499760628228454146" at="32,359,42,15" concept="0" />
+      <node id="1499760628228447065" at="31,199,44,13" concept="5" />
+      <node id="1499760628228441801" at="30,38,45,11" concept="5" />
+      <node id="1499760628228441801" at="28,51,46,9" concept="0" />
+      <node id="1499760628228434950" at="27,611,50,7" concept="4" />
+      <node id="1499760628228418148" at="25,118,52,5" concept="5" />
+      <node id="1499760628228416019" at="25,0,54,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1499760628228416019" at="23,45,23,45" />
+      <scope id="1499760628228458174" at="47,26,48,16" />
+      <scope id="1499760628228416019" at="54,46,55,61" />
+      <scope id="1499760628228416019" at="63,30,64,17" />
+      <scope id="1499760628228449549" at="66,70,67,46" />
+      <scope id="1499760628228423332" at="69,55,70,43" />
+      <scope id="1499760628228416019" at="23,0,25,0" />
+      <scope id="1499760628228416019" at="58,5,60,45">
+        <var name="b" id="1499760628228416019" />
+      </scope>
+      <scope id="1499760628228416019" at="54,0,57,0" />
+      <scope id="1499760628228416019" at="63,0,66,0" />
+      <scope id="1499760628228449549" at="66,0,69,0">
+        <var name="a" id="1499760628228449549" />
+        <var name="b" id="1499760628228449549" />
+      </scope>
+      <scope id="1499760628228423332" at="69,0,72,0">
+        <var name="str" id="1499760628228423332" />
+      </scope>
+      <scope id="1499760628228454146" at="36,17,40,79">
+        <var name="intentionProvider" id="1499760628228454146" />
+      </scope>
+      <scope id="1499760628228416019" at="57,68,61,5" />
+      <scope id="1499760628228416019" at="57,0,63,0">
+        <var name="argument" id="1499760628228416019" />
+      </scope>
+      <scope id="1499760628228454146" at="33,15,41,17">
+        <var name="_reporter_2309309498" id="1499760628228454146" />
+        <var name="errorTarget" id="1499760628228454146" />
+      </scope>
+      <scope id="1499760628228447066" at="32,359,43,24" />
+      <scope id="1499760628228441805" at="31,199,44,13" />
+      <scope id="1499760628228441801" at="29,9,45,11">
+        <var name="identifier" id="1499760628228441801" />
+      </scope>
+      <scope id="1499760628228434954" at="28,51,49,9" />
+      <scope id="1499760628228434950" at="27,611,50,7">
+        <var name="id" id="1499760628228434952" />
+      </scope>
+      <scope id="1499760628228418150" at="26,187,51,0">
+        <var name="ids" id="1499760628228424775" />
+      </scope>
+      <scope id="1499760628228416020" at="25,118,52,5" />
+      <scope id="1499760628228416019" at="25,0,54,0">
+        <var name="idRef" id="1499760628228416019" />
+        <var name="status" id="1499760628228416019" />
+        <var name="typeCheckingContext" id="1499760628228416019" />
+      </scope>
+      <unit id="1499760628228416019" at="22,0,73,0" name="org.campagnelab.metar.R.typesystem.IdMustBeLinked_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:94f9fbfd-8735-4bd3-9dc2-31b0eaf8abca(org.campagnelab.metar.R.typesystem)/1499760628228458920">
+    <file name="LinkIdByName_QuickFix.java">
+      <node id="1499760628228464148" at="14,44,15,29" concept="8" />
+      <node id="1499760628228458975" at="17,35,18,277" concept="3" />
+      <node id="1499760628228460505" at="18,277,19,214" concept="3" />
+      <node id="1499760628228458920" at="12,0,14,0" concept="2" trace="LinkIdByName_QuickFix#()V" />
+      <node id="1499760628228458920" at="14,0,17,0" concept="6" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1499760628228458920" at="17,0,21,0" concept="6" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="1499760628228458920" at="12,34,12,34" />
+      <scope id="1499760628228463830" at="14,44,15,29" />
+      <scope id="1499760628228458920" at="12,0,14,0" />
+      <scope id="1499760628228458922" at="17,35,19,214" />
+      <scope id="1499760628228458920" at="14,0,17,0">
+        <var name="node" id="1499760628228458920" />
+      </scope>
+      <scope id="1499760628228458920" at="17,0,21,0">
+        <var name="node" id="1499760628228458920" />
+      </scope>
+      <unit id="1499760628228458920" at="11,0,22,0" name="org.campagnelab.metar.R.typesystem.LinkIdByName_QuickFix" />
+    </file>
+  </root>
+  <root nodeRef="r:94f9fbfd-8735-4bd3-9dc2-31b0eaf8abca(org.campagnelab.metar.R.typesystem)/5770663561151853364">
+    <file name="ParamToVarArgs_NonTypesystemRule.java">
+      <node id="5770663561151969303" at="23,7,24,60" concept="7" />
+      <node id="5770663561151969303" at="24,60,25,245" concept="7" />
+      <node id="5770663561151969303" at="26,9,27,144" concept="7" />
+      <node id="5770663561151969303" at="27,144,28,71" concept="3" />
+      <node id="5770663561151853364" at="33,46,34,68" concept="8" />
+      <node id="5770663561151853364" at="37,5,38,130" concept="7" />
+      <node id="5770663561151853364" at="38,130,39,45" concept="8" />
+      <node id="5770663561151853364" at="42,30,43,17" concept="8" />
+      <node id="5770663561151969195" at="45,62,46,46" concept="8" />
+      <node id="5770663561151853364" at="19,0,21,0" concept="2" trace="ParamToVarArgs_NonTypesystemRule#()V" />
+      <node id="5770663561151853364" at="33,0,36,0" concept="6" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
+      <node id="5770663561151853364" at="42,0,45,0" concept="6" trace="overrides#()Z" />
+      <node id="5770663561151969195" at="45,0,48,0" concept="11" trace="eq_w84uhz_a0a0b#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="5770663561151969303" at="25,245,29,9" concept="0" />
+      <node id="5770663561151853364" at="36,68,40,5" concept="0" />
+      <node id="5770663561151853364" at="36,0,42,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5770663561151969303" at="22,192,30,7" concept="0" />
+      <node id="5770663561151918641" at="21,117,31,5" concept="5" />
+      <node id="5770663561151853364" at="21,0,33,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5770663561151853364" at="19,45,19,45" />
+      <scope id="5770663561151853364" at="33,46,34,68" />
+      <scope id="5770663561151853364" at="42,30,43,17" />
+      <scope id="5770663561151969195" at="45,62,46,46" />
+      <scope id="5770663561151853364" at="19,0,21,0" />
+      <scope id="5770663561151969303" at="26,9,28,71">
+        <var name="intentionProvider" id="5770663561151969303" />
+      </scope>
+      <scope id="5770663561151853364" at="37,5,39,45">
+        <var name="b" id="5770663561151853364" />
+      </scope>
+      <scope id="5770663561151853364" at="33,0,36,0" />
+      <scope id="5770663561151853364" at="42,0,45,0" />
+      <scope id="5770663561151969195" at="45,0,48,0">
+        <var name="a" id="5770663561151969195" />
+        <var name="b" id="5770663561151969195" />
+      </scope>
+      <scope id="5770663561151853364" at="36,68,40,5" />
+      <scope id="5770663561151969303" at="23,7,29,9">
+        <var name="_reporter_2309309498" id="5770663561151969303" />
+        <var name="errorTarget" id="5770663561151969303" />
+      </scope>
+      <scope id="5770663561151853364" at="36,0,42,0">
+        <var name="argument" id="5770663561151853364" />
+      </scope>
+      <scope id="5770663561151918642" at="22,192,30,7" />
+      <scope id="5770663561151853365" at="21,117,31,5" />
+      <scope id="5770663561151853364" at="21,0,33,0">
+        <var name="decl" id="5770663561151853364" />
+        <var name="status" id="5770663561151853364" />
+        <var name="typeCheckingContext" id="5770663561151853364" />
+      </scope>
+      <unit id="5770663561151853364" at="18,0,49,0" name="org.campagnelab.metar.R.typesystem.ParamToVarArgs_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:94f9fbfd-8735-4bd3-9dc2-31b0eaf8abca(org.campagnelab.metar.R.typesystem)/5770663561151969386">
+    <file name="ReplaceVarArgs_QuickFix.java">
+      <node id="5770663561151969399" at="12,35,13,100" concept="3" />
+      <node id="5770663561151969386" at="10,0,12,0" concept="2" trace="ReplaceVarArgs_QuickFix#()V" />
+      <node id="5770663561151969386" at="12,0,15,0" concept="6" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="5770663561151969386" at="10,36,10,36" />
+      <scope id="5770663561151969388" at="12,35,13,100" />
+      <scope id="5770663561151969386" at="10,0,12,0" />
+      <scope id="5770663561151969386" at="12,0,15,0">
+        <var name="node" id="5770663561151969386" />
+      </scope>
+      <unit id="5770663561151969386" at="9,0,16,0" name="org.campagnelab.metar.R.typesystem.ReplaceVarArgs_QuickFix" />
+    </file>
+  </root>
+  <root nodeRef="r:94f9fbfd-8735-4bd3-9dc2-31b0eaf8abca(org.campagnelab.metar.R.typesystem)/7411887369042998117">
+    <file name="MakeIdAChild_QuickFix.java">
+      <node id="7411887369043302954" at="16,44,17,29" concept="8" />
+      <node id="7411887369042999004" at="19,35,20,430" concept="3" />
+      <node id="7411887369043000815" at="20,430,21,415" concept="3" />
+      <node id="7411887369043005373" at="21,415,22,214" concept="3" />
+      <node id="7411887369042998117" at="14,0,16,0" concept="2" trace="MakeIdAChild_QuickFix#()V" />
+      <node id="7411887369042998117" at="16,0,19,0" concept="6" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="7411887369042998117" at="19,0,24,0" concept="6" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="7411887369042998117" at="14,34,14,34" />
+      <scope id="7411887369043302636" at="16,44,17,29" />
+      <scope id="7411887369042998117" at="14,0,16,0" />
+      <scope id="7411887369042998117" at="16,0,19,0">
+        <var name="node" id="7411887369042998117" />
+      </scope>
+      <scope id="7411887369042998119" at="19,35,22,214" />
+      <scope id="7411887369042998117" at="19,0,24,0">
+        <var name="node" id="7411887369042998117" />
+      </scope>
+      <unit id="7411887369042998117" at="13,0,25,0" name="org.campagnelab.metar.R.typesystem.MakeIdAChild_QuickFix" />
+    </file>
+  </root>
+  <root nodeRef="r:94f9fbfd-8735-4bd3-9dc2-31b0eaf8abca(org.campagnelab.metar.R.typesystem)/7431839982580690702">
+    <file name="check_FunctionCallExpr_NonTypesystemRule.java">
+      <node id="7431839982580754514" at="28,5,29,199" concept="7" />
+      <node id="7431839982580755069" at="30,193,31,189" concept="7" />
+      <node id="7431839982581382538" at="31,189,32,63" concept="7" />
+      <node id="7431839982580777026" at="34,43,35,694" concept="8" />
+      <node id="7431839982581383211" at="38,51,39,359" concept="3" />
+      <node id="7431839982580814121" at="39,359,40,221" concept="8" />
+      <node id="7431839982580837027" at="44,11,45,64" concept="7" />
+      <node id="7431839982580837027" at="45,64,46,260" concept="7" />
+      <node id="7431839982580837027" at="47,13,48,146" concept="7" />
+      <node id="7431839982580837027" at="48,146,49,78" concept="3" />
+      <node id="7431839982580837027" at="49,78,50,80" concept="3" />
+      <node id="7431839982580837027" at="50,80,51,60" concept="3" />
+      <node id="7431839982580837027" at="51,60,52,75" concept="3" />
+      <node id="7431839982580690702" at="59,46,60,64" concept="8" />
+      <node id="7431839982580690702" at="63,5,64,130" concept="7" />
+      <node id="7431839982580690702" at="64,130,65,45" concept="8" />
+      <node id="7431839982580690702" at="68,30,69,17" concept="8" />
+      <node id="7431839982580822857" at="71,77,72,46" concept="8" />
+      <node id="7431839982580690702" at="25,0,27,0" concept="2" trace="check_FunctionCallExpr_NonTypesystemRule#()V" />
+      <node id="7431839982580776883" at="34,0,37,0" concept="6" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="7431839982580690702" at="59,0,62,0" concept="6" trace="getApplicableConceptFQName#()Ljava/lang/String;" />
+      <node id="7431839982580690702" at="68,0,71,0" concept="6" trace="overrides#()Z" />
+      <node id="7431839982580822857" at="71,0,74,0" concept="11" trace="eq_jc8w56_a0b0a0a0a0a0a2a1a0a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="7431839982580812512" at="38,0,42,0" concept="6" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="7431839982580690702" at="62,68,66,5" concept="0" />
+      <node id="7431839982580690702" at="62,0,68,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7431839982580837027" at="46,260,53,13" concept="0" />
+      <node id="7431839982580833557" at="32,63,42,289" concept="7" />
+      <node id="7431839982580837027" at="43,34,54,11" concept="0" />
+      <node id="7431839982580836171" at="42,289,55,9" concept="5" />
+      <node id="7431839982580754514" at="29,199,56,7" concept="5" />
+      <node id="7431839982580754514" at="27,129,57,5" concept="0" />
+      <node id="7431839982580690702" at="27,0,59,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="7431839982580690702" at="25,53,25,53" />
+      <scope id="7431839982580776884" at="34,43,35,694" />
+      <scope id="7431839982580690702" at="59,46,60,64" />
+      <scope id="7431839982580690702" at="68,30,69,17" />
+      <scope id="7431839982580822857" at="71,77,72,46" />
+      <scope id="7431839982580690702" at="25,0,27,0" />
+      <scope id="7431839982580812513" at="38,51,40,221" />
+      <scope id="7431839982580690702" at="63,5,65,45">
+        <var name="b" id="7431839982580690702" />
+      </scope>
+      <scope id="7431839982580776883" at="34,0,37,0">
+        <var name="it" id="7431839982580776883" />
+      </scope>
+      <scope id="7431839982580690702" at="59,0,62,0" />
+      <scope id="7431839982580690702" at="68,0,71,0" />
+      <scope id="7431839982580822857" at="71,0,74,0">
+        <var name="a" id="7431839982580822857" />
+        <var name="b" id="7431839982580822857" />
+      </scope>
+      <scope id="7431839982580812512" at="38,0,42,0">
+        <var name="assignment" id="7431839982580812512" />
+      </scope>
+      <scope id="7431839982580690702" at="62,68,66,5" />
+      <scope id="7431839982580837027" at="47,13,52,75">
+        <var name="intentionProvider" id="7431839982580837027" />
+      </scope>
+      <scope id="7431839982580690702" at="62,0,68,0">
+        <var name="argument" id="7431839982580690702" />
+      </scope>
+      <scope id="7431839982580837027" at="44,11,53,13">
+        <var name="_reporter_2309309498" id="7431839982580837027" />
+        <var name="errorTarget" id="7431839982580837027" />
+      </scope>
+      <scope id="7431839982580836173" at="43,34,54,11" />
+      <scope id="7431839982580754518" at="30,193,55,9">
+        <var name="functionExp" id="7431839982580833563" />
+        <var name="id" id="7431839982581382544" />
+        <var name="textId" id="7431839982580755072" />
+      </scope>
+      <scope id="7431839982580754514" at="28,5,56,7">
+        <var name="idRef" id="7431839982580754514" />
+      </scope>
+      <scope id="7431839982580690703" at="27,129,57,5" />
+      <scope id="7431839982580690702" at="27,0,59,0">
+        <var name="functionCallExpr" id="7431839982580690702" />
+        <var name="status" id="7431839982580690702" />
+        <var name="typeCheckingContext" id="7431839982580690702" />
+      </scope>
+      <unit id="7431839982580776883" at="33,531,37,9" name="org.campagnelab.metar.R.typesystem.check_FunctionCallExpr_NonTypesystemRule$1" />
+      <unit id="7431839982580812512" at="37,25,42,9" name="org.campagnelab.metar.R.typesystem.check_FunctionCallExpr_NonTypesystemRule$2" />
+      <unit id="7431839982580690702" at="24,0,75,0" name="org.campagnelab.metar.R.typesystem.check_FunctionCallExpr_NonTypesystemRule" />
+    </file>
+  </root>
+  <root nodeRef="r:94f9fbfd-8735-4bd3-9dc2-31b0eaf8abca(org.campagnelab.metar.R.typesystem)/7431839982581352585">
+    <file name="BindFunction_QuickFix.java">
+      <node id="7431839982581379334" at="15,44,16,27" concept="8" />
+      <node id="7431839982581363484" at="18,35,19,236" concept="7" />
+      <node id="7431839982581363676" at="19,236,20,248" concept="3" />
+      <node id="7431839982581404728" at="20,248,21,228" concept="3" />
+      <node id="7431839982581353825" at="21,228,22,237" concept="3" />
+      <node id="7431839982581352585" at="13,0,15,0" concept="2" trace="BindFunction_QuickFix#()V" />
+      <node id="7431839982581352585" at="15,0,18,0" concept="6" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="7431839982581352585" at="18,0,24,0" concept="6" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="7431839982581352585" at="13,34,13,34" />
+      <scope id="7431839982581378586" at="15,44,16,27" />
+      <scope id="7431839982581352585" at="13,0,15,0" />
+      <scope id="7431839982581352585" at="15,0,18,0">
+        <var name="node" id="7431839982581352585" />
+      </scope>
+      <scope id="7431839982581352587" at="18,35,22,237">
+        <var name="functionId" id="7431839982581363490" />
+      </scope>
+      <scope id="7431839982581352585" at="18,0,24,0">
+        <var name="node" id="7431839982581352585" />
+      </scope>
+      <unit id="7431839982581352585" at="12,0,25,0" name="org.campagnelab.metar.R.typesystem.BindFunction_QuickFix" />
+    </file>
+  </root>
+</debug-info>
 
