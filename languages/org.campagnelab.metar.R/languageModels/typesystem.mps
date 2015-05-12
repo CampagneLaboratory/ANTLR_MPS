@@ -79,15 +79,6 @@
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
-      <concept id="6329021646629175143" name="jetbrains.mps.baseLanguage.structure.StatementCommentPart" flags="nn" index="3SKWN0">
-        <child id="6329021646629175144" name="commentedStatement" index="3SKWNf" />
-      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -273,32 +264,28 @@
                 <node concept="3clFbS" id="1jge5x_F4rd" role="Jncv$">
                   <node concept="3clFbJ" id="1jge5x_F5Hp" role="3cqZAp">
                     <node concept="3clFbS" id="1jge5x_F5Hq" role="3clFbx">
-                      <node concept="3SKdUt" id="r9xlU6E8my" role="3cqZAp">
-                        <node concept="3SKWN0" id="r9xlU6E8mz" role="3SKWNk">
-                          <node concept="2MkqsV" id="1jge5x_F7s2" role="3SKWNf">
-                            <node concept="3Cnw8n" id="1jge5x_F9E4" role="2OEOjU">
-                              <property role="ARO6o" value="true" />
-                              <ref role="QpYPw" node="1jge5x_F8AC" resolve="LinkIdByName" />
-                              <node concept="3CnSsL" id="1jge5x_F9HE" role="3Coj4f">
-                                <ref role="QkamJ" node="1jge5x_F8Bd" resolve="source" />
-                                <node concept="Jnkvi" id="r9xlU5MOWn" role="3CoRuB">
-                                  <ref role="1M0zk5" node="1jge5x_F4rb" resolve="sourceId" />
-                                </node>
-                              </node>
-                              <node concept="3CnSsL" id="1jge5x_F9I2" role="3Coj4f">
-                                <ref role="QkamJ" node="1jge5x_F8AO" resolve="target" />
-                                <node concept="1YBJjd" id="r9xlU5REX2" role="3CoRuB">
-                                  <ref role="1YBMHb" node="1jge5x_EYxc" resolve="identifier" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="1YBJjd" id="1jge5x_F7tc" role="2OEOjV">
-                              <ref role="1YBMHb" node="1jge5x_EYxc" resolve="identifier" />
-                            </node>
-                            <node concept="Xl_RD" id="1jge5x_F7sn" role="2MkJ7o">
-                              <property role="Xl_RC" value="id can be replace by reference" />
+                      <node concept="2MkqsV" id="1jge5x_F7s2" role="3cqZAp">
+                        <node concept="3Cnw8n" id="1jge5x_F9E4" role="2OEOjU">
+                          <property role="ARO6o" value="true" />
+                          <ref role="QpYPw" node="1jge5x_F8AC" resolve="LinkIdByName" />
+                          <node concept="3CnSsL" id="1jge5x_F9HE" role="3Coj4f">
+                            <ref role="QkamJ" node="1jge5x_F8Bd" resolve="source" />
+                            <node concept="Jnkvi" id="r9xlU5MOWn" role="3CoRuB">
+                              <ref role="1M0zk5" node="1jge5x_F4rb" resolve="sourceId" />
                             </node>
                           </node>
+                          <node concept="3CnSsL" id="1jge5x_F9I2" role="3Coj4f">
+                            <ref role="QkamJ" node="1jge5x_F8AO" resolve="target" />
+                            <node concept="1YBJjd" id="r9xlU5REX2" role="3CoRuB">
+                              <ref role="1YBMHb" node="1jge5x_EYxc" resolve="identifier" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1YBJjd" id="1jge5x_F7tc" role="2OEOjV">
+                          <ref role="1YBMHb" node="1jge5x_EYxc" resolve="identifier" />
+                        </node>
+                        <node concept="Xl_RD" id="1jge5x_F7sn" role="2MkJ7o">
+                          <property role="Xl_RC" value="id can be replace by reference" />
                         </node>
                       </node>
                     </node>
@@ -744,43 +731,34 @@
           </node>
           <node concept="3clFbJ" id="6szcLqHhEtb" role="3cqZAp">
             <node concept="3clFbS" id="6szcLqHhEtd" role="3clFbx">
-              <node concept="3SKdUt" id="3aFtbFyMq0I" role="3cqZAp">
-                <node concept="3SKdUq" id="3aFtbFyMq0X" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO reenable" />
-                </node>
-              </node>
-              <node concept="3SKdUt" id="3aFtbFyMfF6" role="3cqZAp">
-                <node concept="3SKWN0" id="3aFtbFyMfF7" role="3SKWNk">
-                  <node concept="2MkqsV" id="6szcLqHhEEz" role="3SKWNf">
-                    <node concept="3Cnw8n" id="6szcLqHjJE1" role="2OEOjU">
-                      <property role="ARO6o" value="true" />
-                      <ref role="QpYPw" node="6szcLqHjCy9" resolve="BindFunction" />
-                      <node concept="3CnSsL" id="6szcLqHjJJN" role="3Coj4f">
-                        <ref role="QkamJ" node="6szcLqHjCOY" resolve="functionCall" />
-                        <node concept="1YBJjd" id="6szcLqHjJK5" role="3CoRuB">
-                          <ref role="1YBMHb" node="6szcLqHh6Wh" resolve="functionCallExpr" />
-                        </node>
-                      </node>
-                      <node concept="3CnSsL" id="6szcLqHjJKh" role="3Coj4f">
-                        <ref role="QkamJ" node="6szcLqHjCyB" resolve="functionDeclaration" />
-                        <node concept="37vLTw" id="6szcLqHjJKB" role="3CoRuB">
-                          <ref role="3cqZAo" node="6szcLqHhDOr" resolve="functionExp" />
-                        </node>
-                      </node>
-                      <node concept="3CnSsL" id="6szcLqHjJMY" role="3Coj4f">
-                        <ref role="QkamJ" node="6szcLqHjCz3" resolve="id" />
-                        <node concept="37vLTw" id="6szcLqHjLvO" role="3CoRuB">
-                          <ref role="3cqZAo" node="6szcLqHjJQg" resolve="id" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1YBJjd" id="6szcLqHhEFo" role="2OEOjV">
+              <node concept="2MkqsV" id="6szcLqHhEEz" role="3cqZAp">
+                <node concept="3Cnw8n" id="6szcLqHjJE1" role="2OEOjU">
+                  <property role="ARO6o" value="true" />
+                  <ref role="QpYPw" node="6szcLqHjCy9" resolve="BindFunction" />
+                  <node concept="3CnSsL" id="6szcLqHjJJN" role="3Coj4f">
+                    <ref role="QkamJ" node="6szcLqHjCOY" resolve="functionCall" />
+                    <node concept="1YBJjd" id="6szcLqHjJK5" role="3CoRuB">
                       <ref role="1YBMHb" node="6szcLqHh6Wh" resolve="functionCallExpr" />
                     </node>
-                    <node concept="Xl_RD" id="6szcLqHhEEQ" role="2MkJ7o">
-                      <property role="Xl_RC" value="Function reference must be bound" />
+                  </node>
+                  <node concept="3CnSsL" id="6szcLqHjJKh" role="3Coj4f">
+                    <ref role="QkamJ" node="6szcLqHjCyB" resolve="functionDeclaration" />
+                    <node concept="37vLTw" id="6szcLqHjJKB" role="3CoRuB">
+                      <ref role="3cqZAo" node="6szcLqHhDOr" resolve="functionExp" />
                     </node>
                   </node>
+                  <node concept="3CnSsL" id="6szcLqHjJMY" role="3Coj4f">
+                    <ref role="QkamJ" node="6szcLqHjCz3" resolve="id" />
+                    <node concept="37vLTw" id="6szcLqHjLvO" role="3CoRuB">
+                      <ref role="3cqZAo" node="6szcLqHjJQg" resolve="id" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1YBJjd" id="6szcLqHhEFo" role="2OEOjV">
+                  <ref role="1YBMHb" node="6szcLqHh6Wh" resolve="functionCallExpr" />
+                </node>
+                <node concept="Xl_RD" id="6szcLqHhEEQ" role="2MkJ7o">
+                  <property role="Xl_RC" value="Function reference must be bound" />
                 </node>
               </node>
             </node>
