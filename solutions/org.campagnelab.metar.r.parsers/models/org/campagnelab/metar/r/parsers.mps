@@ -221,7 +221,7 @@
       <concept id="1826877622984490941" name="org.campagnelab.antlr.tomps.structure.Operator" flags="ng" index="3fgY0T">
         <property id="1826877622984490942" name="name" index="3fgY0U" />
         <property id="1826877622984490944" name="priority" index="3fgY14" />
-        <property id="1826877622985793473" name="conceptName" index="3ftW15" />
+        <reference id="1826877622985567178" name="concept" index="3fs7he" />
       </concept>
       <concept id="7627187573639526914" name="org.campagnelab.antlr.tomps.structure.ConceptMapper" flags="ng" index="1zPSMM">
         <reference id="7627187573639526915" name="concept" index="1zPSMN" />
@@ -1177,6 +1177,126 @@
     <property role="1zNsMP" value="org.campagnelab.metar.R" />
     <property role="2In3EI" value="org.campagnelab.antlr.r.complete.R2Parser" />
     <ref role="3c7qJ7" node="v1yTSnTwTB" resolve="R2" />
+    <node concept="3fgY0T" id="1_qnSjms6aG" role="3fgY2E">
+      <property role="3fgY0U" value="::" />
+      <property role="3fgY14" value="10" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSYW" resolve="DoubleColon" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aH" role="3fgY2E">
+      <property role="3fgY0U" value=":::" />
+      <property role="3fgY14" value="10" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSYX" resolve="TripleColon" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aI" role="3fgY2E">
+      <property role="3fgY0U" value="|" />
+      <property role="3fgY14" value="20" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSYY" resolve="BitwiseOr" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aJ" role="3fgY2E">
+      <property role="3fgY0U" value="||" />
+      <property role="3fgY14" value="20" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSYZ" resolve="LogicalOr" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aK" role="3fgY2E">
+      <property role="3fgY0U" value="$" />
+      <property role="3fgY14" value="20" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZ0" resolve="Dollar" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aL" role="3fgY2E">
+      <property role="3fgY0U" value="@" />
+      <property role="3fgY14" value="20" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZ1" resolve="At" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aM" role="3fgY2E">
+      <property role="3fgY0U" value="-" />
+      <property role="3fgY14" value="30" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZ2" resolve="Minus" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aN" role="3fgY2E">
+      <property role="3fgY0U" value="+" />
+      <property role="3fgY14" value="30" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZ3" resolve="Plus" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aO" role="3fgY2E">
+      <property role="3fgY0U" value="^" />
+      <property role="3fgY14" value="40" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZ4" resolve="Caret" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aP" role="3fgY2E">
+      <property role="3fgY0U" value="&gt;" />
+      <property role="3fgY14" value="50" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZ5" resolve="GreaterThan" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aQ" role="3fgY2E">
+      <property role="3fgY0U" value="&gt;=" />
+      <property role="3fgY14" value="50" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZ6" resolve="GreaterOrEqualThan" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aR" role="3fgY2E">
+      <property role="3fgY0U" value="&lt;" />
+      <property role="3fgY14" value="50" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZ7" resolve="LessThan" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aS" role="3fgY2E">
+      <property role="3fgY0U" value="&lt;=" />
+      <property role="3fgY14" value="50" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZ8" resolve="LessOrEqualThan" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aT" role="3fgY2E">
+      <property role="3fgY0U" value="==" />
+      <property role="3fgY14" value="50" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZ9" resolve="Equality" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aU" role="3fgY2E">
+      <property role="3fgY0U" value="!=" />
+      <property role="3fgY14" value="50" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZa" resolve="Difference" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aV" role="3fgY2E">
+      <property role="3fgY0U" value="&amp;" />
+      <property role="3fgY14" value="60" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZb" resolve="BitwiseAnd" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aW" role="3fgY2E">
+      <property role="3fgY0U" value="&amp;&amp;" />
+      <property role="3fgY14" value="60" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZc" resolve="LogicalAnd" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aX" role="3fgY2E">
+      <property role="3fgY0U" value="&lt;-" />
+      <property role="3fgY14" value="90" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZd" resolve="SimpleAssignment" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aY" role="3fgY2E">
+      <property role="3fgY0U" value="&lt;&lt;-" />
+      <property role="3fgY14" value="90" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZe" resolve="ForcefulAssignment" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6aZ" role="3fgY2E">
+      <property role="3fgY0U" value="=" />
+      <property role="3fgY14" value="90" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZf" resolve="EqualAssignment" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6b0" role="3fgY2E">
+      <property role="3fgY0U" value="-&gt;" />
+      <property role="3fgY14" value="90" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZg" resolve="AssignToTheRight" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6b1" role="3fgY2E">
+      <property role="3fgY0U" value="-&gt;&gt;" />
+      <property role="3fgY14" value="90" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZh" resolve="ForcefulToTheRight" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6b2" role="3fgY2E">
+      <property role="3fgY0U" value=":=" />
+      <property role="3fgY14" value="90" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZi" resolve="ColonEqual" />
+    </node>
+    <node concept="3fgY0T" id="1_qnSjms6b3" role="3fgY2E">
+      <property role="3fgY0U" value="~" />
+      <property role="3fgY14" value="90" />
+      <ref role="3fs7he" to="6q58:1_qnSjmvSZj" resolve="Tilde" />
+    </node>
     <node concept="1zPSMM" id="5mPDeVwiJvY" role="1zPSMS">
       <ref role="1zPSMP" node="36CgDdK4Li0" resolve="prog" />
       <ref role="1zPSMN" to="6q58:5mPDeVwiJFd" resolve="Prog" />
@@ -2275,126 +2395,6 @@
       <property role="gfBJK" value="value:" />
       <ref role="3c7peZ" node="3rD3ONO1zZw" resolve="sub:" />
       <ref role="gaaFa" to="6q58:4hQfa_ZrvSo" resolve="EmptySubValue" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aG" role="3fgY2E">
-      <property role="3fgY0U" value="::" />
-      <property role="3fgY14" value="10" />
-      <property role="3ftW15" value="DoubleColon" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aH" role="3fgY2E">
-      <property role="3fgY0U" value=":::" />
-      <property role="3fgY14" value="10" />
-      <property role="3ftW15" value="TripleColon" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aI" role="3fgY2E">
-      <property role="3fgY0U" value="|" />
-      <property role="3fgY14" value="20" />
-      <property role="3ftW15" value="BitwiseOr" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aJ" role="3fgY2E">
-      <property role="3fgY0U" value="||" />
-      <property role="3fgY14" value="20" />
-      <property role="3ftW15" value="LogicalOr" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aK" role="3fgY2E">
-      <property role="3fgY0U" value="$" />
-      <property role="3fgY14" value="20" />
-      <property role="3ftW15" value="Dollar" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aL" role="3fgY2E">
-      <property role="3fgY0U" value="@" />
-      <property role="3fgY14" value="20" />
-      <property role="3ftW15" value="At" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aM" role="3fgY2E">
-      <property role="3fgY0U" value="-" />
-      <property role="3fgY14" value="30" />
-      <property role="3ftW15" value="Minus" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aN" role="3fgY2E">
-      <property role="3fgY0U" value="+" />
-      <property role="3fgY14" value="30" />
-      <property role="3ftW15" value="Plus" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aO" role="3fgY2E">
-      <property role="3fgY0U" value="^" />
-      <property role="3fgY14" value="40" />
-      <property role="3ftW15" value="Caret" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aP" role="3fgY2E">
-      <property role="3fgY0U" value="&gt;" />
-      <property role="3fgY14" value="50" />
-      <property role="3ftW15" value="GreaterThan" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aQ" role="3fgY2E">
-      <property role="3fgY0U" value="&gt;=" />
-      <property role="3fgY14" value="50" />
-      <property role="3ftW15" value="GreaterOrEqualThan" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aR" role="3fgY2E">
-      <property role="3fgY0U" value="&lt;" />
-      <property role="3fgY14" value="50" />
-      <property role="3ftW15" value="LessThan" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aS" role="3fgY2E">
-      <property role="3fgY0U" value="&lt;=" />
-      <property role="3fgY14" value="50" />
-      <property role="3ftW15" value="LessOrEqualThan" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aT" role="3fgY2E">
-      <property role="3fgY0U" value="==" />
-      <property role="3fgY14" value="50" />
-      <property role="3ftW15" value="Equality" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aU" role="3fgY2E">
-      <property role="3fgY0U" value="!=" />
-      <property role="3fgY14" value="50" />
-      <property role="3ftW15" value="Difference" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aV" role="3fgY2E">
-      <property role="3fgY0U" value="&amp;" />
-      <property role="3fgY14" value="60" />
-      <property role="3ftW15" value="BitwiseAnd" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aW" role="3fgY2E">
-      <property role="3fgY0U" value="&amp;&amp;" />
-      <property role="3fgY14" value="60" />
-      <property role="3ftW15" value="LogicalAnd" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aX" role="3fgY2E">
-      <property role="3fgY0U" value="&lt;-" />
-      <property role="3fgY14" value="90" />
-      <property role="3ftW15" value="SimpleAssignment" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aY" role="3fgY2E">
-      <property role="3fgY0U" value="&lt;&lt;-" />
-      <property role="3fgY14" value="90" />
-      <property role="3ftW15" value="ForcefulAssignment" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6aZ" role="3fgY2E">
-      <property role="3fgY0U" value="=" />
-      <property role="3fgY14" value="90" />
-      <property role="3ftW15" value="EqualAssignment" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6b0" role="3fgY2E">
-      <property role="3fgY0U" value="-&gt;" />
-      <property role="3fgY14" value="90" />
-      <property role="3ftW15" value="AssignToTheRight" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6b1" role="3fgY2E">
-      <property role="3fgY0U" value="-&gt;&gt;" />
-      <property role="3fgY14" value="90" />
-      <property role="3ftW15" value="ForcefulToTheRight" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6b2" role="3fgY2E">
-      <property role="3fgY0U" value=":=" />
-      <property role="3fgY14" value="90" />
-      <property role="3ftW15" value="ColonEqual" />
-    </node>
-    <node concept="3fgY0T" id="1_qnSjms6b3" role="3fgY2E">
-      <property role="3fgY0U" value="~" />
-      <property role="3fgY14" value="90" />
-      <property role="3ftW15" value="Tilde" />
     </node>
   </node>
   <node concept="1Mbc_a" id="v1yTSnTwTB">

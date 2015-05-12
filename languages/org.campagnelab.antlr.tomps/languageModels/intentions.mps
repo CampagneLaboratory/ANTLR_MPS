@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -11,6 +12,7 @@
     <import index="5050" ref="r:e5a8b5c7-85b5-4d59-9e4e-850a142e2560(jetbrains.mps.lang.structure.intentions)" />
     <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" />
     <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" />
+    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
@@ -20,6 +22,9 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
+      <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -2217,6 +2222,47 @@
                             <ref role="3TsBF5" to="3elq:1_qnSjmbpZ1" resolve="conceptName" />
                           </node>
                         </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="1_qnSjmuSxE" role="3cqZAp">
+                    <node concept="2OqwBi" id="1_qnSjmuSAO" role="3clFbG">
+                      <node concept="1XNTG" id="1_qnSjmuSxC" role="2Oq$k0" />
+                      <node concept="liA8E" id="1_qnSjmuSOk" role="2OqNvi">
+                        <ref role="37wK5l" to="srng:~EditorContext.flushEvents():void" resolve="flushEvents" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="1_qnSjmszRi" role="3cqZAp">
+                    <node concept="37vLTI" id="1_qnSjmsAaE" role="3clFbG">
+                      <node concept="2OqwBi" id="1_qnSjmsArc" role="37vLTx">
+                        <node concept="37vLTw" id="1_qnSjmsAjU" role="2Oq$k0">
+                          <ref role="3cqZAo" node="1_qnSjmg3me" resolve="operator" />
+                        </node>
+                        <node concept="3TrcHB" id="1_qnSjmsAFQ" role="2OqNvi">
+                          <ref role="3TsBF5" to="3elq:1_qnSjm6rYY" resolve="name" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="1_qnSjms$D_" role="37vLTJ">
+                        <node concept="2OqwBi" id="1_qnSjmszYc" role="2Oq$k0">
+                          <node concept="37vLTw" id="1_qnSjmszRg" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1_qnSjmg3me" resolve="operator" />
+                          </node>
+                          <node concept="3TrEf2" id="1_qnSjms$nT" role="2OqNvi">
+                            <ref role="3Tt5mk" to="3elq:1_qnSjmayJa" />
+                          </node>
+                        </node>
+                        <node concept="3TrcHB" id="1_qnSjms_gX" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpck:gOOYy9I" resolve="alias" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="1_qnSjmvo8V" role="3cqZAp">
+                    <node concept="2OqwBi" id="1_qnSjmvo8W" role="3clFbG">
+                      <node concept="1XNTG" id="1_qnSjmvo8X" role="2Oq$k0" />
+                      <node concept="liA8E" id="1_qnSjmvo8Y" role="2OqNvi">
+                        <ref role="37wK5l" to="srng:~EditorContext.flushEvents():void" resolve="flushEvents" />
                       </node>
                     </node>
                   </node>

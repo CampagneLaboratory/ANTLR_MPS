@@ -17,31 +17,24 @@
     </breakpoint>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec7c4c8-fdb9-475d-a1c5-08cf184915b2" name="Default" comment="Add an operator section to the converter.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/ConceptMapper_Behavior.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/ConceptMapper_Behavior.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/CreateConceptAndLabelsForAlt_Intention.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/CreateConceptAndLabelsForAlt_Intention.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/CreateConceptAndLabels_Intention.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/CreateConceptAndLabels_Intention.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/CreateConcept_Intention.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/CreateConcept_Intention.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/DestinationRefMenu.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/editor/DestinationRefMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/IntentionsDescriptor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/IntentionsDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/behavior.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/behavior.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/intentions/dependencies" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/intentions/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/editor.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/editor.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen.caches/org/campagnelab/antlr/tomps/generator/template/main/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/source_gen.caches/org/campagnelab/antlr/tomps/generator/template/main/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/behavior/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/behavior/generated" />
+    <list default="true" id="1ec7c4c8-fdb9-475d-a1c5-08cf184915b2" name="Default" comment="Add intention to create operator concepts.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/BehaviorAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/BehaviorAspectDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/structure/StructureAspectDescriptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/behavior/dependencies" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/constraints/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/constraints/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/editor/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/editor/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/intentions/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen.caches/org/campagnelab/antlr/tomps/intentions/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/editor/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/editor/generated" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/structure/generated" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen.caches/org/campagnelab/metar/R/structure/generated" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/intentions.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/languageModels/intentions.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/template/main@generator.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/generator/template/main@generator.mps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.mpl" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.mpl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/solutions/org.campagnelab.metar.r.parsers/models/org/campagnelab/metar/r/parsers.mps" afterPath="$PROJECT_DIR$/solutions/org.campagnelab.metar.r.parsers/models/org/campagnelab/metar/r/parsers.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/behavior/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/languageModels/structure.mps" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/languageModels/structure.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/intentions/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/classes_gen/org/campagnelab/antlr/tomps/intentions/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/behavior/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/structure/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/classes_gen/org/campagnelab/metar/R/structure/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/behavior/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/structure/trace.info" afterPath="$PROJECT_DIR$/languages/org.campagnelab.metar.R/source_gen/org/campagnelab/metar/R/structure/trace.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
     </list>
     <ignored path="ANTLR.iws" />
@@ -80,60 +73,30 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Mapper" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.structure/Mapper">
+      <file leaf-file-name="R2" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.metar.r.parsers/org.campagnelab.metar.r.parsers/R2">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento viewPositionX="0" viewPositionY="340">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="72" />
-                    <property name="caretX" value="315" />
+                    <property name="caretXRelative" value="8" />
+                    <property name="caretX" value="155" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_role" cellNumber="0" isInList="false">
-                      <node node_reference="r:54b4b70b-9af5-414f-8d8d-548b74ba599c(org.campagnelab.antlr.tomps.editor)/1826877622989141160" />
+                    <cellInfo cellId="property_literal" cellNumber="0" isInList="false">
+                      <node node_reference="r:6422d9f5-0bb5-4d0c-a8ae-41ece862a97b(org.campagnelab.metar.r.parsers)/3578183104953784343" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="-4">
+              <inspectorMemento currentlyEditedNode="r:6422d9f5-0bb5-4d0c-a8ae-41ece862a97b(org.campagnelab.metar.r.parsers)/8857532130895052003" viewPositionX="0" viewPositionY="-4">
                 <selectionStack />
                 <errorLabels />
                 <folded />
               </inspectorMemento>
-              <node node_ref="r:54b4b70b-9af5-414f-8d8d-548b74ba599c(org.campagnelab.antlr.tomps.editor)/2860118060022703938" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LabeledElementSource" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.structure/LabeledElementSource">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="36" />
-                    <property name="caretX" value="135" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ttt6c2_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/1826877622989151139" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorLabels />
-                <folded />
-              </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="-4">
-                <selectionStack />
-                <errorLabels />
-                <folded />
-              </inspectorMemento>
-              <node node_ref="r:37023354-91d9-4c64-bbdc-c9a7e0cd2017(org.campagnelab.antlr.tomps.generator.template.main@generator)/5381624775493318158" />
             </state>
           </provider>
         </entry>
@@ -143,11 +106,21 @@
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
               <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="32" />
+                    <property name="caretX" value="135" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="SEC_property_cardinality" cellNumber="0" isInList="false">
+                      <node node_reference="r:6422d9f5-0bb5-4d0c-a8ae-41ece862a97b(org.campagnelab.metar.r.parsers)/8857532130895052003" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="-4">
+              <inspectorMemento currentlyEditedNode="r:6422d9f5-0bb5-4d0c-a8ae-41ece862a97b(org.campagnelab.metar.r.parsers)/8857532130895052003" viewPositionX="0" viewPositionY="-4">
                 <selectionStack />
                 <errorLabels />
                 <folded />
@@ -156,95 +129,234 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateConceptAndLabelsForAlt_Intention.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/CreateConceptAndLabelsForAlt_Intention.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="819" max-vertical-offset="1246">
-              <caret line="73" column="194" selection-start-line="73" selection-start-column="194" selection-end-line="73" selection-end-column="194" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateConcept_Intention.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/CreateConcept_Intention.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="917" max-vertical-offset="1344">
-              <caret line="78" column="203" selection-start-line="78" selection-start-column="203" selection-end-line="78" selection-end-column="203" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Operator_Behavior.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/behavior/Operator_Behavior.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
-              <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlternativeMapper" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.structure/AlternativeMapper">
+      <file leaf-file-name="GreaterThan" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.metar.R/org.campagnelab.metar.R.structure/GreaterThan">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
               <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretXRelative" value="80" />
-                    <property name="caretX" value="419" />
+                    <property name="caretXRelative" value="12" />
+                    <property name="caretX" value="95" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:3172cd41-bcad-4d57-92e5-868449e54828(org.campagnelab.antlr.tomps.intentions)/4992735917601526466" />
+                    <cellInfo cellId="property_conceptAlias" cellNumber="0" isInList="false">
+                      <node node_reference="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163333" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="-4">
+              <inspectorMemento currentlyEditedNode="r:6422d9f5-0bb5-4d0c-a8ae-41ece862a97b(org.campagnelab.metar.r.parsers)/8857532130895052003" viewPositionX="0" viewPositionY="-4">
                 <selectionStack />
                 <errorLabels />
                 <folded />
               </inspectorMemento>
-              <node node_ref="r:3172cd41-bcad-4d57-92e5-868449e54828(org.campagnelab.antlr.tomps.intentions)/4992735917601516978" />
+              <node node_ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163333" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Operator" pinned="false" current-in-tab="false">
-        <entry file="mps://node://org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.structure/Operator">
+      <file leaf-file-name="GreaterOrEqualThan" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.metar.R/org.campagnelab.metar.R.structure/GreaterOrEqualThan">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="51" viewPositionY="0">
+              <memento viewPositionX="0" viewPositionY="0">
                 <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellSelection">
-                    <property name="caretXRelative" value="-543" />
-                    <property name="caretX" value="0" />
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="116" />
+                    <property name="caretX" value="431" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Collection_kosqrl_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/1826877622986969855" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163334" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorLabels />
                 <folded />
               </memento>
-              <inspectorMemento viewPositionX="0" viewPositionY="-4">
+              <inspectorMemento currentlyEditedNode="r:6422d9f5-0bb5-4d0c-a8ae-41ece862a97b(org.campagnelab.metar.r.parsers)/8857532130895052003" viewPositionX="0" viewPositionY="-4">
                 <selectionStack />
                 <errorLabels />
                 <folded />
               </inspectorMemento>
-              <node node_ref="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)/1826877622986925566" />
+              <node node_ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163334" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateConceptAndLabels_Intention.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/source_gen/org/campagnelab/antlr/tomps/intentions/CreateConceptAndLabels_Intention.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="838" max-vertical-offset="1358">
-              <caret line="70" column="39" selection-start-line="70" selection-start-column="39" selection-end-line="70" selection-end-column="39" />
+      <file leaf-file-name="At" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.metar.R/org.campagnelab.metar.R.structure/At">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="108" />
+                    <property name="caretX" value="295" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163329" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:6422d9f5-0bb5-4d0c-a8ae-41ece862a97b(org.campagnelab.metar.r.parsers)/8857532130895052003" viewPositionX="0" viewPositionY="-4">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163329" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tilde" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.metar.R/org.campagnelab.metar.R.structure/Tilde">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="12" />
+                    <property name="caretX" value="95" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_conceptAlias" cellNumber="0" isInList="false">
+                      <node node_reference="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163347" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:6422d9f5-0bb5-4d0c-a8ae-41ece862a97b(org.campagnelab.metar.r.parsers)/8857532130895052003" viewPositionX="0" viewPositionY="-4">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163347" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnaryOperator" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.metar.R/org.campagnelab.metar.R.structure/UnaryOperator">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="279" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_ueqr71_a1b4a0" cellNumber="0" isInList="false">
+                      <node node_reference="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991296127" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:6422d9f5-0bb5-4d0c-a8ae-41ece862a97b(org.campagnelab.metar.r.parsers)/8857532130895052003" viewPositionX="0" viewPositionY="-4">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991296127" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Plus" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.metar.R/org.campagnelab.metar.R.structure/Plus">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="116" />
+                    <property name="caretX" value="319" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163331" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:6422d9f5-0bb5-4d0c-a8ae-41ece862a97b(org.campagnelab.metar.r.parsers)/8857532130895052003" viewPositionX="0" viewPositionY="-4">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163331" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Minus" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.metar.R/org.campagnelab.metar.R.structure/Minus">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="116" />
+                    <property name="caretX" value="327" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163330" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:6422d9f5-0bb5-4d0c-a8ae-41ece862a97b(org.campagnelab.metar.r.parsers)/8857532130895052003" viewPositionX="0" viewPositionY="-4">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163330" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LessOrEqualThan" pinned="false" current-in-tab="false">
+        <entry file="mps://node://org.campagnelab.metar.R/org.campagnelab.metar.R.structure/LessOrEqualThan">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editorTabs.TabbedEditor$TabbedEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="116" />
+                    <property name="caretX" value="407" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163336" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorLabels />
+                <folded />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:6422d9f5-0bb5-4d0c-a8ae-41ece862a97b(org.campagnelab.metar.r.parsers)/8857532130895052003" viewPositionX="0" viewPositionY="-4">
+                <selectionStack />
+                <errorLabels />
+                <folded />
+              </inspectorMemento>
+              <node node_ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/1826877622991163336" />
             </state>
           </provider>
         </entry>
@@ -617,7 +729,189 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Modules Pool">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Solutions">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Modules Pool">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Solutions">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MPS">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Modules Pool">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Solutions">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MPS">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MPS.Editor">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="stubs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Modules Pool">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Solutions">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MPS">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MPS.Editor">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="stubs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="jetbrains">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Modules Pool">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Solutions">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MPS">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MPS.Editor">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="stubs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="jetbrains">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="openapi">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Modules Pool">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Solutions">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MPS">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="MPS.Editor">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="stubs">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="jetbrains">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="openapi">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="jetbrains.mps.openapi.editor">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.metar.R.functions">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Empty">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.metar.R.functions">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.metar.R.functions.structure">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -663,7 +957,15 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps">
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.metar.R">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="org.campagnelab.metar.R.structure">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="operators">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -674,52 +976,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps#7645898506791942665">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps.generator.template.main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Empty">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="Project">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps#7645898506791942665">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="org.campagnelab.antlr.tomps.generator.template.main">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="sources">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -839,12 +1095,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.49921012" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264095" sideWeight="0.5144813" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3264095" sideWeight="0.50277996" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3249258" sideWeight="0.47738287" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.4986835" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -852,18 +1108,18 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27482128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27948305" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914045" sideWeight="0.7530279" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24907847" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24878837" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3249258" sideWeight="0.477363" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3264095" sideWeight="0.49722" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3264095" sideWeight="0.49722" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dependencies Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3249258" sideWeight="0.522637" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3249258" sideWeight="0.5226171" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -935,7 +1191,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Draft tomps mapping configuration." />
     <MESSAGE value="Preliminary support for tokens. Note that we now parse the grammar, rather than just the rules." />
     <MESSAGE value="Fully support tokens. Now determine whether to paste rules or full grammar depending on the presence of &quot;lexer grammar&quot; or &quot;parser grammar&quot; in the text being pasted." />
     <MESSAGE value="Support labeled parser elements." />
@@ -960,7 +1215,8 @@
     <MESSAGE value="Support function calls." />
     <MESSAGE value="Support list access expressions and parenthesized expressions." />
     <MESSAGE value="Add an operator section to the converter." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add an operator section to the converter." />
+    <MESSAGE value="Add intention to create operator concepts." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add intention to create operator concepts." />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://org.campagnelab.antlr.tomps#7645898506791942665/org.campagnelab.antlr.tomps.generator.template.main@generator/ParserLexerElement">
