@@ -208,9 +208,6 @@
         <child id="1177093586806" name="templateNode" index="gfFT$" />
       </concept>
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
-      <concept id="1112730859144" name="jetbrains.mps.lang.generator.structure.TemplateSwitch" flags="ig" index="jVnub">
-        <child id="1167340453568" name="reductionMappingRule" index="3aUrZf" />
-      </concept>
       <concept id="1168619357332" name="jetbrains.mps.lang.generator.structure.RootTemplateAnnotation" flags="lg" index="n94m4">
         <reference id="1168619429071" name="applicableConcept" index="n9lRv" />
       </concept>
@@ -225,7 +222,6 @@
       <concept id="5133195082121471908" name="jetbrains.mps.lang.generator.structure.LabelMacro" flags="ln" index="2ZBi8u" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
-        <property id="1167272244852" name="applyToConceptInheritors" index="36QftV" />
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
       </concept>
       <concept id="1092059087312" name="jetbrains.mps.lang.generator.structure.TemplateDeclaration" flags="ig" index="13MO4I">
@@ -1778,7 +1774,11 @@
         </node>
         <node concept="3Tqbb2" id="14grA08Z0x4" role="3clF45" />
         <node concept="3Tm1VV" id="WSCumx0Qu4" role="1B3o_S" />
-        <node concept="3clFbS" id="WSCumx0Qu5" role="3clF47" />
+        <node concept="3clFbS" id="WSCumx0Qu5" role="3clF47">
+          <node concept="3cpWs6" id="1_qnSjmodHl" role="3cqZAp">
+            <node concept="10Nm6u" id="1_qnSjmodIz" role="3cqZAk" />
+          </node>
+        </node>
       </node>
       <node concept="3clFb_" id="WSCumx0Qu6" role="jymVt">
         <property role="TrG5h" value="dummyMethod" />
@@ -2304,30 +2304,6 @@
       </node>
       <node concept="3cqZAl" id="2uLbzzntc7t" role="3clF45" />
       <node concept="3Tm1VV" id="2uLbzzntc7o" role="1B3o_S" />
-    </node>
-  </node>
-  <node concept="jVnub" id="WSCumx0RZI">
-    <property role="TrG5h" value="ParserLexerElement" />
-    <node concept="3aamgX" id="WSCumx0RZJ" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="ubjp:6cuUYchfAlZ" resolve="StringLiteral" />
-      <node concept="j$656" id="WSCumx0RZP" role="1lVwrX">
-        <ref role="v9R2y" node="WSCumx0RZN" resolve="case_StringLiteral" />
-      </node>
-    </node>
-    <node concept="3aamgX" id="WSCumx0WEF" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="ubjp:6cuUYchcH_A" resolve="ParserRuleRef" />
-      <node concept="j$656" id="WSCumx0WEN" role="1lVwrX">
-        <ref role="v9R2y" node="WSCumx0WEL" resolve="case_ParserRuleRef" />
-      </node>
-    </node>
-    <node concept="3aamgX" id="5YR6ikw8u4p" role="3aUrZf">
-      <property role="36QftV" value="true" />
-      <ref role="30HIoZ" to="ubjp:1tv9AyC$eYu" resolve="LexerRuleRef" />
-      <node concept="j$656" id="5YR6ikw8uJs" role="1lVwrX">
-        <ref role="v9R2y" node="5YR6ikw8uJq" resolve="case_LexerRuleRef" />
-      </node>
     </node>
   </node>
   <node concept="13MO4I" id="2y4Usu6U5Mc">
