@@ -78,7 +78,7 @@ public class CreateConcept_Intention implements IntentionFactory {
 
             SLinkOperations.setTarget(altMapper, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17e92154L, "returns"), ConceptMapper_Behavior.call_looupOrCreate_1826877622988760384(node, AlternativeMapper_Behavior.call_subConceptName_558881339899294434(altMapper)));
             SLinkOperations.setTarget(SLinkOperations.getTarget(altMapper, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17e92154L, "returns")), MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, 0xf979be93cfL, "extends"), SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x69d936b00a0eba02L, 0x69d936b00a0eba03L, "concept")));
-            SPropertyOperations.set(SLinkOperations.getTarget(altMapper, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17e92154L, "returns")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, 0x10d34fa226eL, "alias"), AlternativeMapper_Behavior.call_subConceptPrefix_558881339901663656(altMapper));
+            SPropertyOperations.set(SLinkOperations.getTarget(altMapper, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17e92154L, "returns")), MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x1103553c5ffL, 0x46ab0ad5826c74caL, "conceptAlias"), AlternativeMapper_Behavior.call_subConceptPrefix_558881339901663656(altMapper));
           }
         }
       });

@@ -22,9 +22,6 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
-    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
-      <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -447,8 +444,8 @@
                                 <ref role="3Tt5mk" to="3elq:v1yTSnUi5k" />
                               </node>
                             </node>
-                            <node concept="3TrcHB" id="v1yTSorFlw" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:gOOYy9I" resolve="alias" />
+                            <node concept="3TrcHB" id="r9xlU4tbZJ" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="v1yTSorGCq" role="37vLTx">
@@ -1246,8 +1243,8 @@
                                 <ref role="3Tt5mk" to="3elq:v1yTSnUi5k" />
                               </node>
                             </node>
-                            <node concept="3TrcHB" id="4l9KHP9LhSA" role="2OqNvi">
-                              <ref role="3TsBF5" to="tpck:gOOYy9I" resolve="alias" />
+                            <node concept="3TrcHB" id="r9xlU4td6c" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
                             </node>
                           </node>
                           <node concept="2OqwBi" id="4l9KHP9LhSB" role="37vLTx">
@@ -1391,8 +1388,8 @@
                       <ref role="3Tt5mk" to="3elq:v1yTSnUi5k" />
                     </node>
                   </node>
-                  <node concept="3TrcHB" id="4l9KHP9Yhbm" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:gOOYy9I" resolve="alias" />
+                  <node concept="3TrcHB" id="r9xlU4tdYi" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="4l9KHP9Yhbn" role="37vLTx">
@@ -2225,14 +2222,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbF" id="1_qnSjmuSxE" role="3cqZAp">
-                    <node concept="2OqwBi" id="1_qnSjmuSAO" role="3clFbG">
-                      <node concept="1XNTG" id="1_qnSjmuSxC" role="2Oq$k0" />
-                      <node concept="liA8E" id="1_qnSjmuSOk" role="2OqNvi">
-                        <ref role="37wK5l" to="srng:~EditorContext.flushEvents():void" resolve="flushEvents" />
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbF" id="1_qnSjmszRi" role="3cqZAp">
                     <node concept="37vLTI" id="1_qnSjmsAaE" role="3clFbG">
                       <node concept="2OqwBi" id="1_qnSjmsArc" role="37vLTx">
@@ -2252,17 +2241,9 @@
                             <ref role="3Tt5mk" to="3elq:1_qnSjmayJa" />
                           </node>
                         </node>
-                        <node concept="3TrcHB" id="1_qnSjms_gX" role="2OqNvi">
-                          <ref role="3TsBF5" to="tpck:gOOYy9I" resolve="alias" />
+                        <node concept="3TrcHB" id="r9xlU4teO8" role="2OqNvi">
+                          <ref role="3TsBF5" to="tpce:4qF2Hm2r7ja" resolve="conceptAlias" />
                         </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="1_qnSjmvo8V" role="3cqZAp">
-                    <node concept="2OqwBi" id="1_qnSjmvo8W" role="3clFbG">
-                      <node concept="1XNTG" id="1_qnSjmvo8X" role="2Oq$k0" />
-                      <node concept="liA8E" id="1_qnSjmvo8Y" role="2OqNvi">
-                        <ref role="37wK5l" to="srng:~EditorContext.flushEvents():void" resolve="flushEvents" />
                       </node>
                     </node>
                   </node>
