@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="AddOperator_BehaviorDescriptor.java">
@@ -352,7 +353,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/1229604057012669910">
     <file name="TrueLiteralExpr_Behavior.java">
       <node id="1229604057012689046" at="10,43,11,176" concept="0" />
-      <node id="1229604057012669910" at="10,0,13,0" concept="1" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1229604057012669910" at="10,0,13,0" concept="2" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="1229604057012669912" at="10,43,11,176" />
       <scope id="1229604057012669910" at="10,0,13,0">
         <var name="thisNode" id="1229604057012669910" />
@@ -363,7 +364,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/1826877622981803912">
     <file name="RepeatExpr_Behavior.java">
       <node id="1826877622981804420" at="12,43,13,380" concept="0" />
-      <node id="1826877622981803912" at="12,0,15,0" concept="1" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1826877622981803912" at="12,0,15,0" concept="2" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="1826877622981803914" at="12,43,13,380" />
       <scope id="1826877622981803912" at="12,0,15,0">
         <var name="thisNode" id="1826877622981803912" />
@@ -373,7 +374,7 @@
   </root>
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675543455950">
     <file name="DoubleColon_Behavior.java">
-      <node id="489068675543455950" at="8,0,10,0" concept="1" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="489068675543455950" at="8,0,10,0" concept="2" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="489068675543455952" at="8,43,8,43" />
       <scope id="489068675543455950" at="8,0,10,0">
         <var name="thisNode" id="489068675543455950" />
@@ -384,12 +385,67 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675546663479">
     <file name="ColonExpr_Behavior.java">
       <node id="489068675546663483" at="12,43,13,379" concept="0" />
-      <node id="489068675546663479" at="12,0,15,0" concept="1" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="489068675546663479" at="12,0,15,0" concept="2" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="489068675546663481" at="12,43,13,379" />
       <scope id="489068675546663479" at="12,0,15,0">
         <var name="thisNode" id="489068675546663479" />
       </scope>
       <unit id="489068675546663479" at="11,0,16,0" name="org.campagnelab.metar.R.behavior.ColonExpr_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675560879434">
+    <file name="BinaryOperatorExpr_Behavior.java">
+      <node id="489068675560880709" at="8,43,9,0" concept="1" />
+      <node id="489068675560879434" at="8,0,11,0" concept="2" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="489068675560879436" at="8,43,9,0" />
+      <scope id="489068675560879434" at="8,0,11,0">
+        <var name="thisNode" id="489068675560879434" />
+      </scope>
+      <unit id="489068675560879434" at="7,0,12,0" name="org.campagnelab.metar.R.behavior.BinaryOperatorExpr_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675560882917">
+    <file name="AndExpr_Behavior.java">
+      <node id="489068675560882921" at="12,43,13,384" concept="0" />
+      <node id="489068675560882917" at="12,0,15,0" concept="2" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="489068675560882919" at="12,43,13,384" />
+      <scope id="489068675560882917" at="12,0,15,0">
+        <var name="thisNode" id="489068675560882917" />
+      </scope>
+      <unit id="489068675560882917" at="11,0,16,0" name="org.campagnelab.metar.R.behavior.AndExpr_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675560885416">
+    <file name="AdditionExpr_Behavior.java">
+      <node id="489068675560885443" at="12,43,13,385" concept="0" />
+      <node id="489068675560885416" at="12,0,15,0" concept="2" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="489068675560885418" at="12,43,13,385" />
+      <scope id="489068675560885416" at="12,0,15,0">
+        <var name="thisNode" id="489068675560885416" />
+      </scope>
+      <unit id="489068675560885416" at="11,0,16,0" name="org.campagnelab.metar.R.behavior.AdditionExpr_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675560885717">
+    <file name="AssignmentOperatorExpr_Behavior.java">
+      <node id="489068675560885744" at="12,43,13,390" concept="0" />
+      <node id="489068675560885717" at="12,0,15,0" concept="2" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="489068675560885719" at="12,43,13,390" />
+      <scope id="489068675560885717" at="12,0,15,0">
+        <var name="thisNode" id="489068675560885717" />
+      </scope>
+      <unit id="489068675560885717" at="11,0,16,0" name="org.campagnelab.metar.R.behavior.AssignmentOperatorExpr_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675560885928">
+    <file name="OrExpr_Behavior.java">
+      <node id="489068675560885955" at="12,43,13,383" concept="0" />
+      <node id="489068675560885928" at="12,0,15,0" concept="2" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="489068675560885930" at="12,43,13,383" />
+      <scope id="489068675560885928" at="12,0,15,0">
+        <var name="thisNode" id="489068675560885928" />
+      </scope>
+      <unit id="489068675560885928" at="11,0,16,0" name="org.campagnelab.metar.R.behavior.OrExpr_Behavior" />
     </file>
   </root>
 </debug-info>
