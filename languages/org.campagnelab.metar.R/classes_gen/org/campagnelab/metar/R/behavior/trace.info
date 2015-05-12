@@ -4,7 +4,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root>
     <file name="AddOperator_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.AddOperator_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.AddOperator_BehaviorDescriptor" />
     </file>
     <file name="AdditionExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.AdditionExpr_BehaviorDescriptor" />
@@ -13,7 +13,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.AndExpr_BehaviorDescriptor" />
     </file>
     <file name="AssignToTheRight_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.AssignToTheRight_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.AssignToTheRight_BehaviorDescriptor" />
     </file>
     <file name="AssignmentOperatorExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.AssignmentOperatorExpr_BehaviorDescriptor" />
@@ -22,19 +22,22 @@
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.AssignmentOperator_BehaviorDescriptor" />
     </file>
     <file name="At_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.At_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.At_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,230,0" name="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,236,0" name="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="BinaryOperatorExpr_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.BinaryOperatorExpr_BehaviorDescriptor" />
     </file>
     <file name="BinaryOperator_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.BinaryOperator_BehaviorDescriptor" />
     </file>
     <file name="BitwiseAnd_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.BitwiseAnd_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.BitwiseAnd_BehaviorDescriptor" />
     </file>
     <file name="BitwiseOr_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.BitwiseOr_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.BitwiseOr_BehaviorDescriptor" />
     </file>
     <file name="BodyExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.BodyExpr_BehaviorDescriptor" />
@@ -45,17 +48,17 @@
     <file name="BreakExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.BreakExpr_BehaviorDescriptor" />
     </file>
-    <file name="CaretExpr_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.CaretExpr_BehaviorDescriptor" />
-    </file>
     <file name="Caret_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Caret_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.Caret_BehaviorDescriptor" />
     </file>
     <file name="ColonEqual_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.ColonEqual_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ColonEqual_BehaviorDescriptor" />
     </file>
     <file name="ColonExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ColonExpr_BehaviorDescriptor" />
+    </file>
+    <file name="Colon_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.Colon_BehaviorDescriptor" />
     </file>
     <file name="ColonsExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ColonsExpr_BehaviorDescriptor" />
@@ -70,16 +73,19 @@
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ComplexLiteralExpr_BehaviorDescriptor" />
     </file>
     <file name="Difference_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Difference_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.Difference_BehaviorDescriptor" />
+    </file>
+    <file name="Division_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.Division_BehaviorDescriptor" />
     </file>
     <file name="DollarExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.DollarExpr_BehaviorDescriptor" />
     </file>
     <file name="Dollar_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Dollar_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.Dollar_BehaviorDescriptor" />
     </file>
     <file name="DoubleColon_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.DoubleColon_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.DoubleColon_BehaviorDescriptor" />
     </file>
     <file name="ElementAccessExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ElementAccessExpr_BehaviorDescriptor" />
@@ -97,10 +103,13 @@
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.EmptySubValue_BehaviorDescriptor" />
     </file>
     <file name="EqualAssignment_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.EqualAssignment_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.EqualAssignment_BehaviorDescriptor" />
     </file>
     <file name="Equality_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Equality_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.Equality_BehaviorDescriptor" />
+    </file>
+    <file name="ExponentExpr_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ExponentExpr_BehaviorDescriptor" />
     </file>
     <file name="Expr_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Expr_BehaviorDescriptor" />
@@ -118,10 +127,10 @@
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ForExpr_BehaviorDescriptor" />
     </file>
     <file name="ForcefulAssignment_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.ForcefulAssignment_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ForcefulAssignment_BehaviorDescriptor" />
     </file>
     <file name="ForcefulToTheRight_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.ForcefulToTheRight_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ForcefulToTheRight_BehaviorDescriptor" />
     </file>
     <file name="FunctionCallExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.FunctionCallExpr_BehaviorDescriptor" />
@@ -139,10 +148,10 @@
       <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.FunctionParamDeclaration_BehaviorDescriptor" />
     </file>
     <file name="GreaterOrEqualThan_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.GreaterOrEqualThan_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.GreaterOrEqualThan_BehaviorDescriptor" />
     </file>
     <file name="GreaterThan_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.GreaterThan_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.GreaterThan_BehaviorDescriptor" />
     </file>
     <file name="HelpExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.HelpExpr_BehaviorDescriptor" />
@@ -190,25 +199,28 @@
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.LeftAssignmentOperator_BehaviorDescriptor" />
     </file>
     <file name="LessOrEqualThan_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.LessOrEqualThan_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.LessOrEqualThan_BehaviorDescriptor" />
     </file>
     <file name="LessThan_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.LessThan_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.LessThan_BehaviorDescriptor" />
     </file>
     <file name="ListAccessExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ListAccessExpr_BehaviorDescriptor" />
     </file>
     <file name="LogicalAnd_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.LogicalAnd_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.LogicalAnd_BehaviorDescriptor" />
     </file>
     <file name="LogicalOr_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.LogicalOr_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.LogicalOr_BehaviorDescriptor" />
     </file>
     <file name="Minus_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Minus_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.Minus_BehaviorDescriptor" />
     </file>
     <file name="MultiplicationExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.MultiplicationExpr_BehaviorDescriptor" />
+    </file>
+    <file name="Multiplication_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.Multiplication_BehaviorDescriptor" />
     </file>
     <file name="NAExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.NAExpr_BehaviorDescriptor" />
@@ -234,6 +246,9 @@
     <file name="NullValueValue_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.NullValueValue_BehaviorDescriptor" />
     </file>
+    <file name="Operator_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Operator_BehaviorDescriptor" />
+    </file>
     <file name="OrExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.OrExpr_BehaviorDescriptor" />
     </file>
@@ -253,7 +268,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ParenthesizedExpr_BehaviorDescriptor" />
     </file>
     <file name="Plus_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Plus_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.Plus_BehaviorDescriptor" />
     </file>
     <file name="Prog_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Prog_BehaviorDescriptor" />
@@ -268,7 +283,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.RightAssignmentOperator_BehaviorDescriptor" />
     </file>
     <file name="SimpleAssignment_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.SimpleAssignment_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.SimpleAssignment_BehaviorDescriptor" />
     </file>
     <file name="StringDefaultSub_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.StringDefaultSub_BehaviorDescriptor" />
@@ -292,16 +307,16 @@
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.Sublist_BehaviorDescriptor" />
     </file>
     <file name="SubstractOperator_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.SubstractOperator_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.SubstractOperator_BehaviorDescriptor" />
     </file>
     <file name="TildeExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.TildeExpr_BehaviorDescriptor" />
     </file>
     <file name="Tilde_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Tilde_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.Tilde_BehaviorDescriptor" />
     </file>
     <file name="TripleColon_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.TripleColon_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.TripleColon_BehaviorDescriptor" />
     </file>
     <file name="TrueLiteralExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.TrueLiteralExpr_BehaviorDescriptor" />
@@ -319,7 +334,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.UnaryTildeExpr_BehaviorDescriptor" />
     </file>
     <file name="Value_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Value_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.Value_BehaviorDescriptor" />
     </file>
     <file name="VarargsParameter_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.VarargsParameter_BehaviorDescriptor" />
@@ -354,6 +369,27 @@
         <var name="thisNode" id="1826877622981803912" />
       </scope>
       <unit id="1826877622981803912" at="11,0,16,0" name="org.campagnelab.metar.R.behavior.RepeatExpr_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675543455950">
+    <file name="DoubleColon_Behavior.java">
+      <node id="489068675543455950" at="8,0,10,0" concept="1" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="489068675543455952" at="8,43,8,43" />
+      <scope id="489068675543455950" at="8,0,10,0">
+        <var name="thisNode" id="489068675543455950" />
+      </scope>
+      <unit id="489068675543455950" at="7,0,11,0" name="org.campagnelab.metar.R.behavior.DoubleColon_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675546663479">
+    <file name="ColonExpr_Behavior.java">
+      <node id="489068675546663483" at="12,43,13,379" concept="0" />
+      <node id="489068675546663479" at="12,0,15,0" concept="1" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="489068675546663481" at="12,43,13,379" />
+      <scope id="489068675546663479" at="12,0,15,0">
+        <var name="thisNode" id="489068675546663479" />
+      </scope>
+      <unit id="489068675546663479" at="11,0,16,0" name="org.campagnelab.metar.R.behavior.ColonExpr_Behavior" />
     </file>
   </root>
 </debug-info>

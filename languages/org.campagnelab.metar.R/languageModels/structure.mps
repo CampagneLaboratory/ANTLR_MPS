@@ -102,52 +102,61 @@
   <node concept="1TIwiD" id="5mPDeVwiPas">
     <property role="TrG5h" value="ColonsExpr" />
     <property role="OYydz" value="Colons" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPat">
     <property role="TrG5h" value="DollarExpr" />
     <property role="OYydz" value="Dollar" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPau">
-    <property role="TrG5h" value="CaretExpr" />
+    <property role="TrG5h" value="ExponentExpr" />
     <property role="OYydz" value="Caret" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <property role="34LRSv" value="^" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPav">
     <property role="TrG5h" value="UnaryOperatorExpr" />
     <property role="OYydz" value="UnaryOperator" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
-    <node concept="1TJgyi" id="7FGhCGSAVMK" role="1TKVEl">
-      <property role="TrG5h" value="operator" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="1TJgyj" id="r9xlU4IGC7" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operator" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1_qnSjmwppZ" resolve="UnaryOperator" />
+    </node>
+    <node concept="1TJgyj" id="r9xlU4IGCa" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
     </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaw">
     <property role="TrG5h" value="ColonExpr" />
     <property role="OYydz" value="Colon" />
     <property role="34LRSv" value=":" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPax">
     <property role="TrG5h" value="USER_OPExpr" />
     <property role="OYydz" value="USER_OP" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPay">
     <property role="TrG5h" value="MultiplicationExpr" />
     <property role="OYydz" value="Multiplication" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaz">
     <property role="TrG5h" value="AdditionExpr" />
     <property role="OYydz" value="Addition" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPa$">
     <property role="TrG5h" value="ComparisonExpr" />
     <property role="OYydz" value="Comparison" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPa_">
     <property role="TrG5h" value="NotExpr" />
@@ -164,13 +173,13 @@
     <property role="TrG5h" value="AndExpr" />
     <property role="OYydz" value="And" />
     <property role="34LRSv" value="&amp;" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaB">
     <property role="TrG5h" value="OrExpr" />
     <property role="OYydz" value="Or" />
     <property role="34LRSv" value="|" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaC">
     <property role="TrG5h" value="UnaryTildeExpr" />
@@ -187,12 +196,12 @@
     <property role="TrG5h" value="TildeExpr" />
     <property role="OYydz" value="Tilde" />
     <property role="34LRSv" value="~" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaE">
     <property role="TrG5h" value="AssignmentOperatorExpr" />
     <property role="OYydz" value="AssignmentOperator" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaF">
     <property role="TrG5h" value="FunctionExpr" />
@@ -433,12 +442,8 @@
     <ref role="1TJDcQ" node="14grA08BCRd" resolve="BooleanLiteral" />
   </node>
   <node concept="1TIwiD" id="5qM9mr9JOd5">
-    <property role="TrG5h" value="BinaryOperator" />
+    <property role="TrG5h" value="BinaryOperatorExpr" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
-    <node concept="1TJgyi" id="3ft5eLKEjP3" role="1TKVEl">
-      <property role="TrG5h" value="operator" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyj" id="5qM9mr9JOd6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="left" />
@@ -450,6 +455,12 @@
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
+    <node concept="1TJgyj" id="r9xlU4zQ3W" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operator" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="r9xlU4_XKo" resolve="Operator" />
     </node>
   </node>
   <node concept="1TIwiD" id="14grA08BCRd">
@@ -638,6 +649,7 @@
   </node>
   <node concept="1TIwiD" id="50lwYX0Qjq3">
     <property role="TrG5h" value="Value" />
+    <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
     <node concept="1TJgyj" id="50lwYX0Qjuk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="value" />
@@ -671,6 +683,7 @@
   <node concept="1TIwiD" id="4hQfa_ZrvSn">
     <property role="TrG5h" value="VarargsValueValue" />
     <property role="OYydz" value="VarargsValue" />
+    <property role="34LRSv" value="..." />
     <ref role="1TJDcQ" node="50lwYX0Qjq3" resolve="Value" />
   </node>
   <node concept="1TIwiD" id="4hQfa_ZrvSo">
@@ -709,13 +722,13 @@
   </node>
   <node concept="1TIwiD" id="r9xlU4v6S0">
     <property role="TrG5h" value="AssignmentOperator" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4v6T2">
     <property role="TrG5h" value="ComparisonOperator" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="1_qnSjmwppZ">
     <property role="3GE5qa" value="" />
@@ -726,37 +739,37 @@
     <property role="TrG5h" value="DoubleColon" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="::" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykoM">
     <property role="TrG5h" value="TripleColon" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value=":::" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykoN">
     <property role="TrG5h" value="BitwiseOr" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="|" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykoO">
     <property role="TrG5h" value="LogicalOr" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="||" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykoP">
     <property role="TrG5h" value="Dollar" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="$" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykoQ">
     <property role="TrG5h" value="At" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="@" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykoR">
     <property role="TrG5h" value="Minus" />
@@ -768,7 +781,7 @@
     <property role="TrG5h" value="SubstractOperator" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="-" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykoT">
     <property role="TrG5h" value="Plus" />
@@ -780,13 +793,13 @@
     <property role="TrG5h" value="AddOperator" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="+" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykoV">
     <property role="TrG5h" value="Caret" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="^" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykoW">
     <property role="TrG5h" value="GreaterThan" />
@@ -828,13 +841,13 @@
     <property role="TrG5h" value="BitwiseAnd" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="&amp;" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykp3">
     <property role="TrG5h" value="LogicalAnd" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="&amp;&amp;" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykp4">
     <property role="TrG5h" value="SimpleAssignment" />
@@ -876,7 +889,38 @@
     <property role="TrG5h" value="Tilde" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="~" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="r9xlU4zQ8W">
+    <property role="TrG5h" value="BinaryOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="r9xlU4_XKo" resolve="Operator" />
+  </node>
+  <node concept="1TIwiD" id="r9xlU4_XKo">
+    <property role="3GE5qa" value="operators" />
+    <property role="TrG5h" value="Operator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="r9xlU4IHeO">
+    <property role="TrG5h" value="Colon" />
+    <property role="3GE5qa" value="operators" />
+    <property role="34LRSv" value=":" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="r9xlU5qRo3">
+    <property role="TrG5h" value="Multiplication" />
+    <property role="3GE5qa" value="operators" />
+    <property role="34LRSv" value="*" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="r9xlU5qRo4">
+    <property role="TrG5h" value="Division" />
+    <property role="3GE5qa" value="operators" />
+    <property role="34LRSv" value="/" />
+    <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
 </model>
 

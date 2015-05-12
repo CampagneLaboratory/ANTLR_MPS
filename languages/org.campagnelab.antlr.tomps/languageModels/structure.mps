@@ -362,6 +362,26 @@
       <property role="TrG5h" value="conceptName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="r9xlU4WMKN" role="1TKVEl">
+      <property role="TrG5h" value="arity" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="r9xlU4ywLo">
+    <property role="3GE5qa" value="destinations" />
+    <property role="TrG5h" value="ToOperator" />
+    <property role="34LRSv" value="operator" />
+    <ref role="1TJDcQ" node="4EJnNxxIT2o" resolve="Destination" />
+    <node concept="1TJgyi" id="r9xlU4WO5L" role="1TKVEl">
+      <property role="TrG5h" value="arity" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="r9xlU4yxjf" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="toConvert" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4EJnNxxIT2p" resolve="ChildDestination" />
+    </node>
   </node>
 </model>
 

@@ -24,6 +24,9 @@ public class Operator_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
     return this.createCollection_tvaoc4_a(editorContext, node);
   }
+  public EditorCell createInspectedCell(EditorContext editorContext, SNode node) {
+    return this.createCollection_tvaoc4_a_0(editorContext, node);
+  }
   private EditorCell createCollection_tvaoc4_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
     editorCell.setCellId("Collection_tvaoc4_a");
@@ -40,6 +43,7 @@ public class Operator_Editor extends DefaultNodeEditor {
       editorCell.addEditorCell(this.createCollection_tvaoc4_g0(editorContext, node));
     }
     editorCell.addEditorCell(this.createConstant_tvaoc4_h0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_tvaoc4_i0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_tvaoc4_a0(EditorContext editorContext, SNode node) {
@@ -149,8 +153,7 @@ public class Operator_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_tvaoc4_a5a(SNode node, EditorContext editorContext) {
-    // <node> 
-    return true;
+    return (SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62a2bcaL, "concept")) != null);
   }
   private EditorCell createConstant_tvaoc4_a5a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "concept<");
@@ -251,12 +254,61 @@ public class Operator_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createConstant_tvaoc4_h0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "arity:");
     editorCell.setCellId("Constant_tvaoc4_h0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.PLAIN);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_tvaoc4_i0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("arity");
+    provider.setNoTargetText("<no arity>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_arity");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+  private EditorCell createCollection_tvaoc4_a_0(EditorContext editorContext, SNode node) {
+    EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
+    editorCell.setCellId("Collection_tvaoc4_a_0");
+    editorCell.setBig(true);
+    editorCell.addEditorCell(this.createConstant_tvaoc4_a0_0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_tvaoc4_b0_0(editorContext, node));
+    return editorCell;
+  }
+  private EditorCell createConstant_tvaoc4_a0_0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "arity=");
+    editorCell.setCellId("Constant_tvaoc4_a0_0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.PLAIN);
+    editorCell.getStyle().putAll(style);
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_tvaoc4_b0_0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("arity");
+    provider.setNoTargetText("<no arity>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_arity_1");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
     return editorCell;
   }
 }

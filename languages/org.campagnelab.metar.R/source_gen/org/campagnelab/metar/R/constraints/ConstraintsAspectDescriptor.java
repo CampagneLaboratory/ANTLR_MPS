@@ -13,7 +13,7 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
   public ConstraintsDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_2qnle6_a0a0b, fqName)) {
       case 0:
-        return new BinaryOperator_Constraints();
+        return new BinaryOperatorExpr_Constraints();
       default:
         return new BaseConstraintsDescriptor(fqName);
     }
@@ -21,9 +21,9 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
   public ConstraintsDescriptor getDescriptor(SConceptId conceptId) {
     long id = conceptId.getIdValue();
     if (id == 0x56b22566c9bf4345L) {
-      return new BinaryOperator_Constraints();
+      return new BinaryOperatorExpr_Constraints();
     }
     return new BaseConstraintsDescriptor(conceptId);
   }
-  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"org.campagnelab.metar.R.structure.BinaryOperator"};
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"org.campagnelab.metar.R.structure.BinaryOperatorExpr"};
 }

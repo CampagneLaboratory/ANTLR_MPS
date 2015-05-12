@@ -21,7 +21,7 @@ import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 
 public class DestinationRefMenu extends AbstractCellMenuComponent {
   public DestinationRefMenu() {
-    super(new SubstituteInfoPartExt[]{new DestinationRefMenu.Mapper_generic_cellMenu_cj4k82_a0(), new DestinationRefMenu.Mapper_generic_cellMenu_cj4k82_b0(), new DestinationRefMenu.Mapper_generic_cellMenu_cj4k82_c0(), new DestinationRefMenu.Mapper_generic_cellMenu_cj4k82_d0(), new DestinationRefMenu.Mapper_generic_cellMenu_cj4k82_e0()});
+    super(new SubstituteInfoPartExt[]{new DestinationRefMenu.Mapper_generic_cellMenu_cj4k82_a0(), new DestinationRefMenu.Mapper_generic_cellMenu_cj4k82_b0(), new DestinationRefMenu.Mapper_generic_cellMenu_cj4k82_c0(), new DestinationRefMenu.Mapper_generic_cellMenu_cj4k82_d0(), new DestinationRefMenu.Mapper_generic_cellMenu_cj4k82_e0(), new DestinationRefMenu.Mapper_generic_cellMenu_cj4k82_f0()});
   }
   public static class Mapper_generic_cellMenu_cj4k82_a0 extends AbstractCellMenuPart_Generic_Group {
     public Mapper_generic_cellMenu_cj4k82_a0() {
@@ -35,6 +35,7 @@ public class DestinationRefMenu extends AbstractCellMenuComponent {
     public void handleAction_impl(SNode parameterObject, SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
       SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination"), SModelOperations.createNewNode(model, null, SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861bb9099L, "org.campagnelab.antlr.tomps.structure.ChildDestination"))));
       SLinkOperations.setTarget(SNodeOperations.as(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861bb9099L, "org.campagnelab.antlr.tomps.structure.ChildDestination")), MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861bb9099L, 0x4aaf5f3861bb96d2L, "to"), parameterObject);
+      editorContext.select(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")));
     }
     public boolean isReferentPresentation() {
       return false;
@@ -64,6 +65,7 @@ public class DestinationRefMenu extends AbstractCellMenuComponent {
     public void handleAction_impl(SNode parameterObject, SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
       SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination"), SModelOperations.createNewNode(model, null, SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x27b12e38d7577b90L, "org.campagnelab.antlr.tomps.structure.PropertyDestination"))));
       SLinkOperations.setTarget(SNodeOperations.as(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x27b12e38d7577b90L, "org.campagnelab.antlr.tomps.structure.PropertyDestination")), MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x27b12e38d7577b90L, 0x27b12e38d7577b91L, "to"), parameterObject);
+      editorContext.select(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")));
     }
     public boolean isReferentPresentation() {
       return false;
@@ -118,6 +120,19 @@ public class DestinationRefMenu extends AbstractCellMenuComponent {
     }
     public String getMatchingText() {
       return "float";
+    }
+  }
+  public static class Mapper_generic_cellMenu_cj4k82_f0 extends AbstractCellMenuPart_Generic_Item {
+    public Mapper_generic_cellMenu_cj4k82_f0() {
+    }
+    public void handleAction(SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
+      SNode previous = SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination"));
+      SNode to = SNodeFactoryOperations.createNewNode(SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6c9855e848a0c58L, "org.campagnelab.antlr.tomps.structure.ToOperator")), null);
+      SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination"), to);
+      SLinkOperations.setTarget(to, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6c9855e848a0c58L, 0x6c9855e848a14cfL, "toConvert"), previous);
+    }
+    public String getMatchingText() {
+      return ">operator";
     }
   }
 }

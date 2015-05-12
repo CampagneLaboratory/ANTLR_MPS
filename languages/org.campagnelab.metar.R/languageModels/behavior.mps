@@ -57,6 +57,11 @@
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="13h7C7" id="14grA08BCRm">
     <ref role="13h7C2" to="6q58:5mPDeVwiPb1" resolve="TrueLiteralExpr" />
@@ -95,6 +100,37 @@
               <node concept="13iPFW" id="1_qnSjlWc63" role="2Oq$k0" />
               <node concept="3TrEf2" id="1_qnSjlWcga" role="2OqNvi">
                 <ref role="3Tt5mk" to="6q58:1_qnSjlVW36" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="r9xlU4ytze">
+    <property role="3GE5qa" value="operators" />
+    <ref role="13h7C2" to="6q58:r9xlU4ykoL" resolve="DoubleColon" />
+    <node concept="13hLZK" id="r9xlU4ytzf" role="13h7CW">
+      <node concept="3clFbS" id="r9xlU4ytzg" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="r9xlU4IGCR">
+    <ref role="13h7C2" to="6q58:5mPDeVwiPaw" resolve="ColonExpr" />
+    <node concept="13hLZK" id="r9xlU4IGCS" role="13h7CW">
+      <node concept="3clFbS" id="r9xlU4IGCT" role="2VODD2">
+        <node concept="3clFbF" id="r9xlU4IGCV" role="3cqZAp">
+          <node concept="37vLTI" id="r9xlU4IHbp" role="3clFbG">
+            <node concept="2ShNRf" id="r9xlU4IHcO" role="37vLTx">
+              <node concept="3zrR0B" id="r9xlU4IHcx" role="2ShVmc">
+                <node concept="3Tqbb2" id="r9xlU4IHcy" role="3zrR0E">
+                  <ref role="ehGHo" to="6q58:r9xlU4IHeO" resolve="Colon" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="r9xlU4IGED" role="37vLTJ">
+              <node concept="13iPFW" id="r9xlU4IGCU" role="2Oq$k0" />
+              <node concept="3TrEf2" id="r9xlU4IGZg" role="2OqNvi">
+                <ref role="3Tt5mk" to="6q58:r9xlU4zQ3W" />
               </node>
             </node>
           </node>

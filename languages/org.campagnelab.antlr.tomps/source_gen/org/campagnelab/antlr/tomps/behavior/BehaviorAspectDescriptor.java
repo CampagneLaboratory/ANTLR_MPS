@@ -43,9 +43,11 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new ConverterName_BehaviorDescriptor();
       case 10:
         return new Operator_BehaviorDescriptor();
+      case 16:
+        return new ToOperator_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.AlternativeMapper", "org.campagnelab.antlr.tomps.structure.ChildDestination", "org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS", "org.campagnelab.antlr.tomps.structure.ConverterName", "org.campagnelab.antlr.tomps.structure.ExampleConcept", "org.campagnelab.antlr.tomps.structure.LabeledElementSource", "org.campagnelab.antlr.tomps.structure.LexerRuleSource", "org.campagnelab.antlr.tomps.structure.Mapper", "org.campagnelab.antlr.tomps.structure.NewVisitor", "org.campagnelab.antlr.tomps.structure.Operator", "org.campagnelab.antlr.tomps.structure.ParserRuleSource", "org.campagnelab.antlr.tomps.structure.PropertyDestination", "org.campagnelab.antlr.tomps.structure.ToBooleanDestination", "org.campagnelab.antlr.tomps.structure.ToFloatDestination", "org.campagnelab.antlr.tomps.structure.ToIntDestination"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.AlternativeMapper", "org.campagnelab.antlr.tomps.structure.ChildDestination", "org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS", "org.campagnelab.antlr.tomps.structure.ConverterName", "org.campagnelab.antlr.tomps.structure.ExampleConcept", "org.campagnelab.antlr.tomps.structure.LabeledElementSource", "org.campagnelab.antlr.tomps.structure.LexerRuleSource", "org.campagnelab.antlr.tomps.structure.Mapper", "org.campagnelab.antlr.tomps.structure.NewVisitor", "org.campagnelab.antlr.tomps.structure.Operator", "org.campagnelab.antlr.tomps.structure.ParserRuleSource", "org.campagnelab.antlr.tomps.structure.PropertyDestination", "org.campagnelab.antlr.tomps.structure.ToBooleanDestination", "org.campagnelab.antlr.tomps.structure.ToFloatDestination", "org.campagnelab.antlr.tomps.structure.ToIntDestination", "org.campagnelab.antlr.tomps.structure.ToOperator"};
 }
