@@ -17,21 +17,20 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
-import org.campagnelab.antlr.tomps.behavior.Operator_Behavior;
 import jetbrains.mps.intentions.IntentionDescriptor;
 
-public class CreateOperatorConcepts_Intention implements IntentionFactory {
+public class SwitchToOperatorNames_Intention implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
-  public CreateOperatorConcepts_Intention() {
+  public SwitchToOperatorNames_Intention() {
   }
   public String getConcept() {
     return "org.campagnelab.antlr.tomps.structure.ConvertToMPS";
   }
   public String getPresentation() {
-    return "CreateOperatorConcepts";
+    return "SwitchToOperatorNames";
   }
   public String getPersistentStateKey() {
-    return "org.campagnelab.antlr.tomps.intentions.CreateOperatorConcepts_Intention";
+    return "org.campagnelab.antlr.tomps.intentions.SwitchToOperatorNames_Intention";
   }
   public String getLanguageFqName() {
     return "org.campagnelab.antlr.tomps";
@@ -46,14 +45,14 @@ public class CreateOperatorConcepts_Intention implements IntentionFactory {
     return true;
   }
   public SNodeReference getIntentionNodeReference() {
-    return new SNodePointer("r:3172cd41-bcad-4d57-92e5-868449e54828(org.campagnelab.antlr.tomps.intentions)", "1826877622986988795");
+    return new SNodePointer("r:3172cd41-bcad-4d57-92e5-868449e54828(org.campagnelab.antlr.tomps.intentions)", "489068675542625103");
   }
   public boolean isSurroundWith() {
     return false;
   }
   public Collection<IntentionExecutable> instances(final SNode node, final EditorContext context) {
     if (myCachedExecutable == null) {
-      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new CreateOperatorConcepts_Intention.IntentionImplementation());
+      myCachedExecutable = Collections.<IntentionExecutable>singletonList(new SwitchToOperatorNames_Intention.IntentionImplementation());
     }
     return myCachedExecutable;
   }
@@ -61,25 +60,23 @@ public class CreateOperatorConcepts_Intention implements IntentionFactory {
     public IntentionImplementation() {
     }
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Create Missing Operator Concepts";
+      return "Switch to Operator Names";
     }
     public void execute(final SNode node, final EditorContext editorContext) {
       ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, 0x195a5f84d619bf2eL, "operators"))).where(new IWhereFilter<SNode>() {
         public boolean accept(SNode operator) {
-          return SLinkOperations.getTarget(operator, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62a2bcaL, "concept")) == null && SPropertyOperations.getString(operator, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62d9fc1L, "conceptName")) != null;
+          return SLinkOperations.getTarget(operator, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62a2bcaL, "concept")) != null && SPropertyOperations.getString(operator, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62d9fc1L, "conceptName")) == null;
         }
       }).visitAll(new IVisitor<SNode>() {
         public void visit(SNode operator) {
-          Operator_Behavior.call_looupOrCreate_1826877622986925758(operator, SPropertyOperations.getString(operator, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62d9fc1L, "conceptName")));
-          SPropertyOperations.set(SLinkOperations.getTarget(operator, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62a2bcaL, "concept")), MetaAdapterFactory.getProperty(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x1103553c5ffL, 0x46ab0ad5826c74caL, "conceptAlias"), SPropertyOperations.getString(operator, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d619bfbeL, "name")));
-          if (SLinkOperations.getTarget(operator, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x6c9855e847934a0L, "extends")) != null) {
-            SLinkOperations.setTarget(SLinkOperations.getTarget(operator, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62a2bcaL, "concept")), MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, 0xf979be93cfL, "extends"), SLinkOperations.getTarget(operator, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x6c9855e847934a0L, "extends")));
-          }
+
+          SPropertyOperations.set(operator, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62d9fc1L, "conceptName"), SPropertyOperations.getString(SLinkOperations.getTarget(operator, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62a2bcaL, "concept")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+          SLinkOperations.setTarget(operator, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62a2bcaL, "concept"), null);
         }
       });
     }
     public IntentionDescriptor getDescriptor() {
-      return CreateOperatorConcepts_Intention.this;
+      return SwitchToOperatorNames_Intention.this;
     }
   }
 }

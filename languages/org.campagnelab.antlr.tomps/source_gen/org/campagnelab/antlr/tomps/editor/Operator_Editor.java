@@ -149,7 +149,8 @@ public class Operator_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static boolean renderingCondition_tvaoc4_a5a(SNode node, EditorContext editorContext) {
-    return (SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62a2bcaL, "concept")) != null);
+    // <node> 
+    return true;
   }
   private EditorCell createConstant_tvaoc4_a5a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "concept<");

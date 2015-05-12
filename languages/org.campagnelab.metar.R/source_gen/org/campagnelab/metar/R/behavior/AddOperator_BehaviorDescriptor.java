@@ -4,11 +4,11 @@ package org.campagnelab.metar.R.behavior;
 
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 
-public class ColonEqual_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
-  public ColonEqual_BehaviorDescriptor() {
+public class AddOperator_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor {
+  public AddOperator_BehaviorDescriptor() {
   }
   @Override
   public String getConceptFqName() {
-    return "org.campagnelab.metar.R.structure.ColonEqual";
+    return "org.campagnelab.metar.R.structure.AddOperator";
   }
 }
