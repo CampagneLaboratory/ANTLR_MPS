@@ -4,54 +4,9 @@ package org.campagnelab.metar.R.editor;
 
 import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuComponent;
 import jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPartExt;
-import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuPart_ApplySideTransforms;
-import jetbrains.mps.nodeEditor.CellSide;
-import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuPart_ReplaceNode_Group;
-import java.util.List;
-import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.smodel.IOperationContext;
-import jetbrains.mps.openapi.editor.EditorContext;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.jetbrains.mps.openapi.model.SModel;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ExprMenuComponent extends AbstractCellMenuComponent {
   public ExprMenuComponent() {
-    super(new SubstituteInfoPartExt[]{new ExprMenuComponent.ApplySideTransforms_left_cellMenu_wcydyc_a0(), new ExprMenuComponent.null_customReplace_cellMenu_wcydyc_b0()});
-  }
-  public static class ApplySideTransforms_left_cellMenu_wcydyc_a0 extends AbstractCellMenuPart_ApplySideTransforms {
-    public ApplySideTransforms_left_cellMenu_wcydyc_a0() {
-      super(CellSide.LEFT, "ext_1_RTransform");
-    }
-  }
-  public static class null_customReplace_cellMenu_wcydyc_b0 extends AbstractCellMenuPart_ReplaceNode_Group {
-    public null_customReplace_cellMenu_wcydyc_b0() {
-    }
-    public List<?> createParameterObjects(SNode node, IOperationContext operationContext, EditorContext editorContext) {
-      return SConceptOperations.getAllSubConcepts(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b5299L, "org.campagnelab.metar.R.structure.Expr"), SNodeOperations.getModel(node));
-    }
-    public SNode createReplacementNode(Object parameterObject, SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
-      return createReplacementNode_impl((SAbstractConcept) parameterObject, node, model, operationContext, editorContext);
-    }
-    public SNode createReplacementNode_impl(SAbstractConcept parameterObject, SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
-      return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(parameterObject));
-    }
-    public boolean isReferentPresentation() {
-      return false;
-    }
-    public String getMatchingText(Object parameterObject) {
-      return this.getMatchingText_internal((SAbstractConcept) parameterObject);
-    }
-    public String getMatchingText_internal(SAbstractConcept parameterObject) {
-      return SConceptOperations.conceptAlias(parameterObject);
-    }
-    public String getDescriptionText(Object parameterObject) {
-      return this.getDescriptionText_internal((SAbstractConcept) parameterObject);
-    }
-    public String getDescriptionText_internal(SAbstractConcept parameterObject) {
-      return SConceptOperations.shortDescription(parameterObject);
-    }
+    super(new SubstituteInfoPartExt[]{});
   }
 }

@@ -349,6 +349,7 @@
   <node concept="1TIwiD" id="5mPDeVwiPaQ">
     <property role="TrG5h" value="ParenthesizedExpr" />
     <property role="OYydz" value="parenthesized" />
+    <property role="34LRSv" value="(" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
     <node concept="1TJgyj" id="1_qnSjm34S3" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

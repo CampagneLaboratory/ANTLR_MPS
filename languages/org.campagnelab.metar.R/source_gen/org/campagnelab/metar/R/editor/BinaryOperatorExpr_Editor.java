@@ -12,10 +12,16 @@ import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
 import jetbrains.mps.nodeEditor.cellMenu.CompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPartExt;
 import jetbrains.mps.nodeEditor.EditorManager;
+import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuPart_ApplySideTransforms;
+import jetbrains.mps.nodeEditor.CellSide;
+import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuPart_ReplaceChild_CustomChildConcept;
+import jetbrains.mps.smodel.IOperationContext;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuPart_ReplaceNode_CustomNodeConcept;
 import java.util.List;
 import jetbrains.mps.openapi.editor.cells.SubstituteAction;
 import jetbrains.mps.nodeEditor.cellMenu.CellContext;
-import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuPart_ReplaceNode_CustomNodeConcept;
 
 public class BinaryOperatorExpr_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -39,7 +45,7 @@ public class BinaryOperatorExpr_Editor extends DefaultNodeEditor {
     if (editorCell.getRole() == null) {
       editorCell.setRole("left");
     }
-    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new BinaryOperatorExpr_Editor.BinaryOperatorExpr_component_cellMenu_8kiozd_a0a0()}));
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new BinaryOperatorExpr_Editor.ApplySideTransforms_left_cellMenu_8kiozd_a0a0(), new BinaryOperatorExpr_Editor.BinaryOperatorExpr_left_cellMenu_8kiozd_b0a0()}));
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
@@ -48,13 +54,16 @@ public class BinaryOperatorExpr_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  public static class BinaryOperatorExpr_component_cellMenu_8kiozd_a0a0 implements SubstituteInfoPartExt {
-    private ExprMenuComponent myComponent;
-    public BinaryOperatorExpr_component_cellMenu_8kiozd_a0a0() {
-      this.myComponent = new ExprMenuComponent();
+  public static class ApplySideTransforms_left_cellMenu_8kiozd_a0a0 extends AbstractCellMenuPart_ApplySideTransforms {
+    public ApplySideTransforms_left_cellMenu_8kiozd_a0a0() {
+      super(CellSide.LEFT, "");
     }
-    public List<SubstituteAction> createActions(CellContext cellContext, EditorContext editorContext) {
-      return this.myComponent.createSubstituteActions(cellContext, editorContext);
+  }
+  public static class BinaryOperatorExpr_left_cellMenu_8kiozd_b0a0 extends AbstractCellMenuPart_ReplaceChild_CustomChildConcept {
+    public BinaryOperatorExpr_left_cellMenu_8kiozd_b0a0() {
+    }
+    public SNode getConceptOfChild(SNode node, SNode currentChild, SNode defaultConceptOfChild, IOperationContext operationContext, EditorContext editorContext) {
+      return SNodeOperations.asNode(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b5299L, "org.campagnelab.metar.R.structure.Expr"));
     }
   }
   private EditorCell createRefNode_8kiozd_b0(EditorContext editorContext, SNode node) {
@@ -91,7 +100,7 @@ public class BinaryOperatorExpr_Editor extends DefaultNodeEditor {
     if (editorCell.getRole() == null) {
       editorCell.setRole("right");
     }
-    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new BinaryOperatorExpr_Editor.BinaryOperatorExpr_component_cellMenu_8kiozd_a0c0()}));
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new BinaryOperatorExpr_Editor.BinaryOperatorExpr_component_cellMenu_8kiozd_a0c0(), new BinaryOperatorExpr_Editor.ApplySideTransforms_null_cellMenu_8kiozd_b0c0(), new BinaryOperatorExpr_Editor.BinaryOperatorExpr_right_cellMenu_8kiozd_c0c0()}));
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
@@ -107,6 +116,18 @@ public class BinaryOperatorExpr_Editor extends DefaultNodeEditor {
     }
     public List<SubstituteAction> createActions(CellContext cellContext, EditorContext editorContext) {
       return this.myComponent.createSubstituteActions(cellContext, editorContext);
+    }
+  }
+  public static class ApplySideTransforms_null_cellMenu_8kiozd_b0c0 extends AbstractCellMenuPart_ApplySideTransforms {
+    public ApplySideTransforms_null_cellMenu_8kiozd_b0c0() {
+      super(CellSide.RIGHT, "default_RTransform");
+    }
+  }
+  public static class BinaryOperatorExpr_right_cellMenu_8kiozd_c0c0 extends AbstractCellMenuPart_ReplaceChild_CustomChildConcept {
+    public BinaryOperatorExpr_right_cellMenu_8kiozd_c0c0() {
+    }
+    public SNode getConceptOfChild(SNode node, SNode currentChild, SNode defaultConceptOfChild, IOperationContext operationContext, EditorContext editorContext) {
+      return SNodeOperations.asNode(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b5299L, "org.campagnelab.metar.R.structure.Expr"));
     }
   }
 }
