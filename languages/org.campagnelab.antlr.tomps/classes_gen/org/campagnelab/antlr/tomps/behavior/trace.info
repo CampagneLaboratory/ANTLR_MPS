@@ -19,7 +19,7 @@
       <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.AlternativeMapper_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,50,0" name="org.campagnelab.antlr.tomps.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,52,0" name="org.campagnelab.antlr.tomps.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="ChildDestination_BehaviorDescriptor.java">
       <unit at="7,0,27,0" name="org.campagnelab.antlr.tomps.behavior.ChildDestination_BehaviorDescriptor" />
@@ -53,6 +53,9 @@
     </file>
     <file name="NewVisitor_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.NewVisitor_BehaviorDescriptor" />
+    </file>
+    <file name="Operator_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.Operator_BehaviorDescriptor" />
     </file>
     <file name="ParserRuleSource_BehaviorDescriptor.java">
       <unit at="7,0,21,0" name="org.campagnelab.antlr.tomps.behavior.ParserRuleSource_BehaviorDescriptor" />

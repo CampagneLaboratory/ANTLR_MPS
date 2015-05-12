@@ -12,9 +12,11 @@
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.LanguageAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
+    <classNode dependClassName="org.campagnelab.metar.R.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="org.campagnelab.metar.R.structure.StructureAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.typesystem.TypesystemDescriptor" />

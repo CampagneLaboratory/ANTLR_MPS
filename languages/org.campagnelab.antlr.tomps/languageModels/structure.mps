@@ -72,6 +72,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6BpdF0a3FC2" resolve="ConceptMapper" />
     </node>
+    <node concept="1TJgyj" id="1_qnSjm6rWI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operators" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1_qnSjm6rYX" resolve="Operator" />
+    </node>
     <node concept="1TJgyj" id="6CrG2UA1xJD" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="grammar" />
@@ -328,6 +334,27 @@
     </node>
     <node concept="1TJgyi" id="14grA09bMXU" role="1TKVEl">
       <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1_qnSjm6rYX">
+    <property role="TrG5h" value="Operator" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1_qnSjmayJa" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="concept" />
+      <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+    </node>
+    <node concept="1TJgyi" id="1_qnSjm6rYY" role="1TKVEl">
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1_qnSjm6rZ0" role="1TKVEl">
+      <property role="TrG5h" value="priority" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="1_qnSjmbpZ1" role="1TKVEl">
+      <property role="TrG5h" value="conceptName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

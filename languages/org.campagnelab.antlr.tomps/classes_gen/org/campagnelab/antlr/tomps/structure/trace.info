@@ -2,7 +2,7 @@
 <debug-info>
   <root>
     <file name="StructureAspectDescriptor.java">
-      <unit at="13,0,85,0" name="org.campagnelab.antlr.tomps.structure.StructureAspectDescriptor" />
+      <unit at="13,0,88,0" name="org.campagnelab.antlr.tomps.structure.StructureAspectDescriptor" />
     </file>
   </root>
 </debug-info>

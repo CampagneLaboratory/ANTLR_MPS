@@ -37,6 +37,7 @@
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.LexerRuleSource_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.Mapper_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.NewVisitor_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.Operator_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ParserRuleSource_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.PropertyDestination_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ToBooleanDestination_BehaviorDescriptor" />
@@ -222,6 +223,12 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.Expression_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.antlr.tomps.behavior.Operator_BehaviorDescriptor" file="Operator_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.antlr.tomps.behavior.ParserRuleSource_Behavior" file="ParserRuleSource_Behavior.java">

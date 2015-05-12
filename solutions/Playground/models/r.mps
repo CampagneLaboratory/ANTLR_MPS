@@ -50,6 +50,7 @@
         <child id="1499760628228483062" name="body" index="1LvdYI" />
       </concept>
       <concept id="6176023809880707752" name="org.campagnelab.metar.R.structure.UnaryTildeExpr" flags="ng" index="2PZJp6" />
+      <concept id="6176023809880707750" name="org.campagnelab.metar.R.structure.AndExpr" flags="ng" index="2PZJp8" />
       <concept id="6176023809880707749" name="org.campagnelab.metar.R.structure.NotExpr" flags="ng" index="2PZJpb">
         <child id="1849555336877107648" name="expr" index="2nlx$7" />
       </concept>
@@ -78,6 +79,7 @@
         <reference id="7431839982580117056" name="function" index="3a69Pm" />
         <reference id="7431839982581421556" name="idRef" index="3arary" />
       </concept>
+      <concept id="1826877622977697003" name="org.campagnelab.metar.R.structure.EmptyLine" flags="ng" index="3cU4HJ" />
       <concept id="1499760628227103368" name="org.campagnelab.metar.R.structure.IdentifierRef" flags="ng" index="1LhYbg">
         <property id="1499760628227131749" name="id" index="1Li74X" />
       </concept>
@@ -172,6 +174,29 @@
           <property role="gNbhX" value="recursive" />
           <node concept="2PZJoJ" id="6szcLqHcBP7" role="gNbhV">
             <property role="pzIeI" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3cU4HJ" id="1_qnSjm5Nh0" role="pZjJ2" />
+    <node concept="2PZJp0" id="1_qnSjm5NOL" role="pZjJ2">
+      <node concept="2PZJoJ" id="1_qnSjm6qA0" role="oP3ar">
+        <property role="pzIeI" value="true" />
+      </node>
+      <node concept="2PZJp3" id="1_qnSjm5O0V" role="oP3dk">
+        <node concept="13u1kU" id="1_qnSjm5O0X" role="13uv25">
+          <node concept="2PZJp8" id="1_qnSjm5O1J" role="13u1kV">
+            <property role="13t2AJ" value="!=" />
+            <node concept="2PZJp8" id="1_qnSjm6q_I" role="2v3moI">
+              <property role="13t2AJ" value="&amp;" />
+              <node concept="2PZJoJ" id="1_qnSjm6q_X" role="2v3moI">
+                <property role="pzIeI" value="true" />
+              </node>
+              <node concept="2PZJoG" id="1_qnSjm6q_U" role="2v3mow" />
+            </node>
+            <node concept="2PZJoJ" id="1_qnSjm6q_R" role="2v3mow">
+              <property role="pzIeI" value="true" />
+            </node>
           </node>
         </node>
       </node>
@@ -1962,6 +1987,12 @@
                     </node>
                   </node>
                 </node>
+              </node>
+              <node concept="3cU4HJ" id="1_qnSjm6qMu" role="13u1kV" />
+              <node concept="3cU4HJ" id="1_qnSjm6qSu" role="13u1kV" />
+              <node concept="3cU4HJ" id="1_qnSjm6qYv" role="13u1kV" />
+              <node concept="2PZJp2" id="1_qnSjm6ra$" role="13u1kV">
+                <node concept="1LhYbg" id="1_qnSjm6rgN" role="134Gdo" />
               </node>
             </node>
           </node>

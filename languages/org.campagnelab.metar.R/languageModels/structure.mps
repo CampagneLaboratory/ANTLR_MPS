@@ -163,6 +163,7 @@
   <node concept="1TIwiD" id="5mPDeVwiPaA">
     <property role="TrG5h" value="AndExpr" />
     <property role="OYydz" value="And" />
+    <property role="34LRSv" value="&amp;" />
     <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaB">
