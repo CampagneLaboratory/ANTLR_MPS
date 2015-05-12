@@ -13,6 +13,7 @@
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">b283f144-ab8b-47c6-9ed5-c8f24c9c43e5(org.campagnelab.metar.R.functions)</dependency>
     <dependency reexport="false">932d719c-e931-44d5-990c-e115f79b5942(org.campagnelab.antlr.tomps)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)</usedLanguage>

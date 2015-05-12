@@ -11,6 +11,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -161,13 +162,8 @@
   <node concept="1TIwiD" id="5mPDeVwiPa_">
     <property role="TrG5h" value="NotExpr" />
     <property role="OYydz" value="Not" />
-    <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
-    <node concept="1TJgyj" id="1AEWcueZeB0" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
-    </node>
+    <property role="34LRSv" value="!" />
+    <ref role="1TJDcQ" node="5mPDeVwiPav" resolve="UnaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaA">
     <property role="TrG5h" value="AndExpr" />
@@ -204,8 +200,9 @@
     <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaF">
-    <property role="TrG5h" value="FunctionExpr" />
+    <property role="TrG5h" value="FunctionDeclarationExpr" />
     <property role="OYydz" value="function" />
+    <property role="34LRSv" value="function" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
     <node concept="1TJgyj" id="1jge5x_FevS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -505,11 +502,7 @@
   </node>
   <node concept="1TIwiD" id="1jge5x__XE8">
     <property role="TrG5h" value="IdentifierRef" />
-    <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
-    <node concept="1TJgyi" id="1jge5x_A4__" role="1TKVEl">
-      <property role="TrG5h" value="id" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
+    <ref role="1TJDcQ" node="5mPDeVwiPaR" resolve="Identifier" />
     <node concept="1TJgyj" id="1jge5x_A4_z" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="id" />
@@ -695,17 +688,11 @@
     <property role="3GE5qa" value="functions" />
     <property role="TrG5h" value="FunctionIdRef" />
     <ref role="1TJDcQ" node="1jge5x__XE8" resolve="IdentifierRef" />
-    <node concept="1TJgyj" id="6szcLqHjTnO" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="idRef" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1jge5x__XE8" resolve="IdentifierRef" />
-    </node>
     <node concept="1TJgyj" id="6szcLqHeUT0" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="function" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5mPDeVwiPaF" resolve="FunctionExpr" />
+      <ref role="20lvS9" node="5mPDeVwiPaF" resolve="FunctionDeclarationExpr" />
     </node>
   </node>
   <node concept="1TIwiD" id="r9xlU4v67M">
@@ -733,7 +720,7 @@
   <node concept="1TIwiD" id="1_qnSjmwppZ">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="UnaryOperator" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="r9xlU4_XKo" resolve="Operator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykoL">
     <property role="TrG5h" value="DoubleColon" />
@@ -775,6 +762,7 @@
     <property role="TrG5h" value="Minus" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="-" />
+    <property role="R4oN_" value="Unary -, negation" />
     <ref role="1TJDcQ" node="1_qnSjmwppZ" resolve="UnaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykoS">
@@ -787,6 +775,7 @@
     <property role="TrG5h" value="Plus" />
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="+" />
+    <property role="R4oN_" value="Unary +" />
     <ref role="1TJDcQ" node="1_qnSjmwppZ" resolve="UnaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4ykoU">
@@ -921,6 +910,13 @@
     <property role="3GE5qa" value="operators" />
     <property role="34LRSv" value="/" />
     <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="r9xlU6qWGV">
+    <property role="TrG5h" value="Not" />
+    <property role="3GE5qa" value="operators" />
+    <property role="34LRSv" value="!" />
+    <property role="R4oN_" value="Negation, Unary" />
+    <ref role="1TJDcQ" node="1_qnSjmwppZ" resolve="UnaryOperator" />
   </node>
 </model>
 

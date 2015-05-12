@@ -17,7 +17,7 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 0:
         return Collections.<ConceptEditor>singletonList(new FormalParameters_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new FunctionExpr_Editor());
+        return Collections.<ConceptEditor>singletonList(new FunctionDeclarationExpr_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -27,5 +27,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.metar.R.functions.structure.FormalParameters", "org.campagnelab.metar.R.functions.structure.FunctionExpr"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.metar.R.functions.structure.FormalParameters", "org.campagnelab.metar.R.functions.structure.FunctionDeclarationExpr"};
 }
