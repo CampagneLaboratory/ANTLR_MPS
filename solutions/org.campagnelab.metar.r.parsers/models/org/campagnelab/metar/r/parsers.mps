@@ -221,6 +221,7 @@
       <concept id="1826877622984490941" name="org.campagnelab.antlr.tomps.structure.Operator" flags="ng" index="3fgY0T">
         <property id="1826877622984490942" name="name" index="3fgY0U" />
         <property id="1826877622984490944" name="priority" index="3fgY14" />
+        <reference id="489068675542365344" name="extends" index="22Gb7Y" />
         <reference id="1826877622985567178" name="concept" index="3fs7he" />
       </concept>
       <concept id="7627187573639526914" name="org.campagnelab.antlr.tomps.structure.ConceptMapper" flags="ng" index="1zPSMM">
@@ -1181,26 +1182,31 @@
       <property role="3fgY0U" value="::" />
       <property role="3fgY14" value="10" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSYW" resolve="DoubleColon" />
+      <ref role="22Gb7Y" to="6q58:5qM9mr9JOd5" resolve="BinaryOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aH" role="3fgY2E">
       <property role="3fgY0U" value=":::" />
       <property role="3fgY14" value="10" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSYX" resolve="TripleColon" />
+      <ref role="22Gb7Y" to="6q58:5qM9mr9JOd5" resolve="BinaryOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aI" role="3fgY2E">
       <property role="3fgY0U" value="|" />
       <property role="3fgY14" value="20" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSYY" resolve="BitwiseOr" />
+      <ref role="22Gb7Y" to="6q58:5qM9mr9JOd5" resolve="BinaryOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aJ" role="3fgY2E">
       <property role="3fgY0U" value="||" />
       <property role="3fgY14" value="20" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSYZ" resolve="LogicalOr" />
+      <ref role="22Gb7Y" to="6q58:5qM9mr9JOd5" resolve="BinaryOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aK" role="3fgY2E">
       <property role="3fgY0U" value="$" />
       <property role="3fgY14" value="20" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZ0" resolve="Dollar" />
+      <ref role="22Gb7Y" to="6q58:1_qnSjmwppZ" resolve="UnaryOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aL" role="3fgY2E">
       <property role="3fgY0U" value="@" />
@@ -1211,91 +1217,121 @@
       <property role="3fgY0U" value="-" />
       <property role="3fgY14" value="30" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZ2" resolve="Minus" />
+      <ref role="22Gb7Y" to="6q58:1_qnSjmwppZ" resolve="UnaryOperator" />
+    </node>
+    <node concept="3fgY0T" id="r9xlU4v6S6" role="3fgY2E">
+      <property role="3fgY0U" value="-" />
+      <property role="3fgY14" value="30" />
+      <ref role="22Gb7Y" to="6q58:5qM9mr9JOd5" resolve="BinaryOperator" />
+      <ref role="3fs7he" to="6q58:r9xlU4v6S5" resolve="SubstractOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aN" role="3fgY2E">
       <property role="3fgY0U" value="+" />
       <property role="3fgY14" value="30" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZ3" resolve="Plus" />
+      <ref role="22Gb7Y" to="6q58:1_qnSjmwppZ" resolve="UnaryOperator" />
+    </node>
+    <node concept="3fgY0T" id="r9xlU4v6Sw" role="3fgY2E">
+      <property role="3fgY0U" value="+" />
+      <property role="3fgY14" value="30" />
+      <ref role="22Gb7Y" to="6q58:5qM9mr9JOd5" resolve="BinaryOperator" />
+      <ref role="3fs7he" to="6q58:r9xlU4v6SZ" resolve="AddOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aO" role="3fgY2E">
       <property role="3fgY0U" value="^" />
       <property role="3fgY14" value="40" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZ4" resolve="Caret" />
+      <ref role="22Gb7Y" to="6q58:5qM9mr9JOd5" resolve="BinaryOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aP" role="3fgY2E">
       <property role="3fgY0U" value="&gt;" />
       <property role="3fgY14" value="50" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZ5" resolve="GreaterThan" />
+      <ref role="22Gb7Y" to="6q58:r9xlU4v6T2" resolve="ComparisonOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aQ" role="3fgY2E">
       <property role="3fgY0U" value="&gt;=" />
       <property role="3fgY14" value="50" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZ6" resolve="GreaterOrEqualThan" />
+      <ref role="22Gb7Y" to="6q58:r9xlU4v6T2" resolve="ComparisonOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aR" role="3fgY2E">
       <property role="3fgY0U" value="&lt;" />
       <property role="3fgY14" value="50" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZ7" resolve="LessThan" />
+      <ref role="22Gb7Y" to="6q58:r9xlU4v6T2" resolve="ComparisonOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aS" role="3fgY2E">
       <property role="3fgY0U" value="&lt;=" />
       <property role="3fgY14" value="50" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZ8" resolve="LessOrEqualThan" />
+      <ref role="22Gb7Y" to="6q58:r9xlU4v6T2" resolve="ComparisonOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aT" role="3fgY2E">
       <property role="3fgY0U" value="==" />
       <property role="3fgY14" value="50" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZ9" resolve="Equality" />
+      <ref role="22Gb7Y" to="6q58:r9xlU4v6T2" resolve="ComparisonOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aU" role="3fgY2E">
       <property role="3fgY0U" value="!=" />
       <property role="3fgY14" value="50" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZa" resolve="Difference" />
+      <ref role="22Gb7Y" to="6q58:r9xlU4v6T2" resolve="ComparisonOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aV" role="3fgY2E">
       <property role="3fgY0U" value="&amp;" />
       <property role="3fgY14" value="60" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZb" resolve="BitwiseAnd" />
+      <ref role="22Gb7Y" to="6q58:5qM9mr9JOd5" resolve="BinaryOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aW" role="3fgY2E">
       <property role="3fgY0U" value="&amp;&amp;" />
       <property role="3fgY14" value="60" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZc" resolve="LogicalAnd" />
+      <ref role="22Gb7Y" to="6q58:5qM9mr9JOd5" resolve="BinaryOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aX" role="3fgY2E">
       <property role="3fgY0U" value="&lt;-" />
       <property role="3fgY14" value="90" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZd" resolve="SimpleAssignment" />
+      <ref role="22Gb7Y" to="6q58:r9xlU4v67M" resolve="LeftAssignmentOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aY" role="3fgY2E">
       <property role="3fgY0U" value="&lt;&lt;-" />
       <property role="3fgY14" value="90" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZe" resolve="ForcefulAssignment" />
+      <ref role="22Gb7Y" to="6q58:r9xlU4v67M" resolve="LeftAssignmentOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6aZ" role="3fgY2E">
       <property role="3fgY0U" value="=" />
       <property role="3fgY14" value="90" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZf" resolve="EqualAssignment" />
+      <ref role="22Gb7Y" to="6q58:r9xlU4v67M" resolve="LeftAssignmentOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6b0" role="3fgY2E">
       <property role="3fgY0U" value="-&gt;" />
       <property role="3fgY14" value="90" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZg" resolve="AssignToTheRight" />
+      <ref role="22Gb7Y" to="6q58:r9xlU4v6af" resolve="RightAssignmentOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6b1" role="3fgY2E">
       <property role="3fgY0U" value="-&gt;&gt;" />
       <property role="3fgY14" value="90" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZh" resolve="ForcefulToTheRight" />
+      <ref role="22Gb7Y" to="6q58:r9xlU4v6af" resolve="RightAssignmentOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6b2" role="3fgY2E">
       <property role="3fgY0U" value=":=" />
       <property role="3fgY14" value="90" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZi" resolve="ColonEqual" />
+      <ref role="22Gb7Y" to="6q58:r9xlU4v67M" resolve="LeftAssignmentOperator" />
     </node>
     <node concept="3fgY0T" id="1_qnSjms6b3" role="3fgY2E">
       <property role="3fgY0U" value="~" />
       <property role="3fgY14" value="90" />
       <ref role="3fs7he" to="6q58:1_qnSjmvSZj" resolve="Tilde" />
+      <ref role="22Gb7Y" to="6q58:5qM9mr9JOd5" resolve="BinaryOperator" />
     </node>
     <node concept="1zPSMM" id="5mPDeVwiJvY" role="1zPSMS">
       <ref role="1zPSMP" node="36CgDdK4Li0" resolve="prog" />

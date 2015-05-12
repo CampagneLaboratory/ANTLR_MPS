@@ -739,7 +739,7 @@
     <property role="3GE5qa" value="operators" />
     <property role="OYydz" value="-" />
     <property role="34LRSv" value="-" />
-    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+    <ref role="1TJDcQ" node="1_qnSjmwppZ" resolve="UnaryOperator" />
   </node>
   <node concept="1TIwiD" id="1_qnSjmvSZ3">
     <property role="TrG5h" value="Plus" />
@@ -859,6 +859,42 @@
     <property role="3GE5qa" value="operators" />
     <property role="TrG5h" value="UnaryOperator" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="r9xlU4v67M">
+    <property role="TrG5h" value="LeftAssignmentOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="r9xlU4v6S0" resolve="AssignmentOperator" />
+  </node>
+  <node concept="1TIwiD" id="r9xlU4v6af">
+    <property role="TrG5h" value="RightAssignmentOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="r9xlU4v6S0" resolve="AssignmentOperator" />
+  </node>
+  <node concept="1TIwiD" id="r9xlU4v6S0">
+    <property role="TrG5h" value="AssignmentOperator" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="r9xlU4v6S5">
+    <property role="TrG5h" value="SubstractOperator" />
+    <property role="3GE5qa" value="operators" />
+    <property role="OYydz" value="-" />
+    <property role="34LRSv" value="-" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="r9xlU4v6SZ">
+    <property role="TrG5h" value="AddOperator" />
+    <property role="3GE5qa" value="operators" />
+    <property role="OYydz" value="-" />
+    <property role="34LRSv" value="+" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
+  </node>
+  <node concept="1TIwiD" id="r9xlU4v6T2">
+    <property role="TrG5h" value="ComparisonOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="5qM9mr9JOd5" resolve="BinaryOperator" />
   </node>
 </model>
 
