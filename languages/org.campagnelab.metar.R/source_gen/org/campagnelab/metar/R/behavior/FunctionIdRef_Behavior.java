@@ -13,4 +13,7 @@ public class FunctionIdRef_Behavior {
   public static String virtual_name_489068675561959660(SNode thisNode) {
     return BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getReferenceLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x14d038586597da88L, 0x14d0385865984963L, "id")), "virtual_name_489068675561959660", new Object[]{});
   }
+  public static boolean virtual_isAssigned_2234739853328060702(SNode thisNode) {
+    return SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getReferenceLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x14d038586597da88L, 0x14d0385865984963L, "id")) != null;
+  }
 }

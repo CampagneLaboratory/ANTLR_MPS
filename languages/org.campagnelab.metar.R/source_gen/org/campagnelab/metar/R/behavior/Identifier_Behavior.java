@@ -45,6 +45,15 @@ public class Identifier_Behavior {
     }
     return testValue.matches("(.[a-zA-Z._][a-zA-Z0-9_.]*)|([a-zA-Z][a-zA-Z0-9_.]*)");
   }
+  public static boolean virtual_isAssigned_2234739853328060702(SNode thisNode) {
+    {
+      final SNode opExpr = SNodeOperations.getParent(thisNode);
+      if (SNodeOperations.isInstanceOf(opExpr, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, "org.campagnelab.metar.R.structure.BinaryOperatorExpr"))) {
+        return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(opExpr, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x6c9855e848f60fcL, "operator")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x6c9855e847c6e00L, "org.campagnelab.metar.R.structure.AssignmentOperator"));
+      }
+    }
+    return false;
+  }
   private static boolean eq_mqw2vo_a0a0a1a0a0a0a0a0a0a0c(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }

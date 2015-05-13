@@ -477,7 +477,7 @@ public class QueriesGenerated {
         SNode node = SNodeFactoryOperations.createNewNode(_context.getModel(), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b529bL, "org.campagnelab.metar.R.structure.ListAccessExpr")), null);
         SNodeOperations.replaceWithAnother(_context.getSourceNode(), node);
         SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b529bL, 0x195a5f84d6043421L, "expression"), _context.getSourceNode());
-        editorContext.select(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b529bL, 0x195a5f84d6043423L, "indices")));
+        editorContext.select(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b529bL, 0x195a5f84d6043423L, "indexSelection")));
         return node;
       }
       public String getMatchingText(String pattern) {
@@ -502,7 +502,7 @@ public class QueriesGenerated {
         SNode node = SNodeFactoryOperations.createNewNode(_context.getModel(), SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b529aL, "org.campagnelab.metar.R.structure.ElementAccessExpr")), null);
         SNodeOperations.replaceWithAnother(_context.getSourceNode(), node);
         SLinkOperations.setTarget(node, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b529aL, 0x195a5f84d6043296L, "expression"), _context.getSourceNode());
-        editorContext.select(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b529aL, 0x195a5f84d6043298L, "sublist")));
+        editorContext.select(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b529aL, 0x195a5f84d6043298L, "indexSelection")));
         return node;
       }
       public String getMatchingText(String pattern) {
