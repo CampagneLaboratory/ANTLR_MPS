@@ -5,25 +5,62 @@ package org.campagnelab.metar.R.actions;
 import java.util.List;
 import jetbrains.mps.openapi.editor.cells.SubstituteAction;
 import jetbrains.mps.smodel.IOperationContext;
-import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
+import jetbrains.mps.smodel.action.NodeSubstituteActionsFactoryContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
-import jetbrains.mps.util.Computable;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.action.DefaultSimpleSubstituteAction;
+import org.jetbrains.mps.openapi.model.SModel;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.campagnelab.metar.R.behavior.Identifier_Behavior;
+import jetbrains.mps.smodel.action.NodeSubstitutePreconditionContext;
+import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
+import jetbrains.mps.util.Computable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.openapi.editor.EditorContext;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.constraints.ModelConstraints;
 
 public class QueriesGenerated {
+  public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_Identifier_4765240346572622418(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
+    List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
+    {
+      SNode outputConcept = MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, "org.campagnelab.metar.R.structure.FunctionCallExpr").getDeclarationNode();
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (outputConcept == null || SConceptOperations.isSuperConceptOf(SNodeOperations.asSConcept(childConcept), SNodeOperations.asSConcept(outputConcept))) {
+        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter()) {
+          public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
+            SNode functionCall = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, "org.campagnelab.metar.R.structure.FunctionCallExpr")));
+            SLinkOperations.setTarget(functionCall, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, 0x33dd14ec70cfd7b4L, "id"), _context.getCurrentTargetNode());
+            return SNodeOperations.replaceWithAnother(_context.getCurrentTargetNode(), functionCall);
+          }
+          public boolean hasSubstitute() {
+            return true;
+          }
+          public boolean canSubstitute_internal(String pattern, boolean strictly) {
+            return (Identifier_Behavior.call_matchingFunction_4765240346572628991(_context.getCurrentTargetNode()) != null);
+          }
+          public String getMatchingText(String pattern) {
+            return "(";
+          }
+          public String getVisibleMatchingText(String pattern) {
+            return getMatchingText(pattern);
+          }
+        });
+      }
+    }
+    return result;
+  }
+  public static boolean nodeSubstituteActionsBuilder_Precondition_Identifier_4765240346572622420(final IOperationContext operationContext, final NodeSubstitutePreconditionContext _context) {
+    return !(SNodeOperations.isInstanceOf(_context.getCurrentTargetNode(), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x67233316ad3ba88dL, "org.campagnelab.metar.R.structure.FunctionIdRef")));
+  }
   public static List<SubstituteAction> sideTransform_ActionsFactory_Expr_489068675565107355(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
     {
@@ -47,7 +84,7 @@ public class QueriesGenerated {
               SNode ref = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x14d038586597da88L, "org.campagnelab.metar.R.structure.IdentifierRef")));
               SLinkOperations.setTarget(ref, MetaAdapterFactory.getReferenceLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x14d038586597da88L, 0x14d0385865984963L, "id"), ListSequence.fromList(SNodeOperations.getNodeDescendants(SNodeOperations.getNodeAncestor(_context.getSourceNode(), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04afacdL, "org.campagnelab.metar.R.structure.Prog"), false, false), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier"), false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
                 public boolean accept(SNode it) {
-                  return eq_x583g4_a0a0a0a0a2a1a0a0a0a0a0a1a0a1a0(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), (item));
+                  return eq_x583g4_a0a0a0a0a2a1a0a0a0a0a0a1a0a1a2(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), (item));
                 }
               }));
               SNodeOperations.replaceWithAnother(_context.getSourceNode(), ref);
@@ -197,7 +234,7 @@ public class QueriesGenerated {
     }
     return result;
   }
-  private static boolean eq_x583g4_a0a0a0a0a2a1a0a0a0a0a0a1a0a1a0(Object a, Object b) {
+  private static boolean eq_x583g4_a0a0a0a0a2a1a0a0a0a0a0a1a0a1a2(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }

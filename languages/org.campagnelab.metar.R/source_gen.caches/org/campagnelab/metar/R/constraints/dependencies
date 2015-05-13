@@ -11,7 +11,12 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.constraints.BinaryOperatorExpr_Constraints" />
+    <classNode dependClassName="org.campagnelab.metar.R.constraints.Identifier_Constraints" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.metar.R.constraints.Identifier_Constraints" file="Identifier_Constraints.java">
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdFactory" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
 </dependenciesRoot>
 

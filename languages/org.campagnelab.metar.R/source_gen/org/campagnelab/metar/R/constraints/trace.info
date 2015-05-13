@@ -4,7 +4,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,30,0" name="org.campagnelab.metar.R.constraints.ConstraintsAspectDescriptor" />
+      <unit at="10,0,35,0" name="org.campagnelab.metar.R.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:bbac9b32-ad23-4a73-9931-fe439dd26b5d(org.campagnelab.metar.R.constraints)/1826877622984327412">
@@ -14,6 +14,15 @@
       <scope id="1826877622984327412" at="9,43,10,98" />
       <scope id="1826877622984327412" at="9,0,12,0" />
       <unit id="1826877622984327412" at="8,0,13,0" name="org.campagnelab.metar.R.constraints.BinaryOperatorExpr_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:bbac9b32-ad23-4a73-9931-fe439dd26b5d(org.campagnelab.metar.R.constraints)/4765240346573550465">
+    <file name="Identifier_Constraints.java">
+      <node id="4765240346573550465" at="9,35,10,98" concept="1" />
+      <node id="4765240346573550465" at="9,0,12,0" concept="0" trace="Identifier_Constraints#()V" />
+      <scope id="4765240346573550465" at="9,35,10,98" />
+      <scope id="4765240346573550465" at="9,0,12,0" />
+      <unit id="4765240346573550465" at="8,0,13,0" name="org.campagnelab.metar.R.constraints.Identifier_Constraints" />
     </file>
   </root>
 </debug-info>
