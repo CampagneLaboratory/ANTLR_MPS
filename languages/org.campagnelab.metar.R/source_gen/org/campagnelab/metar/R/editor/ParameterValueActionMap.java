@@ -34,7 +34,7 @@ public class ParameterValueActionMap {
         SNodeOperations.replaceWithNewChild(node, "org.campagnelab.metar.R.structure.Expr");
         return;
       }
-      SNodeOperations.replaceWithNewChild(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x501583ef40d93683L, "org.campagnelab.metar.R.structure.Value"), true, false), "org.campagnelab.metar.R.structure.PositionalParameterValue");
+      SNodeOperations.replaceWithNewChild(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x501583ef40d93683L, "org.campagnelab.metar.R.structure.ParameterValue"), true, false), "org.campagnelab.metar.R.structure.PositionalParameterValue");
     }
   }
   public static class ParameterValueActionMap_BACKSPACE extends AbstractCellAction {
@@ -55,7 +55,7 @@ public class ParameterValueActionMap {
         SNodeOperations.replaceWithNewChild(node, "org.campagnelab.metar.R.structure.Expr");
         return;
       }
-      SNodeOperations.replaceWithNewChild(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x501583ef40d93683L, "org.campagnelab.metar.R.structure.Value"), true, false), "org.campagnelab.metar.R.structure.PositionalParameterValue");
+      SNodeOperations.replaceWithNewChild(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x501583ef40d93683L, "org.campagnelab.metar.R.structure.ParameterValue"), true, false), "org.campagnelab.metar.R.structure.PositionalParameterValue");
     }
   }
 }

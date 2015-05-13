@@ -11,8 +11,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
 
 public class Identifier_Behavior {
   public static void init(SNode thisNode) {
@@ -21,24 +19,16 @@ public class Identifier_Behavior {
     return SPropertyOperations.getString(thisNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
   public static SNode call_matchingFunction_4765240346572628991(final SNode thisNode) {
-    SNode functionExp = SNodeOperations.cast(SLinkOperations.getTarget(ListSequence.fromList(SNodeOperations.getNodeDescendants(SNodeOperations.getNodeAncestor(thisNode, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04afacdL, "org.campagnelab.metar.R.structure.Prog"), false, false), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52aaL, "org.campagnelab.metar.R.structure.AssignmentOperatorExpr"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
+    SNode functionExp = SNodeOperations.cast(SLinkOperations.getTarget(ListSequence.fromList(SNodeOperations.getNodeDescendants(SNodeOperations.getNodeAncestor(thisNode, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04afacdL, "org.campagnelab.metar.R.structure.Prog"), false, false), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, "org.campagnelab.metar.R.structure.BinaryOperatorExpr"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-
-        return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, "org.campagnelab.metar.R.structure.FunctionDeclarationExpr")) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier"));
+        return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x6c9855e848f60fcL, "operator")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x6c9855e847c6e00L, "org.campagnelab.metar.R.structure.AssignmentOperator")) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, "org.campagnelab.metar.R.structure.FunctionDeclarationExpr")) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier"));
       }
     }).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode assignment) {
         {
           final SNode id2 = SLinkOperations.getTarget(assignment, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left"));
           if (SNodeOperations.isInstanceOf(id2, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier"))) {
-            if (LOG.isInfoEnabled()) {
-              LOG.info("id2 is " + SNodeOperations.getConcept(id2).getName());
-            }
-            if (LOG.isInfoEnabled()) {
-              LOG.info("id is " + SNodeOperations.getConcept(thisNode).getName());
-            }
-
-            return eq_mqw2vo_a0d0b0a0a0a0a0a0a0a2(BehaviorReflection.invokeVirtual(String.class, id2, "virtual_name_489068675561959660", new Object[]{}), BehaviorReflection.invokeVirtual(String.class, thisNode, "virtual_name_489068675561959660", new Object[]{}));
+            return eq_mqw2vo_a0a0b0a0a0a0a0a0a0a2(BehaviorReflection.invokeVirtual(String.class, id2, "virtual_name_489068675561959660", new Object[]{}), BehaviorReflection.invokeVirtual(String.class, thisNode, "virtual_name_489068675561959660", new Object[]{}));
           }
         }
         return false;
@@ -55,8 +45,7 @@ public class Identifier_Behavior {
     }
     return testValue.matches("(.[a-zA-Z._][a-zA-Z0-9_.]*)|([a-zA-Z][a-zA-Z0-9_.]*)");
   }
-  protected static Logger LOG = LogManager.getLogger(Identifier_Behavior.class);
-  private static boolean eq_mqw2vo_a0d0b0a0a0a0a0a0a0a2(Object a, Object b) {
+  private static boolean eq_mqw2vo_a0a0b0a0a0a0a0a0a0a2(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }

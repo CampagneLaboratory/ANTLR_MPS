@@ -29,7 +29,7 @@
       <node id="1556967766006140765" at="32,225,33,73" concept="8" />
       <node id="1556967766006140776" at="33,73,34,92" concept="2" />
       <node id="1556967766006199899" at="34,92,35,15" concept="7" />
-      <node id="1556967766005225470" at="36,7,37,293" concept="2" />
+      <node id="1556967766005225470" at="36,7,37,302" concept="2" />
       <node id="1556967766005225462" at="41,0,42,0" concept="3" trace="myNode" />
       <node id="1556967766005225462" at="42,58,43,25" concept="2" />
       <node id="1556967766005225462" at="45,54,46,56" concept="2" />
@@ -38,7 +38,7 @@
       <node id="1556967766006140765" at="53,225,54,73" concept="8" />
       <node id="1556967766006140776" at="54,73,55,92" concept="2" />
       <node id="1556967766006199899" at="55,92,56,15" concept="7" />
-      <node id="1556967766005225470" at="57,7,58,293" concept="2" />
+      <node id="1556967766005225470" at="57,7,58,302" concept="2" />
       <node id="1556967766005225462" at="21,0,24,0" concept="1" trace="ParameterValueActionMap_DELETE#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1556967766005225462" at="24,0,27,0" concept="5" trace="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="1556967766005225462" at="42,0,45,0" concept="1" trace="ParameterValueActionMap_BACKSPACE#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
@@ -76,8 +76,8 @@
         <var name="editorCell" id="1556967766005225462" />
         <var name="node" id="1556967766005225462" />
       </scope>
-      <scope id="1556967766005225465" at="27,75,37,293" />
-      <scope id="1556967766005225465" at="48,75,58,293" />
+      <scope id="1556967766005225465" at="27,75,37,302" />
+      <scope id="1556967766005225465" at="48,75,58,302" />
       <scope id="1556967766005225462" at="27,0,39,0">
         <var name="editorContext" id="1556967766005225462" />
         <var name="node" id="1556967766005225462" />
@@ -6380,7 +6380,7 @@
     </file>
   </root>
   <root nodeRef="r:aaf90db9-c063-474d-ae34-b6cf5ac1b1d2(org.campagnelab.metar.R.editor)/5770663561154916135">
-    <file name="Value_Editor.java">
+    <file name="ParameterValue_Editor.java">
       <node id="5770663561154916135" at="23,79,24,63" concept="7" />
       <node id="5770663561154916135" at="26,89,27,96" concept="6" />
       <node id="5770663561154916135" at="27,96,28,48" concept="2" />
@@ -6415,24 +6415,24 @@
       <node id="5770663561154916135" at="61,26,62,58" concept="2" />
       <node id="5770663561154916135" at="63,39,64,34" concept="2" />
       <node id="5770663561154916135" at="65,5,66,76" concept="2" />
-      <node id="5770663561154916135" at="66,76,67,186" concept="2" />
-      <node id="5770663561154916135" at="67,186,68,57" concept="6" />
+      <node id="5770663561154916135" at="66,76,67,204" concept="2" />
+      <node id="5770663561154916135" at="67,204,68,57" concept="6" />
       <node id="5770663561154916135" at="68,57,69,59" concept="6" />
       <node id="5770663561154916135" at="70,35,71,82" concept="6" />
       <node id="5770663561154916135" at="71,82,72,109" concept="7" />
       <node id="5770663561154916135" at="73,10,74,22" concept="7" />
       <node id="1556967766004741666" at="79,162,80,172" concept="7" />
-      <node id="1556967766004741663" at="77,0,79,0" concept="1" trace="Value_value_cellMenu_wn8465_a0c0#()V" />
+      <node id="1556967766004741663" at="77,0,79,0" concept="1" trace="ParameterValue_value_cellMenu_2gjdwi_a0c0#()V" />
       <node id="5770663561154916135" at="23,0,26,0" concept="5" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5770663561154916135" at="62,58,65,5" concept="4" />
       <node id="1556967766004741663" at="79,0,82,0" concept="5" trace="getConceptOfChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/openapi/editor/EditorContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="5770663561154917721" at="44,59,49,22" concept="4" />
       <node id="5770663561154916135" at="69,59,74,22" concept="4" />
-      <node id="5770663561154917729" at="51,0,57,0" concept="5" trace="createConstant_wn8465_b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="5770663561154916135" at="26,0,35,0" concept="5" trace="createCollection_wn8465_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="5770663561154917721" at="35,0,51,0" concept="5" trace="createProperty_wn8465_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="5770663561154916135" at="57,0,76,0" concept="5" trace="createRefNode_wn8465_c0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="1556967766004741663" at="77,47,77,47" />
+      <node id="5770663561154917729" at="51,0,57,0" concept="5" trace="createConstant_2gjdwi_b0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="5770663561154916135" at="26,0,35,0" concept="5" trace="createCollection_2gjdwi_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="5770663561154917721" at="35,0,51,0" concept="5" trace="createProperty_2gjdwi_a0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="5770663561154916135" at="57,0,76,0" concept="5" trace="createRefNode_2gjdwi_c0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="1556967766004741663" at="77,56,77,56" />
       <scope id="5770663561154916135" at="23,79,24,63" />
       <scope id="5770663561154916135" at="29,28,30,81" />
       <scope id="5770663561154916135" at="30,81,31,81" />
@@ -6491,8 +6491,8 @@
         <var name="editorContext" id="5770663561154916135" />
         <var name="node" id="5770663561154916135" />
       </scope>
-      <unit id="1556967766004741663" at="76,0,83,0" name="org.campagnelab.metar.R.editor.Value_Editor$Value_value_cellMenu_wn8465_a0c0" />
-      <unit id="5770663561154916135" at="22,0,84,0" name="org.campagnelab.metar.R.editor.Value_Editor" />
+      <unit id="1556967766004741663" at="76,0,83,0" name="org.campagnelab.metar.R.editor.ParameterValue_Editor$ParameterValue_value_cellMenu_2gjdwi_a0c0" />
+      <unit id="5770663561154916135" at="22,0,84,0" name="org.campagnelab.metar.R.editor.ParameterValue_Editor" />
     </file>
   </root>
   <root nodeRef="r:aaf90db9-c063-474d-ae34-b6cf5ac1b1d2(org.campagnelab.metar.R.editor)/7411887369043474982">

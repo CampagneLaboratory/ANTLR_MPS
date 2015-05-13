@@ -11,9 +11,9 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
   }
   public BehaviorDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
-      case 83:
-        return new Prog_BehaviorDescriptor();
       case 84:
+        return new Prog_BehaviorDescriptor();
+      case 85:
         return new ProgramProg_BehaviorDescriptor();
       case 24:
         return new ElementAccessExpr_BehaviorDescriptor();
@@ -25,11 +25,11 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new DollarExpr_BehaviorDescriptor();
       case 31:
         return new ExponentExpr_BehaviorDescriptor();
-      case 101:
+      case 102:
         return new UnaryOperatorExpr_BehaviorDescriptor();
       case 15:
         return new ColonExpr_BehaviorDescriptor();
-      case 99:
+      case 100:
         return new USER_OPExpr_BehaviorDescriptor();
       case 64:
         return new MultiplicationExpr_BehaviorDescriptor();
@@ -43,9 +43,9 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new AndExpr_BehaviorDescriptor();
       case 74:
         return new OrExpr_BehaviorDescriptor();
-      case 102:
+      case 103:
         return new UnaryTildeExpr_BehaviorDescriptor();
-      case 96:
+      case 97:
         return new TildeExpr_BehaviorDescriptor();
       case 4:
         return new AssignmentOperatorExpr_BehaviorDescriptor();
@@ -63,7 +63,7 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new ForExpr_BehaviorDescriptor();
       case 107:
         return new WhileExpr_BehaviorDescriptor();
-      case 85:
+      case 86:
         return new RepeatExpr_BehaviorDescriptor();
       case 45:
         return new HelpExpr_BehaviorDescriptor();
@@ -71,11 +71,11 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new NextExpr_BehaviorDescriptor();
       case 11:
         return new BreakExpr_BehaviorDescriptor();
-      case 80:
+      case 81:
         return new ParenthesizedExpr_BehaviorDescriptor();
       case 51:
         return new Identifier_BehaviorDescriptor();
-      case 89:
+      case 90:
         return new StringLiteralExpr_BehaviorDescriptor();
       case 46:
         return new HexLiteralExpr_BehaviorDescriptor();
@@ -93,7 +93,7 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new InfExpr_BehaviorDescriptor();
       case 66:
         return new NaNExpr_BehaviorDescriptor();
-      case 98:
+      case 99:
         return new TrueLiteralExpr_BehaviorDescriptor();
       case 33:
         return new FalseLiteralExpr_BehaviorDescriptor();
@@ -103,7 +103,7 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new BooleanLiteral_BehaviorDescriptor();
       case 32:
         return new Exprlist_BehaviorDescriptor();
-      case 93:
+      case 94:
         return new Sublist_BehaviorDescriptor();
       case 25:
         return new EmptyExprlist_BehaviorDescriptor();
@@ -113,7 +113,7 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new IdentifierRef_BehaviorDescriptor();
       case 41:
         return new FunctionParamDeclaration_BehaviorDescriptor();
-      case 79:
+      case 80:
         return new ParametersSublist_BehaviorDescriptor();
       case 75:
         return new ParameterDeclaration_BehaviorDescriptor();
@@ -121,23 +121,23 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new FunctionParamDeclarationList_BehaviorDescriptor();
       case 49:
         return new IdParameterDeclarationParameter_BehaviorDescriptor();
-      case 78:
+      case 79:
         return new ParameterWithDefaultDeclarationParameter_BehaviorDescriptor();
       case 104:
         return new VarargsParameter_BehaviorDescriptor();
       case 47:
         return new IdExprForm_BehaviorDescriptor();
-      case 91:
-        return new Sub_BehaviorDescriptor();
       case 92:
+        return new Sub_BehaviorDescriptor();
+      case 93:
         return new SubExprSub_BehaviorDescriptor();
       case 50:
         return new IdSubDefaultSub_BehaviorDescriptor();
       case 48:
         return new IdExprSubSub_BehaviorDescriptor();
-      case 87:
-        return new StringDefaultSub_BehaviorDescriptor();
       case 88:
+        return new StringDefaultSub_BehaviorDescriptor();
+      case 89:
         return new StringExprSub_BehaviorDescriptor();
       case 70:
         return new NullDefaultSubSub_BehaviorDescriptor();
@@ -147,15 +147,15 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new VarargsSub_BehaviorDescriptor();
       case 27:
         return new EmptySubSub_BehaviorDescriptor();
-      case 77:
+      case 78:
         return new ParameterValues_BehaviorDescriptor();
-      case 103:
-        return new Value_BehaviorDescriptor();
-      case 82:
-        return new PositionalParameterValue_BehaviorDescriptor();
       case 76:
+        return new ParameterValue_BehaviorDescriptor();
+      case 83:
+        return new PositionalParameterValue_BehaviorDescriptor();
+      case 77:
         return new ParameterValueWithId_BehaviorDescriptor();
-      case 90:
+      case 91:
         return new StringValueValue_BehaviorDescriptor();
       case 73:
         return new NullValueValue_BehaviorDescriptor();
@@ -165,11 +165,11 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new EmptySubValue_BehaviorDescriptor();
       case 40:
         return new FunctionIdRef_BehaviorDescriptor();
-      case 100:
+      case 101:
         return new UnaryOperator_BehaviorDescriptor();
       case 23:
         return new DoubleColon_BehaviorDescriptor();
-      case 97:
+      case 98:
         return new TripleColon_BehaviorDescriptor();
       case 8:
         return new BitwiseOr_BehaviorDescriptor();
@@ -181,9 +181,9 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new At_BehaviorDescriptor();
       case 62:
         return new Minus_BehaviorDescriptor();
-      case 94:
+      case 95:
         return new SubstractOperator_BehaviorDescriptor();
-      case 81:
+      case 82:
         return new Plus_BehaviorDescriptor();
       case 0:
         return new AddOperator_BehaviorDescriptor();
@@ -205,7 +205,7 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new BitwiseAnd_BehaviorDescriptor();
       case 60:
         return new LogicalAnd_BehaviorDescriptor();
-      case 86:
+      case 87:
         return new SimpleAssignment_BehaviorDescriptor();
       case 36:
         return new ForcefulAssignment_BehaviorDescriptor();
@@ -217,7 +217,7 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new ForcefulToTheRight_BehaviorDescriptor();
       case 14:
         return new ColonEqual_BehaviorDescriptor();
-      case 95:
+      case 96:
         return new Tilde_BehaviorDescriptor();
       case 13:
         return new Colon_BehaviorDescriptor();
@@ -231,5 +231,5 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.metar.R.structure.AddOperator", "org.campagnelab.metar.R.structure.AdditionExpr", "org.campagnelab.metar.R.structure.AndExpr", "org.campagnelab.metar.R.structure.AssignToTheRight", "org.campagnelab.metar.R.structure.AssignmentOperatorExpr", "org.campagnelab.metar.R.structure.At", "org.campagnelab.metar.R.structure.BinaryOperatorExpr", "org.campagnelab.metar.R.structure.BitwiseAnd", "org.campagnelab.metar.R.structure.BitwiseOr", "org.campagnelab.metar.R.structure.BodyExpr", "org.campagnelab.metar.R.structure.BooleanLiteral", "org.campagnelab.metar.R.structure.BreakExpr", "org.campagnelab.metar.R.structure.Caret", "org.campagnelab.metar.R.structure.Colon", "org.campagnelab.metar.R.structure.ColonEqual", "org.campagnelab.metar.R.structure.ColonExpr", "org.campagnelab.metar.R.structure.ColonsExpr", "org.campagnelab.metar.R.structure.ComparisonExpr", "org.campagnelab.metar.R.structure.ComplexLiteralExpr", "org.campagnelab.metar.R.structure.Difference", "org.campagnelab.metar.R.structure.Division", "org.campagnelab.metar.R.structure.Dollar", "org.campagnelab.metar.R.structure.DollarExpr", "org.campagnelab.metar.R.structure.DoubleColon", "org.campagnelab.metar.R.structure.ElementAccessExpr", "org.campagnelab.metar.R.structure.EmptyExprlist", "org.campagnelab.metar.R.structure.EmptyLine", "org.campagnelab.metar.R.structure.EmptySubSub", "org.campagnelab.metar.R.structure.EmptySubValue", "org.campagnelab.metar.R.structure.EqualAssignment", "org.campagnelab.metar.R.structure.Equality", "org.campagnelab.metar.R.structure.ExponentExpr", "org.campagnelab.metar.R.structure.Exprlist", "org.campagnelab.metar.R.structure.FalseLiteralExpr", "org.campagnelab.metar.R.structure.FloatLiteralExpr", "org.campagnelab.metar.R.structure.ForExpr", "org.campagnelab.metar.R.structure.ForcefulAssignment", "org.campagnelab.metar.R.structure.ForcefulToTheRight", "org.campagnelab.metar.R.structure.FunctionCallExpr", "org.campagnelab.metar.R.structure.FunctionDeclarationExpr", "org.campagnelab.metar.R.structure.FunctionIdRef", "org.campagnelab.metar.R.structure.FunctionParamDeclaration", "org.campagnelab.metar.R.structure.FunctionParamDeclarationList", "org.campagnelab.metar.R.structure.GreaterOrEqualThan", "org.campagnelab.metar.R.structure.GreaterThan", "org.campagnelab.metar.R.structure.HelpExpr", "org.campagnelab.metar.R.structure.HexLiteralExpr", "org.campagnelab.metar.R.structure.IdExprForm", "org.campagnelab.metar.R.structure.IdExprSubSub", "org.campagnelab.metar.R.structure.IdParameterDeclarationParameter", "org.campagnelab.metar.R.structure.IdSubDefaultSub", "org.campagnelab.metar.R.structure.Identifier", "org.campagnelab.metar.R.structure.IdentifierRef", "org.campagnelab.metar.R.structure.IfElseExpr", "org.campagnelab.metar.R.structure.IfExpr", "org.campagnelab.metar.R.structure.InfExpr", "org.campagnelab.metar.R.structure.IntLiteralExpr", "org.campagnelab.metar.R.structure.LessOrEqualThan", "org.campagnelab.metar.R.structure.LessThan", "org.campagnelab.metar.R.structure.ListAccessExpr", "org.campagnelab.metar.R.structure.LogicalAnd", "org.campagnelab.metar.R.structure.LogicalOr", "org.campagnelab.metar.R.structure.Minus", "org.campagnelab.metar.R.structure.Multiplication", "org.campagnelab.metar.R.structure.MultiplicationExpr", "org.campagnelab.metar.R.structure.NAExpr", "org.campagnelab.metar.R.structure.NaNExpr", "org.campagnelab.metar.R.structure.NextExpr", "org.campagnelab.metar.R.structure.Not", "org.campagnelab.metar.R.structure.NotExpr", "org.campagnelab.metar.R.structure.NullDefaultSubSub", "org.campagnelab.metar.R.structure.NullExpr", "org.campagnelab.metar.R.structure.NullExprSubSub", "org.campagnelab.metar.R.structure.NullValueValue", "org.campagnelab.metar.R.structure.OrExpr", "org.campagnelab.metar.R.structure.ParameterDeclaration", "org.campagnelab.metar.R.structure.ParameterValueWithId", "org.campagnelab.metar.R.structure.ParameterValues", "org.campagnelab.metar.R.structure.ParameterWithDefaultDeclarationParameter", "org.campagnelab.metar.R.structure.ParametersSublist", "org.campagnelab.metar.R.structure.ParenthesizedExpr", "org.campagnelab.metar.R.structure.Plus", "org.campagnelab.metar.R.structure.PositionalParameterValue", "org.campagnelab.metar.R.structure.Prog", "org.campagnelab.metar.R.structure.ProgramProg", "org.campagnelab.metar.R.structure.RepeatExpr", "org.campagnelab.metar.R.structure.SimpleAssignment", "org.campagnelab.metar.R.structure.StringDefaultSub", "org.campagnelab.metar.R.structure.StringExprSub", "org.campagnelab.metar.R.structure.StringLiteralExpr", "org.campagnelab.metar.R.structure.StringValueValue", "org.campagnelab.metar.R.structure.Sub", "org.campagnelab.metar.R.structure.SubExprSub", "org.campagnelab.metar.R.structure.Sublist", "org.campagnelab.metar.R.structure.SubstractOperator", "org.campagnelab.metar.R.structure.Tilde", "org.campagnelab.metar.R.structure.TildeExpr", "org.campagnelab.metar.R.structure.TripleColon", "org.campagnelab.metar.R.structure.TrueLiteralExpr", "org.campagnelab.metar.R.structure.USER_OPExpr", "org.campagnelab.metar.R.structure.UnaryOperator", "org.campagnelab.metar.R.structure.UnaryOperatorExpr", "org.campagnelab.metar.R.structure.UnaryTildeExpr", "org.campagnelab.metar.R.structure.Value", "org.campagnelab.metar.R.structure.VarargsParameter", "org.campagnelab.metar.R.structure.VarargsSub", "org.campagnelab.metar.R.structure.VarargsValueValue", "org.campagnelab.metar.R.structure.WhileExpr"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"org.campagnelab.metar.R.structure.AddOperator", "org.campagnelab.metar.R.structure.AdditionExpr", "org.campagnelab.metar.R.structure.AndExpr", "org.campagnelab.metar.R.structure.AssignToTheRight", "org.campagnelab.metar.R.structure.AssignmentOperatorExpr", "org.campagnelab.metar.R.structure.At", "org.campagnelab.metar.R.structure.BinaryOperatorExpr", "org.campagnelab.metar.R.structure.BitwiseAnd", "org.campagnelab.metar.R.structure.BitwiseOr", "org.campagnelab.metar.R.structure.BodyExpr", "org.campagnelab.metar.R.structure.BooleanLiteral", "org.campagnelab.metar.R.structure.BreakExpr", "org.campagnelab.metar.R.structure.Caret", "org.campagnelab.metar.R.structure.Colon", "org.campagnelab.metar.R.structure.ColonEqual", "org.campagnelab.metar.R.structure.ColonExpr", "org.campagnelab.metar.R.structure.ColonsExpr", "org.campagnelab.metar.R.structure.ComparisonExpr", "org.campagnelab.metar.R.structure.ComplexLiteralExpr", "org.campagnelab.metar.R.structure.Difference", "org.campagnelab.metar.R.structure.Division", "org.campagnelab.metar.R.structure.Dollar", "org.campagnelab.metar.R.structure.DollarExpr", "org.campagnelab.metar.R.structure.DoubleColon", "org.campagnelab.metar.R.structure.ElementAccessExpr", "org.campagnelab.metar.R.structure.EmptyExprlist", "org.campagnelab.metar.R.structure.EmptyLine", "org.campagnelab.metar.R.structure.EmptySubSub", "org.campagnelab.metar.R.structure.EmptySubValue", "org.campagnelab.metar.R.structure.EqualAssignment", "org.campagnelab.metar.R.structure.Equality", "org.campagnelab.metar.R.structure.ExponentExpr", "org.campagnelab.metar.R.structure.Exprlist", "org.campagnelab.metar.R.structure.FalseLiteralExpr", "org.campagnelab.metar.R.structure.FloatLiteralExpr", "org.campagnelab.metar.R.structure.ForExpr", "org.campagnelab.metar.R.structure.ForcefulAssignment", "org.campagnelab.metar.R.structure.ForcefulToTheRight", "org.campagnelab.metar.R.structure.FunctionCallExpr", "org.campagnelab.metar.R.structure.FunctionDeclarationExpr", "org.campagnelab.metar.R.structure.FunctionIdRef", "org.campagnelab.metar.R.structure.FunctionParamDeclaration", "org.campagnelab.metar.R.structure.FunctionParamDeclarationList", "org.campagnelab.metar.R.structure.GreaterOrEqualThan", "org.campagnelab.metar.R.structure.GreaterThan", "org.campagnelab.metar.R.structure.HelpExpr", "org.campagnelab.metar.R.structure.HexLiteralExpr", "org.campagnelab.metar.R.structure.IdExprForm", "org.campagnelab.metar.R.structure.IdExprSubSub", "org.campagnelab.metar.R.structure.IdParameterDeclarationParameter", "org.campagnelab.metar.R.structure.IdSubDefaultSub", "org.campagnelab.metar.R.structure.Identifier", "org.campagnelab.metar.R.structure.IdentifierRef", "org.campagnelab.metar.R.structure.IfElseExpr", "org.campagnelab.metar.R.structure.IfExpr", "org.campagnelab.metar.R.structure.InfExpr", "org.campagnelab.metar.R.structure.IntLiteralExpr", "org.campagnelab.metar.R.structure.LessOrEqualThan", "org.campagnelab.metar.R.structure.LessThan", "org.campagnelab.metar.R.structure.ListAccessExpr", "org.campagnelab.metar.R.structure.LogicalAnd", "org.campagnelab.metar.R.structure.LogicalOr", "org.campagnelab.metar.R.structure.Minus", "org.campagnelab.metar.R.structure.Multiplication", "org.campagnelab.metar.R.structure.MultiplicationExpr", "org.campagnelab.metar.R.structure.NAExpr", "org.campagnelab.metar.R.structure.NaNExpr", "org.campagnelab.metar.R.structure.NextExpr", "org.campagnelab.metar.R.structure.Not", "org.campagnelab.metar.R.structure.NotExpr", "org.campagnelab.metar.R.structure.NullDefaultSubSub", "org.campagnelab.metar.R.structure.NullExpr", "org.campagnelab.metar.R.structure.NullExprSubSub", "org.campagnelab.metar.R.structure.NullValueValue", "org.campagnelab.metar.R.structure.OrExpr", "org.campagnelab.metar.R.structure.ParameterDeclaration", "org.campagnelab.metar.R.structure.ParameterValue", "org.campagnelab.metar.R.structure.ParameterValueWithId", "org.campagnelab.metar.R.structure.ParameterValues", "org.campagnelab.metar.R.structure.ParameterWithDefaultDeclarationParameter", "org.campagnelab.metar.R.structure.ParametersSublist", "org.campagnelab.metar.R.structure.ParenthesizedExpr", "org.campagnelab.metar.R.structure.Plus", "org.campagnelab.metar.R.structure.PositionalParameterValue", "org.campagnelab.metar.R.structure.Prog", "org.campagnelab.metar.R.structure.ProgramProg", "org.campagnelab.metar.R.structure.RepeatExpr", "org.campagnelab.metar.R.structure.SimpleAssignment", "org.campagnelab.metar.R.structure.StringDefaultSub", "org.campagnelab.metar.R.structure.StringExprSub", "org.campagnelab.metar.R.structure.StringLiteralExpr", "org.campagnelab.metar.R.structure.StringValueValue", "org.campagnelab.metar.R.structure.Sub", "org.campagnelab.metar.R.structure.SubExprSub", "org.campagnelab.metar.R.structure.Sublist", "org.campagnelab.metar.R.structure.SubstractOperator", "org.campagnelab.metar.R.structure.Tilde", "org.campagnelab.metar.R.structure.TildeExpr", "org.campagnelab.metar.R.structure.TripleColon", "org.campagnelab.metar.R.structure.TrueLiteralExpr", "org.campagnelab.metar.R.structure.USER_OPExpr", "org.campagnelab.metar.R.structure.UnaryOperator", "org.campagnelab.metar.R.structure.UnaryOperatorExpr", "org.campagnelab.metar.R.structure.UnaryTildeExpr", "org.campagnelab.metar.R.structure.VarargsParameter", "org.campagnelab.metar.R.structure.VarargsSub", "org.campagnelab.metar.R.structure.VarargsValueValue", "org.campagnelab.metar.R.structure.WhileExpr"};
 }
