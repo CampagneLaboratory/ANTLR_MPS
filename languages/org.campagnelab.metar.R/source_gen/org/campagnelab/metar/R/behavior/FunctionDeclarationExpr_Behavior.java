@@ -14,22 +14,25 @@ public class FunctionDeclarationExpr_Behavior {
     SNode identifier = null;
 
     {
-      final SNode op = SNodeOperations.getParent(thisNode);
-      if (SNodeOperations.isInstanceOf(op, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52aaL, "org.campagnelab.metar.R.structure.AssignmentOperatorExpr"))) {
+      final SNode expr = SNodeOperations.getParent(thisNode);
+      if (SNodeOperations.isInstanceOf(expr, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, "org.campagnelab.metar.R.structure.BinaryOperatorExpr"))) {
+        if (!(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(expr, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x6c9855e848f60fcL, "operator")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x6c9855e847c6e00L, "org.campagnelab.metar.R.structure.AssignmentOperator")))) {
+          return null;
+        }
         {
-          final SNode id = SLinkOperations.getTarget(op, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left"));
+          final SNode id = SLinkOperations.getTarget(expr, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left"));
           if (SNodeOperations.isInstanceOf(id, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier"))) {
             identifier = id;
           }
         }
         {
-          final SNode id = SLinkOperations.getTarget(op, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right"));
+          final SNode id = SLinkOperations.getTarget(expr, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right"));
           if (SNodeOperations.isInstanceOf(id, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier"))) {
             identifier = id;
           }
         }
         {
-          final SNode function = SLinkOperations.getTarget(op, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left"));
+          final SNode function = SLinkOperations.getTarget(expr, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left"));
           if (SNodeOperations.isInstanceOf(function, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, "org.campagnelab.metar.R.structure.FunctionDeclarationExpr"))) {
             if (function != thisNode) {
               return null;
@@ -37,7 +40,7 @@ public class FunctionDeclarationExpr_Behavior {
           }
         }
         {
-          final SNode function = SLinkOperations.getTarget(op, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right"));
+          final SNode function = SLinkOperations.getTarget(expr, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right"));
           if (SNodeOperations.isInstanceOf(function, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, "org.campagnelab.metar.R.structure.FunctionDeclarationExpr"))) {
             if (function != thisNode) {
               return null;

@@ -21,7 +21,7 @@ public class R_Style_StyleSheet {
     style.set(StyleAttributes.TEXT_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.black));
   }
   public static void apply_FunctionNameCall(Style style, EditorCell editorCell) {
-    style.set(StyleAttributes.TEXT_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.green));
+    style.set(StyleAttributes.TEXT_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_GREEN));
   }
   public static void apply_Operator(Style style, EditorCell editorCell) {
     style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD);

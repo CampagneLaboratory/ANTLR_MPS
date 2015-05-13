@@ -28,7 +28,7 @@ public class Identifier_Behavior {
         {
           final SNode id2 = SLinkOperations.getTarget(assignment, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left"));
           if (SNodeOperations.isInstanceOf(id2, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier"))) {
-            return eq_mqw2vo_a0a0b0a0a0a0a0a0a0a2(BehaviorReflection.invokeVirtual(String.class, id2, "virtual_name_489068675561959660", new Object[]{}), BehaviorReflection.invokeVirtual(String.class, thisNode, "virtual_name_489068675561959660", new Object[]{}));
+            return !(SNodeOperations.isInstanceOf(id2, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x14d038586597da88L, "org.campagnelab.metar.R.structure.IdentifierRef"))) && id2 != thisNode && eq_mqw2vo_a0a0a1a0a0a0a0a0a0a0c(BehaviorReflection.invokeVirtual(String.class, id2, "virtual_name_489068675561959660", new Object[]{}), BehaviorReflection.invokeVirtual(String.class, thisNode, "virtual_name_489068675561959660", new Object[]{}));
           }
         }
         return false;
@@ -45,7 +45,7 @@ public class Identifier_Behavior {
     }
     return testValue.matches("(.[a-zA-Z._][a-zA-Z0-9_.]*)|([a-zA-Z][a-zA-Z0-9_.]*)");
   }
-  private static boolean eq_mqw2vo_a0a0b0a0a0a0a0a0a0a2(Object a, Object b) {
+  private static boolean eq_mqw2vo_a0a0a1a0a0a0a0a0a0a0c(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }

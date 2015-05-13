@@ -1303,7 +1303,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="50lwYX0VuWB">
-    <ref role="1XX52x" to="6q58:50lwYX0Qjq3" resolve="Value" />
+    <ref role="1XX52x" to="6q58:50lwYX0Qjq3" resolve="ParameterValue" />
     <node concept="3EZMnI" id="50lwYX0Vvlc" role="2wV5jI">
       <node concept="3F0A7n" id="50lwYX0Vvlp" role="3EZMnx">
         <ref role="1NtTu8" to="6q58:50lwYX0Qjui" resolve="id" />
@@ -1514,7 +1514,7 @@
     <node concept="14StLt" id="48xyd$eEpWH" role="V601i">
       <property role="TrG5h" value="FunctionNameCall" />
       <node concept="VechU" id="48xyd$eEpWV" role="3F10Kt">
-        <property role="Vb096" value="green" />
+        <property role="Vb096" value="DARK_GREEN" />
       </node>
     </node>
     <node concept="14StLt" id="48xyd$eIgOJ" role="V601i">
@@ -1587,7 +1587,7 @@
   </node>
   <node concept="1h_SRR" id="1mrtuWrupvQ">
     <property role="TrG5h" value="ParameterValueActionMap" />
-    <ref role="1h_SK9" to="6q58:50lwYX0Qjq3" resolve="Value" />
+    <ref role="1h_SK9" to="6q58:50lwYX0Qjq3" resolve="ParameterValue" />
     <node concept="1hA7zw" id="1mrtuWrupvR" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
       <node concept="1hAIg9" id="1mrtuWrupvS" role="1hA7z_">
@@ -1656,7 +1656,7 @@
                 <node concept="2Xjw5R" id="1mrtuWrupOl" role="2OqNvi">
                   <node concept="1xMEDy" id="1mrtuWrupOn" role="1xVPHs">
                     <node concept="chp4Y" id="1mrtuWrupOZ" role="ri$Ld">
-                      <ref role="cht4Q" to="6q58:50lwYX0Qjq3" resolve="Value" />
+                      <ref role="cht4Q" to="6q58:50lwYX0Qjq3" resolve="ParameterValue" />
                     </node>
                   </node>
                   <node concept="1xIGOp" id="1mrtuWrw25z" role="1xVPHs" />
