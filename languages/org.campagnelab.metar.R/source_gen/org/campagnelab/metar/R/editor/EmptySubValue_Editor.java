@@ -9,6 +9,10 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.editor.runtime.EditorCell_Empty;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellActions.CellAction_DeleteNode;
+import jetbrains.mps.nodeEditor.cellMenu.CompositeSubstituteInfo;
+import jetbrains.mps.nodeEditor.cellMenu.BasicCellContext;
+import jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPartExt;
+import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuPart_ReplaceNode_CustomNodeConcept;
 
 public class EmptySubValue_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -20,6 +24,14 @@ public class EmptySubValue_Editor extends DefaultNodeEditor {
     editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(editorCell.getSNode()));
     editorCell.setCellId("Empty_qrall3_a");
     editorCell.setBig(true);
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, new BasicCellContext(node), new SubstituteInfoPartExt[]{new EmptySubValue_Editor.ReplaceWith_PositionalParameterValue_cellMenu_qrall3_a0a()}));
     return editorCell;
+  }
+  public static class ReplaceWith_PositionalParameterValue_cellMenu_qrall3_a0a extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
+    public ReplaceWith_PositionalParameterValue_cellMenu_qrall3_a0a() {
+    }
+    public String getReplacementConceptName() {
+      return "org.campagnelab.metar.R.structure.PositionalParameterValue";
+    }
   }
 }

@@ -8,7 +8,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
-public class IndexedValueValue_Behavior {
+public class PositionalParameterValue_Behavior {
   public static void init(SNode thisNode) {
     SLinkOperations.setTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x501583ef40d93683L, 0x501583ef40d93794L, "value"), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b5299L, "org.campagnelab.metar.R.structure.Expr"))));
   }
