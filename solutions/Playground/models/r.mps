@@ -89,6 +89,10 @@
         <child id="489068675546663431" name="operator" index="22sOXp" />
       </concept>
       <concept id="6176023809880707741" name="org.campagnelab.metar.R.structure.DollarExpr" flags="ng" index="2PZJpN" />
+      <concept id="6176023809880707738" name="org.campagnelab.metar.R.structure.ElementAccessExpr" flags="ng" index="2PZJpO">
+        <child id="1826877622983078550" name="expression" index="3fnAOi" />
+        <child id="1826877622983078552" name="sublist" index="3fnAOs" />
+      </concept>
       <concept id="6176023809880707739" name="org.campagnelab.metar.R.structure.ListAccessExpr" flags="ng" index="2PZJpP">
         <child id="1826877622983078945" name="expression" index="3fnAI_" />
         <child id="1826877622983078947" name="indices" index="3fnAIB" />
@@ -354,7 +358,24 @@
         <property role="TrG5h" value="cats" />
       </node>
     </node>
-    <node concept="3cU4HJ" id="2HxQOBZ2gCE" role="pZjJ2" />
+    <node concept="2PZJpO" id="2HxQOBZrvua" role="pZjJ2">
+      <node concept="134GcB" id="2HxQOBZrvub" role="3fnAOs" />
+      <node concept="2PZJpP" id="2HxQOBZqXQi" role="3fnAOi">
+        <node concept="2PZJpP" id="2HxQOBZqBNm" role="3fnAI_">
+          <node concept="2PZJpk" id="2HxQOBZqnGN" role="3fnAI_">
+            <property role="pzxG6" value="1" />
+          </node>
+          <node concept="134GcB" id="2HxQOBZqC3$" role="3fnAIB">
+            <node concept="1LhYbg" id="2HxQOBZqC3A" role="133swd">
+              <ref role="1Li74V" node="3aFtbFyQ9oQ" resolve=".libPaths" />
+            </node>
+            <node concept="V6WaL" id="2HxQOBZqC3C" role="133swd" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3cU4HJ" id="2HxQOBZqncu" role="pZjJ2" />
+    <node concept="3cU4HJ" id="2HxQOBZqnsC" role="pZjJ2" />
     <node concept="2PZJp2" id="2HxQOBZnktJ" role="pZjJ2">
       <node concept="3a69Ir" id="2HxQOBZnkHP" role="134Gdo">
         <ref role="3a69Pm" node="48xyd$fuNkX" />
