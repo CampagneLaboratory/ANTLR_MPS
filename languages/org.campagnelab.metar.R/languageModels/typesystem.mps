@@ -63,6 +63,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -563,6 +564,27 @@
   <node concept="18kY7G" id="6szcLqHh6We">
     <property role="TrG5h" value="check_FunctionCallExpr" />
     <node concept="3clFbS" id="6szcLqHh6Wf" role="18ibNy">
+      <node concept="3clFbJ" id="48xyd$eBCC9" role="3cqZAp">
+        <node concept="3clFbS" id="48xyd$eBCCb" role="3clFbx">
+          <node concept="3cpWs6" id="48xyd$eBCSr" role="3cqZAp" />
+        </node>
+        <node concept="2OqwBi" id="48xyd$eBti3" role="3clFbw">
+          <node concept="1mIQ4w" id="48xyd$eBti7" role="2OqNvi">
+            <node concept="chp4Y" id="48xyd$eBti8" role="cj9EA">
+              <ref role="cht4Q" to="6q58:6szcLqHeUyd" resolve="FunctionIdRef" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="48xyd$eBCQc" role="2Oq$k0">
+            <node concept="1YBJjd" id="48xyd$eBCQd" role="2Oq$k0">
+              <ref role="1YBMHb" node="6szcLqHh6Wh" resolve="functionCallExpr" />
+            </node>
+            <node concept="3TrEf2" id="48xyd$eBCQe" role="2OqNvi">
+              <ref role="3Tt5mk" to="6q58:3ft5eLKNXuO" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="48xyd$eBCSu" role="3cqZAp" />
       <node concept="Jncv_" id="6szcLqHhmxi" role="3cqZAp">
         <ref role="JncvD" to="6q58:1jge5x__XE8" resolve="IdentifierRef" />
         <node concept="2OqwBi" id="6szcLqHj_KO" role="JncvB">
