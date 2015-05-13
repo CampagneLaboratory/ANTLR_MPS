@@ -467,6 +467,7 @@
         </node>
         <node concept="3F1sOY" id="r9xlU4LzYn" role="3EZMnx">
           <ref role="1NtTu8" to="6q58:r9xlU4zQ3W" />
+          <ref role="1k5W1q" node="48xyd$eIgOJ" resolve="Operator" />
         </node>
         <node concept="3F1sOY" id="1AEWcufPk87" role="3EZMnx">
           <ref role="1NtTu8" to="6q58:5qM9mr9JOd8" />
@@ -781,6 +782,11 @@
       <node concept="l2Vlx" id="1AEWcufPk9P" role="2iSdaV" />
       <node concept="3F0A7n" id="1AEWcufPk9Q" role="3EZMnx">
         <ref role="1NtTu8" to="6q58:14grA08BBq5" resolve="value" />
+        <node concept="OXEIz" id="48xyd$fksgs" role="P5bDN">
+          <node concept="1Y$tRT" id="48xyd$fr2WY" role="OY2wv">
+            <ref role="1Y$EBa" node="r9xlU6hHKH" resolve="ExprMenuComponent" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -788,8 +794,8 @@
     <ref role="1XX52x" to="6q58:5mPDeVwiPaW" resolve="ComplexLiteralExpr" />
     <node concept="3EZMnI" id="1AEWcufPk9S" role="2wV5jI">
       <node concept="l2Vlx" id="1AEWcufPk9T" role="2iSdaV" />
-      <node concept="3F0ifn" id="1AEWcufPk9U" role="3EZMnx">
-        <property role="3F0ifm" value="COMPLEX" />
+      <node concept="3F0A7n" id="48xyd$fmw42" role="3EZMnx">
+        <ref role="1NtTu8" to="6q58:48xyd$fjB6U" resolve="value" />
       </node>
     </node>
   </node>
@@ -873,6 +879,11 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="OXEIz" id="48xyd$fuNlZ" role="P5bDN">
+        <node concept="1Y$tRT" id="48xyd$fuNm1" role="OY2wv">
+          <ref role="1Y$EBa" node="r9xlU6hHKH" resolve="ExprMenuComponent" />
         </node>
       </node>
     </node>
@@ -1319,7 +1330,15 @@
   </node>
   <node concept="1Xs25n" id="r9xlU6hHKH">
     <property role="TrG5h" value="ExprMenuComponent" />
-    <node concept="OXEIz" id="r9xlU6hHKI" role="1XvlXI" />
+    <node concept="OXEIz" id="r9xlU6hHKI" role="1XvlXI">
+      <node concept="3JiINr" id="48xyd$fqX78" role="OY2wv">
+        <property role="2_m5XT" value="default_RTransform" />
+      </node>
+      <node concept="3JiINr" id="48xyd$fqX7o" role="OY2wv">
+        <property role="2_m5XT" value="default_RTransform" />
+        <property role="3JiSWl" value="left" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="r9xlU6nux6">
     <property role="3GE5qa" value="" />
@@ -1364,6 +1383,12 @@
       <property role="TrG5h" value="Operator" />
       <node concept="Vb9p2" id="48xyd$eNkuB" role="3F10Kt">
         <property role="Vbekb" value="BOLD" />
+      </node>
+      <node concept="VechU" id="48xyd$feE_o" role="3F10Kt">
+        <property role="Vb096" value="black" />
+      </node>
+      <node concept="VPxyj" id="48xyd$fid6f" role="3F10Kt">
+        <property role="VOm3f" value="false" />
       </node>
     </node>
   </node>

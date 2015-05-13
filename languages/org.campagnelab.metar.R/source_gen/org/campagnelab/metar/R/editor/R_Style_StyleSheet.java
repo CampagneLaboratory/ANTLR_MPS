@@ -25,6 +25,8 @@ public class R_Style_StyleSheet {
   }
   public static void apply_Operator(Style style, EditorCell editorCell) {
     style.set(StyleAttributes.FONT_STYLE, 0, MPSFonts.BOLD);
+    style.set(StyleAttributes.TEXT_COLOR, 0, StyleRegistry.getInstance().getSimpleColor(MPSColors.black));
+    style.set(StyleAttributes.EDITABLE, 0, false);
   }
 
 }

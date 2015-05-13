@@ -10,6 +10,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -399,13 +402,20 @@
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
     <node concept="1TJgyi" id="14grA08BBq5" role="1TKVEl">
       <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" node="48xyd$fpdmX" resolve="FloatingPointValue" />
+    </node>
+    <node concept="PrWs8" id="48xyd$fo$ck" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
     </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaW">
     <property role="TrG5h" value="ComplexLiteralExpr" />
     <property role="OYydz" value="complexLiteral" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyi" id="48xyd$fjB6U" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="48xyd$fpNMz" resolve="ComplexDataType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaX">
     <property role="TrG5h" value="NullExpr" />
@@ -919,6 +929,14 @@
     <property role="34LRSv" value="!" />
     <property role="R4oN_" value="Negation, Unary" />
     <ref role="1TJDcQ" node="1_qnSjmwppZ" resolve="UnaryOperator" />
+  </node>
+  <node concept="Az7Fb" id="48xyd$fpdmX">
+    <property role="TrG5h" value="FloatingPointValue" />
+    <property role="FLfZY" value="-?[0-9]+\\.[0-9]*([Ee][\\+\\-]?[0-9]+)?" />
+  </node>
+  <node concept="Az7Fb" id="48xyd$fpNMz">
+    <property role="TrG5h" value="ComplexDataType" />
+    <property role="FLfZY" value="-?[0-9]+i" />
   </node>
 </model>
 

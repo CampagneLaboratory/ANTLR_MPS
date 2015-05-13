@@ -1,8 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="StructureAspectDescriptor.java">
       <unit at="13,0,376,0" name="org.campagnelab.metar.R.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/4765240346582242749">
+    <file name="FloatingPointValue_PropertySupport.java">
+      <node id="4765240346582242749" at="8,44,9,28" concept="4" />
+      <node id="4765240346582242749" at="10,24,11,21" concept="1" />
+      <node id="4765240346582242749" at="12,12,13,24" concept="1" />
+      <node id="4765240346582242749" at="14,5,15,72" concept="5" />
+      <node id="4765240346582242749" at="12,10,14,5" concept="0" />
+      <node id="4765240346582242749" at="9,28,14,5" concept="2" />
+      <node id="4765240346582242749" at="8,0,17,0" concept="3" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <scope id="4765240346582242749" at="10,24,11,21" />
+      <scope id="4765240346582242749" at="12,12,13,24" />
+      <scope id="4765240346582242749" at="8,44,15,72">
+        <var name="testValue" id="4765240346582242749" />
+      </scope>
+      <scope id="4765240346582242749" at="8,0,17,0">
+        <var name="value" id="4765240346582242749" />
+      </scope>
+      <unit id="4765240346582242749" at="7,0,18,0" name="org.campagnelab.metar.R.structure.FloatingPointValue_PropertySupport" />
+    </file>
+  </root>
+  <root nodeRef="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)/4765240346582400163">
+    <file name="ComplexDataType_PropertySupport.java">
+      <node id="4765240346582400163" at="8,44,9,28" concept="4" />
+      <node id="4765240346582400163" at="10,24,11,21" concept="1" />
+      <node id="4765240346582400163" at="12,12,13,24" concept="1" />
+      <node id="4765240346582400163" at="14,5,15,42" concept="5" />
+      <node id="4765240346582400163" at="12,10,14,5" concept="0" />
+      <node id="4765240346582400163" at="9,28,14,5" concept="2" />
+      <node id="4765240346582400163" at="8,0,17,0" concept="3" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <scope id="4765240346582400163" at="10,24,11,21" />
+      <scope id="4765240346582400163" at="12,12,13,24" />
+      <scope id="4765240346582400163" at="8,44,15,42">
+        <var name="testValue" id="4765240346582400163" />
+      </scope>
+      <scope id="4765240346582400163" at="8,0,17,0">
+        <var name="value" id="4765240346582400163" />
+      </scope>
+      <unit id="4765240346582400163" at="7,0,18,0" name="org.campagnelab.metar.R.structure.ComplexDataType_PropertySupport" />
     </file>
   </root>
 </debug-info>

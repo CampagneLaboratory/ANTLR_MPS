@@ -17,16 +17,18 @@ import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.campagnelab.metar.R.behavior.Identifier_Behavior;
 import jetbrains.mps.smodel.action.NodeSubstitutePreconditionContext;
+import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
 import jetbrains.mps.util.Computable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.ISelector;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.smodel.constraints.ModelConstraints;
+import java.util.regex.Pattern;
 
 public class QueriesGenerated {
   public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_Identifier_4765240346572622418(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
@@ -45,6 +47,9 @@ public class QueriesGenerated {
             return true;
           }
           public boolean canSubstitute_internal(String pattern, boolean strictly) {
+            if (!(SNodeOperations.isInstanceOf(_context.getCurrentTargetNode(), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier")))) {
+              return false;
+            }
             return (Identifier_Behavior.call_matchingFunction_4765240346572628991(_context.getCurrentTargetNode()) != null);
           }
           public String getMatchingText(String pattern) {
@@ -60,6 +65,101 @@ public class QueriesGenerated {
   }
   public static boolean nodeSubstituteActionsBuilder_Precondition_Identifier_4765240346572622420(final IOperationContext operationContext, final NodeSubstitutePreconditionContext _context) {
     return !(SNodeOperations.isInstanceOf(_context.getCurrentTargetNode(), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x67233316ad3ba88dL, "org.campagnelab.metar.R.structure.FunctionIdRef")));
+  }
+  public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_Expr_4765240346579844871(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
+    List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
+    {
+      SNode outputConcept = MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52bcL, "org.campagnelab.metar.R.structure.ComplexLiteralExpr").getDeclarationNode();
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (outputConcept == null || SConceptOperations.isSuperConceptOf(SNodeOperations.asSConcept(childConcept), SNodeOperations.asSConcept(outputConcept))) {
+        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter()) {
+          public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
+            SNode complex = SNodeFactoryOperations.createNewNode(model, SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52bcL, "org.campagnelab.metar.R.structure.ComplexLiteralExpr")), null);
+            try {
+              SPropertyOperations.set(complex, MetaAdapterFactory.getProperty(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52bcL, 0x422188d90f4e71baL, "value"), pattern);
+            } catch (NumberFormatException e) {
+              SPropertyOperations.set(complex, MetaAdapterFactory.getProperty(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52bcL, 0x422188d90f4e71baL, "value"), "0i");
+            }
+            return complex;
+          }
+          public boolean hasSubstitute() {
+            return true;
+          }
+          public boolean canSubstitute_internal(String pattern, boolean strictly) {
+            return REGEXP_x583g4_a0a0a2a0a0a0a2a0a1a2.matcher(pattern).matches();
+          }
+          public String getMatchingText(String pattern) {
+            return pattern;
+          }
+          public String getVisibleMatchingText(String pattern) {
+            return getMatchingText(pattern);
+          }
+        });
+      }
+    }
+    {
+      SNode outputConcept = MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52bbL, "org.campagnelab.metar.R.structure.FloatLiteralExpr").getDeclarationNode();
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (outputConcept == null || SConceptOperations.isSuperConceptOf(SNodeOperations.asSConcept(childConcept), SNodeOperations.asSConcept(outputConcept))) {
+        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter()) {
+          public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
+            SNode floa = SNodeFactoryOperations.createNewNode(model, SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52bbL, "org.campagnelab.metar.R.structure.FloatLiteralExpr")), null);
+            try {
+              SPropertyOperations.set(floa, MetaAdapterFactory.getProperty(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52bbL, 0x11106e60089e7685L, "value"), pattern);
+            } catch (NumberFormatException e) {
+              SPropertyOperations.set(floa, MetaAdapterFactory.getProperty(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52bbL, 0x11106e60089e7685L, "value"), "0");
+            }
+            return floa;
+          }
+          public boolean hasSubstitute() {
+            return true;
+          }
+          public boolean canSubstitute_internal(String pattern, boolean strictly) {
+            return REGEXP_x583g4_a0a0a2a0a0a0a2a0a2a2.matcher(pattern).matches();
+          }
+          public String getMatchingText(String pattern) {
+            return pattern;
+          }
+          public String getVisibleMatchingText(String pattern) {
+            return getMatchingText(pattern);
+          }
+        });
+      }
+    }
+    {
+      SNode outputConcept = MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52baL, "org.campagnelab.metar.R.structure.IntLiteralExpr").getDeclarationNode();
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (outputConcept == null || SConceptOperations.isSuperConceptOf(SNodeOperations.asSConcept(childConcept), SNodeOperations.asSConcept(outputConcept))) {
+        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter()) {
+          public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
+            SNode integer = SNodeFactoryOperations.createNewNode(model, SNodeFactoryOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52baL, "org.campagnelab.metar.R.structure.IntLiteralExpr")), null);
+            try {
+              SPropertyOperations.set(integer, MetaAdapterFactory.getProperty(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52baL, 0x11106e60089e7566L, "value"), "" + (Integer.parseInt(pattern)));
+            } catch (NumberFormatException e) {
+              SPropertyOperations.set(integer, MetaAdapterFactory.getProperty(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52baL, 0x11106e60089e7566L, "value"), "" + (0));
+            }
+            return integer;
+          }
+          public boolean hasSubstitute() {
+            return true;
+          }
+          public boolean canSubstitute_internal(String pattern, boolean strictly) {
+            if (strictly) {
+              return REGEXP_x583g4_a0a0a0a2a0a0a0a2a0a3a2.matcher(pattern).matches();
+            } else {
+              return REGEXP_x583g4_a0a0a0a0c0a0a0a0c0a0d0c.matcher(pattern).matches();
+            }
+          }
+          public String getMatchingText(String pattern) {
+            return pattern;
+          }
+          public String getVisibleMatchingText(String pattern) {
+            return getMatchingText(pattern);
+          }
+        });
+      }
+    }
+    return result;
   }
   public static List<SubstituteAction> sideTransform_ActionsFactory_Expr_489068675565107355(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
@@ -84,7 +184,7 @@ public class QueriesGenerated {
               SNode ref = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x14d038586597da88L, "org.campagnelab.metar.R.structure.IdentifierRef")));
               SLinkOperations.setTarget(ref, MetaAdapterFactory.getReferenceLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x14d038586597da88L, 0x14d0385865984963L, "id"), ListSequence.fromList(SNodeOperations.getNodeDescendants(SNodeOperations.getNodeAncestor(_context.getSourceNode(), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04afacdL, "org.campagnelab.metar.R.structure.Prog"), false, false), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier"), false, new SAbstractConcept[]{})).findFirst(new IWhereFilter<SNode>() {
                 public boolean accept(SNode it) {
-                  return eq_x583g4_a0a0a0a0a2a1a0a0a0a0a0a1a0a1a2(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), (item));
+                  return eq_x583g4_a0a0a0a0a2a1a0a0a0a0a0a1a0a1a3(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), (item));
                 }
               }));
               SNodeOperations.replaceWithAnother(_context.getSourceNode(), ref);
@@ -234,7 +334,11 @@ public class QueriesGenerated {
     }
     return result;
   }
-  private static boolean eq_x583g4_a0a0a0a0a2a1a0a0a0a0a0a1a0a1a2(Object a, Object b) {
+  private static boolean eq_x583g4_a0a0a0a0a2a1a0a0a0a0a0a1a0a1a3(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
+  private static Pattern REGEXP_x583g4_a0a0a2a0a0a0a2a0a1a2 = Pattern.compile("-?[0-9]+i", 0);
+  private static Pattern REGEXP_x583g4_a0a0a2a0a0a0a2a0a2a2 = Pattern.compile("-?[0-9]+\\.[0-9]*(?:[eE][\\-\\+]?[0-9]+)?", 0);
+  private static Pattern REGEXP_x583g4_a0a0a0a2a0a0a0a2a0a3a2 = Pattern.compile("-?\\d+", 0);
+  private static Pattern REGEXP_x583g4_a0a0a0a0c0a0a0a0c0a0d0c = Pattern.compile("-?\\d*", 0);
 }
