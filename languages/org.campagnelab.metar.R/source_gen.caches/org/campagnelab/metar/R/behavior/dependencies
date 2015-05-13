@@ -73,7 +73,6 @@
     <classNode dependClassName="org.campagnelab.metar.R.behavior.AndExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.AssignToTheRight_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.AssignmentOperatorExpr_BehaviorDescriptor" />
-    <classNode dependClassName="org.campagnelab.metar.R.behavior.AssignmentOperator_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.At_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.BinaryOperatorExpr_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.BitwiseAnd_BehaviorDescriptor" />
@@ -180,6 +179,10 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.BinaryOperatorExpr_Behavior" file="BinaryOperatorExpr_Behavior.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="org.campagnelab.metar.R.behavior.BinaryOperatorExpr_BehaviorDescriptor" file="BinaryOperatorExpr_BehaviorDescriptor.java">

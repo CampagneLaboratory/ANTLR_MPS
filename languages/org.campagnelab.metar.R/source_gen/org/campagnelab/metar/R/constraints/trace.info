@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
@@ -9,8 +14,8 @@
   </root>
   <root nodeRef="r:bbac9b32-ad23-4a73-9931-fe439dd26b5d(org.campagnelab.metar.R.constraints)/1826877622984327412">
     <file name="BinaryOperatorExpr_Constraints.java">
-      <node id="1826877622984327412" at="9,43,10,98" concept="1" />
-      <node id="1826877622984327412" at="9,0,12,0" concept="0" trace="BinaryOperatorExpr_Constraints#()V" />
+      <node id="1826877622984327412" at="9,43,10,98" concept="6" />
+      <node id="1826877622984327412" at="9,0,12,0" concept="1" trace="BinaryOperatorExpr_Constraints#()V" />
       <scope id="1826877622984327412" at="9,43,10,98" />
       <scope id="1826877622984327412" at="9,0,12,0" />
       <unit id="1826877622984327412" at="8,0,13,0" name="org.campagnelab.metar.R.constraints.BinaryOperatorExpr_Constraints" />
@@ -18,11 +23,36 @@
   </root>
   <root nodeRef="r:bbac9b32-ad23-4a73-9931-fe439dd26b5d(org.campagnelab.metar.R.constraints)/4765240346573550465">
     <file name="Identifier_Constraints.java">
-      <node id="4765240346573550465" at="9,35,10,98" concept="1" />
-      <node id="4765240346573550465" at="9,0,12,0" concept="0" trace="Identifier_Constraints#()V" />
-      <scope id="4765240346573550465" at="9,35,10,98" />
-      <scope id="4765240346573550465" at="9,0,12,0" />
-      <unit id="4765240346573550465" at="8,0,13,0" name="org.campagnelab.metar.R.constraints.Identifier_Constraints" />
+      <node id="4765240346573550465" at="19,35,20,98" concept="6" />
+      <node id="4765240346573550465" at="23,88,24,123" concept="4" />
+      <node id="4765240346573550465" at="27,40,28,20" concept="5" />
+      <node id="4765240346573550465" at="31,70,32,37" concept="4" />
+      <node id="1556967766010701080" at="32,37,33,290" concept="5" />
+      <node id="4765240346573550465" at="32,37,33,290" concept="0" />
+      <node id="4765240346573550465" at="35,7,36,22" concept="5" />
+      <node id="4765240346573550465" at="19,0,22,0" concept="1" trace="Identifier_Constraints#()V" />
+      <node id="4765240346573550465" at="26,0,30,0" concept="3" trace="hasOwnValidator#()Z" />
+      <node id="4765240346573550465" at="30,0,35,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="4765240346573550465" at="24,123,35,7" concept="2" />
+      <node id="4765240346573550465" at="22,0,38,0" concept="3" trace="getNotDefaultSProperties#()Ljava/util/Map;" />
+      <scope id="4765240346573550465" at="19,35,20,98" />
+      <scope id="4765240346573550465" at="27,40,28,20" />
+      <scope id="1556967766009500769" at="32,37,33,290" />
+      <scope id="4765240346573550465" at="31,70,33,290">
+        <var name="propertyName" id="4765240346573550465" />
+      </scope>
+      <scope id="4765240346573550465" at="19,0,22,0" />
+      <scope id="4765240346573550465" at="26,0,30,0" />
+      <scope id="4765240346573550465" at="30,0,35,0">
+        <var name="node" id="4765240346573550465" />
+        <var name="propertyValue" id="4765240346573550465" />
+      </scope>
+      <scope id="4765240346573550465" at="23,88,36,22">
+        <var name="properties" id="4765240346573550465" />
+      </scope>
+      <scope id="4765240346573550465" at="22,0,38,0" />
+      <unit id="4765240346573550465" at="25,119,35,5" name="org.campagnelab.metar.R.constraints.Identifier_Constraints$1" />
+      <unit id="4765240346573550465" at="18,0,39,0" name="org.campagnelab.metar.R.constraints.Identifier_Constraints" />
     </file>
   </root>
 </debug-info>

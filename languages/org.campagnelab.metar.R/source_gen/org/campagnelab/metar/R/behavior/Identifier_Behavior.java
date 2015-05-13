@@ -46,6 +46,15 @@ public class Identifier_Behavior {
     }), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, "org.campagnelab.metar.R.structure.FunctionDeclarationExpr"));
     return functionExp;
   }
+  public static boolean call_isValidName_1556967766010699253(SAbstractConcept thisConcept, String name) {
+    String testValue;
+    if (name == null) {
+      testValue = "";
+    } else {
+      testValue = name;
+    }
+    return testValue.matches("(.[a-zA-Z._][a-zA-Z0-9_.]*)|([a-zA-Z][a-zA-Z0-9_.]*)");
+  }
   protected static Logger LOG = LogManager.getLogger(Identifier_Behavior.class);
   private static boolean eq_mqw2vo_a0d0b0a0a0a0a0a0a0a2(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);

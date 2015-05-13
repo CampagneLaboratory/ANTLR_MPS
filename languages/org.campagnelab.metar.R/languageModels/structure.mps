@@ -451,6 +451,9 @@
   </node>
   <node concept="1TIwiD" id="5qM9mr9JOd5">
     <property role="TrG5h" value="BinaryOperatorExpr" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="&lt;-" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
     <node concept="1TJgyj" id="5qM9mr9JOd6" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -726,6 +729,8 @@
   </node>
   <node concept="1TIwiD" id="r9xlU4v6S0">
     <property role="TrG5h" value="AssignmentOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="r9xlU4zQ8W" resolve="BinaryOperator" />
   </node>
   <node concept="1TIwiD" id="r9xlU4v6T2">
