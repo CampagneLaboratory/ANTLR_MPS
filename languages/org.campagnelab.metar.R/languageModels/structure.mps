@@ -216,7 +216,7 @@
     <node concept="1TJgyj" id="1jge5x_FevQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
-      <ref role="20lvS9" node="5mPDeVwiPaH" resolve="BodyExpr" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
     </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaG">
@@ -942,7 +942,7 @@
   </node>
   <node concept="Az7Fb" id="48xyd$fpdmX">
     <property role="TrG5h" value="FloatingPointValue" />
-    <property role="FLfZY" value="-?[0-9]+\\.[0-9]*([Ee][\\+\\-]?[0-9]+)?" />
+    <property role="FLfZY" value="-?[0-9]+\\.?[0-9]*([Ee][\\+\\-]?[0-9]+)?" />
   </node>
   <node concept="Az7Fb" id="48xyd$fpNMz">
     <property role="TrG5h" value="ComplexDataType" />
