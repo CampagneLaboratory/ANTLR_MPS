@@ -242,9 +242,9 @@ public class ConceptMapper_Behavior {
       return;
     }
     SModel textGenModel = LanguageAspect.TEXT_GEN.get(ConceptMapper_Behavior.call_language_7627187573640578145(thisNode));
-    ListSequence.fromList(SModelOperations.roots(textGenModel, MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9845363abL, "jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration"))).where(new IWhereFilter<SNode>() {
+    ListSequence.fromList(SModelOperations.roots(textGenModel, MetaAdapterFactory.getConcept(0xb83431fe5c8f40bcL, 0x8a3665e25f4dd253L, 0x11f3c776369L, "jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration"))).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x10f7df344a9L, 0x10f7df451aeL, "conceptDeclaration")) == concept;
+        return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0xb83431fe5c8f40bcL, 0x8a3665e25f4dd253L, 0x11f3c776369L, 0x11f3c7a3d4dL, "conceptDeclaration")) == concept;
       }
     }).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
