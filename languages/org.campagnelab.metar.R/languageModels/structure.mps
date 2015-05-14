@@ -63,6 +63,9 @@
     <property role="OYydz" value="Program" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="5mPDeVwiJFd" resolve="Prog" />
+    <node concept="PrWs8" id="3V2IUSrKJMt" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPap">
     <property role="TrG5h" value="Expr" />
