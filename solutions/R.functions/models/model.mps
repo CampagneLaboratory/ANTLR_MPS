@@ -5,9 +5,24 @@
     <use id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps" version="-1" />
     <use id="d6782141-eafa-4cf7-a85d-1229abdb1152" name="org.campagnelab.ANTLR" version="-1" />
     <use id="3b58810c-8431-4bbb-99ea-b4671e02dd13" name="org.campagnelab.metar.R" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
   </languages>
   <imports>
     <import index="l9mf" ref="b283f144-ab8b-47c6-9ed5-c8f24c9c43e5/f:java_stub#b283f144-ab8b-47c6-9ed5-c8f24c9c43e5#org.campagnelab.antlr.r.functions(org.campagnelab.metar.R.functions/org.campagnelab.antlr.r.functions@java_stub)" />
+    <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
+    <import index="h3hk" ref="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr.v4.runtime(org.campagnelab.ANTLR/org.antlr.v4.runtime@java_stub)" />
+    <import index="gzkj" ref="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr.v4.runtime.tree.xpath(org.campagnelab.ANTLR/org.antlr.v4.runtime.tree.xpath@java_stub)" />
+    <import index="se29" ref="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr.v4.runtime.tree.gui(org.campagnelab.ANTLR/org.antlr.v4.runtime.tree.gui@java_stub)" />
+    <import index="i049" ref="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr.v4.runtime.dfa(org.campagnelab.ANTLR/org.antlr.v4.runtime.dfa@java_stub)" />
+    <import index="hy8l" ref="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr.v4.runtime.atn(org.campagnelab.ANTLR/org.antlr.v4.runtime.atn@java_stub)" />
+    <import index="kgkk" ref="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr.v4.runtime.tree(org.campagnelab.ANTLR/org.antlr.v4.runtime.tree@java_stub)" />
+    <import index="8lfq" ref="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr.v4.runtime.tree.pattern(org.campagnelab.ANTLR/org.antlr.v4.runtime.tree.pattern@java_stub)" />
+    <import index="ftbm" ref="d6782141-eafa-4cf7-a85d-1229abdb1152/f:java_stub#d6782141-eafa-4cf7-a85d-1229abdb1152#org.antlr.v4.runtime.misc(org.campagnelab.ANTLR/org.antlr.v4.runtime.misc@java_stub)" />
+    <import index="1f8u" ref="r:6422d9f5-0bb5-4d0c-a8ae-41ece862a97b(org.campagnelab.metar.r.parsers)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="6q58" ref="r:97268463-8a58-42b7-9dc6-fa004b7a4308(org.campagnelab.metar.R.structure)" implicit="true" />
     <import index="9pzz" ref="r:7c61d32c-8a71-4a4c-8ef2-924ba52bdef4(org.campagnelab.metar.R.functions.structure)" implicit="true" />
@@ -147,7 +162,7 @@
       <property role="gfBJK" value="expr:expr&lt;-&lt;&lt;-=-&gt;-&gt;&gt;:=expr" />
       <ref role="34cEr5" node="7BS5aCD2OkV" />
       <ref role="3c7peZ" node="16FggLC9CeI" resolve="expr:" />
-      <ref role="gaaFa" to="6q58:5qM9mr9JOd5" resolve="BinaryOperator" />
+      <ref role="gaaFa" to="6q58:5qM9mr9JOd5" resolve="BinaryOperatorExpr" />
       <node concept="vgRe2" id="7BS5aCD4fZ3" role="vgRep">
         <node concept="F0E5f" id="7BS5aCD4fZc" role="10yyU7">
           <property role="2JxzpS" value="left" />
@@ -187,7 +202,7 @@
       <property role="gfBJI" value="&#9;|&#9;(subConceptPrefix='function' '(' formlist ')' expr)&#10;" />
       <property role="gfBJK" value="expr:function(formlist)expr" />
       <ref role="34cEr5" node="7BS5aCD2OkV" />
-      <ref role="gaaFa" to="9pzz:16FggLCaacF" resolve="FunctionExpr" />
+      <ref role="gaaFa" to="9pzz:16FggLCaacF" resolve="FunctionDeclarationExpr" />
       <ref role="3c7peZ" node="16FggLC9Cf1" resolve="expr:" />
       <node concept="vgRe2" id="7BS5aCD2RkZ" role="vgRep">
         <node concept="10APa$" id="7BS5aCD2Rl5" role="10yyU7">
