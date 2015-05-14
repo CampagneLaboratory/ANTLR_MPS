@@ -8,6 +8,10 @@
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.PropertySupport" />
   </dependency>
+  <dependency className="org.campagnelab.metar.R.structure.IntegerAndLong_PropertySupport" file="IntegerAndLong_PropertySupport.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="jetbrains.mps.smodel.PropertySupport" />
+  </dependency>
   <dependency className="org.campagnelab.metar.R.structure.StructureAspectDescriptor" file="StructureAspectDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />

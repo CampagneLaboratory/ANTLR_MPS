@@ -393,7 +393,7 @@
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
     <node concept="1TJgyi" id="14grA08BBlA" role="1TKVEl">
       <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" node="3V2IUSqgytT" resolve="IntegerAndLong" />
     </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaV">
@@ -947,6 +947,10 @@
   <node concept="Az7Fb" id="48xyd$fpNMz">
     <property role="TrG5h" value="ComplexDataType" />
     <property role="FLfZY" value="-?[0-9]+i" />
+  </node>
+  <node concept="Az7Fb" id="3V2IUSqgytT">
+    <property role="TrG5h" value="IntegerAndLong" />
+    <property role="FLfZY" value="-?[0-9]+[L1]?" />
   </node>
 </model>
 

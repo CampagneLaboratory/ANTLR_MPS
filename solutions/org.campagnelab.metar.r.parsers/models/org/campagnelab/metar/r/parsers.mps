@@ -133,7 +133,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -213,9 +213,6 @@
       </concept>
       <concept id="7571208821975561179" name="org.campagnelab.antlr.tomps.structure.LexerRuleSource" flags="ng" index="FeAmk">
         <reference id="7571208821975561180" name="rule" index="FeAmj" />
-      </concept>
-      <concept id="4917522066816691647" name="org.campagnelab.antlr.tomps.structure.ToIntDestination" flags="ng" index="2VZA7W">
-        <child id="4917522066816691648" name="toConvert" index="2VZA63" />
       </concept>
       <concept id="4068410015137839069" name="org.campagnelab.antlr.tomps.structure.Source" flags="ng" index="10APa7">
         <property id="2919715501615800255" name="id" index="2JxzpS" />
@@ -2288,10 +2285,8 @@
           <property role="2JxzpS" value="INT" />
           <ref role="FeAmj" node="36CgDdK50VT" />
         </node>
-        <node concept="2VZA7W" id="14grA08KDIV" role="F5cX0">
-          <node concept="3KT_mC" id="14grA08KDIT" role="2VZA63">
-            <ref role="3KT_mD" to="6q58:14grA08BBlA" resolve="value" />
-          </node>
+        <node concept="3KT_mC" id="3V2IUSqh2mI" role="F5cX0">
+          <ref role="3KT_mD" to="6q58:14grA08BBlA" resolve="value" />
         </node>
       </node>
     </node>
