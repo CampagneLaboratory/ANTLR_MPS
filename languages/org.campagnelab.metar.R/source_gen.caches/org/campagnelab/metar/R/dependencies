@@ -17,6 +17,8 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.LanguageAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.TextGenAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.TextGenAspectInterpreted" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.editor.EditorAspectDescriptorImpl" />

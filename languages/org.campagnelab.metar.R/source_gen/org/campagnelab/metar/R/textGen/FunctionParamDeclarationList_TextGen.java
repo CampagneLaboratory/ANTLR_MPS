@@ -6,20 +6,18 @@ import jetbrains.mps.textGen.SNodeTextGen;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 
 public class FunctionParamDeclarationList_TextGen extends SNodeTextGen {
   public void doGenerateText(SNode node) {
     {
       Iterable<SNode> collection = SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x4298e25fd0bc9236L, 0x4298e25fd0bce2d3L, "params"));
+      final SNode lastItem = Sequence.fromIterable(collection).last();
       for (SNode item : collection) {
         appendNode(item);
-      }
-    }
-    this.append(",");
-    {
-      Iterable<SNode> collection = SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x4298e25fd0bc9236L, 0x4298e25fd0bce2d3L, "params"));
-      for (SNode item : collection) {
-        appendNode(item);
+        if (item != lastItem) {
+          append(",");
+        }
       }
     }
   }

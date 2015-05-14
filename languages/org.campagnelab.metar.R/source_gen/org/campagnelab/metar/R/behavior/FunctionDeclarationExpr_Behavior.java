@@ -11,6 +11,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 public class FunctionDeclarationExpr_Behavior {
   public static void init(SNode thisNode) {
     SLinkOperations.setTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, 0x14d0385865ace7f6L, "body"), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52adL, "org.campagnelab.metar.R.structure.BodyExpr"))));
+    SLinkOperations.setTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, 0x14d0385865ace7f8L, "parameters"), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x4298e25fd0bcfc9fL, "org.campagnelab.metar.R.structure.FunctionParamDeclarationList"))));
   }
   public static SNode call_getIdentifier_3126020727230410559(SNode thisNode) {
     SNode identifier = null;
