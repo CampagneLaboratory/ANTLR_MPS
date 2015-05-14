@@ -1937,8 +1937,37 @@
   <node concept="24kQdi" id="4gYz4fZJh4t">
     <property role="3GE5qa" value="sources" />
     <ref role="1XX52x" to="3elq:6$il$X2a3fr" resolve="LexerRuleSource" />
-    <node concept="PMmxH" id="4gYz4fZJjw0" role="2wV5jI">
-      <ref role="PMmxG" node="cELb$UqS24" resolve="SourceEditorComponent" />
+    <node concept="3EZMnI" id="3V2IUSrwkYZ" role="2wV5jI">
+      <node concept="l2Vlx" id="3V2IUSrwkZ0" role="2iSdaV" />
+      <node concept="PMmxH" id="4gYz4fZJjw0" role="3EZMnx">
+        <ref role="PMmxG" node="cELb$UqS24" resolve="SourceEditorComponent" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="3V2IUSrI$uQ" role="6VMZX">
+      <node concept="l2Vlx" id="3V2IUSrI$uR" role="2iSdaV" />
+      <node concept="3EZMnI" id="3V2IUSrwkZf" role="3EZMnx">
+        <node concept="l2Vlx" id="3V2IUSrwkZg" role="2iSdaV" />
+        <node concept="3F0ifn" id="3V2IUSrwkZp" role="3EZMnx">
+          <property role="3F0ifm" value="trim:" />
+        </node>
+        <node concept="3F2HdR" id="3V2IUSrI$HD" role="3EZMnx">
+          <ref role="1NtTu8" to="3elq:3V2IUSrI$oY" />
+          <node concept="l2Vlx" id="3V2IUSrI$HF" role="2czzBx" />
+        </node>
+        <node concept="pkWqt" id="3V2IUSrwkZt" role="pqm2j">
+          <node concept="3clFbS" id="3V2IUSrwkZu" role="2VODD2">
+            <node concept="3clFbF" id="3V2IUSrwl4o" role="3cqZAp">
+              <node concept="2OqwBi" id="3V2IUSrDgIW" role="3clFbG">
+                <node concept="pncrf" id="3V2IUSrwl4n" role="2Oq$k0" />
+                <node concept="3TrcHB" id="3V2IUSrDh5g" role="2OqNvi">
+                  <ref role="3TsBF5" to="3elq:3V2IUSrwqPk" resolve="hasTrim" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3V2IUSrI$uU" role="3EZMnx" />
     </node>
   </node>
   <node concept="24kQdi" id="4gYz4fZKgs4">
@@ -2164,6 +2193,21 @@
       <node concept="3F0A7n" id="r9xlU4WOOn" role="3EZMnx">
         <ref role="1NtTu8" to="3elq:r9xlU4WO5L" resolve="arity" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3V2IUSrI$Np">
+    <ref role="1XX52x" to="3elq:3V2IUSrI$oV" resolve="TrimCharacters" />
+    <node concept="3EZMnI" id="3V2IUSrI$Nr" role="2wV5jI">
+      <node concept="3F0ifn" id="3V2IUSrI$NC" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+      </node>
+      <node concept="3F0A7n" id="3V2IUSrI$Ny" role="3EZMnx">
+        <ref role="1NtTu8" to="3elq:3V2IUSrI$oW" resolve="trim" />
+      </node>
+      <node concept="3F0ifn" id="3V2IUSrI$NK" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;" />
+      </node>
+      <node concept="l2Vlx" id="3V2IUSrI$Nu" role="2iSdaV" />
     </node>
   </node>
 </model>

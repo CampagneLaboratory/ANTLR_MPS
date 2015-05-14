@@ -253,6 +253,16 @@
     <property role="TrG5h" value="LexerRuleSource" />
     <property role="3GE5qa" value="sources" />
     <ref role="1TJDcQ" node="3xPTlDSVFvt" resolve="Source" />
+    <node concept="1TJgyj" id="3V2IUSrI$oY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="trimSets" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3V2IUSrI$oV" resolve="TrimCharacters" />
+    </node>
+    <node concept="1TJgyi" id="3V2IUSrwqPk" role="1TKVEl">
+      <property role="TrG5h" value="hasTrim" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="6$il$X2a3fs" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="rule" />
@@ -386,6 +396,14 @@
   <node concept="1TIwiD" id="3V2IUSqnchw">
     <property role="TrG5h" value="TextGenHelper" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3V2IUSrI$oV">
+    <property role="TrG5h" value="TrimCharacters" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3V2IUSrI$oW" role="1TKVEl">
+      <property role="TrG5h" value="trim" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

@@ -42,6 +42,8 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
         return Collections.<ConceptEditor>singletonList(new ToIntDestination_Editor());
       case 13:
         return Collections.<ConceptEditor>singletonList(new ToOperator_Editor());
+      case 14:
+        return Collections.<ConceptEditor>singletonList(new TrimCharacters_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -59,6 +61,6 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.AlternativeMapper", "org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS", "org.campagnelab.antlr.tomps.structure.Destination", "org.campagnelab.antlr.tomps.structure.LexerRuleSource", "org.campagnelab.antlr.tomps.structure.Mapper", "org.campagnelab.antlr.tomps.structure.NewVisitor", "org.campagnelab.antlr.tomps.structure.Operator", "org.campagnelab.antlr.tomps.structure.ParserRuleSource", "org.campagnelab.antlr.tomps.structure.Source", "org.campagnelab.antlr.tomps.structure.ToBooleanDestination", "org.campagnelab.antlr.tomps.structure.ToFloatDestination", "org.campagnelab.antlr.tomps.structure.ToIntDestination", "org.campagnelab.antlr.tomps.structure.ToOperator"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"org.campagnelab.antlr.tomps.structure.AlternativeMapper", "org.campagnelab.antlr.tomps.structure.ConceptMapper", "org.campagnelab.antlr.tomps.structure.ConvertToMPS", "org.campagnelab.antlr.tomps.structure.Destination", "org.campagnelab.antlr.tomps.structure.LexerRuleSource", "org.campagnelab.antlr.tomps.structure.Mapper", "org.campagnelab.antlr.tomps.structure.NewVisitor", "org.campagnelab.antlr.tomps.structure.Operator", "org.campagnelab.antlr.tomps.structure.ParserRuleSource", "org.campagnelab.antlr.tomps.structure.Source", "org.campagnelab.antlr.tomps.structure.ToBooleanDestination", "org.campagnelab.antlr.tomps.structure.ToFloatDestination", "org.campagnelab.antlr.tomps.structure.ToIntDestination", "org.campagnelab.antlr.tomps.structure.ToOperator", "org.campagnelab.antlr.tomps.structure.TrimCharacters"};
   private static String[] stringSwitchCases_xbvbvu_a0a0c = new String[]{"org.campagnelab.antlr.tomps.structure.Source"};
 }

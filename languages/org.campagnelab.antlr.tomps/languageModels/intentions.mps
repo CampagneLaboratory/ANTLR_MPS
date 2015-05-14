@@ -221,6 +221,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -2791,6 +2794,61 @@
         <node concept="3clFbF" id="3V2IUSrarWP" role="3cqZAp">
           <node concept="Xl_RD" id="3V2IUSrarWQ" role="3clFbG">
             <property role="Xl_RC" value="Create TextGen for Operators" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="3V2IUSrwmFk">
+    <property role="3GE5qa" value="sources" />
+    <property role="TrG5h" value="AddTrimCharacters" />
+    <ref role="2ZfgGC" to="3elq:6$il$X2a3fr" resolve="LexerRuleSource" />
+    <node concept="2Sbjvc" id="3V2IUSrwmFl" role="2ZfgGD">
+      <node concept="3clFbS" id="3V2IUSrwmFm" role="2VODD2">
+        <node concept="3clFbF" id="3V2IUSrwseN" role="3cqZAp">
+          <node concept="37vLTI" id="3V2IUSrwuGi" role="3clFbG">
+            <node concept="3fqX7Q" id="3V2IUSrwuMu" role="37vLTx">
+              <node concept="2OqwBi" id="3V2IUSrwuRl" role="3fr31v">
+                <node concept="2Sf5sV" id="3V2IUSrwuM$" role="2Oq$k0" />
+                <node concept="3TrcHB" id="3V2IUSrCcAc" role="2OqNvi">
+                  <ref role="3TsBF5" to="3elq:3V2IUSrwqPk" resolve="hasTrim" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3V2IUSrwsLT" role="37vLTJ">
+              <node concept="2Sf5sV" id="3V2IUSrwsLU" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3V2IUSrwsLV" role="2OqNvi">
+                <ref role="3TsBF5" to="3elq:3V2IUSrwqPk" resolve="hasTrim" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S6ZIM" id="3V2IUSrwmFn" role="2ZfVej">
+      <node concept="3clFbS" id="3V2IUSrwmFo" role="2VODD2">
+        <node concept="3clFbJ" id="3V2IUSrwt3$" role="3cqZAp">
+          <node concept="3clFbS" id="3V2IUSrwt3A" role="3clFbx">
+            <node concept="3cpWs6" id="3V2IUSrwu1F" role="3cqZAp">
+              <node concept="Xl_RD" id="3V2IUSrwnS4" role="3cqZAk">
+                <property role="Xl_RC" value="Remove Trim Characters " />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="3V2IUSrwtdr" role="3clFbw">
+            <node concept="2Sf5sV" id="3V2IUSrwt8W" role="2Oq$k0" />
+            <node concept="3TrcHB" id="3V2IUSrwt$_" role="2OqNvi">
+              <ref role="3TsBF5" to="3elq:3V2IUSrwqPk" resolve="hasTrim" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="3V2IUSrwtQ8" role="9aQIa">
+            <node concept="3clFbS" id="3V2IUSrwtQ9" role="9aQI4">
+              <node concept="3cpWs6" id="3V2IUSrwu7A" role="3cqZAp">
+                <node concept="Xl_RD" id="3V2IUSrwtVT" role="3cqZAk">
+                  <property role="Xl_RC" value="Add Trim Characters " />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

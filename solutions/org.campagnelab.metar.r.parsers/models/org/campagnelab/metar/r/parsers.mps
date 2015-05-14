@@ -133,7 +133,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -205,6 +205,9 @@
         <child id="5381624775493521528" name="destination" index="F5cX0" />
         <child id="4068410015138958301" name="source" index="10yyU7" />
       </concept>
+      <concept id="4522383332297295419" name="org.campagnelab.antlr.tomps.structure.TrimCharacters" flags="ng" index="_ufQl">
+        <property id="4522383332297295420" name="trim" index="_ufQi" />
+      </concept>
       <concept id="5381624775492632183" name="org.campagnelab.antlr.tomps.structure.LabeledElementSource" flags="ng" index="F0E5f">
         <reference id="5381624775492632953" name="labeled" index="F0lT1" />
       </concept>
@@ -212,7 +215,9 @@
         <reference id="5381624775493523154" name="to" index="F5cBE" />
       </concept>
       <concept id="7571208821975561179" name="org.campagnelab.antlr.tomps.structure.LexerRuleSource" flags="ng" index="FeAmk">
+        <property id="4522383332293586260" name="hasTrim" index="_gLrU" />
         <reference id="7571208821975561180" name="rule" index="FeAmj" />
+        <child id="4522383332297295422" name="trimSets" index="_ufQg" />
       </concept>
       <concept id="4068410015137839069" name="org.campagnelab.antlr.tomps.structure.Source" flags="ng" index="10APa7">
         <property id="2919715501615800255" name="id" index="2JxzpS" />
@@ -2261,7 +2266,17 @@
       <node concept="vgRe2" id="14grA08BBl6" role="vgRep">
         <node concept="FeAmk" id="14grA08BBlc" role="10yyU7">
           <property role="2JxzpS" value="STRING" />
+          <property role="_gLrU" value="true" />
           <ref role="FeAmj" node="36CgDdK50Yc" />
+          <node concept="_ufQl" id="3V2IUSrKbOr" role="_ufQg">
+            <property role="_ufQi" value="&quot;" />
+          </node>
+          <node concept="_ufQl" id="3V2IUSrKbOt" role="_ufQg">
+            <property role="_ufQi" value="'" />
+          </node>
+          <node concept="_ufQl" id="3V2IUSrKbOw" role="_ufQg">
+            <property role="_ufQi" value="`" />
+          </node>
         </node>
         <node concept="3KT_mC" id="14grA08BBlg" role="F5cX0">
           <ref role="3KT_mD" to="6q58:14grA08BBle" resolve="value" />
@@ -2547,7 +2562,17 @@
       <node concept="vgRe2" id="50lwYX0Qjvt" role="vgRep">
         <node concept="FeAmk" id="50lwYX0QjvA" role="10yyU7">
           <property role="2JxzpS" value="STRING" />
+          <property role="_gLrU" value="true" />
           <ref role="FeAmj" node="3rD3ONO1zZi" />
+          <node concept="_ufQl" id="3V2IUSrK2lv" role="_ufQg">
+            <property role="_ufQi" value="&quot;" />
+          </node>
+          <node concept="_ufQl" id="3V2IUSrK2lx" role="_ufQg">
+            <property role="_ufQi" value="'" />
+          </node>
+          <node concept="_ufQl" id="3V2IUSrK2l$" role="_ufQg">
+            <property role="_ufQi" value="`" />
+          </node>
         </node>
         <node concept="3KT_mC" id="50lwYX0QjvC" role="F5cX0">
           <ref role="3KT_mD" to="6q58:50lwYX0Qjui" resolve="id" />
@@ -5004,6 +5029,12 @@
     <node concept="2tJIrI" id="4OlXQqApDGW" role="jymVt" />
     <node concept="3clFb_" id="4OlXQqAkUN9" role="jymVt">
       <property role="TrG5h" value="inspect" />
+      <node concept="3rvAFt" id="28AXeAExEbb" role="3clF45">
+        <node concept="17QB3L" id="28AXeAExEbc" role="3rvQeY" />
+        <node concept="3Tqbb2" id="28AXeAExEbd" role="3rvSg0">
+          <ref role="ehGHo" to="6q58:5mPDeVwiPaF" resolve="FunctionDeclarationExpr" />
+        </node>
+      </node>
       <node concept="3Tm1VV" id="4OlXQqAkUNc" role="1B3o_S" />
       <node concept="3clFbS" id="4OlXQqAkUNd" role="3clF47">
         <node concept="3cpWs8" id="28AXeAExAC0" role="3cqZAp">
@@ -5393,12 +5424,6 @@
           <node concept="37vLTw" id="4OlXQqAqaAo" role="3clFbG">
             <ref role="3cqZAo" node="28AXeAExAC3" resolve="functions" />
           </node>
-        </node>
-      </node>
-      <node concept="3rvAFt" id="28AXeAExEbb" role="3clF45">
-        <node concept="17QB3L" id="28AXeAExEbc" role="3rvQeY" />
-        <node concept="3Tqbb2" id="28AXeAExEbd" role="3rvSg0">
-          <ref role="ehGHo" to="6q58:5mPDeVwiPaF" resolve="FunctionDeclarationExpr" />
         </node>
       </node>
     </node>

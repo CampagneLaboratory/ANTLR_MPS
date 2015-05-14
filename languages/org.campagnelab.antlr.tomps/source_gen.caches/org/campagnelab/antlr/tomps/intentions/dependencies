@@ -44,6 +44,21 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
     <classNode extendsClassName="jetbrains.mps.intentions.IntentionFactory" />
   </dependency>
+  <dependency className="org.campagnelab.antlr.tomps.intentions.AddTrimCharacters_Intention" file="AddTrimCharacters_Intention.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionDescriptor" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionExecutable" />
+    <classNode dependClassName="jetbrains.mps.intentions.IntentionType" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
+    <classNode dependClassName="jetbrains.mps.smodel.SNodePointer" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
+    <classNode extendsClassName="jetbrains.mps.intentions.IntentionFactory" />
+  </dependency>
   <dependency className="org.campagnelab.antlr.tomps.intentions.ChildAsOperator_Intention" file="ChildAsOperator_Intention.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.ArrayList" />
@@ -258,6 +273,7 @@
     <classNode dependClassName="jetbrains.mps.intentions.IntentionsManager" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.intentions.AddAllAlternatives_Intention" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.intentions.AddLabelSubconcept_Intention" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.intentions.AddTrimCharacters_Intention" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.intentions.ChildAsOperator_Intention" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.intentions.CreateConceptAndLabelsForAlt_Intention" />
     <classNode dependClassName="org.campagnelab.antlr.tomps.intentions.CreateConceptAndLabels_Intention" />
