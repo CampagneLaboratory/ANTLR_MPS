@@ -16,6 +16,8 @@ public class IntentionsDescriptor extends BaseIntentionsDescriptor {
     IntentionsManager.getInstance().registerIntentionFactory(new CreateEditor_Intention());
     IntentionsManager.getInstance().registerIntentionFactory(new CreateEditors_Intention());
     IntentionsManager.getInstance().registerIntentionFactory(new CreateOperatorConcepts_Intention());
+    IntentionsManager.getInstance().registerIntentionFactory(new CreateTextGen_Intention());
+    IntentionsManager.getInstance().registerIntentionFactory(new CreateTextGens_Intention());
     IntentionsManager.getInstance().registerIntentionFactory(new DeclareOperator_Intention());
     IntentionsManager.getInstance().registerIntentionFactory(new PropertyAsType_Intention());
     IntentionsManager.getInstance().registerIntentionFactory(new RenameLabelsFromConceptsIn_Intention());

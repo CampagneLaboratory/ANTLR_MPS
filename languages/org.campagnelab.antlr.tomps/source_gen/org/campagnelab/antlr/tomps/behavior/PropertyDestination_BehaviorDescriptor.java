@@ -13,6 +13,9 @@ public class PropertyDestination_BehaviorDescriptor extends Destination_Behavior
   public String virtual_name_2860118060023810449(SNode thisNode) {
     return PropertyDestination_Behavior.virtual_name_2860118060023810449(thisNode);
   }
+  public SNode virtual_textGenAppendPart_4522383332277577012(SNode thisNode, String cardinality) {
+    return PropertyDestination_Behavior.virtual_textGenAppendPart_4522383332277577012(thisNode, cardinality);
+  }
   public SNode virtual_to_1096804516885006638(SNode thisNode) {
     return PropertyDestination_Behavior.virtual_to_1096804516885006638(thisNode);
   }

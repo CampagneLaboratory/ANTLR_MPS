@@ -26,6 +26,9 @@ public class ToOperator_Behavior {
   public static SNode virtual_cellModel_1849555336881449838(SNode thisNode, String cardinality) {
     return BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6c9855e848a0c58L, 0x6c9855e848a14cfL, "toConvert")), "virtual_cellModel_1849555336881449838", new Object[]{cardinality});
   }
+  public static SNode virtual_textGenAppendPart_4522383332277577012(SNode thisNode, String cardinality) {
+    return BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6c9855e848a0c58L, 0x6c9855e848a14cfL, "toConvert")), "virtual_textGenAppendPart_4522383332277577012", new Object[]{cardinality});
+  }
   private static SNode _quotation_createNode_wlvzmx_a0a2() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_1 = null;

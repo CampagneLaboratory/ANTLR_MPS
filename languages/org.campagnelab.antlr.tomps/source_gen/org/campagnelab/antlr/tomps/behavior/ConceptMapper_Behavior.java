@@ -18,9 +18,11 @@ import org.jetbrains.mps.openapi.language.SConceptRepository;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
+import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.internal.collections.runtime.ISelector;
+import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
+import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
@@ -180,37 +182,22 @@ public class ConceptMapper_Behavior {
     if (LOG.isInfoEnabled()) {
       LOG.info("visiting ruleRef");
     }
-    final String ruleRefName = SPropertyOperations.getString(SLinkOperations.getTarget(ruleRef, MetaAdapterFactory.getReferenceLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d966L, 0x631eebe31132d967L, "rule")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
-    final Wrappers._T<String> c = new Wrappers._T<String>();
-    SNode cellModel = BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(altMapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e1882f807L, "map"))).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode mapper) {
-        if (LOG.isInfoEnabled()) {
-          LOG.info("Testing source:" + BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}) + " looking:" + ruleRefName);
-        }
-        c.value = SPropertyOperations.getString_def(SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7ddL, 0x32ac4b93a6b7ec8L, "cardinality"), "0..1");
-        return eq_z4rl0_a0c0a0a0a0b0a3a51(BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}), ruleRefName);
-      }
-    }), MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")), "virtual_cellModel_1849555336881449838", new Object[]{c.value});
+    String ruleRefName = SPropertyOperations.getString(SLinkOperations.getTarget(ruleRef, MetaAdapterFactory.getReferenceLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d966L, 0x631eebe31132d967L, "rule")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+    String cardinality;
+    Tuples._2<SNode, String> destination_cardinality = ConceptMapper_Behavior.call_findDestination_4522383332277190979(SConceptRepository.getInstance().getConcept("org.campagnelab.antlr.tomps.structure.ConceptMapper"), altMapper, ruleRefName);
+    SNode cellModel = BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), destination_cardinality._0(), "virtual_cellModel_1849555336881449838", new Object[]{destination_cardinality._1()});
     if (cellModel != null) {
       return cellModel;
     }
-    return _quotation_createNode_z4rl0_a5a41(ruleRefName);
+    return _quotation_createNode_z4rl0_a6a41(ruleRefName);
   }
   public static SNode call_cellModel_1849555336887504686(SNode thisNode, SNode ruleRef, SNode altMapper) {
     if (LOG.isInfoEnabled()) {
       LOG.info("visiting lexerRuleRef");
     }
-    final String ruleRefName = SPropertyOperations.getString(SLinkOperations.getTarget(ruleRef, MetaAdapterFactory.getReferenceLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a890ef9eL, 0x175f2668a890ef9fL, "rule")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
-    final Wrappers._T<String> c = new Wrappers._T<String>();
-    SNode cellModel = BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(altMapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e1882f807L, "map"))).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode mapper) {
-        if (LOG.isInfoEnabled()) {
-          LOG.info("Testing source:" + BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}) + " looking:" + ruleRefName);
-        }
-        c.value = SPropertyOperations.getString_def(SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7ddL, 0x32ac4b93a6b7ec8L, "cardinality"), "0..1");
-        return eq_z4rl0_a0c0a0a0a0b0a3a61(BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}), ruleRefName);
-      }
-    }), MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")), "virtual_cellModel_1849555336881449838", new Object[]{c.value});
+    String ruleRefName = SPropertyOperations.getString(SLinkOperations.getTarget(ruleRef, MetaAdapterFactory.getReferenceLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a890ef9eL, 0x175f2668a890ef9fL, "rule")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
+    Tuples._2<SNode, String> destination_cardinality = ConceptMapper_Behavior.call_findDestination_4522383332277190979(SConceptRepository.getInstance().getConcept("org.campagnelab.antlr.tomps.structure.ConceptMapper"), altMapper, ruleRefName);
+    SNode cellModel = BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), destination_cardinality._0(), "virtual_cellModel_1849555336881449838", new Object[]{destination_cardinality._1()});
     if (cellModel != null) {
       return cellModel;
     }
@@ -223,20 +210,12 @@ public class ConceptMapper_Behavior {
 
     return _quotation_createNode_z4rl0_a2a61(SPropertyOperations.getString(literal, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, 0x631eebe3113e6580L, "literal")));
   }
-  public static SNode call_cellModel_1849555336886703143(SNode thisNode, final SNode labeledElement, SNode altMapper) {
+  public static SNode call_cellModel_1849555336886703143(SNode thisNode, SNode labeledElement, SNode altMapper) {
     if (LOG.isInfoEnabled()) {
       LOG.info("visiting labeledElement");
     }
-    final Wrappers._T<String> c = new Wrappers._T<String>();
-    SNode cellModel = BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(altMapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e1882f807L, "map"))).findFirst(new IWhereFilter<SNode>() {
-      public boolean accept(SNode mapper) {
-        if (LOG.isInfoEnabled()) {
-          LOG.info("Testing source:" + BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}) + " looking:" + SPropertyOperations.getString(labeledElement, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-        }
-        c.value = SPropertyOperations.getString_def(SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7ddL, 0x32ac4b93a6b7ec8L, "cardinality"), "0..1");
-        return eq_z4rl0_a0c0a0a0a0b0a2a81(BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}), SPropertyOperations.getString(labeledElement, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-      }
-    }), MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")), "virtual_cellModel_1849555336881449838", new Object[]{c.value});
+    Tuples._2<SNode, String> destination_cardinality = ConceptMapper_Behavior.call_findDestination_4522383332277190979(SConceptRepository.getInstance().getConcept("org.campagnelab.antlr.tomps.structure.ConceptMapper"), altMapper, SPropertyOperations.getString(labeledElement, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    SNode cellModel = BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), destination_cardinality._0(), "virtual_cellModel_1849555336881449838", new Object[]{destination_cardinality._1()});
     if (cellModel != null) {
       return cellModel;
     }
@@ -257,6 +236,43 @@ public class ConceptMapper_Behavior {
   }
   public static SNode call_cellModel_1849555336880416531(SNode thisNode, SNode literal) {
     return _quotation_createNode_z4rl0_a0a91(SPropertyOperations.getString(literal, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, 0x631eebe3113e6580L, "literal")));
+  }
+  public static void call_createTextGenFor_4522383332274891725(SNode thisNode, final SNode concept, SNode alternative, SNode altMapper) {
+    if (concept == null) {
+      return;
+    }
+    SModel textGenModel = LanguageAspect.TEXT_GEN.get(ConceptMapper_Behavior.call_language_7627187573640578145(thisNode));
+    ListSequence.fromList(SModelOperations.roots(textGenModel, MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9845363abL, "jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration"))).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SLinkOperations.getTarget(it, MetaAdapterFactory.getReferenceLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x10f7df344a9L, 0x10f7df451aeL, "conceptDeclaration")) == concept;
+      }
+    }).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode it) {
+        SNodeOperations.deleteNode(it);
+      }
+    });
+
+    SNode textGen = TextGenHelper_Behavior.call_textGenComponent_4522383332274393733(SNodeOperations.asSConcept(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3ec2bbae1a5cc460L, "org.campagnelab.antlr.tomps.structure.TextGenHelper")), alternative, altMapper);
+    SLinkOperations.setTarget(textGen, MetaAdapterFactory.getReferenceLink(0xb83431fe5c8f40bcL, 0x8a3665e25f4dd253L, 0x11f3c776369L, 0x11f3c7a3d4dL, "conceptDeclaration"), concept);
+    SModelOperations.addRootNode(textGenModel, textGen);
+  }
+  public static void call_createTextGens_4522383332274891802(final SNode thisNode) {
+    Sequence.fromIterable(ConceptMapper_Behavior.call_altMappers_558881339902034843(thisNode)).visitAll(new IVisitor<SNode>() {
+      public void visit(SNode altMapper) {
+
+        ConceptMapper_Behavior.call_createTextGenFor_4522383332274891725(thisNode, AlternativeMapper_Behavior.call_visitorReturnConcept_558881339892896625(altMapper), SLinkOperations.getTarget(altMapper, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x6a1bb02ea6062391L, "alternative")), altMapper);
+      }
+    });
+  }
+  public static Tuples._2<SNode, String> call_findDestination_4522383332277190979(SAbstractConcept thisConcept, SNode altMapper, final String ruleRefName) {
+    final Wrappers._T<String> cardinality = new Wrappers._T<String>();
+    return MultiTuple.<SNode,String>from(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(altMapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e1882f807L, "map"))).findFirst(new IWhereFilter<SNode>() {
+      public boolean accept(SNode mapper) {
+        // <node> 
+        cardinality.value = SPropertyOperations.getString_def(SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7ddL, 0x32ac4b93a6b7ec8L, "cardinality"), "0..1");
+        return eq_z4rl0_a0c0a0a0a0a0b0x(BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), "virtual_name_4068410015138152876", new Object[]{}), ruleRefName);
+      }
+    }), MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")), cardinality.value);
   }
   protected static Logger LOG = LogManager.getLogger(ConceptMapper_Behavior.class);
   private static SNode _quotation_createNode_z4rl0_a0c0m() {
@@ -284,7 +300,7 @@ public class ConceptMapper_Behavior {
     quotedNode_1.addChild(MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eaff2517L, 0xf9eaff2518L, "childCellModel"), quotedNode_2);
     return quotedNode_1;
   }
-  private static SNode _quotation_createNode_z4rl0_a5a41(Object parameter_1) {
+  private static SNode _quotation_createNode_z4rl0_a6a41(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
     quotedNode_2 = SModelUtil_new.instantiateConceptDeclaration(MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eb01232eL, "jetbrains.mps.lang.editor.structure.CellModel_Constant"), null, null, false);
@@ -325,13 +341,7 @@ public class ConceptMapper_Behavior {
   private static boolean neq_z4rl0_a0a0a0a0a0d0h(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
   }
-  private static boolean eq_z4rl0_a0c0a0a0a0b0a3a51(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
-  }
-  private static boolean eq_z4rl0_a0c0a0a0a0b0a3a61(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
-  }
-  private static boolean eq_z4rl0_a0c0a0a0a0b0a2a81(Object a, Object b) {
+  private static boolean eq_z4rl0_a0c0a0a0a0a0b0x(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }

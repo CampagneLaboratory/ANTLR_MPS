@@ -24,6 +24,9 @@ public class ToFloatDestination_Behavior {
   public static SNode virtual_cellModel_1849555336881449838(SNode thisNode, String cardinality) {
     return BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffcf6763L, 0x443e8c43ffcf6764L, "toConvert")), "virtual_cellModel_1849555336881449838", new Object[]{cardinality});
   }
+  public static SNode virtual_textGenAppendPart_4522383332277577012(SNode thisNode, String cardinality) {
+    return BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffcf6763L, 0x443e8c43ffcf6764L, "toConvert")), "virtual_textGenAppendPart_4522383332277577012", new Object[]{cardinality});
+  }
   private static SNode _quotation_createNode_al22mq_a0a2() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_1 = null;
