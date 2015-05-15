@@ -19,9 +19,9 @@ import org.campagnelab.metar.R.behavior.Identifier_Behavior;
 import jetbrains.mps.smodel.action.NodeSubstitutePreconditionContext;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.util.Computable;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.util.Computable;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.smodel.action.DefaultChildNodeSubstituteAction;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
@@ -175,8 +175,13 @@ public class QueriesGenerated {
           public boolean hasSubstitute() {
             return true;
           }
-          public boolean canSubstitute_internal(String pattern, boolean strictly) {
-            return Identifier_Behavior.call_isValidName_1556967766010699253(SNodeOperations.asSConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier")), pattern);
+          public boolean canSubstitute_internal(final String pattern, boolean strictly) {
+            // exclude names that are alias of Exp sub-concepts (e.g., if, while, etc) 
+            return Identifier_Behavior.call_isValidName_1556967766010699253(SNodeOperations.asSConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier")), pattern) && ListSequence.fromList(SConceptOperations.getAllSubConcepts(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b5299L, "org.campagnelab.metar.R.structure.Expr"), _context.getModel())).all(new IWhereFilter<SAbstractConcept>() {
+              public boolean accept(SAbstractConcept it) {
+                return neq_x583g4_a0a0a0a0a0a1a2a0a0a0a2a0a1a3(SConceptOperations.conceptAlias(it), pattern);
+              }
+            });
           }
           public String getDescriptionText(String pattern) {
             return "> identifier";
@@ -531,6 +536,9 @@ public class QueriesGenerated {
       }
     });
     return result;
+  }
+  private static boolean neq_x583g4_a0a0a0a0a0a1a2a0a0a0a2a0a1a3(Object a, Object b) {
+    return !(((a != null ? a.equals(b) : a == b)));
   }
   private static boolean isNotEmptyString(String str) {
     return str != null && str.length() > 0;
