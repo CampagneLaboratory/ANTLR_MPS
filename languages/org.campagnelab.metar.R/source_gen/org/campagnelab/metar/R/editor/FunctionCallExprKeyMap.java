@@ -15,6 +15,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 
 public class FunctionCallExprKeyMap extends KeyMapImpl {
   public FunctionCallExprKeyMap() {
@@ -56,6 +57,7 @@ public class FunctionCallExprKeyMap extends KeyMapImpl {
       SNode functionCall = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, "org.campagnelab.metar.R.structure.FunctionCallExpr")));
       SNodeOperations.replaceWithAnother(node, functionCall);
       SLinkOperations.setTarget(functionCall, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, 0x33dd14ec70cfd7b4L, "id"), node);
+      editorContext.select(ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(functionCall, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, 0x33dd14ec70cfd7b2L, "parameters")), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x501583ef40d9342fL, 0x501583ef40d93539L, "values"))).first());
 
     }
     public String getKeyStroke() {

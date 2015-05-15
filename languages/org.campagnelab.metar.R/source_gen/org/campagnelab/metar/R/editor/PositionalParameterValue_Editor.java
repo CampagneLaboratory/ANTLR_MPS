@@ -16,6 +16,8 @@ import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuPart_Replace
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.editor.generator.internal.AbstractCellMenuPart_ApplySideTransforms;
+import jetbrains.mps.nodeEditor.CellSide;
 
 public class PositionalParameterValue_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
@@ -38,7 +40,8 @@ public class PositionalParameterValue_Editor extends DefaultNodeEditor {
       editorCell.setRole("value");
     }
     ParameterValueActionMap.setCellActions(editorCell, node, editorContext);
-    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new PositionalParameterValue_Editor.PositionalParameterValue_value_cellMenu_exof60_a0a0()}));
+    editorCell.addKeyMap(new PositionalParameterValue());
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new PositionalParameterValue_Editor.PositionalParameterValue_value_cellMenu_exof60_a0a0(), new PositionalParameterValue_Editor.ApplySideTransforms_left_cellMenu_exof60_b0a0()}));
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
@@ -52,6 +55,11 @@ public class PositionalParameterValue_Editor extends DefaultNodeEditor {
     }
     public SNode getConceptOfChild(SNode node, SNode currentChild, SNode defaultConceptOfChild, IOperationContext operationContext, EditorContext editorContext) {
       return SNodeOperations.asNode(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b5299L, "org.campagnelab.metar.R.structure.Expr"));
+    }
+  }
+  public static class ApplySideTransforms_left_cellMenu_exof60_b0a0 extends AbstractCellMenuPart_ApplySideTransforms {
+    public ApplySideTransforms_left_cellMenu_exof60_b0a0() {
+      super(CellSide.LEFT, "");
     }
   }
 }

@@ -18,6 +18,8 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
         return new Identifier_Constraints();
       case 2:
         return new ParameterValue_Constraints();
+      case 3:
+        return new VarargsParameterValue_Constraints();
       default:
         return new BaseConstraintsDescriptor(fqName);
     }
@@ -33,7 +35,10 @@ public class ConstraintsAspectDescriptor implements jetbrains.mps.smodel.runtime
     if (id == 0x501583ef40d93683L) {
       return new ParameterValue_Constraints();
     }
+    if (id == 0x44763ca97f6dfe17L) {
+      return new VarargsParameterValue_Constraints();
+    }
     return new BaseConstraintsDescriptor(conceptId);
   }
-  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"org.campagnelab.metar.R.structure.BinaryOperatorExpr", "org.campagnelab.metar.R.structure.Identifier", "org.campagnelab.metar.R.structure.ParameterValue"};
+  private static String[] stringSwitchCases_2qnle6_a0a0b = new String[]{"org.campagnelab.metar.R.structure.BinaryOperatorExpr", "org.campagnelab.metar.R.structure.Identifier", "org.campagnelab.metar.R.structure.ParameterValue", "org.campagnelab.metar.R.structure.VarargsParameterValue"};
 }

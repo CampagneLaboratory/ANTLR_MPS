@@ -6,7 +6,6 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
     <classNode dependClassName="java.util.UUID" />
-    <classNode dependClassName="jetbrains.mps.actions.descriptor.AbstractActionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateModule" />
     <classNode dependClassName="jetbrains.mps.generator.runtime.TemplateUtil" />
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
@@ -19,6 +18,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.TextGenAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.TextGenAspectInterpreted" />
+    <classNode dependClassName="org.campagnelab.metar.R.actions.ActionAspectDescriptorImpl" />
     <classNode dependClassName="org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="org.campagnelab.metar.R.editor.EditorAspectDescriptorImpl" />

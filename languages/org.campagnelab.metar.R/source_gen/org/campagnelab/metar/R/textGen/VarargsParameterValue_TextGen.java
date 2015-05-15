@@ -5,7 +5,7 @@ package org.campagnelab.metar.R.textGen;
 import jetbrains.mps.textGen.SNodeTextGen;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class VarargsValueValue_TextGen extends SNodeTextGen {
+public class VarargsParameterValue_TextGen extends SNodeTextGen {
   public void doGenerateText(SNode node) {
     this.append("...");
   }

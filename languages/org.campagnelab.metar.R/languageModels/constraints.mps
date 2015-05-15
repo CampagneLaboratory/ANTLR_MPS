@@ -33,6 +33,12 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="1202989531578" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="nKS2y" />
@@ -57,6 +63,7 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -66,6 +73,9 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="1M2fIO" id="1_qnSjm5O3O">
@@ -110,6 +120,42 @@
               </node>
             </node>
             <node concept="3x8VRR" id="2HxQOBZmuFx" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3V2IUSs4U5W">
+    <ref role="1M2myG" to="6q58:4hQfa_ZrvSn" resolve="VarargsParameterValue" />
+    <node concept="nKS2y" id="3V2IUSs4U6j" role="1MLUbF">
+      <node concept="3clFbS" id="3V2IUSs4U6k" role="2VODD2">
+        <node concept="3SKdUt" id="3V2IUSs4VdA" role="3cqZAp">
+          <node concept="3SKdUq" id="3V2IUSs4Vgw" role="3SKWNk">
+            <property role="3SKdUp" value="varargs can be used only inside function declarations which include the ... parameter" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3V2IUSs4Ube" role="3cqZAp">
+          <node concept="2OqwBi" id="3V2IUSs4Wt9" role="3clFbG">
+            <node concept="2OqwBi" id="3V2IUSs4UEZ" role="2Oq$k0">
+              <node concept="2OqwBi" id="3V2IUSs4UeL" role="2Oq$k0">
+                <node concept="nLn13" id="3V2IUSs4Ubd" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="3V2IUSs4UuH" role="2OqNvi">
+                  <node concept="1xMEDy" id="3V2IUSs4UuJ" role="1xVPHs">
+                    <node concept="chp4Y" id="3V2IUSs4U$0" role="ri$Ld">
+                      <ref role="cht4Q" to="6q58:5mPDeVwiPaF" resolve="FunctionDeclarationExpr" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2Rf3mk" id="3V2IUSs4VAQ" role="2OqNvi">
+                <node concept="1xMEDy" id="3V2IUSs4VAS" role="1xVPHs">
+                  <node concept="chp4Y" id="3V2IUSs4VMh" role="ri$Ld">
+                    <ref role="cht4Q" to="6q58:4aoS_ZgJfMy" resolve="VarargsParameter" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3GX2aA" id="3V2IUSs4ZBv" role="2OqNvi" />
           </node>
         </node>
       </node>

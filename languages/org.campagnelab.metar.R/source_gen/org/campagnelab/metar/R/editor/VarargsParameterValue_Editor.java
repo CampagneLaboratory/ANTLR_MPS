@@ -8,13 +8,13 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
-public class VarargsValueValue_Editor extends DefaultNodeEditor {
+public class VarargsParameterValue_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createConstant_d7p4ic_a(editorContext, node);
+    return this.createConstant_3j6ss0_a(editorContext, node);
   }
-  private EditorCell createConstant_d7p4ic_a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_3j6ss0_a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "...");
-    editorCell.setCellId("Constant_d7p4ic_a");
+    editorCell.setCellId("Constant_3j6ss0_a");
     editorCell.setBig(true);
     editorCell.setDefaultText("");
     return editorCell;

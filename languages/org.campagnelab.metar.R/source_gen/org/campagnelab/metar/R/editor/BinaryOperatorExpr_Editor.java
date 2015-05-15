@@ -9,6 +9,8 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
+import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.editor.runtime.style.FocusPolicy;
 import jetbrains.mps.nodeEditor.cellMenu.CompositeSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPartExt;
 import jetbrains.mps.nodeEditor.EditorManager;
@@ -40,6 +42,9 @@ public class BinaryOperatorExpr_Editor extends DefaultNodeEditor {
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setRole("left");
+    }
+    if (true) {
+      editorCell.getStyle().set(StyleAttributes.FOCUS_POLICY, FocusPolicy.ATTRACTS_RECURSIVELY);
     }
     editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new BinaryOperatorExpr_Editor.ApplySideTransforms_left_cellMenu_8kiozd_a0a0(), new BinaryOperatorExpr_Editor.BinaryOperatorExpr_left_cellMenu_8kiozd_b0a0()}));
     SNode attributeConcept = provider.getRoleAttribute();
@@ -95,6 +100,9 @@ public class BinaryOperatorExpr_Editor extends DefaultNodeEditor {
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setRole("right");
+    }
+    if (true) {
+      editorCell.getStyle().set(StyleAttributes.FOCUS_POLICY, FocusPolicy.ATTRACTS_RECURSIVELY);
     }
     editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new BinaryOperatorExpr_Editor.ApplySideTransforms_null_cellMenu_8kiozd_a0c0(), new BinaryOperatorExpr_Editor.BinaryOperatorExpr_right_cellMenu_8kiozd_b0c0()}));
     SNode attributeConcept = provider.getRoleAttribute();

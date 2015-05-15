@@ -10,7 +10,7 @@ import jetbrains.mps.generator.runtime.TemplateModule;
 import jetbrains.mps.generator.runtime.TemplateUtil;
 import jetbrains.mps.smodel.runtime.LanguageAspectDescriptor;
 import jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor;
-import jetbrains.mps.actions.descriptor.AbstractActionAspectDescriptor;
+import org.campagnelab.metar.R.actions.ActionAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
@@ -49,7 +49,7 @@ public class Language extends LanguageRuntime {
   @Override
   protected <T extends LanguageAspectDescriptor> T createAspectDescriptor(Class<T> descriptorClass) {
     if (descriptorClass == ActionAspectDescriptor.class) {
-      return (T) new AbstractActionAspectDescriptor() {};
+      return (T) new ActionAspectDescriptorImpl();
     }
     if (descriptorClass == BehaviorAspectDescriptor.class) {
       return (T) new org.campagnelab.metar.R.behavior.BehaviorAspectDescriptor();
