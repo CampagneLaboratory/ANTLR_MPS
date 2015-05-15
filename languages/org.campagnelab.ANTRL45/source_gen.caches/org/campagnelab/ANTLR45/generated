@@ -1,3 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="2j4z9r5xcj5cdrda76bcwtqtll1wy7p" />
+<dependencies version="2" modelHash="2j4z9r5xcj5cdrda76bcwtqtll1wy7p">
+  <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
+  <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" hash="3fyiqhtyu9fdn3b1geb5x1v0fve8a7y" />
+  <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="19uchsffy2fbhy8fxadw6t0s4o36pge" />
+  <dep model="r:386f65fa-4fe3-44d7-aa49-d8759a6d881d(org.campagnelab.ANTLR45.behavior)" hash="-1b67w0g00rrg9asoc84qzkkx0u7xiys" />
+  <dep model="r:5ba58d8e-5037-4108-bfa9-fa743f735258(org.campagnelab.ANTLR45.editor)" hash="52j93lfmib8o3a0p9cqvxrsnc4200cc" />
+  <dep model="r:76bb4746-3632-407a-baf4-a91dcd5939a8(org.campagnelab.ANTLR45.structure)" hash="-21gdo9sv39leprbbu8g1m12mjakx1ej" />
+  <dep model="r:a6e55891-4d99-4952-93b2-43912ebd84c0(org.campagnelab.ANTLR45.typesystem)" hash="-36ycddt03wt4tqfp3n5fegcb049gkvr" />
+  <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="-afok4i31abohs3f5rk0sqlnvuruthqa" />
+  <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="-77sy6xhjavqcj7zabmxjwdba0x2o622" />
+  <dep model="r:f6777da9-c705-4a90-8da3-5bd26d1a41f2(org.campagnelab.ANTLR45.constraints)" hash="-d73hoqyp5n27t9y68udd24si8ulmrwx" />
+  <common dependsOnNodes="true">
+    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.generator.runtime(MPS.Core/jetbrains.mps.generator.runtime@java_stub)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" />
+    <dep model="r:386f65fa-4fe3-44d7-aa49-d8759a6d881d(org.campagnelab.ANTLR45.behavior)" />
+    <dep model="r:5ba58d8e-5037-4108-bfa9-fa743f735258(org.campagnelab.ANTLR45.editor)" />
+    <dep model="r:76bb4746-3632-407a-baf4-a91dcd5939a8(org.campagnelab.ANTLR45.structure)" />
+    <dep model="r:a6e55891-4d99-4952-93b2-43912ebd84c0(org.campagnelab.ANTLR45.typesystem)" />
+    <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" />
+    <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" />
+    <dep model="r:f6777da9-c705-4a90-8da3-5bd26d1a41f2(org.campagnelab.ANTLR45.constraints)" />
+    <file name="Language.java" />
+  </common>
+</dependencies>
 

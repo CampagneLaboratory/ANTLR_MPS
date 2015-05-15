@@ -71,6 +71,9 @@
     <property role="TrG5h" value="Expr" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <node concept="PrWs8" id="7XZJcTGmZAR" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaq">
     <property role="TrG5h" value="ElementAccessExpr" />
@@ -517,6 +520,9 @@
   <node concept="1TIwiD" id="1_qnSjlGxjF">
     <property role="TrG5h" value="EmptyLine" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="PrWs8" id="7XZJcTGiu3w" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1jge5x__XE8">
     <property role="TrG5h" value="IdentifierRef" />
@@ -747,7 +753,12 @@
   <node concept="1TIwiD" id="1_qnSjmwppZ">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="UnaryOperator" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="r9xlU4_XKo" resolve="Operator" />
+    <node concept="PrWs8" id="7XZJcTGqOjF" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="r9xlU4ykoL">
     <property role="TrG5h" value="DoubleColon" />
@@ -912,6 +923,9 @@
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" node="r9xlU4_XKo" resolve="Operator" />
+    <node concept="PrWs8" id="7XZJcTGiFZV" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
   <node concept="1TIwiD" id="r9xlU4_XKo">
     <property role="3GE5qa" value="operators" />

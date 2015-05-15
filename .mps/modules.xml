@@ -5,10 +5,12 @@
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/org.campagnelab.ANTLR.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/org.campagnelab.ANTRL45.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.metar.R.functions/org.campagnelab.metar.R.functions.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.metar.R/org.campagnelab.metar.R.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ANTLR.persistence.build/ANTLR.persistence.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/FullR/FullR.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Playground/Playground.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/R.functions/R.functions.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/g4/g4.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.antlr.persistence/org.campagnelab.antlr.persistence.msd" folder="" />

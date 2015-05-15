@@ -274,75 +274,88 @@
   </root>
   <root nodeRef="r:aaf90db9-c063-474d-ae34-b6cf5ac1b1d2(org.campagnelab.metar.R.editor)/1556967766015805436">
     <file name="SubstituteExprToIdRefMenuComponent.java">
-      <node id="1556967766015805436" at="21,47,22,124" concept="11" />
-      <node id="1556967766015805443" at="27,120,28,412" concept="7" />
-      <node id="1556967766015805440" at="30,155,31,111" concept="7" />
-      <node id="1556967766015805456" at="33,159,34,231" concept="6" />
-      <node id="1556967766015805462" at="34,231,35,181" concept="2" />
-      <node id="1556967766015805468" at="35,181,36,17" concept="7" />
-      <node id="1556967766015805440" at="38,45,39,19" concept="7" />
-      <node id="1556967766015805440" at="41,59,42,68" concept="7" />
-      <node id="1556967766015805472" at="44,67,45,174" concept="7" />
-      <node id="1556967766015805440" at="47,62,48,71" concept="7" />
-      <node id="1556967766015805478" at="50,70,51,55" concept="7" />
-      <node id="1556967766015805440" at="25,0,27,0" concept="1" trace="EmptyLine_customReplace_cellMenu_jwhte0_a0#()V" />
-      <node id="1556967766015805436" at="21,0,24,0" concept="1" trace="SubstituteExprToIdRefMenuComponent#()V" />
-      <node id="1556967766015805440" at="27,0,30,0" concept="5" trace="createParameterObjects#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/List;" />
-      <node id="1556967766015805440" at="30,0,33,0" concept="5" trace="createReplacementNode#(Ljava/lang/Object;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/openapi/editor/EditorContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="1556967766015805440" at="38,0,41,0" concept="5" trace="isReferentPresentation#()Z" />
-      <node id="1556967766015805440" at="41,0,44,0" concept="5" trace="getMatchingText#(Ljava/lang/Object;)Ljava/lang/String;" />
-      <node id="1556967766015805440" at="44,0,47,0" concept="5" trace="getMatchingText_internal#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="1556967766015805440" at="47,0,50,0" concept="5" trace="getDescriptionText#(Ljava/lang/Object;)Ljava/lang/String;" />
-      <node id="1556967766015805440" at="50,0,53,0" concept="5" trace="getDescriptionText_internal#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="1556967766015805440" at="33,0,38,0" concept="5" trace="createReplacementNode_impl#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/openapi/editor/EditorContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="1556967766015805440" at="25,57,25,57" />
-      <scope id="1556967766015805436" at="21,47,22,124" />
-      <scope id="1556967766015805442" at="27,120,28,412" />
-      <scope id="1556967766015805440" at="30,155,31,111" />
-      <scope id="1556967766015805440" at="38,45,39,19" />
-      <scope id="1556967766015805440" at="41,59,42,68" />
-      <scope id="1556967766015805471" at="44,67,45,174" />
-      <scope id="1556967766015805440" at="47,62,48,71" />
-      <scope id="1556967766015805477" at="50,70,51,55" />
-      <scope id="1556967766015805440" at="25,0,27,0" />
-      <scope id="1556967766015805436" at="21,0,24,0" />
-      <scope id="1556967766015805440" at="27,0,30,0">
-        <var name="editorContext" id="1556967766015805440" />
-        <var name="node" id="1556967766015805440" />
-        <var name="operationContext" id="1556967766015805440" />
+      <node id="1556967766015805436" at="24,47,25,124" concept="11" />
+      <node id="9187269359626545846" at="32,41,33,540" concept="7" />
+      <node id="1556967766015805440" at="37,155,38,111" concept="7" />
+      <node id="1556967766015805456" at="40,159,41,231" concept="6" />
+      <node id="1556967766015805462" at="41,231,42,181" concept="2" />
+      <node id="1556967766015805468" at="42,181,43,17" concept="7" />
+      <node id="1556967766015805440" at="45,45,46,19" concept="7" />
+      <node id="1556967766015805440" at="48,59,49,68" concept="7" />
+      <node id="1556967766015805472" at="51,67,52,174" concept="7" />
+      <node id="1556967766015805440" at="54,62,55,71" concept="7" />
+      <node id="1556967766015805478" at="57,70,58,55" concept="7" />
+      <node id="9187269359626556786" at="60,57,61,45" concept="7" />
+      <node id="1556967766015805440" at="28,0,30,0" concept="1" trace="EmptyLine_customReplace_cellMenu_jwhte0_a0#()V" />
+      <node id="1556967766015805436" at="24,0,27,0" concept="1" trace="SubstituteExprToIdRefMenuComponent#()V" />
+      <node id="9187269359626544745" at="32,0,35,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1556967766015805440" at="37,0,40,0" concept="5" trace="createReplacementNode#(Ljava/lang/Object;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/openapi/editor/EditorContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1556967766015805440" at="45,0,48,0" concept="5" trace="isReferentPresentation#()Z" />
+      <node id="1556967766015805440" at="48,0,51,0" concept="5" trace="getMatchingText#(Ljava/lang/Object;)Ljava/lang/String;" />
+      <node id="1556967766015805440" at="51,0,54,0" concept="5" trace="getMatchingText_internal#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1556967766015805440" at="54,0,57,0" concept="5" trace="getDescriptionText#(Ljava/lang/Object;)Ljava/lang/String;" />
+      <node id="1556967766015805440" at="57,0,60,0" concept="5" trace="getDescriptionText_internal#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="9187269359626556786" at="60,0,63,0" concept="10" trace="isNotEmptyString#(Ljava/lang/String;)Z" />
+      <node id="1556967766015805443" at="30,120,35,26" concept="7" />
+      <node id="1556967766015805440" at="40,0,45,0" concept="5" trace="createReplacementNode_impl#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/openapi/editor/EditorContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1556967766015805440" at="30,0,37,0" concept="5" trace="createParameterObjects#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/List;" />
+      <scope id="1556967766015805440" at="28,57,28,57" />
+      <scope id="1556967766015805436" at="24,47,25,124" />
+      <scope id="9187269359626544746" at="32,41,33,540" />
+      <scope id="1556967766015805440" at="37,155,38,111" />
+      <scope id="1556967766015805440" at="45,45,46,19" />
+      <scope id="1556967766015805440" at="48,59,49,68" />
+      <scope id="1556967766015805471" at="51,67,52,174" />
+      <scope id="1556967766015805440" at="54,62,55,71" />
+      <scope id="1556967766015805477" at="57,70,58,55" />
+      <scope id="9187269359626556786" at="60,57,61,45" />
+      <scope id="1556967766015805440" at="28,0,30,0" />
+      <scope id="1556967766015805436" at="24,0,27,0" />
+      <scope id="9187269359626544745" at="32,0,35,0">
+        <var name="it" id="9187269359626544745" />
       </scope>
-      <scope id="1556967766015805440" at="30,0,33,0">
+      <scope id="1556967766015805440" at="37,0,40,0">
         <var name="editorContext" id="1556967766015805440" />
         <var name="model" id="1556967766015805440" />
         <var name="node" id="1556967766015805440" />
         <var name="operationContext" id="1556967766015805440" />
         <var name="parameterObject" id="1556967766015805440" />
       </scope>
-      <scope id="1556967766015805455" at="33,159,36,17">
+      <scope id="1556967766015805455" at="40,159,43,17">
         <var name="ref" id="1556967766015805457" />
       </scope>
-      <scope id="1556967766015805440" at="38,0,41,0" />
-      <scope id="1556967766015805440" at="41,0,44,0">
+      <scope id="1556967766015805440" at="45,0,48,0" />
+      <scope id="1556967766015805440" at="48,0,51,0">
         <var name="parameterObject" id="1556967766015805440" />
       </scope>
-      <scope id="1556967766015805440" at="44,0,47,0">
+      <scope id="1556967766015805440" at="51,0,54,0">
         <var name="parameterObject" id="1556967766015805440" />
       </scope>
-      <scope id="1556967766015805440" at="47,0,50,0">
+      <scope id="1556967766015805440" at="54,0,57,0">
         <var name="parameterObject" id="1556967766015805440" />
       </scope>
-      <scope id="1556967766015805440" at="50,0,53,0">
+      <scope id="1556967766015805440" at="57,0,60,0">
         <var name="parameterObject" id="1556967766015805440" />
       </scope>
-      <scope id="1556967766015805440" at="33,0,38,0">
+      <scope id="9187269359626556786" at="60,0,63,0">
+        <var name="str" id="9187269359626556786" />
+      </scope>
+      <scope id="1556967766015805442" at="30,120,35,26" />
+      <scope id="1556967766015805440" at="40,0,45,0">
         <var name="editorContext" id="1556967766015805440" />
         <var name="model" id="1556967766015805440" />
         <var name="node" id="1556967766015805440" />
         <var name="operationContext" id="1556967766015805440" />
         <var name="parameterObject" id="1556967766015805440" />
       </scope>
-      <unit id="1556967766015805440" at="24,0,54,0" name="org.campagnelab.metar.R.editor.SubstituteExprToIdRefMenuComponent$EmptyLine_customReplace_cellMenu_jwhte0_a0" />
-      <unit id="1556967766015805436" at="20,0,55,0" name="org.campagnelab.metar.R.editor.SubstituteExprToIdRefMenuComponent" />
+      <scope id="1556967766015805440" at="30,0,37,0">
+        <var name="editorContext" id="1556967766015805440" />
+        <var name="node" id="1556967766015805440" />
+        <var name="operationContext" id="1556967766015805440" />
+      </scope>
+      <unit id="9187269359626544745" at="31,445,35,7" name="org.campagnelab.metar.R.editor.SubstituteExprToIdRefMenuComponent$1" />
+      <unit id="1556967766015805440" at="27,0,64,0" name="org.campagnelab.metar.R.editor.SubstituteExprToIdRefMenuComponent$EmptyLine_customReplace_cellMenu_jwhte0_a0" />
+      <unit id="1556967766015805436" at="23,0,65,0" name="org.campagnelab.metar.R.editor.SubstituteExprToIdRefMenuComponent" />
     </file>
   </root>
   <root nodeRef="r:aaf90db9-c063-474d-ae34-b6cf5ac1b1d2(org.campagnelab.metar.R.editor)/1826877622976427554">

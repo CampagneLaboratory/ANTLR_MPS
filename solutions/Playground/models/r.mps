@@ -11,6 +11,7 @@
       <concept id="489068675543418441" name="org.campagnelab.metar.R.structure.ColonEqual" flags="ng" index="22gccn" />
       <concept id="489068675543418436" name="org.campagnelab.metar.R.structure.SimpleAssignment" flags="ng" index="22gccq" />
       <concept id="489068675543418437" name="org.campagnelab.metar.R.structure.ForcefulAssignment" flags="ng" index="22gccr" />
+      <concept id="489068675543418433" name="org.campagnelab.metar.R.structure.Difference" flags="ng" index="22gccv" />
       <concept id="489068675543418426" name="org.campagnelab.metar.R.structure.AddOperator" flags="ng" index="22gcd$" />
       <concept id="489068675543418424" name="org.campagnelab.metar.R.structure.SubstractOperator" flags="ng" index="22gcdA" />
       <concept id="489068675543418421" name="org.campagnelab.metar.R.structure.Dollar" flags="ng" index="22gcdF" />
@@ -100,6 +101,7 @@
       <concept id="7431839982580115597" name="org.campagnelab.metar.R.structure.FunctionIdRef" flags="ng" index="3a69Ir">
         <reference id="7431839982580117056" name="function" index="3a69Pm" />
       </concept>
+      <concept id="1826877622977697003" name="org.campagnelab.metar.R.structure.EmptyLine" flags="ng" index="3cU4HJ" />
       <concept id="1499760628227103368" name="org.campagnelab.metar.R.structure.IdentifierRef" flags="ng" index="1LhYbg">
         <reference id="1499760628227131747" name="id" index="1Li74V" />
       </concept>
@@ -112,6 +114,21 @@
   </registry>
   <node concept="2PZPSw" id="3V2IUSrLdBj">
     <property role="TrG5h" value="script" />
+    <node concept="3cU4HJ" id="7XZJcTGiEfE" role="pZjJ2" />
+    <node concept="2v3moz" id="7XZJcTGkbYw" role="pZjJ2">
+      <node concept="2PZJpk" id="7XZJcTGkcbB" role="2v3moI">
+        <property role="pzxG6" value="2" />
+      </node>
+      <node concept="22gccv" id="7XZJcTGkbY$" role="22hImy" />
+      <node concept="2PZJpk" id="7XZJcTGkbLv" role="2v3mow">
+        <property role="pzxG6" value="1" />
+      </node>
+    </node>
+    <node concept="1LhYbg" id="7XZJcTGpNbo" role="pZjJ2">
+      <ref role="1Li74V" node="3V2IUSrLdHf" resolve="fread" />
+    </node>
+    <node concept="3cU4HJ" id="7XZJcTGrm5x" role="pZjJ2" />
+    <node concept="3cU4HJ" id="7XZJcTGrmi$" role="pZjJ2" />
     <node concept="2PZJp4" id="3V2IUSrLdBl" role="pZjJ2">
       <node concept="2PZJpp" id="3V2IUSrLdBo" role="2v3mow">
         <property role="TrG5h" value="libDir" />
