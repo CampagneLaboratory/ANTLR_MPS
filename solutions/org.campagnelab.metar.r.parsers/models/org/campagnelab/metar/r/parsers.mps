@@ -133,7 +133,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -2179,6 +2179,24 @@
       <ref role="34cEr5" node="5mPDeVwiP90" />
       <ref role="gaaFa" to="6q58:5mPDeVwiPaL" resolve="WhileExpr" />
       <ref role="3c7peZ" node="36CgDdK4Lxo" resolve="expr:" />
+      <node concept="vgRe2" id="3V2IUSs0kvD" role="vgRep">
+        <node concept="F0E5f" id="3V2IUSs0kRK" role="10yyU7">
+          <property role="2JxzpS" value="condition" />
+          <ref role="F0lT1" node="14grA09Lj3k" resolve="condition" />
+        </node>
+        <node concept="F5cYx" id="3V2IUSs0kRM" role="F5cX0">
+          <ref role="F5cBE" to="6q58:3V2IUSs0kv$" />
+        </node>
+      </node>
+      <node concept="vgRe2" id="3V2IUSs17HW" role="vgRep">
+        <node concept="F0E5f" id="3V2IUSs1ndi" role="10yyU7">
+          <property role="2JxzpS" value="body" />
+          <ref role="F0lT1" node="3V2IUSs0XjJ" resolve="body" />
+        </node>
+        <node concept="F5cYx" id="3V2IUSs1ndk" role="F5cX0">
+          <ref role="F5cBE" to="6q58:3V2IUSs0kvA" />
+        </node>
+      </node>
     </node>
     <node concept="3c7pc5" id="5mPDeVwiP9r" role="3c7peX">
       <property role="gfBJI" value="&#9;|&#9;('repeat' expr)&#10;" />
@@ -3545,11 +3563,14 @@
             <node concept="1M88Us" id="36CgDdK4Lxt" role="1Mb3a8">
               <property role="1M88Tz" value=")" />
             </node>
-            <node concept="1Mb3a5" id="36CgDdK50Sh" role="1Mb3a8">
-              <property role="2sqUGl" value="false" />
-              <property role="2sqU3E" value="false" />
-              <property role="2sqUKs" value="false" />
-              <ref role="1Mb3a4" node="36CgDdK4Lqn" resolve="expr" />
+            <node concept="gtF4r" id="3V2IUSs0XjJ" role="1Mb3a8">
+              <property role="TrG5h" value="body" />
+              <node concept="1Mb3a5" id="36CgDdK50Sh" role="gt$ML">
+                <property role="2sqUGl" value="false" />
+                <property role="2sqU3E" value="false" />
+                <property role="2sqUKs" value="false" />
+                <ref role="1Mb3a4" node="36CgDdK4Lqn" resolve="expr" />
+              </node>
             </node>
           </node>
         </node>

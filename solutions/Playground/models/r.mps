@@ -76,6 +76,15 @@
         <child id="1826877622983609859" name="expression" index="3flx67" />
       </concept>
       <concept id="6176023809880707767" name="org.campagnelab.metar.R.structure.Identifier" flags="ng" index="2PZJpp" />
+      <concept id="6176023809880707760" name="org.campagnelab.metar.R.structure.ForExpr" flags="ng" index="2PZJpu">
+        <property id="3737166271524146371" name="id" index="136pwJ" />
+        <child id="3737166271524034477" name="body" index="137Wd1" />
+        <child id="3737166271524034493" name="list" index="137Wdh" />
+      </concept>
+      <concept id="6176023809880707761" name="org.campagnelab.metar.R.structure.WhileExpr" flags="ng" index="2PZJpv">
+        <child id="4522383332301948902" name="body" index="yKZL8" />
+        <child id="4522383332301948900" name="condition" index="yKZLa" />
+      </concept>
       <concept id="6176023809880707743" name="org.campagnelab.metar.R.structure.UnaryOperatorExpr" flags="ng" index="2PZJpL">
         <child id="489068675546663434" name="expression" index="22sOXk" />
         <child id="489068675546663431" name="operator" index="22sOXp" />
@@ -89,6 +98,7 @@
         <child id="1826877622983078945" name="expression" index="3fnAI_" />
         <child id="1826877622983078947" name="indexSelection" index="3fnAIB" />
       </concept>
+      <concept id="6176023809880707737" name="org.campagnelab.metar.R.structure.Expr" flags="ng" index="2PZJpR" />
       <concept id="6176023809880685262" name="org.campagnelab.metar.R.structure.ProgramProg" flags="ng" index="2PZPSw" />
       <concept id="6176023809880685261" name="org.campagnelab.metar.R.structure.Prog" flags="ng" index="2PZPSz">
         <child id="1229604057017832866" name="expressions" index="pZjJ2" />
@@ -127,8 +137,55 @@
     <node concept="1LhYbg" id="7XZJcTGpNbo" role="pZjJ2">
       <ref role="1Li74V" node="3V2IUSrLdHf" resolve="fread" />
     </node>
-    <node concept="3cU4HJ" id="7XZJcTGrm5x" role="pZjJ2" />
-    <node concept="3cU4HJ" id="7XZJcTGrmi$" role="pZjJ2" />
+    <node concept="3cU4HJ" id="3V2IUSrYKGM" role="pZjJ2" />
+    <node concept="2PZJpu" id="3V2IUSs0axB" role="pZjJ2">
+      <property role="136pwJ" value="id" />
+      <node concept="2PZJp3" id="3V2IUSs0aJO" role="137Wd1">
+        <node concept="13u1kU" id="3V2IUSs0aJP" role="13uv25">
+          <node concept="2PZJpu" id="3V2IUSs0gPh" role="13u1kV">
+            <node concept="2PZJp3" id="3V2IUSs0gPi" role="137Wd1">
+              <node concept="13u1kU" id="3V2IUSs0gPj" role="13uv25" />
+            </node>
+            <node concept="2PZJpR" id="3V2IUSs0gPk" role="137Wdh" />
+          </node>
+          <node concept="3cU4HJ" id="3V2IUSs2dAx" role="13u1kV" />
+          <node concept="2PZJpv" id="3V2IUSs2dA1" role="13u1kV">
+            <node concept="2PZJp3" id="3V2IUSs2dA2" role="yKZL8">
+              <node concept="13u1kU" id="3V2IUSs2dA3" role="13uv25" />
+            </node>
+            <node concept="2PZJpR" id="3V2IUSs2dA5" role="yKZLa" />
+          </node>
+        </node>
+      </node>
+      <node concept="2PZJp2" id="3V2IUSs0aIO" role="137Wdh">
+        <node concept="1LhYbg" id="3V2IUSs0aIM" role="134Gdo">
+          <ref role="1Li74V" node="3V2IUSrLdMs" resolve="c" />
+        </node>
+        <node concept="gNbv0" id="3V2IUSs0aJa" role="134Gdu">
+          <node concept="V6WaU" id="3V2IUSs0aJc" role="gNbrm">
+            <node concept="2PZJpk" id="3V2IUSs0aJh" role="gNbhV">
+              <property role="pzxG6" value="1" />
+            </node>
+          </node>
+          <node concept="V6WaU" id="3V2IUSs0aJj" role="gNbrm">
+            <node concept="2PZJpk" id="3V2IUSs0aJq" role="gNbhV">
+              <property role="pzxG6" value="2" />
+            </node>
+          </node>
+          <node concept="V6WaU" id="3V2IUSs0aJs" role="gNbrm">
+            <node concept="2PZJpk" id="3V2IUSs0aJ_" role="gNbhV">
+              <property role="pzxG6" value="3" />
+            </node>
+          </node>
+          <node concept="V6WaU" id="3V2IUSs0aJB" role="gNbrm">
+            <node concept="2PZJpk" id="3V2IUSs0aJM" role="gNbhV">
+              <property role="pzxG6" value="4" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3cU4HJ" id="3V2IUSs0aJT" role="pZjJ2" />
     <node concept="2PZJp4" id="3V2IUSrLdBl" role="pZjJ2">
       <node concept="2PZJpp" id="3V2IUSrLdBo" role="2v3mow">
         <property role="TrG5h" value="libDir" />

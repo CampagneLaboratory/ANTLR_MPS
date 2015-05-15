@@ -71,9 +71,6 @@
     <property role="TrG5h" value="Expr" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <node concept="PrWs8" id="7XZJcTGmZAR" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaq">
     <property role="TrG5h" value="ElementAccessExpr" />
@@ -257,6 +254,7 @@
     <property role="TrG5h" value="IfExpr" />
     <property role="OYydz" value="if" />
     <property role="34LRSv" value="if" />
+    <property role="R4oN_" value="conditional expression evaluation" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
     <node concept="1TJgyj" id="14grA09L5NV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -299,6 +297,7 @@
     <property role="TrG5h" value="ForExpr" />
     <property role="OYydz" value="for" />
     <property role="34LRSv" value="for" />
+    <property role="R4oN_" value="for loop" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
     <node concept="1TJgyj" id="3ft5eLKKHuX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -320,12 +319,26 @@
   <node concept="1TIwiD" id="5mPDeVwiPaL">
     <property role="TrG5h" value="WhileExpr" />
     <property role="OYydz" value="while" />
+    <property role="34LRSv" value="while" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
+    <node concept="1TJgyj" id="3V2IUSs0kv$" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
+    <node concept="1TJgyj" id="3V2IUSs0kvA" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5mPDeVwiPap" resolve="Expr" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5mPDeVwiPaM">
     <property role="TrG5h" value="RepeatExpr" />
     <property role="OYydz" value="repeat" />
     <property role="34LRSv" value="repeat" />
+    <property role="R4oN_" value="repeat loop, stop with break" />
     <ref role="1TJDcQ" node="5mPDeVwiPap" resolve="Expr" />
     <node concept="1TJgyj" id="1_qnSjlVW36" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
