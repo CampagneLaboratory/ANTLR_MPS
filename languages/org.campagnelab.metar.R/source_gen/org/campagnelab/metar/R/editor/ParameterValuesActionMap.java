@@ -28,10 +28,8 @@ public class ParameterValuesActionMap {
         final SNode functionCall = SNodeOperations.getParent(node);
         if (SNodeOperations.isInstanceOf(functionCall, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, "org.campagnelab.metar.R.structure.FunctionCallExpr"))) {
           SNodeOperations.deleteNode(functionCall);
-          return;
         }
       }
-      SNodeOperations.deleteNode(node);
     }
   }
   public static class ParameterValuesActionMap_BACKSPACE extends AbstractCellAction {
@@ -47,10 +45,8 @@ public class ParameterValuesActionMap {
         final SNode functionCall = SNodeOperations.getParent(node);
         if (SNodeOperations.isInstanceOf(functionCall, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, "org.campagnelab.metar.R.structure.FunctionCallExpr"))) {
           SNodeOperations.deleteNode(functionCall);
-          return;
         }
       }
-      SNodeOperations.deleteNode(node);
     }
   }
 }

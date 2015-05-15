@@ -367,7 +367,6 @@ public class QueriesGenerated {
               SLinkOperations.setTarget(newExp, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x6c9855e848f60fcL, "operator"), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept((item))));
               SNodeOperations.replaceWithAnother(_context.getSourceNode(), newExp);
               SLinkOperations.setTarget(newExp, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left"), _context.getSourceNode());
-              SLinkOperations.setTarget(newExp, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right"), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x5b7927c25044173L, "org.campagnelab.metar.R.structure.EmptyExprlist"))));
               // Select the right part by returning it: 
               return SLinkOperations.getTarget(newExp, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right"));
             }

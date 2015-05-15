@@ -16,4 +16,7 @@ public class IdentifierRef_Behavior {
   public static boolean virtual_isAssigned_2234739853328060702(SNode thisNode) {
     return false;
   }
+  public static SNode call_matchingFunction_5398044894916389931(SNode thisNode) {
+    return IdentifierRef_Behavior.call_matchingFunction_5398044894916389931(SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getReferenceLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x14d038586597da88L, 0x14d0385865984963L, "id")));
+  }
 }

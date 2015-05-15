@@ -417,25 +417,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="3V2IUSs7u9h" role="3cqZAp">
-                <node concept="37vLTI" id="3V2IUSs7uKi" role="3clFbG">
-                  <node concept="2ShNRf" id="3V2IUSs7uOi" role="37vLTx">
-                    <node concept="3zrR0B" id="3V2IUSs7uNZ" role="2ShVmc">
-                      <node concept="3Tqbb2" id="3V2IUSs7uO0" role="3zrR0E">
-                        <ref role="ehGHo" to="6q58:mR$BK_145N" resolve="EmptyExprlist" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="3V2IUSs7ueC" role="37vLTJ">
-                    <node concept="37vLTw" id="3V2IUSs7u9f" role="2Oq$k0">
-                      <ref role="3cqZAo" node="r9xlU6h$ZV" resolve="newExp" />
-                    </node>
-                    <node concept="3TrEf2" id="3V2IUSs7u$f" role="2OqNvi">
-                      <ref role="3Tt5mk" to="6q58:5qM9mr9JOd8" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3SKdUt" id="3V2IUSs7Mls" role="3cqZAp">
                 <node concept="3SKdUq" id="3V2IUSs7Mlt" role="3SKWNk">
                   <property role="3SKdUp" value="Select the right part by returning it:" />

@@ -11,6 +11,8 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 
 public class Identifier_Behavior {
   public static void init(SNode thisNode) {
@@ -19,16 +21,33 @@ public class Identifier_Behavior {
     return SPropertyOperations.getString(thisNode, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
   public static SNode call_matchingFunction_4765240346572628991(final SNode thisNode) {
+    SNode parent = SNodeOperations.getParent(thisNode);
+    {
+      final SNode opExp = parent;
+      if (SNodeOperations.isInstanceOf(opExp, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, "org.campagnelab.metar.R.structure.BinaryOperatorExpr"))) {
+        if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(opExp, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x6c9855e848f60fcL, "operator")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x6c9855e847c6e00L, "org.campagnelab.metar.R.structure.AssignmentOperator"))) {
+          if (SLinkOperations.getTarget(opExp, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left")) == thisNode) {
+            return SNodeOperations.as(SLinkOperations.getTarget(opExp, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, "org.campagnelab.metar.R.structure.FunctionDeclarationExpr"));
+          }
+          if (SLinkOperations.getTarget(opExp, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right")) == thisNode) {
+            return SNodeOperations.as(SLinkOperations.getTarget(opExp, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, "org.campagnelab.metar.R.structure.FunctionDeclarationExpr"));
+          }
+        }
+      }
+    }
     SNode functionExp = SNodeOperations.cast(SLinkOperations.getTarget(ListSequence.fromList(SNodeOperations.getNodeDescendants(SNodeOperations.getNodeAncestor(thisNode, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04afacdL, "org.campagnelab.metar.R.structure.Prog"), false, false), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, "org.campagnelab.metar.R.structure.BinaryOperatorExpr"), false, new SAbstractConcept[]{})).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x6c9855e848f60fcL, "operator")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x6c9855e847c6e00L, "org.campagnelab.metar.R.structure.AssignmentOperator")) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, "org.campagnelab.metar.R.structure.FunctionDeclarationExpr")) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(it, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier"));
       }
     }).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode assignment) {
+        if (LOG.isInfoEnabled()) {
+          LOG.info("matchingFunction, considering: " + BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(assignment, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left")), "virtual_getPresentation_1213877396640", new Object[]{}));
+        }
         {
-          final SNode id2 = SLinkOperations.getTarget(assignment, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left"));
-          if (SNodeOperations.isInstanceOf(id2, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier"))) {
-            return !(SNodeOperations.isInstanceOf(id2, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x14d038586597da88L, "org.campagnelab.metar.R.structure.IdentifierRef"))) && id2 != thisNode && eq_mqw2vo_a0a0a1a0a0a0a0a0a0a0c(BehaviorReflection.invokeVirtual(String.class, id2, "virtual_name_489068675561959660", new Object[]{}), BehaviorReflection.invokeVirtual(String.class, thisNode, "virtual_name_489068675561959660", new Object[]{}));
+          final SNode idUnderAssign = SLinkOperations.getTarget(assignment, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left"));
+          if (SNodeOperations.isInstanceOf(idUnderAssign, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier"))) {
+            return !(SNodeOperations.isInstanceOf(idUnderAssign, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x14d038586597da88L, "org.campagnelab.metar.R.structure.IdentifierRef"))) && idUnderAssign != thisNode && eq_mqw2vo_a0a0a1a1a0a0a0a0a0c0c(BehaviorReflection.invokeVirtual(String.class, idUnderAssign, "virtual_name_489068675561959660", new Object[]{}), BehaviorReflection.invokeVirtual(String.class, thisNode, "virtual_name_489068675561959660", new Object[]{}));
           }
         }
         return false;
@@ -54,7 +73,8 @@ public class Identifier_Behavior {
     }
     return false;
   }
-  private static boolean eq_mqw2vo_a0a0a1a0a0a0a0a0a0a0c(Object a, Object b) {
+  protected static Logger LOG = LogManager.getLogger(Identifier_Behavior.class);
+  private static boolean eq_mqw2vo_a0a0a1a1a0a0a0a0a0c0c(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }
