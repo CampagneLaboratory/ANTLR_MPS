@@ -707,7 +707,7 @@
             </node>
           </node>
           <node concept="30gYXW" id="v1yTSohVBK" role="3F10Kt">
-            <property role="Vb096" value="LIGHT_BLUE" />
+            <property role="Vb096" value="yellow" />
           </node>
         </node>
         <node concept="3F0ifn" id="v1yTSohVA1" role="3EZMnx">
