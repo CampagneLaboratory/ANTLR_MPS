@@ -6,8 +6,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.internal.collections.runtime.MapSequence;
-import java.util.HashMap;
+import java.util.SortedMap;
+import jetbrains.mps.internal.collections.runtime.SortedMapSequence;
+import java.util.TreeMap;
 import java.io.InputStream;
 import java.io.FileInputStream;
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -38,7 +39,7 @@ public class RPackageInspector {
   }
 
   public Map<String, SNode> inspect() {
-    Map<String, SNode> functions = MapSequence.fromMap(new HashMap<String, SNode>());
+    SortedMap<String, SNode> functions = SortedMapSequence.fromMap(new TreeMap<String, SNode>());
     try {
       InputStream is = new FileInputStream(source);
       ANTLRInputStream input = new ANTLRInputStream(is);
@@ -46,7 +47,6 @@ public class RPackageInspector {
       CommonTokenStream tokens = new CommonTokenStream(lexer);
       R2Filter filter = new R2Filter(tokens);
       filter.stream();
-      // call start rule: stream 
       tokens.reset();
       R2Parser parser = new R2Parser(tokens);
       parser.setBuildParseTree(true);
@@ -63,7 +63,7 @@ public class RPackageInspector {
         if (LOG.isInfoEnabled()) {
           LOG.info("Function found: " + SPropertyOperations.getString(SNodeOperations.cast(SLinkOperations.getTarget(function, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
         }
-        MapSequence.fromMap(functions).put(SPropertyOperations.getString(SNodeOperations.cast(SLinkOperations.getTarget(function, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), SNodeOperations.cast(SLinkOperations.getTarget(function, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, "org.campagnelab.metar.R.structure.FunctionDeclarationExpr")));
+        SortedMapSequence.fromMap(functions).put(SPropertyOperations.getString(SNodeOperations.cast(SLinkOperations.getTarget(function, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), SNodeOperations.cast(SLinkOperations.getTarget(function, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4348L, "right")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, "org.campagnelab.metar.R.structure.FunctionDeclarationExpr")));
       }
     } catch (Exception e) {
       if (LOG.isEnabledFor(Level.ERROR)) {

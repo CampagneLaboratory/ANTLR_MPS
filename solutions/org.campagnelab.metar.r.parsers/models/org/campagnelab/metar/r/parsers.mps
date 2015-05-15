@@ -404,6 +404,8 @@
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1240239337991" name="jetbrains.mps.baseLanguage.collections.structure.SortedMapType" flags="in" index="341BcB" />
+      <concept id="1240239494010" name="jetbrains.mps.baseLanguage.collections.structure.TreeMapCreator" flags="nn" index="342d9q" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
@@ -5029,27 +5031,21 @@
     <node concept="2tJIrI" id="4OlXQqApDGW" role="jymVt" />
     <node concept="3clFb_" id="4OlXQqAkUN9" role="jymVt">
       <property role="TrG5h" value="inspect" />
-      <node concept="3rvAFt" id="28AXeAExEbb" role="3clF45">
-        <node concept="17QB3L" id="28AXeAExEbc" role="3rvQeY" />
-        <node concept="3Tqbb2" id="28AXeAExEbd" role="3rvSg0">
-          <ref role="ehGHo" to="6q58:5mPDeVwiPaF" resolve="FunctionDeclarationExpr" />
-        </node>
-      </node>
       <node concept="3Tm1VV" id="4OlXQqAkUNc" role="1B3o_S" />
       <node concept="3clFbS" id="4OlXQqAkUNd" role="3clF47">
-        <node concept="3cpWs8" id="28AXeAExAC0" role="3cqZAp">
-          <node concept="3cpWsn" id="28AXeAExAC3" role="3cpWs9">
+        <node concept="3cpWs8" id="28AXeAEFuxK" role="3cqZAp">
+          <node concept="3cpWsn" id="28AXeAEFuxN" role="3cpWs9">
             <property role="TrG5h" value="functions" />
-            <node concept="3rvAFt" id="28AXeAExABU" role="1tU5fm">
-              <node concept="17QB3L" id="28AXeAExCbW" role="3rvQeY" />
-              <node concept="3Tqbb2" id="28AXeAExCgK" role="3rvSg0">
+            <node concept="341BcB" id="28AXeAEFuxE" role="1tU5fm">
+              <node concept="17QB3L" id="28AXeAEFuWU" role="3rvQeY" />
+              <node concept="3Tqbb2" id="28AXeAEFv22" role="3rvSg0">
                 <ref role="ehGHo" to="6q58:5mPDeVwiPaF" resolve="FunctionDeclarationExpr" />
               </node>
             </node>
-            <node concept="2ShNRf" id="28AXeAExCwX" role="33vP2m">
-              <node concept="3rGOSV" id="28AXeAExCwO" role="2ShVmc">
-                <node concept="17QB3L" id="28AXeAExCwP" role="3rHrn6" />
-                <node concept="3Tqbb2" id="28AXeAExCwQ" role="3rHtpV">
+            <node concept="2ShNRf" id="28AXeAEFvjN" role="33vP2m">
+              <node concept="342d9q" id="28AXeAEFvf2" role="2ShVmc">
+                <node concept="17QB3L" id="28AXeAEFvf3" role="3rHrn6" />
+                <node concept="3Tqbb2" id="28AXeAEFvf4" role="3rHtpV">
                   <ref role="ehGHo" to="6q58:5mPDeVwiPaF" resolve="FunctionDeclarationExpr" />
                 </node>
               </node>
@@ -5151,11 +5147,6 @@
                 <node concept="liA8E" id="4OlXQqAlvES" role="2OqNvi">
                   <ref role="37wK5l" to="ah2h:~R2Filter.stream():org.campagnelab.antlr.r.complete.R2Filter$StreamContext" resolve="stream" />
                 </node>
-              </node>
-            </node>
-            <node concept="3SKdUt" id="4OlXQqAlvEJ" role="3cqZAp">
-              <node concept="3SKdUq" id="4OlXQqAlvEI" role="3SKWNk">
-                <property role="3SKdUp" value="call start rule: stream" />
               </node>
             </node>
             <node concept="3clFbF" id="4OlXQqAlvEw" role="3cqZAp">
@@ -5361,7 +5352,7 @@
                   <node concept="37vLTI" id="28AXeAEyaFD" role="3clFbG">
                     <node concept="3EllGN" id="28AXeAEy8Ek" role="37vLTJ">
                       <node concept="37vLTw" id="28AXeAEy8pC" role="3ElQJh">
-                        <ref role="3cqZAo" node="28AXeAExAC3" resolve="functions" />
+                        <ref role="3cqZAo" node="28AXeAEFuxN" resolve="functions" />
                       </node>
                       <node concept="2OqwBi" id="28AXeAEy8L7" role="3ElVtu">
                         <node concept="1PxgMI" id="28AXeAEy8L8" role="2Oq$k0">
@@ -5422,8 +5413,14 @@
         </node>
         <node concept="3clFbF" id="4OlXQqAqaAq" role="3cqZAp">
           <node concept="37vLTw" id="4OlXQqAqaAo" role="3clFbG">
-            <ref role="3cqZAo" node="28AXeAExAC3" resolve="functions" />
+            <ref role="3cqZAo" node="28AXeAEFuxN" resolve="functions" />
           </node>
+        </node>
+      </node>
+      <node concept="3rvAFt" id="28AXeAExEbb" role="3clF45">
+        <node concept="17QB3L" id="28AXeAExEbc" role="3rvQeY" />
+        <node concept="3Tqbb2" id="28AXeAExEbd" role="3rvSg0">
+          <ref role="ehGHo" to="6q58:5mPDeVwiPaF" resolve="FunctionDeclarationExpr" />
         </node>
       </node>
     </node>
