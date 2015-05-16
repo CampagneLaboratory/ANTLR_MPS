@@ -52,6 +52,7 @@
     <dependency reexport="true">d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)</dependency>
+    <dependency reexport="false">6f7a993a-c389-4f3d-a9c6-9dda8979ca77(org.campagnelab.metar.r.parsers)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)</usedLanguage>

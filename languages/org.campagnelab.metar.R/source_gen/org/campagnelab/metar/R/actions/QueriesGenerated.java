@@ -25,6 +25,7 @@ import jetbrains.mps.util.Computable;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.smodel.action.DefaultChildNodeSubstituteAction;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import org.campagnelab.metar.r.parsers.RCodePaster;
 import jetbrains.mps.smodel.action.SideTransformActionsBuilderContext;
 import jetbrains.mps.smodel.action.AbstractSideTransformHintSubstituteAction;
 import org.jetbrains.annotations.Nullable;
@@ -346,6 +347,45 @@ public class QueriesGenerated {
   public static boolean nodeSubstituteActionsBuilder_Precondition_ParameterValue_3126020727229104817(final IOperationContext operationContext, final NodeSubstitutePreconditionContext _context) {
 
     return SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(_context.getParentNode())), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x501583ef40d9342fL, "org.campagnelab.metar.R.structure.ParameterValues"));
+  }
+  public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_EmptyLine_1416266323002057209(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
+    List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
+    {
+      SNode outputConcept = MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b5299L, "org.campagnelab.metar.R.structure.Expr").getDeclarationNode();
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (outputConcept == null || SConceptOperations.isSuperConceptOf(SNodeOperations.asSConcept(childConcept), SNodeOperations.asSConcept(outputConcept))) {
+        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter()) {
+          public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
+            SNode prog;
+            prog = RCodePaster.parse(pattern);
+            if (ListSequence.fromList(SLinkOperations.getChildren(prog, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04afacdL, 0x11106e6008ed55a2L, "expressions"))).count() > 1) {
+              SNode list = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x33dd14ec70a501d6L, "org.campagnelab.metar.R.structure.Exprlist")));
+              ListSequence.fromList(SLinkOperations.getChildren(list, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x33dd14ec70a501d6L, 0x33dd14ec70a501d7L, "expressions"))).addSequence(ListSequence.fromList(SLinkOperations.getChildren(prog, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04afacdL, 0x11106e6008ed55a2L, "expressions"))));
+              SNodeOperations.replaceWithAnother(_context.getCurrentTargetNode(), list);
+            } else {
+              SNodeOperations.replaceWithAnother(_context.getCurrentTargetNode(), ListSequence.fromList(SLinkOperations.getChildren(prog, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04afacdL, 0x11106e6008ed55a2L, "expressions"))).first());
+            }
+            return _context.getCurrentTargetNode();
+          }
+          public boolean hasSubstitute() {
+            return true;
+          }
+          public boolean canSubstitute_internal(String pattern, boolean strictly) {
+            return pattern.length() == 0 || RCodePaster.canParse(pattern);
+          }
+          public String getDescriptionText(String pattern) {
+            return "Fluent Code Entry: Type/Paste, Enter";
+          }
+          public String getMatchingText(String pattern) {
+            return pattern;
+          }
+          public String getVisibleMatchingText(String pattern) {
+            return getMatchingText(pattern);
+          }
+        });
+      }
+    }
+    return result;
   }
   public static List<SubstituteAction> sideTransform_ActionsFactory_Expr_489068675572566138(final IOperationContext operationContext, final SideTransformActionsBuilderContext _context) {
     List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
