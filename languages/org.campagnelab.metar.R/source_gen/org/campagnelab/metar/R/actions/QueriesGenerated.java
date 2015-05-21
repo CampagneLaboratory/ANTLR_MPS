@@ -33,6 +33,8 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.smodel.constraints.ModelConstraints;
 import jetbrains.mps.smodel.action.SideTransformPreconditionContext;
 import org.campagnelab.metar.R.behavior.Expr_Behavior;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 import java.util.regex.Pattern;
 
 public class QueriesGenerated {
@@ -271,7 +273,7 @@ public class QueriesGenerated {
       if (SConceptOperations.isSuperConceptOf(SNodeOperations.asSConcept(childConcept), SNodeOperations.asSConcept(outputConcept))) {
         Iterable<SNode> queryResult = new Computable<Iterable<SNode>>() {
           public Iterable<SNode> compute() {
-            return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getParentNode(), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, "org.campagnelab.metar.R.structure.FunctionCallExpr"), false, false), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, 0x33dd14ec70cfd7b4L, "id")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x67233316ad3ba88dL, "org.campagnelab.metar.R.structure.FunctionIdRef")), MetaAdapterFactory.getReferenceLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x67233316ad3ba88dL, 0x67233316ad3bae40L, "function")), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, 0x14d0385865ace7f8L, "parameters")), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x4298e25fd0bc9236L, 0x4298e25fd0bce2d3L, "params"));
+            return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getParentNode(), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, "org.campagnelab.metar.R.structure.FunctionCallExpr"), false, false), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, 0x33dd14ec70cfd7b4L, "id")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x67233316ad3ba88dL, "org.campagnelab.metar.R.structure.FunctionIdRef")), MetaAdapterFactory.getReferenceLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x67233316ad3ba88dL, 0x67233316ad3bae40L, "function")), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, 0x14d0385865ace7f8L, "parameters")), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x4298e25fd0bcfc9fL, 0x4298e25fd0bce2d3L, "params"));
           }
         }.compute();
         if (queryResult != null) {
@@ -315,7 +317,7 @@ public class QueriesGenerated {
       if (SConceptOperations.isSuperConceptOf(SNodeOperations.asSConcept(childConcept), SNodeOperations.asSConcept(outputConcept))) {
         Iterable<SNode> queryResult = new Computable<Iterable<SNode>>() {
           public Iterable<SNode> compute() {
-            return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getParentNode(), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, "org.campagnelab.metar.R.structure.FunctionCallExpr"), false, false), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, 0x33dd14ec70cfd7b4L, "id")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x67233316ad3ba88dL, "org.campagnelab.metar.R.structure.FunctionIdRef")), MetaAdapterFactory.getReferenceLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x67233316ad3ba88dL, 0x67233316ad3bae40L, "function")), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, 0x14d0385865ace7f8L, "parameters")), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x4298e25fd0bc9236L, 0x4298e25fd0bce2d3L, "params"));
+            return SLinkOperations.getChildren(SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(_context.getParentNode(), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, "org.campagnelab.metar.R.structure.FunctionCallExpr"), false, false), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52acL, 0x33dd14ec70cfd7b4L, "id")), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x67233316ad3ba88dL, "org.campagnelab.metar.R.structure.FunctionIdRef")), MetaAdapterFactory.getReferenceLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x67233316ad3ba88dL, 0x67233316ad3bae40L, "function")), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52abL, 0x14d0385865ace7f8L, "parameters")), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x4298e25fd0bcfc9fL, 0x4298e25fd0bce2d3L, "params"));
           }
         }.compute();
         if (queryResult != null) {
@@ -347,6 +349,45 @@ public class QueriesGenerated {
   public static boolean nodeSubstituteActionsBuilder_Precondition_ParameterValue_3126020727229104817(final IOperationContext operationContext, final NodeSubstitutePreconditionContext _context) {
 
     return SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(_context.getParentNode())), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x501583ef40d9342fL, "org.campagnelab.metar.R.structure.ParameterValues"));
+  }
+  public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_ParameterDeclaration_8318936710420403329(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
+    List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
+    {
+      SNode outputConcept = MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x4298e25fd0bcfc9eL, "org.campagnelab.metar.R.structure.ParameterDeclaration").getDeclarationNode();
+      SNode childConcept = (SNode) _context.getChildConcept();
+      if (outputConcept == null || SConceptOperations.isSuperConceptOf(SNodeOperations.asSConcept(childConcept), SNodeOperations.asSConcept(outputConcept))) {
+        ListSequence.fromList(result).addElement(new DefaultSimpleSubstituteAction(outputConcept, _context.getParentNode(), _context.getCurrentTargetNode(), _context.getChildSetter()) {
+          public SNode createChildNode(Object parameterObject, SModel model, String pattern) {
+            SNode prog;
+            prog = RCodePaster.parse("a<-function(" + pattern + ") NULL;");
+            List<SNode> decl = SNodeOperations.getNodeDescendants(prog, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x4298e25fd0bcfc9eL, "org.campagnelab.metar.R.structure.ParameterDeclaration"), false, new SAbstractConcept[]{});
+            // <node> 
+            if (ListSequence.fromList(decl).count() > 1) {
+              ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(_context.getParentNode(), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x4298e25fd0bcfc9fL, "org.campagnelab.metar.R.structure.FunctionParamDeclarationList"), true, false), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x4298e25fd0bcfc9fL, 0x4298e25fd0bce2d3L, "params"))).addSequence(ListSequence.fromList(decl));
+            } else {
+              ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(_context.getParentNode(), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x4298e25fd0bcfc9fL, "org.campagnelab.metar.R.structure.FunctionParamDeclarationList"), true, false), MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x4298e25fd0bcfc9fL, 0x4298e25fd0bce2d3L, "params"))).addElement(ListSequence.fromList(decl).first());
+            }
+            return _context.getCurrentTargetNode();
+          }
+          public boolean hasSubstitute() {
+            return true;
+          }
+          public boolean canSubstitute_internal(String pattern, boolean strictly) {
+            return pattern.length() == 0 || RCodePaster.canParse("a<-function(" + pattern + ") NULL;");
+          }
+          public String getDescriptionText(String pattern) {
+            return "Fluent Code Entry: Type/Paste, Enter";
+          }
+          public String getMatchingText(String pattern) {
+            return pattern;
+          }
+          public String getVisibleMatchingText(String pattern) {
+            return getMatchingText(pattern);
+          }
+        });
+      }
+    }
+    return result;
   }
   public static List<SubstituteAction> nodeSubstituteActionsBuilder_ActionsFactory_EmptyLine_1416266323002057209(final IOperationContext operationContext, final NodeSubstituteActionsFactoryContext _context) {
     List<SubstituteAction> result = ListSequence.fromList(new ArrayList<SubstituteAction>());
@@ -612,6 +653,7 @@ public class QueriesGenerated {
   public static boolean sideTransformHintSubstituteActionsBuilder_Precondition_Expr_4522383332305439283(final IOperationContext operationContext, final SideTransformPreconditionContext _context) {
     return Expr_Behavior.call_usedAsParameterValue_4522383332305158345(SNodeOperations.as(_context.getSourceNode(), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b5299L, "org.campagnelab.metar.R.structure.Expr"))) && (SNodeOperations.getNodeAncestor(_context.getSourceNode(), MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x44763ca97f6dfe13L, "org.campagnelab.metar.R.structure.PositionalParameterValue"), false, false) != null);
   }
+  protected static Logger LOG = LogManager.getLogger(QueriesGenerated.class);
   private static boolean neq_x583g4_a0a0a0a0a0a1a2a0a0a0a2a0a1a3(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
   }

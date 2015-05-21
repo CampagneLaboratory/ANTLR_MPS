@@ -6,6 +6,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.SingleLineComment" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
@@ -149,7 +150,7 @@
       <unit at="7,0,21,0" name="org.campagnelab.metar.R.behavior.FunctionIdRef_BehaviorDescriptor" />
     </file>
     <file name="FunctionParamDeclarationList_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.FunctionParamDeclarationList_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.FunctionParamDeclarationList_BehaviorDescriptor" />
     </file>
     <file name="FunctionParamDeclaration_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.FunctionParamDeclaration_BehaviorDescriptor" />
@@ -266,7 +267,7 @@
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ParameterValue_BehaviorDescriptor" />
     </file>
     <file name="ParameterValues_BehaviorDescriptor.java">
-      <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.ParameterValues_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ParameterValues_BehaviorDescriptor" />
     </file>
     <file name="ParameterWithDefaultDeclarationParameter_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.ParameterWithDefaultDeclarationParameter_BehaviorDescriptor" />
@@ -287,7 +288,7 @@
       <unit at="7,0,15,0" name="org.campagnelab.metar.R.behavior.Prog_BehaviorDescriptor" />
     </file>
     <file name="ProgramProg_BehaviorDescriptor.java">
-      <unit at="9,0,20,0" name="org.campagnelab.metar.R.behavior.ProgramProg_BehaviorDescriptor" />
+      <unit at="12,0,29,0" name="org.campagnelab.metar.R.behavior.ProgramProg_BehaviorDescriptor" />
     </file>
     <file name="RepeatExpr_BehaviorDescriptor.java">
       <unit at="6,0,14,0" name="org.campagnelab.metar.R.behavior.RepeatExpr_BehaviorDescriptor" />
@@ -362,7 +363,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/1229604057012669910">
     <file name="TrueLiteralExpr_Behavior.java">
       <node id="1229604057012689046" at="10,43,11,176" concept="1" />
-      <node id="1229604057012669910" at="10,0,13,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1229604057012669910" at="10,0,13,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="1229604057012669912" at="10,43,11,176" />
       <scope id="1229604057012669910" at="10,0,13,0">
         <var name="thisNode" id="1229604057012669910" />
@@ -373,7 +374,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/1826877622981803912">
     <file name="RepeatExpr_Behavior.java">
       <node id="1826877622981804420" at="12,43,13,380" concept="1" />
-      <node id="1826877622981803912" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1826877622981803912" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="1826877622981803914" at="12,43,13,380" />
       <scope id="1826877622981803912" at="12,0,15,0">
         <var name="thisNode" id="1826877622981803912" />
@@ -384,7 +385,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/2234739853327396669">
     <file name="ListAccessExpr_Behavior.java">
       <node id="2234739853327462235" at="12,43,13,397" concept="1" />
-      <node id="2234739853327396669" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2234739853327396669" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2234739853327396671" at="12,43,13,397" />
       <scope id="2234739853327396669" at="12,0,15,0">
         <var name="thisNode" id="2234739853327396669" />
@@ -395,7 +396,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/2234739853327513857">
     <file name="ElementAccessExpr_Behavior.java">
       <node id="2234739853327513884" at="12,43,13,397" concept="1" />
-      <node id="2234739853327513857" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2234739853327513857" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="2234739853327513859" at="12,43,13,397" />
       <scope id="2234739853327513857" at="12,0,15,0">
         <var name="thisNode" id="2234739853327513857" />
@@ -408,7 +409,7 @@
       <node id="5554617735687904226" at="12,43,13,380" concept="1" />
       <node id="4522383332292794753" at="13,380,14,406" concept="1" />
       <node id="3126020727230420888" at="16,78,17,28" concept="4" />
-      <node id="3126020727230414061" at="17,28,18,0" concept="6" />
+      <node id="3126020727230414061" at="17,28,18,0" concept="7" />
       <node id="3126020727230414327" at="19,5,20,61" concept="4" />
       <node id="3126020727233741994" at="22,362,23,22" concept="5" />
       <node id="3126020727230419521" at="25,9,26,190" concept="4" />
@@ -425,7 +426,7 @@
       <node id="3126020727230421365" at="32,191,35,11" concept="2" />
       <node id="3126020727230425077" at="39,210,42,13" concept="2" />
       <node id="3126020727230425977" at="47,210,50,13" concept="2" />
-      <node id="3126020727230410556" at="12,0,16,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3126020727230410556" at="12,0,16,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="3126020727230423154" at="38,196,43,11" concept="2" />
       <node id="3126020727230425970" at="46,197,51,11" concept="2" />
       <node id="3126020727230419521" at="24,9,30,9" concept="0" />
@@ -434,7 +435,7 @@
       <node id="3126020727230425970" at="44,9,52,9" concept="0" />
       <node id="3126020727230414327" at="20,61,53,7" concept="2" />
       <node id="3126020727230414327" at="18,0,54,5" concept="0" />
-      <node id="3126020727230410556" at="16,0,57,0" concept="8" trace="call_getIdentifier_3126020727230410559#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3126020727230410556" at="16,0,57,0" concept="9" trace="call_getIdentifier_3126020727230410559#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="3126020727233738323" at="22,362,23,22" />
       <scope id="3126020727230419528" at="27,191,28,28" />
       <scope id="3126020727230421371" at="33,191,34,28" />
@@ -474,7 +475,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/3651140268932149074">
     <file name="BodyExpr_Behavior.java">
       <node id="3651140268932149229" at="12,43,13,380" concept="1" />
-      <node id="3651140268932149074" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3651140268932149074" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="3651140268932149076" at="12,43,13,380" />
       <scope id="3651140268932149074" at="12,0,15,0">
         <var name="thisNode" id="3651140268932149074" />
@@ -485,7 +486,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/3651140268932190049">
     <file name="IfExpr_Behavior.java">
       <node id="3651140268932190053" at="12,43,13,380" concept="1" />
-      <node id="3651140268932190049" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3651140268932190049" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="3651140268932190051" at="12,43,13,380" />
       <scope id="3651140268932190049" at="12,0,15,0">
         <var name="thisNode" id="3651140268932190049" />
@@ -496,7 +497,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/3651140268932652474">
     <file name="PositionalParameterValue_Behavior.java">
       <node id="3651140268932652617" at="12,43,13,377" concept="1" />
-      <node id="3651140268932652474" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3651140268932652474" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="3651140268932652476" at="12,43,13,377" />
       <scope id="3651140268932652474" at="12,0,15,0">
         <var name="thisNode" id="3651140268932652474" />
@@ -507,7 +508,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/4522383332291773670">
     <file name="ParameterValue_Behavior.java">
       <node id="4522383332291774620" at="12,43,13,390" concept="1" />
-      <node id="4522383332291773670" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4522383332291773670" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="4522383332291773672" at="12,43,13,390" />
       <scope id="4522383332291773670" at="12,0,15,0">
         <var name="thisNode" id="4522383332291773670" />
@@ -518,7 +519,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/4522383332291899706">
     <file name="ParameterValueWithId_Behavior.java">
       <node id="4522383332291899710" at="12,43,13,390" concept="1" />
-      <node id="4522383332291899706" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4522383332291899706" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="4522383332291899708" at="12,43,13,390" />
       <scope id="4522383332291899706" at="12,0,15,0">
         <var name="thisNode" id="4522383332291899706" />
@@ -530,7 +531,7 @@
     <file name="IfElseExpr_Behavior.java">
       <node id="4522383332301376581" at="12,43,13,380" concept="1" />
       <node id="4522383332301378178" at="13,380,14,380" concept="1" />
-      <node id="4522383332301376119" at="12,0,16,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4522383332301376119" at="12,0,16,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="4522383332301376121" at="12,43,14,380" />
       <scope id="4522383332301376119" at="12,0,16,0">
         <var name="thisNode" id="4522383332301376119" />
@@ -541,7 +542,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/4522383332301839671">
     <file name="ForExpr_Behavior.java">
       <node id="4522383332301839675" at="12,43,13,380" concept="1" />
-      <node id="4522383332301839671" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4522383332301839671" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="4522383332301839673" at="12,43,13,380" />
       <scope id="4522383332301839671" at="12,0,15,0">
         <var name="thisNode" id="4522383332301839671" />
@@ -552,7 +553,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/4522383332302044672">
     <file name="WhileExpr_Behavior.java">
       <node id="4522383332302044676" at="12,43,13,380" concept="1" />
-      <node id="4522383332302044672" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4522383332302044672" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="4522383332302044674" at="12,43,13,380" />
       <scope id="4522383332302044672" at="12,0,15,0">
         <var name="thisNode" id="4522383332302044672" />
@@ -563,7 +564,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/4522383332304009222">
     <file name="FunctionCallExpr_Behavior.java">
       <node id="4522383332304009725" at="12,43,13,393" concept="1" />
-      <node id="4522383332304009222" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4522383332304009222" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="4522383332304009224" at="12,43,13,393" />
       <scope id="4522383332304009222" at="12,0,15,0">
         <var name="thisNode" id="4522383332304009222" />
@@ -575,9 +576,9 @@
     <file name="Expr_Behavior.java">
       <node id="4522383332305262359" at="13,223,14,18" concept="5" />
       <node id="4522383332305161144" at="15,5,16,17" concept="5" />
-      <node id="4522383332305158342" at="10,0,12,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4522383332305158342" at="10,0,12,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4522383332305260138" at="12,87,15,5" concept="2" />
-      <node id="4522383332305158342" at="12,0,18,0" concept="8" trace="call_usedAsParameterValue_4522383332305158345#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="4522383332305158342" at="12,0,18,0" concept="9" trace="call_usedAsParameterValue_4522383332305158345#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <scope id="4522383332305158344" at="10,43,10,43" />
       <scope id="4522383332305260140" at="13,223,14,18" />
       <scope id="4522383332305158342" at="10,0,12,0">
@@ -594,9 +595,9 @@
     <file name="FunctionIdRef_Behavior.java">
       <node id="4765240346583202687" at="13,72,14,273" concept="5" />
       <node id="2234739853328159375" at="16,80,17,182" concept="5" />
-      <node id="4765240346583202560" at="11,0,13,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="4765240346583202560" at="13,0,16,0" concept="8" trace="virtual_name_489068675561959660#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="4765240346583202560" at="16,0,19,0" concept="8" trace="virtual_isAssigned_2234739853328060702#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="4765240346583202560" at="11,0,13,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4765240346583202560" at="13,0,16,0" concept="9" trace="virtual_name_489068675561959660#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4765240346583202560" at="16,0,19,0" concept="9" trace="virtual_isAssigned_2234739853328060702#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <scope id="4765240346583202562" at="11,43,11,43" />
       <scope id="4765240346583202573" at="13,72,14,273" />
       <scope id="2234739853328159190" at="16,80,17,182" />
@@ -614,7 +615,7 @@
   </root>
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675543455950">
     <file name="DoubleColon_Behavior.java">
-      <node id="489068675543455950" at="8,0,10,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="489068675543455950" at="8,0,10,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="489068675543455952" at="8,43,8,43" />
       <scope id="489068675543455950" at="8,0,10,0">
         <var name="thisNode" id="489068675543455950" />
@@ -625,7 +626,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675546663479">
     <file name="ColonExpr_Behavior.java">
       <node id="489068675546663483" at="12,43,13,379" concept="1" />
-      <node id="489068675546663479" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="489068675546663479" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="489068675546663481" at="12,43,13,379" />
       <scope id="489068675546663479" at="12,0,15,0">
         <var name="thisNode" id="489068675546663479" />
@@ -636,7 +637,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675560879434">
     <file name="BinaryOperatorExpr_Behavior.java">
       <node id="1556967766025279694" at="12,43,13,390" concept="1" />
-      <node id="489068675560879434" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="489068675560879434" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="489068675560879436" at="12,43,13,390" />
       <scope id="489068675560879434" at="12,0,15,0">
         <var name="thisNode" id="489068675560879434" />
@@ -647,7 +648,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675560882917">
     <file name="AndExpr_Behavior.java">
       <node id="489068675560882921" at="12,43,13,384" concept="1" />
-      <node id="489068675560882917" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="489068675560882917" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="489068675560882919" at="12,43,13,384" />
       <scope id="489068675560882917" at="12,0,15,0">
         <var name="thisNode" id="489068675560882917" />
@@ -658,7 +659,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675560885416">
     <file name="AdditionExpr_Behavior.java">
       <node id="489068675560885443" at="12,43,13,385" concept="1" />
-      <node id="489068675560885416" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="489068675560885416" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="489068675560885418" at="12,43,13,385" />
       <scope id="489068675560885416" at="12,0,15,0">
         <var name="thisNode" id="489068675560885416" />
@@ -669,7 +670,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675560885717">
     <file name="AssignmentOperatorExpr_Behavior.java">
       <node id="489068675560885744" at="12,43,13,390" concept="1" />
-      <node id="489068675560885717" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="489068675560885717" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="489068675560885719" at="12,43,13,390" />
       <scope id="489068675560885717" at="12,0,15,0">
         <var name="thisNode" id="489068675560885717" />
@@ -680,7 +681,7 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675560885928">
     <file name="OrExpr_Behavior.java">
       <node id="489068675560885955" at="12,43,13,383" concept="1" />
-      <node id="489068675560885928" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="489068675560885928" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="489068675560885930" at="12,43,13,383" />
       <scope id="489068675560885928" at="12,0,15,0">
         <var name="thisNode" id="489068675560885928" />
@@ -696,53 +697,50 @@
       <node id="5398044894915940988" at="29,192,30,359" concept="5" />
       <node id="5398044894915956675" at="32,193,33,358" concept="5" />
       <node id="3126020727233644863" at="39,39,40,1044" concept="5" />
-      <node id="5398044894915796234" at="44,34,45,330" concept="1" />
-      <node id="4765240346582903937" at="47,9,48,207" concept="4" />
-      <node id="3126020727232180040" at="49,202,50,498" concept="5" />
-      <node id="3126020727232178302" at="52,9,53,21" concept="5" />
-      <node id="4765240346572654848" at="55,296,56,23" concept="5" />
-      <node id="1556967766009527335" at="58,105,59,21" concept="4" />
-      <node id="1096451987634" at="60,23,61,21" concept="1" />
-      <node id="1556967766009531459" at="62,12,63,23" concept="1" />
-      <node id="1096451987645" at="64,5,65,85" concept="5" />
-      <node id="2234739853328907502" at="68,5,69,63" concept="4" />
-      <node id="2234739853328908744" at="70,199,71,362" concept="5" />
-      <node id="2234739853328914439" at="73,5,74,17" concept="5" />
-      <node id="489068675561959575" at="76,0,77,0" concept="7" trace="LOG" />
-      <node id="7431839982580822857" at="77,78,78,46" concept="5" />
-      <node id="489068675561959575" at="18,0,20,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="1096451987639" at="62,10,64,5" concept="0" />
-      <node id="489068675561959575" at="20,0,23,0" concept="8" trace="virtual_name_489068675561959660#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="8435499389143385226" at="43,47,44,18" concept="6" />
+      <node id="4765240346582903937" at="45,9,46,207" concept="4" />
+      <node id="3126020727232180040" at="47,202,48,498" concept="5" />
+      <node id="3126020727232178302" at="50,9,51,21" concept="5" />
+      <node id="4765240346572654848" at="53,296,54,23" concept="5" />
+      <node id="1556967766009527335" at="56,105,57,21" concept="4" />
+      <node id="1096451987634" at="58,23,59,21" concept="1" />
+      <node id="1556967766009531459" at="60,12,61,23" concept="1" />
+      <node id="1096451987645" at="62,5,63,85" concept="5" />
+      <node id="2234739853328907502" at="66,5,67,63" concept="4" />
+      <node id="2234739853328908744" at="68,199,69,362" concept="5" />
+      <node id="2234739853328914439" at="71,5,72,17" concept="5" />
+      <node id="489068675561959575" at="74,0,75,0" concept="8" trace="LOG" />
+      <node id="7431839982580822857" at="75,78,76,46" concept="5" />
+      <node id="489068675561959575" at="18,0,20,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1096451987639" at="60,10,62,5" concept="0" />
+      <node id="489068675561959575" at="20,0,23,0" concept="9" trace="virtual_name_489068675561959660#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="5398044894915939914" at="28,360,31,11" concept="2" />
       <node id="5398044894915956673" at="31,11,34,11" concept="2" />
       <node id="7431839982580776883" at="39,0,42,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="5398044894915796234" at="43,47,46,9" concept="0" />
-      <node id="5398044894915796234" at="43,47,46,9" concept="2" />
-      <node id="4765240346582903937" at="48,207,51,11" concept="2" />
-      <node id="2234739853328907502" at="69,63,72,7" concept="2" />
-      <node id="7431839982580822857" at="77,0,80,0" concept="8" trace="eq_mqw2vo_a0a0a1a1a0a0a0a0a0c0c#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
-      <node id="1096451987632" at="59,21,64,5" concept="2" />
-      <node id="4765240346582903937" at="46,9,52,9" concept="0" />
-      <node id="2234739853328907502" at="67,80,73,5" concept="0" />
+      <node id="4765240346582903937" at="46,207,49,11" concept="2" />
+      <node id="2234739853328907502" at="67,63,70,7" concept="2" />
+      <node id="7431839982580822857" at="75,0,78,0" concept="9" trace="eq_mqw2vo_a0a0a1a1a0a0a0a0a0c0c#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="1096451987632" at="57,21,62,5" concept="2" />
+      <node id="4765240346582903937" at="44,18,50,9" concept="0" />
+      <node id="2234739853328907502" at="65,80,71,5" concept="0" />
       <node id="5398044894916428104" at="27,198,35,9" concept="2" />
-      <node id="489068675561959575" at="58,0,67,0" concept="8" trace="call_isValidName_1556967766010699253#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljava/lang/String;)Z" />
-      <node id="489068675561959575" at="67,0,76,0" concept="8" trace="virtual_isAssigned_2234739853328060702#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="489068675561959575" at="56,0,65,0" concept="9" trace="call_isValidName_1556967766010699253#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljava/lang/String;)Z" />
+      <node id="489068675561959575" at="65,0,74,0" concept="9" trace="virtual_isAssigned_2234739853328060702#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="5398044894915936308" at="26,33,36,7" concept="2" />
-      <node id="7431839982580812512" at="43,0,55,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="7431839982580812512" at="43,0,53,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="5398044894915936308" at="24,55,37,5" concept="0" />
-      <node id="7431839982580833557" at="37,5,55,296" concept="4" />
-      <node id="489068675561959575" at="23,0,58,0" concept="8" trace="call_matchingFunction_4765240346572628991#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7431839982580833557" at="37,5,53,296" concept="4" />
+      <node id="489068675561959575" at="23,0,56,0" concept="9" trace="call_matchingFunction_4765240346572628991#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="489068675561959577" at="18,43,18,43" />
       <scope id="489068675561959663" at="20,72,21,165" />
       <scope id="5398044894915939916" at="29,192,30,359" />
       <scope id="5398044894915956674" at="32,193,33,358" />
       <scope id="7431839982580776884" at="39,39,40,1044" />
-      <scope id="5398044894915796234" at="44,34,45,330" />
-      <scope id="4765240346582903944" at="49,202,50,498" />
-      <scope id="1096451987633" at="60,23,61,21" />
-      <scope id="1096451987640" at="62,12,63,23" />
-      <scope id="2234739853328907509" at="70,199,71,362" />
-      <scope id="7431839982580822857" at="77,78,78,46" />
+      <scope id="4765240346582903944" at="47,202,48,498" />
+      <scope id="1096451987633" at="58,23,59,21" />
+      <scope id="1096451987640" at="60,12,61,23" />
+      <scope id="2234739853328907509" at="68,199,69,362" />
+      <scope id="7431839982580822857" at="75,78,76,46" />
       <scope id="489068675561959575" at="18,0,20,0">
         <var name="thisNode" id="489068675561959575" />
       </scope>
@@ -752,47 +750,46 @@
       <scope id="7431839982580776883" at="39,0,42,0">
         <var name="it" id="7431839982580776883" />
       </scope>
-      <scope id="5398044894915796234" at="43,47,46,9" />
-      <scope id="7431839982580822857" at="77,0,80,0">
+      <scope id="7431839982580822857" at="75,0,78,0">
         <var name="a" id="7431839982580822857" />
         <var name="b" id="7431839982580822857" />
       </scope>
-      <scope id="4765240346582903937" at="47,9,51,11">
+      <scope id="4765240346582903937" at="45,9,49,11">
         <var name="idUnderAssign" id="4765240346582903937" />
       </scope>
-      <scope id="2234739853328907502" at="68,5,72,7">
+      <scope id="2234739853328907502" at="66,5,70,7">
         <var name="opExpr" id="2234739853328907502" />
       </scope>
       <scope id="5398044894916428106" at="28,360,34,11" />
-      <scope id="1556967766010699256" at="58,105,65,85">
+      <scope id="1556967766010699256" at="56,105,63,85">
         <var name="testValue" id="1556967766009527338" />
       </scope>
-      <scope id="2234739853328060705" at="67,80,74,17" />
+      <scope id="2234739853328060705" at="65,80,72,17" />
       <scope id="5398044894915936315" at="27,198,35,9" />
-      <scope id="489068675561959575" at="58,0,67,0">
+      <scope id="7431839982580812513" at="43,47,51,21" />
+      <scope id="489068675561959575" at="56,0,65,0">
         <var name="name" id="1556967766010700355" />
         <var name="thisConcept" id="489068675561959575" />
       </scope>
-      <scope id="489068675561959575" at="67,0,76,0">
+      <scope id="489068675561959575" at="65,0,74,0">
         <var name="thisNode" id="489068675561959575" />
       </scope>
-      <scope id="7431839982580812513" at="43,47,53,21" />
+      <scope id="7431839982580812512" at="43,0,53,0">
+        <var name="assignment" id="7431839982580812512" />
+      </scope>
       <scope id="5398044894915936308" at="25,5,36,7">
         <var name="opExp" id="5398044894915936308" />
       </scope>
-      <scope id="7431839982580812512" at="43,0,55,0">
-        <var name="assignment" id="7431839982580812512" />
-      </scope>
-      <scope id="4765240346572628994" at="23,87,56,23">
+      <scope id="4765240346572628994" at="23,87,54,23">
         <var name="functionExp" id="7431839982580833563" />
         <var name="parent" id="5398044894915932678" />
       </scope>
-      <scope id="489068675561959575" at="23,0,58,0">
+      <scope id="489068675561959575" at="23,0,56,0">
         <var name="thisNode" id="489068675561959575" />
       </scope>
       <unit id="7431839982580776883" at="38,515,42,5" name="org.campagnelab.metar.R.behavior.Identifier_Behavior$1" />
-      <unit id="7431839982580812512" at="42,21,55,5" name="org.campagnelab.metar.R.behavior.Identifier_Behavior$2" />
-      <unit id="489068675561959575" at="17,0,81,0" name="org.campagnelab.metar.R.behavior.Identifier_Behavior" />
+      <unit id="7431839982580812512" at="42,21,53,5" name="org.campagnelab.metar.R.behavior.Identifier_Behavior$2" />
+      <unit id="489068675561959575" at="17,0,79,0" name="org.campagnelab.metar.R.behavior.Identifier_Behavior" />
     </file>
   </root>
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675561960579">
@@ -800,10 +797,10 @@
       <node id="489068675561960698" at="13,72,14,273" concept="5" />
       <node id="2234739853328162998" at="16,80,17,17" concept="5" />
       <node id="5398044894916390053" at="19,81,20,240" concept="5" />
-      <node id="489068675561960579" at="11,0,13,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="489068675561960579" at="13,0,16,0" concept="8" trace="virtual_name_489068675561959660#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="489068675561960579" at="16,0,19,0" concept="8" trace="virtual_isAssigned_2234739853328060702#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="489068675561960579" at="19,0,22,0" concept="8" trace="call_matchingFunction_5398044894916389931#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="489068675561960579" at="11,0,13,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="489068675561960579" at="13,0,16,0" concept="9" trace="virtual_name_489068675561959660#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="489068675561960579" at="16,0,19,0" concept="9" trace="virtual_isAssigned_2234739853328060702#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="489068675561960579" at="19,0,22,0" concept="9" trace="call_matchingFunction_5398044894916389931#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="489068675561960581" at="11,43,11,43" />
       <scope id="489068675561960590" at="13,72,14,273" />
       <scope id="2234739853328162847" at="16,80,17,17" />
@@ -826,12 +823,40 @@
   <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/489068675575038647">
     <file name="NotExpr_Behavior.java">
       <node id="489068675575038651" at="12,43,13,377" concept="1" />
-      <node id="489068675575038647" at="12,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="489068675575038647" at="12,0,15,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="489068675575038649" at="12,43,13,377" />
       <scope id="489068675575038647" at="12,0,15,0">
         <var name="thisNode" id="489068675575038647" />
       </scope>
       <unit id="489068675575038647" at="11,0,16,0" name="org.campagnelab.metar.R.behavior.NotExpr_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:cc2fd9c1-53e7-4805-a8bc-a07e69f2147b(org.campagnelab.metar.R.behavior)/8435499389141167441">
+    <file name="ProgramProg_Behavior.java">
+      <node id="8435499389143655733" at="22,41,23,173" concept="5" />
+      <node id="8435499389143479010" at="26,5,27,28" concept="5" />
+      <node id="8435499389141167441" at="17,0,19,0" concept="9" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8435499389143655474" at="22,0,25,0" concept="3" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8435499389141170782" at="20,183,25,10" concept="5" />
+      <node id="8435499389141168775" at="19,101,26,5" concept="2" />
+      <node id="8435499389141167441" at="19,0,29,0" concept="9" trace="virtual_getScope_3734116213129936182#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/scope/Scope;" />
+      <scope id="8435499389141167443" at="17,43,17,43" />
+      <scope id="8435499389143655475" at="22,41,23,173" />
+      <scope id="8435499389141167441" at="17,0,19,0">
+        <var name="thisNode" id="8435499389141167441" />
+      </scope>
+      <scope id="8435499389143655474" at="22,0,25,0">
+        <var name="it" id="8435499389143655474" />
+      </scope>
+      <scope id="8435499389141168777" at="20,183,25,10" />
+      <scope id="8435499389141168045" at="19,101,27,28" />
+      <scope id="8435499389141167441" at="19,0,29,0">
+        <var name="child" id="8435499389141168048" />
+        <var name="kind" id="8435499389141168046" />
+        <var name="thisNode" id="8435499389141167441" />
+      </scope>
+      <unit id="8435499389143655474" at="21,293,25,7" name="org.campagnelab.metar.R.behavior.ProgramProg_Behavior$1" />
+      <unit id="8435499389141167441" at="16,0,30,0" name="org.campagnelab.metar.R.behavior.ProgramProg_Behavior" />
     </file>
   </root>
 </debug-info>

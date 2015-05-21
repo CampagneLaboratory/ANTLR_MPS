@@ -41,9 +41,7 @@ public class Identifier_Behavior {
       }
     }).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode assignment) {
-        if (LOG.isInfoEnabled()) {
-          LOG.info("matchingFunction, considering: " + BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(assignment, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left")), "virtual_getPresentation_1213877396640", new Object[]{}));
-        }
+        // <node> 
         {
           final SNode idUnderAssign = SLinkOperations.getTarget(assignment, MetaAdapterFactory.getContainmentLink(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x56b22566c9bf4345L, 0x56b22566c9bf4346L, "left"));
           if (SNodeOperations.isInstanceOf(idUnderAssign, MetaAdapterFactory.getConcept(0x3b58810c84314bbbL, 0x99eab4671e02dd13L, 0x55b5a4eee04b52b7L, "org.campagnelab.metar.R.structure.Identifier"))) {
