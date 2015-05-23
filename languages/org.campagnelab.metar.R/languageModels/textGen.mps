@@ -676,7 +676,7 @@
       <node concept="3clFbS" id="3V2IUSr6SZy" role="2VODD2">
         <node concept="lc7rE" id="3V2IUSrva0j" role="3cqZAp">
           <node concept="la8eA" id="3V2IUSrva2j" role="lcghm">
-            <property role="lacIc" value="(" />
+            <property role="lacIc" value="function (" />
           </node>
         </node>
         <node concept="3clFbJ" id="3V2IUSrva4m" role="3cqZAp">
@@ -1381,7 +1381,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="3V2IUSr6T4p">
-    <ref role="WuzLi" to="6q58:4hQfa_ZrvSn" resolve="VarargsValueValue" />
+    <ref role="WuzLi" to="6q58:4hQfa_ZrvSn" resolve="VarargsParameterValue" />
     <node concept="11bSqf" id="3V2IUSr6T4q" role="11c4hB">
       <node concept="3clFbS" id="3V2IUSr6T4r" role="2VODD2">
         <node concept="lc7rE" id="3V2IUSr6T4s" role="3cqZAp">

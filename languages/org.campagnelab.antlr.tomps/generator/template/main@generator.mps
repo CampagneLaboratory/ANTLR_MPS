@@ -19,9 +19,9 @@
     <import index="fxg7" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" />
     <import index="k7g3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="ijbl" ref="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -123,7 +123,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -828,7 +828,7 @@
       <node concept="3Tm1VV" id="v1yTSnUeKA" role="1B3o_S" />
       <node concept="3clFbS" id="v1yTSnUeKB" role="3clF47">
         <node concept="34ab3g" id="14grA09FrWx" role="3cqZAp">
-          <property role="35gtTG" value="info" />
+          <property role="35gtTG" value="debug" />
           <node concept="3cpWs3" id="14grA09FuMo" role="34bqiv">
             <node concept="2OqwBi" id="14grA09Fvy3" role="3uHU7w">
               <node concept="37vLTw" id="14grA09FvgP" role="2Oq$k0">
@@ -1308,7 +1308,7 @@
       <node concept="3Tm1VV" id="7JSGHIZDuJd" role="1B3o_S" />
       <node concept="3clFbS" id="7JSGHIZDuJe" role="3clF47">
         <node concept="34ab3g" id="14grA09FCYZ" role="3cqZAp">
-          <property role="35gtTG" value="info" />
+          <property role="35gtTG" value="debug" />
           <node concept="3cpWs3" id="14grA09FCZ0" role="34bqiv">
             <node concept="2OqwBi" id="14grA09FCZ1" role="3uHU7w">
               <node concept="37vLTw" id="14grA09FCZ2" role="2Oq$k0">

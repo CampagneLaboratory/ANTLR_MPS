@@ -34,7 +34,7 @@
       <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.ConverterName_BehaviorDescriptor" />
     </file>
     <file name="Destination_BehaviorDescriptor.java">
-      <unit at="8,0,21,0" name="org.campagnelab.antlr.tomps.behavior.Destination_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.Destination_BehaviorDescriptor" />
     </file>
     <file name="ExampleConcept_BehaviorDescriptor.java">
       <unit at="7,0,15,0" name="org.campagnelab.antlr.tomps.behavior.ExampleConcept_BehaviorDescriptor" />
