@@ -3,20 +3,19 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/ANTLR" />
   <property name="build.layout" location="${build.dir}/artifacts/ANTLR" />
-  <property name="idea_home" location="${basedir}/../../../../../Applications/IntelliJ IDEA 14.app/Contents" />
-  <property name="mps_home" location="${basedir}/../../../../../Applications/MPS 3.2.app/Contents" />
+  <property name="mps_home" location="" />
   <property name="plugins_home" location="${mps_home}/plugins" />
   <property name="ANTLR_HOME" location="${basedir}" />
-  <property name="artifacts.mpsCore" location="${mps_home}/plugins" />
+  <property name="ANTLR_version" value="1.0" />
   <property name="artifacts.mps" location="${mps_home}" />
-  <property file="${artifacts.mpsCore}/build.properties" prefix="import.mpsCore" />
+  <property name="artifacts.mpsCore" location="${mps_home}/plugins" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
-  <property name="mpsBootstrapCore.version" value="${import.mpsCore.mpsBootstrapCore.version}" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
   <property name="mps.build.vcs.number" value="${import.mps.mps.build.vcs.number}" />
   <property name="mps.teamcity.buildConfName" value="${import.mps.mps.teamcity.buildConfName}" />
   <property name="mps.idea.platform.build.number" value="${import.mps.mps.idea.platform.build.number}" />
+  <property name="mpsBootstrapCore.version" value="${import.mps.mpsBootstrapCore.version}" />
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
@@ -26,10 +25,10 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/ANTLR.zip" />
-    <mkdir dir="${build.tmp}/default/ANTLR.zip/ANTRL" />
-    <mkdir dir="${build.tmp}/default/ANTLR.zip/ANTRL/META-INF" />
-    <echoxml file="${build.tmp}/default/ANTLR.zip/ANTRL/META-INF/plugin.xml">
+    <mkdir dir="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip" />
+    <mkdir dir="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL" />
+    <mkdir dir="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/META-INF" />
+    <echoxml file="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/META-INF/plugin.xml">
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>org.campagnelab.ANTLR</id>
         <name>org.campagnelab.ANTLR</name>
@@ -44,7 +43,7 @@
         </extensions>
       </idea-plugin>
     </echoxml>
-    <mkdir dir="${build.tmp}/default/ANTLR.zip/ANTRL/languages" />
+    <mkdir dir="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.ANTLR.jar" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.ANTLR.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.campagnelab.ANTLR.jar/META-INF/module.xml">
@@ -67,12 +66,12 @@
         <sources jar="org.campagnelab.ANTLR-src.jar" descriptor="org.campagnelab.ANTLR.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/languages/org.campagnelab.ANTLR.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages/org.campagnelab.ANTLR.jar">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.ANTLR" />
       <fileset dir="${basedir}/languages/org.campagnelab.ANTLR" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/org.campagnelab.ANTLR.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/languages/org.campagnelab.ANTLR-generator.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages/org.campagnelab.ANTLR-generator.jar">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.ANTLR#7142405419534748434" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ANTLR-generator-template">
@@ -84,7 +83,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ANTLR-languageModels1">
       <fileset dir="${basedir}/languages/org.campagnelab.ANTLR/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/languages/org.campagnelab.ANTLR-src.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages/org.campagnelab.ANTLR-src.jar">
       <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/generator/source_gen">
         <exclude name="**/trace.info" />
       </fileset>
@@ -96,7 +95,7 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ANTLR-languageModels" prefix="module/languageModels" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ANTLR-languageModels1" prefix="module/languageModels" />
     </jar>
-    <mkdir dir="${build.tmp}/default/ANTLR.zip/ANTRL/languages" />
+    <mkdir dir="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.antlr.parsers.jar" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.antlr.parsers.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.campagnelab.antlr.parsers.jar/META-INF/module.xml">
@@ -113,7 +112,7 @@
         <sources jar="org.campagnelab.antlr.parsers-src.jar" descriptor="org.campagnelab.antlr.parsers.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/languages/org.campagnelab.antlr.parsers.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages/org.campagnelab.antlr.parsers.jar">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.antlr.parsers" />
       <fileset dir="${basedir}/solutions/org.campagnelab.antlr.parsers" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/org.campagnelab.antlr.parsers.jar" />
@@ -124,7 +123,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.antlr.parsers-models1">
       <fileset dir="${basedir}/solutions/org.campagnelab.antlr.parsers/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/languages/org.campagnelab.antlr.parsers-src.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages/org.campagnelab.antlr.parsers-src.jar">
       <fileset dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.parsers/source_gen">
         <exclude name="**/trace.info" />
       </fileset>
@@ -132,7 +131,7 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.antlr.parsers-models" prefix="module/models" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.antlr.parsers-models1" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/ANTLR.zip/ANTRL/languages" />
+    <mkdir dir="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.antlr.tomps.jar" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.antlr.tomps.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.campagnelab.antlr.tomps.jar/META-INF/module.xml">
@@ -147,19 +146,18 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="org.campagnelab.antlr.tomps-src.jar" descriptor="org.campagnelab.antlr.tomps.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/languages/org.campagnelab.antlr.tomps.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages/org.campagnelab.antlr.tomps.jar">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.antlr.tomps" />
       <fileset dir="${basedir}/languages/org.campagnelab.antlr.tomps" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/org.campagnelab.antlr.tomps.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/languages/org.campagnelab.antlr.tomps-generator.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages/org.campagnelab.antlr.tomps-generator.jar">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.antlr.tomps#7645898506791942665" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.antlr.tomps-generator-template">
@@ -168,7 +166,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.antlr.tomps-languageModels">
       <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/languages/org.campagnelab.antlr.tomps-src.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages/org.campagnelab.antlr.tomps-src.jar">
       <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/generator/source_gen">
         <exclude name="**/trace.info" />
       </fileset>
@@ -179,7 +177,7 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.antlr.tomps-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.antlr.tomps-languageModels" prefix="module/languageModels" />
     </jar>
-    <mkdir dir="${build.tmp}/default/ANTLR.zip/ANTRL/lib" />
+    <mkdir dir="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/lib" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.antlr.parsers.jar1" />
     <mkdir dir="${build.tmp}/default/org.campagnelab.antlr.parsers.jar1/META-INF" />
     <echoxml file="${build.tmp}/default/org.campagnelab.antlr.parsers.jar1/META-INF/module.xml">
@@ -196,7 +194,7 @@
         <sources jar="org.campagnelab.antlr.parsers-src.jar" descriptor="org.campagnelab.antlr.parsers.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/lib/org.campagnelab.antlr.parsers.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/lib/org.campagnelab.antlr.parsers.jar">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.antlr.parsers" />
       <fileset dir="${basedir}/solutions/org.campagnelab.antlr.parsers" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/org.campagnelab.antlr.parsers.jar1" />
@@ -207,7 +205,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.antlr.parsers-models3">
       <fileset dir="${basedir}/solutions/org.campagnelab.antlr.parsers/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/lib/org.campagnelab.antlr.parsers-src.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/lib/org.campagnelab.antlr.parsers-src.jar">
       <fileset dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.parsers/source_gen">
         <exclude name="**/trace.info" />
       </fileset>
@@ -237,12 +235,12 @@
         <sources jar="org.campagnelab.ANTLR-src.jar" descriptor="org.campagnelab.ANTLR.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/lib/org.campagnelab.ANTLR.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/lib/org.campagnelab.ANTLR.jar">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.ANTLR" />
       <fileset dir="${basedir}/languages/org.campagnelab.ANTLR" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/org.campagnelab.ANTLR.jar1" />
     </jar>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/lib/org.campagnelab.ANTLR-generator.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/lib/org.campagnelab.ANTLR-generator.jar">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.ANTLR#7142405419534748434" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ANTLR-generator-template1">
@@ -254,7 +252,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ANTLR-languageModels3">
       <fileset dir="${basedir}/languages/org.campagnelab.ANTLR/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/lib/org.campagnelab.ANTLR-src.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/lib/org.campagnelab.ANTLR-src.jar">
       <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/generator/source_gen">
         <exclude name="**/trace.info" />
       </fileset>
@@ -280,19 +278,18 @@
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
           <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
         </dependencies>
         <sources jar="org.campagnelab.antlr.tomps-src.jar" descriptor="org.campagnelab.antlr.tomps.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/lib/org.campagnelab.antlr.tomps.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/lib/org.campagnelab.antlr.tomps.jar">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.antlr.tomps" />
       <fileset dir="${basedir}/languages/org.campagnelab.antlr.tomps" includes="icons/**, resources/**" />
       <fileset dir="${build.tmp}/default/org.campagnelab.antlr.tomps.jar1" />
     </jar>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/lib/org.campagnelab.antlr.tomps-generator.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/lib/org.campagnelab.antlr.tomps-generator.jar">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.antlr.tomps#7645898506791942665" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.antlr.tomps-generator-template1">
@@ -301,7 +298,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.antlr.tomps-languageModels1">
       <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/ANTLR.zip/ANTRL/lib/org.campagnelab.antlr.tomps-src.jar">
+    <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/lib/org.campagnelab.antlr.tomps-src.jar">
       <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/generator/source_gen">
         <exclude name="**/trace.info" />
       </fileset>
@@ -312,11 +309,11 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.antlr.tomps-generator-template1" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.antlr.tomps-languageModels1" prefix="module/languageModels" />
     </jar>
-    <zip destfile="${build.layout}/ANTLR.zip">
+    <zip destfile="${build.layout}/ANTLR_${ANTLR_version}.zip">
       <zipfileset file="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/grammarsv4.jar" prefix="ANTRL/lib" />
-      <fileset dir="${build.tmp}/default/ANTLR.zip" />
+      <fileset dir="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}</echo>
+    <echo file="${build.layout}/build.properties">ANTLR.ANTLR_version=${ANTLR_version}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -343,7 +340,7 @@
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
     <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true">
-      <plugin path="${artifacts.mpsCore}/mps-core/META-INF/plugin.xml/../.." />
+      <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -361,14 +358,12 @@
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.bootstrap-languages.devkit" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.general-purpose.devkit" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.language-design.devkit" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.behavior.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.checkedName.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.classLike.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.analyzers.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
@@ -417,7 +412,6 @@
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
-      <macro name="idea_home" path="${idea_home}" />
       <macro name="mps_home" path="${mps_home}" />
       <macro name="plugins_home" path="${plugins_home}" />
       <macro name="ANTLR_HOME" path="${ANTLR_HOME}" />
