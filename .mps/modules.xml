@@ -7,9 +7,7 @@
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.BigDataScript/org.campagnelab.BigDataScript.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.metar.R.functions/org.campagnelab.metar.R.functions.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.metar.R/org.campagnelab.metar.R.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/ANTLR.persistence.build/ANTLR.persistence.build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/FullR/FullR.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Playground/Playground.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/R.functions/R.functions.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/g4/g4.msd" folder="" />
@@ -17,8 +15,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.antlr.persistence/org.campagnelab.antlr.persistence.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.antlr.plugin/org.campagnelab.antlr.plugin.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.bds/org.campagnelab.bds.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.campagnelab.metar.r.parsers/org.campagnelab.metar.r.parsers.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/org.cmapagnelab.metar.R.plugin/org.cmapagnelab.metar.R.plugin.msd" folder="" />
     </projectModules>
   </component>
 </project>

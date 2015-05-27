@@ -42,7 +42,7 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/grammarsv4.jar" />
+    <stubModelEntry path="/Users/mas2182/Lab/Projects/MPS/ANTLR/languages/org.campagnelab.ANTLR/grammarsv4.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
