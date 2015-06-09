@@ -7,6 +7,9 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
     <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -611,7 +614,7 @@
           </node>
         </node>
         <node concept="3clFbF" id="6BpdF0a6qK3" role="3cqZAp">
-          <node concept="37vLTw" id="6BpdF0a6qK1" role="3clFbG">
+          <node concept="37vLTw" id="3EhCc$PA8pa" role="3clFbG">
             <ref role="3cqZAo" node="6BpdF0a5B79" resolve="l" />
           </node>
         </node>

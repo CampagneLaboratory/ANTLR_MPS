@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.campagnelab.ANTLR45" uuid="8a78e17e-fdc7-41c9-a783-10c22ed2f6d5" version="0">
+<language namespace="org.campagnelab.BigDataScript" uuid="a567e729-b95b-4c8d-9948-9653643918cd" version="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="languageModels" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="org.campagnelab.ANTLR45#1096804516884628892" uuid="a5bb0b67-efa3-44f2-a390-f3cdde19505b">
+    <generator generatorUID="org.campagnelab.BigDataScript#4220331111870013486" uuid="476e0657-0158-41ee-a854-9fbc8f5a004b">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />
@@ -17,7 +17,7 @@
       <usedLanguages>
         <usedLanguage>b401a680-8325-4110-8fd3-84331ff25bef(jetbrains.mps.lang.generator)</usedLanguage>
         <usedLanguage>d7706f63-9be2-479c-a3da-ae92af1e64d5(jetbrains.mps.lang.generator.generationContext)</usedLanguage>
-        <usedLanguage>8a78e17e-fdc7-41c9-a783-10c22ed2f6d5(org.campagnelab.ANTLR45)</usedLanguage>
+        <usedLanguage>a567e729-b95b-4c8d-9948-9653643918cd(org.campagnelab.BigDataScript)</usedLanguage>
       </usedLanguages>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -36,15 +36,12 @@
         <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" fqName="jetbrains.mps.lang.quotation" version="0" />
         <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" fqName="jetbrains.mps.lang.smodel" version="0" />
         <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
-        <language id="8a78e17e-fdc7-41c9-a783-10c22ed2f6d5" fqName="org.campagnelab.ANTLR45" version="-1" />
+        <language id="a567e729-b95b-4c8d-9948-9653643918cd" fqName="org.campagnelab.BigDataScript" version="-1" />
       </languageVersions>
       <mapping-priorities />
     </generator>
   </generators>
   <sourcePath />
-  <dependencies>
-    <dependency reexport="true">d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)</dependency>
-  </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>

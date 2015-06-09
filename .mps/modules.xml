@@ -3,7 +3,6 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.ANTLR/org.campagnelab.ANTLR.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.ANTRL45/org.campagnelab.ANTRL45.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.BigDataScript/org.campagnelab.BigDataScript.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/org.campagnelab.metar.R.functions/org.campagnelab.metar.R.functions.mpl" folder="" />
