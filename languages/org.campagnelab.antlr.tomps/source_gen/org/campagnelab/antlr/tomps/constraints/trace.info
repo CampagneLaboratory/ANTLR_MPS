@@ -310,39 +310,19 @@
   <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/558881339894395322">
     <file name="AlternativeMapper_Constraints.java">
       <node id="558881339894395322" at="23,42,24,98" concept="12" />
-      <node id="558881339894395322" at="23,42,24,98" concept="12" />
-      <node id="558881339894395322" at="23,42,24,98" concept="12" />
-      <node id="558881339894395322" at="27,98,28,135" concept="6" />
-      <node id="558881339894395322" at="27,98,28,135" concept="6" />
       <node id="558881339894395322" at="27,98,28,135" concept="6" />
       <node id="558881339894395322" at="31,52,32,20" concept="7" />
-      <node id="558881339894395322" at="31,52,32,20" concept="7" />
-      <node id="558881339894395322" at="31,52,32,20" concept="7" />
-      <node id="558881339894395322" at="35,116,36,20" concept="7" />
-      <node id="558881339894395322" at="35,116,36,20" concept="7" />
       <node id="558881339894395322" at="35,116,36,20" concept="7" />
       <node id="558881339896145755" at="39,119,40,202" concept="3" />
-      <node id="558881339896145755" at="39,119,40,202" concept="3" />
-      <node id="558881339896145755" at="39,119,40,202" concept="3" />
-      <node id="558881339894395477" at="40,202,41,293" concept="3" />
-      <node id="558881339894395477" at="40,202,41,293" concept="3" />
       <node id="558881339894395477" at="40,202,41,293" concept="3" />
       <node id="558881339894399792" at="41,293,42,234" concept="3" />
-      <node id="558881339894399792" at="41,293,42,234" concept="3" />
-      <node id="558881339894399792" at="41,293,42,234" concept="3" />
       <node id="558881339894395322" at="46,56,47,42" concept="7" />
-      <node id="558881339894395322" at="46,56,47,42" concept="7" />
-      <node id="558881339894395322" at="46,56,47,42" concept="7" />
-      <node id="558881339894395322" at="49,7,50,22" concept="7" />
-      <node id="558881339894395322" at="49,7,50,22" concept="7" />
       <node id="558881339894395322" at="49,7,50,22" concept="7" />
       <node id="558881339894395322" at="23,0,26,0" concept="2" trace="AlternativeMapper_Constraints#()V" />
       <node id="558881339894395322" at="30,0,34,0" concept="5" trace="hasOwnOnReferenceSetHandler#()Z" />
       <node id="558881339894395322" at="34,0,38,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="558881339894395322" at="44,0,49,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
       <node id="558881339894395322" at="38,0,44,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="558881339894395322" at="28,135,49,7" concept="3" />
-      <node id="558881339894395322" at="28,135,49,7" concept="3" />
       <node id="558881339894395322" at="28,135,49,7" concept="3" />
       <node id="558881339894395322" at="26,0,52,0" concept="5" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
       <scope id="558881339894395322" at="23,42,24,98" />
@@ -375,8 +355,6 @@
   <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/558881339903206398">
     <file name="Mapper_Constraints.java">
       <node id="558881339903206398" at="9,31,10,97" concept="12" />
-      <node id="558881339903206398" at="9,31,10,97" concept="12" />
-      <node id="558881339903206398" at="9,31,10,97" concept="12" />
       <node id="558881339903206398" at="9,0,12,0" concept="2" trace="Mapper_Constraints#()V" />
       <scope id="558881339903206398" at="9,31,10,97" />
       <scope id="558881339903206398" at="9,0,12,0" />
@@ -386,95 +364,35 @@
   <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/7627187573639494635">
     <file name="ConvertToMPS_Constraints.java">
       <node id="7627187573639494635" at="32,37,33,98" concept="12" />
-      <node id="7627187573639494635" at="32,37,33,98" concept="12" />
-      <node id="7627187573639494635" at="32,37,33,98" concept="12" />
-      <node id="7627187573639494635" at="36,88,37,123" concept="6" />
-      <node id="7627187573639494635" at="36,88,37,123" concept="6" />
       <node id="7627187573639494635" at="36,88,37,123" concept="6" />
       <node id="7627187573639494635" at="40,37,41,20" concept="7" />
-      <node id="7627187573639494635" at="40,37,41,20" concept="7" />
-      <node id="7627187573639494635" at="40,37,41,20" concept="7" />
-      <node id="7627187573639494635" at="44,62,45,56" concept="6" />
-      <node id="7627187573639494635" at="44,62,45,56" concept="6" />
       <node id="7627187573639494635" at="44,62,45,56" concept="6" />
       <node id="7627187573639937460" at="46,9,47,85" concept="6" />
-      <node id="7627187573639937460" at="46,9,47,85" concept="6" />
-      <node id="7627187573639937460" at="46,9,47,85" concept="6" />
-      <node id="7627187573640032712" at="47,85,48,155" concept="6" />
-      <node id="7627187573640032712" at="47,85,48,155" concept="6" />
       <node id="7627187573640032712" at="47,85,48,155" concept="6" />
       <node id="7627187573640209316" at="49,26,50,199" concept="3" />
-      <node id="7627187573640209316" at="49,26,50,199" concept="3" />
-      <node id="7627187573640209316" at="49,26,50,199" concept="3" />
-      <node id="7627187573641953009" at="54,48,55,406" concept="7" />
-      <node id="7627187573641953009" at="54,48,55,406" concept="7" />
       <node id="7627187573641953009" at="54,48,55,406" concept="7" />
       <node id="7627187573642037529" at="57,26,58,73" concept="8" />
-      <node id="7627187573642037529" at="57,26,58,73" concept="8" />
-      <node id="7627187573642037529" at="57,26,58,73" concept="8" />
-      <node id="7627187573641997825" at="58,73,59,251" concept="6" />
-      <node id="7627187573641997825" at="58,73,59,251" concept="6" />
       <node id="7627187573641997825" at="58,73,59,251" concept="6" />
       <node id="7627187573642008040" at="59,251,60,406" concept="3" />
-      <node id="7627187573642008040" at="59,251,60,406" concept="3" />
-      <node id="7627187573642008040" at="59,251,60,406" concept="3" />
-      <node id="7627187573642010530" at="60,406,61,359" concept="3" />
-      <node id="7627187573642010530" at="60,406,61,359" concept="3" />
       <node id="7627187573642010530" at="60,406,61,359" concept="3" />
       <node id="7627187573641962001" at="61,359,62,290" concept="3" />
-      <node id="7627187573641962001" at="61,359,62,290" concept="3" />
-      <node id="7627187573641962001" at="61,359,62,290" concept="3" />
-      <node id="7627187573640152782" at="64,12,65,0" concept="9" />
-      <node id="7627187573640152782" at="64,12,65,0" concept="9" />
       <node id="7627187573640152782" at="64,12,65,0" concept="9" />
       <node id="7627187573639494635" at="69,40,70,20" concept="7" />
-      <node id="7627187573639494635" at="69,40,70,20" concept="7" />
-      <node id="7627187573639494635" at="69,40,70,20" concept="7" />
-      <node id="7627187573639494635" at="73,70,74,56" concept="6" />
-      <node id="7627187573639494635" at="73,70,74,56" concept="6" />
       <node id="7627187573639494635" at="73,70,74,56" concept="6" />
       <node id="7627187573640224085" at="75,9,76,79" concept="6" />
-      <node id="7627187573640224085" at="75,9,76,79" concept="6" />
-      <node id="7627187573640224085" at="75,9,76,79" concept="6" />
-      <node id="7627187573640223755" at="76,79,77,0" concept="9" />
-      <node id="7627187573640223755" at="76,79,77,0" concept="9" />
       <node id="7627187573640223755" at="76,79,77,0" concept="9" />
       <node id="7627187573640223194" at="77,0,78,155" concept="6" />
-      <node id="7627187573640223194" at="77,0,78,155" concept="6" />
-      <node id="7627187573640223194" at="77,0,78,155" concept="6" />
-      <node id="7627187573640225127" at="78,155,79,27" concept="7" />
-      <node id="7627187573640225127" at="78,155,79,27" concept="7" />
       <node id="7627187573640225127" at="78,155,79,27" concept="7" />
       <node id="7627187573639494635" at="82,7,83,22" concept="7" />
-      <node id="7627187573639494635" at="82,7,83,22" concept="7" />
-      <node id="7627187573639494635" at="82,7,83,22" concept="7" />
-      <node id="7627187573639494635" at="86,98,87,135" concept="6" />
-      <node id="7627187573639494635" at="86,98,87,135" concept="6" />
       <node id="7627187573639494635" at="86,98,87,135" concept="6" />
       <node id="7627187573639494635" at="90,52,91,20" concept="7" />
-      <node id="7627187573639494635" at="90,52,91,20" concept="7" />
-      <node id="7627187573639494635" at="90,52,91,20" concept="7" />
-      <node id="7627187573639494635" at="94,116,95,20" concept="7" />
-      <node id="7627187573639494635" at="94,116,95,20" concept="7" />
       <node id="7627187573639494635" at="94,116,95,20" concept="7" />
       <node id="7627187573639495198" at="98,119,99,341" concept="3" />
-      <node id="7627187573639495198" at="98,119,99,341" concept="3" />
-      <node id="7627187573639495198" at="98,119,99,341" concept="3" />
-      <node id="7627187573639507322" at="99,341,100,198" concept="3" />
-      <node id="7627187573639507322" at="99,341,100,198" concept="3" />
       <node id="7627187573639507322" at="99,341,100,198" concept="3" />
       <node id="7627187573639494635" at="104,56,105,42" concept="7" />
-      <node id="7627187573639494635" at="104,56,105,42" concept="7" />
-      <node id="7627187573639494635" at="104,56,105,42" concept="7" />
       <node id="7627187573639494635" at="107,7,108,22" concept="7" />
-      <node id="7627187573639494635" at="107,7,108,22" concept="7" />
-      <node id="7627187573639494635" at="107,7,108,22" concept="7" />
-      <node id="7627187573642033505" at="110,83,111,46" concept="7" />
-      <node id="7627187573642033505" at="110,83,111,46" concept="7" />
       <node id="7627187573642033505" at="110,83,111,46" concept="7" />
       <node id="7627187573639494635" at="32,0,35,0" concept="2" trace="ConvertToMPS_Constraints#()V" />
-      <node id="7627187573640207362" at="48,155,51,11" concept="4" />
-      <node id="7627187573640207362" at="48,155,51,11" concept="4" />
       <node id="7627187573640207362" at="48,155,51,11" concept="4" />
       <node id="7627187573641952780" at="54,0,57,0" concept="5" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="7627187573642033505" at="110,0,113,0" concept="11" trace="eq_uizg9o_a0a0a0a0a0a0a3a1a1a0b0a1a1#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
@@ -485,25 +403,13 @@
       <node id="7627187573639494635" at="97,0,102,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="7627187573639494635" at="102,0,107,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
       <node id="7627187573639494635" at="74,56,80,9" concept="0" />
-      <node id="7627187573639494635" at="74,56,80,9" concept="0" />
-      <node id="7627187573639494635" at="74,56,80,9" concept="0" />
       <node id="7627187573639494635" at="72,0,82,0" concept="5" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
       <node id="7627187573641937299" at="52,12,63,13" concept="4" />
-      <node id="7627187573641937299" at="52,12,63,13" concept="4" />
-      <node id="7627187573641937299" at="52,12,63,13" concept="4" />
-      <node id="7627187573642060178" at="51,11,64,12" concept="1" />
-      <node id="7627187573642060178" at="51,11,64,12" concept="1" />
       <node id="7627187573642060178" at="51,11,64,12" concept="1" />
       <node id="7627187573639494635" at="87,135,107,7" concept="3" />
-      <node id="7627187573639494635" at="87,135,107,7" concept="3" />
-      <node id="7627187573639494635" at="87,135,107,7" concept="3" />
-      <node id="7627187573639494635" at="45,56,66,9" concept="0" />
-      <node id="7627187573639494635" at="45,56,66,9" concept="0" />
       <node id="7627187573639494635" at="45,56,66,9" concept="0" />
       <node id="7627187573639494635" at="43,0,68,0" concept="5" trace="setValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
       <node id="7627187573639494635" at="85,0,110,0" concept="5" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
-      <node id="7627187573639494635" at="37,123,82,7" concept="3" />
-      <node id="7627187573639494635" at="37,123,82,7" concept="3" />
       <node id="7627187573639494635" at="37,123,82,7" concept="3" />
       <node id="7627187573639494635" at="35,0,85,0" concept="5" trace="getNotDefaultSProperties#()Ljava/util/Map;" />
       <scope id="7627187573639494635" at="32,37,33,98" />
@@ -581,40 +487,20 @@
   <root nodeRef="r:96753133-5205-453f-884d-181387ba1d08(org.campagnelab.antlr.tomps.constraints)/7627187573641817679">
     <file name="ConceptMapper_Constraints.java">
       <node id="7627187573641817679" at="25,38,26,98" concept="12" />
-      <node id="7627187573641817679" at="25,38,26,98" concept="12" />
-      <node id="7627187573641817679" at="25,38,26,98" concept="12" />
-      <node id="7627187573641817679" at="29,98,30,135" concept="6" />
-      <node id="7627187573641817679" at="29,98,30,135" concept="6" />
       <node id="7627187573641817679" at="29,98,30,135" concept="6" />
       <node id="7627187573641817679" at="33,44,34,20" concept="7" />
-      <node id="7627187573641817679" at="33,44,34,20" concept="7" />
-      <node id="7627187573641817679" at="33,44,34,20" concept="7" />
-      <node id="7627187573641817679" at="41,63,42,58" concept="7" />
-      <node id="7627187573641817679" at="41,63,42,58" concept="7" />
       <node id="7627187573641817679" at="41,63,42,58" concept="7" />
       <node id="7627187573641817679" at="46,13,47,233" concept="6" />
-      <node id="7627187573641817679" at="46,13,47,233" concept="6" />
-      <node id="7627187573641817679" at="46,13,47,233" concept="6" />
       <node id="7627187573641817679" at="47,233,48,64" concept="7" />
-      <node id="7627187573641817679" at="47,233,48,64" concept="7" />
-      <node id="7627187573641817679" at="47,233,48,64" concept="7" />
-      <node id="7627187573641817679" at="53,7,54,22" concept="7" />
-      <node id="7627187573641817679" at="53,7,54,22" concept="7" />
       <node id="7627187573641817679" at="53,7,54,22" concept="7" />
       <node id="7627187573641817679" at="56,0,57,0" concept="10" trace="breakingNode_5an3cw_a0a0a0a0a1a0b0a1a1" />
       <node id="7627187573641817679" at="25,0,28,0" concept="2" trace="ConceptMapper_Constraints#()V" />
       <node id="7627187573641817679" at="32,0,36,0" concept="5" trace="hasOwnScopeProvider#()Z" />
       <node id="7627187573641817679" at="40,0,44,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
       <node id="7627187573641817679" at="45,122,49,13" concept="0" />
-      <node id="7627187573641817679" at="45,122,49,13" concept="0" />
-      <node id="7627187573641817679" at="45,122,49,13" concept="0" />
       <node id="7627187573641817679" at="44,0,51,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/IOperationContext;Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
       <node id="7627187573641817679" at="38,56,51,10" concept="7" />
-      <node id="7627187573641817679" at="38,56,51,10" concept="7" />
-      <node id="7627187573641817679" at="38,56,51,10" concept="7" />
       <node id="7627187573641817679" at="36,0,53,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-      <node id="7627187573641817679" at="30,135,53,7" concept="3" />
-      <node id="7627187573641817679" at="30,135,53,7" concept="3" />
       <node id="7627187573641817679" at="30,135,53,7" concept="3" />
       <node id="7627187573641817679" at="28,0,56,0" concept="5" trace="getNotDefaultSReferenceLinks#()Ljava/util/Map;" />
       <scope id="7627187573641817679" at="25,38,26,98" />

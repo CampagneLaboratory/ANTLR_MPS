@@ -40,20 +40,20 @@ public class TextGenHelper_Behavior {
         }
       }
     });
-    SNode op = _quotation_createNode_fdungw_a0e0a(ListSequence.fromList(appends).where(new IWhereFilter<SNode>() {
+    SNode op2 = _quotation_createNode_fdungw_a0e0a(ListSequence.fromList(appends).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
         return it != null;
       }
     }).toListSequence(), AlternativeMapper_Behavior.call_visitorReturnConcept_558881339892896625(altMapper));
-    return op;
+    return op2;
   }
   public static SNode call_textGenComponent_4522383332287865500(SAbstractConcept thisConcept, final SNode operator) {
     if (LOG.isInfoEnabled()) {
       LOG.info("visiting Operator " + SPropertyOperations.getString(operator, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d619bfbeL, "name")));
     }
     List<SNode> appends = new ArrayList<SNode>();
-    SNode op = _quotation_createNode_fdungw_a0c0b(SPropertyOperations.getString(operator, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d619bfbeL, "name")), SLinkOperations.getTarget(operator, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62a2bcaL, "concept")));
-    return op;
+    SNode op2 = _quotation_createNode_fdungw_a0c0b(SPropertyOperations.getString(operator, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d619bfbeL, "name")), SLinkOperations.getTarget(operator, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d62a2bcaL, "concept")));
+    return op2;
   }
   public static List<SNode> call_appendStatement_4522383332274486691(SAbstractConcept thisConcept, SNode block, SNode altMapper) {
     List<SNode> result = new ArrayList<SNode>();
