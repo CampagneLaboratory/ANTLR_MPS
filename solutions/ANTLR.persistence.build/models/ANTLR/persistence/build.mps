@@ -199,6 +199,15 @@
         </node>
       </node>
     </node>
+    <node concept="2kB4xC" id="4RSqyaA4c2V" role="1l3spd">
+      <property role="TrG5h" value="build_number" />
+    </node>
+    <node concept="2kB4xC" id="4RSqyaA6FWL" role="1l3spd">
+      <property role="TrG5h" value="reference_commit" />
+    </node>
+    <node concept="2kB4xC" id="4RSqyaA6G6g" role="1l3spd">
+      <property role="TrG5h" value="reference_branch" />
+    </node>
     <node concept="2sgV4H" id="2LflvEoilzb" role="1l3spa">
       <ref role="1l3spb" to="ffeo:5D1dJ7xWer5" resolve="mpsCore" />
       <node concept="398BVA" id="2LflvEoilzW" role="2JcizS">
@@ -294,12 +303,30 @@
       </node>
       <node concept="3_J27D" id="7twz7e85Myd" role="3s6cr7">
         <node concept="3Mxwew" id="7twz7e85Myn" role="3MwsjC">
-          <property role="3MwjfP" value="ANTLR and org.campagnelab.antrl.tomps languages. The ToMPS language helps develop ANTRL " />
+          <property role="3MwjfP" value="ANTLR and org.campagnelab.antrl.tomps languages. The ToMPS language helps develop ANTLR-compatible visitors to parse text into nodes of an MPS language. ToMPS also provide support to create concepts of a new MPS language (whose nodes will be populated by the parser), using the ANTLR grammar as a guide. Note that version 1.0 only includes the subset of ANTLR that we needed to model to implement the R language. Sadly, no documentation is available at this point and the language is unpolished. Reference build: " />
+        </node>
+        <node concept="3Mxwey" id="6qoguJ3cWd_" role="3MwsjC">
+          <ref role="3Mxwex" node="4RSqyaA4c2V" resolve="build_number" />
+        </node>
+        <node concept="3Mxwew" id="6qoguJ3cWCm" role="3MwsjC">
+          <property role="3MwjfP" value=" in branch " />
+        </node>
+        <node concept="3Mxwey" id="6qoguJ3cWGm" role="3MwsjC">
+          <ref role="3Mxwex" node="4RSqyaA6G6g" resolve="reference_branch" />
+        </node>
+        <node concept="3Mxwew" id="6qoguJ3cWOg" role="3MwsjC">
+          <property role="3MwjfP" value=" and with commit : " />
+        </node>
+        <node concept="3Mxwey" id="6qoguJ3cWSm" role="3MwsjC">
+          <ref role="3Mxwex" node="4RSqyaA6FWL" resolve="reference_commit" />
+        </node>
+        <node concept="3Mxwew" id="6qoguJ3cX0m" role="3MwsjC">
+          <property role="3MwjfP" value="." />
         </node>
       </node>
       <node concept="2iUeEo" id="7twz7e85Myp" role="2iVFfd">
         <property role="2iUeEt" value="Campagne Laboratory" />
-        <property role="2iUeEu" value="http://campagnelab.org" />
+        <property role="2iUeEu" value="http://books.campagnelab.org" />
       </node>
       <node concept="m$_yB" id="2LflvEogj4H" role="m$_yh">
         <ref role="m$_yA" node="5U7ZKlHMwce" resolve="org.campagnelab.ANTLR" />
