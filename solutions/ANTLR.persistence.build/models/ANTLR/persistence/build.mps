@@ -289,8 +289,8 @@
         </node>
       </node>
       <node concept="3_J27D" id="7twz7e84BNJ" role="m$_w8">
-        <node concept="3Mxwey" id="ocVW5oW6Aq" role="3MwsjC">
-          <ref role="3Mxwex" node="3gMg70bX6Gp" resolve="ANTLR_version" />
+        <node concept="3Mxwew" id="1G58HoZCDkP" role="3MwsjC">
+          <property role="3MwjfP" value="1.0.1" />
         </node>
       </node>
       <node concept="m$_yC" id="7twz7e84BNM" role="m$_yJ">
@@ -303,7 +303,13 @@
       </node>
       <node concept="3_J27D" id="7twz7e85Myd" role="3s6cr7">
         <node concept="3Mxwew" id="7twz7e85Myn" role="3MwsjC">
-          <property role="3MwjfP" value="ANTLR and org.campagnelab.antrl.tomps languages. The ToMPS language helps develop ANTLR-compatible visitors to parse text into nodes of an MPS language. ToMPS also provide support to create concepts of a new MPS language (whose nodes will be populated by the parser), using the ANTLR grammar as a guide. Note that version 1.0 only includes the subset of ANTLR that we needed to model to implement the R language. Sadly, no documentation is available at this point and the language is unpolished. Reference build: " />
+          <property role="3MwjfP" value="ANTLR and org.campagnelab.antrl.tomps languages. The ToMPS language helps develop ANTLR-compatible visitors to parse text into nodes of an MPS language. ToMPS also provide support to create concepts of a new MPS language (whose nodes will be populated by the parser), using the ANTLR grammar as a guide. Note that version " />
+        </node>
+        <node concept="3Mxwey" id="3b7wg9jI1j5" role="3MwsjC">
+          <ref role="3Mxwex" node="3gMg70bX6Gp" resolve="ANTLR_version" />
+        </node>
+        <node concept="3Mxwew" id="3b7wg9jI1j4" role="3MwsjC">
+          <property role="3MwjfP" value=" only includes the subset of ANTLR that we needed to model to implement the R language. Sadly, no documentation is available at this point and the language is unpolished. Reference build: " />
         </node>
         <node concept="3Mxwey" id="6qoguJ3cWd_" role="3MwsjC">
           <ref role="3Mxwex" node="4RSqyaA4c2V" resolve="build_number" />
