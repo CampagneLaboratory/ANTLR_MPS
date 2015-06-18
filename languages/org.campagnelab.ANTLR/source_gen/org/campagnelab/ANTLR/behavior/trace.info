@@ -2,6 +2,7 @@
 <debug-info>
   <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -16,7 +17,10 @@
       <unit at="7,0,21,0" name="org.campagnelab.ANTLR.behavior.Alternatives_BehaviorDescriptor" />
     </file>
     <file name="BehaviorAspectDescriptor.java">
-      <unit at="9,0,72,0" name="org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor" />
+      <unit at="9,0,74,0" name="org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="BlockSet_BehaviorDescriptor.java">
+      <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.BlockSet_BehaviorDescriptor" />
     </file>
     <file name="Dot_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.Dot_BehaviorDescriptor" />
@@ -76,7 +80,7 @@
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.REGEXP_BehaviorDescriptor" />
     </file>
     <file name="Range_BehaviorDescriptor.java">
-      <unit at="6,0,14,0" name="org.campagnelab.ANTLR.behavior.Range_BehaviorDescriptor" />
+      <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.Range_BehaviorDescriptor" />
     </file>
     <file name="RuleRefByName_BehaviorDescriptor.java">
       <unit at="7,0,18,0" name="org.campagnelab.ANTLR.behavior.RuleRefByName_BehaviorDescriptor" />
@@ -86,6 +90,9 @@
     </file>
     <file name="Sequence_BehaviorDescriptor.java">
       <unit at="7,0,21,0" name="org.campagnelab.ANTLR.behavior.Sequence_BehaviorDescriptor" />
+    </file>
+    <file name="SetElement_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="org.campagnelab.ANTLR.behavior.SetElement_BehaviorDescriptor" />
     </file>
     <file name="StringLiteral_BehaviorDescriptor.java">
       <unit at="7,0,21,0" name="org.campagnelab.ANTLR.behavior.StringLiteral_BehaviorDescriptor" />
@@ -105,13 +112,13 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/1012655972745062447">
     <file name="HasOptionalParams_Behavior.java">
-      <node id="1012655972745078223" at="12,75,13,571" concept="5" />
+      <node id="1012655972745078223" at="12,75,13,571" concept="6" />
       <node id="5496686145712410596" at="15,95,16,361" concept="1" />
       <node id="5496686145712414451" at="16,361,17,353" concept="1" />
       <node id="5496686145712417799" at="17,353,18,341" concept="1" />
-      <node id="1012655972745062447" at="10,0,12,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="1012655972745062447" at="12,0,15,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="1012655972745062447" at="15,0,20,0" concept="7" trace="call_setParams_5496686145712410299#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1012655972745062447" at="10,0,12,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1012655972745062447" at="12,0,15,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1012655972745062447" at="15,0,20,0" concept="8" trace="call_setParams_5496686145712410299#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="1012655972745062449" at="10,43,10,43" />
       <scope id="1012655972745062604" at="12,75,13,571" />
       <scope id="1012655972745062447" at="10,0,12,0">
@@ -130,11 +137,11 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/1539085245680655989">
     <file name="LexerBlock_Behavior.java">
-      <node id="1539085245680739454" at="17,38,18,87" concept="5" />
-      <node id="1539085245680655989" at="13,0,15,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="1539085245680739109" at="17,0,20,0" concept="3" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="1539085245680716446" at="15,81,20,19" concept="5" />
-      <node id="1539085245680655989" at="15,0,22,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1539085245680739454" at="17,38,18,87" concept="6" />
+      <node id="1539085245680655989" at="13,0,15,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1539085245680739109" at="17,0,20,0" concept="4" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1539085245680716446" at="15,81,20,19" concept="6" />
+      <node id="1539085245680655989" at="15,0,22,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="1539085245680655991" at="13,43,13,43" />
       <scope id="1539085245680739110" at="17,38,18,87" />
       <scope id="1539085245680655989" at="13,0,15,0">
@@ -153,9 +160,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/1830582854713394829">
     <file name="Rule_Behavior.java">
-      <node id="1830582854713499836" at="10,75,11,42" concept="5" />
-      <node id="1830582854713394829" at="8,0,10,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="1830582854713394829" at="10,0,13,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1830582854713499836" at="10,75,11,42" concept="6" />
+      <node id="1830582854713394829" at="8,0,10,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1830582854713394829" at="10,0,13,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="1830582854713394831" at="8,43,8,43" />
       <scope id="1830582854713418334" at="10,75,11,42" />
       <scope id="1830582854713394829" at="8,0,10,0">
@@ -167,13 +174,38 @@
       <unit id="1830582854713394829" at="7,0,14,0" name="org.campagnelab.ANTLR.behavior.Rule_Behavior" />
     </file>
   </root>
+  <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/2212714499869525793">
+    <file name="BlockSet_Behavior.java">
+      <node id="2212714499869605146" at="13,75,14,23" concept="5" />
+      <node id="2212714499869623974" at="15,217,16,87" concept="1" />
+      <node id="2212714499869639952" at="17,5,18,18" concept="6" />
+      <node id="2212714499869525793" at="11,0,13,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2212714499869614027" at="14,23,17,5" concept="2" />
+      <node id="2212714499869525793" at="13,0,20,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="2212714499869525795" at="11,43,11,43" />
+      <scope id="2212714499869614031" at="15,217,16,87" />
+      <scope id="2212714499869525793" at="11,0,13,0">
+        <var name="thisNode" id="2212714499869525793" />
+      </scope>
+      <scope id="2212714499869614027" at="14,23,17,5">
+        <var name="e" id="2212714499869614029" />
+      </scope>
+      <scope id="2212714499869597713" at="13,75,18,18">
+        <var name="result" id="2212714499869605149" />
+      </scope>
+      <scope id="2212714499869525793" at="13,0,20,0">
+        <var name="thisNode" id="2212714499869525793" />
+      </scope>
+      <unit id="2212714499869525793" at="10,0,21,0" name="org.campagnelab.ANTLR.behavior.BlockSet_Behavior" />
+    </file>
+  </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/373739727924885495">
     <file name="ParserRuleBlock_Behavior.java">
-      <node id="1012655972745774762" at="11,75,12,173" concept="5" />
-      <node id="3737166271522577094" at="14,80,15,16" concept="5" />
-      <node id="373739727924885495" at="9,0,11,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="373739727924885495" at="11,0,14,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="373739727924885495" at="14,0,17,0" concept="7" trace="virtual_needsVisit_3737166271522571641#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="1012655972745774762" at="11,75,12,173" concept="6" />
+      <node id="3737166271522577094" at="14,80,15,16" concept="6" />
+      <node id="373739727924885495" at="9,0,11,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="373739727924885495" at="11,0,14,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="373739727924885495" at="14,0,17,0" concept="8" trace="virtual_needsVisit_3737166271522571641#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <scope id="373739727924885497" at="9,43,9,43" />
       <scope id="373739727924908970" at="11,75,12,173" />
       <scope id="3737166271522571644" at="14,80,15,16" />
@@ -191,9 +223,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5381624775492934411">
     <file name="TokenRef_Behavior.java">
-      <node id="5381624775493196934" at="13,75,14,387" concept="5" />
-      <node id="5381624775492934411" at="11,0,13,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5381624775492934411" at="13,0,16,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5381624775493196934" at="13,75,14,387" concept="6" />
+      <node id="5381624775492934411" at="11,0,13,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5381624775492934411" at="13,0,16,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5381624775492934413" at="11,43,11,43" />
       <scope id="5381624775493196814" at="13,75,14,387" />
       <scope id="5381624775492934411" at="11,0,13,0">
@@ -207,9 +239,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/558881339894260385">
     <file name="LabeledElement_Behavior.java">
-      <node id="558881339894261102" at="14,75,15,811" concept="5" />
-      <node id="558881339894260385" at="12,0,14,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="558881339894260385" at="14,0,17,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="558881339894261102" at="14,75,15,811" concept="6" />
+      <node id="558881339894260385" at="12,0,14,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="558881339894260385" at="14,0,17,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="558881339894260387" at="12,43,12,43" />
       <scope id="558881339894260993" at="14,75,15,811" />
       <scope id="558881339894260385" at="12,0,14,0">
@@ -223,9 +255,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5643127000000497509">
     <file name="LexerRuleRefByName_Behavior.java">
-      <node id="5643127000000499707" at="12,75,13,175" concept="5" />
-      <node id="5643127000000497509" at="10,0,12,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5643127000000497509" at="12,0,15,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5643127000000499707" at="12,75,13,175" concept="6" />
+      <node id="5643127000000497509" at="10,0,12,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5643127000000497509" at="12,0,15,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5643127000000497511" at="10,43,10,43" />
       <scope id="5643127000000499282" at="12,75,13,175" />
       <scope id="5643127000000497509" at="10,0,12,0">
@@ -239,11 +271,11 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5643127000001206042">
     <file name="LexerAltList_Behavior.java">
-      <node id="5643127000001235541" at="18,38,19,151" concept="5" />
-      <node id="5643127000001206042" at="14,0,16,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5643127000001227313" at="18,0,21,0" concept="3" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5643127000001206120" at="16,81,21,14" concept="5" />
-      <node id="5643127000001206042" at="16,0,23,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5643127000001235541" at="18,38,19,151" concept="6" />
+      <node id="5643127000001206042" at="14,0,16,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5643127000001227313" at="18,0,21,0" concept="4" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5643127000001206120" at="16,81,21,14" concept="6" />
+      <node id="5643127000001206042" at="16,0,23,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5643127000001206044" at="14,43,14,43" />
       <scope id="5643127000001227314" at="18,38,19,151" />
       <scope id="5643127000001206042" at="14,0,16,0">
@@ -262,16 +294,16 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624399899990">
     <file name="ToTextOutput_Behavior.java">
-      <node id="7095100507906222348" at="12,31,13,128" concept="5" />
-      <node id="7095100507906233375" at="14,12,15,16" concept="5" />
-      <node id="1175268421617900290" at="18,87,19,93" concept="5" />
-      <node id="1175268421617897811" at="21,103,22,61" concept="5" />
-      <node id="5668935624399899990" at="9,0,11,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7095100507906222348" at="12,31,13,128" concept="6" />
+      <node id="7095100507906233375" at="14,12,15,16" concept="6" />
+      <node id="1175268421617900290" at="18,87,19,93" concept="6" />
+      <node id="1175268421617897811" at="21,103,22,61" concept="6" />
+      <node id="5668935624399899990" at="9,0,11,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="7095100507906222265" at="14,10,16,5" concept="0" />
-      <node id="5668935624399899990" at="18,0,21,0" concept="7" trace="call_safeName_1175268421617889806#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Ljava/lang/String;" />
-      <node id="5668935624399899990" at="21,0,24,0" concept="7" trace="call_safeString_1175268421617897807#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" />
-      <node id="7095100507906219779" at="11,96,16,5" concept="2" />
-      <node id="5668935624399899990" at="11,0,18,0" concept="7" trace="call_safeToText_7095100507906137981#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624399899990" at="18,0,21,0" concept="8" trace="call_safeName_1175268421617889806#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="5668935624399899990" at="21,0,24,0" concept="8" trace="call_safeString_1175268421617897807#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="7095100507906219779" at="11,96,16,5" concept="3" />
+      <node id="5668935624399899990" at="11,0,18,0" concept="8" trace="call_safeToText_7095100507906137981#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624399899992" at="9,43,9,43" />
       <scope id="7095100507906219780" at="12,31,13,128" />
       <scope id="7095100507906222266" at="14,12,15,16" />
@@ -299,11 +331,11 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624399947851">
     <file name="Grammar_Behavior.java">
-      <node id="5668935624399962228" at="18,38,19,87" concept="5" />
-      <node id="5668935624399947851" at="14,0,16,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624399961929" at="18,0,21,0" concept="3" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="8410955562300017368" at="16,81,21,22" concept="5" />
-      <node id="5668935624399947851" at="16,0,23,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624399962228" at="18,38,19,87" concept="6" />
+      <node id="5668935624399947851" at="14,0,16,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624399961929" at="18,0,21,0" concept="4" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="8410955562300017368" at="16,81,21,22" concept="6" />
+      <node id="5668935624399947851" at="16,0,23,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624399947853" at="14,43,14,43" />
       <scope id="5668935624399961930" at="18,38,19,87" />
       <scope id="5668935624399947851" at="14,0,16,0">
@@ -322,9 +354,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624399970322">
     <file name="LexerRule_Behavior.java">
-      <node id="5668935624399970441" at="13,75,14,494" concept="5" />
-      <node id="5668935624399970322" at="11,0,13,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624399970322" at="13,0,16,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624399970441" at="13,75,14,494" concept="6" />
+      <node id="5668935624399970322" at="11,0,13,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624399970322" at="13,0,16,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624399970324" at="11,43,11,43" />
       <scope id="5668935624399970430" at="13,75,14,494" />
       <scope id="5668935624399970322" at="11,0,13,0">
@@ -338,15 +370,15 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624399980158">
     <file name="Sequence_Behavior.java">
-      <node id="5668935624399994279" at="19,38,20,87" concept="5" />
-      <node id="3737166271522601254" at="26,60,27,138" concept="5" />
-      <node id="5668935624399980158" at="15,0,17,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624399993961" at="19,0,22,0" concept="3" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="3737166271522600285" at="26,0,29,0" concept="3" trace="combine#(Ljava/lang/Boolean;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Boolean;" />
-      <node id="5668935624399980280" at="17,81,22,19" concept="5" />
-      <node id="3737166271522580666" at="24,80,29,7" concept="5" />
-      <node id="5668935624399980158" at="17,0,24,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5668935624399980158" at="24,0,31,0" concept="7" trace="virtual_needsVisit_3737166271522571641#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5668935624399994279" at="19,38,20,87" concept="6" />
+      <node id="3737166271522601254" at="26,60,27,138" concept="6" />
+      <node id="5668935624399980158" at="15,0,17,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624399993961" at="19,0,22,0" concept="4" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="3737166271522600285" at="26,0,29,0" concept="4" trace="combine#(Ljava/lang/Boolean;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Boolean;" />
+      <node id="5668935624399980280" at="17,81,22,19" concept="6" />
+      <node id="3737166271522580666" at="24,80,29,7" concept="6" />
+      <node id="5668935624399980158" at="17,0,24,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624399980158" at="24,0,31,0" concept="8" trace="virtual_needsVisit_3737166271522571641#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <scope id="5668935624399980160" at="15,43,15,43" />
       <scope id="5668935624399993962" at="19,38,20,87" />
       <scope id="3737166271522600286" at="26,60,27,138" />
@@ -375,11 +407,11 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400002299">
     <file name="StringLiteral_Behavior.java">
-      <node id="5668935624400002417" at="12,75,13,190" concept="5" />
-      <node id="3737166271522579582" at="15,80,16,17" concept="5" />
-      <node id="5668935624400002299" at="10,0,12,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400002299" at="12,0,15,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5668935624400002299" at="15,0,18,0" concept="7" trace="virtual_needsVisit_3737166271522571641#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5668935624400002417" at="12,75,13,190" concept="6" />
+      <node id="3737166271522579582" at="15,80,16,17" concept="6" />
+      <node id="5668935624400002299" at="10,0,12,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400002299" at="12,0,15,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624400002299" at="15,0,18,0" concept="8" trace="virtual_needsVisit_3737166271522571641#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <scope id="5668935624400002301" at="10,43,10,43" />
       <scope id="5668935624400002407" at="12,75,13,190" />
       <scope id="3737166271522578077" at="15,80,16,17" />
@@ -397,9 +429,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400008442">
     <file name="RuleRefByName_Behavior.java">
-      <node id="5668935624400008560" at="13,75,14,337" concept="5" />
-      <node id="5668935624400008442" at="11,0,13,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400008442" at="13,0,16,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624400008560" at="13,75,14,337" concept="6" />
+      <node id="5668935624400008442" at="11,0,13,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400008442" at="13,0,16,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624400008444" at="11,43,11,43" />
       <scope id="5668935624400008550" at="13,75,14,337" />
       <scope id="5668935624400008442" at="11,0,13,0">
@@ -413,9 +445,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400009532">
     <file name="REGEXP_Behavior.java">
-      <node id="5668935624400009650" at="12,75,13,177" concept="5" />
-      <node id="5668935624400009532" at="10,0,12,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400009532" at="12,0,15,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624400009650" at="12,75,13,177" concept="6" />
+      <node id="5668935624400009532" at="10,0,12,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400009532" at="12,0,15,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624400009534" at="10,43,10,43" />
       <scope id="5668935624400009640" at="12,75,13,177" />
       <scope id="5668935624400009532" at="10,0,12,0">
@@ -429,9 +461,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400010765">
     <file name="ParserRuleRef_Behavior.java">
-      <node id="5668935624400010883" at="13,75,14,321" concept="5" />
-      <node id="5668935624400010765" at="11,0,13,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400010765" at="13,0,16,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624400010883" at="13,75,14,321" concept="6" />
+      <node id="5668935624400010765" at="11,0,13,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400010765" at="13,0,16,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624400010767" at="11,43,11,43" />
       <scope id="5668935624400010873" at="13,75,14,321" />
       <scope id="5668935624400010765" at="11,0,13,0">
@@ -445,9 +477,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400023062">
     <file name="Parentheses_Behavior.java">
-      <node id="5668935624400023180" at="12,75,13,195" concept="5" />
-      <node id="5668935624400023062" at="10,0,12,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400023062" at="12,0,15,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624400023180" at="12,75,13,195" concept="6" />
+      <node id="5668935624400023062" at="10,0,12,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400023062" at="12,0,15,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624400023064" at="10,43,10,43" />
       <scope id="5668935624400023170" at="12,75,13,195" />
       <scope id="5668935624400023062" at="10,0,12,0">
@@ -461,9 +493,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400029981">
     <file name="LexerToken_Behavior.java">
-      <node id="5668935624400030099" at="12,75,13,165" concept="5" />
-      <node id="5668935624400029981" at="10,0,12,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400029981" at="12,0,15,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624400030099" at="12,75,13,165" concept="6" />
+      <node id="5668935624400029981" at="10,0,12,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400029981" at="12,0,15,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624400029983" at="10,43,10,43" />
       <scope id="5668935624400030089" at="12,75,13,165" />
       <scope id="5668935624400029981" at="10,0,12,0">
@@ -477,9 +509,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400032618">
     <file name="LexerRuleRef_Behavior.java">
-      <node id="5668935624400032736" at="13,75,14,321" concept="5" />
-      <node id="5668935624400032618" at="11,0,13,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400032618" at="13,0,16,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624400032736" at="13,75,14,321" concept="6" />
+      <node id="5668935624400032618" at="11,0,13,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400032618" at="13,0,16,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624400032620" at="11,43,11,43" />
       <scope id="5668935624400032726" at="13,75,14,321" />
       <scope id="5668935624400032618" at="11,0,13,0">
@@ -493,9 +525,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400038778">
     <file name="ParserRule_Behavior.java">
-      <node id="5668935624400038938" at="13,75,14,494" concept="5" />
-      <node id="5668935624400038778" at="11,0,13,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400038778" at="13,0,16,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624400038938" at="13,75,14,494" concept="6" />
+      <node id="5668935624400038778" at="11,0,13,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400038778" at="13,0,16,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624400038780" at="11,43,11,43" />
       <scope id="5668935624400038886" at="13,75,14,494" />
       <scope id="5668935624400038778" at="11,0,13,0">
@@ -509,11 +541,11 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400044527">
     <file name="LexerAlt_Behavior.java">
-      <node id="5668935624400058518" at="18,38,19,87" concept="5" />
-      <node id="5668935624400044527" at="14,0,16,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400058167" at="18,0,21,0" concept="3" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5668935624400044645" at="16,81,21,20" concept="5" />
-      <node id="5668935624400044527" at="16,0,23,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624400058518" at="18,38,19,87" concept="6" />
+      <node id="5668935624400044527" at="14,0,16,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400058167" at="18,0,21,0" concept="4" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624400044645" at="16,81,21,20" concept="6" />
+      <node id="5668935624400044527" at="16,0,23,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624400044529" at="14,43,14,43" />
       <scope id="5668935624400058168" at="18,38,19,87" />
       <scope id="5668935624400044527" at="14,0,16,0">
@@ -532,9 +564,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400077328">
     <file name="Dot_Behavior.java">
-      <node id="5668935624400077447" at="10,75,11,15" concept="5" />
-      <node id="5668935624400077328" at="8,0,10,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400077328" at="10,0,13,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624400077447" at="10,75,11,15" concept="6" />
+      <node id="5668935624400077328" at="8,0,10,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400077328" at="10,0,13,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624400077330" at="8,43,8,43" />
       <scope id="5668935624400077436" at="10,75,11,15" />
       <scope id="5668935624400077328" at="8,0,10,0">
@@ -548,37 +580,37 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400110000">
     <file name="Alternative_Behavior.java">
-      <node id="5668935624400110647" at="19,75,20,326" concept="5" />
-      <node id="7627187573642078175" at="22,73,23,346" concept="5" />
-      <node id="7627187573642110793" at="23,346,24,0" concept="6" />
-      <node id="3737166271522613975" at="26,80,27,283" concept="5" />
-      <node id="7627187573642111673" at="29,72,30,75" concept="5" />
-      <node id="558881339894565679" at="34,38,35,23" concept="4" />
-      <node id="558881339894567125" at="36,9,37,35" concept="4" />
+      <node id="5668935624400110647" at="19,75,20,326" concept="6" />
+      <node id="7627187573642078175" at="22,73,23,346" concept="6" />
+      <node id="7627187573642110793" at="23,346,24,0" concept="7" />
+      <node id="3737166271522613975" at="26,80,27,283" concept="6" />
+      <node id="7627187573642111673" at="29,72,30,75" concept="6" />
+      <node id="558881339894565679" at="34,38,35,23" concept="5" />
+      <node id="558881339894567125" at="36,9,37,35" concept="5" />
       <node id="558881339894568671" at="38,197,39,183" concept="1" />
-      <node id="558881339894585233" at="42,9,43,31" concept="4" />
+      <node id="558881339894585233" at="42,9,43,31" concept="5" />
       <node id="558881339894585238" at="44,192,45,322" concept="1" />
-      <node id="558881339894595514" at="48,9,49,31" concept="4" />
+      <node id="558881339894595514" at="48,9,49,31" concept="5" />
       <node id="558881339894595519" at="50,193,51,322" concept="1" />
-      <node id="5381624775492955303" at="54,9,55,31" concept="4" />
+      <node id="5381624775492955303" at="54,9,55,31" concept="5" />
       <node id="5381624775492955308" at="56,187,57,321" concept="1" />
-      <node id="558881339897979369" at="59,9,60,18" concept="5" />
-      <node id="5668935624400110000" at="17,0,19,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400110000" at="19,0,22,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="5668935624400110000" at="26,0,29,0" concept="7" trace="virtual_needsVisit_3737166271522613971#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="5668935624400110000" at="29,0,32,0" concept="7" trace="virtual_getFqName_1213877404258#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="558881339894567125" at="37,35,40,11" concept="2" />
-      <node id="558881339894585233" at="43,31,46,11" concept="2" />
-      <node id="558881339894595514" at="49,31,52,11" concept="2" />
-      <node id="5381624775492955303" at="55,31,58,11" concept="2" />
-      <node id="5668935624400110000" at="22,0,26,0" concept="7" trace="call_getName_7627187573642077292#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="558881339897979369" at="59,9,60,18" concept="6" />
+      <node id="5668935624400110000" at="17,0,19,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400110000" at="19,0,22,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="5668935624400110000" at="26,0,29,0" concept="8" trace="virtual_needsVisit_3737166271522613971#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5668935624400110000" at="29,0,32,0" concept="8" trace="virtual_getFqName_1213877404258#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="558881339894567125" at="37,35,40,11" concept="3" />
+      <node id="558881339894585233" at="43,31,46,11" concept="3" />
+      <node id="558881339894595514" at="49,31,52,11" concept="3" />
+      <node id="5381624775492955303" at="55,31,58,11" concept="3" />
+      <node id="5668935624400110000" at="22,0,26,0" concept="8" trace="call_getName_7627187573642077292#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="558881339894567125" at="35,23,41,9" concept="0" />
       <node id="558881339894585233" at="41,9,47,9" concept="0" />
       <node id="558881339894595514" at="47,9,53,9" concept="0" />
       <node id="5381624775492955303" at="53,9,59,9" concept="0" />
-      <node id="558881339894551626" at="34,0,62,0" concept="3" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="558881339895699210" at="32,67,62,12" concept="5" />
-      <node id="5668935624400110000" at="32,0,64,0" concept="7" trace="call_id_558881339894401601#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="558881339894551626" at="34,0,62,0" concept="4" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="558881339895699210" at="32,67,62,12" concept="6" />
+      <node id="5668935624400110000" at="32,0,64,0" concept="8" trace="call_id_558881339894401601#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624400110002" at="17,43,17,43" />
       <scope id="5668935624400110108" at="19,75,20,326" />
       <scope id="3737166271522613974" at="26,80,27,283" />
@@ -631,9 +663,9 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/5668935624400526579">
     <file name="LexerRuleBlock_Behavior.java">
-      <node id="2460913001945785306" at="12,75,13,255" concept="5" />
-      <node id="5668935624400526579" at="10,0,12,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400526579" at="12,0,15,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="2460913001945785306" at="12,75,13,255" concept="6" />
+      <node id="5668935624400526579" at="10,0,12,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400526579" at="12,0,15,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="5668935624400526581" at="10,43,10,43" />
       <scope id="5668935624400526687" at="12,75,13,255" />
       <scope id="5668935624400526579" at="10,0,12,0">
@@ -648,15 +680,15 @@
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/7142405419535281996">
     <file name="Alternatives_Behavior.java">
       <node id="7142405419535282649" at="16,43,17,435" concept="1" />
-      <node id="5668935624400097672" at="21,38,22,244" concept="5" />
-      <node id="3737166271522619330" at="28,60,29,138" concept="5" />
-      <node id="7142405419535281996" at="16,0,19,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5668935624400097338" at="21,0,24,0" concept="3" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="3737166271522619328" at="28,0,31,0" concept="3" trace="combine#(Ljava/lang/Boolean;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Boolean;" />
-      <node id="5668935624400083815" at="19,81,24,14" concept="5" />
-      <node id="3737166271522619322" at="26,80,31,7" concept="5" />
-      <node id="7142405419535281996" at="19,0,26,0" concept="7" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="7142405419535281996" at="26,0,33,0" concept="7" trace="virtual_needsVisit_3737166271522571641#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="5668935624400097672" at="21,38,22,244" concept="6" />
+      <node id="3737166271522619330" at="28,60,29,138" concept="6" />
+      <node id="7142405419535281996" at="16,0,19,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5668935624400097338" at="21,0,24,0" concept="4" trace="select#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="3737166271522619328" at="28,0,31,0" concept="4" trace="combine#(Ljava/lang/Boolean;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Boolean;" />
+      <node id="5668935624400083815" at="19,81,24,14" concept="6" />
+      <node id="3737166271522619322" at="26,80,31,7" concept="6" />
+      <node id="7142405419535281996" at="19,0,26,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="7142405419535281996" at="26,0,33,0" concept="8" trace="virtual_needsVisit_3737166271522571641#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <scope id="7142405419535281998" at="16,43,17,435" />
       <scope id="5668935624400097339" at="21,38,22,244" />
       <scope id="3737166271522619329" at="28,60,29,138" />
@@ -685,11 +717,11 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/987964775448368097">
     <file name="NotSet_Behavior.java">
-      <node id="987964775448369110" at="12,74,13,253" concept="5" />
-      <node id="987964775448368097" at="10,0,12,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="987964775448368097" at="12,0,15,0" concept="7" trace="virtual_toText_987964775448368950#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="987964775448369110" at="12,74,13,250" concept="6" />
+      <node id="987964775448368097" at="10,0,12,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="987964775448368097" at="12,0,15,0" concept="8" trace="virtual_toText_987964775448368950#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="987964775448368099" at="10,43,10,43" />
-      <scope id="987964775448368953" at="12,74,13,253" />
+      <scope id="987964775448368953" at="12,74,13,250" />
       <scope id="987964775448368097" at="10,0,12,0">
         <var name="thisNode" id="987964775448368097" />
       </scope>
@@ -701,11 +733,11 @@
   </root>
   <root nodeRef="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)/987964775451668707">
     <file name="Range_Behavior.java">
-      <node id="987964775451669584" at="12,71,13,488" concept="5" />
-      <node id="987964775451668707" at="10,0,12,0" concept="7" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="987964775451668707" at="12,0,15,0" concept="7" trace="call_toText_987964775451669576#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="2212714499869246181" at="12,75,13,488" concept="6" />
+      <node id="987964775451668707" at="10,0,12,0" concept="8" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="987964775451668707" at="12,0,15,0" concept="8" trace="virtual_toText_5668935624399900127#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <scope id="987964775451668709" at="10,43,10,43" />
-      <scope id="987964775451669579" at="12,71,13,488" />
+      <scope id="2212714499869240235" at="12,75,13,488" />
       <scope id="987964775451668707" at="10,0,12,0">
         <var name="thisNode" id="987964775451668707" />
       </scope>

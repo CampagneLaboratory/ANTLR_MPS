@@ -203,16 +203,19 @@
   <node concept="1TIwiD" id="6cuUYchfAlZ">
     <property role="TrG5h" value="StringLiteral" />
     <property role="34LRSv" value="'" />
-    <ref role="1TJDcQ" node="6cuUYchfAlw" resolve="LexerToken" />
+    <ref role="1TJDcQ" node="1UP91OU1FUT" resolve="SetElement" />
     <node concept="1TJgyi" id="6cuUYchfAm0" role="1TKVEl">
       <property role="TrG5h" value="literal" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="1UP91OU419h" role="PzmwI">
+      <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
     </node>
   </node>
   <node concept="1TIwiD" id="6cuUYchfEkV">
     <property role="TrG5h" value="REGEXP" />
     <property role="34LRSv" value="[" />
-    <ref role="1TJDcQ" node="6cuUYchfAlw" resolve="LexerToken" />
+    <ref role="1TJDcQ" node="1UP91OU1FUT" resolve="SetElement" />
     <node concept="1TJgyi" id="6cuUYchfEpT" role="1TKVEl">
       <property role="TrG5h" value="regexp" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
@@ -390,9 +393,9 @@
     <ref role="1TJDcQ" node="4TgqxIxnOE$" resolve="LexerElement" />
     <node concept="1TJgyj" id="QPXbEjcGJO" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="regexp" />
+      <property role="20kJfa" value="set" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6cuUYchfEkV" resolve="REGEXP" />
+      <ref role="20lvS9" node="1UP91OU1FUT" resolve="SetElement" />
     </node>
     <node concept="PrWs8" id="QPXbEjcHfv" role="PzmwI">
       <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
@@ -400,7 +403,7 @@
   </node>
   <node concept="1TIwiD" id="QPXbEjpiZH">
     <property role="TrG5h" value="Range" />
-    <ref role="1TJDcQ" node="4TgqxIxnOE$" resolve="LexerElement" />
+    <ref role="1TJDcQ" node="1UP91OU1FUT" resolve="SetElement" />
     <node concept="1TJgyj" id="QPXbEjpj3s" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="start" />
@@ -476,6 +479,25 @@
     <node concept="M4N5e" id="v1yTSnIBWT" role="M5hS2">
       <property role="1uS6qv" value="1" />
       <property role="1uS6qo" value="+=" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1UP91OU1FUT">
+    <property role="TrG5h" value="SetElement" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" node="6cuUYchfAlw" resolve="LexerToken" />
+  </node>
+  <node concept="1TIwiD" id="1UP91OU54st">
+    <property role="TrG5h" value="BlockSet" />
+    <ref role="1TJDcQ" node="1UP91OU1FUT" resolve="SetElement" />
+    <node concept="1TJgyj" id="1UP91OU5lTB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elements" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="1UP91OU1FUT" resolve="SetElement" />
+    </node>
+    <node concept="PrWs8" id="1UP91OU54su" role="PzmwI">
+      <ref role="PrY4T" node="4UG6ID2UsrC" resolve="ToTextOutput" />
     </node>
   </node>
 </model>

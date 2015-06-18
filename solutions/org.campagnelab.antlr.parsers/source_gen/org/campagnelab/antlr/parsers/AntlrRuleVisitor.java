@@ -256,9 +256,7 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     SNode spec = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f1505L, "org.campagnelab.ANTLR.structure.TokenSpec")));
 
     for (ANTLRv4Parser.IdContext id : ListSequence.fromList(context.id())) {
-      if (LOG.isInfoEnabled()) {
-        LOG.info("Adding id=" + id.toString());
-      }
+      // <node> 
       SNode token = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f2eb3L, "org.campagnelab.ANTLR.structure.Token")));
       SPropertyOperations.set(token, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), id.getText());
       ListSequence.fromList(SLinkOperations.getChildren(spec, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f1505L, 0x7c18b9e171f2eb1L, "tokens"))).addElement(token);
@@ -268,8 +266,10 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   @Override
   public Object visitGrammarSpec(@NotNull ANTLRv4Parser.GrammarSpecContext context) {
     SNode grammar = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar")));
-    if (LOG.isInfoEnabled()) {
-      LOG.info("comment=" + context.DOC_COMMENT().getText());
+    if (context.DOC_COMMENT() != null) {
+      if (LOG.isInfoEnabled()) {
+        LOG.info("comment=" + context.DOC_COMMENT().getText());
+      }
     }
     for (ANTLRv4Parser.PrequelConstructContext prequel : ListSequence.fromList(context.prequelConstruct())) {
       if (prequel.tokensSpec() != null) {
@@ -322,7 +322,12 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     }
     if (context.notSet() != null) {
       SNode notSet = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba9332cba7L, "org.campagnelab.ANTLR.structure.NotSet")));
-      SLinkOperations.setTarget(notSet, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba9332cba7L, 0xdb5f4ba9332cbf4L, "regexp"), (SNode) visitSetElement(context.notSet().setElement()));
+      if (context.notSet().setElement() != null) {
+        SLinkOperations.setTarget(notSet, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba9332cba7L, 0xdb5f4ba9332cbf4L, "set"), (SNode) visitSetElement(context.notSet().setElement()));
+      }
+      if (context.notSet().blockSet() != null) {
+        SLinkOperations.setTarget(notSet, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba9332cba7L, 0xdb5f4ba9332cbf4L, "set"), (SNode) visitBlockSet(context.notSet().blockSet()));
+      }
       return notSet;
     }
     if (context.DOT() != null) {
@@ -353,11 +358,30 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   }
   @Override
   public Object visitSetElement(@NotNull ANTLRv4Parser.SetElementContext context) {
-    SNode regExp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113ea53bL, "org.campagnelab.ANTLR.structure.REGEXP")));
+
     if (context.LEXER_CHAR_SET() != null) {
+      SNode regExp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113ea53bL, "org.campagnelab.ANTLR.structure.REGEXP")));
       SPropertyOperations.set(regExp, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113ea53bL, 0x631eebe3113ea679L, "regexp"), context.LEXER_CHAR_SET().getText());
+      return regExp;
     }
-    return regExp;
+    if (context.STRING_LITERAL() != null) {
+      return createTrimmedLiteral(context.STRING_LITERAL().getText());
+    }
+    if (context.TOKEN_REF() != null) {
+      return createARef(context.TOKEN_REF().getText());
+    }
+    if (context.range() != null) {
+      return visitRange(context.range());
+    }
+    return null;
+  }
+  @Override
+  public Object visitBlockSet(@NotNull ANTLRv4Parser.BlockSetContext context) {
+    SNode block = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x1eb5241d3a14471dL, "org.campagnelab.ANTLR.structure.BlockSet")));
+    for (ANTLRv4Parser.SetElementContext element : ListSequence.fromList(context.setElement())) {
+      ListSequence.fromList(SLinkOperations.getChildren(block, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x1eb5241d3a14471dL, 0x1eb5241d3a155e67L, "elements"))).addElement((SNode) visitSetElement(element));
+    }
+    return block;
   }
   @Override
   public Object visitLexerRuleBlock(@NotNull ANTLRv4Parser.LexerRuleBlockContext context) {

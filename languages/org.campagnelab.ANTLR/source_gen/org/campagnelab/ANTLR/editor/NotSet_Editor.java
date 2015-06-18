@@ -43,12 +43,12 @@ public class NotSet_Editor extends DefaultNodeEditor {
   }
   private EditorCell createRefNode_cnz9u6_b0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
-    provider.setRole("regexp");
-    provider.setNoTargetText("<no regexp>");
+    provider.setRole("set");
+    provider.setNoTargetText("<no set>");
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
-      editorCell.setRole("regexp");
+      editorCell.setRole("set");
     }
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);

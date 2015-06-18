@@ -9,7 +9,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 public class Range_Behavior {
   public static void init(SNode thisNode) {
   }
-  public static String call_toText_987964775451669576(SNode thisNode) {
+  public static String virtual_toText_5668935624399900127(SNode thisNode) {
     return ToTextOutput_Behavior.call_safeToText_7095100507906137981(thisNode, SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba93652fedL, 0xdb5f4ba936530dcL, "start"))) + ".." + ToTextOutput_Behavior.call_safeToText_7095100507906137981(thisNode, SLinkOperations.getTarget(thisNode, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba93652fedL, 0xdb5f4ba936530deL, "end")));
   }
 }

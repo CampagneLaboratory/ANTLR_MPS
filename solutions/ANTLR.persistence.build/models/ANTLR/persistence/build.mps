@@ -194,7 +194,7 @@
       <node concept="aVJcg" id="3gMg70bX6HN" role="aVJcv">
         <node concept="NbPM2" id="3gMg70bX6HM" role="aVJcq">
           <node concept="3Mxwew" id="3gMg70bX6HL" role="3MwsjC">
-            <property role="3MwjfP" value="1.0" />
+            <property role="3MwjfP" value="1.0.1" />
           </node>
         </node>
       </node>
@@ -289,8 +289,8 @@
         </node>
       </node>
       <node concept="3_J27D" id="7twz7e84BNJ" role="m$_w8">
-        <node concept="3Mxwew" id="7twz7e84BNK" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
+        <node concept="3Mxwey" id="ocVW5oW6Aq" role="3MwsjC">
+          <ref role="3Mxwex" node="3gMg70bX6Gp" resolve="ANTLR_version" />
         </node>
       </node>
       <node concept="m$_yC" id="7twz7e84BNM" role="m$_yJ">
@@ -336,6 +336,9 @@
       </node>
       <node concept="m$_yB" id="4Om_ff7hoO9" role="m$_yh">
         <ref role="m$_yA" node="4Om_ff7hiAD" resolve="org.campagnelab.antlr.tomps" />
+      </node>
+      <node concept="m$_yB" id="4t58zGhfAB2" role="m$_yh">
+        <ref role="m$_yA" node="4t58zGhfAtt" resolve="org.campagnelab.antlr.plugin" />
       </node>
     </node>
     <node concept="2G$12M" id="7twz7e84BNF" role="3989C9">
@@ -571,6 +574,53 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="4t58zGhfAtt" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="org.campagnelab.antlr.plugin" />
+        <property role="3LESm3" value="9d73855b-73b7-4f30-8b30-8c665e155559" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="4t58zGhfAtw" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4t58zGhfAyx" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="4t58zGhfAyC" role="2Ry0An">
+              <property role="2Ry0Am" value="org.campagnelab.antlr.plugin" />
+              <node concept="2Ry0Ak" id="4t58zGhfAyJ" role="2Ry0An">
+                <property role="2Ry0Am" value="org.campagnelab.antlr.plugin.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4t58zGhfAyM" role="3bR37C">
+          <node concept="3bR9La" id="4t58zGhfAyN" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4t58zGhfAyO" role="3bR37C">
+          <node concept="3bR9La" id="4t58zGhfAyP" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4t58zGhfAyQ" role="3bR37C">
+          <node concept="3bR9La" id="4t58zGhfAyR" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4t58zGhfAyS" role="3bR37C">
+          <node concept="3bR9La" id="4t58zGhfAyT" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="5U7ZKlHMwxz" resolve="org.campagnelab.antlr.parsers" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4t58zGhfAyU" role="3bR37C">
+          <node concept="3bR9La" id="4t58zGhfAyV" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" node="5U7ZKlHMwce" resolve="org.campagnelab.ANTLR" />
           </node>
         </node>
       </node>

@@ -59,6 +59,7 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.Alternative_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.Alternatives_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.BlockSet_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.Dot_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.Grammar_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.HasOptionalParams_BehaviorDescriptor" />
@@ -84,6 +85,24 @@
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.TokenSpec_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.Token_BehaviorDescriptor" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.behavior.BlockSet_Behavior" file="BlockSet_Behavior.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput_Behavior" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+  </dependency>
+  <dependency className="org.campagnelab.ANTLR.behavior.BlockSet_BehaviorDescriptor" file="BlockSet_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.BlockSet_Behavior" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.SetElement_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.ANTLR.behavior.Dot_Behavior" file="Dot_Behavior.java">
     <classNode dependClassName="java.lang.String" />
@@ -409,8 +428,8 @@
   <dependency className="org.campagnelab.ANTLR.behavior.REGEXP_BehaviorDescriptor" file="REGEXP_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerToken_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.REGEXP_Behavior" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.SetElement_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
@@ -426,8 +445,10 @@
   <dependency className="org.campagnelab.ANTLR.behavior.Range_BehaviorDescriptor" file="Range_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerElement_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.Range_Behavior" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.SetElement_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
@@ -489,6 +510,12 @@
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
+  <dependency className="org.campagnelab.ANTLR.behavior.SetElement_BehaviorDescriptor" file="SetElement_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerToken_BehaviorDescriptor" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
   <dependency className="org.campagnelab.ANTLR.behavior.StringLiteral_Behavior" file="StringLiteral_Behavior.java">
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
@@ -498,9 +525,11 @@
   <dependency className="org.campagnelab.ANTLR.behavior.StringLiteral_BehaviorDescriptor" file="StringLiteral_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="org.campagnelab.ANTLR.behavior.LexerToken_BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.SetElement_BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.ANTLR.behavior.StringLiteral_Behavior" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="org.campagnelab.ANTLR.behavior.ToTextOutput_Behavior" file="ToTextOutput_Behavior.java">

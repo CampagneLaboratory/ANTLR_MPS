@@ -4,7 +4,7 @@ package org.campagnelab.ANTLR.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class StringLiteral_BehaviorDescriptor extends LexerToken_BehaviorDescriptor {
+public class StringLiteral_BehaviorDescriptor extends SetElement_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor {
   public StringLiteral_BehaviorDescriptor() {
   }
   public boolean virtual_needsVisit_3737166271522571641(SNode thisNode) {

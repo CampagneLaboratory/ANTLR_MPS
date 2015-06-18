@@ -11,7 +11,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root>
     <file name="StructureAspectDescriptor.java">
-      <unit at="13,0,121,0" name="org.campagnelab.ANTLR.structure.StructureAspectDescriptor" />
+      <unit at="13,0,127,0" name="org.campagnelab.ANTLR.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)/558881339889844023">

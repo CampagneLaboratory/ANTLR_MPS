@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependencies version="2" modelHash="-1uw98925i9iacvsmfdr2mkned3lj4tq">
+<dependencies version="2" modelHash="-9a9vrxmuiwl5d6o7j39joeum73rc2i0">
   <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
   <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
-  <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.adapter.ids(MPS.Core/jetbrains.mps.smodel.adapter.ids@java_stub)" />
-  <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
   <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" hash="3trgqsx78ksjj4yzjj8uk37m284lcmt" />
   <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" hash="2y5m1tbgov02be84gi16uvvxt47q232" />
-  <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" hash="3fyiqhtyu9fdn3b1geb5x1v0fve8a7y" />
+  <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" hash="-cl8kifsnw5jtzcst4yjwqi6gda5el5s" />
   <dep model="r:00000000-0000-4000-0000-011c895902cd(jetbrains.mps.baseLanguage.generator.java.main@generator)" hash="19uchsffy2fbhy8fxadw6t0s4o36pge" />
   <dep model="r:b4d7d620-6723-4aa2-856b-118497e84e9e(jetbrains.mps.baseLanguage.generator.java.strings@generator)" hash="-afok4i31abohs3f5rk0sqlnvuruthqa" />
   <dep model="r:f04c1476-2f91-4f59-be13-c8e009abebee(jetbrains.mps.baseLanguageInternal.generator.template.main@generator)" hash="-77sy6xhjavqcj7zabmxjwdba0x2o622" />
@@ -19,6 +17,8 @@
     <dep root="1684107016605707397" />
     <dep root="1684107016605738537" />
     <dep root="1684107016606379934" />
+    <dep root="2212714499868638905" />
+    <dep root="2212714499869525789" />
     <dep root="2214335295231699448" />
     <dep root="2214335295231823224" />
     <dep root="558881339879658757" />
@@ -44,8 +44,6 @@
     <dep root="987964775448365991" />
     <dep root="987964775451668461" />
     <dep model="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" />
-    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.adapter.ids(MPS.Core/jetbrains.mps.smodel.adapter.ids@java_stub)" />
-    <dep model="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.runtime.impl(MPS.Core/jetbrains.mps.smodel.runtime.impl@java_stub)" />
     <dep model="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <dep model="r:00000000-0000-4000-0000-011c89590293(jetbrains.mps.lang.structure.generator_new.baseLanguage@generator)" />
     <dep model="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -62,8 +60,8 @@
   <source id="7142405419534834022" name="ParserRuleRef" hash="-2ysexfpheoymgu7d2fojtt4owdwvy4y" />
   <source id="7142405419535385999" name="Alternative" hash="-5p7qgk8vyxmzua5ngwyse8usttdfxw3" />
   <source id="7142405419535590752" name="LexerToken" hash="bokpl75g12r6zges1g53lpmgalsrfp9" />
-  <source id="7142405419535590783" name="StringLiteral" hash="-axv13kn31ucvr8cedx52qflkze2y4cc" />
-  <source id="7142405419535607099" name="REGEXP" hash="dg0f4jt1kf6au4kjl19ktb3k5eb5rth" />
+  <source id="7142405419535590783" name="StringLiteral" hash="-ao2kdkmigxlbzwgwqi2kr7hmht6s07s" />
+  <source id="7142405419535607099" name="REGEXP" hash="-amd0dkg5o55n1n6feqfj7qftjzdj75o" />
   <source id="2214335295231699448" name="Parentheses" hash="ewka8siqu5c269007ys6ov9t47b99eo" />
   <source id="2214335295231823224" name="RuleRefByName" hash="26sbyfcyued2vrrvd49uq9qhsup8xke" />
   <source id="1684107016605283314" name="Dot" hash="1yp3sqe5ltbuo3ts3eohn9e7c00cj83" />
@@ -78,8 +76,8 @@
   <source id="5643127000001205075" name="LexerAltList" hash="-221bmkw1lu1i2gfcsdb9u46afelylh4" />
   <source id="8753890222134504504" name="HasOptionalParams" hash="-81g6qiy4cu6v92v51lqcijky6sbnjl7" />
   <source id="1539085245680655634" name="LexerBlock" hash="bl8gneea8qbqjnhlrhthrkuwij9664k" />
-  <source id="987964775448365991" name="NotSet" hash="-ctsk4ax7ol1av13rzy2jxe6jnip81fg" />
-  <source id="987964775451668461" name="Range" hash="-a66ofdiyzvcz3r5pwjjrzekfb5bwcz7" />
+  <source id="987964775448365991" name="NotSet" hash="2s4cm8dakb7ghsblqlguxd445n79zy9" />
+  <source id="987964775451668461" name="Range" hash="9j0hpghcyx9eyjzmm090pxmpcmboutt" />
   <source id="558881339879658757" name="TokenSpec" hash="38phgf5i1mypx8kdcltjqu0iaz80qqz" />
   <source id="558881339879665331" name="Token" hash="1cp3iuw90bb0w3zaw08t2yzi9hdmuhv" />
   <source id="558881339880718083" name="TokenRef" hash="b7fadd5ydlosv9m6mp2e54y93zl7hex" />
@@ -96,5 +94,7 @@
     <file name="LABELING_OPERATOR.java" />
     <file name="LABELING_OPERATOR_PropertySupport.java" />
   </source>
+  <source id="2212714499868638905" name="SetElement" hash="-329l5akaibx0j56rrcruem3hnvqg9ev" />
+  <source id="2212714499869525789" name="BlockSet" hash="-1v92rc1pb4xhmeqtoqqmpcqm06vi4tn" />
 </dependencies>
 

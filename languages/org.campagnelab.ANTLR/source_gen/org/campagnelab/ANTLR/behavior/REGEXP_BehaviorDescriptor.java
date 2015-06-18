@@ -4,7 +4,7 @@ package org.campagnelab.ANTLR.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class REGEXP_BehaviorDescriptor extends LexerToken_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor {
+public class REGEXP_BehaviorDescriptor extends SetElement_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor {
   public REGEXP_BehaviorDescriptor() {
   }
   public String virtual_toText_5668935624399900127(SNode thisNode) {
