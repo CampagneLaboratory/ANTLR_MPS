@@ -7,7 +7,7 @@
   <property name="mps_home" location="" />
   <property name="plugins_home" location="${mps_home}/plugins" />
   <property name="ANTLR_HOME" location="${basedir}" />
-  <property name="ANTLR_version" value="1.0.1" />
+  <property name="ANTLR_version" value="1.0.2" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.mpsCore" location="${mps_home}/plugins" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
@@ -33,8 +33,8 @@
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
         <id>org.campagnelab.ANTLR</id>
         <name>org.campagnelab.ANTLR</name>
-        <description>ANTLR and org.campagnelab.antrl.tomps languages. The ToMPS language helps develop ANTLR-compatible visitors to parse text into nodes of an MPS language. ToMPS also provide support to create concepts of a new MPS language (whose nodes will be populated by the parser), using the ANTLR grammar as a guide. Note that version 1.0 only includes the subset of ANTLR that we needed to model to implement the R language. Sadly, no documentation is available at this point and the language is unpolished. Reference build: ${build_number} in branch ${reference_branch} and with commit : ${reference_commit}.</description>
-        <version>${ANTLR_version}</version>
+        <description>ANTLR and org.campagnelab.antrl.tomps languages. The ToMPS language helps develop ANTLR-compatible visitors to parse text into nodes of an MPS language. ToMPS also provide support to create concepts of a new MPS language (whose nodes will be populated by the parser), using the ANTLR grammar as a guide. Note that version ${ANTLR_version} only includes the subset of ANTLR that we needed to model to implement the R language. Sadly, no documentation is available at this point and the language is unpolished. Reference build: ${build_number} in branch ${reference_branch} and with commit : ${reference_commit}.</description>
+        <version>1.0.2</version>
         <vendor url="http://books.campagnelab.org">Campagne Laboratory</vendor>
         <depends>jetbrains.mps.core</depends>
         <idea-version since-build="139.1" until-build="140.1" />
