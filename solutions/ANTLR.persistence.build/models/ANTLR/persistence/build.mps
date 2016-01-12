@@ -450,11 +450,6 @@
             </node>
           </node>
         </node>
-        <node concept="1yeLz9" id="5U7ZKlHMww2" role="1TViLv">
-          <property role="TrG5h" value="org.campagnelab.ANTLR#7142405419534748434" />
-          <property role="3LESm3" value="dd5a3bd3-d62e-46ae-b810-98b655be8d6a" />
-          <property role="2GAjPV" value="false" />
-        </node>
         <node concept="1SiIV0" id="5U7ZKlHNTBx" role="3bR37C">
           <node concept="1BurEX" id="5U7ZKlHNTBy" role="1SiIV1">
             <node concept="398BVA" id="5U7ZKlHNTBp" role="1BurEY">
