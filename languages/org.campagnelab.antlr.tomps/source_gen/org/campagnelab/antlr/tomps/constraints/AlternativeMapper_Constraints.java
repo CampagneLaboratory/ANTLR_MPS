@@ -13,8 +13,8 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
-import org.campagnelab.ANTLR.behavior.Alternative_Behavior;
+import org.campagnelab.ANTLR.behavior.ToTextOutput__BehaviorDescriptor;
+import org.campagnelab.ANTLR.behavior.Alternative__BehaviorDescriptor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
 import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
@@ -38,8 +38,8 @@ public class AlternativeMapper_Constraints extends BaseConstraintsDescriptor {
       @Override
       public void onReferenceSet(final SNode referenceNode, final SNode oldReferentNode, final SNode newReferentNode) {
         SLinkOperations.setTarget(referenceNode, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x6a1bb02ea6062391L, "alternative"), newReferentNode);
-        SPropertyOperations.set(referenceNode, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17fff070L, "fullText"), BehaviorReflection.invokeVirtual(String.class, newReferentNode, "virtual_toText_5668935624399900127", new Object[]{}));
-        SPropertyOperations.set(referenceNode, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17fff06eL, "id"), Alternative_Behavior.call_id_558881339894401601(newReferentNode));
+        SPropertyOperations.set(referenceNode, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17fff070L, "fullText"), ToTextOutput__BehaviorDescriptor.toText_id4UG6ID2UsRv.invoke(newReferentNode));
+        SPropertyOperations.set(referenceNode, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e17fff06eL, "id"), Alternative__BehaviorDescriptor.id_idv1yTSo00D1.invoke(newReferentNode));
       }
       @Nullable
       @Override

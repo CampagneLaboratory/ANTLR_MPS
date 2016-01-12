@@ -4,19 +4,24 @@ package org.campagnelab.ANTLR.behavior;
 
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
+/**
+ * Will be removed after 3.3
+ * Need to support compilation of the legacy behavior descriptors before the language is rebuilt
+ * This class is not involved in the actual method invocation
+ */
+@Deprecated
 public class ParserRuleRef_BehaviorDescriptor extends ParserRuleBlock_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor, INamedConcept_BehaviorDescriptor {
-  public ParserRuleRef_BehaviorDescriptor() {
+  public String virtual_getFqName_1213877404258(SNode __thisNode__) {
+    return null;
   }
-  public String virtual_getFqName_1213877404258(SNode thisNode) {
-    return INamedConcept_Behavior.virtual_getFqName_1213877404258(thisNode);
+  public String virtual_toText_5668935624399900127(SNode __thisNode__) {
+    return null;
   }
-  public String virtual_toText_5668935624399900127(SNode thisNode) {
-    return ParserRuleRef_Behavior.virtual_toText_5668935624399900127(thisNode);
-  }
+
   @Override
   public String getConceptFqName() {
     return "org.campagnelab.ANTLR.structure.ParserRuleRef";
   }
+
 }

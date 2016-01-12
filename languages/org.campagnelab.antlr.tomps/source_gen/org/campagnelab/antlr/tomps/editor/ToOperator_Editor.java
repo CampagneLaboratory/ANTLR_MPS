@@ -15,8 +15,11 @@ import jetbrains.mps.nodeEditor.MPSFonts;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
-import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.nodeEditor.cellMenu.CompositeSubstituteInfo;
+import jetbrains.mps.lang.editor.cellProviders.AggregationCellContext;
 import jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPartExt;
 import java.util.List;
 import jetbrains.mps.openapi.editor.cells.SubstituteAction;
@@ -61,7 +64,7 @@ public class ToOperator_Editor extends DefaultNodeEditor {
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
   }
@@ -81,22 +84,38 @@ public class ToOperator_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNode_429nsm_e0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
-    provider.setRole("toConvert");
-    provider.setNoTargetText("<no toConvert>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    if (editorCell.getRole() == null) {
-      editorCell.setRole("toConvert");
+    SingleRoleCellProvider provider = new ToOperator_Editor.toConvertSingleRoleHandler_429nsm_e0(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6c9855e848a0c58L, 0x6c9855e848a14cfL, "toConvert"), editorContext);
+    return provider.createCell();
+  }
+  private class toConvertSingleRoleHandler_429nsm_e0 extends SingleRoleCellProvider {
+    public toConvertSingleRoleHandler_429nsm_e0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+      super(ownerNode, containmentLink, context);
     }
-    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(editorContext, provider.getCellContext(), new SubstituteInfoPartExt[]{new ToOperator_Editor.ToOperator_component_cellMenu_429nsm_a0e0()}));
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-    } else
-    return editorCell;
+    public EditorCell createChildCell(EditorContext editorContext, SNode child) {
+      EditorCell editorCell = super.createChildCell(editorContext, child);
+      installCellInfo(child, editorCell);
+      return editorCell;
+    }
+    public void installCellInfo(SNode child, EditorCell editorCell) {
+      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(myEditorContext, new AggregationCellContext(myOwnerNode, child, myContainmentLink.getDeclarationNode()), new SubstituteInfoPartExt[]{new ToOperator_Editor.ToOperator_component_cellMenu_429nsm_a0e0()}));
+      if (editorCell.getRole() == null) {
+        editorCell.setRole("toConvert");
+      }
+    }
+
+
+    @Override
+    protected EditorCell createEmptyCell() {
+      EditorCell editorCell = super.createEmptyCell();
+      editorCell.setCellId("empty_toConvert");
+      installCellInfo(null, editorCell);
+      return editorCell;
+    }
+
+    protected String getNoTargetText() {
+      return "<no toConvert>";
+    }
+
   }
   public static class ToOperator_component_cellMenu_429nsm_a0e0 implements SubstituteInfoPartExt {
     private DestinationRefMenu myComponent;
@@ -133,7 +152,7 @@ public class ToOperator_Editor extends DefaultNodeEditor {
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
   }

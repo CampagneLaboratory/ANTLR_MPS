@@ -2,22 +2,22 @@
 <model ref="r:54b4b70b-9af5-414f-8d8d-548b74ba599c(org.campagnelab.antlr.tomps.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="k4hm" ref="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)" implicit="true" />
-    <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" implicit="true" />
-    <import index="cu2c" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel(MPS.Core/jetbrains.mps.smodel@java_stub)" implicit="true" />
-    <import index="ijbl" ref="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)" implicit="true" />
-    <import index="srng" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.openapi.editor(MPS.Editor/jetbrains.mps.openapi.editor@java_stub)" implicit="true" />
     <import index="3elq" ref="r:d6ed95b0-0023-42ab-bb27-99fdde507c48(org.campagnelab.antlr.tomps.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="ijbl" ref="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)" implicit="true" />
+    <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
+    <import index="k4hm" ref="r:729f351e-4d44-4d02-b3d3-68b6e64e8810(org.campagnelab.antlr.tomps.behavior)" implicit="true" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" implicit="true" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -890,8 +890,8 @@
                       <property role="Xl_RC" value="#" />
                     </node>
                     <node concept="2YIFZM" id="3xPTlDSXENe" role="3uHU7w">
-                      <ref role="37wK5l" to="e2lb:~Integer.toString(int):java.lang.String" resolve="toString" />
-                      <ref role="1Pybhc" to="e2lb:~Integer" resolve="Integer" />
+                      <ref role="37wK5l" to="wyt6:~Integer.toString(int):java.lang.String" resolve="toString" />
+                      <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
                       <node concept="2OqwBi" id="6BpdF0a3UaV" role="37wK5m">
                         <node concept="3GLrbK" id="6BpdF0a3UaX" role="2Oq$k0" />
                         <node concept="2bSWHS" id="3xPTlDSXCUs" role="2OqNvi" />
@@ -1007,7 +1007,7 @@
                       </node>
                     </node>
                     <node concept="liA8E" id="6BpdF0a6E2G" role="2OqNvi">
-                      <ref role="37wK5l" to="cu2c:~Language.getConceptDeclarations():java.util.List" resolve="getConceptDeclarations" />
+                      <ref role="37wK5l" to="w1kc:~Language.getConceptDeclarations():java.util.List" resolve="getConceptDeclarations" />
                     </node>
                   </node>
                 </node>
@@ -1133,7 +1133,7 @@
               <node concept="2OqwBi" id="3V2IUSs19M2" role="3clFbG">
                 <node concept="1Q80Hx" id="3V2IUSs19Kl" role="2Oq$k0" />
                 <node concept="liA8E" id="3V2IUSs19X5" role="2OqNvi">
-                  <ref role="37wK5l" to="srng:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
                   <node concept="2OqwBi" id="3V2IUSs19Z5" role="37wK5m">
                     <node concept="3GMtW1" id="3V2IUSs19XA" role="2Oq$k0" />
                     <node concept="3TrEf2" id="3V2IUSs1afw" role="2OqNvi">
@@ -1241,7 +1241,7 @@
               <node concept="2OqwBi" id="3V2IUSs1agU" role="3clFbG">
                 <node concept="1Q80Hx" id="3V2IUSs1agV" role="2Oq$k0" />
                 <node concept="liA8E" id="3V2IUSs1agW" role="2OqNvi">
-                  <ref role="37wK5l" to="srng:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
                   <node concept="2OqwBi" id="3V2IUSs1agX" role="37wK5m">
                     <node concept="3GMtW1" id="3V2IUSs1agY" role="2Oq$k0" />
                     <node concept="3TrEf2" id="3V2IUSs1agZ" role="2OqNvi">
@@ -1354,7 +1354,7 @@
               <node concept="2OqwBi" id="3V2IUSs1ali" role="3clFbG">
                 <node concept="1Q80Hx" id="3V2IUSs1alj" role="2Oq$k0" />
                 <node concept="liA8E" id="3V2IUSs1alk" role="2OqNvi">
-                  <ref role="37wK5l" to="srng:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
                   <node concept="2OqwBi" id="3V2IUSs1all" role="37wK5m">
                     <node concept="3GMtW1" id="3V2IUSs1alm" role="2Oq$k0" />
                     <node concept="3TrEf2" id="3V2IUSs1aln" role="2OqNvi">
@@ -1476,7 +1476,7 @@
               <node concept="2OqwBi" id="r9xlU4AvJ7" role="3clFbG">
                 <node concept="1Q80Hx" id="r9xlU4AvJ8" role="2Oq$k0" />
                 <node concept="liA8E" id="r9xlU4AvJ9" role="2OqNvi">
-                  <ref role="37wK5l" to="srng:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
                   <node concept="2OqwBi" id="r9xlU4AvJa" role="37wK5m">
                     <node concept="3GMtW1" id="r9xlU4AvJb" role="2Oq$k0" />
                     <node concept="3TrEf2" id="r9xlU4AvJc" role="2OqNvi">
@@ -1581,7 +1581,7 @@
               <node concept="2OqwBi" id="r9xlU4Avaa" role="3clFbG">
                 <node concept="1Q80Hx" id="r9xlU4Av7r" role="2Oq$k0" />
                 <node concept="liA8E" id="r9xlU4AvpK" role="2OqNvi">
-                  <ref role="37wK5l" to="srng:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+                  <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
                   <node concept="2OqwBi" id="r9xlU4AvrF" role="37wK5m">
                     <node concept="3GMtW1" id="r9xlU4Avqj" role="2Oq$k0" />
                     <node concept="3TrEf2" id="r9xlU4AvG6" role="2OqNvi">

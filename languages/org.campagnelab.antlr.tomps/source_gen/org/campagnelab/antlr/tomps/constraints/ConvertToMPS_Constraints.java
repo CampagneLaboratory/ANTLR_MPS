@@ -15,15 +15,10 @@ import jetbrains.mps.smodel.Language;
 import jetbrains.mps.smodel.ModuleRepositoryFacade;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.ids.SReferenceLinkId;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
 import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
@@ -44,24 +39,11 @@ public class ConvertToMPS_Constraints extends BaseConstraintsDescriptor {
       public void setValue(SNode node, String propertyValue) {
         String propertyName = "destinationLanguageName";
         {
-          final String languageName = (SPropertyOperations.getString(propertyValue));
+          String languageName = (SPropertyOperations.getString(propertyValue));
           Language l = ModuleRepositoryFacade.getInstance().getModule(PersistenceFacade.getInstance().createModuleReference(languageName), Language.class);
           if (l != null) {
             SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, 0x69d936b00a14fa05L, "destinationLanguageName"), languageName);
           }
-          /*
-            if ((ListSequence.fromList(SLinkOperations.getChildren(SModelOperations.getModuleStub(SNodeOperations.getModel(node)), MetaAdapterFactory.getContainmentLink(0x86ef829012bb4ca7L, 0x947f093788f263a9L, 0x5869770da61dfe1eL, 0x5869770da61dfe2cL, "dependencies"))).findFirst(new IWhereFilter<SNode>() {
-              public boolean accept(SNode dep) {
-                return eq_uizg9o_a0a0a0a0a0a0a3a1a1a0b0a1a1(SPropertyOperations.getString(SLinkOperations.getTarget(dep, MetaAdapterFactory.getContainmentLink(0x86ef829012bb4ca7L, 0x947f093788f263a9L, 0x5869770da61dfe28L, 0x19bfb4173fb5241eL, "moduleRef")), MetaAdapterFactory.getProperty(0x86ef829012bb4ca7L, 0x947f093788f263a9L, 0x19bfb4173fb5210cL, 0x19bfb4173fb5210eL, "qualifiedName")), languageName);
-              }
-            }) != null)) {
-              // TODO add the language under dependencies of this model: 
-              SNode moduleDep = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x86ef829012bb4ca7L, 0x947f093788f263a9L, 0x5869770da61dfe28L, "jetbrains.mps.lang.project.structure.ModuleDependency")));
-              SLinkOperations.setTarget(moduleDep, MetaAdapterFactory.getContainmentLink(0x86ef829012bb4ca7L, 0x947f093788f263a9L, 0x5869770da61dfe28L, 0x19bfb4173fb5241eL, "moduleRef"), SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x86ef829012bb4ca7L, 0x947f093788f263a9L, 0x19bfb4173fb5210cL, "jetbrains.mps.lang.project.structure.ModuleReference"))));
-              SPropertyOperations.set(SLinkOperations.getTarget(moduleDep, MetaAdapterFactory.getContainmentLink(0x86ef829012bb4ca7L, 0x947f093788f263a9L, 0x5869770da61dfe28L, 0x19bfb4173fb5241eL, "moduleRef")), MetaAdapterFactory.getProperty(0x86ef829012bb4ca7L, 0x947f093788f263a9L, 0x19bfb4173fb5210cL, 0x19bfb4173fb5210eL, "qualifiedName"), languageName);
-              ListSequence.fromList(SLinkOperations.getChildren(SModelOperations.getModuleStub(SNodeOperations.getModel(node)), MetaAdapterFactory.getContainmentLink(0x86ef829012bb4ca7L, 0x947f093788f263a9L, 0x5869770da61dfe1eL, 0x5869770da61dfe2cL, "dependencies"))).addElement(moduleDep);
-            }
-          */
 
         }
       }
@@ -106,8 +88,5 @@ public class ConvertToMPS_Constraints extends BaseConstraintsDescriptor {
       }
     });
     return references;
-  }
-  private static boolean eq_uizg9o_a0a0a0a0a0a0a3a1a1a0b0a1a1(Object a, Object b) {
-    return (a != null ? a.equals(b) : a == b);
   }
 }

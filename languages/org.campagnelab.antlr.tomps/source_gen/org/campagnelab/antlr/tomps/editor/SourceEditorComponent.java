@@ -11,7 +11,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import org.campagnelab.antlr.tomps.behavior.Source__BehaviorDescriptor;
 import jetbrains.mps.util.EqualUtil;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
@@ -41,7 +41,7 @@ public class SourceEditorComponent implements ConceptEditorComponent {
   private EditorCell createReadOnlyModelAccessor_h5wjze_a0(final EditorContext editorContext, final SNode node) {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
       public String getText() {
-        return BehaviorReflection.invokeVirtual(String.class, node, "virtual_name_4068410015138152876", new Object[]{});
+        return (String) Source__BehaviorDescriptor.name_id3xPTlDSWS6G.invoke(node);
       }
       public void setText(String s) {
       }
@@ -76,7 +76,7 @@ public class SourceEditorComponent implements ConceptEditorComponent {
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
   }

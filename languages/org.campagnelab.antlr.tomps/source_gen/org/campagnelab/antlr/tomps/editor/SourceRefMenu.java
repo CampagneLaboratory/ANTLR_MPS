@@ -10,7 +10,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.campagnelab.antlr.tomps.behavior.Mapper_Behavior;
+import org.campagnelab.antlr.tomps.behavior.Mapper__BehaviorDescriptor;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.model.SModel;
@@ -26,7 +26,7 @@ public class SourceRefMenu extends AbstractCellMenuComponent {
     public Mapper_generic_cellMenu_gcsa23_a0() {
     }
     public List<?> createParameterObjects(SNode node, IOperationContext operationContext, EditorContext editorContext) {
-      return SNodeOperations.getNodeDescendants(Mapper_Behavior.call_alternative_558881339903204669(node), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, "org.campagnelab.ANTLR.structure.LabeledElement"), false, new SAbstractConcept[]{});
+      return SNodeOperations.getNodeDescendants(Mapper__BehaviorDescriptor.alternative_idv1yTSox_OX.invoke(node), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, "org.campagnelab.ANTLR.structure.LabeledElement"), false, new SAbstractConcept[]{});
     }
     protected void handleAction(Object parameterObject, SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
       this.handleAction_impl((SNode) parameterObject, node, model, operationContext, editorContext);
@@ -56,7 +56,7 @@ public class SourceRefMenu extends AbstractCellMenuComponent {
     public Mapper_generic_cellMenu_gcsa23_b0() {
     }
     public List<?> createParameterObjects(SNode node, IOperationContext operationContext, EditorContext editorContext) {
-      return SNodeOperations.getNodeDescendants(Mapper_Behavior.call_alternative_558881339903204669(node), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d966L, "org.campagnelab.ANTLR.structure.ParserRuleRef"), false, new SAbstractConcept[]{});
+      return SNodeOperations.getNodeDescendants(Mapper__BehaviorDescriptor.alternative_idv1yTSox_OX.invoke(node), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d966L, "org.campagnelab.ANTLR.structure.ParserRuleRef"), false, new SAbstractConcept[]{});
     }
     protected void handleAction(Object parameterObject, SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
       this.handleAction_impl((SNode) parameterObject, node, model, operationContext, editorContext);
@@ -86,7 +86,7 @@ public class SourceRefMenu extends AbstractCellMenuComponent {
     public Mapper_generic_cellMenu_gcsa23_c0() {
     }
     public List<?> createParameterObjects(SNode node, IOperationContext operationContext, EditorContext editorContext) {
-      return SNodeOperations.getNodeDescendants(Mapper_Behavior.call_alternative_558881339903204669(node), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a890ef9eL, "org.campagnelab.ANTLR.structure.LexerRuleRef"), false, new SAbstractConcept[]{});
+      return SNodeOperations.getNodeDescendants(Mapper__BehaviorDescriptor.alternative_idv1yTSox_OX.invoke(node), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a890ef9eL, "org.campagnelab.ANTLR.structure.LexerRuleRef"), false, new SAbstractConcept[]{});
     }
     protected void handleAction(Object parameterObject, SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
       this.handleAction_impl((SNode) parameterObject, node, model, operationContext, editorContext);

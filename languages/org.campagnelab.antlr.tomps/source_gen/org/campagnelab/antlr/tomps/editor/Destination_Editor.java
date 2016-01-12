@@ -8,7 +8,7 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import org.campagnelab.antlr.tomps.behavior.Destination__BehaviorDescriptor;
 import jetbrains.mps.util.EqualUtil;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
@@ -23,7 +23,7 @@ public class Destination_Editor extends DefaultNodeEditor {
   private EditorCell createReadOnlyModelAccessor_tbkp6n_a(final EditorContext editorContext, final SNode node) {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
       public String getText() {
-        return BehaviorReflection.invokeVirtual(String.class, node, "virtual_name_2860118060023810449", new Object[]{});
+        return (String) Destination__BehaviorDescriptor.name_id2uLbzznpwAh.invoke(node);
       }
       public void setText(String s) {
       }
@@ -41,6 +41,6 @@ public class Destination_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private static SNode _StyleParameter_QueryFunction_tbkp6n_a0a(EditorContext editorContext, SNode node) {
-    return BehaviorReflection.invokeVirtual((Class<SNode>) ((Class) Object.class), node, "virtual_to_1096804516885006638", new Object[]{});
+    return (SNode) Destination__BehaviorDescriptor.to_idWSCumwYo$I.invoke(node);
   }
 }

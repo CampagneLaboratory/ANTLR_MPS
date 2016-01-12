@@ -7,21 +7,18 @@ import javax.swing.Icon;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import java.util.Map;
 import jetbrains.mps.editor.runtime.cells.ReadOnlyUtil;
-import jetbrains.mps.nodeEditor.EditorComponent;
-import jetbrains.mps.internal.collections.runtime.MapSequence;
+import jetbrains.mps.ide.editor.MPSEditorDataKeys;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.campagnelab.antlr.parsers.AntlrPaster;
 import org.jetbrains.annotations.NotNull;
-import org.apache.log4j.Level;
-import jetbrains.mps.ide.actions.MPSCommonDataKeys;
-import org.jetbrains.mps.openapi.model.EditableSModel;
-import jetbrains.mps.ide.editor.MPSEditorDataKeys;
 import jetbrains.mps.smodel.IOperationContext;
+import org.jetbrains.mps.openapi.model.SModel;
+import org.jetbrains.mps.openapi.model.EditableSModel;
 import jetbrains.mps.project.MPSProject;
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
+import jetbrains.mps.nodeEditor.EditorComponent;
 
 public class PasteAsAntlrRules_Action extends BaseAction {
   private static final Icon ICON = null;
@@ -34,68 +31,62 @@ public class PasteAsAntlrRules_Action extends BaseAction {
   public boolean isDumbAware() {
     return true;
   }
+  @Override
   public boolean isApplicable(AnActionEvent event, final Map<String, Object> _params) {
-    if (ReadOnlyUtil.isSelectionReadOnlyInEditor(((EditorComponent) MapSequence.fromMap(_params).get("editorComponent")))) {
+    if (ReadOnlyUtil.isSelectionReadOnlyInEditor(event.getData(MPSEditorDataKeys.EDITOR_COMPONENT))) {
       return false;
     }
-    return (SNodeOperations.getNodeAncestor(((SNode) ((SNode) MapSequence.fromMap(_params).get("anchorNode"))), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"), true, false) != null) && AntlrPaster.areDataAvailableInClipboard();
+    return (SNodeOperations.getNodeAncestor(((SNode) event.getData(MPSCommonDataKeys.NODE)), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"), true, false) != null) && AntlrPaster.areDataAvailableInClipboard();
   }
+  @Override
   public void doUpdate(@NotNull AnActionEvent event, final Map<String, Object> _params) {
-    try {
-      {
-        boolean enabled = this.isApplicable(event, _params);
-        this.setEnabledState(event.getPresentation(), enabled);
-      }
-    } catch (Throwable t) {
-      if (LOG.isEnabledFor(Level.ERROR)) {
-        LOG.error("User's action doUpdate method failed. Action:" + "PasteAsAntlrRules", t);
-      }
-      this.disable(event.getPresentation());
-    }
+    this.setEnabledState(event.getPresentation(), this.isApplicable(event, _params));
   }
+  @Override
   protected boolean collectActionData(AnActionEvent event, final Map<String, Object> _params) {
     if (!(super.collectActionData(event, _params))) {
       return false;
     }
-    MapSequence.fromMap(_params).put("operationContext", event.getData(MPSCommonDataKeys.OPERATION_CONTEXT));
-    if (MapSequence.fromMap(_params).get("operationContext") == null) {
-      return false;
+    {
+      IOperationContext p = event.getData(MPSCommonDataKeys.OPERATION_CONTEXT);
+      if (p == null) {
+        return false;
+      }
     }
-    MapSequence.fromMap(_params).put("anchorNode", event.getData(MPSCommonDataKeys.NODE));
-    if (MapSequence.fromMap(_params).get("anchorNode") == null) {
-      return false;
+    {
+      SNode p = event.getData(MPSCommonDataKeys.NODE);
+      if (p == null) {
+        return false;
+      }
     }
-    MapSequence.fromMap(_params).put("model", event.getData(MPSCommonDataKeys.CONTEXT_MODEL));
-    if (MapSequence.fromMap(_params).get("model") == null) {
-      return false;
+    {
+      SModel p = event.getData(MPSCommonDataKeys.CONTEXT_MODEL);
+      if (p == null) {
+        return false;
+      }
+      if (!(p instanceof EditableSModel) || p.isReadOnly()) {
+        return false;
+      }
     }
-    if (!(MapSequence.fromMap(_params).get("model") instanceof EditableSModel) || ((EditableSModel) MapSequence.fromMap(_params).get("model")).isReadOnly()) {
-      return false;
-    }
-    MapSequence.fromMap(_params).put("mpsProject", event.getData(MPSCommonDataKeys.MPS_PROJECT));
-    if (MapSequence.fromMap(_params).get("mpsProject") == null) {
-      return false;
+    {
+      MPSProject p = event.getData(MPSCommonDataKeys.MPS_PROJECT);
+      if (p == null) {
+        return false;
+      }
     }
     {
       EditorComponent editorComponent = event.getData(MPSEditorDataKeys.EDITOR_COMPONENT);
       if (editorComponent != null && editorComponent.isInvalid()) {
         editorComponent = null;
       }
-      MapSequence.fromMap(_params).put("editorComponent", editorComponent);
-    }
-    if (MapSequence.fromMap(_params).get("editorComponent") == null) {
-      return false;
+      if (editorComponent == null) {
+        return false;
+      }
     }
     return true;
   }
+  @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
-    try {
-      new AntlrPaster().pasteRules(((SNode) MapSequence.fromMap(_params).get("anchorNode")), ((IOperationContext) MapSequence.fromMap(_params).get("operationContext")), ((MPSProject) MapSequence.fromMap(_params).get("mpsProject")));
-    } catch (Throwable t) {
-      if (LOG.isEnabledFor(Level.ERROR)) {
-        LOG.error("User's action execute method failed. Action:" + "PasteAsAntlrRules", t);
-      }
-    }
+    new AntlrPaster().pasteRules(event.getData(MPSCommonDataKeys.NODE), event.getData(MPSCommonDataKeys.OPERATION_CONTEXT), event.getData(MPSCommonDataKeys.MPS_PROJECT));
   }
-  protected static Logger LOG = LogManager.getLogger(PasteAsAntlrRules_Action.class);
 }

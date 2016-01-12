@@ -5,14 +5,20 @@ package org.campagnelab.ANTLR.behavior;
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 
+/**
+ * Will be removed after 3.3
+ * Need to support compilation of the legacy behavior descriptors before the language is rebuilt
+ * This class is not involved in the actual method invocation
+ */
+@Deprecated
 public class LexerRuleBlock_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor {
-  public LexerRuleBlock_BehaviorDescriptor() {
+  public String virtual_toText_5668935624399900127(SNode __thisNode__) {
+    return null;
   }
-  public String virtual_toText_5668935624399900127(SNode thisNode) {
-    return LexerRuleBlock_Behavior.virtual_toText_5668935624399900127(thisNode);
-  }
+
   @Override
   public String getConceptFqName() {
     return "org.campagnelab.ANTLR.structure.LexerRuleBlock";
   }
+
 }

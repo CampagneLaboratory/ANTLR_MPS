@@ -4,14 +4,20 @@ package org.campagnelab.ANTLR.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 
+/**
+ * Will be removed after 3.3
+ * Need to support compilation of the legacy behavior descriptors before the language is rebuilt
+ * This class is not involved in the actual method invocation
+ */
+@Deprecated
 public class ParserRule_BehaviorDescriptor extends Rule_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor {
-  public ParserRule_BehaviorDescriptor() {
+  public String virtual_toText_5668935624399900127(SNode __thisNode__) {
+    return null;
   }
-  public String virtual_toText_5668935624399900127(SNode thisNode) {
-    return ParserRule_Behavior.virtual_toText_5668935624399900127(thisNode);
-  }
+
   @Override
   public String getConceptFqName() {
     return "org.campagnelab.ANTLR.structure.ParserRule";
   }
+
 }

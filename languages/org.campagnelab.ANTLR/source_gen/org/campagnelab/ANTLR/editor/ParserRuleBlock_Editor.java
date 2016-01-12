@@ -14,7 +14,7 @@ import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import org.campagnelab.ANTLR.behavior.ParserRuleBlock__BehaviorDescriptor;
 import jetbrains.mps.util.EqualUtil;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
@@ -66,7 +66,7 @@ public class ParserRuleBlock_Editor extends DefaultNodeEditor {
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
   }
@@ -88,7 +88,7 @@ public class ParserRuleBlock_Editor extends DefaultNodeEditor {
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
   }
@@ -110,7 +110,7 @@ public class ParserRuleBlock_Editor extends DefaultNodeEditor {
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
   }
@@ -123,7 +123,7 @@ public class ParserRuleBlock_Editor extends DefaultNodeEditor {
   private EditorCell createReadOnlyModelAccessor_47u5j1_h0(final EditorContext editorContext, final SNode node) {
     EditorCell_Property editorCell = EditorCell_Property.create(editorContext, new ModelAccessor() {
       public String getText() {
-        return Boolean.toString(BehaviorReflection.invokeVirtual(Boolean.TYPE, node, "virtual_needsVisit_3737166271522571641", new Object[]{}));
+        return Boolean.toString((boolean) ParserRuleBlock__BehaviorDescriptor.needsVisit_id3ft5eLKF8lT.invoke(node));
       }
       public void setText(String s) {
       }

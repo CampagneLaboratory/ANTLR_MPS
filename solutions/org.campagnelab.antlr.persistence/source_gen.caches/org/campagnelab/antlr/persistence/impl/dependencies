@@ -6,7 +6,6 @@
     <classNode dependClassName="java.io.InputStream" />
     <classNode dependClassName="java.io.OutputStream" />
     <classNode dependClassName="java.io.OutputStreamWriter" />
-    <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.Throwable" />
@@ -27,7 +26,6 @@
     <classNode dependClassName="jetbrains.mps.smodel.SModelId" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.MetaIdByDeclaration" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
     <classNode dependClassName="jetbrains.mps.util.FileUtil" />
     <classNode dependClassName="jetbrains.mps.util.IterableUtil" />
     <classNode dependClassName="jetbrains.mps.util.NameUtil" />
@@ -37,6 +35,7 @@
     <classNode dependClassName="org.antlr.v4.runtime.CommonTokenStream" />
     <classNode dependClassName="org.apache.log4j.LogManager" />
     <classNode dependClassName="org.apache.log4j.Logger" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.ToTextOutput__BehaviorDescriptor" />
     <classNode dependClassName="org.campagnelab.antlr.parsers.AntlrRuleVisitor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SModel" />

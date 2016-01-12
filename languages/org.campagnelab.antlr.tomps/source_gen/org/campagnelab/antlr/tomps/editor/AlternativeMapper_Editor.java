@@ -13,7 +13,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import org.campagnelab.ANTLR.behavior.ToTextOutput__BehaviorDescriptor;
 import jetbrains.mps.util.EqualUtil;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
@@ -74,7 +74,7 @@ public class AlternativeMapper_Editor extends DefaultNodeEditor {
         if (SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x6a1bb02ea6062391L, "alternative")) == null) {
           return "auto-complete for alternative";
         }
-        return SPropertyOperations.getString(SNodeOperations.getNodeAncestor(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x6a1bb02ea6062391L, "alternative")), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648aaL, "org.campagnelab.ANTLR.structure.Rule"), false, false), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + ":" + BehaviorReflection.invokeVirtual(String.class, SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x6a1bb02ea6062391L, "alternative")), "virtual_toText_5668935624399900127", new Object[]{});
+        return SPropertyOperations.getString(SNodeOperations.getNodeAncestor(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x6a1bb02ea6062391L, "alternative")), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648aaL, "org.campagnelab.ANTLR.structure.Rule"), false, false), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + ":" + ToTextOutput__BehaviorDescriptor.toText_id4UG6ID2UsRv.invoke(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x6a1bb02ea6062391L, "alternative")));
       }
       public void setText(String s) {
       }
@@ -115,7 +115,7 @@ public class AlternativeMapper_Editor extends DefaultNodeEditor {
       return this.getDescriptionText_internal((SNode) parameterObject);
     }
     public String getDescriptionText_internal(SNode parameterObject) {
-      return SPropertyOperations.getString(SNodeOperations.getNodeAncestor(parameterObject, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648aaL, "org.campagnelab.ANTLR.structure.Rule"), false, false), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + ":" + BehaviorReflection.invokeVirtual(String.class, parameterObject, "virtual_toText_5668935624399900127", new Object[]{});
+      return SPropertyOperations.getString(SNodeOperations.getNodeAncestor(parameterObject, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x175f2668a88648aaL, "org.campagnelab.ANTLR.structure.Rule"), false, false), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) + ":" + ToTextOutput__BehaviorDescriptor.toText_id4UG6ID2UsRv.invoke(parameterObject);
     }
   }
   private EditorCell createConstant_cj2frz_b0(EditorContext editorContext, SNode node) {
@@ -166,7 +166,7 @@ public class AlternativeMapper_Editor extends DefaultNodeEditor {
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
   }
@@ -197,7 +197,7 @@ public class AlternativeMapper_Editor extends DefaultNodeEditor {
       Class attributeKind = provider.getRoleAttributeClass();
       if (attributeConcept != null) {
         EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-        return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+        return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
       } else
       return editorCell;
     }
@@ -303,7 +303,7 @@ public class AlternativeMapper_Editor extends DefaultNodeEditor {
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
   }
@@ -328,7 +328,7 @@ public class AlternativeMapper_Editor extends DefaultNodeEditor {
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
   }
@@ -354,7 +354,7 @@ public class AlternativeMapper_Editor extends DefaultNodeEditor {
     Class attributeKind = provider.getRoleAttributeClass();
     if (attributeConcept != null) {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
     } else
     return editorCell;
   }
@@ -381,7 +381,7 @@ public class AlternativeMapper_Editor extends DefaultNodeEditor {
       Class attributeKind = provider.getRoleAttributeClass();
       if (attributeConcept != null) {
         EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-        return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+        return manager.createNodeRoleAttributeCell(attributeConcept, attributeKind, editorCell);
       } else
       return editorCell;
     }

@@ -7,12 +7,13 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
-import jetbrains.mps.lang.editor.cellProviders.RefNodeCellProvider;
+import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.nodeEditor.cellMenu.DefaultChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
-import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
 public class Range_Editor extends DefaultNodeEditor {
@@ -29,25 +30,41 @@ public class Range_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNode_l9yr93_a0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
-    provider.setRole("start");
-    provider.setNoTargetText("<no start>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    if (editorCell.getRole() == null) {
-      editorCell.setRole("start");
+    SingleRoleCellProvider provider = new Range_Editor.startSingleRoleHandler_l9yr93_a0(node, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba93652fedL, 0xdb5f4ba936530dcL, "start"), editorContext);
+    return provider.createCell();
+  }
+  private class startSingleRoleHandler_l9yr93_a0 extends SingleRoleCellProvider {
+    public startSingleRoleHandler_l9yr93_a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+      super(ownerNode, containmentLink, context);
     }
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-    } else
-    return editorCell;
+    public EditorCell createChildCell(EditorContext editorContext, SNode child) {
+      EditorCell editorCell = super.createChildCell(editorContext, child);
+      installCellInfo(child, editorCell);
+      return editorCell;
+    }
+    public void installCellInfo(SNode child, EditorCell editorCell) {
+      editorCell.setSubstituteInfo(new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext));
+      if (editorCell.getRole() == null) {
+        editorCell.setRole("start");
+      }
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
+      editorCell.getStyle().putAll(style);
+    }
+
+
+    @Override
+    protected EditorCell createEmptyCell() {
+      EditorCell editorCell = super.createEmptyCell();
+      editorCell.setCellId("empty_start");
+      installCellInfo(null, editorCell);
+      return editorCell;
+    }
+
+    protected String getNoTargetText() {
+      return "<no start>";
+    }
+
   }
   private EditorCell createConstant_l9yr93_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "..");
@@ -60,24 +77,40 @@ public class Range_Editor extends DefaultNodeEditor {
     return editorCell;
   }
   private EditorCell createRefNode_l9yr93_c0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new RefNodeCellProvider(node, editorContext);
-    provider.setRole("end");
-    provider.setNoTargetText("<no end>");
-    EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
-    if (editorCell.getRole() == null) {
-      editorCell.setRole("end");
+    SingleRoleCellProvider provider = new Range_Editor.endSingleRoleHandler_l9yr93_c0(node, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0xdb5f4ba93652fedL, 0xdb5f4ba936530deL, "end"), editorContext);
+    return provider.createCell();
+  }
+  private class endSingleRoleHandler_l9yr93_c0 extends SingleRoleCellProvider {
+    public endSingleRoleHandler_l9yr93_c0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+      super(ownerNode, containmentLink, context);
     }
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
-    SNode attributeConcept = provider.getRoleAttribute();
-    Class attributeKind = provider.getRoleAttributeClass();
-    if (attributeConcept != null) {
-      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
-      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
-    } else
-    return editorCell;
+    public EditorCell createChildCell(EditorContext editorContext, SNode child) {
+      EditorCell editorCell = super.createChildCell(editorContext, child);
+      installCellInfo(child, editorCell);
+      return editorCell;
+    }
+    public void installCellInfo(SNode child, EditorCell editorCell) {
+      editorCell.setSubstituteInfo(new DefaultChildSubstituteInfo(myOwnerNode, myContainmentLink.getDeclarationNode(), myEditorContext));
+      if (editorCell.getRole() == null) {
+        editorCell.setRole("end");
+      }
+      Style style = new StyleImpl();
+      style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
+      editorCell.getStyle().putAll(style);
+    }
+
+
+    @Override
+    protected EditorCell createEmptyCell() {
+      EditorCell editorCell = super.createEmptyCell();
+      editorCell.setCellId("empty_end");
+      installCellInfo(null, editorCell);
+      return editorCell;
+    }
+
+    protected String getNoTargetText() {
+      return "<no end>";
+    }
+
   }
 }

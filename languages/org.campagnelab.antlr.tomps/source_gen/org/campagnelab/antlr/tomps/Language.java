@@ -8,13 +8,15 @@ import java.util.UUID;
 import java.util.Collection;
 import jetbrains.mps.generator.runtime.TemplateModule;
 import jetbrains.mps.generator.runtime.TemplateUtil;
-import jetbrains.mps.smodel.runtime.LanguageAspectDescriptor;
+import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor;
-import jetbrains.mps.actions.descriptor.AbstractActionAspectDescriptor;
+import jetbrains.mps.actions.descriptor.BaseActionAspectDescriptor;
 import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import org.campagnelab.antlr.tomps.editor.EditorAspectDescriptorImpl;
+import jetbrains.mps.intentions.IntentionAspectDescriptor;
+import org.campagnelab.antlr.tomps.intentions.IntentionsDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
 import org.campagnelab.antlr.tomps.typesystem.TypesystemDescriptor;
@@ -45,25 +47,28 @@ public class Language extends LanguageRuntime {
     return TemplateUtil.<TemplateModule>asCollection(TemplateUtil.createInterpretedGenerator(this, "92e3c42f-bc31-4389-addc-b7c0315889a0(org.campagnelab.antlr.tomps#7645898506791942665)"));
   }
   @Override
-  protected <T extends LanguageAspectDescriptor> T createAspectDescriptor(Class<T> descriptorClass) {
-    if (descriptorClass == ActionAspectDescriptor.class) {
-      return (T) new AbstractActionAspectDescriptor() {};
+  protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
+    if (aspectClass == ActionAspectDescriptor.class) {
+      return (T) new BaseActionAspectDescriptor();
     }
-    if (descriptorClass == BehaviorAspectDescriptor.class) {
+    if (aspectClass == BehaviorAspectDescriptor.class) {
       return (T) new org.campagnelab.antlr.tomps.behavior.BehaviorAspectDescriptor();
     }
-    if (descriptorClass == ConstraintsAspectDescriptor.class) {
+    if (aspectClass == ConstraintsAspectDescriptor.class) {
       return (T) new org.campagnelab.antlr.tomps.constraints.ConstraintsAspectDescriptor();
     }
-    if (descriptorClass == EditorAspectDescriptor.class) {
+    if (aspectClass == EditorAspectDescriptor.class) {
       return (T) new EditorAspectDescriptorImpl();
     }
-    if (descriptorClass == StructureAspectDescriptor.class) {
+    if (aspectClass == IntentionAspectDescriptor.class) {
+      return (T) new IntentionsDescriptor();
+    }
+    if (aspectClass == StructureAspectDescriptor.class) {
       return (T) new org.campagnelab.antlr.tomps.structure.StructureAspectDescriptor();
     }
-    if (descriptorClass == IHelginsDescriptor.class) {
+    if (aspectClass == IHelginsDescriptor.class) {
       return (T) new TypesystemDescriptor();
     }
-    return super.createAspectDescriptor(descriptorClass);
+    return super.createAspect(aspectClass);
   }
 }

@@ -4,14 +4,20 @@ package org.campagnelab.ANTLR.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 
+/**
+ * Will be removed after 3.3
+ * Need to support compilation of the legacy behavior descriptors before the language is rebuilt
+ * This class is not involved in the actual method invocation
+ */
+@Deprecated
 public class NotSet_BehaviorDescriptor extends LexerElement_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor {
-  public NotSet_BehaviorDescriptor() {
+  public String virtual_toText_987964775448368950(SNode __thisNode__) {
+    return null;
   }
-  public String virtual_toText_987964775448368950(SNode thisNode) {
-    return NotSet_Behavior.virtual_toText_987964775448368950(thisNode);
-  }
+
   @Override
   public String getConceptFqName() {
     return "org.campagnelab.ANTLR.structure.NotSet";
   }
+
 }

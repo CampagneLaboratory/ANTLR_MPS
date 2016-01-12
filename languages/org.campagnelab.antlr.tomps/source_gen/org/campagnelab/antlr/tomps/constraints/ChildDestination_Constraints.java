@@ -14,12 +14,13 @@ import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceScopeProvider;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.ReferencePresentationContext;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import org.campagnelab.antlr.tomps.behavior.Destination__BehaviorDescriptor;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.campagnelab.antlr.tomps.behavior.Mapper_Behavior;
+import java.util.List;
+import org.campagnelab.antlr.tomps.behavior.Mapper__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.model.SNodeReference;
 import jetbrains.mps.smodel.SNodePointer;
 
@@ -45,12 +46,12 @@ public class ChildDestination_Constraints extends BaseConstraintsDescriptor {
           }
           @Override
           public String getPresentation(final IOperationContext operationContext, final ReferencePresentationContext _context) {
-            return BehaviorReflection.invokeVirtual(String.class, _context.getReferenceNode(), "virtual_name_2860118060023810449", new Object[]{});
+            return (String) Destination__BehaviorDescriptor.name_id2uLbzznpwAh.invoke(_context.getReferenceNode());
           }
           @Override
           public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
             SNode mapper = SNodeOperations.getNodeAncestor(_context.getReferenceNode(), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, "org.campagnelab.antlr.tomps.structure.Mapper"), false, false);
-            return Mapper_Behavior.call_linkDeclarations_4068410015139474010(mapper, Mapper_Behavior.call_concept_558881339903199920(mapper));
+            return (List<SNode>) Mapper__BehaviorDescriptor.linkDeclarations_id3xPTlDT1UDq.invoke(mapper, Mapper__BehaviorDescriptor.concept_idv1yTSox$EK.invoke(mapper));
           }
           @Override
           public SNodeReference getSearchScopeValidatorNode() {

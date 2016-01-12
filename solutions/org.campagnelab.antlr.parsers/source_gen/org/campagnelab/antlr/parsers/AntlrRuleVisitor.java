@@ -56,7 +56,6 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   }
   @Override
   public Object visitRuleBlock(@NotNull ANTLRv4Parser.RuleBlockContext context) {
-    // <node> 
     SNode block;
     if (context.ruleAltList() != null) {
       block = ((SNode) visitRuleAltList(context.ruleAltList()));
@@ -72,7 +71,6 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     super.visitLexerAltList(context);
     SNode altList = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba17cd353L, "org.campagnelab.ANTLR.structure.LexerAltList")));
     List<ANTLRv4Parser.LexerAltContext> elements = context.lexerAlt();
-    // <node> 
     if (elements.size() > 0) {
       for (ANTLRv4Parser.LexerAltContext seq : ListSequence.fromList(elements)) {
         ListSequence.fromList(SLinkOperations.getChildren(altList, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba17cd353L, 0x4e506a1ba17cd759L, "alternatives"))).addElement((SNode) visitLexerAlt(seq));
@@ -87,7 +85,6 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   public Object visitAlternative(@NotNull ANTLRv4Parser.AlternativeContext context) {
     SNode alternative = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113b458fL, "org.campagnelab.ANTLR.structure.Alternative")));
     List<ANTLRv4Parser.ElementContext> elements = context.element();
-    // <node> 
     if (elements.size() > 1) {
       SNode sequence = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d846L, "org.campagnelab.ANTLR.structure.Sequence")));
       for (ANTLRv4Parser.ElementContext seq : ListSequence.fromList(elements)) {
@@ -125,10 +122,8 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   }
   @Override
   public Object visitElement(@NotNull ANTLRv4Parser.ElementContext context) {
-    // <node> 
     SNode element = null;
     if (context.ebnf() != null && context.ebnf().block() != null) {
-      // <node> 
       element = (SNode) visitEbnf(context.ebnf());
       // EBNF cannot be followed by ebnf suffix, return immediately: 
       return element;
@@ -189,10 +184,8 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
           addOptionalParams(alternatives, context.blockSuffix().ebnfSuffix());
         }
       }
-      // <node> 
       return alternatives;
     }
-    // <node> 
     return SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d842L, "org.campagnelab.ANTLR.structure.Alternatives")));
   }
   @Override
@@ -256,7 +249,6 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
     SNode spec = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f1505L, "org.campagnelab.ANTLR.structure.TokenSpec")));
 
     for (ANTLRv4Parser.IdContext id : ListSequence.fromList(context.id())) {
-      // <node> 
       SNode token = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f2eb3L, "org.campagnelab.ANTLR.structure.Token")));
       SPropertyOperations.set(token, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), id.getText());
       ListSequence.fromList(SLinkOperations.getChildren(spec, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e171f1505L, 0x7c18b9e171f2eb1L, "tokens"))).addElement(token);
@@ -292,7 +284,6 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   @Override
   public Object visitLexerElement(@NotNull ANTLRv4Parser.LexerElementContext context) {
     super.visitLexerElement(context);
-    // <node> 
     SNode parserRuleBlock = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x4e506a1ba15f4aa4L, "org.campagnelab.ANTLR.structure.LexerElement")));
     if (context.lexerAtom() != null) {
       parserRuleBlock = (SNode) visitLexerAtom(context.lexerAtom());
@@ -300,7 +291,6 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
       parserRuleBlock = (SNode) visitLexerBlock(context.lexerBlock());
     }
     if (context.ebnfSuffix() != null) {
-      // <node> 
       addOptionalParams(parserRuleBlock, context.ebnfSuffix());
     }
     return parserRuleBlock;
@@ -316,7 +306,6 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   }
   @Override
   public Object visitLexerAtom(@NotNull ANTLRv4Parser.LexerAtomContext context) {
-    // <node> 
     if (context.range() != null) {
       return visitRange(context.range());
     }
@@ -393,11 +382,9 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   @Override
   public Object visitLexerElements(@NotNull ANTLRv4Parser.LexerElementsContext context) {
     super.visitLexerElements(context);
-    // <node> 
     List<SNode> lexerElements = new ArrayList<SNode>();
     if (context.lexerElement() != null) {
       List<ANTLRv4Parser.LexerElementContext> elements = context.lexerElement();
-      // <node> 
       for (ANTLRv4Parser.LexerElementContext seq : ListSequence.fromList(elements)) {
         lexerElements.add((SNode) visitLexerElement(seq));
       }
@@ -407,15 +394,6 @@ public class AntlrRuleVisitor extends ANTLRv4ParserBaseVisitor {
   }
   private void addOptionalParams(SNode currentElement, ANTLRv4Parser.EbnfSuffixContext context) {
     if (currentElement != null && context != null) {
-      /*
-        if (context.STAR() != null && context.STAR().getSymbol().getTokenIndex() == ANTLRv4Parser.STAR) {
-          SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x797c10c6e517ac38L, 0x797c10c6e517bbd3L, "acceptMultiple"), "" + (true));
-
-        }
-        if (context.PLUS() != null && context.PLUS().getSymbol().getTokenIndex() == ANTLRv4Parser.PLUS) {
-          SPropertyOperations.set(currentElement, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x797c10c6e517ac38L, 0x797c10c6e517b02cL, "isOptional"), "" + (true));
-        }
-      */
       String question = context.getText();
       for (char c : question.toCharArray()) {
         if ('?' == c) {

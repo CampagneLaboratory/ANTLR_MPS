@@ -14,7 +14,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="10,0,35,0" name="org.campagnelab.ANTLR.constraints.ConstraintsAspectDescriptor" />
+      <unit at="9,0,23,0" name="org.campagnelab.ANTLR.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:3ea820cb-552a-4e36-be62-2f72cccd6e1d(org.campagnelab.ANTLR.constraints)/1684107016605859764">

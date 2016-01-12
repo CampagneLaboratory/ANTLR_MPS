@@ -45,7 +45,7 @@ import jetbrains.mps.util.IterableUtil;
 import java.io.OutputStream;
 import java.io.BufferedOutputStream;
 import java.io.OutputStreamWriter;
-import jetbrains.mps.smodel.behaviour.BehaviorReflection;
+import org.campagnelab.ANTLR.behavior.ToTextOutput__BehaviorDescriptor;
 
 public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
   public static final String EXTENSION = "g4";
@@ -143,7 +143,7 @@ public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
     }
     SNode grammar = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar")));
     SPropertyOperations.set(grammar, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), name);
-    sModel.addLanguage(MetaIdByDeclaration.ref2Id(PersistenceFacade.getInstance().createModuleReference("d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)")), 0);
+    sModel.addLanguage(MetaIdByDeclaration.???(PersistenceFacade.getInstance().createModuleReference("d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)")), 0);
     sModel.addRootNode(grammar);
     return sModel;
   }
@@ -167,7 +167,7 @@ public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
       ListSequence.fromList(SLinkOperations.getChildren(grammar, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, 0x631eebe31132d83bL, "rules"))).addSequence(ListSequence.fromList(rules));
 
       jetbrains.mps.smodel.SModel sModel = new jetbrains.mps.smodel.SModel(reference);
-      sModel.addLanguage(MetaIdByDeclaration.ref2Id(PersistenceFacade.getInstance().createModuleReference("d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)")), 0);
+      sModel.addLanguage(MetaIdByDeclaration.???(PersistenceFacade.getInstance().createModuleReference("d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)")), 0);
       sModel.addRootNode(grammar);
       return sModel;
     } catch (IOException e) {
@@ -189,13 +189,10 @@ public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
     }
     SNode grammar = SNodeOperations.cast(root, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"));
 
-    // <node> 
-    // <node> 
-    // <node> 
     OutputStream stream = new BufferedOutputStream(source.openOutputStream());
     try {
       OutputStreamWriter writer = new OutputStreamWriter(stream, FileUtil.DEFAULT_CHARSET);
-      writer.write(BehaviorReflection.invokeVirtual(String.class, grammar, "virtual_toText_5668935624399900127", new Object[]{}));
+      writer.write(ToTextOutput__BehaviorDescriptor.toText_id4UG6ID2UsRv.invoke(grammar));
       writer.flush();
     } finally {
       FileUtil.closeFileSafe(stream);

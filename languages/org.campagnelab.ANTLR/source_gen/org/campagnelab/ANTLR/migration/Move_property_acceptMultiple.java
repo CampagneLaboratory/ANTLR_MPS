@@ -14,14 +14,18 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.lang.core.behavior.PropertyAttribute_Behavior;
+import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.lang.migration.runtime.base.MigrationScriptReference;
 
 public class Move_property_acceptMultiple extends MigrationScriptBase {
   public String getCaption() {
-    return "org.campagnelab.ANTLR.migration.Move_property_acceptMultiple";
+    return "Move_property_acceptMultiple";
   }
-  public SNode execute(SModule m) {
+  @Override
+  public boolean isRerunnable() {
+    return false;
+  }
+  public SNode execute(final SModule m) {
     Iterable<SModel> models = (Iterable<SModel>) m.getModels();
     Iterable<SNode> nodes = Sequence.fromIterable(models).where(new IWhereFilter<SModel>() {
       public boolean accept(SModel model) {
@@ -45,12 +49,12 @@ public class Move_property_acceptMultiple extends MigrationScriptBase {
       }
     }).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return eq_wxaukq_a0a0a0a0a0a4a1(PropertyAttribute_Behavior.call_getProperty_1341860900488756504(it), MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple_old"));
+        return eq_wxaukq_a0a0a0a0a0a4a2(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4247L, "acceptMultiple_old"));
       }
     });
     Sequence.fromIterable(attributes).visitAll(new IVisitor<SNode>() {
       public void visit(SNode it) {
-        PropertyAttribute_Behavior.call_setProperty_7714691473529670203(it, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x797c10c6e517ac38L, 0x797c10c6e517bbd3L, "acceptMultiple"));
+        PropertyAttribute__BehaviorDescriptor.setProperty_id6Gg5Klvu8CV.invoke(it, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x797c10c6e517ac38L, 0x797c10c6e517bbd3L, "acceptMultiple"));
       }
     });
     return null;
@@ -58,7 +62,8 @@ public class Move_property_acceptMultiple extends MigrationScriptBase {
   public MigrationScriptReference getDescriptor() {
     return new MigrationScriptReference(MetaAdapterFactory.getLanguage(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, "org.campagnelab.ANTLR"), 1);
   }
-  private static boolean eq_wxaukq_a0a0a0a0a0a4a1(Object a, Object b) {
+
+  private static boolean eq_wxaukq_a0a0a0a0a0a4a2(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }

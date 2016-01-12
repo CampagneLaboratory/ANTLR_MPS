@@ -9,7 +9,7 @@ import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.openapi.editor.EditorContext;
-import org.campagnelab.antlr.tomps.behavior.Mapper_Behavior;
+import org.campagnelab.antlr.tomps.behavior.Mapper__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -27,7 +27,7 @@ public class DestinationRefMenu extends AbstractCellMenuComponent {
     public Mapper_generic_cellMenu_cj4k82_a0() {
     }
     public List<?> createParameterObjects(SNode node, IOperationContext operationContext, EditorContext editorContext) {
-      return Mapper_Behavior.call_linkDeclarations_4068410015139474010(node, Mapper_Behavior.call_concept_558881339903199920(node));
+      return (List<SNode>) Mapper__BehaviorDescriptor.linkDeclarations_id3xPTlDT1UDq.invoke(node, Mapper__BehaviorDescriptor.concept_idv1yTSox$EK.invoke(node));
     }
     protected void handleAction(Object parameterObject, SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
       this.handleAction_impl((SNode) parameterObject, node, model, operationContext, editorContext);
@@ -57,7 +57,7 @@ public class DestinationRefMenu extends AbstractCellMenuComponent {
     public Mapper_generic_cellMenu_cj4k82_b0() {
     }
     public List<?> createParameterObjects(SNode node, IOperationContext operationContext, EditorContext editorContext) {
-      return Mapper_Behavior.call_propertyDeclarations_2860118060023510679(node, Mapper_Behavior.call_concept_558881339903199920(node));
+      return (List<SNode>) Mapper__BehaviorDescriptor.propertyDeclarations_id2uLbzznonqn.invoke(node, Mapper__BehaviorDescriptor.concept_idv1yTSox$EK.invoke(node));
     }
     protected void handleAction(Object parameterObject, SNode node, SModel model, IOperationContext operationContext, EditorContext editorContext) {
       this.handleAction_impl((SNode) parameterObject, node, model, operationContext, editorContext);

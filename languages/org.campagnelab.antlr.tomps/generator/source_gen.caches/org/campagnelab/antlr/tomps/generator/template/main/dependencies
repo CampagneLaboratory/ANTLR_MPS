@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="org.campagnelab.antlr.tomps.generator.template.main.QueriesGenerated" file="QueriesGenerated.java">
-    <classNode dependClassName="java.lang.Boolean" />
-    <classNode dependClassName="java.lang.Class" />
     <classNode dependClassName="java.lang.Integer" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Object" />
@@ -21,10 +19,12 @@
     <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.SModelUtil_new" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="jetbrains.mps.smodel.behaviour.BehaviorReflection" />
-    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.AlternativeMapper_Behavior" />
-    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ConceptMapper_Behavior" />
-    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ConvertToMPS_Behavior" />
+    <classNode dependClassName="org.campagnelab.ANTLR.behavior.ParserRuleBlock__BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.AlternativeMapper__BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ConceptMapper__BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.ConvertToMPS__BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.Destination__BehaviorDescriptor" />
+    <classNode dependClassName="org.campagnelab.antlr.tomps.behavior.Source__BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
   </dependency>

@@ -4,18 +4,26 @@ package org.campagnelab.ANTLR.structure;
 
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.internal.collections.runtime.backports.LinkedList;
+import java.util.LinkedList;
 
 public enum LABELING_OPERATOR {
   _("=", 0),
   __("+=", 1);
 
-  private String myName;
+  private final String myName;
   public String getName() {
-    return this.myName;
+    return myName;
+  }
+  private final int myValue;
+  LABELING_OPERATOR(String name, int value) {
+    myName = name;
+    myValue = value;
+  }
+  public int getValue() {
+    return myValue;
   }
   public String getValueAsString() {
-    return "" + this.myValue;
+    return Integer.toString(myValue);
   }
   public static List<LABELING_OPERATOR> getConstants() {
     List<LABELING_OPERATOR> list = ListSequence.fromList(new LinkedList<LABELING_OPERATOR>());
@@ -37,13 +45,5 @@ public enum LABELING_OPERATOR {
       return LABELING_OPERATOR.__;
     }
     return LABELING_OPERATOR.getDefault();
-  }
-  private int myValue;
-  LABELING_OPERATOR(String name, int value) {
-    this.myName = name;
-    this.myValue = value;
-  }
-  public int getValue() {
-    return this.myValue;
   }
 }

@@ -19,7 +19,7 @@ import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.runtime.ReferencePresentationContext;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.campagnelab.antlr.tomps.behavior.Source_Behavior;
+import org.campagnelab.antlr.tomps.behavior.Source__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.model.SNodeReference;
 import jetbrains.mps.smodel.SNodePointer;
@@ -62,7 +62,7 @@ public class LabeledElementSource_Constraints extends BaseConstraintsDescriptor 
           }
           @Override
           public Object createSearchScopeOrListOfNodes(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
-            return SNodeOperations.getNodeDescendants(Source_Behavior.call_alternative_4068410015137938233(_context.getReferenceNode()), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, "org.campagnelab.ANTLR.structure.LabeledElement"), false, new SAbstractConcept[]{});
+            return SNodeOperations.getNodeDescendants(Source__BehaviorDescriptor.alternative_id3xPTlDSW3GT.invoke(_context.getReferenceNode()), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, "org.campagnelab.ANTLR.structure.LabeledElement"), false, new SAbstractConcept[]{});
           }
           @Override
           public SNodeReference getSearchScopeValidatorNode() {

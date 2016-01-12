@@ -4,26 +4,32 @@ package org.campagnelab.antlr.tomps.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 
+/**
+ * Will be removed after 3.3
+ * Need to support compilation of the legacy behavior descriptors before the language is rebuilt
+ * This class is not involved in the actual method invocation
+ */
+@Deprecated
 public class ChildDestination_BehaviorDescriptor extends Destination_BehaviorDescriptor {
-  public ChildDestination_BehaviorDescriptor() {
+  public SNode virtual_cellModel_1849555336881449838(SNode __thisNode__, String cardinality) {
+    return null;
   }
-  public SNode virtual_cellModel_1849555336881449838(SNode thisNode, String cardinality) {
-    return ChildDestination_Behavior.virtual_cellModel_1849555336881449838(thisNode, cardinality);
+  public String virtual_name_2860118060023810449(SNode __thisNode__) {
+    return null;
   }
-  public String virtual_name_2860118060023810449(SNode thisNode) {
-    return ChildDestination_Behavior.virtual_name_2860118060023810449(thisNode);
+  public SNode virtual_textGenAppendPart_4522383332277577012(SNode __thisNode__, String cardinality) {
+    return null;
   }
-  public SNode virtual_textGenAppendPart_4522383332277577012(SNode thisNode, String cardinality) {
-    return ChildDestination_Behavior.virtual_textGenAppendPart_4522383332277577012(thisNode, cardinality);
+  public SNode virtual_to_1096804516885006638(SNode __thisNode__) {
+    return null;
   }
-  public SNode virtual_to_1096804516885006638(SNode thisNode) {
-    return ChildDestination_Behavior.virtual_to_1096804516885006638(thisNode);
+  public SNode virtual_type_6247096756518626823(SNode __thisNode__) {
+    return null;
   }
-  public SNode virtual_type_6247096756518626823(SNode thisNode) {
-    return ChildDestination_Behavior.virtual_type_6247096756518626823(thisNode);
-  }
+
   @Override
   public String getConceptFqName() {
     return "org.campagnelab.antlr.tomps.structure.ChildDestination";
   }
+
 }

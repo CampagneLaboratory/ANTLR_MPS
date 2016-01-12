@@ -5,21 +5,28 @@ package org.campagnelab.ANTLR.behavior;
 import jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.smodel.behaviour.DefaultValuesHolder;
 
+/**
+ * Will be removed after 3.3
+ * Need to support compilation of the legacy behavior descriptors before the language is rebuilt
+ * This class is not involved in the actual method invocation
+ */
+@Deprecated
 public class Alternative_BehaviorDescriptor extends BaseConcept_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor, INamedConcept_BehaviorDescriptor {
-  public Alternative_BehaviorDescriptor() {
+  public String virtual_getFqName_1213877404258(SNode __thisNode__) {
+    return null;
   }
-  public String virtual_getFqName_1213877404258(SNode thisNode) {
-    return Alternative_Behavior.virtual_getFqName_1213877404258(thisNode);
+  public boolean virtual_needsVisit_3737166271522613971(SNode __thisNode__) {
+    return DefaultValuesHolder.defaultValue(Boolean.TYPE);
   }
-  public boolean virtual_needsVisit_3737166271522613971(SNode thisNode) {
-    return Alternative_Behavior.virtual_needsVisit_3737166271522613971(thisNode);
+  public String virtual_toText_5668935624399900127(SNode __thisNode__) {
+    return null;
   }
-  public String virtual_toText_5668935624399900127(SNode thisNode) {
-    return Alternative_Behavior.virtual_toText_5668935624399900127(thisNode);
-  }
+
   @Override
   public String getConceptFqName() {
     return "org.campagnelab.ANTLR.structure.Alternative";
   }
+
 }
