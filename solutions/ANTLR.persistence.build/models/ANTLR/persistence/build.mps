@@ -290,7 +290,7 @@
       </node>
       <node concept="3_J27D" id="7twz7e84BNJ" role="m$_w8">
         <node concept="3Mxwew" id="1G58HoZCDkP" role="3MwsjC">
-          <property role="3MwjfP" value="1.0.2" />
+          <property role="3MwjfP" value="1.1.2" />
         </node>
       </node>
       <node concept="m$_yC" id="7twz7e84BNM" role="m$_yJ">

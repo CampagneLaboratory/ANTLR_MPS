@@ -7,47 +7,8 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="t2fd" ref="r:76bb4746-3632-407a-baf4-a91dcd5939a8(org.campagnelab.ANTLR45.structure)" />
   </imports>
   <registry>
-    <language id="932d719c-e931-44d5-990c-e115f79b5942" name="org.campagnelab.antlr.tomps">
-      <concept id="558881339902982172" name="org.campagnelab.antlr.tomps.structure.Mapper" flags="ng" index="vgRe2">
-        <child id="5381624775493521528" name="destination" index="F5cX0" />
-        <child id="4068410015138958301" name="source" index="10yyU7" />
-      </concept>
-      <concept id="5381624775493521561" name="org.campagnelab.antlr.tomps.structure.ChildDestination" flags="ng" index="F5cYx">
-        <reference id="5381624775493523154" name="to" index="F5cBE" />
-      </concept>
-      <concept id="4068410015137839069" name="org.campagnelab.antlr.tomps.structure.Source" flags="ng" index="10APa7">
-        <property id="2919715501615800255" name="id" index="2JxzpS" />
-        <property id="228211030963748552" name="cardinality" index="TgrDL" />
-      </concept>
-      <concept id="4068410015137839102" name="org.campagnelab.antlr.tomps.structure.ParserRuleSource" flags="ng" index="10APa$">
-        <reference id="4068410015137840985" name="rule" index="10APC3" />
-      </concept>
-      <concept id="7645898506791953195" name="org.campagnelab.antlr.tomps.structure.AlternativeMapper" flags="ng" index="3c7pc5">
-        <property id="558881339894394992" name="fullText" index="gfBJI" />
-        <property id="558881339894394990" name="id" index="gfBJK" />
-        <reference id="558881339892900180" name="returns" index="gaaFa" />
-        <reference id="7008272901878105559" name="conceptMapper" index="34cEr5" />
-        <reference id="7645898506791953297" name="alternative" index="3c7peZ" />
-        <child id="558881339902982151" name="map" index="vgRep" />
-      </concept>
-      <concept id="7645898506791951234" name="org.campagnelab.antlr.tomps.structure.ConvertToMPS" flags="ng" index="3c7qIG">
-        <property id="2919715501613044585" name="parserCanonicalClassName" index="2In3EI" />
-        <property id="7627187573639936517" name="destinationLanguageName" index="1zNsMP" />
-        <reference id="7645898506791951337" name="grammar" index="3c7qJ7" />
-        <child id="7645898506791953299" name="altMappers" index="3c7peX" />
-        <child id="7627187573639526920" name="conceptMapper" index="1zPSMS" />
-      </concept>
-      <concept id="7627187573639526914" name="org.campagnelab.antlr.tomps.structure.ConceptMapper" flags="ng" index="1zPSMM">
-        <reference id="7627187573639526915" name="concept" index="1zPSMN" />
-        <reference id="7627187573639526917" name="rule" index="1zPSMP" />
-      </concept>
-      <concept id="2860118060022856592" name="org.campagnelab.antlr.tomps.structure.PropertyDestination" flags="ng" index="3KT_mC">
-        <reference id="2860118060022856593" name="to" index="3KT_mD" />
-      </concept>
-    </language>
     <language id="d6782141-eafa-4cf7-a85d-1229abdb1152" name="org.campagnelab.ANTLR">
       <concept id="558881339889629829" name="org.campagnelab.ANTLR.structure.LabeledElement" flags="ng" index="gtF4r">
         <property id="558881339889843987" name="operator" index="guZid" />
@@ -63,7 +24,7 @@
         <property id="8753890222134508762" name="plus" index="2sqUKs" />
       </concept>
       <concept id="987964775448365991" name="org.campagnelab.ANTLR.structure.NotSet" flags="ng" index="2uxNWt">
-        <child id="987964775448366068" name="regexp" index="2uxNXe" />
+        <child id="987964775448366068" name="set" index="2uxNXe" />
       </concept>
       <concept id="987964775451668461" name="org.campagnelab.ANTLR.structure.Range" flags="ng" index="2uOdHn">
         <child id="987964775451668702" name="end" index="2uOch$" />
@@ -126,112 +87,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="3c7qIG" id="WSCumwWVRt">
-    <property role="TrG5h" value="ConvertToMPS_ANTLRv4Parser" />
-    <property role="1zNsMP" value="org.campagnelab.ANTLR45" />
-    <property role="2In3EI" value="org.antlr.ANTLRv4Parser" />
-    <ref role="3c7qJ7" node="v1yTSnTwTB" resolve="R" />
-    <node concept="1zPSMM" id="WSCumwXJX6" role="1zPSMS">
-      <ref role="1zPSMN" to="t2fd:WSCumwXJX8" resolve="GrammarSpec" />
-      <ref role="1zPSMP" node="v1yTSnTzuq" resolve="grammarSpec" />
-    </node>
-    <node concept="1zPSMM" id="WSCumwXMMk" role="1zPSMS">
-      <ref role="1zPSMN" to="t2fd:WSCumwXMMx" resolve="Rules" />
-      <ref role="1zPSMP" node="v1yTSnTzAA" resolve="rules" />
-    </node>
-    <node concept="1zPSMM" id="WSCumwXMMn" role="1zPSMS">
-      <ref role="1zPSMP" node="v1yTSnTzAR" resolve="ruleSpec" />
-      <ref role="1zPSMN" to="t2fd:WSCumwXMMA" resolve="RuleSpec" />
-    </node>
-    <node concept="1zPSMM" id="WSCumwXMMI" role="1zPSMS">
-      <ref role="1zPSMN" to="t2fd:WSCumwXMMN" resolve="ParserRuleSpec" />
-      <ref role="1zPSMP" node="v1yTSnTzBw" resolve="parserRuleSpec" />
-    </node>
-    <node concept="1zPSMM" id="2y4Usu72R0Y" role="1zPSMS">
-      <ref role="1zPSMP" node="v1yTSnTzxZ" resolve="optionValue" />
-      <ref role="1zPSMN" to="t2fd:2y4Usu72R14" resolve="OptionValue" />
-    </node>
-    <node concept="1zPSMM" id="7JSGHIZPwIp" role="1zPSMS">
-      <ref role="1zPSMP" node="v1yTSnTzKb" resolve="lexerElement" />
-      <ref role="1zPSMN" to="t2fd:7JSGHIZPwIN" resolve="LexerElement" />
-    </node>
-    <node concept="3c7pc5" id="WSCumwXJX9" role="3c7peX">
-      <property role="gfBJI" value="&#9;&#9;(DOC_COMMENT grammarType id SEMI prequelConstruct rules modeSpec EOF)&#10;" />
-      <property role="gfBJK" value="grammarSpec:DOC_COMMENTgrammarTypeidSEMIprequelConstructrulesmodeSpec" />
-      <ref role="34cEr5" node="WSCumwXJX6" />
-      <ref role="3c7peZ" node="v1yTSnTzuB" resolve="grammarSpec:" />
-      <ref role="gaaFa" to="t2fd:WSCumwXJX8" resolve="GrammarSpec" />
-      <node concept="vgRe2" id="WSCumwXMMV" role="vgRep">
-        <node concept="3KT_mC" id="WSCumwY5ak" role="F5cX0">
-          <ref role="3KT_mD" to="tpck:h0TrG11" resolve="name" />
-        </node>
-        <node concept="10APa$" id="2y4Usu70cL6" role="10yyU7">
-          <ref role="10APC3" node="v1yTSnT$iI" />
-        </node>
-      </node>
-      <node concept="vgRe2" id="4l9KHP9KwDP" role="vgRep">
-        <node concept="10APa$" id="4l9KHP9KwE1" role="10yyU7">
-          <property role="2JxzpS" value="rules" />
-          <property role="TgrDL" value="0..n" />
-          <ref role="10APC3" node="v1yTSnT$mh" />
-        </node>
-        <node concept="F5cYx" id="7JSGHIZRefl" role="F5cX0">
-          <ref role="F5cBE" to="t2fd:WSCumwY5aD" />
-        </node>
-      </node>
-    </node>
-    <node concept="3c7pc5" id="WSCumwXMMy" role="3c7peX">
-      <property role="gfBJI" value="&#9;&#9;ruleSpec&#10;" />
-      <property role="gfBJK" value="rules:ruleSpec" />
-      <ref role="34cEr5" node="WSCumwXMMk" />
-      <ref role="3c7peZ" node="v1yTSnTzAF" resolve="rules:" />
-    </node>
-    <node concept="3c7pc5" id="WSCumwXMMB" role="3c7peX">
-      <property role="gfBJI" value="&#9;&#9;parserRuleSpec&#10;" />
-      <property role="gfBJK" value="ruleSpec:parserRuleSpec" />
-      <ref role="3c7peZ" node="v1yTSnTzAY" resolve="ruleSpec:" />
-    </node>
-    <node concept="3c7pc5" id="WSCumwXMMC" role="3c7peX">
-      <property role="gfBJI" value="&#9;|&#9;lexerRule&#10;" />
-      <property role="gfBJK" value="ruleSpec:lexerRule" />
-      <ref role="3c7peZ" node="v1yTSnTzB0" resolve="ruleSpec:" />
-    </node>
-    <node concept="3c7pc5" id="WSCumwXMMO" role="3c7peX">
-      <property role="gfBJI" value="&#9;&#9;(DOC_COMMENT ruleModifiers RULE_REF ARG_ACTION ruleReturns throwsSpec localsSpec rulePrequel COLON ruleBlock SEMI exceptionGroup)&#10;" />
-      <property role="gfBJK" value="parserRuleSpec:DOC_COMMENTruleModifiersRULE_REFruleReturnsthrowsSpeclocalsSpecrulePrequelCOLONruleBlockSEMIexceptionGroup" />
-      <ref role="3c7peZ" node="v1yTSnTzBL" resolve="parserRuleSpec:" />
-      <ref role="34cEr5" node="WSCumwXMMI" />
-      <ref role="gaaFa" to="t2fd:7JSGHIZPwIX" resolve="DocCommentParserRuleSpec" />
-    </node>
-    <node concept="3c7pc5" id="7JSGHIZPwIw" role="3c7peX">
-      <property role="gfBJI" value="&#9;&#9;(labeledLexerElement ebnfSuffix)&#10;" />
-      <property role="gfBJK" value="lexerElement:labeledLexerElementebnfSuffix" />
-      <ref role="3c7peZ" node="v1yTSnTzKu" resolve="lexerElement:" />
-      <ref role="34cEr5" node="7JSGHIZPwIp" />
-      <ref role="gaaFa" to="t2fd:7JSGHIZPwIY" resolve="Label_ALexerElement" />
-    </node>
-    <node concept="3c7pc5" id="7JSGHIZPwIx" role="3c7peX">
-      <property role="gfBJI" value="&#9;|&#9;(lexerAtom ebnfSuffix)&#10;" />
-      <property role="gfBJK" value="lexerElement:lexerAtomebnfSuffix" />
-      <ref role="3c7peZ" node="v1yTSnTzKy" resolve="lexerElement:" />
-      <ref role="34cEr5" node="7JSGHIZPwIp" />
-      <ref role="gaaFa" to="t2fd:7JSGHIZPwIZ" resolve="Label_BLexerElement" />
-    </node>
-    <node concept="3c7pc5" id="7JSGHIZPwIy" role="3c7peX">
-      <property role="gfBJI" value="&#9;|&#9;(lexerBlock ebnfSuffix)&#10;" />
-      <property role="gfBJK" value="lexerElement:lexerBlockebnfSuffix" />
-      <ref role="3c7peZ" node="v1yTSnTzKA" resolve="lexerElement:" />
-      <ref role="34cEr5" node="7JSGHIZPwIp" />
-      <ref role="gaaFa" to="t2fd:7JSGHIZPwJ0" resolve="Label_CLexerElement" />
-    </node>
-    <node concept="3c7pc5" id="7JSGHIZPwIz" role="3c7peX">
-      <property role="gfBJI" value="&#9;|&#9;(ACTION QUESTION)&#10;" />
-      <property role="gfBJK" value="lexerElement:ACTIONQUESTION" />
-      <ref role="3c7peZ" node="v1yTSnTzKE" resolve="lexerElement:" />
-      <ref role="34cEr5" node="7JSGHIZPwIp" />
-      <ref role="gaaFa" to="t2fd:7JSGHIZPwJ1" resolve="ACTIONLexerElement" />
-    </node>
-  </node>
   <node concept="1Mbc_a" id="QPXbEj2B9J">
     <property role="TrG5h" value="ANTLRv4Lexer" />
     <node concept="2ZQmVp" id="v1yTSnBTXF" role="1Mb3fo">
