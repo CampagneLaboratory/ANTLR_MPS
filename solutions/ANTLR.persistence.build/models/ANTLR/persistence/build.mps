@@ -289,8 +289,8 @@
         </node>
       </node>
       <node concept="3_J27D" id="7twz7e84BNJ" role="m$_w8">
-        <node concept="3Mxwew" id="1G58HoZCDkP" role="3MwsjC">
-          <property role="3MwjfP" value="1.1.2" />
+        <node concept="3Mxwey" id="1B4O4QQWhou" role="3MwsjC">
+          <ref role="3Mxwex" node="3gMg70bX6Gp" resolve="ANTLR_version" />
         </node>
       </node>
       <node concept="m$_yC" id="7twz7e84BNM" role="m$_yJ">

@@ -36,7 +36,7 @@
         <id>org.campagnelab.ANTLR</id>
         <name>org.campagnelab.ANTLR</name>
         <description>ANTLR and org.campagnelab.antrl.tomps languages. The ToMPS language helps develop ANTLR-compatible visitors to parse text into nodes of an MPS language. ToMPS also provide support to create concepts of a new MPS language (whose nodes will be populated by the parser), using the ANTLR grammar as a guide. Note that version ${ANTLR_version} only includes the subset of ANTLR that we needed to model to implement the R language. Sadly, no documentation is available at this point and the language is unpolished. Reference build: ${build_number} in branch ${reference_branch} and with commit : ${reference_commit}.</description>
-        <version>1.1.2</version>
+        <version>${ANTLR_version}</version>
         <vendor url="http://books.campagnelab.org">Campagne Laboratory</vendor>
         <depends>jetbrains.mps.core</depends>
         <idea-version since-build="143.1" until-build="144.1" />
