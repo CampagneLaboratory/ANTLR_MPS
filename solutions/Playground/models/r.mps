@@ -2,19 +2,19 @@
 <model ref="r:fd655095-2cc0-4194-b260-1a299a2f310d(r)">
   <persistence version="9" />
   <languages>
-    <use id="3b58810c-8431-4bbb-99ea-b4671e02dd13" name="org.campagnelab.metar.R" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="0" />
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="93bc01ac-08ca-4f11-9c7d-614d04055dfb" name="org.campagnelab.mps.editor2pdf" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="3b58810c-8431-4bbb-99ea-b4671e02dd13" name="org.campagnelab.metar.R" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports />
   <registry>
@@ -39,7 +39,6 @@
         <child id="4798834304115073747" name="params" index="2i902c" />
       </concept>
       <concept id="4798834304115080350" name="org.campagnelab.metar.R.structure.ParameterDeclaration" flags="ng" index="2i91V1">
-        <property id="4798834304115080702" name="id" index="2i91Yx" />
         <child id="4798834304115080355" name="defaultValue" index="2i91VW" />
       </concept>
       <concept id="1229604057012669901" name="org.campagnelab.metar.R.structure.BooleanLiteral" flags="ng" index="pzIeH">
@@ -90,7 +89,7 @@
         <child id="489068675546663434" name="expression" index="22sOXk" />
         <child id="489068675546663431" name="operator" index="22sOXp" />
       </concept>
-      <concept id="6176023809880685262" name="org.campagnelab.metar.R.structure.ProgramProg" flags="ng" index="2PZPSw" />
+      <concept id="6176023809880685262" name="org.campagnelab.metar.R.structure.RScript" flags="ng" index="2PZPSw" />
       <concept id="6176023809880685261" name="org.campagnelab.metar.R.structure.Prog" flags="ng" index="2PZPSz">
         <child id="1229604057017832866" name="expressions" index="pZjJ2" />
       </concept>
@@ -123,13 +122,13 @@
       <node concept="2PZJp5" id="CXOTd8womX" role="2v3moI">
         <node concept="2i91V0" id="CXOTd8won1" role="1LvdYw">
           <node concept="2i91V1" id="CXOTd8won2" role="2i902c">
-            <property role="2i91Yx" value="id" />
+            <property role="TrG5h" value="id" />
             <node concept="2PZJpm" id="CXOTd8won3" role="2i91VW">
               <property role="pzxGI" value="2" />
             </node>
           </node>
           <node concept="2i91V1" id="CXOTd8won4" role="2i902c">
-            <property role="2i91Yx" value="param" />
+            <property role="TrG5h" value="param" />
           </node>
         </node>
         <node concept="2PZJp3" id="CXOTd8won5" role="1LvdYI">
@@ -171,7 +170,7 @@
         <node concept="V6WaU" id="CXOTd8xLNM" role="gNbrm">
           <node concept="V6WaX" id="CXOTd8xLNT" role="gNbhV">
             <property role="gNbhX" value="id" />
-            <ref role="eUkdk" node="CXOTd8won2" />
+            <ref role="eUkdk" node="CXOTd8won2" resolve="id" />
             <node concept="2PZJpm" id="CXOTd8xLNV" role="gNbhV">
               <property role="pzxGI" value="4" />
             </node>
