@@ -199,12 +199,16 @@
       <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
+        <child id="3542851458883491298" name="languageId" index="2V$M_3" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
-      <concept id="4357968816427488499" name="jetbrains.mps.lang.smodel.structure.CheckedModuleReference" flags="nn" index="2L6k_Z">
-        <property id="4357968816427488500" name="moduleId" index="2L6k_S" />
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -1414,22 +1418,18 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6otXYHBgt24" role="3cqZAp">
-          <node concept="2OqwBi" id="6otXYHBgt7J" role="3clFbG">
-            <node concept="37vLTw" id="6otXYHBgt7I" role="2Oq$k0">
+        <node concept="3clFbF" id="2Qw8u_blRLs" role="3cqZAp">
+          <node concept="2OqwBi" id="2Qw8u_blRLt" role="3clFbG">
+            <node concept="37vLTw" id="2Qw8u_blRLu" role="2Oq$k0">
               <ref role="3cqZAo" node="6otXYHBgt1A" resolve="sModel" />
             </node>
-            <node concept="liA8E" id="6otXYHBgt7K" role="2OqNvi">
-              <ref role="37wK5l" to="w1kc:~SModel.addLanguage(org.jetbrains.mps.openapi.language.SLanguage,int):void" resolve="addLanguage" />
-              <node concept="2YIFZM" id="5L$rds1rvee" role="37wK5m">
-                <ref role="1Pybhc" to="e8bb:~MetaIdByDeclaration" resolve="MetaIdByDeclaration" />
-                <ref role="37wK5l" to="e8bb:~MetaIdByDeclaration.ref2Id(org.jetbrains.mps.openapi.module.SModuleReference):org.jetbrains.mps.openapi.language.SLanguage" resolve="ref2Id" />
-                <node concept="2L6k_Z" id="3ua3KnoOUNQ" role="37wK5m">
-                  <property role="2L6k_S" value="d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)" />
+            <node concept="liA8E" id="2Qw8u_blRLv" role="2OqNvi">
+              <ref role="37wK5l" to="w1kc:~SModel.addLanguage(org.jetbrains.mps.openapi.language.SLanguage):void" resolve="addLanguage" />
+              <node concept="pHN19" id="2Qw8u_blRLw" role="37wK5m">
+                <node concept="2V$Bhx" id="2Qw8u_blRLx" role="2V$M_3">
+                  <property role="2V$B1T" value="d6782141-eafa-4cf7-a85d-1229abdb1152" />
+                  <property role="2V$B1Q" value="org.campagnelab.ANTLR" />
                 </node>
-              </node>
-              <node concept="3cmrfG" id="kUjKK88Trl" role="37wK5m">
-                <property role="3cmrfH" value="0" />
               </node>
             </node>
           </node>
@@ -1787,22 +1787,18 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="5U7ZKlHLNB1" role="3cqZAp">
-              <node concept="2OqwBi" id="5U7ZKlHLNB2" role="3clFbG">
-                <node concept="37vLTw" id="5U7ZKlHLNB3" role="2Oq$k0">
+            <node concept="3clFbF" id="2Qw8u_blOtL" role="3cqZAp">
+              <node concept="2OqwBi" id="2Qw8u_blPwJ" role="3clFbG">
+                <node concept="37vLTw" id="2Qw8u_blOtJ" role="2Oq$k0">
                   <ref role="3cqZAo" node="6otXYHBgt39" resolve="sModel" />
                 </node>
-                <node concept="liA8E" id="5U7ZKlHLNB4" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~SModel.addLanguage(org.jetbrains.mps.openapi.language.SLanguage,int):void" resolve="addLanguage" />
-                  <node concept="2YIFZM" id="5U7ZKlHLNB5" role="37wK5m">
-                    <ref role="37wK5l" to="e8bb:~MetaIdByDeclaration.ref2Id(org.jetbrains.mps.openapi.module.SModuleReference):org.jetbrains.mps.openapi.language.SLanguage" resolve="ref2Id" />
-                    <ref role="1Pybhc" to="e8bb:~MetaIdByDeclaration" resolve="MetaIdByDeclaration" />
-                    <node concept="2L6k_Z" id="5U7ZKlHLNB6" role="37wK5m">
-                      <property role="2L6k_S" value="d6782141-eafa-4cf7-a85d-1229abdb1152(org.campagnelab.ANTLR)" />
+                <node concept="liA8E" id="2Qw8u_blQ7m" role="2OqNvi">
+                  <ref role="37wK5l" to="w1kc:~SModel.addLanguage(org.jetbrains.mps.openapi.language.SLanguage):void" resolve="addLanguage" />
+                  <node concept="pHN19" id="2Qw8u_blQ8K" role="37wK5m">
+                    <node concept="2V$Bhx" id="2Qw8u_blQgt" role="2V$M_3">
+                      <property role="2V$B1T" value="d6782141-eafa-4cf7-a85d-1229abdb1152" />
+                      <property role="2V$B1Q" value="org.campagnelab.ANTLR" />
                     </node>
-                  </node>
-                  <node concept="3cmrfG" id="5U7ZKlHLNB7" role="37wK5m">
-                    <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
