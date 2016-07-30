@@ -276,6 +276,10 @@
       <property role="TrG5h" value="hasTrim" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="17lRZg6Dc4X" role="1TKVEl">
+      <property role="TrG5h" value="forceGetText" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="6$il$X2a3fs" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="rule" />

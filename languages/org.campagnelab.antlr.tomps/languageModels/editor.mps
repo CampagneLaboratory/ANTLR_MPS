@@ -1981,6 +1981,22 @@
       <node concept="PMmxH" id="4gYz4fZJjw0" role="3EZMnx">
         <ref role="PMmxG" node="cELb$UqS24" resolve="SourceEditorComponent" />
       </node>
+      <node concept="3F0ifn" id="17lRZg6Ecqr" role="3EZMnx">
+        <property role="3F0ifm" value=".getText()" />
+        <node concept="pkWqt" id="17lRZg6Ecsg" role="pqm2j">
+          <node concept="3clFbS" id="17lRZg6Ecsh" role="2VODD2">
+            <node concept="3clFbF" id="17lRZg6EcsU" role="3cqZAp">
+              <node concept="2OqwBi" id="17lRZg6Ecvx" role="3clFbG">
+                <node concept="pncrf" id="17lRZg6EcsT" role="2Oq$k0" />
+                <node concept="3TrcHB" id="17lRZg6EcBY" role="2OqNvi">
+                  <ref role="3TsBF5" to="3elq:17lRZg6Dc4X" resolve="forceGetText" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Vb9p2" id="17lRZg6EcFV" role="3F10Kt" />
+      </node>
     </node>
     <node concept="3EZMnI" id="3V2IUSrI$uQ" role="6VMZX">
       <node concept="l2Vlx" id="3V2IUSrI$uR" role="2iSdaV" />
