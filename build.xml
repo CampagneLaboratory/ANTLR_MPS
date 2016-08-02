@@ -7,7 +7,7 @@
   <property name="mps_home" location="" />
   <property name="plugins_home" location="${mps_home}/plugins" />
   <property name="ANTLR_HOME" location="${basedir}" />
-  <property name="ANTLR_version" value="1.1.0" />
+  <property name="ANTLR_version" value="1.1.1" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.mpsCore" location="${mps_home}/plugins" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
@@ -488,7 +488,7 @@
   <target name="java.compile.org.campagnelab.antlr.parsers" depends="java.compile.org.campagnelab.ANTLR, fetchDependencies">
     <mkdir dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.parsers/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.antlr.parsers" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.parsers" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.parsers" fork="true" encoding="utf8" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${ANTLR_HOME}/solutions/org.campagnelab.antlr.parsers/source_gen" />
@@ -529,7 +529,7 @@
   <target name="java.compile.org.campagnelab.ANTLR" depends="fetchDependencies">
     <mkdir dir="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.ANTLR" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.ANTLR" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.ANTLR" fork="true" encoding="utf8" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/source_gen" />
@@ -567,7 +567,7 @@
   <target name="java.compile.org.campagnelab.antlr.tomps" depends="java.compile.org.campagnelab.ANTLR, fetchDependencies">
     <mkdir dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.antlr.tomps" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.tomps" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.tomps" fork="true" encoding="utf8" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/source_gen" />
@@ -619,7 +619,7 @@
   <target name="java.compile.org.campagnelab.antlr.tomps#7645898506791942665" depends="java.compile.org.campagnelab.ANTLR, java.compile.org.campagnelab.antlr.tomps, fetchDependencies">
     <mkdir dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.antlr.tomps#7645898506791942665" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.tomps#7645898506791942665" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.tomps#7645898506791942665" fork="true" encoding="utf8" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/generator/source_gen" />
@@ -663,7 +663,7 @@
   <target name="java.compile.org.campagnelab.antlr.plugin" depends="java.compile.org.campagnelab.ANTLR, java.compile.org.campagnelab.antlr.parsers, fetchDependencies">
     <mkdir dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.plugin/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.antlr.plugin" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.plugin" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.plugin" fork="true" encoding="utf8" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${ANTLR_HOME}/solutions/org.campagnelab.antlr.plugin/source_gen" />
