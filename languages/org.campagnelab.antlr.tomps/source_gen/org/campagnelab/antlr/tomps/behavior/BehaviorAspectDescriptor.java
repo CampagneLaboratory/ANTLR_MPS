@@ -4,12 +4,12 @@ package org.campagnelab.antlr.tomps.behavior;
 
 import jetbrains.mps.core.aspects.behaviour.BaseBehaviorAspectDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.BHDescriptor;
-import jetbrains.mps.smodel.runtime.BehaviorDescriptor;
-import jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.smodel.adapter.ids.SConceptId;
-import java.util.Arrays;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import java.util.Map;
+import java.util.HashMap;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
   private final BHDescriptor myToOperator__BehaviorDescriptor = new ToOperator__BehaviorDescriptor();
@@ -31,79 +31,119 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
   private final BHDescriptor myConvertToMPS__BehaviorDescriptor = new ConvertToMPS__BehaviorDescriptor();
   private final BHDescriptor myAlternativeMapper__BehaviorDescriptor = new AlternativeMapper__BehaviorDescriptor();
 
-  private final long[] myConceptBehaviorIds;
-
   public BehaviorAspectDescriptor() {
-    myConceptBehaviorIds = new long[18];
-    myConceptBehaviorIds[0] = 0x6c9855e848a0c58L;
-    myConceptBehaviorIds[1] = 0x7c18b9e1882f81cL;
-    myConceptBehaviorIds[2] = 0x11106e6008e38ee7L;
-    myConceptBehaviorIds[3] = 0x195a5f84d619bfbdL;
-    myConceptBehaviorIds[4] = 0x27b12e38d7577b90L;
-    myConceptBehaviorIds[5] = 0x3875e55a78eeb7ddL;
-    myConceptBehaviorIds[6] = 0x3875e55a78eeb7feL;
-    myConceptBehaviorIds[7] = 0x3ec2bbae1a5cc460L;
-    myConceptBehaviorIds[8] = 0x443e8c43ffc0edbfL;
-    myConceptBehaviorIds[9] = 0x443e8c43ffcc4608L;
-    myConceptBehaviorIds[10] = 0x443e8c43ffcf6763L;
-    myConceptBehaviorIds[11] = 0x4aaf5f3861adfe77L;
-    myConceptBehaviorIds[12] = 0x4aaf5f3861bb9098L;
-    myConceptBehaviorIds[13] = 0x4aaf5f3861bb9099L;
-    myConceptBehaviorIds[14] = 0x6912564f422833dbL;
-    myConceptBehaviorIds[15] = 0x69d936b00a0eba02L;
-    myConceptBehaviorIds[16] = 0x6a1bb02ea6061b82L;
-    myConceptBehaviorIds[17] = 0x6a1bb02ea606232bL;
-  }
-
-  @Deprecated
-  @Override
-  public BehaviorDescriptor getDescriptor(String fqName) {
-    return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
   }
 
   @Nullable
-  @Override
-  public BHDescriptor getDescriptor(@NotNull SConceptId conceptId) {
-    int behaviorIndex = Arrays.binarySearch(myConceptBehaviorIds, conceptId.getIdValue());
-    switch (behaviorIndex) {
-      case 0:
-        return myToOperator__BehaviorDescriptor;
-      case 1:
-        return myMapper__BehaviorDescriptor;
-      case 2:
-        return myNewVisitor__BehaviorDescriptor;
-      case 3:
-        return myOperator__BehaviorDescriptor;
-      case 4:
-        return myPropertyDestination__BehaviorDescriptor;
-      case 5:
-        return mySource__BehaviorDescriptor;
-      case 6:
-        return myParserRuleSource__BehaviorDescriptor;
-      case 7:
-        return myTextGenHelper__BehaviorDescriptor;
-      case 8:
-        return myToIntDestination__BehaviorDescriptor;
-      case 9:
-        return myToBooleanDestination__BehaviorDescriptor;
-      case 10:
-        return myToFloatDestination__BehaviorDescriptor;
-      case 11:
-        return myLabeledElementSource__BehaviorDescriptor;
-      case 12:
-        return myDestination__BehaviorDescriptor;
-      case 13:
-        return myChildDestination__BehaviorDescriptor;
-      case 14:
-        return myLexerRuleSource__BehaviorDescriptor;
-      case 15:
-        return myConceptMapper__BehaviorDescriptor;
-      case 16:
-        return myConvertToMPS__BehaviorDescriptor;
-      case 17:
-        return myAlternativeMapper__BehaviorDescriptor;
-      default:
-        return null;
+  public BHDescriptor getDescriptor(@NotNull SAbstractConcept concept) {
+    {
+      SAbstractConcept cncpt = concept;
+      Integer preIndex = indices_846f5o_a0v.get(cncpt);
+      int switchIndex = (preIndex == null ? -1 : preIndex);
+      switch (switchIndex) {
+        case 0:
+          if (true) {
+            return myAlternativeMapper__BehaviorDescriptor;
+          }
+          break;
+        case 1:
+          if (true) {
+            return myChildDestination__BehaviorDescriptor;
+          }
+          break;
+        case 2:
+          if (true) {
+            return myConceptMapper__BehaviorDescriptor;
+          }
+          break;
+        case 3:
+          if (true) {
+            return myConvertToMPS__BehaviorDescriptor;
+          }
+          break;
+        case 4:
+          if (true) {
+            return myDestination__BehaviorDescriptor;
+          }
+          break;
+        case 5:
+          if (true) {
+            return myLabeledElementSource__BehaviorDescriptor;
+          }
+          break;
+        case 6:
+          if (true) {
+            return myLexerRuleSource__BehaviorDescriptor;
+          }
+          break;
+        case 7:
+          if (true) {
+            return myMapper__BehaviorDescriptor;
+          }
+          break;
+        case 8:
+          if (true) {
+            return myNewVisitor__BehaviorDescriptor;
+          }
+          break;
+        case 9:
+          if (true) {
+            return myOperator__BehaviorDescriptor;
+          }
+          break;
+        case 10:
+          if (true) {
+            return myParserRuleSource__BehaviorDescriptor;
+          }
+          break;
+        case 11:
+          if (true) {
+            return myPropertyDestination__BehaviorDescriptor;
+          }
+          break;
+        case 12:
+          if (true) {
+            return mySource__BehaviorDescriptor;
+          }
+          break;
+        case 13:
+          if (true) {
+            return myTextGenHelper__BehaviorDescriptor;
+          }
+          break;
+        case 14:
+          if (true) {
+            return myToBooleanDestination__BehaviorDescriptor;
+          }
+          break;
+        case 15:
+          if (true) {
+            return myToFloatDestination__BehaviorDescriptor;
+          }
+          break;
+        case 16:
+          if (true) {
+            return myToIntDestination__BehaviorDescriptor;
+          }
+          break;
+        case 17:
+          if (true) {
+            return myToOperator__BehaviorDescriptor;
+          }
+          break;
+        default:
+          // default 
+      }
     }
+    return null;
   }
+  private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {
+    HashMap<SAbstractConcept, Integer> res = new HashMap<SAbstractConcept, Integer>();
+    int counter = 0;
+    for (SAbstractConcept c : concepts) {
+      res.put(c, counter++);
+    }
+    return res;
+  }
+  private static final Map<SAbstractConcept, Integer> indices_846f5o_a0v = buildConceptIndices(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, "org.campagnelab.antlr.tomps.structure.AlternativeMapper"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861bb9099L, "org.campagnelab.antlr.tomps.structure.ChildDestination"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x69d936b00a0eba02L, "org.campagnelab.antlr.tomps.structure.ConceptMapper"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, "org.campagnelab.antlr.tomps.structure.ConvertToMPS"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861bb9098L, "org.campagnelab.antlr.tomps.structure.Destination"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861adfe77L, "org.campagnelab.antlr.tomps.structure.LabeledElementSource"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6912564f422833dbL, "org.campagnelab.antlr.tomps.structure.LexerRuleSource"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, "org.campagnelab.antlr.tomps.structure.Mapper"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x11106e6008e38ee7L, "org.campagnelab.antlr.tomps.structure.NewVisitor"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, "org.campagnelab.antlr.tomps.structure.Operator"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7feL, "org.campagnelab.antlr.tomps.structure.ParserRuleSource"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x27b12e38d7577b90L, "org.campagnelab.antlr.tomps.structure.PropertyDestination"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7ddL, "org.campagnelab.antlr.tomps.structure.Source"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3ec2bbae1a5cc460L, "org.campagnelab.antlr.tomps.structure.TextGenHelper"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffcc4608L, "org.campagnelab.antlr.tomps.structure.ToBooleanDestination"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffcf6763L, "org.campagnelab.antlr.tomps.structure.ToFloatDestination"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffc0edbfL, "org.campagnelab.antlr.tomps.structure.ToIntDestination"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6c9855e848a0c58L, "org.campagnelab.antlr.tomps.structure.ToOperator"));
 }

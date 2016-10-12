@@ -4,7 +4,7 @@ package org.campagnelab.antlr.tomps.behavior;
 
 
 /**
- * Will be removed after 3.3
+ * Will be removed after 3.4
  * Need to support compilation of the legacy behavior descriptors before the language is rebuilt
  * This interface is not involved in the actual method invocation
  */

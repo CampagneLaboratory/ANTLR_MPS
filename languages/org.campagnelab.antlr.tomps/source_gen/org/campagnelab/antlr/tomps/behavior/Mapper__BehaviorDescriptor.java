@@ -62,7 +62,7 @@ public final class Mapper__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static void someMethod_id5qM9mr9FXqp(@NotNull SNode __thisNode__) {
     List<SNode> list = new ArrayList<SNode>();
     List<SNode> other = new ArrayList<SNode>();
-    SNode example = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861a15c43L, "org.campagnelab.antlr.tomps.structure.ExampleConcept")));
+    SNode example = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861a15c43L, "org.campagnelab.antlr.tomps.structure.ExampleConcept"));
     {
       Iterator<SNode> element_it = ListSequence.fromList(list).iterator();
       SNode element_var;

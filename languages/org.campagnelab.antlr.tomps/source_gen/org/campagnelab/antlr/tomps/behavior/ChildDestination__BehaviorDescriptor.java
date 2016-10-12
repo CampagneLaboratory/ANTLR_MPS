@@ -18,12 +18,12 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.smodel.SModelUtil_new;
 import org.jetbrains.mps.openapi.model.SNodeAccessUtil;
@@ -52,8 +52,9 @@ public final class ChildDestination__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ static SNode type_id5qM9mr9Mqo7(@NotNull SNode __thisNode__) {
     return null;
   }
+  protected static Logger LOG = LogManager.getLogger(ChildDestination__BehaviorDescriptor.class);
   /*package*/ static SNode cellModel_id1AEWcuffMHI(@NotNull SNode __thisNode__, String cardinality) {
-    if (eq_5ab1t5_a0a0a61_0(cardinality, "0..n") || eq_5ab1t5_a0a0a61(cardinality, "1..n")) {
+    if (eq_5ab1t5_a0a0a71_0(cardinality, "0..n") || eq_5ab1t5_a0a0a71(cardinality, "1..n")) {
       if (LOG.isInfoEnabled()) {
         LOG.info("visiting destination (child[..n])");
       }
@@ -71,7 +72,7 @@ public final class ChildDestination__BehaviorDescriptor extends BaseBHDescriptor
     if (LOG.isInfoEnabled()) {
       LOG.info("visiting textGen " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861bb9099L, 0x4aaf5f3861bb96d2L, "to"))));
     }
-    if (eq_5ab1t5_a0a1a71_0(cardinality, "0..n") || eq_5ab1t5_a0a1a71(cardinality, "1..n")) {
+    if (eq_5ab1t5_a0a1a81_0(cardinality, "0..n") || eq_5ab1t5_a0a1a81(cardinality, "1..n")) {
       if (LOG.isInfoEnabled()) {
         LOG.info("visiting destination (child[..n])");
       }
@@ -140,7 +141,6 @@ public final class ChildDestination__BehaviorDescriptor extends BaseBHDescriptor
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  protected static Logger LOG = LogManager.getLogger(ChildDestination__BehaviorDescriptor.class);
   private static SNode _quotation_createNode_g7uedr_a1a0a3(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;
@@ -187,16 +187,16 @@ public final class ChildDestination__BehaviorDescriptor extends BaseBHDescriptor
     }
     return n1;
   }
-  private static boolean eq_5ab1t5_a0a0a61(Object a, Object b) {
+  private static boolean eq_5ab1t5_a0a0a71(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean eq_5ab1t5_a0a0a61_0(Object a, Object b) {
+  private static boolean eq_5ab1t5_a0a0a71_0(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean eq_5ab1t5_a0a1a71(Object a, Object b) {
+  private static boolean eq_5ab1t5_a0a1a81(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
-  private static boolean eq_5ab1t5_a0a1a71_0(Object a, Object b) {
+  private static boolean eq_5ab1t5_a0a1a81_0(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }

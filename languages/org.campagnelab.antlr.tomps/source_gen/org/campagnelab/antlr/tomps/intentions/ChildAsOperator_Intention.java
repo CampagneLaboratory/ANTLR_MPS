@@ -15,6 +15,7 @@ import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import jetbrains.mps.intentions.IntentionExecutableBase;
+import jetbrains.mps.intentions.ParameterizedIntentionExecutable;
 import java.util.Arrays;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -50,7 +51,7 @@ public final class ChildAsOperator_Intention extends IntentionDescriptorBase imp
   private List<String> parameter(final SNode node, final EditorContext editorContext) {
     return ListSequence.fromListAndArray(new ArrayList<String>(), "operator");
   }
-  /*package*/ final class IntentionImplementation extends IntentionExecutableBase {
+  /*package*/ final class IntentionImplementation extends IntentionExecutableBase implements ParameterizedIntentionExecutable {
     private String myParameter;
     public IntentionImplementation(String parameter) {
       myParameter = parameter;
@@ -63,7 +64,7 @@ public final class ChildAsOperator_Intention extends IntentionDescriptorBase imp
     public void execute(final SNode node, final EditorContext editorContext) {
       switch (Arrays.binarySearch(stringSwitchCases_rfm7hr_a0a0d6, myParameter)) {
         case 0:
-          SNode toOp = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6c9855e848a0c58L, "org.campagnelab.antlr.tomps.structure.ToOperator")));
+          SNode toOp = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6c9855e848a0c58L, "org.campagnelab.antlr.tomps.structure.ToOperator"));
           SNodeOperations.replaceWithAnother(node, toOp);
           SLinkOperations.setTarget(toOp, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6c9855e848a0c58L, 0x6c9855e848a14cfL, "toConvert"), node);
           break;
@@ -73,6 +74,9 @@ public final class ChildAsOperator_Intention extends IntentionDescriptorBase imp
     @Override
     public IntentionDescriptor getDescriptor() {
       return ChildAsOperator_Intention.this;
+    }
+    public Object getParameter() {
+      return myParameter;
     }
   }
   private static String[] stringSwitchCases_rfm7hr_a0a0d6 = new String[]{"operator"};

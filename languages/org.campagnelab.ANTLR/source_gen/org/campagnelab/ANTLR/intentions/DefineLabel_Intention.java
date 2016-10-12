@@ -19,6 +19,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.intentions.IntentionExecutableBase;
+import jetbrains.mps.intentions.ParameterizedIntentionExecutable;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.intentions.IntentionDescriptor;
@@ -56,7 +57,7 @@ public final class DefineLabel_Intention extends IntentionDescriptorBase impleme
       }
     }).distinct().toListSequence();
   }
-  /*package*/ final class IntentionImplementation extends IntentionExecutableBase {
+  /*package*/ final class IntentionImplementation extends IntentionExecutableBase implements ParameterizedIntentionExecutable {
     private String myParameter;
     public IntentionImplementation(String parameter) {
       myParameter = parameter;
@@ -67,7 +68,7 @@ public final class DefineLabel_Intention extends IntentionDescriptorBase impleme
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNode labeled = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, "org.campagnelab.ANTLR.structure.LabeledElement")));
+      SNode labeled = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, "org.campagnelab.ANTLR.structure.LabeledElement"));
       SNodeOperations.replaceWithAnother(node, labeled);
       SLinkOperations.setTarget(labeled, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, 0x7c18b9e17b7c72fL, "element"), node);
       SPropertyOperations.set(labeled, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), myParameter);
@@ -75,6 +76,9 @@ public final class DefineLabel_Intention extends IntentionDescriptorBase impleme
     @Override
     public IntentionDescriptor getDescriptor() {
       return DefineLabel_Intention.this;
+    }
+    public Object getParameter() {
+      return myParameter;
     }
   }
 }

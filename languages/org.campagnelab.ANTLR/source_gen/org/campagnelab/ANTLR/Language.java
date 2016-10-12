@@ -5,8 +5,6 @@ package org.campagnelab.ANTLR;
 import jetbrains.mps.smodel.language.LanguageRuntime;
 import jetbrains.mps.smodel.adapter.ids.SLanguageId;
 import java.util.UUID;
-import java.util.Collection;
-import jetbrains.mps.generator.runtime.TemplateModule;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor;
 import jetbrains.mps.actions.descriptor.BaseActionAspectDescriptor;
@@ -16,7 +14,11 @@ import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import org.campagnelab.ANTLR.editor.EditorAspectDescriptorImpl;
 import jetbrains.mps.intentions.IntentionAspectDescriptor;
 import org.campagnelab.ANTLR.intentions.IntentionsDescriptor;
+import jetbrains.mps.lang.migration.runtime.base.MigrationAspectDescriptor;
+import org.campagnelab.ANTLR.migration.MigrationDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
+import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
+import org.campagnelab.ANTLR.structure.ConceptPresentationAspectImpl;
 import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
 import org.campagnelab.ANTLR.typesystem.TypesystemDescriptor;
 
@@ -42,31 +44,51 @@ public class Language extends LanguageRuntime {
     return new String[]{};
   }
   @Override
-  public Collection<TemplateModule> getGenerators() {
-    return null;
-  }
-  @Override
   protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
-    if (aspectClass == ActionAspectDescriptor.class) {
-      return (T) new BaseActionAspectDescriptor();
+    if (aspectClass.getName().equals("jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor")) {
+      if (aspectClass == ActionAspectDescriptor.class) {
+        return (T) new BaseActionAspectDescriptor();
+      }
     }
-    if (aspectClass == BehaviorAspectDescriptor.class) {
-      return (T) new org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor();
+    if (aspectClass.getName().equals("jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor")) {
+      if (aspectClass == BehaviorAspectDescriptor.class) {
+        return (T) new org.campagnelab.ANTLR.behavior.BehaviorAspectDescriptor();
+      }
     }
-    if (aspectClass == ConstraintsAspectDescriptor.class) {
-      return (T) new org.campagnelab.ANTLR.constraints.ConstraintsAspectDescriptor();
+    if (aspectClass.getName().equals("jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor")) {
+      if (aspectClass == ConstraintsAspectDescriptor.class) {
+        return (T) new org.campagnelab.ANTLR.constraints.ConstraintsAspectDescriptor();
+      }
     }
-    if (aspectClass == EditorAspectDescriptor.class) {
-      return (T) new EditorAspectDescriptorImpl();
+    if (aspectClass.getName().equals("jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor")) {
+      if (aspectClass == EditorAspectDescriptor.class) {
+        return (T) new EditorAspectDescriptorImpl();
+      }
     }
-    if (aspectClass == IntentionAspectDescriptor.class) {
-      return (T) new IntentionsDescriptor();
+    if (aspectClass.getName().equals("jetbrains.mps.intentions.IntentionAspectDescriptor")) {
+      if (aspectClass == IntentionAspectDescriptor.class) {
+        return (T) new IntentionsDescriptor();
+      }
     }
-    if (aspectClass == StructureAspectDescriptor.class) {
-      return (T) new org.campagnelab.ANTLR.structure.StructureAspectDescriptor();
+    if (aspectClass.getName().equals("jetbrains.mps.lang.migration.runtime.base.MigrationAspectDescriptor")) {
+      if (aspectClass == MigrationAspectDescriptor.class) {
+        return (T) new MigrationDescriptor();
+      }
     }
-    if (aspectClass == IHelginsDescriptor.class) {
-      return (T) new TypesystemDescriptor();
+    if (aspectClass.getName().equals("jetbrains.mps.smodel.runtime.StructureAspectDescriptor")) {
+      if (aspectClass == StructureAspectDescriptor.class) {
+        return (T) new org.campagnelab.ANTLR.structure.StructureAspectDescriptor();
+      }
+    }
+    if (aspectClass.getName().equals("jetbrains.mps.smodel.runtime.ConceptPresentationAspect")) {
+      if (aspectClass == ConceptPresentationAspect.class) {
+        return (T) new ConceptPresentationAspectImpl();
+      }
+    }
+    if (aspectClass.getName().equals("jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor")) {
+      if (aspectClass == IHelginsDescriptor.class) {
+        return (T) new TypesystemDescriptor();
+      }
     }
     return super.createAspect(aspectClass);
   }

@@ -4,119 +4,114 @@ package org.campagnelab.antlr.tomps.intentions;
 
 import jetbrains.mps.intentions.IntentionAspectBase;
 import jetbrains.mps.intentions.IntentionFactory;
+import java.util.Map;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import java.util.HashMap;
 import org.jetbrains.annotations.Nullable;
 import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import java.util.Arrays;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public final class IntentionsDescriptor extends IntentionAspectBase {
-  private final long[] myId2Index;
-  private IntentionFactory[] myIntentions0;
-  private IntentionFactory[] myIntentions1;
-  private IntentionFactory[] myIntentions2;
-  private IntentionFactory[] myIntentions3;
-  private IntentionFactory[] myIntentions4;
-  private IntentionFactory[] myIntentions5;
-  private IntentionFactory[] myIntentions6;
-  private IntentionFactory[] myIntentions7;
-  private IntentionFactory[] myIntentions8;
+  private static final IntentionFactory[] EMPTY_ARRAY = new IntentionFactory[0];
+  private Map<SAbstractConcept, IntentionFactory[]> myCached = new HashMap<SAbstractConcept, IntentionFactory[]>();
 
   public IntentionsDescriptor() {
-    myId2Index = new long[9];
-    myId2Index[0] = 0x27b12e38d7577b90L;
-    myId2Index[1] = 0x4aaf5f3861bb9099L;
-    myId2Index[2] = 0x631eebe3113222a9L;
-    myId2Index[3] = 0x631eebe31132d843L;
-    myId2Index[4] = 0x631eebe3113e657fL;
-    myId2Index[5] = 0x6912564f422833dbL;
-    myId2Index[6] = 0x69d936b00a0eba02L;
-    myId2Index[7] = 0x6a1bb02ea6061b82L;
-    myId2Index[8] = 0x6a1bb02ea606232bL;
   }
 
-  @Override
   @Nullable
-  public Collection<IntentionFactory> getIntentions(@NotNull SConceptId conceptId) {
-    final int index = Arrays.binarySearch(myId2Index, conceptId.getIdValue());
-    switch (index) {
-      case 0:
-        // Concept: PropertyDestination 
-        if (myIntentions0 == null) {
-          myIntentions0 = new IntentionFactory[1];
-          myIntentions0[0] = new PropertyAsType_Intention();
-        }
-        return Arrays.asList(myIntentions0);
-      case 1:
-        // Concept: ChildDestination 
-        if (myIntentions1 == null) {
-          myIntentions1 = new IntentionFactory[1];
-          myIntentions1[0] = new ChildAsOperator_Intention();
-        }
-        return Arrays.asList(myIntentions1);
-      case 2:
-        // Concept: Grammar 
-        if (myIntentions2 == null) {
-          myIntentions2 = new IntentionFactory[1];
-          myIntentions2[0] = new RenameLabelsFromConceptsIn_Intention();
-        }
-        return Arrays.asList(myIntentions2);
-      case 3:
-        // Concept: ParserRuleBlock 
-        if (myIntentions3 == null) {
-          myIntentions3 = new IntentionFactory[1];
-          myIntentions3[0] = new DeclareOperator_Intention();
-        }
-        return Arrays.asList(myIntentions3);
-      case 4:
-        // Concept: StringLiteral 
-        if (myIntentions4 == null) {
-          myIntentions4 = new IntentionFactory[1];
-          myIntentions4[0] = new AddLabelSubconcept_Intention();
-        }
-        return Arrays.asList(myIntentions4);
-      case 5:
-        // Concept: LexerRuleSource 
-        if (myIntentions5 == null) {
-          myIntentions5 = new IntentionFactory[2];
-          myIntentions5[0] = new AddTrimCharacters_Intention();
-          myIntentions5[1] = new ForceGetText_Intention();
-        }
-        return Arrays.asList(myIntentions5);
-      case 6:
-        // Concept: ConceptMapper 
-        if (myIntentions6 == null) {
-          myIntentions6 = new IntentionFactory[5];
-          myIntentions6[0] = new CreateConcept_Intention();
-          myIntentions6[1] = new AddAllAlternatives_Intention();
-          myIntentions6[2] = new CreateConceptAndLabels_Intention();
-          myIntentions6[3] = new CreateEditors_Intention();
-          myIntentions6[4] = new CreateTextGens_Intention();
-        }
-        return Arrays.asList(myIntentions6);
-      case 7:
-        // Concept: ConvertToMPS 
-        if (myIntentions7 == null) {
-          myIntentions7 = new IntentionFactory[5];
-          myIntentions7[0] = new ResolveAllAlternativesById_Intention();
-          myIntentions7[1] = new SortOperatorsByPriority_Intention();
-          myIntentions7[2] = new CreateOperatorConcepts_Intention();
-          myIntentions7[3] = new SwitchToOperatorNames_Intention();
-          myIntentions7[4] = new CreateOperatorTextGen_Intention();
-        }
-        return Arrays.asList(myIntentions7);
-      case 8:
-        // Concept: AlternativeMapper 
-        if (myIntentions8 == null) {
-          myIntentions8 = new IntentionFactory[3];
-          myIntentions8[0] = new CreateConceptAndLabelsForAlt_Intention();
-          myIntentions8[1] = new CreateEditor_Intention();
-          myIntentions8[2] = new CreateTextGen_Intention();
-        }
-        return Arrays.asList(myIntentions8);
-      default:
-        return null;
+  public Collection<IntentionFactory> getIntentions(@NotNull SAbstractConcept concept) {
+    if (myCached.containsKey(concept)) {
+      return Arrays.asList(myCached.get(concept));
     }
+
+    IntentionFactory[] intentions = EMPTY_ARRAY;
+    {
+      SAbstractConcept cncpt = concept;
+      Integer preIndex = indices_hphjzv_d0f.get(cncpt);
+      int switchIndex = (preIndex == null ? -1 : preIndex);
+      switch (switchIndex) {
+        case 0:
+          if (true) {
+            // Concept: AlternativeMapper 
+            intentions = new IntentionFactory[3];
+            intentions[0] = new CreateConceptAndLabelsForAlt_Intention();
+            intentions[1] = new CreateEditor_Intention();
+            intentions[2] = new CreateTextGen_Intention();
+          }
+          break;
+        case 1:
+          if (true) {
+            // Concept: ChildDestination 
+            intentions = new IntentionFactory[1];
+            intentions[0] = new ChildAsOperator_Intention();
+          }
+          break;
+        case 2:
+          if (true) {
+            // Concept: ConceptMapper 
+            intentions = new IntentionFactory[5];
+            intentions[0] = new CreateConcept_Intention();
+            intentions[1] = new AddAllAlternatives_Intention();
+            intentions[2] = new CreateConceptAndLabels_Intention();
+            intentions[3] = new CreateEditors_Intention();
+            intentions[4] = new CreateTextGens_Intention();
+          }
+          break;
+        case 3:
+          if (true) {
+            // Concept: ConvertToMPS 
+            intentions = new IntentionFactory[5];
+            intentions[0] = new ResolveAllAlternativesById_Intention();
+            intentions[1] = new SortOperatorsByPriority_Intention();
+            intentions[2] = new CreateOperatorConcepts_Intention();
+            intentions[3] = new SwitchToOperatorNames_Intention();
+            intentions[4] = new CreateOperatorTextGen_Intention();
+          }
+          break;
+        case 4:
+          if (true) {
+            // Concept: Grammar 
+            intentions = new IntentionFactory[1];
+            intentions[0] = new RenameLabelsFromConceptsIn_Intention();
+          }
+          break;
+        case 5:
+          if (true) {
+            // Concept: LexerRuleSource 
+            intentions = new IntentionFactory[2];
+            intentions[0] = new AddTrimCharacters_Intention();
+            intentions[1] = new ForceGetText_Intention();
+          }
+          break;
+        case 6:
+          if (true) {
+            // Concept: ParserRuleBlock 
+            intentions = new IntentionFactory[1];
+            intentions[0] = new DeclareOperator_Intention();
+          }
+          break;
+        case 7:
+          if (true) {
+            // Concept: PropertyDestination 
+            intentions = new IntentionFactory[1];
+            intentions[0] = new PropertyAsType_Intention();
+          }
+          break;
+        case 8:
+          if (true) {
+            // Concept: StringLiteral 
+            intentions = new IntentionFactory[1];
+            intentions[0] = new AddLabelSubconcept_Intention();
+          }
+          break;
+        default:
+          // default 
+      }
+    }
+    myCached.put(concept, intentions);
+    return Arrays.asList(intentions);
   }
 
   @NotNull
@@ -145,4 +140,13 @@ public final class IntentionsDescriptor extends IntentionAspectBase {
     rv[19] = new ForceGetText_Intention();
     return Arrays.asList(rv);
   }
+  private static Map<SAbstractConcept, Integer> buildConceptIndices(SAbstractConcept... concepts) {
+    HashMap<SAbstractConcept, Integer> res = new HashMap<SAbstractConcept, Integer>();
+    int counter = 0;
+    for (SAbstractConcept c : concepts) {
+      res.put(c, counter++);
+    }
+    return res;
+  }
+  private static final Map<SAbstractConcept, Integer> indices_hphjzv_d0f = buildConceptIndices(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, "org.campagnelab.antlr.tomps.structure.AlternativeMapper"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x4aaf5f3861bb9099L, "org.campagnelab.antlr.tomps.structure.ChildDestination"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x69d936b00a0eba02L, "org.campagnelab.antlr.tomps.structure.ConceptMapper"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, "org.campagnelab.antlr.tomps.structure.ConvertToMPS"), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6912564f422833dbL, "org.campagnelab.antlr.tomps.structure.LexerRuleSource"), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, "org.campagnelab.ANTLR.structure.ParserRuleBlock"), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x27b12e38d7577b90L, "org.campagnelab.antlr.tomps.structure.PropertyDestination"), MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, "org.campagnelab.ANTLR.structure.StringLiteral"));
 }

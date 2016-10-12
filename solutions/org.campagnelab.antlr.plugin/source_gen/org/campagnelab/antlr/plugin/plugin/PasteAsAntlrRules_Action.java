@@ -22,6 +22,7 @@ import jetbrains.mps.nodeEditor.EditorComponent;
 
 public class PasteAsAntlrRules_Action extends BaseAction {
   private static final Icon ICON = null;
+
   public PasteAsAntlrRules_Action() {
     super("Paste ANTLR Rules", "", ICON);
     this.setIsAlwaysVisible(false);

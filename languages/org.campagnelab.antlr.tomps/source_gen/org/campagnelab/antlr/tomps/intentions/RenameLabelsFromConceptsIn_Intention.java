@@ -19,6 +19,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.intentions.IntentionExecutableBase;
+import jetbrains.mps.intentions.ParameterizedIntentionExecutable;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import org.campagnelab.antlr.tomps.behavior.AlternativeMapper__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
@@ -57,7 +58,7 @@ public final class RenameLabelsFromConceptsIn_Intention extends IntentionDescrip
       }
     }).toListSequence();
   }
-  /*package*/ final class IntentionImplementation extends IntentionExecutableBase {
+  /*package*/ final class IntentionImplementation extends IntentionExecutableBase implements ParameterizedIntentionExecutable {
     private SNode myParameter;
     public IntentionImplementation(SNode parameter) {
       myParameter = parameter;
@@ -88,6 +89,9 @@ public final class RenameLabelsFromConceptsIn_Intention extends IntentionDescrip
     @Override
     public IntentionDescriptor getDescriptor() {
       return RenameLabelsFromConceptsIn_Intention.this;
+    }
+    public Object getParameter() {
+      return myParameter;
     }
   }
 }

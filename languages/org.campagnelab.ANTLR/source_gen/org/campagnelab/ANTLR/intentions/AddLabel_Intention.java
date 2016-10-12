@@ -50,7 +50,7 @@ public final class AddLabel_Intention extends IntentionDescriptorBase implements
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNode labeled = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, "org.campagnelab.ANTLR.structure.LabeledElement")));
+      SNode labeled = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, "org.campagnelab.ANTLR.structure.LabeledElement"));
       SNodeOperations.replaceWithAnother(node, labeled);
       SLinkOperations.setTarget(labeled, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x7c18b9e17b73a85L, 0x7c18b9e17b7c72fL, "element"), node);
     }

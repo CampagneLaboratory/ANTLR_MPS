@@ -19,12 +19,12 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.structure.behavior.DataTypeDeclaration__BehaviorDescriptor;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.smodel.SModelUtil_new;
 import org.jetbrains.mps.openapi.model.SNodeAccessUtil;
@@ -53,6 +53,7 @@ public final class PropertyDestination__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ static SNode type_id5qM9mr9Mqo7(@NotNull SNode __thisNode__) {
     return (SNode) DataTypeDeclaration__BehaviorDescriptor.toBaseLanguageType_idhEwI9ym.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x27b12e38d7577b90L, 0x27b12e38d7577b91L, "to")), MetaAdapterFactory.getReferenceLink(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979bd086bL, 0xfc26f42fe5L, "dataType")));
   }
+  protected static Logger LOG = LogManager.getLogger(PropertyDestination__BehaviorDescriptor.class);
   /*package*/ static SNode cellModel_id1AEWcuffMHI(@NotNull SNode __thisNode__, String cardinality) {
     if (LOG.isInfoEnabled()) {
       LOG.info("visiting destination (property)");
@@ -120,7 +121,6 @@ public final class PropertyDestination__BehaviorDescriptor extends BaseBHDescrip
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  protected static Logger LOG = LogManager.getLogger(PropertyDestination__BehaviorDescriptor.class);
   private static SNode _quotation_createNode_5w8ebw_a1a3(Object parameter_1) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_2 = null;

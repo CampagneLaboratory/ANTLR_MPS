@@ -16,6 +16,8 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -28,8 +30,6 @@ import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.smodel.SModelUtil_new;
 import org.jetbrains.mps.openapi.model.SNodeAccessUtil;
@@ -56,6 +56,7 @@ public final class TextGenHelper__BehaviorDescriptor extends BaseBHDescriptor {
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
+  protected static Logger LOG = LogManager.getLogger(TextGenHelper__BehaviorDescriptor.class);
   /*package*/ static SNode textGenComponent_id3V2IUSqnda5(@NotNull SAbstractConcept __thisConcept__, final SNode alternative, SNode altMapper) {
     if (LOG.isInfoEnabled()) {
       LOG.info("visiting textGenComponent");
@@ -305,7 +306,6 @@ public final class TextGenHelper__BehaviorDescriptor extends BaseBHDescriptor {
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  protected static Logger LOG = LogManager.getLogger(TextGenHelper__BehaviorDescriptor.class);
   private static SNode _quotation_createNode_fdungw_a0f0a(Object parameter_1, Object parameter_2) {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_3 = null;

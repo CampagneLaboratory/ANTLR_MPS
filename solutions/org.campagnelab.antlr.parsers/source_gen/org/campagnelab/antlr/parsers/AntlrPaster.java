@@ -34,6 +34,7 @@ public class AntlrPaster {
   private static Logger LOG = LogManager.getLogger(AntlrPaster.class);
   public AntlrPaster() {
   }
+  protected static Logger LOG_515473768 = LogManager.getLogger(AntlrPaster.class);
   public void pasteRules(SNode anchor, IOperationContext operationContext, Project project) {
     String clipboardText = getStringFromClipboard();
     if (clipboardText == null) {
@@ -172,5 +173,4 @@ public class AntlrPaster {
     }
     return false;
   }
-  protected static Logger LOG_515473768 = LogManager.getLogger(AntlrPaster.class);
 }

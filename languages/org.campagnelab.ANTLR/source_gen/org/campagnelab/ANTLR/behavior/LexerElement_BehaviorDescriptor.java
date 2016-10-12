@@ -4,16 +4,13 @@ package org.campagnelab.ANTLR.behavior;
 
 
 /**
- * Will be removed after 3.3
+ * Will be removed after 3.4
  * Need to support compilation of the legacy behavior descriptors before the language is rebuilt
  * This class is not involved in the actual method invocation
  */
 @Deprecated
-public class LexerElement_BehaviorDescriptor extends ParserRuleBlock_BehaviorDescriptor implements ToTextOutput_BehaviorDescriptor {
-
-  @Override
+public class LexerElement_BehaviorDescriptor {
   public String getConceptFqName() {
-    return "org.campagnelab.ANTLR.structure.LexerElement";
+    return null;
   }
-
 }

@@ -11,21 +11,20 @@ import org.jetbrains.mps.openapi.model.SModel;
 import org.jetbrains.mps.openapi.persistence.DataSource;
 import java.util.Map;
 import java.io.IOException;
-import org.jetbrains.mps.openapi.persistence.StreamDataSource;
+import jetbrains.mps.extapi.persistence.FolderDataSource;
 import org.jetbrains.mps.openapi.persistence.UnsupportedDataSourceException;
 import org.jetbrains.mps.openapi.model.SModelReference;
-import jetbrains.mps.extapi.persistence.FileDataSource;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.smodel.SModelId;
 import org.jetbrains.mps.openapi.module.SModuleReference;
-import jetbrains.mps.extapi.model.CustomPersistenceSModel;
+import org.jetbrains.mps.openapi.persistence.StreamDataSource;
 import jetbrains.mps.util.NameUtil;
+import jetbrains.mps.extapi.model.CustomPersistenceSModel;
 import org.jetbrains.mps.openapi.persistence.ModelSaveException;
 import jetbrains.mps.extapi.model.SModelData;
 import jetbrains.mps.util.FileUtil;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
@@ -42,6 +41,7 @@ import java.util.Iterator;
 import java.util.Collections;
 import jetbrains.mps.extapi.model.PersistenceProblem;
 import jetbrains.mps.util.IterableUtil;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.io.OutputStream;
 import java.io.BufferedOutputStream;
 import java.io.OutputStreamWriter;
@@ -53,7 +53,7 @@ public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
   @NotNull
   @Override
   public SModel load(@NotNull DataSource dataSource, @NotNull Map<String, String> options) throws IOException {
-    if (!((dataSource instanceof StreamDataSource))) {
+    if (!((dataSource instanceof FolderDataSource))) {
       throw new UnsupportedDataSourceException(dataSource);
     }
     String moduleRef = options.get(OPTION_MODULEREF);
@@ -63,7 +63,7 @@ public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
     SModelReference ref;
     if (relPath == null || moduleRef == null || modelName == null) {
       if (!(contentOnly)) {
-        if (dataSource instanceof FileDataSource) {
+        if (dataSource instanceof FolderDataSource) {
           AntlrPersistenceImpl.LOG.error("cannot load " + dataSource.getLocation() + ": relPath = " + relPath, new Throwable());
         }
         throw new IOException("cannot load xml model from " + dataSource.getLocation());
@@ -78,7 +78,7 @@ public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
       }
       ref = PersistenceFacade.getInstance().createModelReference(mref, id, modelName);
     }
-    return new CustomPersistenceSModel(ref, (StreamDataSource) dataSource, this);
+    return new ANTLR_SModel(ref, (OneANTLRFilePerRoot) dataSource, this);
   }
   @NotNull
   @Override
@@ -141,7 +141,7 @@ public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
     if (reference.getModelId() instanceof SModelId.RelativePathSModelId) {
       name = FileUtil.getNameWithoutExtension(((SModelId.RelativePathSModelId) reference.getModelId()).getFileName());
     }
-    SNode grammar = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar")));
+    SNode grammar = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"));
     SPropertyOperations.set(grammar, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), name);
     sModel.addLanguage(MetaAdapterFactory.getLanguage(MetaIdFactory.langId(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L), "org.campagnelab.ANTLR"));
     sModel.addRootNode(grammar);
@@ -160,7 +160,7 @@ public class AntlrPersistenceImpl implements ModelFactory, SModelPersistence {
       ANTLRv4Parser parser = new ANTLRv4Parser(new CommonTokenStream(lexer));
       ANTLRv4Parser.RulesContext tree = parser.rules();
       // initiate walk of tree with listener 
-      SNode grammar = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar")));
+      SNode grammar = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113222a9L, "org.campagnelab.ANTLR.structure.Grammar"));
       SPropertyOperations.set(grammar, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), name);
       AntlrRuleVisitor visitor = new AntlrRuleVisitor();
       List<SNode> rules = (List<SNode>) visitor.visitRules(tree);

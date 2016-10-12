@@ -26,6 +26,10 @@ public class Move_property_isOptional extends MigrationScriptBase {
     return false;
   }
   public SNode execute(final SModule m) {
+    doExecute(m);
+    return null;
+  }
+  public void doExecute(final SModule m) {
     Iterable<SModel> models = (Iterable<SModel>) m.getModels();
     Iterable<SNode> nodes = Sequence.fromIterable(models).where(new IWhereFilter<SModel>() {
       public boolean accept(SModel model) {
@@ -49,7 +53,7 @@ public class Move_property_isOptional extends MigrationScriptBase {
       }
     }).where(new IWhereFilter<SNode>() {
       public boolean accept(SNode it) {
-        return eq_v0fgub_a0a0a0a0a0a4a2(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional_old"));
+        return eq_v0fgub_a0a0a0a0a0a4a3(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d843L, 0x631eebe3113c4245L, "isOptional_old"));
       }
     });
     Sequence.fromIterable(attributes).visitAll(new IVisitor<SNode>() {
@@ -57,13 +61,12 @@ public class Move_property_isOptional extends MigrationScriptBase {
         PropertyAttribute__BehaviorDescriptor.setProperty_id6Gg5Klvu8CV.invoke(it, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x797c10c6e517ac38L, 0x797c10c6e517b02cL, "isOptional"));
       }
     });
-    return null;
   }
   public MigrationScriptReference getDescriptor() {
     return new MigrationScriptReference(MetaAdapterFactory.getLanguage(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, "org.campagnelab.ANTLR"), 0);
   }
 
-  private static boolean eq_v0fgub_a0a0a0a0a0a4a2(Object a, Object b) {
+  private static boolean eq_v0fgub_a0a0a0a0a0a4a3(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }

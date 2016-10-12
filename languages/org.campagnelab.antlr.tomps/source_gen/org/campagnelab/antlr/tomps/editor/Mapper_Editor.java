@@ -10,9 +10,11 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.CompositeSubstituteInfo;
 import jetbrains.mps.lang.editor.cellProviders.AggregationCellContext;
 import jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPartExt;
+import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfoPartEx;
 import java.util.List;
 import jetbrains.mps.openapi.editor.cells.SubstituteAction;
 import jetbrains.mps.nodeEditor.cellMenu.CellContext;
@@ -45,7 +47,9 @@ public class Mapper_Editor extends DefaultNodeEditor {
       return editorCell;
     }
     private void installCellInfo(SNode child, EditorCell editorCell) {
-      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(myEditorContext, new AggregationCellContext(myOwnerNode, child, myContainmentLink.getDeclarationNode()), new SubstituteInfoPartExt[]{new Mapper_Editor.Mapper_component_cellMenu_j5ilxx_a0a0()}));
+      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+        editorCell.setSubstituteInfo(new CompositeSubstituteInfo(myEditorContext, new AggregationCellContext(myOwnerNode, child, myContainmentLink.getDeclarationNode()), new SubstituteInfoPartExt[]{new Mapper_Editor.Mapper_component_cellMenu_j5ilxx_a0a0(), new SChildSubstituteInfoPartEx(editorCell)}));
+      }
       if (editorCell.getRole() == null) {
         editorCell.setRole("source");
       }
@@ -54,6 +58,7 @@ public class Mapper_Editor extends DefaultNodeEditor {
     protected EditorCell createEmptyCell() {
       EditorCell editorCell = super.createEmptyCell();
       editorCell.setCellId("empty_source");
+
       installCellInfo(null, editorCell);
       return editorCell;
     }
@@ -90,7 +95,9 @@ public class Mapper_Editor extends DefaultNodeEditor {
       return editorCell;
     }
     private void installCellInfo(SNode child, EditorCell editorCell) {
-      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(myEditorContext, new AggregationCellContext(myOwnerNode, child, myContainmentLink.getDeclarationNode()), new SubstituteInfoPartExt[]{new Mapper_Editor.Mapper_component_cellMenu_j5ilxx_a0c0()}));
+      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+        editorCell.setSubstituteInfo(new CompositeSubstituteInfo(myEditorContext, new AggregationCellContext(myOwnerNode, child, myContainmentLink.getDeclarationNode()), new SubstituteInfoPartExt[]{new Mapper_Editor.Mapper_component_cellMenu_j5ilxx_a0c0(), new SChildSubstituteInfoPartEx(editorCell)}));
+      }
       if (editorCell.getRole() == null) {
         editorCell.setRole("destination");
       }
@@ -99,6 +106,7 @@ public class Mapper_Editor extends DefaultNodeEditor {
     protected EditorCell createEmptyCell() {
       EditorCell editorCell = super.createEmptyCell();
       editorCell.setCellId("empty_destination");
+
       installCellInfo(null, editorCell);
       return editorCell;
     }

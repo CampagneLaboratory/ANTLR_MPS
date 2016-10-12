@@ -29,14 +29,14 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
-import org.apache.log4j.Logger;
-import org.apache.log4j.LogManager;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.smodel.SModelUtil_new;
 import org.jetbrains.mps.openapi.model.SNodeAccessUtil;
@@ -112,7 +112,7 @@ public final class ConceptMapper__BehaviorDescriptor extends BaseBHDescriptor {
         return neq_87ioxx_a0a0a0a0a0d0lb(SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")), upperCasedName);
       }
     })) {
-      SNode decl = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, "jetbrains.mps.lang.structure.structure.ConceptDeclaration")));
+      SNode decl = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, "jetbrains.mps.lang.structure.structure.ConceptDeclaration"));
       SModelOperations.addRootNode(structureModel, decl);
       SPropertyOperations.set(decl, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), upperCasedName);
       return decl;
@@ -156,7 +156,7 @@ public final class ConceptMapper__BehaviorDescriptor extends BaseBHDescriptor {
       }
     });
 
-    SNode editor = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9845363abL, "jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration")));
+    SNode editor = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9845363abL, "jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration"));
     SLinkOperations.setTarget(editor, MetaAdapterFactory.getReferenceLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0x10f7df344a9L, 0x10f7df451aeL, "conceptDeclaration"), concept);
     SLinkOperations.setTarget(editor, MetaAdapterFactory.getContainmentLink(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xfba0eb7c50L, 0xfba0ec5415L, "cellModel"), ConceptMapper__BehaviorDescriptor.cellModel_id1AEWcuf5jJ6.invoke(__thisNode__, alternative, altMapper));
     SModelOperations.addRootNode(editorModel, editor);
@@ -169,6 +169,7 @@ public final class ConceptMapper__BehaviorDescriptor extends BaseBHDescriptor {
       }
     });
   }
+  protected static Logger LOG = LogManager.getLogger(ConceptMapper__BehaviorDescriptor.class);
   /*package*/ static SNode cellModel_id1AEWcuf5jJ6(@NotNull SNode __thisNode__, SNode alternative, SNode altMapper) {
     if (LOG.isInfoEnabled()) {
       LOG.info("visiting Alternative");
@@ -267,7 +268,7 @@ public final class ConceptMapper__BehaviorDescriptor extends BaseBHDescriptor {
     if (LOG.isInfoEnabled()) {
       LOG.info("visiting Sequence");
     }
-    SNode cellmodel = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eaff2517L, "jetbrains.mps.lang.editor.structure.CellModel_Collection")));
+    SNode cellmodel = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x18bc659203a64e29L, 0xa83a7ff23bde13baL, 0xf9eaff2517L, "jetbrains.mps.lang.editor.structure.CellModel_Collection"));
     Iterable<SNode> cells = ListSequence.fromList(SLinkOperations.getChildren(sequence, MetaAdapterFactory.getContainmentLink(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe31132d846L, 0x631eebe31132d96bL, "of"))).select(new ISelector<SNode, SNode>() {
       public SNode select(SNode it) {
         return ((SNode) ConceptMapper__BehaviorDescriptor.cellModel_id1AEWcuf5NW1.invoke(__thisNode__, it, altMapper));
@@ -311,7 +312,7 @@ public final class ConceptMapper__BehaviorDescriptor extends BaseBHDescriptor {
     return MultiTuple.<SNode,String>from(SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(altMapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x7c18b9e1882f807L, "map"))).findFirst(new IWhereFilter<SNode>() {
       public boolean accept(SNode mapper) {
         cardinality.value = SPropertyOperations.getString_def(SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source")), MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x3875e55a78eeb7ddL, 0x32ac4b93a6b7ec8L, "cardinality"), "0..1");
-        return eq_87ioxx_a0b0a0a0a0a0b0bc(Source__BehaviorDescriptor.name_id3xPTlDSWS6G.invoke(SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source"))), ruleRefName);
+        return eq_87ioxx_a0b0a0a0a0a0b0cc(Source__BehaviorDescriptor.name_id3xPTlDSWS6G.invoke(SLinkOperations.getTarget(mapper, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x3875e55a78ffcbddL, "source"))), ruleRefName);
       }
     }), MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x7c18b9e1882f81cL, 0x4aaf5f3861bb9078L, "destination")), cardinality.value);
   }
@@ -410,7 +411,6 @@ public final class ConceptMapper__BehaviorDescriptor extends BaseBHDescriptor {
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  protected static Logger LOG = LogManager.getLogger(ConceptMapper__BehaviorDescriptor.class);
   private static SNode _quotation_createNode_z4rl0_a0c0m() {
     PersistenceFacade facade = PersistenceFacade.getInstance();
     SNode quotedNode_1 = null;
@@ -477,7 +477,7 @@ public final class ConceptMapper__BehaviorDescriptor extends BaseBHDescriptor {
   private static boolean neq_87ioxx_a0a0a0a0a0d0lb(Object a, Object b) {
     return !(((a != null ? a.equals(b) : a == b)));
   }
-  private static boolean eq_87ioxx_a0b0a0a0a0a0b0bc(Object a, Object b) {
+  private static boolean eq_87ioxx_a0b0a0a0a0a0b0cc(Object a, Object b) {
     return (a != null ? a.equals(b) : a == b);
   }
 }

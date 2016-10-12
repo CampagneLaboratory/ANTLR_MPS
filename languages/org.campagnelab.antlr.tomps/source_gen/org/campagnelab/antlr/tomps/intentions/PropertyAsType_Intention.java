@@ -15,6 +15,7 @@ import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import jetbrains.mps.intentions.IntentionExecutableBase;
+import jetbrains.mps.intentions.ParameterizedIntentionExecutable;
 import java.util.Arrays;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -50,7 +51,7 @@ public final class PropertyAsType_Intention extends IntentionDescriptorBase impl
   private List<String> parameter(final SNode node, final EditorContext editorContext) {
     return ListSequence.fromListAndArray(new ArrayList<String>(), "int", "boolean", "float", "operator");
   }
-  /*package*/ final class IntentionImplementation extends IntentionExecutableBase {
+  /*package*/ final class IntentionImplementation extends IntentionExecutableBase implements ParameterizedIntentionExecutable {
     private String myParameter;
     public IntentionImplementation(String parameter) {
       myParameter = parameter;
@@ -63,17 +64,17 @@ public final class PropertyAsType_Intention extends IntentionDescriptorBase impl
     public void execute(final SNode node, final EditorContext editorContext) {
       switch (Arrays.binarySearch(stringSwitchCases_mdn6d3_a0a0d6, myParameter)) {
         case 2:
-          SNode toInt = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffc0edbfL, "org.campagnelab.antlr.tomps.structure.ToIntDestination")));
+          SNode toInt = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffc0edbfL, "org.campagnelab.antlr.tomps.structure.ToIntDestination"));
           SNodeOperations.replaceWithAnother(node, toInt);
           SLinkOperations.setTarget(toInt, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffc0edbfL, 0x443e8c43ffc0edc0L, "toConvert"), node);
           break;
         case 1:
-          SNode toFloat = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffcf6763L, "org.campagnelab.antlr.tomps.structure.ToFloatDestination")));
+          SNode toFloat = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffcf6763L, "org.campagnelab.antlr.tomps.structure.ToFloatDestination"));
           SNodeOperations.replaceWithAnother(node, toFloat);
           SLinkOperations.setTarget(toFloat, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffcf6763L, 0x443e8c43ffcf6764L, "toConvert"), node);
           break;
         case 0:
-          SNode toBool = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffcc4608L, "org.campagnelab.antlr.tomps.structure.ToBooleanDestination")));
+          SNode toBool = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffcc4608L, "org.campagnelab.antlr.tomps.structure.ToBooleanDestination"));
           SNodeOperations.replaceWithAnother(node, toBool);
           SLinkOperations.setTarget(toBool, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x443e8c43ffcc4608L, 0x443e8c43ffcc4609L, "toConvert"), node);
           break;
@@ -83,6 +84,9 @@ public final class PropertyAsType_Intention extends IntentionDescriptorBase impl
     @Override
     public IntentionDescriptor getDescriptor() {
       return PropertyAsType_Intention.this;
+    }
+    public Object getParameter() {
+      return myParameter;
     }
   }
   private static String[] stringSwitchCases_mdn6d3_a0a0d6 = new String[]{"boolean", "float", "int"};

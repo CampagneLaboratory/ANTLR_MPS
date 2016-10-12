@@ -72,7 +72,7 @@ public final class AddAllAlternatives_Intention extends IntentionDescriptorBase 
       }).select(new ISelector<SNode, SNode>() {
         public SNode select(SNode alternative) {
           // add the mapper: 
-          SNode altMapper = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, "org.campagnelab.antlr.tomps.structure.AlternativeMapper")));
+          SNode altMapper = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, "org.campagnelab.antlr.tomps.structure.AlternativeMapper"));
           SLinkOperations.setTarget(altMapper, MetaAdapterFactory.getReferenceLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea606232bL, 0x6a1bb02ea6062391L, "alternative"), alternative);
           return altMapper;
         }

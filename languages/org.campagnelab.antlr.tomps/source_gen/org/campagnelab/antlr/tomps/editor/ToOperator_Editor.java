@@ -18,9 +18,11 @@ import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.CompositeSubstituteInfo;
 import jetbrains.mps.lang.editor.cellProviders.AggregationCellContext;
 import jetbrains.mps.nodeEditor.cellMenu.SubstituteInfoPartExt;
+import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfoPartEx;
 import java.util.List;
 import jetbrains.mps.openapi.editor.cells.SubstituteAction;
 import jetbrains.mps.nodeEditor.cellMenu.CellContext;
@@ -97,7 +99,9 @@ public class ToOperator_Editor extends DefaultNodeEditor {
       return editorCell;
     }
     private void installCellInfo(SNode child, EditorCell editorCell) {
-      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(myEditorContext, new AggregationCellContext(myOwnerNode, child, myContainmentLink.getDeclarationNode()), new SubstituteInfoPartExt[]{new ToOperator_Editor.ToOperator_component_cellMenu_429nsm_a0e0()}));
+      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+        editorCell.setSubstituteInfo(new CompositeSubstituteInfo(myEditorContext, new AggregationCellContext(myOwnerNode, child, myContainmentLink.getDeclarationNode()), new SubstituteInfoPartExt[]{new ToOperator_Editor.ToOperator_component_cellMenu_429nsm_a0e0(), new SChildSubstituteInfoPartEx(editorCell)}));
+      }
       if (editorCell.getRole() == null) {
         editorCell.setRole("toConvert");
       }
@@ -106,6 +110,7 @@ public class ToOperator_Editor extends DefaultNodeEditor {
     protected EditorCell createEmptyCell() {
       EditorCell editorCell = super.createEmptyCell();
       editorCell.setCellId("empty_toConvert");
+
       installCellInfo(null, editorCell);
       return editorCell;
     }

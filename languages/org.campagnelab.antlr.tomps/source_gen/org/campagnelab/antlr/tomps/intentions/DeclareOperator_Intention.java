@@ -21,6 +21,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ISelector;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.intentions.IntentionExecutableBase;
+import jetbrains.mps.intentions.ParameterizedIntentionExecutable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.IVisitor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
@@ -63,7 +64,7 @@ public final class DeclareOperator_Intention extends IntentionDescriptorBase imp
       }
     }).distinct().toListSequence();
   }
-  /*package*/ final class IntentionImplementation extends IntentionExecutableBase {
+  /*package*/ final class IntentionImplementation extends IntentionExecutableBase implements ParameterizedIntentionExecutable {
     private int myParameter;
     public IntentionImplementation(int parameter) {
       myParameter = parameter;
@@ -76,7 +77,7 @@ public final class DeclareOperator_Intention extends IntentionDescriptorBase imp
     public void execute(final SNode node, final EditorContext editorContext) {
       ListSequence.fromList(SNodeOperations.getNodeDescendants(node, MetaAdapterFactory.getConcept(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, "org.campagnelab.ANTLR.structure.StringLiteral"), false, new SAbstractConcept[]{})).visitAll(new IVisitor<SNode>() {
         public void visit(SNode it) {
-          SNode ope = SConceptOperations.createNewNode(SNodeOperations.asInstanceConcept(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, "org.campagnelab.antlr.tomps.structure.Operator")));
+          SNode ope = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, "org.campagnelab.antlr.tomps.structure.Operator"));
           SPropertyOperations.set(ope, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d619bfbeL, "name"), SPropertyOperations.getString(it, MetaAdapterFactory.getProperty(0xd6782141eafa4cf7L, 0xa85d1229abdb1152L, 0x631eebe3113e657fL, 0x631eebe3113e6580L, "literal")));
           SPropertyOperations.set(ope, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x195a5f84d619bfbdL, 0x195a5f84d619bfc0L, "priority"), "" + (myParameter));
           ListSequence.fromList(SLinkOperations.getChildren(ListSequence.fromList(SModelOperations.roots(SNodeOperations.getModel(node), MetaAdapterFactory.getConcept(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, "org.campagnelab.antlr.tomps.structure.ConvertToMPS"))).first(), MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, 0x195a5f84d619bf2eL, "operators"))).addElement(ope);
@@ -86,6 +87,9 @@ public final class DeclareOperator_Intention extends IntentionDescriptorBase imp
     @Override
     public IntentionDescriptor getDescriptor() {
       return DeclareOperator_Intention.this;
+    }
+    public Object getParameter() {
+      return myParameter;
     }
   }
 }
