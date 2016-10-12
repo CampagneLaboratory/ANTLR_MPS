@@ -7,7 +7,7 @@
   <property name="mps_home" location="" />
   <property name="plugins_home" location="${mps_home}/plugins" />
   <property name="ANTLR_HOME" location="${basedir}" />
-  <property name="ANTLR_version" value="1.1.1" />
+  <property name="ANTLR_version" value="1.1.2" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.mpsCore" location="${mps_home}/plugins" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
@@ -16,7 +16,9 @@
   <property name="mps.build.vcs.number" value="${import.mps.mps.build.vcs.number}" />
   <property name="mps.teamcity.buildConfName" value="${import.mps.mps.teamcity.buildConfName}" />
   <property name="mps.idea.platform.build.number" value="${import.mps.mps.idea.platform.build.number}" />
+  <property name="mps.mps.build.counter" value="${import.mps.mps.mps.build.counter}" />
   <property name="mpsBootstrapCore.version" value="${import.mps.mpsBootstrapCore.version}" />
+  <property name="environment" value="env" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
   <property name="jdk.home" value="${env.JAVA_HOME}" />
   
@@ -39,7 +41,7 @@
         <version>${ANTLR_version}</version>
         <vendor url="http://books.campagnelab.org">Campagne Laboratory</vendor>
         <depends>jetbrains.mps.core</depends>
-        <idea-version since-build="143.1" until-build="144.1" />
+        <idea-version since-build="162.1616" until-build="163.1" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -75,7 +77,7 @@
     <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages/org.campagnelab.ANTLR.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.ANTLR" />
       <fileset dir="${basedir}/languages/org.campagnelab.ANTLR" includes="icons/**, resources/**" />
-      <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.campagnelab.ANTLR.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ANTLR-languageModels">
@@ -88,6 +90,8 @@
       <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/org.campagnelab.ANTLR/org.campagnelab.ANTLR.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ANTLR-languageModels" prefix="module/languageModels" />
@@ -115,7 +119,7 @@
     <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages/org.campagnelab.antlr.parsers.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.antlr.parsers" />
       <fileset dir="${basedir}/solutions/org.campagnelab.antlr.parsers" includes="icons/**, resources/**" />
-      <fileset dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.parsers/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.parsers/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.campagnelab.antlr.parsers.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.antlr.parsers-models">
@@ -128,6 +132,8 @@
       <fileset dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.parsers/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/solutions/org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.antlr.parsers-models" prefix="module/models" />
@@ -160,7 +166,7 @@
     <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages/org.campagnelab.antlr.tomps.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.antlr.tomps" />
       <fileset dir="${basedir}/languages/org.campagnelab.antlr.tomps" includes="icons/**, resources/**" />
-      <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.campagnelab.antlr.tomps.jar" />
     </jar>
     <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages/org.campagnelab.antlr.tomps-generator.jar" duplicate="preserve">
@@ -176,10 +182,14 @@
       <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
       </fileset>
       <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.antlr.tomps-generator-template" prefix="module/generator/template" />
@@ -211,7 +221,7 @@
     <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/languages/org.campagnelab.antlr.plugin.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.antlr.plugin" />
       <fileset dir="${basedir}/solutions/org.campagnelab.antlr.plugin" includes="icons/**, resources/**" />
-      <fileset dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.plugin/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.plugin/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.campagnelab.antlr.plugin.jar" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.antlr.plugin-models">
@@ -221,6 +231,8 @@
       <fileset dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.plugin/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/solutions/org.campagnelab.antlr.plugin/org.campagnelab.antlr.plugin.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.antlr.plugin-models" prefix="module/models" />
@@ -247,7 +259,7 @@
     <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/lib/org.campagnelab.antlr.parsers.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.antlr.parsers" />
       <fileset dir="${basedir}/solutions/org.campagnelab.antlr.parsers" includes="icons/**, resources/**" />
-      <fileset dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.parsers/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.parsers/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.campagnelab.antlr.parsers.jar1" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.antlr.parsers-models2">
@@ -260,6 +272,8 @@
       <fileset dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.parsers/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/solutions/org.campagnelab.antlr.parsers/org.campagnelab.antlr.parsers.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-org.campagnelab.antlr.parsers-models2" prefix="module/models" />
@@ -293,7 +307,7 @@
     <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/lib/org.campagnelab.ANTLR.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.ANTLR" />
       <fileset dir="${basedir}/languages/org.campagnelab.ANTLR" includes="icons/**, resources/**" />
-      <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.campagnelab.ANTLR.jar1" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ANTLR-languageModels2">
@@ -306,6 +320,8 @@
       <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/org.campagnelab.ANTLR/org.campagnelab.ANTLR.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.ANTLR-languageModels2" prefix="module/languageModels" />
@@ -337,7 +353,7 @@
     <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/lib/org.campagnelab.antlr.tomps.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/org.campagnelab.antlr.tomps" />
       <fileset dir="${basedir}/languages/org.campagnelab.antlr.tomps" includes="icons/**, resources/**" />
-      <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/source_gen" includes="**/trace.info, **/exports" />
+      <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/org.campagnelab.antlr.tomps.jar1" />
     </jar>
     <jar destfile="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip/ANTRL/lib/org.campagnelab.antlr.tomps-generator.jar" duplicate="preserve">
@@ -353,10 +369,14 @@
       <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
       </fileset>
       <fileset dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
       </fileset>
       <zipfileset file="${basedir}/languages/org.campagnelab.antlr.tomps/org.campagnelab.antlr.tomps.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.campagnelab.antlr.tomps-generator-template1" prefix="module/generator/template" />
@@ -366,7 +386,7 @@
       <zipfileset file="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/grammarsv4.jar" prefix="ANTRL/lib" />
       <fileset dir="${build.tmp}/default/ANTLR__dl__lbrace_ANTLR_version_rbrace_.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">ANTLR.ANTLR_version=${ANTLR_version}${line.separator}ANTLR.build_number=${build_number}${line.separator}ANTLR.reference_commit=${reference_commit}${line.separator}ANTLR.reference_branch=${reference_branch}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
+    <echo file="${build.layout}/build.properties">ANTLR.ANTLR_version=${ANTLR_version}${line.separator}ANTLR.build_number=${build_number}${line.separator}ANTLR.reference_commit=${reference_commit}${line.separator}ANTLR.reference_branch=${reference_branch}${line.separator}mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -422,6 +442,7 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.extension.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.findUsages.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.jar" />
@@ -444,6 +465,7 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.textGen.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.refactoring.participant.jar" />
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.facet.jar" />
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.reduced.jar" />
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.make.script.jar" />
@@ -488,7 +510,7 @@
   <target name="java.compile.org.campagnelab.antlr.parsers" depends="java.compile.org.campagnelab.ANTLR, fetchDependencies">
     <mkdir dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.parsers/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.antlr.parsers" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.parsers" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.parsers" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${ANTLR_HOME}/solutions/org.campagnelab.antlr.parsers/source_gen" />
@@ -498,9 +520,13 @@
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
@@ -512,11 +538,11 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.8.jar" />
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.5.2.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset dir="${artifacts.mps}/lib/ant/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
@@ -529,7 +555,7 @@
   <target name="java.compile.org.campagnelab.ANTLR" depends="fetchDependencies">
     <mkdir dir="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.ANTLR" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.ANTLR" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.ANTLR" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${ANTLR_HOME}/languages/org.campagnelab.ANTLR/source_gen" />
@@ -539,9 +565,13 @@
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
@@ -551,11 +581,11 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.8.jar" />
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.5.2.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
@@ -567,7 +597,7 @@
   <target name="java.compile.org.campagnelab.antlr.tomps" depends="java.compile.org.campagnelab.ANTLR, fetchDependencies">
     <mkdir dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.antlr.tomps" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.tomps" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.tomps" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/source_gen" />
@@ -577,9 +607,13 @@
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
@@ -590,11 +624,11 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.8.jar" />
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.5.2.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
@@ -619,7 +653,7 @@
   <target name="java.compile.org.campagnelab.antlr.tomps#7645898506791942665" depends="java.compile.org.campagnelab.ANTLR, java.compile.org.campagnelab.antlr.tomps, fetchDependencies">
     <mkdir dir="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.antlr.tomps#7645898506791942665" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.tomps#7645898506791942665" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.tomps#7645898506791942665" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${ANTLR_HOME}/languages/org.campagnelab.antlr.tomps/generator/source_gen" />
@@ -629,9 +663,13 @@
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
@@ -643,11 +681,11 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.8.jar" />
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.5.2.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
@@ -663,7 +701,7 @@
   <target name="java.compile.org.campagnelab.antlr.plugin" depends="java.compile.org.campagnelab.ANTLR, java.compile.org.campagnelab.antlr.parsers, fetchDependencies">
     <mkdir dir="${ANTLR_HOME}/solutions/org.campagnelab.antlr.plugin/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.campagnelab.antlr.plugin" />
-    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.plugin" fork="true" encoding="utf8" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/org.campagnelab.antlr.plugin" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${ANTLR_HOME}/solutions/org.campagnelab.antlr.plugin/source_gen" />
@@ -673,9 +711,13 @@
         <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
         <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
         <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
         <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
@@ -690,11 +732,11 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
+        <fileset file="${artifacts.mps}/lib/xstream-1.4.8.jar" />
         <fileset file="${artifacts.mps}/lib/asm-all.jar" />
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.5.2.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset dir="${artifacts.mps}/lib/ant/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
