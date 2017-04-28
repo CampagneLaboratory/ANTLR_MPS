@@ -7,6 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
@@ -66,6 +67,12 @@
       <property role="TrG5h" value="parserCanonicalClassName" />
       <property role="IQ2nx" value="2919715501613044585" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="1p7oQN$v0GG" role="1TKVEi">
+      <property role="IQ2ns" value="1605361111521823532" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="language" />
+      <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
     </node>
     <node concept="1TJgyj" id="6CrG2UA1yej" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
