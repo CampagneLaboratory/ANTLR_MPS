@@ -54,7 +54,7 @@ public final class CreateOperatorTextGen_Intention extends IntentionDescriptorBa
     public void execute(final SNode node, final EditorContext editorContext) {
       ListSequence.fromList(SLinkOperations.getChildren(node, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, 0x195a5f84d619bf2eL, "operators"))).visitAll(new IVisitor<SNode>() {
         public void visit(SNode it) {
-          Operator__BehaviorDescriptor.createTextGen_id3V2IUSra$Bd.invoke(it, ConvertToMPS__BehaviorDescriptor.getLanguage_id6BpdF0a6pgu.invoke(node));
+          Operator__BehaviorDescriptor.createTextGen_id3V2IUSra$Bd.invoke(it, ConvertToMPS__BehaviorDescriptor.getLanguage_id1p7oQN$WwRl.invoke(node));
         }
       });
     }

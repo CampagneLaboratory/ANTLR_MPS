@@ -129,7 +129,7 @@ public class ConvertToMPS_Editor extends DefaultNodeEditor {
     }
   }
   private EditorCell createConstant_ha86o5_c0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "grammar to MPS ");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "grammar to MPS");
     editorCell.setCellId("Constant_ha86o5_c0");
     Style style = new StyleImpl();
     tompsStyle_StyleSheet.apply_Heading(style, editorCell);

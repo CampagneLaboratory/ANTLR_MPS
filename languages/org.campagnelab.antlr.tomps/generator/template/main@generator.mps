@@ -20,9 +20,9 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="ijbl" ref="r:324aeb27-9266-4ede-aeba-c7d35018807b(org.campagnelab.ANTLR.behavior)" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1943,15 +1943,21 @@
       <property role="TrG5h" value="Dummy" />
       <node concept="3clFb_" id="4EJnNxxCxFT" role="jymVt">
         <property role="TrG5h" value="visitRule" />
+        <node concept="3uibUv" id="1p7oQN$ZpBw" role="3clF45">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
         <node concept="37vLTG" id="4EJnNxxCztD" role="3clF46">
           <property role="TrG5h" value="context" />
           <node concept="3uibUv" id="4EJnNxxCEd5" role="1tU5fm">
             <ref role="3uigEE" to="p1r7:~ANTLRv4Parser$IdContext" resolve="ANTLRv4Parser.IdContext" />
           </node>
         </node>
-        <node concept="3cqZAl" id="4EJnNxxCxFV" role="3clF45" />
         <node concept="3Tm1VV" id="4EJnNxxCxFW" role="1B3o_S" />
-        <node concept="3clFbS" id="4EJnNxxCxFX" role="3clF47" />
+        <node concept="3clFbS" id="4EJnNxxCxFX" role="3clF47">
+          <node concept="3cpWs6" id="1p7oQN$ZpPb" role="3cqZAp">
+            <node concept="10Nm6u" id="1p7oQN$ZpPK" role="3cqZAk" />
+          </node>
+        </node>
       </node>
       <node concept="3clFb_" id="4EJnNxxCEfa" role="jymVt">
         <property role="TrG5h" value="dummyMethod" />
