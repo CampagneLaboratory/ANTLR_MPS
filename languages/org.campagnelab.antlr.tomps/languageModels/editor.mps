@@ -344,20 +344,16 @@
         </node>
       </node>
       <node concept="3F0ifn" id="6CrG2UA1ybn" role="3EZMnx">
-        <property role="3F0ifm" value="grammar to MPS language:" />
+        <property role="3F0ifm" value="grammar to MPS " />
         <ref role="1k5W1q" node="6BpdF0aeSFP" resolve="Heading" />
         <node concept="VSNWy" id="6BpdF0aeG2q" role="3F10Kt">
           <property role="1lJzqX" value="20" />
         </node>
       </node>
-      <node concept="3F0A7n" id="6BpdF0a6mQD" role="3EZMnx">
-        <ref role="1NtTu8" to="3elq:6BpdF0a5fC5" resolve="destinationLanguageName" />
-        <ref role="1k5W1q" node="6BpdF0aeSFP" resolve="Heading" />
-        <node concept="VechU" id="6BpdF0af0oX" role="3F10Kt">
-          <property role="Vb096" value="black" />
-        </node>
-        <node concept="Vb9p2" id="6BpdF0af0qJ" role="3F10Kt">
-          <property role="Vbekb" value="BOLD" />
+      <node concept="3F1sOY" id="1p7oQN$v0KY" role="3EZMnx">
+        <ref role="1NtTu8" to="3elq:1p7oQN$v0GG" resolve="language" />
+        <node concept="VSNWy" id="1p7oQN$HDXS" role="3F10Kt">
+          <property role="1lJzqX" value="20" />
         </node>
       </node>
       <node concept="3F0ifn" id="2y4Usu6QXKv" role="3EZMnx">

@@ -13,8 +13,7 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.Language;
-import jetbrains.mps.smodel.ModuleRepositoryFacade;
-import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
+import org.campagnelab.antlr.tomps.behavior.ConvertToMPS__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
@@ -41,7 +40,8 @@ public class ConvertToMPS_Constraints extends BaseConstraintsDescriptor {
         String propertyName = "destinationLanguageName";
         {
           String languageName = (SPropertyOperations.getString(propertyValue));
-          Language l = ModuleRepositoryFacade.getInstance().getModule(PersistenceFacade.getInstance().createModuleReference(languageName), Language.class);
+          Language l = ConvertToMPS__BehaviorDescriptor.getLanguage_id1p7oQN$sEF_.invoke(node, languageName);
+
           if (l != null) {
             SPropertyOperations.set(node, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, 0x69d936b00a14fa05L, "destinationLanguageName"), languageName);
           }
@@ -55,12 +55,7 @@ public class ConvertToMPS_Constraints extends BaseConstraintsDescriptor {
       @Override
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "destinationLanguageName";
-        {
-          String languageName = (SPropertyOperations.getString(propertyValue));
-
-          Language l = ModuleRepositoryFacade.getInstance().getModule(PersistenceFacade.getInstance().createModuleReference(languageName), Language.class);
-          return l != null;
-        }
+        return true;
       }
     });
     return properties;

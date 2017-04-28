@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -57,6 +58,12 @@
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="7645898506791951234" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1p7oQN$v0GG" role="1TKVEi">
+      <property role="IQ2ns" value="1605361111521823532" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="language" />
+      <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
+    </node>
     <node concept="1TJgyi" id="6BpdF0a5fC5" role="1TKVEl">
       <property role="TrG5h" value="destinationLanguageName" />
       <property role="IQ2nx" value="7627187573639936517" />

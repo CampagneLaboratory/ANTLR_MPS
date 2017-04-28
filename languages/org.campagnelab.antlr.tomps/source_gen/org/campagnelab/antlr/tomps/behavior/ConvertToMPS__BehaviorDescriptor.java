@@ -22,8 +22,12 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.apache.log4j.Logger;
+import org.apache.log4j.LogManager;
 import jetbrains.mps.smodel.ModuleRepositoryFacade;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
+import org.apache.log4j.Level;
+import jetbrains.mps.lang.smodel.behavior.LanguageIdentity__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import jetbrains.mps.scope.ListScope;
@@ -38,10 +42,11 @@ public final class ConvertToMPS__BehaviorDescriptor extends BaseBHDescriptor {
 
   public static final SMethod<String> getGeneratedClassName_id14grA09hT8$ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getGeneratedClassName").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("14grA09hT8$").registry(REGISTRY).build();
   public static final SMethod<String> getFqName_idhEwIO9y = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFqName").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("hEwIO9y").registry(REGISTRY).build();
+  public static final SMethod<Language> getLanguage_id1p7oQN$sEF_ = new SMethodBuilder<Language>(new SJavaCompoundTypeImpl(Language.class)).name("getLanguage").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("1p7oQN$sEF_").registry(REGISTRY).build(SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<Language> getLanguage_id6BpdF0a6pgu = new SMethodBuilder<Language>(new SJavaCompoundTypeImpl(Language.class)).name("getLanguage").modifiers(SModifiersImpl.create(0, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("6BpdF0a6pgu").registry(REGISTRY).build();
   public static final SMethod<Scope> getScope_id3fifI_xCJOQ = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getScope").modifiers(SModifiersImpl.create(8, AccessPrivileges.PUBLIC)).concept(CONCEPT).id("3fifI_xCJOQ").registry(REGISTRY).build(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGeneratedClassName_id14grA09hT8$, getFqName_idhEwIO9y, getLanguage_id6BpdF0a6pgu, getScope_id3fifI_xCJOQ);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGeneratedClassName_id14grA09hT8$, getFqName_idhEwIO9y, getLanguage_id1p7oQN$sEF_, getLanguage_id6BpdF0a6pgu, getScope_id3fifI_xCJOQ);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -62,9 +67,24 @@ public final class ConvertToMPS__BehaviorDescriptor extends BaseBHDescriptor {
     }
     return longName + "." + name;
   }
+  protected static Logger LOG = LogManager.getLogger(ConvertToMPS__BehaviorDescriptor.class);
+  /*package*/ static Language getLanguage_id1p7oQN$sEF_(@NotNull SNode __thisNode__, String languageName) {
+    if (languageName == null) {
+      return null;
+    }
+    try {
+      Language l = ModuleRepositoryFacade.getInstance().getModule(PersistenceFacade.getInstance().createModuleReference(languageName), Language.class);
+      return l;
+
+    } catch (Exception e) {
+      if (LOG.isEnabledFor(Level.ERROR)) {
+        LOG.error("Unable to retrieve module reference for language: " + SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, 0x69d936b00a14fa05L, "destinationLanguageName")), e);
+      }
+      return null;
+    }
+  }
   /*package*/ static Language getLanguage_id6BpdF0a6pgu(@NotNull SNode __thisNode__) {
-    Language l = ModuleRepositoryFacade.getInstance().getModule(PersistenceFacade.getInstance().createModuleReference(SPropertyOperations.getString(__thisNode__, MetaAdapterFactory.getProperty(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, 0x69d936b00a14fa05L, "destinationLanguageName"))), Language.class);
-    return l;
+    return ((Language) ConvertToMPS__BehaviorDescriptor.getLanguage_id1p7oQN$sEF_.invoke(__thisNode__, LanguageIdentity__BehaviorDescriptor.getLanguage_id34EJa6aIcyj.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, MetaAdapterFactory.getContainmentLink(0x932d719ce93144d5L, 0x990ce115f79b5942L, 0x6a1bb02ea6061b82L, 0x1647636ce47c0b2cL, "language")), MetaAdapterFactory.getContainmentLink(0x7866978ea0f04cc7L, 0x81bc4d213d9375e1L, 0x3e6a40ba27dd70f3L, 0x312abca18ab995e2L, "languageId"))).getQualifiedName()));
   }
   /*package*/ static Scope getScope_id3fifI_xCJOQ(@NotNull SNode __thisNode__, SNode kind, SNode child) {
     if (kind == MetaAdapterFactory.getConcept(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L, "jetbrains.mps.lang.structure.structure.ConceptDeclaration").getDeclarationNode()) {
@@ -99,8 +119,10 @@ public final class ConvertToMPS__BehaviorDescriptor extends BaseBHDescriptor {
       case 1:
         return (T) ((String) getFqName_idhEwIO9y(node));
       case 2:
-        return (T) ((Language) getLanguage_id6BpdF0a6pgu(node));
+        return (T) ((Language) getLanguage_id1p7oQN$sEF_(node, (String) parameters[0]));
       case 3:
+        return (T) ((Language) getLanguage_id6BpdF0a6pgu(node));
+      case 4:
         return (T) ((Scope) getScope_id3fifI_xCJOQ(node, (SNode) parameters[0], (SNode) parameters[1]));
       default:
         throw new BHMethodNotFoundException(this, method);
