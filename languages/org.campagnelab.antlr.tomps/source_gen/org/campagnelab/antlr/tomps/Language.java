@@ -7,9 +7,6 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 import jetbrains.mps.smodel.adapter.ids.SLanguageId;
 import java.util.UUID;
-import java.util.Collection;
-import jetbrains.mps.generator.runtime.TemplateModule;
-import jetbrains.mps.generator.runtime.TemplateUtil;
 import jetbrains.mps.smodel.runtime.ILanguageAspect;
 import jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor;
 import org.campagnelab.antlr.tomps.actions.ActionAspectDescriptorImpl;
@@ -22,6 +19,7 @@ import org.campagnelab.antlr.tomps.intentions.IntentionsDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import org.campagnelab.antlr.tomps.structure.ConceptPresentationAspectImpl;
+import jetbrains.mps.text.rt.TextGenAspectDescriptor;
 import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
 import org.campagnelab.antlr.tomps.typesystem.TypesystemDescriptor;
 
@@ -46,10 +44,6 @@ public class Language extends LanguageRuntime {
   @Override
   protected String[] getExtendedLanguageIDs() {
     return new String[]{"jetbrains.mps.baseLanguage"};
-  }
-  @Override
-  public Collection<TemplateModule> getGenerators() {
-    return TemplateUtil.<TemplateModule>asCollection(TemplateUtil.createInterpretedGenerator(this, "92e3c42f-bc31-4389-addc-b7c0315889a0(org.campagnelab.antlr.tomps#7645898506791942665)"));
   }
   @Override
   protected <T extends ILanguageAspect> T createAspect(Class<T> aspectClass) {
@@ -87,6 +81,11 @@ public class Language extends LanguageRuntime {
       if (aspectClass.getName().equals("jetbrains.mps.smodel.runtime.ConceptPresentationAspect")) {
         if (aspectClass == ConceptPresentationAspect.class) {
           return (T) new ConceptPresentationAspectImpl();
+        }
+      }
+      if (aspectClass.getName().equals("jetbrains.mps.text.rt.TextGenAspectDescriptor")) {
+        if (aspectClass == TextGenAspectDescriptor.class) {
+          return (T) new org.campagnelab.antlr.tomps.textGen.TextGenAspectDescriptor();
         }
       }
       if (aspectClass.getName().equals("jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor")) {

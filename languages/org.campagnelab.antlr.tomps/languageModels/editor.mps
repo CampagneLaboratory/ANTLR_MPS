@@ -221,6 +221,9 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -247,6 +250,14 @@
       <concept id="1143235216708" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewNodeOperation" flags="nn" index="I8ghe">
         <reference id="1143235391024" name="concept" index="I8UWU" />
       </concept>
+      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
+        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
+        <child id="1883223317721008709" name="body" index="Jncv$" />
+        <child id="1883223317721008711" name="variable" index="JncvA" />
+        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
+      </concept>
+      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
@@ -1878,19 +1889,31 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="r9xlU4zEaw" role="3cqZAp">
-              <node concept="37vLTI" id="r9xlU4zEax" role="3clFbG">
-                <node concept="37vLTw" id="r9xlU4zEay" role="37vLTx">
-                  <ref role="3cqZAo" node="r9xlU4zEaf" resolve="previous" />
-                </node>
-                <node concept="2OqwBi" id="r9xlU4zEaz" role="37vLTJ">
-                  <node concept="37vLTw" id="r9xlU4zEa$" role="2Oq$k0">
-                    <ref role="3cqZAo" node="r9xlU4zEal" resolve="to" />
+            <node concept="Jncv_" id="1p7oQN$Lzt2" role="3cqZAp">
+              <ref role="JncvD" to="3elq:4EJnNxxIT2p" resolve="ChildDestination" />
+              <node concept="37vLTw" id="1p7oQN$Lz_e" role="JncvB">
+                <ref role="3cqZAo" node="r9xlU4zEaf" resolve="previous" />
+              </node>
+              <node concept="3clFbS" id="1p7oQN$Lzt6" role="Jncv$">
+                <node concept="3clFbF" id="r9xlU4zEaw" role="3cqZAp">
+                  <node concept="37vLTI" id="r9xlU4zEax" role="3clFbG">
+                    <node concept="2OqwBi" id="r9xlU4zEaz" role="37vLTJ">
+                      <node concept="37vLTw" id="r9xlU4zEa$" role="2Oq$k0">
+                        <ref role="3cqZAo" node="r9xlU4zEal" resolve="to" />
+                      </node>
+                      <node concept="3TrEf2" id="r9xlU4$Lec" role="2OqNvi">
+                        <ref role="3Tt5mk" to="3elq:r9xlU4yxjf" resolve="toConvert" />
+                      </node>
+                    </node>
+                    <node concept="Jnkvi" id="1p7oQN$LzWC" role="37vLTx">
+                      <ref role="1M0zk5" node="1p7oQN$Lzt8" resolve="child" />
+                    </node>
                   </node>
-                  <node concept="3TrEf2" id="r9xlU4$Lec" role="2OqNvi">
-                    <ref role="3Tt5mk" to="3elq:r9xlU4yxjf" resolve="toConvert" />
-                  </node>
                 </node>
+              </node>
+              <node concept="JncvC" id="1p7oQN$Lzt8" role="JncvA">
+                <property role="TrG5h" value="child" />
+                <node concept="2jxLKc" id="1p7oQN$Lzt9" role="1tU5fm" />
               </node>
             </node>
           </node>
