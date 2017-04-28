@@ -26,10 +26,9 @@
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="2omo" ref="r:de0d3c0c-d049-41cf-bbf9-a920ba513cd3(jetbrains.mps.lang.textGen.structure)" />
-    <import index="2k9e" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.adapter.structure(MPS.Core/)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -693,13 +692,13 @@
         <node concept="17QB3L" id="1p7oQN$sFr7" role="1tU5fm" />
       </node>
     </node>
-    <node concept="13i0hz" id="6BpdF0a6pgu" role="13h7CS">
+    <node concept="13i0hz" id="1p7oQN$WwRl" role="13h7CS">
       <property role="TrG5h" value="getLanguage" />
-      <node concept="3Tm1VV" id="6BpdF0a6pgv" role="1B3o_S" />
-      <node concept="3uibUv" id="6BpdF0a6vD1" role="3clF45">
+      <node concept="3Tm1VV" id="1p7oQN$WwRm" role="1B3o_S" />
+      <node concept="3uibUv" id="1p7oQN$WwRn" role="3clF45">
         <ref role="3uigEE" to="w1kc:~Language" resolve="Language" />
       </node>
-      <node concept="3clFbS" id="6BpdF0a6pgx" role="3clF47">
+      <node concept="3clFbS" id="1p7oQN$WwRo" role="3clF47">
         <node concept="3cpWs8" id="1p7oQN$Oy7q" role="3cqZAp">
           <node concept="3cpWsn" id="1p7oQN$Oy7r" role="3cpWs9">
             <property role="TrG5h" value="sourceModuleReference" />
@@ -711,7 +710,7 @@
                 <node concept="2OqwBi" id="1p7oQN$Oy7u" role="2Oq$k0">
                   <node concept="2OqwBi" id="1p7oQN$Oy7v" role="2Oq$k0">
                     <node concept="13iPFW" id="1p7oQN$Oy7w" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="1p7oQN$Oy7x" role="2OqNvi">
+                    <node concept="3TrEf2" id="1p7oQN$Wz7m" role="2OqNvi">
                       <ref role="3Tt5mk" to="3elq:1p7oQN$v0GG" resolve="language" />
                     </node>
                   </node>
@@ -849,10 +848,10 @@
               </node>
               <node concept="2OqwBi" id="6BpdF0ac0u_" role="2GsD0m">
                 <node concept="2OqwBi" id="6BpdF0ac00g" role="2Oq$k0">
-                  <node concept="13iPFW" id="6BpdF0abZWc" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="6BpdF0ac0oI" role="2OqNvi">
-                    <ref role="37wK5l" node="6BpdF0a6pgu" resolve="getLanguage" />
+                  <node concept="2qgKlT" id="1p7oQN$Z6px" role="2OqNvi">
+                    <ref role="37wK5l" node="1p7oQN$WwRl" resolve="getLanguage" />
                   </node>
+                  <node concept="13iPFW" id="6BpdF0abZWc" role="2Oq$k0" />
                 </node>
                 <node concept="liA8E" id="6BpdF0ac1tz" role="2OqNvi">
                   <ref role="37wK5l" to="w1kc:~Language.getConceptDeclarations():java.util.List" resolve="getConceptDeclarations" />
@@ -922,6 +921,9 @@
       <node concept="3clFbS" id="6BpdF0a7Gh$" role="3clF47">
         <node concept="3clFbF" id="6BpdF0a7GhI" role="3cqZAp">
           <node concept="2OqwBi" id="6BpdF0a7G$h" role="3clFbG">
+            <node concept="2qgKlT" id="1p7oQN$Z66U" role="2OqNvi">
+              <ref role="37wK5l" node="1p7oQN$WwRl" resolve="getLanguage" />
+            </node>
             <node concept="2OqwBi" id="6BpdF0a7Gj8" role="2Oq$k0">
               <node concept="13iPFW" id="6BpdF0a7GhH" role="2Oq$k0" />
               <node concept="2Xjw5R" id="6BpdF0a7GxD" role="2OqNvi">
@@ -931,9 +933,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="2qgKlT" id="6BpdF0a7GRl" role="2OqNvi">
-              <ref role="37wK5l" node="6BpdF0a6pgu" resolve="getLanguage" />
             </node>
           </node>
         </node>
@@ -5779,11 +5778,11 @@
               <node concept="2qgKlT" id="1_qnSjmfTbZ" role="2OqNvi">
                 <ref role="37wK5l" node="1_qnSjmlzlr" resolve="looupOrCreate" />
                 <node concept="2OqwBi" id="1_qnSjmkbFr" role="37wK5m">
+                  <node concept="2qgKlT" id="1p7oQN_1xNN" role="2OqNvi">
+                    <ref role="37wK5l" node="1p7oQN$WwRl" resolve="getLanguage" />
+                  </node>
                   <node concept="BsUDl" id="1_qnSjmkbBM" role="2Oq$k0">
                     <ref role="37wK5l" node="1_qnSjmfJ0w" resolve="converter" />
-                  </node>
-                  <node concept="2qgKlT" id="1_qnSjmkc5y" role="2OqNvi">
-                    <ref role="37wK5l" node="6BpdF0a6pgu" resolve="getLanguage" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="1_qnSjmfUuI" role="37wK5m">
