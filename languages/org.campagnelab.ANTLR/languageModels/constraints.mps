@@ -75,7 +75,6 @@
       </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
-      <concept id="1957603573855863643" name="jetbrains.mps.lang.constraints.structure.ConstraintsMigration" flags="ng" index="5B0Pf" />
       <concept id="6702802731807424858" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAnAncestor" flags="in" index="9SQb8" />
       <concept id="1203001236505" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConceptNode" flags="nn" index="otxO1" />
       <concept id="4303308395523096213" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConcept" flags="ng" index="2DD5aU" />
@@ -115,11 +114,6 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="2482611074346661065" name="jetbrains.mps.lang.core.structure.ReviewMigration" flags="ng" index="13_zln">
-        <property id="2482611074346661078" name="reasonShort" index="13_zl8" />
-        <property id="2482611074346661073" name="todo" index="13_zlf" />
-        <property id="2482611074347169514" name="readableId" index="13BvtO" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
@@ -249,15 +243,9 @@
                   </node>
                   <node concept="FGMqu" id="2VV0OICJXe$" role="2OqNvi" />
                 </node>
-                <node concept="2OqwBi" id="2VV0OICJXeF" role="3uHU7B">
-                  <node concept="FGMqu" id="2VV0OICJXeG" role="2OqNvi" />
-                  <node concept="2DD5aU" id="2VV0OICJXeE" role="2Oq$k0" />
-                  <node concept="13_zln" id="2VV0OICK4SW" role="lGtFl">
-                    <property role="13_zl8" value="unknown attributes" />
-                    <property role="13_zlf" value="This node should have been migrated, but has annotations not recognised by the migration. Please review this code and migrate manually if necessary. Unknown attribute: jetbrains.mps.lang.constraints.structure.ConstraintsMigration" />
-                    <property role="13BvtO" value="Migrate popular concept&lt;-&gt;node conversions" />
-                  </node>
-                  <node concept="5B0Pf" id="2VV0OICJXeH" role="lGtFl" />
+                <node concept="2OqwBi" id="2VV0OICK9Iw" role="3uHU7B">
+                  <node concept="2DD5aU" id="2VV0OICK9jU" role="2Oq$k0" />
+                  <node concept="FGMqu" id="2VV0OICKakn" role="2OqNvi" />
                 </node>
               </node>
             </node>
