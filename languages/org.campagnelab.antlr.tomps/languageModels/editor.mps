@@ -3,8 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -244,8 +244,8 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143235216708" name="jetbrains.mps.lang.smodel.structure.Model_CreateNewNodeOperation" flags="nn" index="I8ghe">
         <reference id="1143235391024" name="concept" index="I8UWU" />
@@ -1124,12 +1124,14 @@
                 <node concept="2OqwBi" id="4EJnNxxFJYA" role="37vLTJ">
                   <node concept="1PxgMI" id="4EJnNxxFJYB" role="2Oq$k0">
                     <property role="1BlNFB" value="true" />
-                    <ref role="1m5ApE" to="3elq:4EJnNxxFvTR" resolve="LabeledElementSource" />
                     <node concept="2OqwBi" id="4EJnNxxFJYC" role="1m5AlR">
                       <node concept="3GMtW1" id="4EJnNxxFJYD" role="2Oq$k0" />
                       <node concept="3TrEf2" id="4EJnNxxFJYE" role="2OqNvi">
                         <ref role="3Tt5mk" to="3elq:3xPTlDSZWJt" resolve="source" />
                       </node>
+                    </node>
+                    <node concept="chp4Y" id="2VV0OICK55G" role="3oSUPX">
+                      <ref role="cht4Q" to="3elq:4EJnNxxFvTR" resolve="LabeledElementSource" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="4EJnNxxFKxU" role="2OqNvi">
@@ -1232,12 +1234,14 @@
                 <node concept="2OqwBi" id="4EJnNxxFBks" role="37vLTJ">
                   <node concept="1PxgMI" id="4EJnNxxFBkt" role="2Oq$k0">
                     <property role="1BlNFB" value="true" />
-                    <ref role="1m5ApE" to="3elq:3xPTlDSVFvY" resolve="ParserRuleSource" />
                     <node concept="2OqwBi" id="4EJnNxxFBku" role="1m5AlR">
                       <node concept="3GMtW1" id="4EJnNxxFBkv" role="2Oq$k0" />
                       <node concept="3TrEf2" id="4EJnNxxFDkn" role="2OqNvi">
                         <ref role="3Tt5mk" to="3elq:3xPTlDSZWJt" resolve="source" />
                       </node>
+                    </node>
+                    <node concept="chp4Y" id="2VV0OICK55C" role="3oSUPX">
+                      <ref role="cht4Q" to="3elq:3xPTlDSVFvY" resolve="ParserRuleSource" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="4EJnNxxFBkx" role="2OqNvi">
@@ -1345,12 +1349,14 @@
                 <node concept="2OqwBi" id="4gYz4fZJxAM" role="37vLTJ">
                   <node concept="1PxgMI" id="4gYz4fZJxAN" role="2Oq$k0">
                     <property role="1BlNFB" value="true" />
-                    <ref role="1m5ApE" to="3elq:6$il$X2a3fr" resolve="LexerRuleSource" />
                     <node concept="2OqwBi" id="4gYz4fZJxAO" role="1m5AlR">
                       <node concept="3GMtW1" id="4gYz4fZJxAP" role="2Oq$k0" />
                       <node concept="3TrEf2" id="4gYz4fZJ_zD" role="2OqNvi">
                         <ref role="3Tt5mk" to="3elq:3xPTlDSZWJt" resolve="source" />
                       </node>
+                    </node>
+                    <node concept="chp4Y" id="2VV0OICK55L" role="3oSUPX">
+                      <ref role="cht4Q" to="3elq:6$il$X2a3fr" resolve="LexerRuleSource" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="4gYz4fZJ_M5" role="2OqNvi">
@@ -1467,12 +1473,14 @@
                 <node concept="2OqwBi" id="2uLbzznliti" role="37vLTJ">
                   <node concept="1PxgMI" id="2uLbzznlitj" role="2Oq$k0">
                     <property role="1BlNFB" value="true" />
-                    <ref role="1m5ApE" to="3elq:4EJnNxxIT2p" resolve="ChildDestination" />
                     <node concept="2OqwBi" id="2uLbzznlitk" role="1m5AlR">
                       <node concept="3GMtW1" id="2uLbzznlitl" role="2Oq$k0" />
                       <node concept="3TrEf2" id="2uLbzznlAI5" role="2OqNvi">
                         <ref role="3Tt5mk" to="3elq:4EJnNxxIT1S" resolve="destination" />
                       </node>
+                    </node>
+                    <node concept="chp4Y" id="2VV0OICK55E" role="3oSUPX">
+                      <ref role="cht4Q" to="3elq:4EJnNxxIT2p" resolve="ChildDestination" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="2uLbzznl$X2" role="2OqNvi">
@@ -1572,12 +1580,14 @@
                 <node concept="2OqwBi" id="2uLbzznlX8v" role="37vLTJ">
                   <node concept="1PxgMI" id="2uLbzznliu0" role="2Oq$k0">
                     <property role="1BlNFB" value="true" />
-                    <ref role="1m5ApE" to="3elq:2uLbzznlRIg" resolve="PropertyDestination" />
                     <node concept="2OqwBi" id="2uLbzznliu1" role="1m5AlR">
                       <node concept="3GMtW1" id="2uLbzznliu2" role="2Oq$k0" />
                       <node concept="3TrEf2" id="2uLbzznlXwG" role="2OqNvi">
                         <ref role="3Tt5mk" to="3elq:4EJnNxxIT1S" resolve="destination" />
                       </node>
+                    </node>
+                    <node concept="chp4Y" id="2VV0OICK55I" role="3oSUPX">
+                      <ref role="cht4Q" to="3elq:2uLbzznlRIg" resolve="PropertyDestination" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="2uLbzznlXK4" role="2OqNvi">
