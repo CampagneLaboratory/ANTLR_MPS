@@ -171,32 +171,6 @@
     <node concept="3b7kt6" id="7twz7e84BNf" role="10PD9s" />
     <node concept="398rNT" id="7twz7e84BNr" role="1l3spd">
       <property role="TrG5h" value="mps_home" />
-      <node concept="55IIr" id="5AGHuzW2F3m" role="398pKh">
-        <node concept="2Ry0Ak" id="5AGHuzW2F4$" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="5AGHuzW2F5M" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="5AGHuzW2F7Y" role="2Ry0An">
-              <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="5AGHuzW2F8N" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="5AGHuzW2F9C" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="5AGHuzW2Fbh" role="2Ry0An">
-                    <property role="2Ry0Am" value="Applications" />
-                    <node concept="2Ry0Ak" id="5AGHuzW2FcU" role="2Ry0An">
-                      <property role="2Ry0Am" value="MPS 2017.1.app" />
-                      <node concept="2Ry0Ak" id="5AGHuzW2Fez" role="2Ry0An">
-                        <property role="2Ry0Am" value="Contents" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="398rNT" id="7twz7e84BNj" role="1l3spd">
       <property role="TrG5h" value="plugins_home" />

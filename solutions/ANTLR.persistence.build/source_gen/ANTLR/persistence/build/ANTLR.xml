@@ -4,7 +4,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/ANTLR" />
   <property name="build.layout" location="${build.dir}/artifacts/ANTLR" />
-  <property name="mps_home" location="${basedir}/../../../../../Applications/MPS 2017.1.app/Contents" />
+  <property name="mps_home" location="" />
   <property name="plugins_home" location="${mps_home}/plugins" />
   <property name="ANTLR_HOME" location="${basedir}" />
   <property name="ANTLR_version" value="1.1.4" />
