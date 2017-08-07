@@ -304,9 +304,7 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
-        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
-      </concept>
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS" />
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
@@ -388,6 +386,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
@@ -2622,15 +2621,15 @@
                         </node>
                         <node concept="liA8E" id="14grA09IXwA" role="2OqNvi">
                           <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                          <node concept="2OqwBi" id="14grA09IXwB" role="37wK5m">
-                            <node concept="2OqwBi" id="14grA09IXwC" role="2Oq$k0">
+                          <node concept="2OqwBi" id="14grA09IXwC" role="37wK5m">
+                            <node concept="2OqwBi" id="1xVV58hbm9Q" role="2Oq$k0">
                               <node concept="30H73N" id="14grA09IXwD" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="14grA09IXwE" role="2OqNvi">
-                                <ref role="3Tt5mk" to="3elq:3xPTlDSZWJt" resolve="source" />
+                              <node concept="3TrEf2" id="1xVV58hbmD1" role="2OqNvi">
+                                <ref role="3Tt5mk" to="3elq:4EJnNxxITri" resolve="to" />
                               </node>
                             </node>
-                            <node concept="3TrcHB" id="14grA09IXwF" role="2OqNvi">
-                              <ref role="3TsBF5" to="3elq:cELb$UqRV8" resolve="cardinality" />
+                            <node concept="3TrcHB" id="1xVV58hbn98" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpce:fA0lbG4" resolve="sourceCardinality" />
                             </node>
                           </node>
                         </node>
@@ -2656,15 +2655,15 @@
                         </node>
                         <node concept="liA8E" id="14grA09IXwP" role="2OqNvi">
                           <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                          <node concept="2OqwBi" id="14grA09IXwQ" role="37wK5m">
-                            <node concept="2OqwBi" id="14grA09IXwR" role="2Oq$k0">
+                          <node concept="2OqwBi" id="14grA09IXwR" role="37wK5m">
+                            <node concept="2OqwBi" id="1xVV58hbohV" role="2Oq$k0">
                               <node concept="30H73N" id="14grA09IXwS" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="14grA09IXwT" role="2OqNvi">
-                                <ref role="3Tt5mk" to="3elq:3xPTlDSZWJt" resolve="source" />
+                              <node concept="3TrEf2" id="1xVV58hboLh" role="2OqNvi">
+                                <ref role="3Tt5mk" to="3elq:4EJnNxxITri" resolve="to" />
                               </node>
                             </node>
-                            <node concept="3TrcHB" id="14grA09IXwU" role="2OqNvi">
-                              <ref role="3TsBF5" to="3elq:cELb$UqRV8" resolve="cardinality" />
+                            <node concept="3TrcHB" id="1xVV58hbpQ2" role="2OqNvi">
+                              <ref role="3TsBF5" to="tpce:fA0lbG4" resolve="sourceCardinality" />
                             </node>
                           </node>
                         </node>
@@ -2676,15 +2675,8 @@
                   </node>
                 </node>
                 <node concept="gft3U" id="14grA09IXY_" role="UU_$l">
-                  <node concept="37vLTI" id="14grA09IZt3" role="gfFT$">
-                    <node concept="2ShNRf" id="14grA09IZuH" role="37vLTx">
-                      <node concept="2T8Vx0" id="14grA09IZuF" role="2ShVmc">
-                        <node concept="2I9FWS" id="14grA09IZuG" role="2T96Bj">
-                          <ref role="2I9WkF" to="3elq:4EJnNxxClL3" resolve="ExampleConcept" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="14grA09IYbR" role="37vLTJ">
+                  <node concept="2OqwBi" id="1xVV58hbs1x" role="gfFT$">
+                    <node concept="2OqwBi" id="14grA09IYbR" role="2Oq$k0">
                       <node concept="37vLTw" id="14grA09IYai" role="2Oq$k0">
                         <ref role="3cqZAo" node="2uLbzzntc7$" resolve="result" />
                       </node>
@@ -2692,6 +2684,7 @@
                         <ref role="3TtcxE" to="3elq:cELb$UtLyO" resolve="listChild" />
                       </node>
                     </node>
+                    <node concept="2Kehj3" id="1xVV58hbuih" role="2OqNvi" />
                   </node>
                 </node>
               </node>
