@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:7411fb38-9333-442c-8d40-0880553c9d23(migrationData)">
+  <persistence version="9" />
+  <languages />
+  <imports>
+    <import index="3elq" ref="r:d6ed95b0-0023-42ab-bb27-99fdde507c48(org.campagnelab.antlr.tomps.structure)" implicit="true" />
+    <import index="spf" ref="r:54b4b70b-9af5-414f-8d8d-548b74ba599c(org.campagnelab.antlr.tomps.editor)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="3017733173184487099" name="jetbrains.mps.lang.editor.structure.SmartRefMigrationDataEntity" flags="ng" index="ZsZFI">
+        <reference id="3017733173184487105" name="generatedMenu" index="ZsZEk" />
+        <reference id="3017733173184487102" name="conceptNode" index="ZsZFF" />
+      </concept>
+      <concept id="3017733173184487098" name="jetbrains.mps.lang.editor.structure.SmartRefMigrationData" flags="ng" index="ZsZFJ">
+        <child id="3017733173184487121" name="entities" index="ZsZE4" />
+      </concept>
+    </language>
+    <language id="9882f4ad-1955-46fe-8269-94189e5dbbf2" name="jetbrains.mps.lang.migration.util">
+      <concept id="7417095922908669705" name="jetbrains.mps.lang.migration.util.structure.StepData" flags="ng" index="2z5JpS">
+        <property id="1973338949477451252" name="script" index="3qqn2_" />
+        <child id="7417095922908725798" name="data" index="2z5Xdn" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2z5JpS" id="7hLwhFVd2hh">
+    <property role="3qqn2_" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)/8" />
+    <node concept="ZsZFJ" id="7hLwhFVd2fV" role="2z5Xdn">
+      <node concept="ZsZFI" id="7hLwhFVd2gc" role="ZsZE4">
+        <ref role="ZsZFF" to="3elq:4EJnNxxFvTR" resolve="LabeledElementSource" />
+        <ref role="ZsZEk" to="spf:7hLwhFVd2g6" resolve="LabeledElementSource_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="7hLwhFVd2gu" role="ZsZE4">
+        <ref role="ZsZFF" to="3elq:3xPTlDSVFvY" resolve="ParserRuleSource" />
+        <ref role="ZsZEk" to="spf:7hLwhFVd2go" resolve="ParserRuleSource_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="7hLwhFVd2gI" role="ZsZE4">
+        <ref role="ZsZFF" to="3elq:4EJnNxxIT2p" resolve="ChildDestination" />
+        <ref role="ZsZEk" to="spf:7hLwhFVd2gC" resolve="ChildDestination_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="7hLwhFVd2h0" role="ZsZE4">
+        <ref role="ZsZFF" to="3elq:6$il$X2a3fr" resolve="LexerRuleSource" />
+        <ref role="ZsZEk" to="spf:7hLwhFVd2gU" resolve="LexerRuleSource_SmartReference" />
+      </node>
+      <node concept="ZsZFI" id="7hLwhFVd2hg" role="ZsZE4">
+        <ref role="ZsZFF" to="3elq:2uLbzznlRIg" resolve="PropertyDestination" />
+        <ref role="ZsZEk" to="spf:7hLwhFVd2ha" resolve="PropertyDestination_SmartReference" />
+      </node>
+    </node>
+  </node>
+</model>
+

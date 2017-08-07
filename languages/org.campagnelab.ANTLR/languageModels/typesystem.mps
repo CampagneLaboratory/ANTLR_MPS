@@ -2,8 +2,7 @@
 <model ref="r:605281ab-5c41-4f2b-8300-326aa196a028(org.campagnelab.ANTLR.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="ubjp" ref="r:579fcb2d-4d1f-46c6-93f9-98775dc55169(org.campagnelab.ANTLR.structure)" implicit="true" />
@@ -454,7 +453,7 @@
                 <ref role="3cqZAo" node="4L89IP4XM7Y" resolve="ruleRef" />
               </node>
               <node concept="3TrEf2" id="4L89IP4XNmg" role="2OqNvi">
-                <ref role="3Tt5mk" to="ubjp:6cuUYchcH_B" />
+                <ref role="3Tt5mk" to="ubjp:6cuUYchcH_B" resolve="rule" />
               </node>
             </node>
           </node>
@@ -535,7 +534,7 @@
                 <ref role="3cqZAo" node="4L89IP4ZbNr" resolve="ruleRef" />
               </node>
               <node concept="3TrEf2" id="4L89IP4ZcfB" role="2OqNvi">
-                <ref role="3Tt5mk" to="ubjp:1tv9AyC$eYv" />
+                <ref role="3Tt5mk" to="ubjp:1tv9AyC$eYv" resolve="rule" />
               </node>
             </node>
           </node>
@@ -939,7 +938,7 @@
                 <ref role="3cqZAo" node="v1yTSnpz5L" resolve="tokenRef" />
               </node>
               <node concept="3TrEf2" id="v1yTSnpzNn" role="2OqNvi">
-                <ref role="3Tt5mk" to="ubjp:v1yTSnbNW4" />
+                <ref role="3Tt5mk" to="ubjp:v1yTSnbNW4" resolve="token" />
               </node>
             </node>
           </node>
@@ -1020,7 +1019,7 @@
                 <ref role="3cqZAo" node="v1yTSnp$3c" resolve="tokenRef" />
               </node>
               <node concept="3TrEf2" id="v1yTSnp$3m" role="2OqNvi">
-                <ref role="3Tt5mk" to="ubjp:v1yTSnbNW4" />
+                <ref role="3Tt5mk" to="ubjp:v1yTSnbNW4" resolve="token" />
               </node>
             </node>
           </node>
@@ -1075,7 +1074,7 @@
                         <ref role="1YBMHb" node="5Vyo27wZtTi" resolve="alternatives" />
                       </node>
                       <node concept="3Tsc0h" id="5Vyo27wZHm0" role="2OqNvi">
-                        <ref role="3TtcxE" to="ubjp:6cuUYchcH_D" />
+                        <ref role="3TtcxE" to="ubjp:6cuUYchcH_D" resolve="oneOf" />
                       </node>
                     </node>
                     <node concept="3zZkjj" id="5Vyo27wZKVc" role="2OqNvi">
@@ -1132,7 +1131,7 @@
                     <ref role="1YBMHb" node="5Vyo27wZtTi" resolve="alternatives" />
                   </node>
                   <node concept="3Tsc0h" id="5Vyo27wZA3_" role="2OqNvi">
-                    <ref role="3TtcxE" to="ubjp:6cuUYchcH_D" />
+                    <ref role="3TtcxE" to="ubjp:6cuUYchcH_D" resolve="oneOf" />
                   </node>
                 </node>
                 <node concept="2HxqBE" id="5Vyo27wZA3A" role="2OqNvi">
@@ -1165,7 +1164,7 @@
               <ref role="1YBMHb" node="5Vyo27wZtTi" resolve="alternatives" />
             </node>
             <node concept="3Tsc0h" id="5Vyo27wZuxw" role="2OqNvi">
-              <ref role="3TtcxE" to="ubjp:6cuUYchcH_D" />
+              <ref role="3TtcxE" to="ubjp:6cuUYchcH_D" resolve="oneOf" />
             </node>
           </node>
           <node concept="2HwmR7" id="5Vyo27wZzoK" role="2OqNvi">
