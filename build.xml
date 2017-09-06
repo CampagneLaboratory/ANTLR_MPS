@@ -41,7 +41,7 @@
         <version>${ANTLR_version}</version>
         <vendor url="http://books.campagnelab.org">Campagne Laboratory</vendor>
         <depends>jetbrains.mps.core</depends>
-        <idea-version since-build="172.1" until-build="172.1127" />
+        <idea-version since-build="172.1" until-build="172.1256" />
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -487,7 +487,6 @@
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.libs/jetbrains.mps.baseLanguage.unitTest.libs.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguageInternal.jar" />
       <library file="${artifacts.mps}/languages/devkits/jetbrains.mps.devkit.language-descriptor.devkit" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.baseLanguage.lightweightdsl.jar" />
@@ -538,6 +537,7 @@
       <library file="${artifacts.mps}/lib/mps-environment.jar" />
       <library file="${artifacts.mps}/lib/mps-openapi.jar" />
       <library file="${artifacts.mps}/lib/mps-platform.jar" />
+      <library file="${artifacts.mps}/lib/mps-stubs.jar" />
       <library file="${artifacts.mps}/lib/mps-test.jar" />
       <library file="${artifacts.mps}/lib/mps-tool.jar" />
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
